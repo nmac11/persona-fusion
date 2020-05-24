@@ -12,8 +12,8 @@ export class ListComponent implements OnInit {
   readonly Arcana = Arcana;
   personae: Array<Persona>;
 
-  constructor(private compendium: CompendiumService) {
-    this.personae = compendium.getAll();
+  constructor(private compendiumService: CompendiumService) {
+    this.personae = compendiumService.getAll();
   }
 
   ngOnInit(): void {}
