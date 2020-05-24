@@ -47,10 +47,10 @@ export class NormalFusionService {
   }
 
   private addToList(p1: Persona, p2: Persona): void {
-    if (this.alreadyInList(p1, p2)) this.list.push([p1, p2]);
+    if (this.notYetListed(p1, p2)) this.list.push([p1, p2]);
   }
 
-  private alreadyInList(p1: Persona, p2: Persona): boolean {
+  private notYetListed(p1: Persona, p2: Persona): boolean {
     return !this.list.some(
       ([a, b]) =>
         (a.id === p1.id && b.id === p2.id) ||
