@@ -4,7 +4,7 @@ import { Persona } from '../../models/persona';
 import Arcana from '../../data/p3p-arcana.json';
 
 @Component({
-  selector: 'app-list',
+  selector: 'p3p-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css'],
 })
