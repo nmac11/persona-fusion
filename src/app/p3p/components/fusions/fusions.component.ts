@@ -16,10 +16,11 @@ export class FusionsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private compendiumService: CompendiumService,
-  ) {
-    const personaName = this.route.snapshot.paramMap.get('persona_name');
-    this.persona = this.compendiumService.find(personaName);
-  }
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.route.params.subscribe((p: object) => {
+      this.persona = this.compendiumService.find(p['persona_name']);
+    });
+  }
 }
