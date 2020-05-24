@@ -5,8 +5,8 @@ import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 export class CompendiumService {
   constructor() {}
 
-  getAll(): Array<Persona> {
-    return compendium;
+  getAll(arcana: number = null): Array<Persona> {
+    return arcana ? compendium.filter((p) => p.arcana === arcana) : compendium;
   }
 
   find(name: string): Persona {
