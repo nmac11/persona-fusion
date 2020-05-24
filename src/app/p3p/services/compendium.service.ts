@@ -1,5 +1,5 @@
 import compendium from '../data/p3p-compendium.json';
-import { Persona } from '../../models/persona';
+import { Persona } from '../models/persona';
 
 export class CompendiumService {
   constructor() {}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CompendiumService } from '../../services/compendium.service';
-import { Persona } from '../../../models/persona';
+import { Persona } from '../../models/persona';
 
 @Component({
   selector: 'app-list',
