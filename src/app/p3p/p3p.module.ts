@@ -7,6 +7,7 @@ import { ListComponent } from './components/list/list.component';
 import { FusionsComponent } from './components/fusions/fusions.component';
 import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
 import { ArcanaFusionService } from './services/arcana-fusion.service';
+import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ArcanaFusionService } from './services/arcana-fusion.service';
     ListComponent,
     FusionsComponent,
     NormalFusionsComponent,
+    TriangleFusionsComponent,
   ],
   imports: [CommonModule, P3PRoutingModule],
   providers: [CompendiumService, ArcanaFusionService],

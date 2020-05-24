@@ -1,6 +1,11 @@
 <div *ngIf="persona; else noPersona">
-  <h3>{{persona?.name}}</h3> Level {{persona?.level}}
-  <small>{{Arcana[persona?.arcana]}}</small>
+  <h3>{{ persona?.name }}</h3>
+  Level {{ persona?.level }}
+  <small>{{ Arcana[persona?.arcana] }}</small>
+  <ul>
+    <li><a routerLink="./triangle">Triangle spread</a></li>
+    <li><a routerLink="./">Normal</a></li>
+  </ul>
 </div>
 <ng-template #noPersona>
   Persona Not Found

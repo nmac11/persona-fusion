@@ -5,6 +5,7 @@ import { P3PComponent } from './p3p.component';
 import { ListComponent } from './components/list/list.component';
 import { FusionsComponent } from './components/fusions/fusions.component';
 import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
+import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
           {
             path: '',
             component: NormalFusionsComponent,
+          },
+          {
+            path: 'triangle',
+            component: TriangleFusionsComponent,
           },
         ],
       },
