@@ -18,16 +18,14 @@ export class NormalFusionsComponent implements OnInit {
     private route: ActivatedRoute,
     private compendiumService: CompendiumService,
     private fusionService: NormalFusionService,
-  ) {
-    const personaName = this.route.snapshot.paramMap.get('persona_name');
-    this.persona = this.compendiumService.find(personaName);
-    this.fusions = this.fusionService.findFusions(this.persona);
-  }
+  ) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
-      this.fusions = this.fusionService.findFusions(this.persona);
+      this.fusions = this.persona.special
+        ? []
+        : this.fusionService.findFusions(this.persona);
     });
   }
 }
