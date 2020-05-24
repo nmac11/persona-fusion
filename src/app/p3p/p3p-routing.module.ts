@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { P3PComponent } from './p3p.component';
 import { ListComponent } from './components/list/list.component';
+import { FusionsComponent } from './components/fusions/fusions.component';
 
 const routes: Routes = [
   {
     path: '',
     component: P3PComponent,
-    children: [{ path: '', component: ListComponent }],
+    children: [
+      { path: '', component: ListComponent },
+      { path: 'fusions/:persona_name', component: FusionsComponent },
+    ],
   },
 ];
 
