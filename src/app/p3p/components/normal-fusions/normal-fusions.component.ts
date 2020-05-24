@@ -23,7 +23,7 @@ export class NormalFusionsComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
-      this.fusions = this.persona.special
+      this.fusions = this.persona?.special
         ? []
         : this.fusionService.findFusions(this.persona);
     });
