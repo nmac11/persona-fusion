@@ -6,7 +6,7 @@ export class CompendiumService {
   constructor() {}
 
   getAll(arcana: number = null): Array<Persona> {
-    return !isNaN(arcana)
+    return (arcana !== null)
       ? compendium.filter((p) => p.arcana === arcana)
       : compendium;
   }
