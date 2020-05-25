@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CompendiumService } from '../../services/compendium.service';
 import { Persona } from '../../models/persona';
 import { NormalFusionService } from '../../services/normal-fusion.service';
@@ -16,19 +16,20 @@ export class NormalFusionsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private compendiumService: CompendiumService,
     private fusionService: NormalFusionService,
-  ) {}
+  ) {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  }
 
   ngOnInit(): void {
-    this.route.params.subscribe((p: object) => {
-      this.persona = this.compendiumService.find(p['persona_name']);
-      this.fusions = [];
-      setTimeout(() => {
-        this.fusions = this.persona?.special
-          ? []
-          : this.fusionService.findFusions(this.persona);
-      }, 0);
-    });
+    const personaName = this.route.parent.snapshot.params['persona_name'];
+    this.persona = this.compendiumService.find(personaName);
+    setTimeout(() => {
+      this.fusions = this.persona?.special
+        ? []
+        : this.fusionService.findFusions(this.persona);
+    }, 0);
   }
 }

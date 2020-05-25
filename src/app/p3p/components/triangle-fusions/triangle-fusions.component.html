@@ -1,4 +1,4 @@
-<div *ngIf="fusions.length; else emptyList">
+<div *ngIf="fusions?.length; else emptyList">
   <ul>
     <li *ngFor="let fusion of fusions">
       <ng-container *ngFor="let persona of fusion" >

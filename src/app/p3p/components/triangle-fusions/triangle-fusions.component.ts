@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CompendiumService } from '../../services/compendium.service';
 import { Persona } from '../../models/persona';
 import { TriangleFusionService } from '../../services/triangle-fusion.service';
@@ -13,22 +13,23 @@ import { TriangleFusionService } from '../../services/triangle-fusion.service';
 export class TriangleFusionsComponent implements OnInit {
   persona: Persona;
   fusions: Persona[][];
-  
+
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private compendiumService: CompendiumService,
     private fusionService: TriangleFusionService,
-  ) {}
+  ) {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  }
 
   ngOnInit(): void {
-    this.route.parent.params.subscribe((p: object) => {
-      this.persona = this.compendiumService.find(p['persona_name']);
-      this.fusions = [];
-      setTimeout(() => {
-        this.fusions = this.persona?.special
-          ? []
-          : this.fusionService.findFusions(this.persona).slice(0,200);
-      }, 0);
-    });
+    const personaName = this.route.parent.snapshot.params['persona_name'];
+    this.persona = this.compendiumService.find(personaName);
+    setTimeout(() => {
+      this.fusions = this.persona?.special
+        ? []
+        : this.fusionService.findFusions(this.persona).slice(0, 200);
+    }, 0);
   }
 }
