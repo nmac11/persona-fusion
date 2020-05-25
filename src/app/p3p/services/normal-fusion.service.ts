@@ -6,14 +6,14 @@ import { Persona } from '../models/persona';
 @Injectable()
 export class NormalFusionService {
   private persona: Persona;
-  list: Array<Array<Persona>> = [];
+  list: Persona[][] = [];
 
   constructor(
     private arcanaFusionService: ArcanaFusionService,
     private compendiumService: CompendiumService,
   ) {}
 
-  findFusions(persona: Persona): Array<Array<Persona>> {
+  findFusions(persona: Persona): Persona[][] {
     this.persona = persona;
     this.list = [];
     if (persona) this.generateFusionList();
@@ -21,13 +21,13 @@ export class NormalFusionService {
   }
 
   private generateFusionList(): void {
-    const arcanaFusions = this.arcanaFusionService.getPossibleFusions(
+    const arcanaFusions = this.arcanaFusionService.getPossibleNormalFusions(
       this.persona.arcana,
     );
     this.filterFusions(arcanaFusions);
   }
 
-  private filterFusions(arcanaFusions: Array<Array<Array<Persona>>>): void {
+  private filterFusions(arcanaFusions: Persona[][][]): void {
     arcanaFusions.forEach(([arc1, arc2]) => {
       arc1.forEach((p1: Persona) =>
         arc2.forEach((p2: Persona) => {

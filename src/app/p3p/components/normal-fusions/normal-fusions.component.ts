@@ -12,7 +12,7 @@ import { NormalFusionService } from '../../services/normal-fusion.service';
 })
 export class NormalFusionsComponent implements OnInit {
   persona: Persona;
-  fusions: Array<Array<Persona>>;
+  fusions: Persona[][];
 
   constructor(
     private route: ActivatedRoute,
