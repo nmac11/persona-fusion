@@ -31,31 +31,27 @@ export class NormalFusionService {
     arcanaFusions.forEach(([arc1, arc2]) => {
       arc1.forEach((p1: Persona) =>
         arc2.forEach((p2: Persona) => {
-          if (this.testFusion(p1, p2)) this.addToList(p1, p2);
+          if (this.testFusion(p1, p2)) this.list.push([p1, p2]);
         }),
       );
     });
   }
 
   private testFusion(p1: Persona, p2: Persona): boolean {
-    if (!this.validateUniqueness(p1, p2)) return false;
+    if (!this.validate(p1, p2)) return false;
     const fusionLevel = Math.floor((p1.level + p2.level) / 2 + 1);
     return (
       this.testFusionSameArcana(p1, p2, fusionLevel) ||
       this.testFusionDifferentArcana(p1, p2, fusionLevel)
     );
   }
-
-  private addToList(p1: Persona, p2: Persona): void {
-    if (this.notYetListed(p1, p2)) this.list.push([p1, p2]);
+  
+  private validate(p1: Persona, p2: Persona): boolean {
+    return this.validateLevels(p1, p2) && this.validateUniqueness(p1, p2);
   }
 
-  private notYetListed(p1: Persona, p2: Persona): boolean {
-    return !this.list.some(
-      ([a, b]) =>
-        (a.id === p1.id && b.id === p2.id) ||
-        (b.id === p1.id && a.id === p2.id),
-    );
+  private validateLevels(p1: Persona, p2: Persona): boolean {
+    return !(p1.level < p2.level && p1.arcana === p2.arcana);
   }
 
   private validateUniqueness(p1: Persona, p2: Persona) {

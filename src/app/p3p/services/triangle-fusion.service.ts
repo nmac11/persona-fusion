@@ -32,7 +32,7 @@ export class TriangleFusionService {
       arc1.forEach((p1) =>
         arc2.forEach((p2) =>
           arc3.forEach((p3) => {
-            if (this.testFusion(p1, p2, p3)) this.addToList(p1, p2, p3);
+            if (this.testFusion(p1, p2, p3)) this.list.push([p1, p2, p3]);
           }),
         ),
       );
@@ -46,18 +46,6 @@ export class TriangleFusionService {
     return this.persona.id === result?.id;
   }
 
-  private addToList(p1: Persona, p2: Persona, p3: Persona): void {
-    if (
-      !this.list.some(
-        ([a, b, c]) =>
-          ((c.id === p3.id && b.id === p2.id) ||
-            (b.id === p3.id && c.id === p2.id)) &&
-          a.id === p1.id,
-      )
-    )
-      this.list.push([p1, p2, p3]);
-  }
-
   private validate(p1: Persona, p2: Persona, p3: Persona) {
     return (
       this.validateUniqueness(p1, p2, p3) && this.validateLevels(p1, p2, p3)
@@ -69,7 +57,8 @@ export class TriangleFusionService {
       p1.level < p3.level ||
       p1.level < p2.level ||
       (p1.level === p3.level && p1.arcana > p3.arcana) ||
-      (p1.level === p2.level && p1.arcana > p2.arcana)
+      (p1.level === p2.level && p1.arcana > p2.arcana) ||
+      (p3.level < p2.level && p2.arcana === p3.arcana)
     );
   }
 
