@@ -8,7 +8,7 @@ export class CompendiumService {
   constructor() {}
 
   getAll(arcana: number = null): Array<Persona> {
-    return (arcana !== null)
+    return arcana !== null
       ? compendium.filter((p) => p.arcana === arcana)
       : compendium;
   }
@@ -16,6 +16,10 @@ export class CompendiumService {
   find(name: string): Persona {
     const kwdRegex = exactMatchRegExp(name);
     return compendium.find((persona) => kwdRegex.test(persona.name));
+  }
+
+  findById(id: number): Persona {
+    return compendium.find((persona) => persona.id === id);
   }
 
   getNextRankFromLevel(arcana: number, level: number): Persona {

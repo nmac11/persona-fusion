@@ -7,6 +7,7 @@ import { Persona } from '../models/persona';
 export class NormalFusionService {
   private persona: Persona;
   list: Persona[][] = [];
+  fusionPersonaIds: Set<number> = new Set();
 
   constructor(
     private arcanaFusionService: ArcanaFusionService,
@@ -31,10 +32,17 @@ export class NormalFusionService {
     arcanaFusions.forEach(([arc1, arc2]) => {
       arc1.forEach((p1: Persona) =>
         arc2.forEach((p2: Persona) => {
-          if (this.testFusion(p1, p2)) this.list.push([p1, p2]);
+          if (this.testFusion(p1, p2)) this.addToList([p1, p2]);
         }),
       );
     });
+  }
+
+  private addToList(personae: Persona[]): void {
+    personae.forEach((persona: Persona) =>
+      this.fusionPersonaIds.add(persona.id),
+    );
+    this.list.push(personae);
   }
 
   private testFusion(p1: Persona, p2: Persona): boolean {

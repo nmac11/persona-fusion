@@ -1,6 +1,20 @@
-<ul>
-  <li *ngFor="let fusion of fusions">
-    <a routerLink="../../{{fusion[0].name | lowercase}}">{{fusion[0].name}}</a> |
-    <a routerLink="../../{{fusion[1].name | lowercase}}">{{fusion[1].name}}</a>
-  </li>
-</ul>
+
+<div *ngIf="fusions?.length; else emptyList">
+  <ul>
+   <div>
+      <a *ngFor="let persona of fusionPersonae">
+        {{persona.name}}
+      </a>
+    </div>
+  </ul>
+
+  <ul>
+    <li *ngFor="let fusion of fusions">
+      <a routerLink="../../{{fusion[0].name | lowercase}}">{{fusion[0].name}}</a> |
+      <a routerLink="../../{{fusion[1].name | lowercase}}">{{fusion[1].name}}</a>
+    </li>
+  </ul>
+</div>
+<ng-template #emptyList>
+  No results.
+</ng-template>

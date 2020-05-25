@@ -13,6 +13,7 @@ import { NormalFusionService } from '../../services/normal-fusion.service';
 export class NormalFusionsComponent implements OnInit {
   persona: Persona;
   fusions: Persona[][];
+  fusionPersonae: Persona[];
 
   constructor(
     private route: ActivatedRoute,
@@ -30,6 +31,10 @@ export class NormalFusionsComponent implements OnInit {
       this.fusions = this.persona?.special
         ? []
         : this.fusionService.findFusions(this.persona);
+
+      this.fusionPersonae = Array.from(
+        this.fusionService.fusionPersonaIds,
+      ).map((id) => this.compendiumService.findById(id));
     }, 0);
   }
 }

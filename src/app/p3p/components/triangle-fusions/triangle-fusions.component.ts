@@ -13,6 +13,7 @@ import { TriangleFusionService } from '../../services/triangle-fusion.service';
 export class TriangleFusionsComponent implements OnInit {
   persona: Persona;
   fusions: Persona[][];
+  fusionPersonae: Persona[];
 
   constructor(
     private route: ActivatedRoute,
@@ -29,7 +30,12 @@ export class TriangleFusionsComponent implements OnInit {
     setTimeout(() => {
       this.fusions = this.persona?.special
         ? []
-        : this.fusionService.findFusions(this.persona).slice(0, 200);
+        : this.fusionService.findFusions(this.persona);
+
+      this.fusionService.findFusions(this.persona);
+      this.fusionPersonae = Array.from(
+        this.fusionService.fusionPersonaIds,
+      ).map((id) => this.compendiumService.findById(id));
     }, 0);
   }
 }

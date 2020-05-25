@@ -1,12 +1,13 @@
 <div *ngIf="fusions?.length; else emptyList">
   <ul>
-    <li *ngFor="let fusion of fusions">
-      <ng-container *ngFor="let persona of fusion" >
-        <a routerLink="../../{{persona.name | lowercase}}">{{persona.name}}</a> |
-      </ng-container>
-    </li>
+   <div>
+      <a *ngFor="let persona of fusionPersonae">
+        {{persona.name}}
+      </a>
+    </div>
   </ul>
 </div>
 <ng-template #emptyList>
   No results.
 </ng-template>
+
