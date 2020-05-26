@@ -1,30 +1,29 @@
-import { Injectable } from '@angular/core';
-import compendium from '../../data/p3/p3p-compendium.json';
+import { Injectable, Inject } from '@angular/core';
 import { Persona } from '../models/persona';
 import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 
 @Injectable()
 export class CompendiumService {
-  constructor() {}
+  constructor(@Inject(Array) private compendium: Array<Persona>) {}
 
   getAll(arcana: number = null): Array<Persona> {
     return arcana !== null
-      ? compendium.filter((p) => p.arcana === arcana)
-      : compendium;
+      ? this.compendium.filter((p) => p.arcana === arcana)
+      : this.compendium;
   }
 
   find(name: string): Persona {
     const kwdRegex = exactMatchRegExp(name);
-    return compendium.find((persona) => kwdRegex.test(persona.name));
+    return this.compendium.find((persona) => kwdRegex.test(persona.name));
   }
 
   findById(id: number): Persona {
-    return compendium.find((persona) => persona.id === id);
+    return this.compendium.find((persona) => persona.id === id);
   }
 
   getNextRankFromLevel(arcana: number, level: number): Persona {
     return (
-      compendium
+      this.compendium
         .filter((persona: Persona) => {
           return (
             !persona.special &&
@@ -41,7 +40,7 @@ export class CompendiumService {
 
   getPreviousRankFromLevel(arcana: number, level: number): Persona {
     return (
-      compendium
+      this.compendium
         .filter((persona: Persona) => {
           return (
             !persona.special &&
@@ -75,7 +74,7 @@ export class CompendiumService {
   }
 
   getNextRank(current: Persona): Persona {
-    return compendium
+    return this.compendium
       .filter((persona: Persona) => {
         return (
           !persona.special &&
@@ -90,7 +89,7 @@ export class CompendiumService {
   }
 
   getPreviousRank(current: Persona): Persona {
-    return compendium
+    return this.compendium
       .filter((persona: Persona) => {
         return (
           !persona.special &&

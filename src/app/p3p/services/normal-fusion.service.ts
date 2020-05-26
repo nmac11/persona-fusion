@@ -1,7 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { ArcanaFusionService } from '../services/arcana-fusion.service';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
+import { P3P_ARCANA_FUSION } from '../helpers/arcana-fusion-service-helper';
+import { P3P_COMPENDIUM } from '../helpers/compendium-service-helper';
 
 @Injectable()
 export class NormalFusionService {
@@ -10,8 +12,8 @@ export class NormalFusionService {
   fusionPersonaIds: Set<number> = new Set();
 
   constructor(
-    private arcanaFusionService: ArcanaFusionService,
-    private compendiumService: CompendiumService,
+    @Inject(P3P_ARCANA_FUSION) private arcanaFusionService: ArcanaFusionService,
+    @Inject(P3P_COMPENDIUM) private compendiumService: CompendiumService,
   ) {}
 
   findFusions(persona: Persona): Persona[][] {

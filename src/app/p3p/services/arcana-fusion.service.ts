@@ -1,21 +1,22 @@
-import { Injectable } from '@angular/core';
-import normalFusionChart from '../../data/p3/p3-normal-fusion-chart.json';
-import triangleFusionChart from '../../data/p3/p3-triangle-fusion-chart.json';
+import { Injectable, Inject } from '@angular/core';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
-import { getTriangleFormulas } from '../helpers/arcana-fusion-helper';
 
 @Injectable()
 export class ArcanaFusionService {
-  constructor(private compendiumService: CompendiumService) {}
+  constructor(
+    @Inject(CompendiumService) private compendiumService: CompendiumService,
+    @Inject(Object) private normalFusionChart: any,
+    @Inject(Object) private triangleFusionChart: any,
+  ) {}
 
   getPossibleNormalFusions(arcana: number): Persona[][][] {
-    const formulas = normalFusionChart[arcana];
+    const formulas = this.normalFusionChart[arcana];
     return this.mapFormulasToPersonae(formulas, arcana);
   }
 
   getPossibleTriangleFusions(arcana: number): Persona[][][] {
-    const formulas = getTriangleFormulas(arcana);
+    const formulas = this.getTriangleFormulas(arcana);
     return this.mapFormulasToPersonae(formulas, arcana);
   }
 
@@ -27,4 +28,42 @@ export class ArcanaFusionService {
       arcanaFusion.map((a: number) => this.compendiumService.getAll(a)),
     );
   }
+
+  private getTriangleFormulas(arcana: number): number[][] {
+    return this.triangleFusionChart[arcana].reduce(
+      this.triangleFormulaReducer,
+      [],
+    );
+  }
+
+  private addUniqueFormula(formulas: number[][], newFormulas: number[][]) {
+    newFormulas.forEach((newFormula) => {
+      if (
+        !formulas.some((formulaFromList) => {
+          for (let x = 0; x < 3; x++)
+            if (formulaFromList[x] !== newFormula[x]) return false;
+          return true;
+        })
+      )
+        formulas.push(newFormula);
+    });
+  }
+
+  private triangleFormulaReducer: Function = (
+    formulas: number[][],
+    [triangle1, triangle2]: number[],
+  ) => {
+    const mappedFormulas = [
+      ...this.normalFusionChart[triangle1].map((normalFormula: number[]) => [
+        triangle2,
+        ...normalFormula,
+      ]),
+      ...this.normalFusionChart[triangle2].map((normalFormula: number[]) => [
+        triangle1,
+        ...normalFormula,
+      ]),
+    ];
+    this.addUniqueFormula(formulas, mappedFormulas);
+    return formulas;
+  };
 }
