@@ -2,8 +2,6 @@ import { Injectable, Inject } from '@angular/core';
 import { ArcanaFusionService } from '../services/arcana-fusion.service';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
-import { P3P_ARCANA_FUSION } from '../p3p/helpers/arcana-fusion-service-helper';
-import { P3P_COMPENDIUM } from '../p3p/helpers/compendium-service-helper';
 
 @Injectable()
 export class TriangleFusionService {
@@ -12,8 +10,8 @@ export class TriangleFusionService {
   fusionPersonaIds: Set<number> = new Set();
 
   constructor(
-    @Inject(P3P_ARCANA_FUSION) private arcanaFusionService: ArcanaFusionService,
-    @Inject(P3P_COMPENDIUM) private compendiumService: CompendiumService,
+    @Inject(ArcanaFusionService) private arcanaFusionService: ArcanaFusionService,
+    @Inject(CompendiumService) private compendiumService: CompendiumService,
   ) {}
 
   findFusions(persona: Persona): Persona[][] {

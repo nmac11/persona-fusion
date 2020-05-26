@@ -4,12 +4,13 @@ import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { NormalFusionService } from '../../../services/normal-fusion.service';
 import { P3P_COMPENDIUM } from '../../helpers/compendium-service-helper';
+import { P3P_NORMAL_FUSION, p3pNormalFusionProvider } from '../../helpers/normal-fusion-service-helper';
 
 @Component({
   selector: 'p3p-normal-fusions',
   templateUrl: './normal-fusions.component.html',
   styleUrls: ['./normal-fusions.component.css'],
-  providers: [NormalFusionService],
+  providers: [p3pNormalFusionProvider],
 })
 export class NormalFusionsComponent implements OnInit {
   persona: Persona;
@@ -20,7 +21,7 @@ export class NormalFusionsComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     @Inject(P3P_COMPENDIUM) private compendiumService: CompendiumService,
-    private fusionService: NormalFusionService,
+    @Inject(P3P_NORMAL_FUSION) private fusionService: NormalFusionService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }

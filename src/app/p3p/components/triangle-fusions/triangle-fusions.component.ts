@@ -4,12 +4,13 @@ import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { TriangleFusionService } from '../../../services/triangle-fusion.service';
 import { P3P_COMPENDIUM } from '../../helpers/compendium-service-helper';
+import { P3P_TRIANGLE_FUSION, p3pTriangleFusionProvider} from '../../helpers/triangle-fusion-service-helper';
 
 @Component({
   selector: 'p3p-triangle-fusions',
   templateUrl: './triangle-fusions.component.html',
   styleUrls: ['./triangle-fusions.component.css'],
-  providers: [TriangleFusionService],
+  providers: [p3pTriangleFusionProvider],
 })
 export class TriangleFusionsComponent implements OnInit {
   persona: Persona;
@@ -20,7 +21,7 @@ export class TriangleFusionsComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     @Inject(P3P_COMPENDIUM) private compendiumService: CompendiumService,
-    private fusionService: TriangleFusionService,
+    @Inject(P3P_TRIANGLE_FUSION) private fusionService: TriangleFusionService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
