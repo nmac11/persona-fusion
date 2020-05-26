@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { ArcanaFusionService } from '../services/arcana-fusion.service';
+import { FusionChartService } from '../services/fusion-chart.service';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
 
@@ -10,7 +10,7 @@ export class TriangleFusionService {
   fusionPersonaIds: Set<number> = new Set();
 
   constructor(
-    @Inject(ArcanaFusionService) private arcanaFusionService: ArcanaFusionService,
+    @Inject(FusionChartService) private arcanaFusionService: FusionChartService,
     @Inject(CompendiumService) private compendiumService: CompendiumService,
   ) {}
 

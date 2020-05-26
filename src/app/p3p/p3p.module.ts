@@ -7,7 +7,7 @@ import { FusionsComponent } from './components/fusions/fusions.component';
 import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
 import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
 import { p3pCompendiumProvider } from './helpers/compendium-service-helper';
-import { p3pArcanaFusionProvider } from './helpers/arcana-fusion-service-helper';
+import { p3pFusionChartProvider } from './helpers/fusion-chart-service-helper';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,6 @@ import { p3pArcanaFusionProvider } from './helpers/arcana-fusion-service-helper'
     TriangleFusionsComponent,
   ],
   imports: [CommonModule, P3PRoutingModule],
-  providers: [p3pCompendiumProvider, p3pArcanaFusionProvider],
+  providers: [p3pCompendiumProvider, p3pFusionChartProvider],
 })
 export class P3PModule {}

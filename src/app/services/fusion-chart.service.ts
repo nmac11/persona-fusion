@@ -3,7 +3,7 @@ import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
 
 @Injectable()
-export class ArcanaFusionService {
+export class FusionChartService {
   constructor(
     @Inject(CompendiumService) private compendiumService: CompendiumService,
     @Inject(Object) private normalFusionChart: any,
