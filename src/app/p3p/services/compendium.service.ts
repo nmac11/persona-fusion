@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import compendium from '../data/p3p-compendium.json';
+import compendium from '../../data/p3/p3p-compendium.json';
 import { Persona } from '../models/persona';
 import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 

@@ -1,5 +1,5 @@
-import normalFusionChart from '../data/p3p-normal-fusion-chart.json';
-import triangleFusionChart from '../data/p3p-triangle-fusion-chart.json';
+import normalFusionChart from '../../data/p3/p3-normal-fusion-chart.json';
+import triangleFusionChart from '../../data/p3/p3-triangle-fusion-chart.json';
 
 export function getTriangleFormulas(arcana: number) {
   return triangleFusionChart[arcana].reduce(triangleFormulaReducer, []);

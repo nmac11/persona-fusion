@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CompendiumService } from '../../services/compendium.service';
 import { Persona } from '../../models/persona';
-import Arcana from '../../data/p3p-arcana.json';
+import Arcana from '../../../data/p3/p3-arcana.json';
 
 @Component({
   selector: 'p3p-list',
