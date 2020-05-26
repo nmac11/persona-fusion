@@ -2,7 +2,7 @@ import { InjectionToken, Provider } from '@angular/core';
 import { CompendiumService } from '../services/compendium.service';
 import compendium from '../../data/p3/p3p-compendium.json';
 
-export function p3pCompendiumFactory(): CompendiumService {
+function p3pCompendiumFactory(): CompendiumService {
   return new CompendiumService(compendium);
 }
 
