@@ -1,5 +1,5 @@
 import { InjectionToken, Provider } from '@angular/core';
-import { CompendiumService } from '../../p3p/services/compendium.service';
+import { CompendiumService } from '../../services/compendium.service';
 import compendium from '../../data/p3/p3fes-compendium.json';
 
 function p3fesCompendiumFactory(): CompendiumService {

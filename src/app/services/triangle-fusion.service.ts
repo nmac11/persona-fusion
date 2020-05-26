@@ -2,8 +2,8 @@ import { Injectable, Inject } from '@angular/core';
 import { ArcanaFusionService } from '../services/arcana-fusion.service';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
-import { P3P_ARCANA_FUSION } from '../helpers/arcana-fusion-service-helper';
-import { P3P_COMPENDIUM } from '../helpers/compendium-service-helper';
+import { P3P_ARCANA_FUSION } from '../p3p/helpers/arcana-fusion-service-helper';
+import { P3P_COMPENDIUM } from '../p3p/helpers/compendium-service-helper';
 
 @Injectable()
 export class TriangleFusionService {

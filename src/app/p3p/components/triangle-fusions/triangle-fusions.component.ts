@@ -1,8 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CompendiumService } from '../../services/compendium.service';
-import { Persona } from '../../models/persona';
-import { TriangleFusionService } from '../../services/triangle-fusion.service';
+import { CompendiumService } from '../../../services/compendium.service';
+import { Persona } from '../../../models/persona';
+import { TriangleFusionService } from '../../../services/triangle-fusion.service';
 import { P3P_COMPENDIUM } from '../../helpers/compendium-service-helper';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { CompendiumService } from '../../../p3p/services/compendium.service';
-import { Persona } from '../../../p3p/models/persona';
+import { CompendiumService } from '../../../services/compendium.service';
+import { Persona } from '../../../models/persona';
 import Arcana from '../../../data/p3/p3-arcana.json';
 import { P3FES_COMPENDIUM } from '../../helpers/compendium-service-helper';
 
