@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
-import Arcana from '../../../data/p3/p3-arcana.json';
 import { P3P_COMPENDIUM } from '../../helpers/compendium-service-helper';
 
 @Component({
@@ -10,7 +9,6 @@ import { P3P_COMPENDIUM } from '../../helpers/compendium-service-helper';
   styleUrls: ['./list.component.css'],
 })
 export class ListComponent implements OnInit {
-  readonly Arcana = Arcana;
   personae: Array<Persona>;
 
   constructor(
@@ -20,4 +18,8 @@ export class ListComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  arcanaName(arcana: number) {
+    return this.compendiumService.arcanaName(arcana);
+  }
 }

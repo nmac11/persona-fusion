@@ -4,7 +4,14 @@ import { exactMatchRegExp } from '../p3p/helpers/reg-exp-helpers';
 
 @Injectable()
 export class CompendiumService {
-  constructor(@Inject(Array) private compendium: Array<Persona>) {}
+  constructor(
+    @Inject(Array) private compendium: Array<Persona>,
+    @Inject(Array) private arcanaChart: Array<string>,
+  ) {}
+
+  arcanaName(arcana: number): string {
+    return this.arcanaChart[arcana] || 'Unknown';
+  }
 
   getAll(arcana: number = null): Array<Persona> {
     return arcana !== null

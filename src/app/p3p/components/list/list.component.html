@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let persona of personae">
-    <a routerLink="fusions/{{persona.name}}">{{persona.name}}</a> | {{persona.level}} | {{Arcana[persona.arcana]}}
+    <a routerLink="fusions/{{persona.name}}">{{persona.name}}</a> | {{persona.level}} | {{arcanaName(persona.arcana)}}
   </li>
 </ul>

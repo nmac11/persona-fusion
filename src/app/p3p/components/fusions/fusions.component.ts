@@ -2,7 +2,6 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
-import Arcana from '../../../data/p3/p3-arcana.json';
 import { P3P_COMPENDIUM } from '../../helpers/compendium-service-helper';
 
 @Component({
@@ -11,7 +10,6 @@ import { P3P_COMPENDIUM } from '../../helpers/compendium-service-helper';
   styleUrls: ['./fusions.component.css'],
 })
 export class FusionsComponent implements OnInit {
-  readonly Arcana = Arcana;
   persona: Persona;
 
   constructor(
@@ -23,5 +21,9 @@ export class FusionsComponent implements OnInit {
     this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
     });
+  }
+
+  arcanaName(arcana: number) {
+    return this.compendiumService.arcanaName(arcana);
   }
 }
