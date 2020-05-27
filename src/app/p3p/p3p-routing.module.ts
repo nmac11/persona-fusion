@@ -2,28 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { P3PComponent } from './p3p.component';
-import { ListComponent } from './components/list/list.component';
-import { FusionsComponent } from './components/fusions/fusions.component';
-import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
-import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
+import { P3PListComponent } from './components/list/list.component';
+import { P3PFusionsComponent } from './components/fusions/fusions.component';
+import { P3PNormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
+import { P3PTriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
 
 const routes: Routes = [
   {
     path: '',
     component: P3PComponent,
     children: [
-      { path: '', component: ListComponent },
+      { path: '', component: P3PListComponent },
       {
         path: 'fusions/:persona_name',
-        component: FusionsComponent,
+        component: P3PFusionsComponent,
         children: [
           {
             path: '',
-            component: NormalFusionsComponent,
+            component: P3PNormalFusionsComponent,
           },
           {
             path: 'triangle',
-            component: TriangleFusionsComponent,
+            component: P3PTriangleFusionsComponent,
           },
         ],
       },

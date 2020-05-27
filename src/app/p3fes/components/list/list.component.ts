@@ -1,25 +1,18 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { P3FES_COMPENDIUM } from '../../helpers/compendium-service-helper';
+import { ListComponent } from '../../../shared/list/list.component';
 
 @Component({
   selector: 'p3fes-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css'],
+  templateUrl: '../../../shared/list/list.component.html',
+  styleUrls: ['../../../shared/list/list.component.css'],
 })
-export class ListComponent implements OnInit {
-  personae: Array<Persona>;
-
+export class P3FESListComponent extends ListComponent {
   constructor(
-    @Inject(P3FES_COMPENDIUM) private compendiumService: CompendiumService,
+    @Inject(P3FES_COMPENDIUM) protected compendiumService: CompendiumService,
   ) {
-    this.personae = compendiumService.getAll();
-  }
-
-  ngOnInit(): void {}
-
-  arcanaName(arcana: number) {
-    return this.compendiumService.arcanaName(arcana);
+    super(compendiumService);
   }
 }
