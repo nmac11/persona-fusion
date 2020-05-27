@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { Persona } from '../models/persona';
-import { exactMatchRegExp } from '../p3p/helpers/reg-exp-helpers';
+import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 
 @Injectable()
 export class CompendiumService {
