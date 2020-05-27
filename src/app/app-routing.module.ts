@@ -13,6 +13,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./p3fes/p3fes.module').then((m) => m.P3FESModule),
   },
+  {
+    path: 'p4g',
+    loadChildren: () =>
+      import('./p4g/p4g.module').then((m) => m.P4GModule),
+  },
 ];
 
 @NgModule({

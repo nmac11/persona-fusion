@@ -10,8 +10,8 @@
 
   <ul>
     <li *ngFor="let fusion of fusions">
-      <a routerLink="../../{{fusion[0].name | lowercase}}">{{fusion[0].name}}</a> |
-      <a routerLink="../../{{fusion[1].name | lowercase}}">{{fusion[1].name}}</a>
+      <a routerLink="../../{{fusion[0].name | lowercase}}">{{fusion[0].name}}/{{fusion[0].level}}</a> |
+      <a routerLink="../../{{fusion[1].name | lowercase}}">{{fusion[1].name}}/{{fusion[1].level}}</a>
     </li>
   </ul>
 </div>

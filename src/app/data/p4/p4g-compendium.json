@@ -1,0 +1,1274 @@
+[
+    {
+        "arcana": 0,
+        "level": 1,
+        "name": "Izanagi",
+        "id": 1
+    },
+    {
+        "arcana": 0,
+        "level": 7,
+        "name": "Yomotsu-Shikome",
+        "id": 2
+    },
+    {
+        "arcana": 0,
+        "level": 13,
+        "name": "Obariyon",
+        "id": 3
+    },
+    {
+        "arcana": 0,
+        "level": 21,
+        "name": "Legion",
+        "id": 4
+    },
+    {
+        "arcana": 0,
+        "level": 31,
+        "name": "Ose",
+        "id": 5
+    },
+    {
+        "arcana": 0,
+        "level": 38,
+        "name": "Black Frost",
+        "special": true,
+        "id": 6
+    },
+    {
+        "arcana": 0,
+        "level": 46,
+        "name": "Decarabia",
+        "id": 7
+    },
+    {
+        "arcana": 0,
+        "level": 56,
+        "name": "Shiki-Ouji",
+        "id": 8
+    },
+    {
+        "arcana": 0,
+        "level": 64,
+        "name": "Loki",
+        "ultimate": true,
+        "id": 9
+    },
+    {
+        "arcana": 1,
+        "level": 2,
+        "name": "Pixie",
+        "id": 10
+    },
+    {
+        "arcana": 1,
+        "level": 8,
+        "name": "Orobas",
+        "id": 11
+    },
+    {
+        "arcana": 1,
+        "level": 16,
+        "name": "Jack Frost",
+        "id": 12
+    },
+    {
+        "arcana": 1,
+        "level": 25,
+        "name": "Hua Po",
+        "id": 13
+    },
+    {
+        "arcana": 1,
+        "level": 32,
+        "name": "Pyro Jack",
+        "id": 14
+    },
+    {
+        "arcana": 1,
+        "level": 39,
+        "name": "Dis",
+        "id": 15
+    },
+    {
+        "arcana": 1,
+        "level": 47,
+        "name": "Rangda",
+        "id": 16
+    },
+    {
+        "arcana": 1,
+        "level": 62,
+        "name": "Jinn",
+        "id": 17
+    },
+    {
+        "arcana": 1,
+        "level": 69,
+        "name": "Surt",
+        "id": 18
+    },
+    {
+        "arcana": 1,
+        "level": 78,
+        "name": "Mada",
+        "ultimate": true,
+        "id": 19
+    },
+    {
+        "arcana": 2,
+        "level": 11,
+        "name": "Saki Mitama",
+        "id": 20
+    },
+    {
+        "arcana": 2,
+        "level": 17,
+        "name": "Sarasvati",
+        "id": 21
+    },
+    {
+        "arcana": 2,
+        "level": 22,
+        "name": "High Pixie",
+        "id": 22
+    },
+    {
+        "arcana": 2,
+        "level": 29,
+        "name": "Ganga",
+        "id": 23
+    },
+    {
+        "arcana": 2,
+        "level": 37,
+        "name": "Parvati",
+        "id": 24
+    },
+    {
+        "arcana": 2,
+        "level": 48,
+        "name": "Kikuri-Hime",
+        "id": 25
+    },
+    {
+        "arcana": 2,
+        "level": 59,
+        "name": "Hariti",
+        "id": 26
+    },
+    {
+        "arcana": 2,
+        "level": 70,
+        "name": "Tzitzimitl",
+        "id": 27
+    },
+    {
+        "arcana": 2,
+        "level": 79,
+        "name": "Scathach",
+        "ultimate": true,
+        "id": 28
+    },
+    {
+        "arcana": 3,
+        "level": 9,
+        "name": "Senri",
+        "id": 29
+    },
+    {
+        "arcana": 3,
+        "level": 18,
+        "name": "Yaksini",
+        "id": 30
+    },
+    {
+        "arcana": 3,
+        "level": 26,
+        "name": "Titania",
+        "id": 31
+    },
+    {
+        "arcana": 3,
+        "level": 34,
+        "name": "Gorgon",
+        "id": 32
+    },
+    {
+        "arcana": 3,
+        "level": 44,
+        "name": "Gabriel",
+        "id": 33
+    },
+    {
+        "arcana": 3,
+        "level": 52,
+        "name": "Skadi",
+        "id": 34
+    },
+    {
+        "arcana": 3,
+        "level": 60,
+        "name": "Mother Harlot",
+        "id": 35
+    },
+    {
+        "arcana": 3,
+        "level": 70,
+        "name": "Alilat",
+        "id": 36
+    },
+    {
+        "arcana": 3,
+        "level": 79,
+        "name": "Isis",
+        "ultimate": true,
+        "id": 37
+    },
+    {
+        "arcana": 4,
+        "level": 12,
+        "name": "Oberon",
+        "id": 38
+    },
+    {
+        "arcana": 4,
+        "level": 22,
+        "name": "King Frost",
+        "id": 39
+    },
+    {
+        "arcana": 4,
+        "level": 34,
+        "name": "Setanta",
+        "id": 40
+    },
+    {
+        "arcana": 4,
+        "level": 41,
+        "name": "Oukuninushi",
+        "id": 41
+    },
+    {
+        "arcana": 4,
+        "level": 45,
+        "name": "Thoth",
+        "id": 42
+    },
+    {
+        "arcana": 4,
+        "level": 51,
+        "name": "Pabilsag",
+        "id": 43
+    },
+    {
+        "arcana": 4,
+        "level": 65,
+        "name": "Barong",
+        "id": 44
+    },
+    {
+        "arcana": 4,
+        "level": 74,
+        "name": "Odin",
+        "ultimate": true,
+        "id": 45
+    },
+    {
+        "arcana": 5,
+        "level": 7,
+        "name": "Omoikane",
+        "id": 46
+    },
+    {
+        "arcana": 5,
+        "level": 15,
+        "name": "Anzu",
+        "id": 47
+    },
+    {
+        "arcana": 5,
+        "level": 21,
+        "name": "Shiisaa",
+        "id": 48
+    },
+    {
+        "arcana": 5,
+        "level": 29,
+        "name": "Unicorn",
+        "id": 49
+    },
+    {
+        "arcana": 5,
+        "level": 36,
+        "name": "Flauros",
+        "id": 50
+    },
+    {
+        "arcana": 5,
+        "level": 45,
+        "name": "Hokuto Seikun",
+        "id": 51
+    },
+    {
+        "arcana": 5,
+        "level": 52,
+        "name": "Cerberus",
+        "id": 52
+    },
+    {
+        "arcana": 5,
+        "level": 60,
+        "name": "Daisoujou",
+        "id": 53
+    },
+    {
+        "arcana": 5,
+        "level": 70,
+        "name": "Hachiman",
+        "id": 54
+    },
+    {
+        "arcana": 5,
+        "level": 76,
+        "name": "Kohryu",
+        "ultimate": true,
+        "special": true,
+        "id": 55
+    },
+    {
+        "arcana": 6,
+        "level": 25,
+        "name": "Queen Mab",
+        "id": 56
+    },
+    {
+        "arcana": 6,
+        "level": 33,
+        "name": "Undine",
+        "id": 57
+    },
+    {
+        "arcana": 6,
+        "level": 42,
+        "name": "Leanan Sidhe",
+        "id": 58
+    },
+    {
+        "arcana": 6,
+        "level": 53,
+        "name": "Raphael",
+        "id": 59
+    },
+    {
+        "arcana": 6,
+        "level": 64,
+        "name": "Cybele",
+        "id": 60
+    },
+    {
+        "arcana": 6,
+        "level": 71,
+        "name": "Ishtar",
+        "ultimate": true,
+        "id": 61
+    },
+    {
+        "arcana": 7,
+        "level": 2,
+        "name": "Slime",
+        "id": 62
+    },
+    {
+        "arcana": 7,
+        "level": 6,
+        "name": "Nata Taishi",
+        "id": 63
+    },
+    {
+        "arcana": 7,
+        "level": 12,
+        "name": "Eligor",
+        "id": 64
+    },
+    {
+        "arcana": 7,
+        "level": 18,
+        "name": "Ara Mitama",
+        "id": 65
+    },
+    {
+        "arcana": 7,
+        "level": 25,
+        "name": "Ares",
+        "id": 66
+    },
+    {
+        "arcana": 7,
+        "level": 43,
+        "name": "Triglav",
+        "id": 67
+    },
+    {
+        "arcana": 7,
+        "level": 54,
+        "name": "Kin-ki",
+        "id": 68
+    },
+    {
+        "arcana": 7,
+        "level": 65,
+        "name": "Thor",
+        "id": 69
+    },
+    {
+        "arcana": 7,
+        "level": 72,
+        "name": "Atavaka",
+        "id": 70
+    },
+    {
+        "arcana": 7,
+        "level": 80,
+        "name": "Futsunushi",
+        "ultimate": true,
+        "special": true,
+        "id": 71
+    },
+    {
+        "arcana": 8,
+        "level": 4,
+        "name": "Angel",
+        "id": 72
+    },
+    {
+        "arcana": 8,
+        "level": 11,
+        "name": "Archangel",
+        "id": 73
+    },
+    {
+        "arcana": 8,
+        "level": 19,
+        "name": "Principality",
+        "id": 74
+    },
+    {
+        "arcana": 8,
+        "level": 27,
+        "name": "Power",
+        "id": 75
+    },
+    {
+        "arcana": 8,
+        "level": 33,
+        "name": "Virtue",
+        "id": 76
+    },
+    {
+        "arcana": 8,
+        "level": 38,
+        "name": "Dominion",
+        "id": 77
+    },
+    {
+        "arcana": 8,
+        "level": 49,
+        "name": "Throne",
+        "id": 78
+    },
+    {
+        "arcana": 8,
+        "level": 58,
+        "name": "Uriel",
+        "id": 79
+    },
+    {
+        "arcana": 8,
+        "level": 66,
+        "name": "Melchizedek",
+        "id": 80
+    },
+    {
+        "arcana": 8,
+        "level": 74,
+        "name": "Sraosha",
+        "ultimate": true,
+        "id": 81
+    },
+    {
+        "arcana": 9,
+        "level": 6,
+        "name": "Forneus",
+        "id": 82
+    },
+    {
+        "arcana": 9,
+        "level": 17,
+        "name": "Ippon-Datara",
+        "id": 83
+    },
+    {
+        "arcana": 9,
+        "level": 26,
+        "name": "Lamia",
+        "id": 84
+    },
+    {
+        "arcana": 9,
+        "level": 33,
+        "name": "Mothman",
+        "id": 85
+    },
+    {
+        "arcana": 9,
+        "level": 41,
+        "name": "Hitokoto-Nushi",
+        "id": 86
+    },
+    {
+        "arcana": 9,
+        "level": 48,
+        "name": "Kurama Tengu",
+        "id": 87
+    },
+    {
+        "arcana": 9,
+        "level": 55,
+        "name": "Niddhoggr",
+        "id": 88
+    },
+    {
+        "arcana": 9,
+        "level": 63,
+        "name": "Nebiros",
+        "id": 89
+    },
+    {
+        "arcana": 9,
+        "level": 73,
+        "name": "Arahabaki",
+        "id": 90
+    },
+    {
+        "arcana": 9,
+        "level": 82,
+        "name": "Ongyo-ki",
+        "ultimate": true,
+        "special": true,
+        "id": 91
+    },
+    {
+        "arcana": 10,
+        "level": 35,
+        "name": "Fortuna",
+        "id": 92
+    },
+    {
+        "arcana": 10,
+        "level": 44,
+        "name": "Clotho",
+        "id": 93
+    },
+    {
+        "arcana": 10,
+        "level": 51,
+        "name": "Lachesis",
+        "id": 94
+    },
+    {
+        "arcana": 10,
+        "level": 58,
+        "name": "Ananta",
+        "id": 95
+    },
+    {
+        "arcana": 10,
+        "level": 65,
+        "name": "Atropos",
+        "id": 96
+    },
+    {
+        "arcana": 10,
+        "level": 72,
+        "name": "Norn",
+        "ultimate": true,
+        "special": true,
+        "id": 97
+    },
+    {
+        "arcana": 11,
+        "level": 5,
+        "name": "Sandman",
+        "id": 98
+    },
+    {
+        "arcana": 11,
+        "level": 8,
+        "name": "Valkyrie",
+        "id": 99
+    },
+    {
+        "arcana": 11,
+        "level": 14,
+        "name": "Titan",
+        "id": 100
+    },
+    {
+        "arcana": 11,
+        "level": 23,
+        "name": "Rakshasa",
+        "id": 101
+    },
+    {
+        "arcana": 11,
+        "level": 28,
+        "name": "Kusi Mitama",
+        "id": 102
+    },
+    {
+        "arcana": 11,
+        "level": 30,
+        "name": "Oni",
+        "id": 103
+    },
+    {
+        "arcana": 11,
+        "level": 42,
+        "name": "Hanuman",
+        "id": 104
+    },
+    {
+        "arcana": 11,
+        "level": 50,
+        "name": "Kali",
+        "id": 105
+    },
+    {
+        "arcana": 11,
+        "level": 63,
+        "name": "Siegfried",
+        "id": 106
+    },
+    {
+        "arcana": 11,
+        "level": 90,
+        "name": "Zaou-Gongen",
+        "ultimate": true,
+        "id": 107
+    },
+    {
+        "arcana": 12,
+        "level": 15,
+        "name": "Berith",
+        "id": 108
+    },
+    {
+        "arcana": 12,
+        "level": 22,
+        "name": "Yomotsu-Ikusa",
+        "id": 109
+    },
+    {
+        "arcana": 12,
+        "level": 27,
+        "name": "Makami",
+        "id": 110
+    },
+    {
+        "arcana": 12,
+        "level": 39,
+        "name": "Orthrus",
+        "id": 111
+    },
+    {
+        "arcana": 12,
+        "level": 49,
+        "name": "Yatsufusa",
+        "special": true,
+        "id": 112
+    },
+    {
+        "arcana": 12,
+        "level": 56,
+        "name": "Taowu",
+        "id": 113
+    },
+    {
+        "arcana": 12,
+        "level": 66,
+        "name": "Hell Biker",
+        "id": 114
+    },
+    {
+        "arcana": 12,
+        "level": 71,
+        "name": "Vasuki",
+        "id": 115
+    },
+    {
+        "arcana": 12,
+        "level": 82,
+        "name": "Attis",
+        "ultimate": true,
+        "id": 116
+    },
+    {
+        "arcana": 13,
+        "level": 9,
+        "name": "Ghoul",
+        "id": 117
+    },
+    {
+        "arcana": 13,
+        "level": 14,
+        "name": "Mokoi",
+        "id": 118
+    },
+    {
+        "arcana": 13,
+        "level": 24,
+        "name": "Matador",
+        "id": 119
+    },
+    {
+        "arcana": 13,
+        "level": 36,
+        "name": "Samael",
+        "id": 120
+    },
+    {
+        "arcana": 13,
+        "level": 46,
+        "name": "Mot",
+        "id": 121
+    },
+    {
+        "arcana": 13,
+        "level": 58,
+        "name": "White Rider",
+        "id": 122
+    },
+    {
+        "arcana": 13,
+        "level": 72,
+        "name": "Alice",
+        "special": true,
+        "id": 123
+    },
+    {
+        "arcana": 13,
+        "level": 78,
+        "name": "Mahakala",
+        "ultimate": true,
+        "special": true,
+        "id": 124
+    },
+    {
+        "arcana": 14,
+        "level": 4,
+        "name": "Apsaras",
+        "id": 125
+    },
+    {
+        "arcana": 14,
+        "level": 11,
+        "name": "Sylph",
+        "id": 126
+    },
+    {
+        "arcana": 14,
+        "level": 16,
+        "name": "Xiezhai",
+        "id": 127
+    },
+    {
+        "arcana": 14,
+        "level": 23,
+        "name": "Nigi Mitama",
+        "id": 128
+    },
+    {
+        "arcana": 14,
+        "level": 31,
+        "name": "Mithra",
+        "id": 129
+    },
+    {
+        "arcana": 14,
+        "level": 40,
+        "name": "Genbu",
+        "id": 130
+    },
+    {
+        "arcana": 14,
+        "level": 47,
+        "name": "Seiryu",
+        "id": 131
+    },
+    {
+        "arcana": 14,
+        "level": 54,
+        "name": "Suzaku",
+        "id": 132
+    },
+    {
+        "arcana": 14,
+        "level": 62,
+        "name": "Byakko",
+        "id": 133
+    },
+    {
+        "arcana": 14,
+        "level": 69,
+        "name": "Yurlungur",
+        "id": 134
+    },
+    {
+        "arcana": 14,
+        "level": 73,
+        "name": "Vishnu",
+        "ultimate": true,
+        "id": 135
+    },
+    {
+        "arcana": 15,
+        "level": 3,
+        "name": "Ukobach",
+        "id": 136
+    },
+    {
+        "arcana": 15,
+        "level": 10,
+        "name": "Lilim",
+        "id": 137
+    },
+    {
+        "arcana": 15,
+        "level": 19,
+        "name": "Vetala",
+        "id": 138
+    },
+    {
+        "arcana": 15,
+        "level": 28,
+        "name": "Incubus",
+        "id": 139
+    },
+    {
+        "arcana": 15,
+        "level": 37,
+        "name": "Pazuzu",
+        "id": 140
+    },
+    {
+        "arcana": 15,
+        "level": 44,
+        "name": "Succubus",
+        "id": 141
+    },
+    {
+        "arcana": 15,
+        "level": 53,
+        "name": "Lilith",
+        "id": 142
+    },
+    {
+        "arcana": 15,
+        "level": 61,
+        "name": "Belphegor",
+        "id": 143
+    },
+    {
+        "arcana": 15,
+        "level": 68,
+        "name": "Belial",
+        "id": 144
+    },
+    {
+        "arcana": 15,
+        "level": 81,
+        "name": "Beelzebub",
+        "ultimate": true,
+        "special": true,
+        "id": 145
+    },
+    {
+        "arcana": 16,
+        "level": 35,
+        "name": "Taotie",
+        "id": 146
+    },
+    {
+        "arcana": 16,
+        "level": 46,
+        "name": "Cu Chulainn",
+        "id": 147
+    },
+    {
+        "arcana": 16,
+        "level": 55,
+        "name": "Abaddon",
+        "id": 148
+    },
+    {
+        "arcana": 16,
+        "level": 62,
+        "name": "Mara",
+        "id": 149
+    },
+    {
+        "arcana": 16,
+        "level": 69,
+        "name": "Masakado",
+        "id": 150
+    },
+    {
+        "arcana": 16,
+        "level": 75,
+        "name": "Yoshitsune",
+        "special": true,
+        "id": 151
+    },
+    {
+        "arcana": 16,
+        "level": 80,
+        "name": "Shiva",
+        "ultimate": true,
+        "special": true,
+        "id": 152
+    },
+    {
+        "arcana": 17,
+        "level": 24,
+        "name": "Kaiwan",
+        "id": 153
+    },
+    {
+        "arcana": 17,
+        "level": 32,
+        "name": "Neko Shogun",
+        "special": true,
+        "id": 154
+    },
+    {
+        "arcana": 17,
+        "level": 43,
+        "name": "Fuu-ki",
+        "id": 155
+    },
+    {
+        "arcana": 17,
+        "level": 50,
+        "name": "Ganesha",
+        "id": 156
+    },
+    {
+        "arcana": 17,
+        "level": 57,
+        "name": "Garuda",
+        "id": 157
+    },
+    {
+        "arcana": 17,
+        "level": 67,
+        "name": "Kartikeya",
+        "id": 158
+    },
+    {
+        "arcana": 17,
+        "level": 75,
+        "name": "Saturnus",
+        "id": 159
+    },
+    {
+        "arcana": 17,
+        "level": 87,
+        "name": "Helel",
+        "ultimate": true,
+        "id": 160
+    },
+    {
+        "arcana": 18,
+        "level": 20,
+        "name": "Andra",
+        "id": 161
+    },
+    {
+        "arcana": 18,
+        "level": 27,
+        "name": "Nozuchi",
+        "id": 162
+    },
+    {
+        "arcana": 18,
+        "level": 34,
+        "name": "Yamata-no-Orochi",
+        "id": 163
+    },
+    {
+        "arcana": 18,
+        "level": 41,
+        "name": "Alraune",
+        "id": 164
+    },
+    {
+        "arcana": 18,
+        "level": 48,
+        "name": "Girimehkala",
+        "id": 165
+    },
+    {
+        "arcana": 18,
+        "level": 57,
+        "name": "Sui-ki",
+        "id": 166
+    },
+    {
+        "arcana": 18,
+        "level": 68,
+        "name": "Seth",
+        "id": 167
+    },
+    {
+        "arcana": 18,
+        "level": 77,
+        "name": "Baal Zebul",
+        "id": 168
+    },
+    {
+        "arcana": 18,
+        "level": 84,
+        "name": "Sandalphon",
+        "ultimate": true,
+        "id": 169
+    },
+    {
+        "arcana": 19,
+        "level": 10,
+        "name": "Cu Sith",
+        "id": 170
+    },
+    {
+        "arcana": 19,
+        "level": 20,
+        "name": "Phoenix",
+        "id": 171
+    },
+    {
+        "arcana": 19,
+        "level": 31,
+        "name": "Gdon",
+        "id": 172
+    },
+    {
+        "arcana": 19,
+        "level": 40,
+        "name": "Yatagarasu",
+        "id": 173
+    },
+    {
+        "arcana": 19,
+        "level": 47,
+        "name": "Narasimha",
+        "id": 174
+    },
+    {
+        "arcana": 19,
+        "level": 53,
+        "name": "Tam Lin",
+        "special": true,
+        "id": 175
+    },
+    {
+        "arcana": 19,
+        "level": 61,
+        "name": "Jatayu",
+        "id": 176
+    },
+    {
+        "arcana": 19,
+        "level": 68,
+        "name": "Horus",
+        "id": 177
+    },
+    {
+        "arcana": 19,
+        "level": 77,
+        "name": "Suparna",
+        "id": 178
+    },
+    {
+        "arcana": 19,
+        "level": 86,
+        "name": "Asura",
+        "ultimate": true,
+        "id": 179
+    },
+    {
+        "arcana": 20,
+        "level": 59,
+        "name": "Anubis",
+        "id": 180
+    },
+    {
+        "arcana": 20,
+        "level": 67,
+        "name": "Trumpeter",
+        "special": true,
+        "id": 181
+    },
+    {
+        "arcana": 20,
+        "level": 72,
+        "name": "Michael",
+        "id": 182
+    },
+    {
+        "arcana": 20,
+        "level": 76,
+        "name": "Satan",
+        "id": 183
+    },
+    {
+        "arcana": 20,
+        "level": 83,
+        "name": "Metatron",
+        "id": 184
+    },
+    {
+        "arcana": 20,
+        "level": 90,
+        "name": "Ardha",
+        "ultimate": true,
+        "special": true,
+        "id": 185
+    },
+    {
+        "arcana": 20,
+        "level": 93,
+        "name": "Lucifer",
+        "ultimate": true,
+        "special": true,
+        "id": 186
+    },
+    {
+        "arcana": 21,
+        "level": 20,
+        "name": "Gurr",
+        "id": 187
+    },
+    {
+        "arcana": 21,
+        "level": 27,
+        "name": "Take-Minakata",
+        "id": 188
+    },
+    {
+        "arcana": 21,
+        "level": 34,
+        "name": "Pale Rider",
+        "id": 189
+    },
+    {
+        "arcana": 21,
+        "level": 40,
+        "name": "Loa",
+        "id": 190
+    },
+    {
+        "arcana": 21,
+        "level": 47,
+        "name": "Baphomet",
+        "id": 191
+    },
+    {
+        "arcana": 21,
+        "level": 55,
+        "name": "Kumbhanda",
+        "id": 192
+    },
+    {
+        "arcana": 21,
+        "level": 62,
+        "name": "Chernobog",
+        "id": 193
+    },
+    {
+        "arcana": 21,
+        "level": 68,
+        "name": "Seiten Taisei",
+        "id": 194
+    },
+    {
+        "arcana": 21,
+        "level": 77,
+        "name": "Magatsu Izanagi",
+        "ultimate": true,
+        "id": 195
+    },
+    {
+        "arcana": 22,
+        "level": 18,
+        "name": "Ame-no-Uzume",
+        "id": 196
+    },
+    {
+        "arcana": 22,
+        "level": 24,
+        "name": "Narcissus",
+        "id": 197
+    },
+    {
+        "arcana": 22,
+        "level": 31,
+        "name": "Sati",
+        "id": 198
+    },
+    {
+        "arcana": 22,
+        "level": 37,
+        "name": "Raja Naga",
+        "id": 199
+    },
+    {
+        "arcana": 22,
+        "level": 44,
+        "name": "Kushinada-Hime",
+        "id": 200
+    },
+    {
+        "arcana": 22,
+        "level": 51,
+        "name": "Quetzalcoatl",
+        "id": 201
+    },
+    {
+        "arcana": 22,
+        "level": 58,
+        "name": "Kingu",
+        "id": 202
+    },
+    {
+        "arcana": 22,
+        "level": 65,
+        "name": "Lakshmi",
+        "id": 203
+    },
+    {
+        "arcana": 22,
+        "level": 74,
+        "name": "Kaguya",
+        "ultimate": true,
+        "id": 204
+    },
+    {
+        "arcana": 23,
+        "level": 91,
+        "name": "Izanagi-no-Okami",
+        "ultimate": true,
+        "special": true,
+        "id": 205
+    }
+]
