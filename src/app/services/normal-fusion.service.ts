@@ -48,12 +48,11 @@ export class NormalFusionService {
   private testFusion(p1: Persona, p2: Persona): boolean {
     if (!this.validate(p1, p2)) return false;
     const fusionLevel = Math.floor((p1.level + p2.level) / 2 + 1);
-    return (
-      this.testFusionSameArcana(p1, p2, fusionLevel) ||
-      this.testFusionDifferentArcana(p1, p2, fusionLevel)
-    );
+    return p1.arcana === p2.arcana
+      ? this.testFusionSameArcana(p1, p2, fusionLevel)
+      : this.testFusionDifferentArcana(p1, p2, fusionLevel);
   }
-  
+
   private validate(p1: Persona, p2: Persona): boolean {
     return this.validateLevels(p1, p2) && this.validateUniqueness(p1, p2);
   }
@@ -71,7 +70,6 @@ export class NormalFusionService {
   }
 
   private testFusionSameArcana(p1: Persona, p2: Persona, fusionLevel: number) {
-    if (p1.arcana !== p2.arcana) return false;
     let result = this.getPreviousRank(p1, p2, fusionLevel);
     return result?.id === this.persona.id;
   }
