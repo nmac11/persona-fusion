@@ -4,19 +4,30 @@ import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 
 @Injectable()
 export class CompendiumService {
+  private arcanaGroups: Persona[][];
+
   constructor(
     @Inject(Array) private compendium: Array<Persona>,
     @Inject(Array) private arcanaChart: Array<string>,
-  ) {}
+  ) {
+    this.buildArcanaGroups();
+  }
+
+  private buildArcanaGroups(): void {
+    this.arcanaGroups = this.compendium.reduce((groups, p) => {
+      const arcana = p.arcana;
+      groups[arcana] = groups[arcana] || [];
+      groups[arcana].push(p);
+      return groups;
+    }, []);
+  }
 
   arcanaName(arcana: number): string {
     return this.arcanaChart[arcana] || 'Unknown';
   }
 
   getAll(arcana: number = null): Array<Persona> {
-    return arcana !== null
-      ? this.compendium.filter((p) => p.arcana === arcana)
-      : this.compendium;
+    return arcana !== null ? this.arcanaGroups[arcana] : this.compendium;
   }
 
   find(name: string): Persona {
@@ -30,13 +41,9 @@ export class CompendiumService {
 
   getNextRankFromLevel(arcana: number, level: number): Persona {
     return (
-      this.compendium
+      this.arcanaGroups[arcana]
         .filter((persona: Persona) => {
-          return (
-            !persona.special &&
-            persona.level >= level &&
-            persona.arcana === arcana
-          );
+          return !persona.special && persona.level >= level;
         })
         .reduce((min, p) => {
           min = min || p;
@@ -47,13 +54,9 @@ export class CompendiumService {
 
   getPreviousRankFromLevel(arcana: number, level: number): Persona {
     return (
-      this.compendium
+      this.arcanaGroups[arcana]
         .filter((persona: Persona) => {
-          return (
-            !persona.special &&
-            persona.level <= level &&
-            persona.arcana === arcana
-          );
+          return !persona.special && persona.level <= level;
         })
         .reduce((max, p) => {
           max = max || p;
@@ -63,7 +66,7 @@ export class CompendiumService {
   }
 
   getHighestRank(arcana: number): Persona {
-    return this.getAll(arcana)
+    return this.arcanaGroups[arcana]
       .filter((p: Persona) => !p.special)
       .reduce((max: Persona, p: Persona) => {
         max = max || p;
@@ -72,7 +75,7 @@ export class CompendiumService {
   }
 
   getLowestRank(arcana: number): Persona {
-    return this.getAll(arcana)
+    return this.arcanaGroups[arcana]
       .filter((p: Persona) => !p.special)
       .reduce((min: Persona, p: Persona) => {
         min = min || p;
@@ -81,13 +84,9 @@ export class CompendiumService {
   }
 
   getNextRank(current: Persona): Persona {
-    return this.compendium
+    return this.arcanaGroups[current.arcana]
       .filter((persona: Persona) => {
-        return (
-          !persona.special &&
-          persona.level > current.level &&
-          persona.arcana === current.arcana
-        );
+        return !persona.special && persona.level > current.level;
       })
       .reduce((min: Persona, p: Persona) => {
         min = min || p;
@@ -96,13 +95,9 @@ export class CompendiumService {
   }
 
   getPreviousRank(current: Persona): Persona {
-    return this.compendium
+    return this.arcanaGroups[current.arcana]
       .filter((persona: Persona) => {
-        return (
-          !persona.special &&
-          persona.level < current.level &&
-          persona.arcana === current.arcana
-        );
+        return !persona.special && persona.level < current.level;
       })
       .reduce((max: Persona, p: Persona) => {
         max = max || p;
