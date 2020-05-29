@@ -10,6 +10,7 @@ import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 export class ListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild('filterField') filterField: ElementRef;
+  @ViewChild('clrFilterFieldBtn') clrFilterFieldBtn: ElementRef;
 
   personae: MatTableDataSource<Persona>;
   displayedColumns: string[] = ['name', 'level', 'arcana'];
@@ -38,5 +39,12 @@ export class ListComponent implements OnInit, AfterViewInit {
 
   applyFilter(key: string = '') {
     this.personae.filter = key.toLowerCase();
+  }
+
+  clearFilter() {
+    this.filterField.nativeElement.value = '';
+    setTimeout(() => {
+      this.personae.filter = '';
+    }, 100);
   }
 }

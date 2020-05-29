@@ -1,10 +1,10 @@
 <mat-form-field style="width: 100%; padding: 8px; box-sizing: border-box;">
   <mat-label>Filter</mat-label>
   <input matInput #filterField >
-  <button mat-button *ngIf="filterField.value" matSuffix mat-icon-button (click)="filterField.value = ''; applyFilter()">
-    <mat-icon>clear</mat-icon>
+  <button mat-button *ngIf="filterField.value" matSuffix mat-icon-button (click)="clearFilter()">
+    <mat-icon color="warn">clear</mat-icon>
   </button>
-   <mat-icon *ngIf="!filterField.value" matSuffix>filter_alt</mat-icon>
+   <mat-icon color="accent" *ngIf="!filterField.value" matSuffix>filter_alt</mat-icon>
 </mat-form-field>
 
 <div style="overflow: auto; width: 100%">
