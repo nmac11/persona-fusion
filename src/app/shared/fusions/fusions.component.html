@@ -3,11 +3,14 @@
     <mat-card-title>{{persona.name}}</mat-card-title>
     <mat-card-subtitle>{{arcanaName(persona.arcana)}} / Level {{persona.level}}</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-actions>
+  <mat-chip-list>
+    <mat-chip *ngIf="persona.special" color="warn" selected>Special fusion</mat-chip>
+    <mat-chip *ngIf="persona.ultimate" color="accent" selected>Ultimate Persona</mat-chip>
+    <mat-chip *ngIf="persona.keyItem">Key item</mat-chip>
+  </mat-chip-list>
+  <mat-card-content>
     <a routerLink="./" mat-button>NORMAL</a>
     <a routerLink="./triangle" mat-button>TRIANGLE</a>
-  </mat-card-actions>
-  <mat-card-content>
     <router-outlet></router-outlet>
   </mat-card-content>
 </mat-card>
