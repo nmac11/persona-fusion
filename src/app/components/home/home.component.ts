@@ -6,6 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  links = [{
+    title: 'Persona 3 Portable',
+    url: '/p3p',
+    platform: 'PSP',
+  },{
+    title: 'Persona 3 FES',
+    url: '/p3fes',
+    platform: 'PS2',
+  },{
+    title: 'Persona 4 Golden',
+    url: '/p4g',
+    platform: 'PS Vita',
+  }];
+
   constructor() {}
 
   ngOnInit(): void {}

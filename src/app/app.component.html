@@ -1,2 +1,31 @@
-<h1><a routerLink="/">App Module</a></h1>
-<router-outlet></router-outlet>
+<div [class.example-is-mobile]="false" style="display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;">
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1>FUSION TOOL</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container style="flex: 1">
+    <mat-sidenav #snav mode="over" fixedInViewport="true" style="min-width: 256px; padding: 16px">
+
+      <mat-nav-list>
+        <h2 class="mat-h2">Navigation</h2>
+        <a mat-list-item *ngFor="let nav of navLinks"
+           [routerLink]="nav.url"
+           routerLinkActive="active-nav-link"
+           [routerLinkActiveOptions]="nav.url === '' ? { exact: true } : {}"
+           (click)="snav.close()">{{nav.title}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content style="height:100%">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

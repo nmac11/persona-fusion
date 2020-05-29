@@ -1,14 +1,20 @@
-<div *ngIf="persona; else noPersona">
-  <h3>{{ persona?.name }}</h3>
-  Level {{ persona?.level }}
-  <small>{{ arcanaName(persona?.arcana) }}</small>
-  <ul>
-    <li><a routerLink="./triangle">Triangle spread</a></li>
-    <li><a routerLink="./">Normal</a></li>
-  </ul>
-</div>
-<ng-template #noPersona>
-  Persona Not Found
-</ng-template>
+<mat-card *ngIf="persona; else noPersona">
+  <mat-card-header>
+    <mat-card-title>{{persona.name}}</mat-card-title>
+    <mat-card-subtitle>{{arcanaName(persona.arcana)}} / Level {{persona.level}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+    <a routerLink="./" mat-button>NORMAL</a>
+    <a routerLink="./triangle" mat-button>TRIANGLE</a>
+  </mat-card-actions>
+  <mat-card-content>
+    <router-outlet></router-outlet>
+  </mat-card-content>
+</mat-card>
 
-<router-outlet></router-outlet>
+<ng-template #noPersona>
+  <p>
+    Persona not found.
+  </p>
+  <a routerLink="../.." mat-button color="accent">GO BACK</a>
+</ng-template>

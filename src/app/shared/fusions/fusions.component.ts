@@ -2,6 +2,7 @@ import { OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CompendiumService } from '../../services/compendium.service';
 import { Persona } from '../../models/persona';
+import { Observer, Observable } from 'rxjs';
 
 export class FusionsComponent implements OnInit {
   persona: Persona;
