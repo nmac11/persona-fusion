@@ -1,12 +1,15 @@
-import { OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { CompendiumService } from '../../services/compendium.service';
 import { Persona } from '../../models/persona';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { fromEvent } from 'rxjs';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
 export class ListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
+  @ViewChild('filterField') filterField: ElementRef;
 
   personae: MatTableDataSource<Persona>;
   displayedColumns: string[] = ['name', 'level', 'arcana'];
@@ -21,6 +24,12 @@ export class ListComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.personae.sort = this.sort;
+
+    fromEvent(this.filterField.nativeElement, 'keyup')
+      .pipe(debounceTime(200), distinctUntilChanged())
+      .subscribe((k: KeyboardEvent) =>
+        this.applyFilter(this.filterField.nativeElement.value),
+      );
   }
 
   arcanaName(arcana: number) {
