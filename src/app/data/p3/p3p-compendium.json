@@ -79,7 +79,7 @@
         "name": "Hua Po",
         "level": 20,
         "arcana": 1,
-        "request": true,
+        "keyItem": true,
         "id": 13
     },
     {
@@ -227,7 +227,7 @@
         "name": "King Frost",
         "level": 30,
         "arcana": 4,
-        "request": true,
+        "keyItem": true,
         "id": 37
     },
     {
@@ -283,7 +283,7 @@
         "name": "Thoth",
         "level": 41,
         "arcana": 5,
-        "request": true,
+        "keyItem": true,
         "id": 46
     },
     {
@@ -396,7 +396,7 @@
         "name": "Nata Taishi",
         "level": 37,
         "arcana": 7,
-        "request": true,
+        "keyItem": true,
         "id": 64
     },
     {
@@ -501,7 +501,7 @@
         "name": "Nebiros",
         "level": 50,
         "arcana": 9,
-        "request": true,
+        "keyItem": true,
         "id": 81
     },
     {
@@ -528,7 +528,7 @@
         "name": "Empusa",
         "level": 23,
         "arcana": 10,
-        "request": true,
+        "keyItem": true,
         "id": 85
     },
     {
@@ -652,7 +652,7 @@
         "name": "Hell Biker",
         "level": 60,
         "arcana": 12,
-        "request": true,
+        "keyItem": true,
         "id": 105
     },
     {
@@ -673,7 +673,7 @@
         "name": "Pale Rider",
         "level": 24,
         "arcana": 13,
-        "request": true,
+        "keyItem": true,
         "id": 108
     },
     {
@@ -798,7 +798,7 @@
         "name": "Lilith",
         "level": 61,
         "arcana": 15,
-        "request": true,
+        "keyItem": true,
         "special": true,
         "id": 128
     },
@@ -844,7 +844,7 @@
         "name": "Masakado",
         "level": 73,
         "arcana": 16,
-        "request": true,
+        "keyItem": true,
         "special": true,
         "id": 135
     },
@@ -909,7 +909,7 @@
         "name": "Kartikeya",
         "level": 70,
         "arcana": 17,
-        "request": true,
+        "keyItem": true,
         "id": 145
     },
     {
