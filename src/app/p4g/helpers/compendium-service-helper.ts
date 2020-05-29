@@ -2,9 +2,10 @@ import { InjectionToken, Provider } from '@angular/core';
 import { CompendiumService } from '../../services/compendium.service';
 import compendium from '../../data/p4/p4g-compendium.json';
 import arcana from '../../data/p4/p4g-arcana.json';
+import specialFusions from '../../data/p4/p4g-special-fusions.json';
 
 function p4gCompendiumFactory(): CompendiumService {
-  return new CompendiumService(compendium, arcana);
+  return new CompendiumService(compendium, arcana, specialFusions);
 }
 
 export const P4G_COMPENDIUM = new InjectionToken<CompendiumService>(

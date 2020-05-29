@@ -8,7 +8,7 @@
     <mat-chip *ngIf="persona.ultimate" color="accent" selected>Ultimate Persona</mat-chip>
     <mat-chip *ngIf="persona.keyItem">Key item</mat-chip>
   </mat-chip-list>
-  <mat-card-content>
+  <mat-card-content *ngIf="!persona.special; else specialFusionsTemplate">
     <a routerLink="./" mat-button>NORMAL</a>
     <a routerLink="./triangle" mat-button>TRIANGLE</a>
     <router-outlet></router-outlet>
@@ -20,4 +20,11 @@
     Persona not found.
   </p>
   <a routerLink="../.." mat-button color="accent">GO BACK</a>
+</ng-template>
+
+<ng-template #specialFusionsTemplate>
+  <mat-chip-list>
+    <mat-chip *ngFor="let p of specialFusions" color="warn" routerLink="../../fusions/{{p.name | lowercase}}" selected>{{p.name}}
+    </mat-chip>
+  </mat-chip-list>
 </ng-template>

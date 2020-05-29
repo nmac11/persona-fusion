@@ -6,6 +6,7 @@ import { Observer, Observable } from 'rxjs';
 
 export class FusionsComponent implements OnInit {
   persona: Persona;
+  specialFusions: Persona[] = []
 
   constructor(
     protected route: ActivatedRoute,
@@ -15,6 +16,11 @@ export class FusionsComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
+      if (this.persona?.special) {
+        this.specialFusions = this.compendiumService.getSpecialFusions(
+          this.persona,
+        );
+      }
     });
   }
 
