@@ -1,36 +1,74 @@
-<mat-card *ngIf="persona; else noPersona">
-  <mat-card-header>
-    <mat-card-title>{{persona.name}}</mat-card-title>
-    <mat-card-subtitle>{{arcanaName(persona.arcana)}} / Level {{persona.level}}</mat-card-subtitle>
-  </mat-card-header>
-  <mat-chip-list>
-    <mat-chip *ngIf="persona.special" color="warn" selected>Special fusion</mat-chip>
-    <mat-chip *ngIf="persona.specialCondition" color="accent" selected>{{persona.specialCondition}}</mat-chip>
-    <mat-chip *ngIf="persona.ultimate" color="accent" selected>Ultimate Persona</mat-chip>
-    <mat-chip *ngIf="persona.keyItem">Key item</mat-chip>
-  </mat-chip-list>
-  <mat-card-content *ngIf="!persona.special; else specialFusionsTemplate">
-    <a routerLink="./" mat-button>NORMAL</a>
-    <a routerLink="./triangle" mat-button>TRIANGLE</a>
-    
-  </mat-card-content>
-</mat-card>
+<div *ngIf="persona; else noPersona">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ persona.name }}</mat-card-title>
+      <mat-card-subtitle
+        >{{ arcanaName(persona.arcana) }} / Level
+        {{ persona.level }}</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-chip-list>
+      <mat-chip *ngIf="persona.special" color="warn" selected
+        >Special fusion</mat-chip>
+      <mat-chip *ngIf="persona.specialCondition" color="accent" selected>{{
+        persona.specialCondition
+      }}</mat-chip>
+      <mat-chip *ngIf="persona.ultimate" color="accent" selected
+        >Ultimate Persona</mat-chip
+      >
+      <mat-chip *ngIf="persona.keyItem">Key item</mat-chip>
+    </mat-chip-list>
+    <mat-card-content> </mat-card-content>
+  </mat-card>
 
-
-
-<router-outlet></router-outlet>
-
+  <div *ngIf="!persona.special; else specialFusionsTemplate">
+    <div>
+      <a routerLink="./" mat-button>NORMAL</a>
+      <a routerLink="./triangle" mat-button>TRIANGLE</a>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
 <ng-template #noPersona>
-  <p>
+  <p class="mat-body-1">
     Persona not found.
   </p>
   <a routerLink="../.." mat-button color="accent">GO BACK</a>
 </ng-template>
 
 <ng-template #specialFusionsTemplate>
-  <mat-chip-list>
-    <mat-chip *ngFor="let p of specialFusions" color="warn" routerLink="../../fusions/{{p.name | lowercase}}" selected>{{p.name}}
-    </mat-chip>
-  </mat-chip-list>
+  <mat-card class="mat-elevation-z2" style="margin: 8px 0">
+    <h2 class="mat-h3">Special Fusion</h2>
+    <a
+      mat-button
+      *ngFor="let persona of specialFusions"
+      routerLink="..//{{ persona.name | lowercase }}"
+      style="padding: 8px; margin-bottom: 0px;"
+    >
+      <h3
+        class="mat-h3"
+        style="
+          white-space: nowrap;
+          margin: 0;
+          padding: 0;
+          line-height: 1rem;
+          font-size: 16px;
+        "
+      >
+        {{ persona.name }}
+      </h3>
+      <p
+        class="mat-caption"
+        style="
+          white-space: nowrap;
+          margin: 0;
+          line-height: 1rem;
+          font-size: 12px;
+        "
+      >
+        {{ arcanaName(persona.arcana) }} / {{ persona.level }}
+      </p>
+    </a>
+  </mat-card>
 </ng-template>
