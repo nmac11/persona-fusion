@@ -2,7 +2,6 @@ import { OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { CompendiumService } from '../../services/compendium.service';
 import { Persona } from '../../models/persona';
 import { MatSort } from '@angular/material/sort';
-import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
