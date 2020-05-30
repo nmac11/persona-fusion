@@ -55,6 +55,7 @@
         "level": 90,
         "arcana": 0,
         "special": true,
+        "specialCondition": "Max all social links",
         "id": 9
     },
     {

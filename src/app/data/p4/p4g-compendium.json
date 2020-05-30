@@ -1267,8 +1267,8 @@
         "arcana": 23,
         "level": 91,
         "name": "Izanagi-no-Okami",
-        "ultimate": true,
         "special": true,
+        "specialCondition": "Unlock true ending",
         "id": 205
     }
 ]

@@ -6,4 +6,5 @@ export class Persona {
   ultimate?: boolean;
   special?: boolean;
   keyItem?: boolean;
+  specialCondition?: string;
 }
