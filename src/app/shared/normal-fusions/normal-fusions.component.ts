@@ -31,4 +31,8 @@ export class NormalFusionsComponent implements OnInit {
       ).map((id) => this.compendiumService.findById(id));
     }, 0);
   }
+
+  arcanaName(arcana: number) {
+    return this.compendiumService.arcanaName(arcana);
+  }
 }

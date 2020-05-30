@@ -1,24 +1,67 @@
 <div *ngIf="fusions?.length; else emptyList">
-  <mat-chip-list>
-    <mat-chip *ngFor="let persona of fusionPersonae" routerLink="../../{{ persona.name | lowercase }}">
-      {{ persona.name}}
+  <mat-chip-list style="margin: 8px;">
+    <mat-chip
+      *ngFor="let persona of fusionPersonae"
+      routerLink="../../{{ persona.name | lowercase }}"
+    >
+      {{ persona.name }}
     </mat-chip>
   </mat-chip-list>
-<mat-list>
-  <div mat-subheader>Fusions</div>
-  <mat-list-item *ngFor="let fusion of fusions">
-    <mat-icon mat-list-icon>style</mat-icon>
-    <div mat-line>
-      <mat-chip-list aria-label="Fish selection">
-        <mat-chip *ngFor="let persona of fusion" routerLink="../../{{ persona.name | lowercase }}">
-          {{persona.name}}
-        </mat-chip>
-      </mat-chip-list>
-
-    </div>
-  </mat-list-item>
-</mat-list>
 </div>
 <ng-template #emptyList>
   No results.
 </ng-template>
+
+<div
+  style="
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  "
+>
+  <div
+    *ngFor="let fusion of fusions"
+    style="
+      display: flex;
+      flex-direction: column;
+      padding: 4px;
+      margin: 0 4px 4px 0;
+      flex: 0;
+    "
+    class="mat-elevation-z2"
+  >
+    <a
+      mat-button
+      *ngFor="let persona of fusion"
+      routerLink="../../{{ persona.name | lowercase }}"
+      style="padding: 4px; margin-bottom: 0px;"
+    >
+      <h3
+        class="mat-h3"
+        style="
+          white-space: nowrap;
+          margin: 0;
+          padding: 0;
+          line-height: 1rem;
+          font-size: 14px;
+        "
+      >
+        {{ persona.name }}
+      </h3>
+      <p
+        class="mat-caption"
+        style="
+          white-space: nowrap;
+          margin: 0;
+          line-height: 1rem;
+          font-size: 10px;
+        "
+      >
+        {{ arcanaName(persona.arcana) }} / {{ persona.level }}
+      </p>
+    </a>
+  </div>
+</div>

@@ -12,9 +12,14 @@
   <mat-card-content *ngIf="!persona.special; else specialFusionsTemplate">
     <a routerLink="./" mat-button>NORMAL</a>
     <a routerLink="./triangle" mat-button>TRIANGLE</a>
-    <router-outlet></router-outlet>
+    
   </mat-card-content>
 </mat-card>
+
+
+
+<router-outlet></router-outlet>
+
 
 <ng-template #noPersona>
   <p>
