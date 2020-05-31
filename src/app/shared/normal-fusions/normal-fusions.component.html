@@ -1,12 +1,30 @@
-<div *ngIf="fusions?.length; else emptyList">
-  <mat-chip-list style="margin: 8px;">
+<div >
+  <!-- <mat-chip-list style="margin: 8px;">
     <mat-chip
       *ngFor="let persona of fusionPersonae"
       routerLink="../../{{ persona.name | lowercase }}"
     >
       {{ persona.name }}
     </mat-chip>
-  </mat-chip-list>
+  </mat-chip-list> -->
+
+
+  <div style="margin: 24px 16px;">
+    <mat-form-field style="display: flex; flex-direction: column;">
+      <mat-chip-list #tagList aria-label="Filter">
+        <mat-chip *ngFor="let tag of filterNames; let i = index" (removed)="removeFilter(i)">
+          {{tag}}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+        <input placeholder="Filter"
+               [matChipInputFor]="tagList"
+               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+               matChipInputAddOnBlur="true"
+               (matChipInputTokenEnd)="addFilter($event)">
+      </mat-chip-list>
+    </mat-form-field>
+  </div>
+
 </div>
 <ng-template #emptyList>
   No results.
