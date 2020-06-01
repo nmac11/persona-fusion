@@ -1,6 +1,6 @@
 <mat-form-field style="width: 100%; padding: 8px; box-sizing: border-box;">
   <mat-label>Filter</mat-label>
-  <input matInput #filterField >
+  <input matInput #filterField (keydown.enter)="$event.target.blur();false">
   <button mat-button *ngIf="filterField.value" matSuffix mat-icon-button (click)="clearFilter()">
     <mat-icon color="warn">clear</mat-icon>
   </button>
