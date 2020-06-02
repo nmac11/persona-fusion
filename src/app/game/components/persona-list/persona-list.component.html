@@ -1,0 +1,30 @@
+<mat-form-field style="width: 100%; padding: 8px; box-sizing: border-box;">
+  <mat-label>Filter</mat-label>
+  <input matInput #filterField (keydown.enter)="$event.target.blur();false">
+  <button mat-button *ngIf="filterField.value" matSuffix mat-icon-button (click)="clearFilter()">
+    <mat-icon color="warn">clear</mat-icon>
+  </button>
+   <mat-icon color="accent" *ngIf="!filterField.value" matSuffix>filter_alt</mat-icon>
+</mat-form-field>
+
+<div style="overflow: auto; width: 100%">
+  <table mat-table [dataSource]="personae" class="mat-elevation-z8" style="width: 100%;"
+  matSort >
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+      <td mat-cell *matCellDef="let persona">
+        <a mat-button [color]="persona.special ? 'warn' : 'primary'" routerLink="persona/{{persona.name | lowercase}}">{{persona.name}} </a>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="level">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Level </th>
+      <td mat-cell *matCellDef="let persona"> {{persona.level}} </td>
+    </ng-container>
+    <ng-container matColumnDef="arcana">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Arcana </th>
+      <td mat-cell *matCellDef="let persona"> {{arcanaName(persona.arcana)}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

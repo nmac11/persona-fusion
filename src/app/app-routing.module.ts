@@ -1,22 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { GameComponent } from './game/game.component';
+import { PersonaListComponent } from './game/components/persona-list/persona-list.component';
+import { PersonaComponent } from './game/components/persona/persona.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'p3p',
-    loadChildren: () => import('./p3p/p3p.module').then((m) => m.P3PModule),
-  },
-  {
-    path: 'p3fes',
-    loadChildren: () =>
-      import('./p3fes/p3fes.module').then((m) => m.P3FESModule),
-  },
-  {
-    path: 'p4g',
-    loadChildren: () =>
-      import('./p4g/p4g.module').then((m) => m.P4GModule),
+    path: ':game',
+    component: GameComponent,
+    children: [
+      {
+        path: '',
+        component: PersonaListComponent,
+      },
+      {
+        path: 'persona/:persona_name',
+        component: PersonaComponent,
+      },
+    ],
   },
 ];
 

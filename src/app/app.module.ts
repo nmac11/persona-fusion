@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { GameModule } from './game/game.module';
+
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -14,8 +16,8 @@ import { MaterialModule } from './material/material.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    GameModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
