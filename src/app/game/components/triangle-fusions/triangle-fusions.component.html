@@ -1,0 +1,22 @@
+<div
+  *ngIf="fusions?.length; else emptyList"
+  style="
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 0 4px 4px 0;
+    flex: 0;
+  "
+>
+  <mat-chip-list>
+    <mat-chip
+      *ngFor="let persona of fusionPersonae"
+      routerLink="../../{{ persona.name | lowercase }}"
+    >
+      {{ persona.name }}
+    </mat-chip>
+  </mat-chip-list>
+</div>
+<ng-template #emptyList>
+  No results.
+</ng-template>

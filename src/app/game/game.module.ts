@@ -12,6 +12,7 @@ import { p3fesFusionChartProvider } from '../tokens/p3fes/fusion-chart-service-t
 import { p4gFusionChartProvider } from '../tokens/p4g/fusion-chart-service-token';
 import { PersonaComponent } from './components/persona/persona.component';
 import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
+import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NormalFusionsComponent } from './components/normal-fusions/normal-fusio
     PersonaListComponent,
     PersonaComponent,
     NormalFusionsComponent,
+    TriangleFusionsComponent,
   ],
   imports: [CommonModule, MaterialModule, RouterModule],
   providers: [
