@@ -9,7 +9,8 @@
     </mat-card-header>
     <mat-chip-list>
       <mat-chip *ngIf="persona.special" color="warn" selected
-        >Special fusion</mat-chip>
+        >Special fusion</mat-chip
+      >
       <mat-chip *ngIf="persona.specialCondition" color="accent" selected>{{
         persona.specialCondition
       }}</mat-chip>
@@ -21,8 +22,8 @@
     <mat-card-content></mat-card-content>
   </mat-card>
 
-  <div *ngIf="persona.special">
-    <mat-card class="mat-elevation-z2" style="margin: 8px 0">
+  <div *ngIf="persona.special; else nonSpecial">
+    <mat-card class="mat-elevation-z2" style="margin: 8px 0;">
       <h2 class="mat-h3">Special Fusion</h2>
       <a
         mat-button
@@ -63,4 +64,21 @@
     Persona not found.
   </p>
   <a routerLink="../.." mat-button color="accent">GO BACK</a>
+</ng-template>
+
+<ng-template #nonSpecial>
+  <mat-card class="mat-elevation-z2" style="margin: 8px 0;">
+    <mat-tab-group>
+      <mat-tab label="NORMAL">
+        <ng-template matTabContent>
+          <game-normal-fusions [persona]="persona"></game-normal-fusions>
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="TRIANGLE">
+        <ng-template matTabContent>
+          Content 2 - Loaded: {{ getTimeLoaded(2) | date: 'medium' }}
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
 </ng-template>

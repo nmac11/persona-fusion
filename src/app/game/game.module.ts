@@ -11,9 +11,15 @@ import { p3pFusionChartProvider } from '../tokens/p3p/fusion-chart-service-token
 import { p3fesFusionChartProvider } from '../tokens/p3fes/fusion-chart-service-token';
 import { p4gFusionChartProvider } from '../tokens/p4g/fusion-chart-service-token';
 import { PersonaComponent } from './components/persona/persona.component';
+import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
 
 @NgModule({
-  declarations: [GameComponent, PersonaListComponent, PersonaComponent],
+  declarations: [
+    GameComponent,
+    PersonaListComponent,
+    PersonaComponent,
+    NormalFusionsComponent,
+  ],
   imports: [CommonModule, MaterialModule, RouterModule],
   providers: [
     p3pCompendiumProvider,

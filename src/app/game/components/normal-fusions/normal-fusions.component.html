@@ -1,0 +1,75 @@
+<div>
+  <div style="margin: 24px 16px;">
+    <mat-form-field style="display: flex; flex-direction: column;">
+      <mat-chip-list #tagList aria-label="Filter">
+        <mat-chip *ngFor="let tag of filterNames; let i = index" (removed)="removeFilter(i)">
+          {{tag}}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+        <input placeholder="Filter"
+               [matChipInputFor]="tagList"
+               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+               matChipInputAddOnBlur="true"
+               (matChipInputTokenEnd)="addFilter($event)">
+      </mat-chip-list>
+    </mat-form-field>
+  </div>
+
+</div>
+<ng-template #emptyList>
+  No results.
+</ng-template>
+
+<div
+  style="
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  "
+>
+  <div
+    *ngFor="let fusion of fusions"
+    style="
+      display: flex;
+      flex-direction: column;
+      padding: 4px;
+      margin: 0 4px 4px 0;
+      flex: 0;
+    "
+    class="mat-elevation-z2"
+  >
+    <a
+      mat-button
+      *ngFor="let persona of fusion"
+      routerLink="../{{ persona.name | lowercase }}"
+      style="padding: 4px; margin-bottom: 0px;"
+    >
+      <h3
+        class="mat-h3"
+        style="
+          white-space: nowrap;
+          margin: 0;
+          padding: 0;
+          line-height: 1rem;
+          font-size: 14px;
+        "
+      >
+        {{ persona.name }}
+      </h3>
+      <p
+        class="mat-caption"
+        style="
+          white-space: nowrap;
+          margin: 0;
+          line-height: 1rem;
+          font-size: 10px;
+        "
+      >
+        {{ arcanaName(persona.arcana) }} / {{ persona.level }}
+      </p>
+    </a>
+  </div>
+</div>

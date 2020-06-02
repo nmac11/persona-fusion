@@ -1,5 +1,5 @@
 import { OnInit, Component, Injector } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { Observer, Observable } from 'rxjs';
@@ -15,7 +15,8 @@ export class PersonaComponent implements OnInit {
   specialFusions: Persona[] = [];
   compendiumService: CompendiumService;
 
-  constructor(private route: ActivatedRoute, private injector: Injector) {
+  constructor(private route: ActivatedRoute, private router: Router, private injector: Injector) {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     const game = this.route.parent.snapshot.params.game;
     this.compendiumService = this.injector.get<CompendiumService>(
       serviceToken[game].compendium,
@@ -35,5 +36,16 @@ export class PersonaComponent implements OnInit {
 
   arcanaName(arcana: number): string {
     return this.compendiumService.arcanaName(arcana);
+  }
+
+
+  tabLoadTimes: Date[] = [];
+
+  getTimeLoaded(index: number) {
+    if (!this.tabLoadTimes[index]) {
+      this.tabLoadTimes[index] = new Date();
+    }
+
+    return this.tabLoadTimes[index];
   }
 }
