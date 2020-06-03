@@ -23,38 +23,43 @@
   </mat-card>
 
   <div *ngIf="persona.special; else nonSpecial">
-    <mat-card class="mat-elevation-z2" style="margin: 8px 0;">
-      <h2 class="mat-h3">Special Fusion</h2>
-      <a
-        mat-button
-        *ngFor="let persona of specialFusions"
-        routerLink="..//{{ persona.name | lowercase }}"
-        style="padding: 8px; margin-bottom: 0px;"
-      >
-        <h3
-          class="mat-h3"
-          style="
-            white-space: nowrap;
-            margin: 0;
-            padding: 0;
-            line-height: 1rem;
-            font-size: 16px;
-          "
-        >
-          {{ persona.name }}
-        </h3>
-        <p
-          class="mat-caption"
-          style="
-            white-space: nowrap;
-            margin: 0;
-            line-height: 1rem;
-            font-size: 12px;
-          "
-        >
-          {{ arcanaName(persona.arcana) }} / {{ persona.level }}
-        </p>
-      </a>
+    <mat-card class="mat-elevation-z2" id="special-fusions-container" style="margin: 8px 0;">
+      <mat-tab-group>
+        <mat-tab label="SPECIAL FUSION">
+          <a
+            mat-button
+            *ngFor="let persona of specialFusions"
+            routerLink="..//{{ persona.name | lowercase }}"
+            style="padding: 8px; margin-bottom: 0px;"
+          >
+            <h3
+              class="mat-h3"
+              style="
+                white-space: nowrap;
+                margin: 0;
+                padding: 0;
+                line-height: 1rem;
+                font-size: 16px;
+              "
+            >
+              {{ persona.name }}
+            </h3>
+            <p
+              class="mat-caption"
+              style="
+                white-space: nowrap;
+                margin: 0;
+                line-height: 1rem;
+                font-size: 12px;
+              "
+            >
+              {{ arcanaName(persona.arcana) }} / {{ persona.level }}
+            </p>
+          </a>
+        </mat-tab>
+      </mat-tab-group>
+
+
     </mat-card>
   </div>
 </div>
