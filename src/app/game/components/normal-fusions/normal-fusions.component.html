@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="fusionPersonae.length; else emptyList">
   <div style="margin: 24px 16px;">
     <mat-form-field style="display: flex; flex-direction: column;">
       <mat-chip-list #tagList aria-label="Filter">
@@ -17,7 +17,9 @@
 
 </div>
 <ng-template #emptyList>
-  No results.
+  <div style="padding: 16px;">
+    <h3 class="mat-h3">No results.</h3>
+  </div>
 </ng-template>
 
 <div
