@@ -22,6 +22,7 @@ export class TriangleFusionsComponent implements OnInit {
   fusions: Persona[][];
   fusionPersonae: Persona[];
   fusionService: TriangleFusionService;
+  filters = [];
   compendiumService: CompendiumService;
   @Input('persona') persona: Persona;
 
@@ -45,5 +46,23 @@ export class TriangleFusionsComponent implements OnInit {
         this.fusionService.fusionPersonaIds,
       ).map((id) => this.compendiumService.findById(id));
     }, 0);
+  }
+
+  arcanaName(arcana: number): string {
+    return this.compendiumService.arcanaName(arcana);
+  }
+
+  filter(): void {
+    this.fusionPersonae = Array.from(
+      this.fusions
+        .filter((fusion) =>
+          this.filters.every((filter) => fusion.some((p) => p.id === filter)),
+        )
+        .reduce((results, fusion) => {
+          const ids = fusion.map((p) => p.id);
+          ids.forEach((id) => results.add(id));
+          return results;
+        }, new Set()),
+    ).map((n: number) => this.compendiumService.findById(n));
   }
 }

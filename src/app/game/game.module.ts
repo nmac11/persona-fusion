@@ -13,6 +13,7 @@ import { p4gFusionChartProvider } from '../tokens/p4g/fusion-chart-service-token
 import { PersonaComponent } from './components/persona/persona.component';
 import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
 import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { TriangleFusionsComponent } from './components/triangle-fusions/triangle
     NormalFusionsComponent,
     TriangleFusionsComponent,
   ],
-  imports: [CommonModule, MaterialModule, RouterModule],
+  imports: [CommonModule, MaterialModule, RouterModule, FormsModule],
   providers: [
     p3pCompendiumProvider,
     p3fesCompendiumProvider,
