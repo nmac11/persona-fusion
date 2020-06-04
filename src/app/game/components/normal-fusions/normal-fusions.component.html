@@ -1,9 +1,9 @@
-<div *ngIf="fusions?.length || filterNames?.length; else emptyList">
+<div *ngIf="fusions?.length || nameFilters?.length; else emptyList">
   <div style="margin: 24px 4px;">
     <mat-form-field appearance="fill" style="display: flex; flex-direction: column;">
       <mat-label>Filter</mat-label>
       <mat-chip-list #tagList aria-label="Filter">
-        <mat-chip *ngFor="let tag of filterNames; let i = index" (removed)="removeFilter(i)">
+        <mat-chip *ngFor="let tag of nameFilters; let i = index" (removed)="removeFilter(i)">
           {{tag}}
           <mat-icon matChipRemove>cancel</mat-icon>
         </mat-chip>

@@ -26,7 +26,7 @@ export class NormalFusionsComponent implements OnInit {
   private fusionService: NormalFusionService;
   @Input('persona') persona: Persona;
   fusions: Persona[][];
-  filterNames: string[] = [];
+  nameFilters: string[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -58,7 +58,7 @@ export class NormalFusionsComponent implements OnInit {
     const value: string = event.value.replace(/[^A-Za-z\'-\s]/g, '');
 
     if ((value || '').trim()) {
-      this.filterNames.push(value);
+      this.nameFilters.push(value);
       this.filter();
     }
 
@@ -66,16 +66,16 @@ export class NormalFusionsComponent implements OnInit {
   }
 
   removeFilter(index: number) {
-    this.filterNames.splice(index, 1);
+    this.nameFilters.splice(index, 1);
     this.filter();
   }
 
   private filter() {
-    this.fusions = !this.filterNames.length
+    this.fusions = !this.nameFilters.length
       ? this.fusionService.list
       : this.fusionService.list.filter((pair) =>
           pair.some((persona) =>
-            this.filterNames.some((filterName) =>
+            this.nameFilters.some((filterName) =>
               partialMatchRegExp(filterName).test(persona.name),
             ),
           ),
