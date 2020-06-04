@@ -20,9 +20,9 @@ import { serviceToken } from '../../../helpers/service-token-helper';
 })
 export class TriangleFusionsComponent implements OnInit {
   fusions: Persona[][];
-  fusionPersonae: Persona[];
+  availablePersonae: Persona[] = [];
   fusionService: TriangleFusionService;
-  filters = [];
+  selectedPersonae: Persona[] = [];
   compendiumService: CompendiumService;
   @Input('persona') persona: Persona;
 
@@ -42,7 +42,9 @@ export class TriangleFusionsComponent implements OnInit {
         ? []
         : this.fusionService.findFusions(this.persona);
 
-      this.fusionPersonae = this.fusionService.fusionPersonae();
+      this.availablePersonae = this.fusionService
+        .fusionPersonae()
+        .sort((a, b) => a.level - b.level);
     }, 0);
   }
 
@@ -50,17 +52,42 @@ export class TriangleFusionsComponent implements OnInit {
     return this.compendiumService.arcanaName(arcana);
   }
 
-  filter(): void {
-    this.fusionPersonae = Array.from(
-      this.fusions
-        .filter((fusion) =>
-          this.filters.every((filter) => fusion.some((p) => p.id === filter)),
-        )
-        .reduce((results, fusion) => {
-          const ids = fusion.map((p) => p.id);
-          ids.forEach((id) => results.add(id));
-          return results;
-        }, new Set()),
-    ).map((n: number) => this.compendiumService.findById(n));
+  addFilter(persona: Persona): void {
+    if (!this.selectedPersonae.some((p) => p.id === persona.id))
+      this.selectedPersonae.push(persona);
+    this.filter();
   }
+
+  removeFilter(persona: Persona): void {
+    const index = this.selectedPersonae.map((p) => p.id).indexOf(persona.id);
+    this.selectedPersonae.splice(index, 1);
+    this.filter();
+  }
+
+  filter(): void {
+    this.availablePersonae = this.fusions
+      .filter(this.includesEveryFilterPersona)
+      .reduce(this.availablePersonaeReducer, new Array<Persona>())
+      .sort((a, b) => a.level - b.level);
+  }
+
+  private includesEveryFilterPersona: (fusion: Persona[]) => boolean = (
+    fusion,
+  ) =>
+    this.selectedPersonae.every((filter) =>
+      fusion.some((p) => p.id === filter.id),
+    );
+
+  private availablePersonaeReducer: (
+    results: Persona[],
+    fusion: Persona[],
+  ) => Persona[] = (results, fusion) => {
+    const toAdd: Persona[] = fusion.filter(
+      (fp) =>
+        !results.some((p) => fp.id === p.id) &&
+        !this.selectedPersonae.some((p) => fp.id === p.id),
+    );
+    results.push(...toAdd);
+    return results;
+  };
 }
