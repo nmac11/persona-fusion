@@ -1,4 +1,6 @@
 import { Component, OnInit, Injector, Input } from '@angular/core';
+import { COMMA, ENTER } from '@angular/cdk/keycodes';
+import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
 import { ActivatedRoute } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
@@ -19,12 +21,14 @@ import { serviceToken } from '../../../helpers/service-token-helper';
   ],
 })
 export class TriangleFusionsComponent implements OnInit {
+  readonly separatorKeysCodes: number[] = [ENTER, COMMA];
   fusions: Persona[][];
   availablePersonae: Persona[] = [];
   fusionService: TriangleFusionService;
   selectedPersonae: Persona[] = [];
   compendiumService: CompendiumService;
   @Input('persona') persona: Persona;
+  nameFilters: string[] = [];
 
   constructor(private route: ActivatedRoute, private injector: Injector) {
     const game = this.route.parent.snapshot.params.game;
@@ -64,10 +68,32 @@ export class TriangleFusionsComponent implements OnInit {
     this.filter();
   }
 
+  addNameFilter(event: any) {
+    const input: HTMLInputElement = event.input;
+    const value: string = event.value.replace(/[^A-Za-z\'-\s]/g, '');
+
+    if ((value || '').trim()) {
+      this.nameFilters.push(value);
+      this.filter();
+    }
+
+    if (input) input.value = '';
+  }
+
+  removeNameFilter(index: number) {
+    this.nameFilters.splice(index, 1);
+    this.filter();
+  }
+
   filter(): void {
     this.availablePersonae = this.fusions
       .filter(this.includesEveryFilterPersona)
       .reduce(this.availablePersonaeReducer, new Array<Persona>())
+      .filter((p) => {
+        return this.nameFilters.length
+          ? this.nameFilters.some((nf) => partialMatchRegExp(nf).test(p.name))
+          : true;
+      })
       .sort((a, b) => a.level - b.level);
   }
 
