@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { GameComponent } from './game/game.component';
 import { PersonaListComponent } from './game/components/persona-list/persona-list.component';
 import { PersonaComponent } from './game/components/persona/persona.component';
+import { SimulatorComponent } from './simulator/simulator.component';
 import { ValidGameGuard } from './valid-game.guard';
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: '',
         component: PersonaListComponent,
+      },
+      {
+        path: 'simulator',
+        component: SimulatorComponent,
       },
       {
         path: 'persona/:persona_name',

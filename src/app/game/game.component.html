@@ -1,5 +1,9 @@
-<mat-toolbar>
-  <a routerLink="." mat-button>{{title | uppercase}}</a>
+<mat-toolbar style="display: flex; justify-content: space-between;">
+  <span style="padding-left: 8px;">{{title | uppercase}}</span>
+  <div>
+    <a routerLink="." mat-button>LIST</a>
+    <a routerLink="./simulator" mat-button>SIMULATOR</a>
+  </div>
 </mat-toolbar>
 <div style="padding: 8px;">
   <router-outlet></router-outlet>
