@@ -71,7 +71,6 @@ export class NormalFusionsComponent implements OnInit {
   }
 
   private filter() {
-    console.log(this.filterNames);
     this.fusions = !this.filterNames.length
       ? this.fusionService.list
       : this.fusionService.list.filter((pair) =>
