@@ -21,6 +21,12 @@ export class NormalFusionService {
     return this.list;
   }
 
+  fusionPersonae(): Persona[] {
+    return Array.from(this.fusionPersonaIds).map((id) =>
+      this.compendiumService.findById(id),
+    );
+  }
+
   private generateFusionList(): void {
     const arcanaFusions = this.arcanaFusionService.getPossibleNormalFusions(
       this.persona.arcana,

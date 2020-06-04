@@ -42,9 +42,7 @@ export class TriangleFusionsComponent implements OnInit {
         ? []
         : this.fusionService.findFusions(this.persona);
 
-      this.fusionPersonae = Array.from(
-        this.fusionService.fusionPersonaIds,
-      ).map((id) => this.compendiumService.findById(id));
+      this.fusionPersonae = this.fusionService.fusionPersonae();
     }, 0);
   }
 

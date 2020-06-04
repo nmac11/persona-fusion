@@ -26,7 +26,6 @@ export class NormalFusionsComponent implements OnInit {
   private fusionService: NormalFusionService;
   @Input('persona') persona: Persona;
   fusions: Persona[][];
-  fusionPersonae: Persona[];
   filterNames: string[] = [];
 
   constructor(
@@ -47,10 +46,6 @@ export class NormalFusionsComponent implements OnInit {
       this.fusions = this.persona?.special
         ? []
         : this.fusionService.findFusions(this.persona);
-
-      this.fusionPersonae = Array.from(
-        this.fusionService.fusionPersonaIds,
-      ).map((id) => this.compendiumService.findById(id));
     }, 0);
   }
 

@@ -21,6 +21,12 @@ export class TriangleFusionService {
     return this.list;
   }
 
+  fusionPersonae(): Persona[] {
+    return Array.from(this.fusionPersonaIds).map((id) =>
+      this.compendiumService.findById(id),
+    );
+  }
+
   private generateFusionList(): void {
     const arcanaFusions = this.arcanaFusionService.getPossibleTriangleFusions(
       this.persona.arcana,
