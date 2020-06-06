@@ -13,7 +13,6 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import { P4G_COMPENDIUM } from '../../../tokens/p4g/compendium-service-token';
 import { serviceToken } from '../../../helpers/service-token-helper';
 
 @Component({
