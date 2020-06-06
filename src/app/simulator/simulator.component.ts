@@ -2,6 +2,7 @@ import { Component, OnInit, Injector } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Persona } from '../models/persona';
 import { CompendiumService } from '../services/compendium.service';
+import { SimulatorService } from '../services/simulator.service';
 import { serviceToken } from '../helpers/service-token-helper';
 import { ListDialogComponent } from './components/list-dialog/list-dialog.component';
 import { FusionNode } from '../models/fusion-node';
@@ -16,6 +17,7 @@ export class SimulatorComponent implements OnInit {
   fusionItems: FusionNode[] = [];
   fusionYield: FusionNode;
   compendiumService: CompendiumService;
+  simulatorService: SimulatorService;
 
   constructor(
     private injector: Injector,
@@ -25,6 +27,9 @@ export class SimulatorComponent implements OnInit {
     const game = this.route.parent.snapshot.params.game;
     this.compendiumService = this.injector.get<CompendiumService>(
       serviceToken[game].compendium,
+    );
+    this.simulatorService = this.injector.get<SimulatorService>(
+      serviceToken[game].simulator,
     );
   }
 

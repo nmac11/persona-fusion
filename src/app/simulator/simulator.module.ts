@@ -5,10 +5,18 @@ import { MaterialModule } from '../material/material.module';
 import { ProvidersModule } from '../providers/providers.module';
 import { ListDialogComponent } from './components/list-dialog/list-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { p3pSimulatorProvider } from '../tokens/p3p/simulator-service-token';
+import { p3fesSimulatorProvider } from '../tokens/p3fes/simulator-service-token';
+import { p4gSimulatorProvider } from '../tokens/p4g/simulator-service-token';
 
 @NgModule({
   declarations: [SimulatorComponent, ListDialogComponent],
   imports: [CommonModule, MaterialModule, FormsModule],
   entryComponents: [ListDialogComponent],
+  providers: [
+    p3pSimulatorProvider,
+    p3fesSimulatorProvider,
+    p4gSimulatorProvider,
+  ],
 })
 export class SimulatorModule {}
