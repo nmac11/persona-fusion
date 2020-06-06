@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [],
@@ -27,6 +29,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatChipsModule,
     MatCardModule,
     MatTabsModule,
+    MatDialogModule,
+    MatExpansionModule,
   ],
 })
 export class MaterialModule {}

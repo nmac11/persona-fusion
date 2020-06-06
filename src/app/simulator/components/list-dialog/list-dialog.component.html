@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>
+  <ng-container *ngIf="selectedPersona; else noSelection">Selected: {{selectedPersona.name}}</ng-container>
+  <ng-template #noSelection>Select a Persona</ng-template>
+</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill" style="width: 100%;">
+    <mat-label>Filter</mat-label>
+    <input matInput type="text" #filterField>
+    <button *ngIf="filterField.value"
+            matSuffix mat-icon-button 
+            (click)="clearFilter()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-selection-list multiple="false" #selectionList (selectionChange)="selectionChange($event.option.value)">
+    <mat-list-option *ngFor="let persona of list" [value]="persona">
+      <span mat-line>{{persona.name}}</span>
+      <span mat-line>{{arcanaName(persona.arcana)}} / {{persona.level}}</span>
+    </mat-list-option>
+  </mat-selection-list>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">CANCEL</button>
+  <button mat-button [mat-dialog-close]="selectedPersona" color="primary" cdkFocusInitial>DONE</button>
+</div>

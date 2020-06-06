@@ -1,1 +1,61 @@
-<p>simulator works!</p>
+<div>
+  <mat-card class="mat-elevation-z3" style="margin-bottom: 24px;" *ngIf="fusionYield">
+    <mat-card-header>
+      <mat-card-title>{{ result.persona.name }}</mat-card-title>
+      <mat-card-subtitle
+        >{{ arcanaName(result.persona.arcana) }} / Level
+        {{ result.persona.level }}</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-chip-list>
+      <mat-chip *ngIf="persona.special" color="warn" selected
+        >Special fusion</mat-chip
+      >
+      <mat-chip *ngIf="persona.specialCondition" color="accent" selected>{{
+        persona.specialCondition
+      }}</mat-chip>
+      <mat-chip *ngIf="persona.ultimate" color="accent" selected
+        >Ultimate Persona</mat-chip
+      >
+      <mat-chip *ngIf="persona.keyItem">Key item</mat-chip>
+    </mat-chip-list>
+    <mat-card-content></mat-card-content>
+  </mat-card>
+
+  <div>
+    <mat-accordion multi>
+      <mat-expansion-panel *ngFor="let fusionItem of fusionItems; let i = index;">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ fusionItem.persona.name }}
+          </mat-panel-title>
+          <mat-panel-description>
+             Level {{ fusionItem.currentLevel }} / {{ arcanaName(fusionItem.persona.arcana) }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div>
+          <mat-form-field class="example-full-width">
+            <mat-label>Current Level</mat-label>
+            <input type="number" autocomplete="off" matInput
+            [(ngModel)]="fusionItem.currentLevel"
+            (change)="changeLevel($event, fusionItem)"
+            (keydown.enter)="$event.target.blur();false"
+            [value]="fusionItem.currentLevel"
+            [min]="fusionItem.persona.level"
+            max="99"
+            required>
+          </mat-form-field>
+          <div style="width: 100%; display: flex; flex-direction: row; justify-content: flex-end;">
+            <button mat-button color="primary" (click)="changePersona(fusionItem)">CHANGE</button>
+            <button mat-button color="warn" (click)="removeItem(i)">REMOVE</button>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <button mat-raised-button color="primary" style="margin-top: 16px; width: 100%" (click)="addItem()">
+      <mat-icon>add</mat-icon>ADD
+    </button>
+  </div>
+</div>
