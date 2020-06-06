@@ -8,6 +8,7 @@ export class FusionChartService {
     @Inject(CompendiumService) private compendiumService: CompendiumService,
     @Inject(Object) private normalFusionChart: any,
     @Inject(Object) private triangleFusionChart: any,
+    @Inject(Object) private specialFusions: any,
   ) {}
 
   getPossibleNormalFusions(arcana: number): Persona[][][] {
@@ -18,6 +19,12 @@ export class FusionChartService {
   getPossibleTriangleFusions(arcana: number): Persona[][][] {
     const formulas = this.getTriangleFormulas(arcana);
     return this.mapFormulasToPersonae(formulas, arcana);
+  }
+
+  getSpecialFusions(persona: Persona): Persona[] {
+    return this.specialFusions
+      .find((sf) => sf.persona === persona.name)
+      .requirements.map((name) => this.compendiumService.find(name));
   }
 
   private mapFormulasToPersonae(

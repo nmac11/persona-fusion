@@ -1,6 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
 import { Persona } from '../models/persona';
-import { SpecialFusion } from '../models/special-fusion';
 import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 
 @Injectable()
@@ -10,7 +9,6 @@ export class CompendiumService {
   constructor(
     @Inject(Array) private compendium: Array<Persona>,
     @Inject(Array) private arcanaChart: Array<string>,
-    @Inject(Array) private specialFusions: Array<SpecialFusion>,
   ) {
     this.buildArcanaGroups();
   }
@@ -23,12 +21,6 @@ export class CompendiumService {
       return groups;
     }, []);
     this.arcanaGroups.map((group) => group.sort((a, b) => a.level - b.level));
-  }
-
-  getSpecialFusions(persona: Persona): Persona[] {
-    return this.specialFusions
-      .find((sf) => sf.persona === persona.name)
-      .requirements.map((name) => this.find(name));
   }
 
   arcanaName(arcana: number): string {

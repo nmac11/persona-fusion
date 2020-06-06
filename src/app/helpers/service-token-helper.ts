@@ -7,21 +7,27 @@ import { P3FES_TRIANGLE_FUSION } from '../tokens/p3fes/triangle-fusion-service-t
 import { P4G_COMPENDIUM } from '../tokens/p4g/compendium-service-token';
 import { P4G_NORMAL_FUSION } from '../tokens/p4g/normal-fusion-service-token';
 import { P4G_TRIANGLE_FUSION } from '../tokens/p4g/triangle-fusion-service-token';
+import { P3P_FUSION_CHART } from '../tokens/p3p/fusion-chart-service-token';
+import { P3FES_FUSION_CHART } from '../tokens/p3fes/fusion-chart-service-token';
+import { P4G_FUSION_CHART } from '../tokens/p4g/fusion-chart-service-token';
 
 export const serviceToken: any = {
   p3p: {
     compendium: P3P_COMPENDIUM,
     normalFusion: P3P_NORMAL_FUSION,
     triangleFusion: P3P_TRIANGLE_FUSION,
+    fusionChart: P3P_FUSION_CHART,
   },
   p3fes: {
     compendium: P3FES_COMPENDIUM,
     normalFusion: P3FES_NORMAL_FUSION,
     triangleFusion: P3FES_TRIANGLE_FUSION,
+    fusionChart: P3FES_FUSION_CHART,
   },
   p4g: {
     compendium: P4G_COMPENDIUM,
     normalFusion: P4G_NORMAL_FUSION,
     triangleFusion: P4G_TRIANGLE_FUSION,
+    fusionChart: P3FES_FUSION_CHART,
   },
 };

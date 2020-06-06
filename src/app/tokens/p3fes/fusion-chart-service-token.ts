@@ -4,6 +4,7 @@ import { FusionChartService } from '../../services/fusion-chart.service';
 import { P3FES_COMPENDIUM } from './compendium-service-token';
 import normalFusionChart from '../../data/p3/p3-normal-fusion-chart.json';
 import triangleFusionChart from '../../data/p3/p3-triangle-fusion-chart.json';
+import specialFusions from '../../data/p3/p3-special-fusions.json';
 
 function p3fesFusionChartFactory(
   compendiumService: CompendiumService,
@@ -12,6 +13,7 @@ function p3fesFusionChartFactory(
     compendiumService,
     normalFusionChart,
     triangleFusionChart,
+    specialFusions,
   );
 }
 
