@@ -33,7 +33,7 @@ export const serviceToken: any = {
     compendium: P4G_COMPENDIUM,
     normalFusion: P4G_NORMAL_FUSION,
     triangleFusion: P4G_TRIANGLE_FUSION,
-    fusionChart: P3FES_FUSION_CHART,
+    fusionChart: P4G_FUSION_CHART,
     simulator: P4G_SIMULATOR,
   },
 };
