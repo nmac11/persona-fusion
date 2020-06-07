@@ -42,7 +42,10 @@ export class SimulatorComponent implements OnInit {
   changePersona(fusionItem: FusionNode): void {
     const dialogRef = this.openDialog(
       (p: Persona) => {
-        if (p) Object.assign(fusionItem, { persona: p, currentLevel: p.level });
+        if (p) {
+          Object.assign(fusionItem, { persona: p, currentLevel: p.level });
+          this.fuse();
+        }
       },
       { persona: fusionItem.persona },
     );
@@ -52,19 +55,32 @@ export class SimulatorComponent implements OnInit {
     const inputLevel = event.target.value;
     if (!(inputLevel <= 99 && inputLevel >= fusionItem.persona.level))
       fusionItem.currentLevel = fusionItem.persona.level;
+    this.fuse();
   }
 
   addItem(): void {
     let persona: Persona;
-    const fusionItem: FusionNode = { persona: null };
     this.openDialog((p: Persona) => {
       persona = p;
-      if (p) this.fusionItems.push({ persona: p, currentLevel: p.level });
+      if (p) {
+        this.fusionItems.push({ persona: p, currentLevel: p.level });
+        this.fuse();
+      }
     });
   }
 
   removeItem(i: number): void {
     this.fusionItems.splice(i, 1);
+    this.fuse();
+  }
+
+  clearItems(): void {
+    this.fusionItems = [];
+    this.fusionYield = null;
+  }
+
+  private fuse(): void {
+    this.fusionYield = this.simulatorService.fuse(this.fusionItems);
   }
 
   private openDialog(fn: (res) => void, options = {}) {

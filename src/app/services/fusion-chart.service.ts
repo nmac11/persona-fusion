@@ -2,13 +2,18 @@ import { Injectable, Inject } from '@angular/core';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
 
+interface SpecialFusion {
+  persona: string;
+  requirements: string[];
+}
+
 @Injectable()
 export class FusionChartService {
   constructor(
     @Inject(CompendiumService) private compendiumService: CompendiumService,
-    @Inject(Object) private normalFusionChart: any,
-    @Inject(Object) private triangleFusionChart: any,
-    @Inject(Object) private specialFusions: any,
+    @Inject(Object) private normalFusionChart: number[][][],
+    @Inject(Object) private triangleFusionChart: number[][][],
+    @Inject(Object) private specialFusions: SpecialFusion[],
   ) {}
 
   getPossibleNormalFusions(arcana: number): Persona[][][] {
@@ -25,6 +30,39 @@ export class FusionChartService {
     return this.specialFusions
       .find((sf) => sf.persona === persona.name)
       .requirements.map((name) => this.compendiumService.find(name));
+  }
+
+  trySpecialFusion(personae: Persona[]): Persona {
+    const personaNames = personae.map((p) => p.name);
+    const fusionResult = this.specialFusions.find(
+      (sf) =>
+        sf.requirements.length === personae.length &&
+        personaNames.every((name) => sf.requirements.includes(name)),
+    );
+    return fusionResult
+      ? this.compendiumService.find(fusionResult.persona)
+      : null;
+  }
+
+  findNormalFusionChartResult(fusionArcana: number[]): number {
+    return this.findFusionChartResult(this.normalFusionChart, fusionArcana);
+  }
+
+  findTriangleFusionChartResult(fusionArcana: number[]): number {
+    return this.findFusionChartResult(this.triangleFusionChart, fusionArcana);
+  }
+
+  private findFusionChartResult(fusionChart, [a1, a2]: number[]): number {
+    for (let i = 0; i < fusionChart.length; i++) {
+      if (
+        fusionChart[i].some(
+          ([fa1, fa2]) =>
+            (fa1 === a1 && fa2 === a2) || (fa2 === a1 && fa1 === a2),
+        )
+      ) {
+        return i;
+      }
+    }
   }
 
   private mapFormulasToPersonae(
@@ -56,10 +94,10 @@ export class FusionChartService {
     });
   }
 
-  private triangleFormulaReducer: Function = (
+  private triangleFormulaReducer: (
     formulas: number[][],
-    [triangle1, triangle2]: number[],
-  ) => {
+    triangleFormulas: number[],
+  ) => number[][] = (formulas, [triangle1, triangle2]) => {
     const mappedFormulas = [
       ...this.normalFusionChart[triangle1].map((normalFormula: number[]) => [
         triangle2,

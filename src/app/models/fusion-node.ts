@@ -2,6 +2,6 @@ import { Persona } from './persona';
 
 export interface FusionNode {
   persona: Persona;
-  currentLevel?: Number;
+  currentLevel: number;
   components?: FusionNode[];
 }

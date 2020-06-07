@@ -1,13 +1,21 @@
 <div>
-  <mat-card class="mat-elevation-z3" style="margin-bottom: 24px;" *ngIf="fusionYield">
-    <mat-card-header>
+  <mat-card class="mat-elevation-z2" style="margin-bottom: 24px;" >
+    <mat-card-header *ngIf="fusionYield; else invalidCombo">
       <mat-card-title>{{ fusionYield.persona.name }}</mat-card-title>
       <mat-card-subtitle
         >{{ arcanaName(fusionYield.persona.arcana) }} / Level
         {{ fusionYield.persona.level }}</mat-card-subtitle
       >
     </mat-card-header>
-    <mat-chip-list>
+    <ng-template #invalidCombo>
+      <mat-card-header>
+        <mat-card-title>{{ fusionItems.length < 2 ? 'Add items' : 'Invalid combo' }}</mat-card-title>
+        <mat-card-subtitle>
+          {{ fusionItems.length < 2 ? 'At least two items are needed to proceed.' : 'Cannot fuse current items.'}}
+        </mat-card-subtitle>
+      </mat-card-header>
+    </ng-template>
+    <mat-chip-list *ngIf="fusionYield">
       <mat-chip *ngIf="fusionYield.persona.special" color="warn" selected
         >Special fusion</mat-chip
       >
@@ -20,7 +28,7 @@
       <mat-chip *ngIf="fusionYield.persona.keyItem">Key item</mat-chip>
     </mat-chip-list>
     <mat-card-content></mat-card-content>
-  </mat-card>
+  </mat-card>  
 
   <div>
     <mat-accordion multi>
@@ -54,8 +62,12 @@
       </mat-expansion-panel>
     </mat-accordion>
 
-    <button mat-raised-button color="primary" style="margin-top: 16px; width: 100%" (click)="addItem()">
-      <mat-icon>add</mat-icon>ADD
+    <button mat-flat-button color="primary" style="margin-top: 16px; width: 100%" (click)="addItem()">
+      <mat-icon>add</mat-icon> ADD
+    </button>
+
+    <button mat-stroked-button color="warn" style="margin-top: 16px; width: 100%" (click)="clearItems()">
+      <mat-icon>clear_all</mat-icon> CLEAR
     </button>
   </div>
 </div>
