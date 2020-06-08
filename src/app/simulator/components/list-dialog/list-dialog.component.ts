@@ -60,4 +60,8 @@ export class ListDialogComponent implements AfterViewInit {
   selectionChange(persona: Persona): void {
     this.selectedPersona = persona;
   }
+
+  dblClickSubmit(persona: Persona): void {
+    this.dialogRef.close(persona);
+  }
 }
