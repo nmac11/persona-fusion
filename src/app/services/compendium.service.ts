@@ -8,7 +8,6 @@ export class CompendiumService {
 
   constructor(
     @Inject(Array) private compendium: Array<Persona>,
-    @Inject(Array) private arcanaChart: Array<string>,
   ) {
     this.buildArcanaGroups();
   }
@@ -21,10 +20,6 @@ export class CompendiumService {
       return groups;
     }, []);
     this.arcanaGroups.map((group) => group.sort((a, b) => a.level - b.level));
-  }
-
-  arcanaName(arcana: number): string {
-    return this.arcanaChart[arcana] || 'Unknown';
   }
 
   getAll(arcana: number = null): Array<Persona> {

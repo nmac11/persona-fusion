@@ -27,7 +27,7 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
   compendiumService: CompendiumService;
 
   personae: MatTableDataSource<Persona>;
-  displayedColumns: string[] = ['name', 'level', 'arcana'];
+  displayedColumns: string[] = ['name', 'level', 'arcanaName'];
 
   constructor(
     private injector: Injector,
@@ -53,10 +53,6 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
       .subscribe((k: KeyboardEvent) =>
         this.applyFilter(this.filterField.nativeElement.value),
       );
-  }
-
-  arcanaName(arcana: number) {
-    return this.compendiumService.arcanaName(arcana);
   }
 
   applyFilter(key: string = '') {

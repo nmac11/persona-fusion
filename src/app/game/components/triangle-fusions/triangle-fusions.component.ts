@@ -52,10 +52,6 @@ export class TriangleFusionsComponent implements OnInit {
     }, 0);
   }
 
-  arcanaName(arcana: number): string {
-    return this.compendiumService.arcanaName(arcana);
-  }
-
   addFilter(persona: Persona): void {
     if (!this.selectedPersonae.some((p) => p.id === persona.id))
       this.selectedPersonae.push(persona);

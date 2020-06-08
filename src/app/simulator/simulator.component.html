@@ -3,7 +3,7 @@
     <mat-card-header *ngIf="fusionYield; else invalidCombo">
       <mat-card-title>{{ fusionYield.persona.name }}</mat-card-title>
       <mat-card-subtitle
-        >{{ arcanaName(fusionYield.persona.arcana) }} / Level
+        >{{ fusionYield.persona.arcanaName }} / Level
         {{ fusionYield.persona.level }}</mat-card-subtitle
       >
     </mat-card-header>
@@ -38,7 +38,7 @@
             {{ fusionItem.persona.name }}
           </mat-panel-title>
           <mat-panel-description>
-             Level {{ fusionItem.currentLevel }} / {{ arcanaName(fusionItem.persona.arcana) }}
+             Level {{ fusionItem.currentLevel }} / {{ fusionItem.persona.arcanaName }}
           </mat-panel-description>
         </mat-expansion-panel-header>
 

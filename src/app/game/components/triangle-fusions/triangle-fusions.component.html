@@ -12,7 +12,7 @@
     <h3 matSubheader>Selected ({{selectedPersonae.length}})</h3>
     <mat-list-item *ngFor="let persona of selectedPersonae">
       <span matLine><a class="mat-body-2" style="color: #3f51b5; text-decoration: none;" routerLink="../../persona/{{persona.name | lowercase}}">{{persona.name}}</a></span>
-      <span mat-line>{{arcanaName(persona.arcana)}} / {{persona.level}}</span>
+      <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
       <button mat-icon-button (click)="removeFilter(persona)">
         <mat-icon color="warn">remove</mat-icon>
       </button>
@@ -38,7 +38,7 @@
     <h3 matSubheader>Available ({{availablePersonae.length}})</h3>
     <mat-list-item *ngFor="let persona of availablePersonae">
       <span matLine><a class="mat-body-2" style="color: #3f51b5; text-decoration: none;" routerLink="../../persona/{{persona.name | lowercase}}">{{persona.name}}</a></span>
-      <span mat-line>{{arcanaName(persona.arcana)}} / {{persona.level}}</span>
+      <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
       <button mat-icon-button (click)="addFilter(persona)">
         <mat-icon color="primary">add</mat-icon>
       </button>

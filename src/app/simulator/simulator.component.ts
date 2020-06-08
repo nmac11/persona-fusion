@@ -35,10 +35,6 @@ export class SimulatorComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  arcanaName(arcana: number): string {
-    return this.compendiumService.arcanaName(arcana);
-  }
-
   changePersona(fusionItem: FusionNode): void {
     const dialogRef = this.openDialog(
       (p: Persona) => {

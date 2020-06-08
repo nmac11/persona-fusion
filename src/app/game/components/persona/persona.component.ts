@@ -38,8 +38,4 @@ export class PersonaComponent implements OnInit {
       }
     });
   }
-
-  arcanaName(arcana: number): string {
-    return this.compendiumService.arcanaName(arcana);
-  }
 }

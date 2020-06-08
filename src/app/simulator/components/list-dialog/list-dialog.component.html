@@ -16,7 +16,7 @@
   <mat-selection-list multiple="false" #selectionList (selectionChange)="selectionChange($event.option.value)">
     <mat-list-option *ngFor="let persona of list" [value]="persona">
       <span mat-line>{{persona.name}}</span>
-      <span mat-line>{{arcanaName(persona.arcana)}} / {{persona.level}}</span>
+      <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
     </mat-list-option>
   </mat-selection-list>
 

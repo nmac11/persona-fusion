@@ -49,10 +49,6 @@ export class NormalFusionsComponent implements OnInit {
     }, 0);
   }
 
-  arcanaName(arcana: number) {
-    return this.compendiumService.arcanaName(arcana);
-  }
-
   addFilter(event: any) {
     const input: HTMLInputElement = event.input;
     const value: string = event.value.replace(/[^A-Za-z\'-\s]/g, '');

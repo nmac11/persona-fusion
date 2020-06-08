@@ -57,10 +57,6 @@ export class ListDialogComponent implements AfterViewInit {
     this.dialogRef.close();
   }
 
-  arcanaName(arcana: number): string {
-    return this.data.compendium.arcanaName(arcana);
-  }
-
   selectionChange(persona: Persona): void {
     this.selectedPersona = persona;
   }
