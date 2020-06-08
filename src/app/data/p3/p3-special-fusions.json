@@ -5,7 +5,7 @@
   },
   {
     "persona": "Arahabaki",
-    "requirements": ["Omoikane", "Take-minakata", "Okuninushi", "Kikuri-hime"]
+    "requirements": ["Omoikane", "Take-Minakata", "Okuninushi", "Kikuri-Hime"]
   },
   {
     "persona": "Asura",
@@ -22,7 +22,7 @@
     "persona": "Attis",
     "requirements": [
       "Inugami",
-      "Take-minakata",
+      "Take-Minakata",
       "Orthrus",
       "Vasuki",
       "Ubelluris"
@@ -59,7 +59,7 @@
   },
   {
     "persona": "Kohryu",
-    "requirements": ["Genbu", "Seiryuu", "Suzaku", "Byakko"]
+    "requirements": ["Genbu", "Seiryu", "Suzaku", "Byakko"]
   },
   {
     "persona": "Lilith",
