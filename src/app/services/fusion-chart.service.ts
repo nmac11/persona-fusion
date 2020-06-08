@@ -1,11 +1,7 @@
 import { Injectable, Inject } from '@angular/core';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
-
-interface SpecialFusion {
-  persona: string;
-  requirements: string[];
-}
+import { SpecialFusion } from '../models/special-fusion';
 
 @Injectable()
 export class FusionChartService {
