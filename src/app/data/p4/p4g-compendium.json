@@ -47,7 +47,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -102,7 +103,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -162,7 +164,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -222,7 +225,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -282,7 +286,8 @@
             "wind": "n",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -348,7 +353,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -408,7 +414,8 @@
             "wind": "s",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -463,7 +470,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 0,
@@ -529,7 +537,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "arcana": 1,
@@ -579,7 +588,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -634,7 +644,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -694,7 +705,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -754,7 +766,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -809,7 +822,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -869,7 +883,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -924,7 +939,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -979,7 +995,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -1039,7 +1056,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 1,
@@ -1100,7 +1118,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "arcana": 2,
@@ -1155,7 +1174,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1215,7 +1235,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1275,7 +1296,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1335,7 +1357,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1390,7 +1413,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1450,7 +1474,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1505,7 +1530,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1570,7 +1596,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 2,
@@ -1631,7 +1658,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "arcana": 3,
@@ -1686,7 +1714,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -1746,7 +1775,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -1801,7 +1831,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -1856,7 +1887,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -1911,7 +1943,8 @@
             "wind": "d",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -1971,7 +2004,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -2026,7 +2060,8 @@
             "wind": "w",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -2081,7 +2116,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 3,
@@ -2147,7 +2183,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "arcana": 4,
@@ -2207,7 +2244,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 4,
@@ -2272,7 +2310,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 4,
@@ -2332,7 +2371,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 4,
@@ -2392,7 +2432,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 4,
@@ -2452,7 +2493,8 @@
             "wind": "w",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 4,
@@ -2507,7 +2549,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 4,
@@ -2567,7 +2610,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 4,
@@ -2628,7 +2672,8 @@
             "wind": "d",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "arcana": 5,
@@ -2693,7 +2738,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -2753,7 +2799,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -2813,7 +2860,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -2873,7 +2921,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -2933,7 +2982,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -2993,7 +3043,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -3053,7 +3104,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -3118,7 +3170,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -3173,7 +3226,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 5,
@@ -3240,7 +3294,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "arcana": 6,
@@ -3300,7 +3355,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "arcana": 6,
@@ -3355,7 +3411,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "arcana": 6,
@@ -3415,7 +3472,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "arcana": 6,
@@ -3470,7 +3528,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "arcana": 6,
@@ -3525,7 +3584,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "arcana": 6,
@@ -3591,7 +3651,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "arcana": 7,
@@ -3646,7 +3707,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -3706,7 +3768,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -3766,7 +3829,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -3821,7 +3885,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -3876,7 +3941,8 @@
             "wind": "w",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -3936,7 +4002,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -3991,7 +4058,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -4051,7 +4119,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -4111,7 +4180,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 7,
@@ -4178,7 +4248,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "arcana": 8,
@@ -4233,7 +4304,8 @@
             "wind": "s",
             "light": "s",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4293,7 +4365,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4353,7 +4426,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4418,7 +4492,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4478,7 +4553,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4538,7 +4614,8 @@
             "wind": "w",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4598,7 +4675,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4658,7 +4736,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4713,7 +4792,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 8,
@@ -4774,7 +4854,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "arcana": 9,
@@ -4829,7 +4910,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -4884,7 +4966,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -4944,7 +5027,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -4999,7 +5083,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -5059,7 +5144,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -5119,7 +5205,8 @@
             "wind": "d",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -5179,7 +5266,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -5239,7 +5327,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -5294,7 +5383,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 9,
@@ -5356,7 +5446,8 @@
             "wind": "d",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "arcana": 10,
@@ -5411,7 +5502,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "arcana": 10,
@@ -5471,7 +5563,8 @@
             "wind": "r",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "arcana": 10,
@@ -5531,7 +5624,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "arcana": 10,
@@ -5591,7 +5685,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "arcana": 10,
@@ -5646,7 +5741,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "arcana": 10,
@@ -5713,7 +5809,8 @@
             "wind": "d",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "arcana": 11,
@@ -5768,7 +5865,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -5823,7 +5921,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -5878,7 +5977,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -5938,7 +6038,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -5998,7 +6099,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -6058,7 +6160,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -6118,7 +6221,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -6173,7 +6277,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -6233,7 +6338,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 11,
@@ -6299,7 +6405,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "arcana": 12,
@@ -6359,7 +6466,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6414,7 +6522,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6474,7 +6583,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6529,7 +6639,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6595,7 +6706,8 @@
             "wind": "r",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6655,7 +6767,8 @@
             "wind": "n",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6715,7 +6828,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6775,7 +6889,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 12,
@@ -6836,7 +6951,8 @@
             "wind": "r",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "arcana": 13,
@@ -6896,7 +7012,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 13,
@@ -6956,7 +7073,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 13,
@@ -7016,7 +7134,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 13,
@@ -7076,7 +7195,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 13,
@@ -7131,7 +7251,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 13,
@@ -7196,7 +7317,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 13,
@@ -7257,7 +7379,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 13,
@@ -7324,7 +7447,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "arcana": 14,
@@ -7374,7 +7498,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7429,7 +7554,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7489,7 +7615,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7549,7 +7676,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7609,7 +7737,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7669,7 +7798,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7729,7 +7859,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7789,7 +7920,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7849,7 +7981,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7904,7 +8037,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 14,
@@ -7965,7 +8099,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "arcana": 15,
@@ -8020,7 +8155,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8075,7 +8211,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8135,7 +8272,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8190,7 +8328,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8250,7 +8389,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8310,7 +8450,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8365,7 +8506,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8425,7 +8567,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8480,7 +8623,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 15,
@@ -8547,7 +8691,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "arcana": 16,
@@ -8607,7 +8752,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "arcana": 16,
@@ -8672,7 +8818,8 @@
             "wind": "r",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "arcana": 16,
@@ -8732,7 +8879,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "arcana": 16,
@@ -8787,7 +8935,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "arcana": 16,
@@ -8842,7 +8991,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "arcana": 16,
@@ -8903,7 +9053,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "arcana": 16,
@@ -8965,7 +9116,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "arcana": 17,
@@ -9025,7 +9177,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 17,
@@ -9086,7 +9239,8 @@
             "wind": "w",
             "light": "n",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 17,
@@ -9146,7 +9300,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 17,
@@ -9206,7 +9361,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 17,
@@ -9266,7 +9422,8 @@
             "wind": "r",
             "light": "r",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 17,
@@ -9321,7 +9478,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 17,
@@ -9376,7 +9534,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 17,
@@ -9442,7 +9601,8 @@
             "wind": "w",
             "light": "n",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "arcana": 18,
@@ -9502,7 +9662,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9562,7 +9723,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9617,7 +9779,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9677,7 +9840,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9742,7 +9906,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9797,7 +9962,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9852,7 +10018,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9912,7 +10079,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 18,
@@ -9973,7 +10141,8 @@
             "wind": "n",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "arcana": 19,
@@ -10033,7 +10202,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10093,7 +10263,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10153,7 +10324,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10213,7 +10385,8 @@
             "wind": "s",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10268,7 +10441,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10334,7 +10508,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10389,7 +10564,8 @@
             "wind": "d",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10444,7 +10620,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10504,7 +10681,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 19,
@@ -10565,7 +10743,8 @@
             "wind": "w",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "arcana": 20,
@@ -10630,7 +10809,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "arcana": 20,
@@ -10696,7 +10876,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "arcana": 20,
@@ -10756,7 +10937,8 @@
             "wind": "w",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "arcana": 20,
@@ -10816,7 +10998,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "arcana": 20,
@@ -10871,7 +11054,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "arcana": 20,
@@ -10938,7 +11122,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "arcana": 20,
@@ -11005,7 +11190,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "arcana": 21,
@@ -11065,7 +11251,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11120,7 +11307,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11175,7 +11363,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11235,7 +11424,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11295,7 +11485,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11355,7 +11546,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11415,7 +11607,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11475,7 +11668,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 21,
@@ -11541,7 +11735,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Jester"
     },
     {
         "arcana": 22,
@@ -11601,7 +11796,8 @@
             "wind": "n",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -11661,7 +11857,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -11716,7 +11913,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -11776,7 +11974,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -11831,7 +12030,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -11891,7 +12091,8 @@
             "wind": "s",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -11951,7 +12152,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -12006,7 +12208,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 22,
@@ -12067,7 +12270,8 @@
             "wind": "s",
             "light": "n",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "arcana": 23,
@@ -12154,6 +12358,7 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "World"
     }
 ]

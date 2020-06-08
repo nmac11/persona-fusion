@@ -3,6 +3,7 @@ export class Persona {
   name: string;
   level: number;
   arcana: number;
+  arcanaName: string;
   ultimate?: boolean;
   special?: boolean;
   keyItem?: boolean;

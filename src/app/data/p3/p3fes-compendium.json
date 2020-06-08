@@ -39,7 +39,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Slime",
@@ -96,7 +97,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Legion",
@@ -153,7 +155,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Black Frost",
@@ -211,7 +214,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Ose",
@@ -263,7 +267,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Decarabia",
@@ -320,7 +325,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Loki",
@@ -382,7 +388,8 @@
             "wind": "d",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Susano-o",
@@ -441,7 +448,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Orpheus Telos",
@@ -475,7 +483,8 @@
             "wind": "s",
             "light": "s",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Fool"
     },
     {
         "name": "Nekomata",
@@ -527,7 +536,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Jack Frost",
@@ -584,7 +594,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Pyro Jack",
@@ -641,7 +652,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Hua Po",
@@ -699,7 +711,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Sati",
@@ -756,7 +769,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Orobas",
@@ -818,7 +832,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Rangda",
@@ -870,7 +885,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Surt",
@@ -928,7 +944,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Magician"
     },
     {
         "name": "Apsaras",
@@ -970,7 +987,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "Unicorn",
@@ -1027,7 +1045,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "High Pixie",
@@ -1084,7 +1103,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "Sarasvati",
@@ -1141,7 +1161,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "Ganga",
@@ -1198,7 +1219,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "Parvati",
@@ -1255,7 +1277,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "Kikuri-Hime",
@@ -1317,7 +1340,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "Scathach",
@@ -1375,7 +1399,8 @@
             "wind": "s",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Priestess"
     },
     {
         "name": "Leanan Sidhe",
@@ -1432,7 +1457,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Yaksini",
@@ -1489,7 +1515,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Laksmi",
@@ -1546,7 +1573,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Hariti",
@@ -1603,7 +1631,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Gabriel",
@@ -1660,7 +1689,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Mother Harlot",
@@ -1717,7 +1747,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Skadi",
@@ -1774,7 +1805,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Alilat",
@@ -1832,7 +1864,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Empress"
     },
     {
         "name": "Forneus",
@@ -1889,7 +1922,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "Oberon",
@@ -1946,7 +1980,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "Take-Mikazuchi",
@@ -2008,7 +2043,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "King Frost",
@@ -2066,7 +2102,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "Raja Naga",
@@ -2128,7 +2165,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "Kingu",
@@ -2185,7 +2223,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "Barong",
@@ -2247,7 +2286,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "Odin",
@@ -2305,7 +2345,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Emperor"
     },
     {
         "name": "Omoikane",
@@ -2357,7 +2398,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Berith",
@@ -2414,7 +2456,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Shiisaa",
@@ -2471,7 +2514,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Flauros",
@@ -2528,7 +2572,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Thoth",
@@ -2586,7 +2631,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Hokuto Seikun",
@@ -2648,7 +2694,8 @@
             "wind": "w",
             "light": "s",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Daisoujou",
@@ -2706,7 +2753,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Kohryu",
@@ -2770,7 +2818,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hierophant"
     },
     {
         "name": "Pixie",
@@ -2817,7 +2866,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Alp",
@@ -2874,7 +2924,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Narcissus",
@@ -2931,7 +2982,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Queen Mab",
@@ -2993,7 +3045,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Saki Mitama",
@@ -3055,7 +3108,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Titania",
@@ -3112,7 +3166,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Raphael",
@@ -3169,7 +3224,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Cybele",
@@ -3227,7 +3283,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Lovers"
     },
     {
         "name": "Ara Mitama",
@@ -3284,7 +3341,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Chimera",
@@ -3341,7 +3399,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Zouchouten",
@@ -3398,7 +3457,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Ares",
@@ -3450,7 +3510,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Oumitsunu",
@@ -3512,7 +3573,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Nata Taishi",
@@ -3570,7 +3632,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Koumokuten",
@@ -3627,7 +3690,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Thor",
@@ -3685,7 +3749,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Chariot"
     },
     {
         "name": "Angel",
@@ -3737,7 +3802,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Archangel",
@@ -3799,7 +3865,8 @@
             "wind": "w",
             "light": "s",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Principality",
@@ -3856,7 +3923,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Power",
@@ -3913,7 +3981,8 @@
             "wind": "s",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Virtue",
@@ -3970,7 +4039,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Dominion",
@@ -4027,7 +4097,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Throne",
@@ -4084,7 +4155,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Melchizedek",
@@ -4147,7 +4219,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Justice"
     },
     {
         "name": "Yomotsu Shikome",
@@ -4204,7 +4277,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Naga",
@@ -4261,7 +4335,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Lamia",
@@ -4318,7 +4393,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Mothman",
@@ -4375,7 +4451,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Taraka",
@@ -4432,7 +4509,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Kurama Tengu",
@@ -4489,7 +4567,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Nebiros",
@@ -4547,7 +4626,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Kumbhanda",
@@ -4604,7 +4684,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Arahabaki",
@@ -4668,7 +4749,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Hermit"
     },
     {
         "name": "Fortuna",
@@ -4725,7 +4807,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "name": "Empusa",
@@ -4783,7 +4866,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "name": "Kusi Mitama",
@@ -4840,7 +4924,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "name": "Clotho",
@@ -4897,7 +4982,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "name": "Lachesis",
@@ -4954,7 +5040,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "name": "Atropos",
@@ -5011,7 +5098,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "name": "Norn",
@@ -5070,7 +5158,8 @@
             "wind": "d",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Fortune"
     },
     {
         "name": "Valkyrie",
@@ -5122,7 +5211,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Rakshasa",
@@ -5179,7 +5269,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Titan",
@@ -5236,7 +5327,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Jikokuten",
@@ -5298,7 +5390,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Hanuman",
@@ -5360,7 +5453,8 @@
             "wind": "w",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Narasimha",
@@ -5417,7 +5511,8 @@
             "wind": "w",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Kali",
@@ -5474,7 +5569,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Siegfried",
@@ -5537,7 +5633,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Strength"
     },
     {
         "name": "Inugami",
@@ -5594,7 +5691,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Take-Minakata",
@@ -5651,7 +5749,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Orthrus",
@@ -5708,7 +5807,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Vasuki",
@@ -5765,7 +5865,8 @@
             "wind": "w",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Ubelluris",
@@ -5827,7 +5928,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Hecatoncheires",
@@ -5884,7 +5986,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Hell Biker",
@@ -5942,7 +6045,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Attis",
@@ -6001,7 +6105,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Hanged Man"
     },
     {
         "name": "Ghoul",
@@ -6058,7 +6163,8 @@
             "wind": "n",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "name": "Pale Rider",
@@ -6116,7 +6222,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "name": "Loa",
@@ -6178,7 +6285,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "name": "Samael",
@@ -6235,7 +6343,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "name": "Mot",
@@ -6297,7 +6406,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "name": "Alice",
@@ -6355,7 +6465,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "name": "Thanatos",
@@ -6414,7 +6525,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Death"
     },
     {
         "name": "Nigi Mitama",
@@ -6471,7 +6583,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Mithra",
@@ -6528,7 +6641,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Genbu",
@@ -6585,7 +6699,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Seiryu",
@@ -6642,7 +6757,8 @@
             "wind": "n",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Okuninushi",
@@ -6699,7 +6815,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Suzaku",
@@ -6756,7 +6873,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Byakko",
@@ -6813,7 +6931,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Yurlungur",
@@ -6876,7 +6995,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Temperance"
     },
     {
         "name": "Lilim",
@@ -6933,7 +7053,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Vetala",
@@ -6990,7 +7111,8 @@
             "wind": "w",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Incubus",
@@ -7052,7 +7174,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Succubus",
@@ -7109,7 +7232,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Pazuzu",
@@ -7166,7 +7290,8 @@
             "wind": "n",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Lilith",
@@ -7230,7 +7355,8 @@
             "wind": "w",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Abaddon",
@@ -7292,7 +7418,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Beelzebub",
@@ -7351,7 +7478,8 @@
             "wind": "n",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Devil"
     },
     {
         "name": "Eligor",
@@ -7408,7 +7536,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Cu Chulainn",
@@ -7465,7 +7594,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Bishamonten",
@@ -7522,7 +7652,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Seiten Taisei",
@@ -7579,7 +7710,8 @@
             "wind": "s",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Masakado",
@@ -7638,7 +7770,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Mara",
@@ -7696,7 +7829,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Shiva",
@@ -7754,7 +7888,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Chi You",
@@ -7807,7 +7942,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Tower"
     },
     {
         "name": "Nandi",
@@ -7864,7 +8000,8 @@
             "wind": "n",
             "light": "s",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "name": "Kaiwan",
@@ -7926,7 +8063,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "name": "Ganesha",
@@ -7988,7 +8126,8 @@
             "wind": "d",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "name": "Garuda",
@@ -8045,7 +8184,8 @@
             "wind": "s",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "name": "Kartikeya",
@@ -8103,7 +8243,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "name": "Saturnus",
@@ -8165,7 +8306,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "name": "Helel",
@@ -8223,7 +8365,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Star"
     },
     {
         "name": "Gurr",
@@ -8285,7 +8428,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Yamatano-Orochi",
@@ -8342,7 +8486,8 @@
             "wind": "n",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Girimehkala",
@@ -8400,7 +8545,8 @@
             "wind": "w",
             "light": "w",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Dionysus",
@@ -8457,7 +8603,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Chernobog",
@@ -8519,7 +8666,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "n"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Seth",
@@ -8576,7 +8724,8 @@
             "wind": "-",
             "light": "w",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Baal Zebul",
@@ -8633,7 +8782,8 @@
             "wind": "s",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Sandalphon",
@@ -8692,7 +8842,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Moon"
     },
     {
         "name": "Yatagarasu",
@@ -8754,7 +8905,8 @@
             "wind": "s",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "name": "Quetzalcoatl",
@@ -8816,7 +8968,8 @@
             "wind": "s",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "name": "Jatayu",
@@ -8873,7 +9026,8 @@
             "wind": "d",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "name": "Horus",
@@ -8930,7 +9084,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "name": "Suparna",
@@ -8982,7 +9137,8 @@
             "wind": "n",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "name": "Vishnu",
@@ -9039,7 +9195,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "name": "Asura",
@@ -9098,7 +9255,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Sun"
     },
     {
         "name": "Anubis",
@@ -9155,7 +9313,8 @@
             "wind": "-",
             "light": "s",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "name": "Trumpeter",
@@ -9212,7 +9371,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "s"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "name": "Michael",
@@ -9264,7 +9424,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "name": "Satan",
@@ -9321,7 +9482,8 @@
             "wind": "w",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "name": "Lucifer",
@@ -9379,7 +9541,8 @@
             "wind": "-",
             "light": "-",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "name": "Messiah",
@@ -9443,7 +9606,8 @@
             "wind": "s",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Judgement"
     },
     {
         "name": "Uriel",
@@ -9500,7 +9664,8 @@
             "wind": "-",
             "light": "n",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "name": "Nidhoggr",
@@ -9552,7 +9717,8 @@
             "wind": "w",
             "light": "w",
             "darkness": "r"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "name": "Ananta",
@@ -9609,7 +9775,8 @@
             "wind": "w",
             "light": "n",
             "darkness": "-"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "name": "Atavaka",
@@ -9661,7 +9828,8 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Aeon"
     },
     {
         "name": "Metatron",
@@ -9725,6 +9893,7 @@
             "wind": "-",
             "light": "r",
             "darkness": "w"
-        }
+        },
+        "arcanaName": "Aeon"
     }
 ]
