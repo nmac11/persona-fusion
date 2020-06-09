@@ -1,0 +1,1082 @@
+[
+    {
+        "name": "1hSwd Master",
+        "type": "passive"
+    },
+    {
+        "name": "2hSwd Master",
+        "type": "passive"
+    },
+    {
+        "name": "Absorb Elec",
+        "type": "passive"
+    },
+    {
+        "name": "Absorb Fire",
+        "type": "passive"
+    },
+    {
+        "name": "Absorb Ice",
+        "type": "passive"
+    },
+    {
+        "name": "Absorb Pierce",
+        "type": "passive"
+    },
+    {
+        "name": "Absorb Slash",
+        "type": "passive"
+    },
+    {
+        "name": "Absorb Strike",
+        "type": "passive"
+    },
+    {
+        "name": "Absorb Wind",
+        "type": "passive"
+    },
+    {
+        "name": "Agi",
+        "type": "fire"
+    },
+    {
+        "name": "Agidyne",
+        "type": "fire"
+    },
+    {
+        "name": "Agilao",
+        "type": "fire"
+    },
+    {
+        "name": "Ailment Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Akasha Arts",
+        "type": "strike"
+    },
+    {
+        "name": "Alertness",
+        "type": "passive"
+    },
+    {
+        "name": "Amrita",
+        "type": "recovery"
+    },
+    {
+        "name": "Apt Pupil",
+        "type": "passive"
+    },
+    {
+        "name": "Arms Master",
+        "type": "passive"
+    },
+    {
+        "name": "Arrow Rain",
+        "type": "pierce"
+    },
+    {
+        "name": "Assault Dive",
+        "type": "strike"
+    },
+    {
+        "name": "Auto-Maraku",
+        "type": "passive"
+    },
+    {
+        "name": "Auto-Masuku",
+        "type": "passive"
+    },
+    {
+        "name": "Auto-Mataru",
+        "type": "passive"
+    },
+    {
+        "name": "Auto-Rakukaja",
+        "type": "passive"
+    },
+    {
+        "name": "Auto-Sukukaja",
+        "type": "passive"
+    },
+    {
+        "name": "Auto-Tarukaja",
+        "type": "passive"
+    },
+    {
+        "name": "Bash",
+        "type": "strike"
+    },
+    {
+        "name": "Bewilder",
+        "type": "ailment"
+    },
+    {
+        "name": "Black Viper",
+        "type": "almighty"
+    },
+    {
+        "name": "Blade of Fury",
+        "type": "slash"
+    },
+    {
+        "name": "Bow Master",
+        "type": "passive"
+    },
+    {
+        "name": "Bufu",
+        "type": "ice"
+    },
+    {
+        "name": "Bufudyne",
+        "type": "ice"
+    },
+    {
+        "name": "Bufula",
+        "type": "ice"
+    },
+    {
+        "name": "Charm Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Charmdi",
+        "type": "recovery"
+    },
+    {
+        "name": "Cleave",
+        "type": "slash"
+    },
+    {
+        "name": "Cool Breeze",
+        "type": "passive"
+    },
+    {
+        "name": "Counter",
+        "type": "passive"
+    },
+    {
+        "name": "Counterstrike",
+        "type": "passive"
+    },
+    {
+        "name": "Cruel Attack",
+        "type": "pierce"
+    },
+    {
+        "name": "Deathbound",
+        "type": "slash"
+    },
+    {
+        "name": "Dekaja",
+        "type": "support"
+    },
+    {
+        "name": "Dekunda",
+        "type": "support"
+    },
+    {
+        "name": "Dia",
+        "type": "recovery"
+    },
+    {
+        "name": "Diarahan",
+        "type": "recovery"
+    },
+    {
+        "name": "Diarama",
+        "type": "recovery"
+    },
+    {
+        "name": "Die for Me!",
+        "type": "dark"
+    },
+    {
+        "name": "Distress Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Divine Grace",
+        "type": "passive"
+    },
+    {
+        "name": "Dodge Elec",
+        "type": "passive"
+    },
+    {
+        "name": "Dodge Fire",
+        "type": "passive"
+    },
+    {
+        "name": "Dodge Ice",
+        "type": "passive"
+    },
+    {
+        "name": "Dodge Pierce",
+        "type": "passive"
+    },
+    {
+        "name": "Dodge Slash",
+        "type": "passive"
+    },
+    {
+        "name": "Dodge Strike",
+        "type": "passive"
+    },
+    {
+        "name": "Dodge Wind",
+        "type": "passive"
+    },
+    {
+        "name": "Double Fangs",
+        "type": "pierce"
+    },
+    {
+        "name": "Eerie Sound",
+        "type": "ailment"
+    },
+    {
+        "name": "Elec Amp",
+        "type": "passive"
+    },
+    {
+        "name": "Elec Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Elec Break",
+        "type": "support"
+    },
+    {
+        "name": "Endure",
+        "type": "passive"
+    },
+    {
+        "name": "Endure Dark",
+        "type": "passive"
+    },
+    {
+        "name": "Endure Light",
+        "type": "passive"
+    },
+    {
+        "name": "Enduring Soul",
+        "type": "passive"
+    },
+    {
+        "name": "Enradi",
+        "type": "recovery"
+    },
+    {
+        "name": "Escape Route",
+        "type": "passive"
+    },
+    {
+        "name": "Evade Elec",
+        "type": "passive"
+    },
+    {
+        "name": "Evade Fire",
+        "type": "passive"
+    },
+    {
+        "name": "Evade Ice",
+        "type": "passive"
+    },
+    {
+        "name": "Evade Pierce",
+        "type": "passive"
+    },
+    {
+        "name": "Evade Slash",
+        "type": "passive"
+    },
+    {
+        "name": "Evade Strike",
+        "type": "passive"
+    },
+    {
+        "name": "Evade Wind",
+        "type": "passive"
+    },
+    {
+        "name": "Evil Smile",
+        "type": "ailment"
+    },
+    {
+        "name": "Evil Touch",
+        "type": "ailment"
+    },
+    {
+        "name": "Fast Retreat",
+        "type": "passive"
+    },
+    {
+        "name": "Fatal End",
+        "type": "slash"
+    },
+    {
+        "name": "Fear Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Fire Amp",
+        "type": "passive"
+    },
+    {
+        "name": "Fire Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Fire Break",
+        "type": "support"
+    },
+    {
+        "name": "Fist Master",
+        "type": "passive"
+    },
+    {
+        "name": "Foul Breath",
+        "type": "almighty"
+    },
+    {
+        "name": "Full Analysis",
+        "type": "passive"
+    },
+    {
+        "name": "Garu",
+        "type": "wind"
+    },
+    {
+        "name": "Garudyne",
+        "type": "wind"
+    },
+    {
+        "name": "Garula",
+        "type": "wind"
+    },
+    {
+        "name": "Getsu-ei",
+        "type": "slash"
+    },
+    {
+        "name": "Ghastly Wail",
+        "type": "ailment"
+    },
+    {
+        "name": "Gigantic Fist",
+        "type": "strike"
+    },
+    {
+        "name": "God's Hand",
+        "type": "strike"
+    },
+    {
+        "name": "Growth 1",
+        "type": "passive"
+    },
+    {
+        "name": "Growth 2",
+        "type": "passive"
+    },
+    {
+        "name": "Growth 3",
+        "type": "passive"
+    },
+    {
+        "name": "Hama",
+        "type": "light"
+    },
+    {
+        "name": "Hama Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Hamaon",
+        "type": "light"
+    },
+    {
+        "name": "Healing Wave",
+        "type": "passive"
+    },
+    {
+        "name": "Heat Wave",
+        "type": "strike"
+    },
+    {
+        "name": "Heaven's Blade",
+        "type": "slash"
+    },
+    {
+        "name": "Heavy Master",
+        "type": "passive"
+    },
+    {
+        "name": "High Counter",
+        "type": "passive"
+    },
+    {
+        "name": "Holy Arrow",
+        "type": "pierce"
+    },
+    {
+        "name": "Ice Amp",
+        "type": "passive"
+    },
+    {
+        "name": "Ice Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Ice Break",
+        "type": "support"
+    },
+    {
+        "name": "Infuriate",
+        "type": "ailment"
+    },
+    {
+        "name": "Invigorate 1",
+        "type": "passive"
+    },
+    {
+        "name": "Invigorate 2",
+        "type": "passive"
+    },
+    {
+        "name": "Invigorate 3",
+        "type": "passive"
+    },
+    {
+        "name": "Kill Rush",
+        "type": "strike"
+    },
+    {
+        "name": "Last Resort",
+        "type": "almighty"
+    },
+    {
+        "name": "Life Drain",
+        "type": "almighty"
+    },
+    {
+        "name": "Mabufu",
+        "type": "ice"
+    },
+    {
+        "name": "Mabufudyne",
+        "type": "ice"
+    },
+    {
+        "name": "Mabufula",
+        "type": "ice"
+    },
+    {
+        "name": "Magaru",
+        "type": "wind"
+    },
+    {
+        "name": "Magarudyne",
+        "type": "wind"
+    },
+    {
+        "name": "Magarula",
+        "type": "wind"
+    },
+    {
+        "name": "Mahama",
+        "type": "light"
+    },
+    {
+        "name": "Mahamaon",
+        "type": "light"
+    },
+    {
+        "name": "Makarakarn",
+        "type": "support"
+    },
+    {
+        "name": "Mamudo",
+        "type": "dark"
+    },
+    {
+        "name": "Mamudoon",
+        "type": "dark"
+    },
+    {
+        "name": "Maragi",
+        "type": "fire"
+    },
+    {
+        "name": "Maragidyne",
+        "type": "fire"
+    },
+    {
+        "name": "Maragion",
+        "type": "fire"
+    },
+    {
+        "name": "Marakukaja",
+        "type": "support"
+    },
+    {
+        "name": "Marakunda",
+        "type": "support"
+    },
+    {
+        "name": "Marin Karin",
+        "type": "ailment"
+    },
+    {
+        "name": "Masukukaja",
+        "type": "support"
+    },
+    {
+        "name": "Masukunda",
+        "type": "support"
+    },
+    {
+        "name": "Matarukaja",
+        "type": "support"
+    },
+    {
+        "name": "Matarunda",
+        "type": "support"
+    },
+    {
+        "name": "Mazio",
+        "type": "elec"
+    },
+    {
+        "name": "Maziodyne",
+        "type": "elec"
+    },
+    {
+        "name": "Mazionga",
+        "type": "elec"
+    },
+    {
+        "name": "Me Patra",
+        "type": "recovery"
+    },
+    {
+        "name": "Media",
+        "type": "recovery"
+    },
+    {
+        "name": "Mediarahan",
+        "type": "recovery"
+    },
+    {
+        "name": "Mediarama",
+        "type": "recovery"
+    },
+    {
+        "name": "Megido",
+        "type": "almighty"
+    },
+    {
+        "name": "Megidola",
+        "type": "almighty"
+    },
+    {
+        "name": "Megidolaon",
+        "type": "almighty"
+    },
+    {
+        "name": "Mighty Swing",
+        "type": "slash"
+    },
+    {
+        "name": "Mind Charge",
+        "type": "support"
+    },
+    {
+        "name": "Morning Star",
+        "type": "almighty"
+    },
+    {
+        "name": "Mudo",
+        "type": "dark"
+    },
+    {
+        "name": "Mudo Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Mudoon",
+        "type": "dark"
+    },
+    {
+        "name": "Myriad Arrows",
+        "type": "pierce"
+    },
+    {
+        "name": "Niflheim",
+        "type": "ice"
+    },
+    {
+        "name": "Null Charm",
+        "type": "passive"
+    },
+    {
+        "name": "Null Dark",
+        "type": "passive"
+    },
+    {
+        "name": "Null Distress",
+        "type": "passive"
+    },
+    {
+        "name": "Null Elec",
+        "type": "passive"
+    },
+    {
+        "name": "Null Fear",
+        "type": "passive"
+    },
+    {
+        "name": "Null Fire",
+        "type": "passive"
+    },
+    {
+        "name": "Null Freeze",
+        "type": "passive"
+    },
+    {
+        "name": "Null Ice",
+        "type": "passive"
+    },
+    {
+        "name": "Null Light",
+        "type": "passive"
+    },
+    {
+        "name": "Null Panic",
+        "type": "passive"
+    },
+    {
+        "name": "Null Pierce",
+        "type": "passive"
+    },
+    {
+        "name": "Null Poison",
+        "type": "passive"
+    },
+    {
+        "name": "Null Rage",
+        "type": "passive"
+    },
+    {
+        "name": "Null Shock",
+        "type": "passive"
+    },
+    {
+        "name": "Null Slash",
+        "type": "passive"
+    },
+    {
+        "name": "Null Strike",
+        "type": "passive"
+    },
+    {
+        "name": "Null Wind",
+        "type": "passive"
+    },
+    {
+        "name": "Oracle",
+        "type": "passive"
+    },
+    {
+        "name": "Panic Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Panta Rhei",
+        "type": "wind"
+    },
+    {
+        "name": "Patra",
+        "type": "recovery"
+    },
+    {
+        "name": "Pierce Attack",
+        "type": "pierce"
+    },
+    {
+        "name": "Poisma",
+        "type": "ailment"
+    },
+    {
+        "name": "Poison Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Poison Mist",
+        "type": "ailment"
+    },
+    {
+        "name": "Posumudi",
+        "type": "recovery"
+    },
+    {
+        "name": "Power Charge",
+        "type": "support"
+    },
+    {
+        "name": "Pralaya",
+        "type": "pierce"
+    },
+    {
+        "name": "Premonition",
+        "type": "passive"
+    },
+    {
+        "name": "Primal Force",
+        "type": "pierce"
+    },
+    {
+        "name": "Provoke",
+        "type": "ailment"
+    },
+    {
+        "name": "Pulinpa",
+        "type": "ailment"
+    },
+    {
+        "name": "Rage Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Raging Tiger",
+        "type": "passive"
+    },
+    {
+        "name": "Ragnarok",
+        "type": "fire"
+    },
+    {
+        "name": "Rakukaja",
+        "type": "support"
+    },
+    {
+        "name": "Rakunda",
+        "type": "support"
+    },
+    {
+        "name": "Re Patra",
+        "type": "recovery"
+    },
+    {
+        "name": "Rebellion",
+        "type": "support"
+    },
+    {
+        "name": "Recarm",
+        "type": "recovery"
+    },
+    {
+        "name": "Recarmdra",
+        "type": "special"
+    },
+    {
+        "name": "Regenerate 1",
+        "type": "passive"
+    },
+    {
+        "name": "Regenerate 2",
+        "type": "passive"
+    },
+    {
+        "name": "Regenerate 3",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Dark",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Elec",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Fire",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Ice",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Light",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Pierce",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Slash",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Strike",
+        "type": "passive"
+    },
+    {
+        "name": "Repel Wind",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Dark",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Elec",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Fire",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Ice",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Light",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Pierce",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Slash",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Strike",
+        "type": "passive"
+    },
+    {
+        "name": "Resist Wind",
+        "type": "passive"
+    },
+    {
+        "name": "Revolution",
+        "type": "support"
+    },
+    {
+        "name": "Salvation",
+        "type": "recovery"
+    },
+    {
+        "name": "Samarecarm",
+        "type": "recovery"
+    },
+    {
+        "name": "Samsara",
+        "type": "light"
+    },
+    {
+        "name": "Sexy Dance",
+        "type": "ailment"
+    },
+    {
+        "name": "Sharp Student",
+        "type": "passive"
+    },
+    {
+        "name": "Slash Attack",
+        "type": "slash"
+    },
+    {
+        "name": "Sonic Punch",
+        "type": "strike"
+    },
+    {
+        "name": "Spear Master",
+        "type": "passive"
+    },
+    {
+        "name": "Spell Master",
+        "type": "passive"
+    },
+    {
+        "name": "Spirit Drain",
+        "type": "almighty"
+    },
+    {
+        "name": "Spring of Life",
+        "type": "passive"
+    },
+    {
+        "name": "Stagnant Air",
+        "type": "almighty"
+    },
+    {
+        "name": "Strike Attack",
+        "type": "strike"
+    },
+    {
+        "name": "Sukukaja",
+        "type": "support"
+    },
+    {
+        "name": "Sukunda",
+        "type": "support"
+    },
+    {
+        "name": "Support Scan",
+        "type": "passive"
+    },
+    {
+        "name": "Survive Dark",
+        "type": "passive"
+    },
+    {
+        "name": "Survive Light",
+        "type": "passive"
+    },
+    {
+        "name": "Swift Strike",
+        "type": "strike"
+    },
+    {
+        "name": "Tarukaja",
+        "type": "support"
+    },
+    {
+        "name": "Tarunda",
+        "type": "support"
+    },
+    {
+        "name": "Tempest Slash",
+        "type": "slash"
+    },
+    {
+        "name": "Tentarafoo",
+        "type": "ailment"
+    },
+    {
+        "name": "Tetrakarn",
+        "type": "support"
+    },
+    {
+        "name": "Third Eye",
+        "type": "passive"
+    },
+    {
+        "name": "Thunder Reign",
+        "type": "elec"
+    },
+    {
+        "name": "Torrent Shot",
+        "type": "pierce"
+    },
+    {
+        "name": "Trafuri",
+        "type": "special"
+    },
+    {
+        "name": "Twin Shot",
+        "type": "pierce"
+    },
+    {
+        "name": "Unshaken Will",
+        "type": "passive"
+    },
+    {
+        "name": "Victory Cry",
+        "type": "passive"
+    },
+    {
+        "name": "Vile Assault",
+        "type": "pierce"
+    },
+    {
+        "name": "Virus Breath",
+        "type": "ailment"
+    },
+    {
+        "name": "Vorpal Blade",
+        "type": "slash"
+    },
+    {
+        "name": "Weary Thrust",
+        "type": "strike"
+    },
+    {
+        "name": "Wind Amp",
+        "type": "passive"
+    },
+    {
+        "name": "Wind Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Wind Break",
+        "type": "support"
+    },
+    {
+        "name": "Zan-ei",
+        "type": "slash"
+    },
+    {
+        "name": "Zio",
+        "type": "elec"
+    },
+    {
+        "name": "Ziodyne",
+        "type": "elec"
+    },
+    {
+        "name": "Zionga",
+        "type": "elec"
+    },
+    {
+        "name": "Brave Blade",
+        "type": "slash"
+    },
+    {
+        "name": "Gale Slash",
+        "type": "slash"
+    },
+    {
+        "name": "Herculean Strike",
+        "type": "strike"
+    },
+    {
+        "name": "Maralagidyne",
+        "type": "fire"
+    },
+    {
+        "name": "Poison Arrow",
+        "type": "pierce"
+    },
+    {
+        "name": "Power Slash",
+        "type": "slash"
+    },
+    {
+        "name": "Single Shot",
+        "type": "pierce"
+    },
+    {
+        "name": "Vicious Strike",
+        "type": "strike"
+    },
+    {
+        "name": "Magic Skill Up",
+        "type": "passive"
+    },
+    {
+        "name": "Physical Boost",
+        "type": "passive"
+    },
+    {
+        "name": "Weapons Master",
+        "type": "passive"
+    }
+]

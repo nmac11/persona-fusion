@@ -7,6 +7,9 @@ import { p4gCompendiumProvider } from '../tokens/p4g/compendium-service-token';
 import { p3pFusionChartProvider } from '../tokens/p3p/fusion-chart-service-token';
 import { p3fesFusionChartProvider } from '../tokens/p3fes/fusion-chart-service-token';
 import { p4gFusionChartProvider } from '../tokens/p4g/fusion-chart-service-token';
+import { p3pSkillProvider } from '../tokens/p3p/skill-service-token';
+import { p3fesSkillProvider } from '../tokens/p3fes/skill-service-token';
+import { p4gSkillProvider } from '../tokens/p4g/skill-service-token';
 
 @NgModule({
   declarations: [],
@@ -18,6 +21,9 @@ import { p4gFusionChartProvider } from '../tokens/p4g/fusion-chart-service-token
     p3pFusionChartProvider,
     p3fesFusionChartProvider,
     p4gFusionChartProvider,
+    p3pSkillProvider,
+    p3fesSkillProvider,
+    p4gSkillProvider,
   ],
 })
 export class ProvidersModule {}

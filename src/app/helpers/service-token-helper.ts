@@ -13,6 +13,9 @@ import { P4G_FUSION_CHART } from '../tokens/p4g/fusion-chart-service-token';
 import { P3P_SIMULATOR } from '../tokens/p3p/simulator-service-token';
 import { P3FES_SIMULATOR } from '../tokens/p3fes/simulator-service-token';
 import { P4G_SIMULATOR } from '../tokens/p4g/simulator-service-token';
+import { P3P_SKILL } from '../tokens/p3p/skill-service-token';
+import { P3FES_SKILL } from '../tokens/p3fes/skill-service-token';
+import { P4G_SKILL } from '../tokens/p4g/skill-service-token';
 
 export const serviceToken: any = {
   p3p: {
@@ -21,6 +24,7 @@ export const serviceToken: any = {
     triangleFusion: P3P_TRIANGLE_FUSION,
     fusionChart: P3P_FUSION_CHART,
     simulator: P3P_SIMULATOR,
+    skill: P3P_SKILL,
   },
   p3fes: {
     compendium: P3FES_COMPENDIUM,
@@ -28,6 +32,7 @@ export const serviceToken: any = {
     triangleFusion: P3FES_TRIANGLE_FUSION,
     fusionChart: P3FES_FUSION_CHART,
     simulator: P3FES_SIMULATOR,
+    skill: P3FES_SKILL,
   },
   p4g: {
     compendium: P4G_COMPENDIUM,
@@ -35,5 +40,6 @@ export const serviceToken: any = {
     triangleFusion: P4G_TRIANGLE_FUSION,
     fusionChart: P4G_FUSION_CHART,
     simulator: P4G_SIMULATOR,
+    skill: P4G_SKILL,
   },
 };
