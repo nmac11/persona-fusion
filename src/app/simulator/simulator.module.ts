@@ -9,6 +9,7 @@ import { p3pSimulatorProvider } from '../tokens/p3p/simulator-service-token';
 import { p3fesSimulatorProvider } from '../tokens/p3fes/simulator-service-token';
 import { p4gSimulatorProvider } from '../tokens/p4g/simulator-service-token';
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.
     ListDialogComponent,
     SkillsDialogComponent,
   ],
-  imports: [CommonModule, MaterialModule, FormsModule],
+  imports: [CommonModule, MaterialModule, FormsModule, DragDropModule],
   entryComponents: [ListDialogComponent, SkillsDialogComponent],
   providers: [
     p3pSimulatorProvider,

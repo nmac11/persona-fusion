@@ -7,12 +7,12 @@
       <ng-template matTabLabel>
           <span [matBadge]="data.fusionItem.skills.length" matBadgeOverlap="false">LEARNED</span>
       </ng-template>
-      <mat-list>
-        <mat-list-item *ngFor="let skill of data.fusionItem.skills; let i = index">
+      <mat-list cdkDropList (cdkDropListDropped)="drop($event)">
+        <mat-list-item cdkDrag *ngFor="let skill of data.fusionItem.skills; let i = index">
+          <mat-icon mat-list-icon cdkDragHandle>unfold_more</mat-icon>
           <span matLine>
             {{skill.name}}
           </span>
-          <span mat-line class="mat-caption">{{skill.type}}</span>
           <button mat-icon-button (click)="remove(i)">
             <mat-icon color="warn">remove</mat-icon>
           </button>
@@ -41,6 +41,5 @@
   </mat-tab-group>
 </mat-dialog-content>
 <mat-dialog-actions style="justify-content: flex-end;">
-  <button mat-button (click)="onCancel()">CANCEL</button>
-  <button mat-button [mat-dialog-close]="data.fusionItem" color="primary">DONE</button>
+  <button mat-button color="primary" (click)="onCancel()">CLOSE</button>
 </mat-dialog-actions>

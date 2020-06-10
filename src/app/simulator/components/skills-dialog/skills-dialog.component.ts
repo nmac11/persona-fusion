@@ -15,6 +15,7 @@ import { SkillService } from '../../../services/skill.service';
 import { fromEvent } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'simulator-skills-dialog',
@@ -66,6 +67,10 @@ export class SkillsDialogComponent implements OnInit, AfterViewInit {
           (fskill) => fskill.name === skill.name,
         ),
     );
+  }
+
+  drop(event: CdkDragDrop<Skill[]>): void {
+    moveItemInArray(this.data.fusionItem.skills, event.previousIndex, event.currentIndex);
   }
 
   private applyFilter(key: string = ''): void {
