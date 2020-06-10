@@ -8,7 +8,8 @@
           <span [matBadge]="data.fusionItem.skills.length" matBadgeOverlap="false">LEARNED</span>
       </ng-template>
       <mat-list cdkDropList (cdkDropListDropped)="drop($event)">
-        <mat-list-item cdkDrag *ngFor="let skill of data.fusionItem.skills; let i = index">
+        <mat-list-item cdkDrag *ngFor="let skill of data.fusionItem.skills; let i = index"
+          [style.color]="(i < 8) ? 'rgba(0,0,0,.87)' : 'rgba(0,0,0,.54)'">
           <mat-icon mat-list-icon cdkDragHandle>unfold_more</mat-icon>
           <span matLine>
             {{skill.name}}
