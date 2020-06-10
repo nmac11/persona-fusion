@@ -2,7 +2,7 @@
   <ng-container *ngIf="selectedPersona; else noSelection">Selected: {{selectedPersona.name}}</ng-container>
   <ng-template #noSelection>Select a Persona</ng-template>
 </h1>
-<mat-dialog-content style="height: 360px;">
+<mat-dialog-content style="min-height: 360px; max-height: 400px">
   <div style="background: #fff; z-index: 10; position: sticky; top: 0">
     <mat-form-field appearance="fill" style="width: 100%;">
       <mat-label>Filter</mat-label>
