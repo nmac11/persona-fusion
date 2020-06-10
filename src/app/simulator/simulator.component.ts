@@ -39,7 +39,7 @@ export class SimulatorComponent implements OnInit {
     const dialogRef = this.openDialog(
       (p: Persona) => {
         if (p) {
-          Object.assign(fusionItem, { persona: p, currentLevel: p.level });
+          Object.assign(fusionItem, this.createFusionNode(p));
           this.fuse();
         }
       },
@@ -49,8 +49,9 @@ export class SimulatorComponent implements OnInit {
 
   changeLevel(event: any, fusionItem: FusionNode): void {
     const inputLevel = event.target.value;
-    if (!(inputLevel <= 99 && inputLevel >= fusionItem.persona.level))
-      fusionItem.currentLevel = fusionItem.persona.level;
+    const previousLevel = fusionItem.currentLevel;
+    this.setLevel(fusionItem, inputLevel);
+    this.updateSkills(fusionItem, previousLevel);
     this.fuse();
   }
 
@@ -59,7 +60,7 @@ export class SimulatorComponent implements OnInit {
     this.openDialog((p: Persona) => {
       persona = p;
       if (p) {
-        this.fusionItems.push({ persona: p, currentLevel: p.level });
+        this.fusionItems.push(this.createFusionNode(p));
         this.fuse();
       }
     });
@@ -73,6 +74,35 @@ export class SimulatorComponent implements OnInit {
   clearItems(): void {
     this.fusionItems = [];
     this.fusionYield = null;
+  }
+
+  private setLevel(fusionItem, level): void {
+    if (level > 99) fusionItem.currentLevel = 99;
+    else if (level < fusionItem.persona.level)
+      fusionItem.currentLevel = fusionItem.persona.level;
+    else fusionItem.currentLevel = level;
+  }
+
+  private updateSkills(fusionItem, previousLevel): void {
+    const currentLevel = fusionItem.currentLevel;
+    const acquiredSkills = fusionItem.persona.skills.filter(
+      (skill) =>
+        skill.level > previousLevel &&
+        skill.level <= currentLevel &&
+        !fusionItem.skills.some(
+          (learnedSkill) => learnedSkill.name === skill.name,
+        ),
+    );
+
+    fusionItem.skills.push(...acquiredSkills);
+  }
+
+  private createFusionNode(p: Persona): FusionNode {
+    return {
+      persona: p,
+      currentLevel: p.level,
+      skills: p.skills.filter((skill) => skill.level === 0),
+    };
   }
 
   private fuse(): void {

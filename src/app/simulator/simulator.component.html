@@ -38,15 +38,15 @@
             {{ fusionItem.persona.name }}
           </mat-panel-title>
           <mat-panel-description>
-             Level {{ fusionItem.currentLevel }} / {{ fusionItem.persona.arcanaName }}
+             <small class="mat-caption">{{ fusionItem.persona.arcanaName }} / Level {{ fusionItem.currentLevel }}</small>
           </mat-panel-description>
         </mat-expansion-panel-header>
 
         <div>
-          <mat-form-field class="example-full-width">
-            <mat-label>Current Level</mat-label>
+          <mat-form-field appearance="fill" style="width: 60px;">
+            <mat-label>Level</mat-label>
             <input type="number" autocomplete="off" matInput
-            [(ngModel)]="fusionItem.currentLevel"
+            [ngModel]="fusionItem.currentLevel"
             (change)="changeLevel($event, fusionItem)"
             (keydown.enter)="$event.target.blur();false"
             [value]="fusionItem.currentLevel"
@@ -54,9 +54,15 @@
             max="99"
             required>
           </mat-form-field>
-          <div style="width: 100%; display: flex; flex-direction: row; justify-content: flex-end;">
-            <button mat-button color="primary" (click)="changePersona(fusionItem)">CHANGE</button>
-            <button mat-button color="warn" (click)="removeItem(i)">REMOVE</button>
+          <mat-chip-list>
+            <mat-chip *ngFor="let skill of fusionItem.skills; let si = index" [selected]="si < 8">
+              {{skill.name}}
+            </mat-chip>
+            <button mat-icon-button color="primary"><mat-icon>add_circle_outline</mat-icon></button>
+          </mat-chip-list>
+          <div style="margin-top: 16px; width: 100%; display: flex; flex-direction: row; justify-content: flex-end;">
+            <button mat-icon-button color="accent" (click)="removeItem(i)"><mat-icon>delete</mat-icon></button>
+            <button mat-icon-button color="accent" (click)="changePersona(fusionItem)"><mat-icon>edit</mat-icon></button>
           </div>
         </div>
       </mat-expansion-panel>

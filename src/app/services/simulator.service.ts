@@ -17,7 +17,7 @@ export class SimulatorService {
       this.fuseSpecial(fusionItems) ||
       this.fuseNormal(fusionItems) ||
       this.fuseTriangle(fusionItems);
-    if (persona) return { persona: persona, currentLevel: persona.level };
+    if (persona) return { persona: persona, currentLevel: persona.level, skills: [] };
   }
 
   private validateUniqueness(fusionItems: FusionNode[]): boolean {
