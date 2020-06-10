@@ -8,11 +8,16 @@ import { FormsModule } from '@angular/forms';
 import { p3pSimulatorProvider } from '../tokens/p3p/simulator-service-token';
 import { p3fesSimulatorProvider } from '../tokens/p3fes/simulator-service-token';
 import { p4gSimulatorProvider } from '../tokens/p4g/simulator-service-token';
+import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 
 @NgModule({
-  declarations: [SimulatorComponent, ListDialogComponent],
+  declarations: [
+    SimulatorComponent,
+    ListDialogComponent,
+    SkillsDialogComponent,
+  ],
   imports: [CommonModule, MaterialModule, FormsModule],
-  entryComponents: [ListDialogComponent],
+  entryComponents: [ListDialogComponent, SkillsDialogComponent],
   providers: [
     p3pSimulatorProvider,
     p3fesSimulatorProvider,

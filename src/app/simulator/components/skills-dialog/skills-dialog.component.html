@@ -1,0 +1,46 @@
+<h1 mat-dialog-title>
+  <ng-container>{{data.fusionItem.persona.name}}</ng-container>
+</h1>
+<mat-dialog-content>
+  <mat-tab-group style="height: 360px">
+    <mat-tab>
+      <ng-template matTabLabel>
+          <span [matBadge]="data.fusionItem.skills.length" matBadgeOverlap="false">LEARNED</span>
+      </ng-template>
+      <mat-list>
+        <mat-list-item *ngFor="let skill of data.fusionItem.skills; let i = index">
+          <span matLine>
+            {{skill.name}}
+          </span>
+          <span mat-line class="mat-caption">{{skill.type}}</span>
+          <button mat-icon-button (click)="remove(i)">
+            <mat-icon color="warn">remove</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+    <mat-tab label="ALL">
+      <div style="position: sticky; top: 0; z-index: 100; background: #fff">
+        <mat-form-field appearance="fill" style="width: 100%; box-sizing: border-box;">
+          <mat-label>Filter</mat-label>
+          <input #filterField autocomplete="off" matInput>
+        </mat-form-field>
+      </div>
+      <mat-list>
+        <mat-list-item *ngFor="let skill of skills">
+          <span matLine>
+            {{skill.name}}
+          </span>
+          <span mat-line class="mat-caption mat-body-1">{{skill.type}}</span>
+          <button mat-icon-button (click)="add(skill)">
+            <mat-icon color="primary">add</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+  </mat-tab-group>
+</mat-dialog-content>
+<mat-dialog-actions style="justify-content: flex-end;">
+  <button mat-button (click)="onCancel()">CANCEL</button>
+  <button mat-button [mat-dialog-close]="data.fusionItem" color="primary">DONE</button>
+</mat-dialog-actions>

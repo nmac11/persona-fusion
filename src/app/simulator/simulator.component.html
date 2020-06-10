@@ -55,10 +55,10 @@
             required>
           </mat-form-field>
           <mat-chip-list>
-            <mat-chip *ngFor="let skill of fusionItem.skills; let si = index" [selected]="si < 8">
+            <mat-chip *ngFor="let skill of fusionItem.skills; let si = index" [color]="(si < 8) ? 'primary' : 'basic'" selected>
               {{skill.name}}
             </mat-chip>
-            <button mat-icon-button color="primary"><mat-icon>add_circle_outline</mat-icon></button>
+            <button mat-icon-button color="primary" (click)="editSkills(fusionItem)"><mat-icon>add_circle_outline</mat-icon></button>
           </mat-chip-list>
           <div style="margin-top: 16px; width: 100%; display: flex; flex-direction: row; justify-content: flex-end;">
             <button mat-icon-button color="accent" (click)="removeItem(i)"><mat-icon>delete</mat-icon></button>

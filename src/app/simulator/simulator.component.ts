@@ -3,8 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { Persona } from '../models/persona';
 import { CompendiumService } from '../services/compendium.service';
 import { SimulatorService } from '../services/simulator.service';
+import { SkillService } from '../services/skill.service';
 import { serviceToken } from '../helpers/service-token-helper';
 import { ListDialogComponent } from './components/list-dialog/list-dialog.component';
+import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 import { FusionNode } from '../models/fusion-node';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -18,11 +20,13 @@ export class SimulatorComponent implements OnInit {
   fusionYield: FusionNode;
   compendiumService: CompendiumService;
   simulatorService: SimulatorService;
+  skillService: SkillService;
 
   constructor(
     private injector: Injector,
     private route: ActivatedRoute,
-    private dialog: MatDialog,
+    private personaListDialog: MatDialog,
+    private skillsDialog: MatDialog,
   ) {
     const game = this.route.parent.snapshot.params.game;
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -31,12 +35,15 @@ export class SimulatorComponent implements OnInit {
     this.simulatorService = this.injector.get<SimulatorService>(
       serviceToken[game].simulator,
     );
+    this.skillService = this.injector.get<SkillService>(
+      serviceToken[game].skill,
+    );
   }
 
   ngOnInit(): void {}
 
   changePersona(fusionItem: FusionNode): void {
-    const dialogRef = this.openDialog(
+    const dialogRef = this.openPersonaListDialog(
       (p: Persona) => {
         if (p) {
           Object.assign(fusionItem, this.createFusionNode(p));
@@ -57,7 +64,7 @@ export class SimulatorComponent implements OnInit {
 
   addItem(): void {
     let persona: Persona;
-    this.openDialog((p: Persona) => {
+    this.openPersonaListDialog((p: Persona) => {
       persona = p;
       if (p) {
         this.fusionItems.push(this.createFusionNode(p));
@@ -74,6 +81,12 @@ export class SimulatorComponent implements OnInit {
   clearItems(): void {
     this.fusionItems = [];
     this.fusionYield = null;
+  }
+
+  editSkills(fusionItem: FusionNode): void {
+    const dialogRef = this.personaListDialog.open(SkillsDialogComponent, {
+      data: { fusionItem, skillService: this.skillService },
+    });
   }
 
   private setLevel(fusionItem, level): void {
@@ -109,13 +122,12 @@ export class SimulatorComponent implements OnInit {
     this.fusionYield = this.simulatorService.fuse(this.fusionItems);
   }
 
-  private openDialog(fn: (res) => void, options = {}) {
+  private openPersonaListDialog(fn: (res) => void, options = {}) {
     const data = {
       compendium: this.compendiumService,
     };
     Object.assign(data, options);
-    const dialogRef = this.dialog.open(ListDialogComponent, {
-      width: '400px',
+    const dialogRef = this.personaListDialog.open(ListDialogComponent, {
       data,
     });
     dialogRef.afterClosed().subscribe(fn);
