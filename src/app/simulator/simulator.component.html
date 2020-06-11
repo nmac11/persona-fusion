@@ -15,20 +15,22 @@
         </mat-card-subtitle>
       </mat-card-header>
     </ng-template>
-    <mat-chip-list *ngIf="fusionYield">
-      <mat-chip *ngIf="fusionYield.persona.special" color="warn" selected
-        >Special fusion</mat-chip
-      >
-      <mat-chip *ngIf="fusionYield.persona.specialCondition" color="accent" selected>{{
-        fusionYield.persona.specialCondition
-      }}</mat-chip>
-      <mat-chip *ngIf="fusionYield.persona.ultimate" color="accent" selected
-        >Ultimate Persona</mat-chip
-      >
-      <mat-chip *ngIf="fusionYield.persona.keyItem">Key item</mat-chip>
-    </mat-chip-list>
-    <mat-card-content></mat-card-content>
-  </mat-card>  
+    
+    <mat-card-content>
+      <mat-chip-list *ngIf="fusionYield">
+        <mat-chip *ngIf="fusionYield.persona.special" color="warn" selected
+          >Special fusion</mat-chip
+        >
+        <mat-chip *ngIf="fusionYield.persona.specialCondition" color="accent" selected>{{
+          fusionYield.persona.specialCondition
+        }}</mat-chip>
+        <mat-chip *ngIf="fusionYield.persona.ultimate" color="accent" selected
+          >Ultimate Persona</mat-chip
+        >
+        <mat-chip *ngIf="fusionYield.persona.keyItem">Key item</mat-chip>
+      </mat-chip-list>
+    </mat-card-content>
+  </mat-card>
 
   <div>
     <mat-accordion multi>
