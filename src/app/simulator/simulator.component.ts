@@ -8,6 +8,7 @@ import { serviceToken } from '../helpers/service-token-helper';
 import { ListDialogComponent } from './components/list-dialog/list-dialog.component';
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 import { FusionNode } from '../models/fusion-node';
+import { FusionResult } from '../models/fusion-result';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -17,7 +18,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class SimulatorComponent implements OnInit {
   fusionItems: FusionNode[] = [];
-  fusionYield: FusionNode;
+  fusionYield: FusionResult;
   compendiumService: CompendiumService;
   simulatorService: SimulatorService;
   skillService: SkillService;
@@ -87,6 +88,7 @@ export class SimulatorComponent implements OnInit {
     const dialogRef = this.personaListDialog.open(SkillsDialogComponent, {
       data: { fusionItem, skillService: this.skillService },
     });
+    dialogRef.afterClosed().subscribe(() => this.fuse());
   }
 
   private setLevel(fusionItem, level): void {

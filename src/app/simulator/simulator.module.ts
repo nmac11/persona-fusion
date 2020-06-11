@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { p3pSimulatorProvider } from '../tokens/p3p/simulator-service-token';
 import { p3fesSimulatorProvider } from '../tokens/p3fes/simulator-service-token';
 import { p4gSimulatorProvider } from '../tokens/p4g/simulator-service-token';
+import { p3SkillInheritanceProvider } from '../tokens/p3/skill-inheritance-service-token';
+import { p4SkillInheritanceProvider } from '../tokens/p4/skill-inheritance-service-token';
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
@@ -23,6 +25,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     p3pSimulatorProvider,
     p3fesSimulatorProvider,
     p4gSimulatorProvider,
+    p3SkillInheritanceProvider,
+    p4SkillInheritanceProvider,
   ],
 })
 export class SimulatorModule {}

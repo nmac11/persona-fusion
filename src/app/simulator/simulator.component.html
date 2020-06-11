@@ -1,5 +1,5 @@
 <div>
-  <mat-card class="mat-elevation-z2" style="margin-bottom: 24px;" >
+  <mat-card class="mat-elevation-z2" style="margin-bottom: 16px;">
     <mat-card-header *ngIf="fusionYield; else invalidCombo">
       <mat-card-title>{{ fusionYield.persona.name }}</mat-card-title>
       <mat-card-subtitle
@@ -32,7 +32,29 @@
     </mat-card-content>
   </mat-card>
 
-  <div>
+  <mat-expansion-panel style="margin-bottom: 16px" *ngIf="fusionYield" expanded>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Skills
+      </mat-panel-title>
+      <mat-panel-description>
+        Innate: {{fusionYield.skills.length}} / Inherits: {{fusionYield.skillsInheritedCount}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-chip-list>
+      <mat-chip color="primary" *ngFor="let skill of fusionYield.skills" selected>
+        {{skill.name}}
+      </mat-chip>
+      <mat-chip color="accent" *ngFor="let skill of fusionYield.inheritableSkills" selected>
+        {{skill.name}} <small>[{{skill.probRatio}}]</small>
+      </mat-chip>
+    </mat-chip-list>
+    
+  </mat-expansion-panel>
+
+  <mat-divider></mat-divider>
+
+  <div style="margin-top: 16px">
     <mat-accordion multi>
       <mat-expansion-panel *ngFor="let fusionItem of fusionItems; let i = index;">
         <mat-expansion-panel-header>
@@ -69,7 +91,6 @@
         </div>
       </mat-expansion-panel>
     </mat-accordion>
-
     <button mat-flat-button color="primary" style="margin-top: 16px; width: 100%" (click)="addItem()">
       <mat-icon>add</mat-icon> ADD
     </button>

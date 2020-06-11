@@ -1,23 +1,33 @@
 import { Injectable, Inject } from '@angular/core';
 import { FusionChartService } from './fusion-chart.service';
 import { CompendiumService } from './compendium.service';
+import { SkillInheritanceService } from './skill-inheritance.service';
 import { Persona } from '../models/persona';
 import { FusionNode } from '../models/fusion-node';
+import { FusionResult } from '../models/fusion-result';
+
+import { InheritableSkill } from '../models/inheritable-skill';
+import { Skill } from '../models/skill';
 
 @Injectable()
 export class SimulatorService {
   constructor(
     @Inject(FusionChartService) private fusionChartService: FusionChartService,
     @Inject(CompendiumService) private compendiumService: CompendiumService,
+    @Inject(SkillInheritanceService)
+    private skillInheritanceService: SkillInheritanceService,
   ) {}
 
-  fuse(fusionItems: FusionNode[]): FusionNode {
+  fuse(fusionItems: FusionNode[]): FusionResult {
     if (!this.validateUniqueness(fusionItems)) return;
     const persona =
       this.fuseSpecial(fusionItems) ||
       this.fuseNormal(fusionItems) ||
       this.fuseTriangle(fusionItems);
-    if (persona) return { persona: persona, currentLevel: persona.level, skills: [] };
+
+    if (persona) {
+      return this.createFusionResult(persona, fusionItems);
+    }
   }
 
   private validateUniqueness(fusionItems: FusionNode[]): boolean {
@@ -126,5 +136,23 @@ export class SimulatorService {
       result = this.compendiumService.getNextRank(result);
     }
     return result;
+  }
+
+  private createFusionResult(
+    persona: Persona,
+    fusionItems: FusionNode[],
+  ): FusionResult {
+    return {
+      persona,
+      currentLevel: persona.level,
+      skills: persona.skills.filter(skill => skill.level === 0),
+      skillsInheritedCount: this.skillInheritanceService.numberOfSkillsInherited(
+        fusionItems,
+      ),
+      inheritableSkills: this.skillInheritanceService.findInheritableSkills(
+        persona,
+        fusionItems,
+      ),
+    };
   }
 }
