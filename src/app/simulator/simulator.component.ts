@@ -100,6 +100,16 @@ export class SimulatorComponent implements OnInit {
 
   private updateSkills(fusionItem, previousLevel): void {
     const currentLevel = fusionItem.currentLevel;
+    if (currentLevel > previousLevel)
+      this.learnSkills(fusionItem, previousLevel, currentLevel);
+    else this.unlearnSkills(fusionItem, previousLevel, currentLevel);
+  }
+
+  private learnSkills(
+    fusionItem: FusionNode,
+    previousLevel: number,
+    currentLevel: number,
+  ) {
     const acquiredSkills = fusionItem.persona.skills.filter(
       (skill) =>
         skill.level > previousLevel &&
@@ -108,8 +118,17 @@ export class SimulatorComponent implements OnInit {
           (learnedSkill) => learnedSkill.name === skill.name,
         ),
     );
-
     fusionItem.skills.push(...acquiredSkills);
+  }
+
+  private unlearnSkills(
+    fusionItem: FusionNode,
+    previousLevel: number,
+    currentLevel: number,
+  ) {
+    fusionItem.skills = fusionItem.skills.filter(
+      (skill) => skill.level <= currentLevel || !skill.level,
+    );
   }
 
   private createFusionNode(p: Persona): FusionNode {
