@@ -6,9 +6,6 @@ import { Persona } from '../models/persona';
 import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
 
-import { InheritableSkill } from '../models/inheritable-skill';
-import { Skill } from '../models/skill';
-
 @Injectable()
 export class SimulatorService {
   constructor(
