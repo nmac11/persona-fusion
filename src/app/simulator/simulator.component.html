@@ -46,7 +46,7 @@
         {{skill.name}}
       </mat-chip>
       <mat-chip color="accent" *ngFor="let skill of fusionYield.inheritableSkills" selected>
-        {{skill.name}} <small>[{{skill.probRatio}}]</small>
+        {{skill.name}} <small style="margin-left: 8px">{{skill.probability * 100 | number: '1.2-2'}}%</small>
       </mat-chip>
     </mat-chip-list>
     

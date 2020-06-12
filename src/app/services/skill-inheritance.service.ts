@@ -4,6 +4,7 @@ import { Persona } from '../models/persona';
 import { Skill } from '../models/skill';
 import { InheritableSkill } from '../models/inheritable-skill';
 import { FusionResult } from '../models/fusion-result';
+import { probability } from '../helpers/probability-helper';
 
 @Injectable()
 export class SkillInheritanceService {
@@ -22,39 +23,47 @@ export class SkillInheritanceService {
     persona: Persona,
     fusionItems: FusionNode[],
   ): InheritableSkill[] {
-    const fusionSkills = this.findPotentiallyInheritableSkills(
-      persona,
-      fusionItems,
+    const fusionSkills = this.findPossibleSkills(persona, fusionItems);
+    return this.addProbabilities(
+      persona.inherits,
+      fusionSkills,
+      this.numberOfSkillsInherited(fusionItems),
+    ).filter((skill) => skill.probRatio);
+  }
+
+  private addProbabilities(
+    inheritType: string,
+    skills: Skill[],
+    berths: number,
+  ): InheritableSkill[] {
+    const skillsWithPR = this.addProbRatios(inheritType, skills);
+    const ratios = skillsWithPR.map((skill) => skill.probRatio);
+    skillsWithPR.forEach(
+      (skill, i) => (skill.probability = probability(ratios, berths, i)),
     );
-    return this.addProbRatios(persona.inherits, fusionSkills).filter(
-      (skill) => skill.probRatio,
-    );
+    return skillsWithPR;
   }
 
   private addProbRatios(
     inheritType: string,
     fusionSkills: Skill[],
   ): InheritableSkill[] {
-    return fusionSkills.reduce((inheritableSkills, skill) => {
-      const { level, ...inheritableSkill } = skill;
-      let probRatio = this.findSkillInheritanceProbRatio(inheritType, skill);
-      inheritableSkills.push({
-        ...inheritableSkill,
-        probRatio,
-      });
-      return inheritableSkills;
+    return fusionSkills.reduce((iSkills, skill) => {
+      const { level, ...iSkill } = skill;
+      (iSkill as InheritableSkill).probRatio = this.findSkillProbRatio(
+        inheritType,
+        skill,
+      );
+      return [...iSkills, iSkill];
     }, []);
   }
 
-  private findSkillInheritanceProbRatio(
-    inheritType: string,
-    skill: Skill,
-  ): number {
+  private findSkillProbRatio(inheritType: string, skill: Skill): number {
     const probRatio = this.inheritanceChart[inheritType][skill.type];
     return probRatio === undefined ? 1.0 : probRatio;
   }
 
-  private findPotentiallyInheritableSkills(
+  private findPossibleSkills(
     persona: Persona,
     fusionItems: FusionNode[],
   ): Skill[] {
