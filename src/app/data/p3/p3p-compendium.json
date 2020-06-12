@@ -9542,7 +9542,7 @@
                 "type": "passive"
             }
         ],
-        "inherits": "lidark",
+        "inherits": "light-dark",
         "stats": {
             "st": 41,
             "ma": 50,
@@ -9600,7 +9600,7 @@
                 "type": "support"
             }
         ],
-        "inherits": "lidark",
+        "inherits": "light-dark",
         "stats": {
             "st": 43,
             "ma": 47,
@@ -9711,7 +9711,7 @@
                 "type": "passive"
             }
         ],
-        "inherits": "lidark",
+        "inherits": "light-dark",
         "stats": {
             "st": 51,
             "ma": 60,
@@ -9840,7 +9840,7 @@
                 "type": "recovery"
             }
         ],
-        "inherits": "lidark",
+        "inherits": "light-dark",
         "stats": {
             "st": 63,
             "ma": 62,
