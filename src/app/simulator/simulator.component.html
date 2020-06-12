@@ -38,7 +38,7 @@
         Skills
       </mat-panel-title>
       <mat-panel-description>
-        Innate: {{fusionYield.skills.length}} / Inherits: {{fusionYield.skillsInheritedCount}}
+        <small>Type: {{fusionYield.persona.inherits | titlecase}} / Innate: {{fusionYield.skills.length}} / Inherits: {{fusionYield.skillsInheritedCount}}</small>
       </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-chip-list>
