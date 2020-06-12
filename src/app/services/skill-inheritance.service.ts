@@ -28,7 +28,7 @@ export class SkillInheritanceService {
       persona.inherits,
       fusionSkills,
       this.numberOfSkillsInherited(fusionItems),
-    ).filter((skill) => skill.probRatio);
+    ).sort((a, b) => (b.probRatio - a.probRatio));
   }
 
   private addProbabilities(
