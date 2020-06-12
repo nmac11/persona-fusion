@@ -28,7 +28,7 @@ export class SkillInheritanceService {
       persona.inherits,
       fusionSkills,
       this.numberOfSkillsInherited(fusionItems),
-    ).sort((a, b) => (b.probRatio - a.probRatio));
+    ).sort((a, b) => b.probRatio - a.probRatio);
   }
 
   private addProbabilities(
@@ -59,6 +59,7 @@ export class SkillInheritanceService {
   }
 
   private findSkillProbRatio(inheritType: string, skill: Skill): number {
+    if (skill.exclusive) return 0;
     const probRatio = this.inheritanceChart[inheritType][skill.type];
     return probRatio === undefined ? 1.0 : probRatio;
   }

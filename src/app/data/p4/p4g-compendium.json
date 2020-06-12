@@ -503,7 +503,8 @@
             {
                 "name": "Niflheim",
                 "level": 70,
-                "type": "ice"
+                "type": "ice",
+                "exclusive": true
             },
             {
                 "name": "Null Fire",
@@ -1037,7 +1038,8 @@
             {
                 "name": "Ragnarok",
                 "level": 74,
-                "type": "fire"
+                "type": "fire",
+                "exclusive": true
             }
         ],
         "inherits": "fire",
@@ -2638,7 +2640,8 @@
             {
                 "name": "Panta Rhei",
                 "level": 81,
-                "type": "wind"
+                "type": "wind",
+                "exclusive": true
             },
             {
                 "name": "Regenerate 3",
@@ -3151,7 +3154,8 @@
             {
                 "name": "Samsara",
                 "level": 67,
-                "type": "light"
+                "type": "light",
+                "exclusive": true
             }
         ],
         "inherits": "light",
@@ -4095,7 +4099,8 @@
             {
                 "name": "Thunder Reign",
                 "level": 70,
-                "type": "elec"
+                "type": "elec",
+                "exclusive": true
             },
             {
                 "name": "Ziodyne",
@@ -5760,7 +5765,8 @@
             {
                 "name": "Debilitate",
                 "level": 79,
-                "type": "support"
+                "type": "support",
+                "exclusive": true
             },
             {
                 "name": "Diarahan",
@@ -7335,7 +7341,8 @@
             {
                 "name": "Die for Me!",
                 "level": 79,
-                "type": "dark"
+                "type": "dark",
+                "exclusive": true
             },
             {
                 "name": "Endure Light",
@@ -9014,12 +9021,14 @@
             {
                 "name": "Hassou Tobi",
                 "level": 83,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Heat Riser",
                 "level": 77,
-                "type": "support"
+                "type": "support",
+                "exclusive": true
             },
             {
                 "name": "Power Charge",
@@ -9087,7 +9096,8 @@
             {
                 "name": "Pralaya",
                 "level": 87,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Spell Master",
@@ -9572,7 +9582,8 @@
             {
                 "name": "Morning Star",
                 "level": 94,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Repel Wind",
@@ -10724,7 +10735,8 @@
             {
                 "name": "Unshaken Will",
                 "level": 92,
-                "type": "passive"
+                "type": "passive",
+                "exclusive": true
             }
         ],
         "inherits": "fire",
@@ -10827,7 +10839,8 @@
             {
                 "name": "Debilitate",
                 "level": 73,
-                "type": "support"
+                "type": "support",
+                "exclusive": true
             },
             {
                 "name": "Elec Amp",
@@ -10837,7 +10850,8 @@
             {
                 "name": "Heat Riser",
                 "level": 74,
-                "type": "support"
+                "type": "support",
+                "exclusive": true
             },
             {
                 "name": "Marakukaja",
@@ -10893,7 +10907,8 @@
             {
                 "name": "Heaven's Blade",
                 "level": 79,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Mahamaon",
@@ -10949,7 +10964,8 @@
             {
                 "name": "Black Viper",
                 "level": 81,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Endure Light",
@@ -11010,7 +11026,8 @@
             {
                 "name": "Heaven's Blade",
                 "level": 0,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Mahamaon",
@@ -11691,7 +11708,8 @@
             {
                 "name": "Heat Riser",
                 "level": 84,
-                "type": "support"
+                "type": "support",
+                "exclusive": true
             },
             {
                 "name": "Magarudyne",

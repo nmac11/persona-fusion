@@ -7914,7 +7914,8 @@
             {
                 "name": "Maralagidyne",
                 "level": 0,
-                "type": "fire"
+                "type": "fire",
+                "exclusive": true
             },
             {
                 "name": "Myriad Arrows",

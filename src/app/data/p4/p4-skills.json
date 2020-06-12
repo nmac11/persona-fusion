@@ -129,7 +129,8 @@
     },
     {
         "name": "Black Viper",
-        "type": "almighty"
+        "type": "almighty",
+        "exclusive": true
     },
     {
         "name": "Blade of Fury",
@@ -201,7 +202,8 @@
     },
     {
         "name": "Debilitate",
-        "type": "support"
+        "type": "support",
+        "exclusive": true
     },
     {
         "name": "Dekaja",
@@ -225,7 +227,8 @@
     },
     {
         "name": "Die for Me!",
-        "type": "dark"
+        "type": "dark",
+        "exclusive": true
     },
     {
         "name": "Divine Grace",
@@ -437,11 +440,13 @@
     },
     {
         "name": "Hassou Tobi",
-        "type": "phys"
+        "type": "phys",
+        "exclusive": true
     },
     {
         "name": "Heat Riser",
-        "type": "support"
+        "type": "support",
+        "exclusive": true
     },
     {
         "name": "Heat Wave",
@@ -449,7 +454,8 @@
     },
     {
         "name": "Heaven's Blade",
-        "type": "phys"
+        "type": "phys",
+        "exclusive": true
     },
     {
         "name": "Hell's Judgment",
@@ -657,7 +663,8 @@
     },
     {
         "name": "Morning Star",
-        "type": "almighty"
+        "type": "almighty",
+        "exclusive": true
     },
     {
         "name": "Mudo",
@@ -697,7 +704,8 @@
     },
     {
         "name": "Niflheim",
-        "type": "ice"
+        "type": "ice",
+        "exclusive": true
     },
     {
         "name": "Null Confuse",
@@ -765,7 +773,8 @@
     },
     {
         "name": "Panta Rhei",
-        "type": "wind"
+        "type": "wind",
+        "exclusive": true
     },
     {
         "name": "Patra",
@@ -805,7 +814,8 @@
     },
     {
         "name": "Pralaya",
-        "type": "phys"
+        "type": "phys",
+        "exclusive": true
     },
     {
         "name": "Primal Force",
@@ -821,7 +831,8 @@
     },
     {
         "name": "Ragnarok",
-        "type": "fire"
+        "type": "fire",
+        "exclusive": true
     },
     {
         "name": "Rainy Death",
@@ -973,7 +984,8 @@
     },
     {
         "name": "Samsara",
-        "type": "light"
+        "type": "light",
+        "exclusive": true
     },
     {
         "name": "Seal Bomb",
@@ -1073,7 +1085,8 @@
     },
     {
         "name": "Thunder Reign",
-        "type": "elec"
+        "type": "elec",
+        "exclusive": true
     },
     {
         "name": "Torrent Shot",
@@ -1093,7 +1106,8 @@
     },
     {
         "name": "Unshaken Will",
-        "type": "passive"
+        "type": "passive",
+        "exclusive": true
     },
     {
         "name": "Valiant Dance",

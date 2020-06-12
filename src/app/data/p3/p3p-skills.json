@@ -1049,7 +1049,8 @@
     },
     {
         "name": "Maralagidyne",
-        "type": "fire"
+        "type": "fire",
+        "exclusive": true
     },
     {
         "name": "Poison Arrow",
