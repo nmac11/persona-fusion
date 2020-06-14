@@ -11,6 +11,7 @@ import { p4gSimulatorProvider } from '../tokens/p4g/simulator-service-token';
 import { p4SimulatorProvider } from '../tokens/p4/simulator-service-token';
 import { p3SkillInheritanceProvider } from '../tokens/p3/skill-inheritance-service-token';
 import { p4SkillInheritanceProvider } from '../tokens/p4/skill-inheritance-service-token';
+import { p4gSkillInheritanceProvider } from '../tokens/p4g/skill-inheritance-service-token';
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
@@ -29,6 +30,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     p4SimulatorProvider,
     p3SkillInheritanceProvider,
     p4SkillInheritanceProvider,
+    p4gSkillInheritanceProvider,
   ],
 })
 export class SimulatorModule {}
