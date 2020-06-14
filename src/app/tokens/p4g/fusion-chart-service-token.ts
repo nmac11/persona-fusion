@@ -4,7 +4,7 @@ import { FusionChartService } from '../../services/fusion-chart.service';
 import { P4G_COMPENDIUM } from './compendium-service-token';
 import normalFusionChart from '../../data/p4/p4g-normal-fusion-chart.json';
 import triangleFusionChart from '../../data/p4/p4g-triangle-fusion-chart.json';
-import specialFusions from '../../data/p4/p4g-special-fusions.json';
+import specialFusions from '../../data/p4/p4-special-fusions.json';
 
 function p4gFusionChartFactory(
   compendiumService: CompendiumService,
