@@ -15,6 +15,10 @@ export class HomeComponent implements OnInit {
     url: '/p3fes',
     platform: 'PS2',
   },{
+    title: 'Persona 4',
+    url: '/p4',
+    platform: 'PS2',
+  },{
     title: 'Persona 4 Golden',
     url: '/p4g',
     platform: 'PS Vita',

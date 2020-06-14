@@ -19,6 +19,10 @@ export class AppComponent {
     title: 'Persona 3 FES'
   },
   {
+    url: '/p4',
+    title: 'Persona 4'
+  },
+  {
     url: '/p4g',
     title: 'Persona 4 Golden'
   }];

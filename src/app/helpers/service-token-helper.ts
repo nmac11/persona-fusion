@@ -17,6 +17,12 @@ import { P4G_NORMAL_FUSION } from '../tokens/p4g/normal-fusion-service-token';
 import { P4G_TRIANGLE_FUSION } from '../tokens/p4g/triangle-fusion-service-token';
 import { P4G_FUSION_CHART } from '../tokens/p4g/fusion-chart-service-token';
 import { P4G_SIMULATOR } from '../tokens/p4g/simulator-service-token';
+
+import { P4_COMPENDIUM } from '../tokens/p4/compendium-service-token';
+import { P4_NORMAL_FUSION } from '../tokens/p4/normal-fusion-service-token';
+import { P4_TRIANGLE_FUSION } from '../tokens/p4/triangle-fusion-service-token';
+import { P4_FUSION_CHART } from '../tokens/p4/fusion-chart-service-token';
+import { P4_SIMULATOR } from '../tokens/p4/simulator-service-token';
 import { P4_SKILL } from '../tokens/p4/skill-service-token';
 
 export const serviceToken: any = {
@@ -42,6 +48,14 @@ export const serviceToken: any = {
     triangleFusion: P4G_TRIANGLE_FUSION,
     fusionChart: P4G_FUSION_CHART,
     simulator: P4G_SIMULATOR,
+    skill: P4_SKILL,
+  },
+  p4: {
+    compendium: P4_COMPENDIUM,
+    normalFusion: P4_NORMAL_FUSION,
+    triangleFusion: P4_TRIANGLE_FUSION,
+    fusionChart: P4_FUSION_CHART,
+    simulator: P4_SIMULATOR,
     skill: P4_SKILL,
   },
 };

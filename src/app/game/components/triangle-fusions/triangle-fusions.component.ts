@@ -8,6 +8,7 @@ import { TriangleFusionService } from '../../../services/triangle-fusion.service
 import { p3pTriangleFusionProvider } from '../../../tokens/p3p/triangle-fusion-service-token';
 import { p3fesTriangleFusionProvider } from '../../../tokens/p3fes/triangle-fusion-service-token';
 import { p4gTriangleFusionProvider } from '../../../tokens/p4g/triangle-fusion-service-token';
+import { p4TriangleFusionProvider } from '../../../tokens/p4/triangle-fusion-service-token';
 import { serviceToken } from '../../../helpers/service-token-helper';
 
 @Component({
@@ -18,6 +19,7 @@ import { serviceToken } from '../../../helpers/service-token-helper';
     p3pTriangleFusionProvider,
     p3fesTriangleFusionProvider,
     p4gTriangleFusionProvider,
+    p4TriangleFusionProvider,
   ],
 })
 export class TriangleFusionsComponent implements OnInit {
