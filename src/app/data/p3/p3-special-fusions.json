@@ -83,7 +83,6 @@
     "requirements": ["Uriel", "Raphael", "Gabriel", "Michael"]
   },
   { "persona": "Norn", "requirements": ["Clotho", "Lachesis", "Atropos"] },
-  { "persona": "Orpheus", "requirements": ["Slime", "Legion"] },
   {
     "persona": "Orpheus Telos",
     "requirements": [

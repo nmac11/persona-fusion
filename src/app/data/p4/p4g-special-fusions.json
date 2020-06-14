@@ -1,5 +1,4 @@
 [
-    { "persona": "Izanagi", "requirements": ["Yomotsu-Shikome", "Obariyon"] },
     {
         "persona": "Black Frost",
         "requirements": [
@@ -10,12 +9,10 @@
             "Ghoul"
         ]
     },
-    { "persona": "Pixie", "requirements": ["Orobas", "Jack Frost"] },
     {
         "persona": "Kohryu",
         "requirements": ["Genbu", "Seiryu", "Suzaku", "Byakko"]
     },
-    { "persona": "Slime", "requirements": ["Eligor", "Nata Taishi"] },
     {
         "persona": "Futsunushi",
         "requirements": ["Ares", "Triglav", "Kin-ki", "Atavaka", "Neko Shogun"]
@@ -41,7 +38,6 @@
             "Trumpeter"
         ]
     },
-    { "persona": "Ukobach", "requirements": ["Lilim", "Vetala"] },
     {
         "persona": "Beelzebub",
         "requirements": [
