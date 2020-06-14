@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   },{
     title: 'Persona 4 Golden',
     url: '/p4g',
-    platform: 'PS Vita',
+    platform: 'PS Vita / Windows',
   }];
 
   constructor() {}
