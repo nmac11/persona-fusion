@@ -73,6 +73,11 @@ export class SkillsDialogComponent implements OnInit, AfterViewInit {
     moveItemInArray(this.data.fusionItem.skills, event.previousIndex, event.currentIndex);
   }
 
+  clearFilter() {
+    this.skills = this.data.skillService.getAll();
+    this.filterField.nativeElement.value = '';
+  }
+
   private applyFilter(key: string = ''): void {
     this.skills = this.data.skillService
       .getAll()
