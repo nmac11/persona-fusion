@@ -15,7 +15,7 @@ import { P3FES_SIMULATOR } from '../tokens/p3fes/simulator-service-token';
 import { P4G_SIMULATOR } from '../tokens/p4g/simulator-service-token';
 import { P3P_SKILL } from '../tokens/p3p/skill-service-token';
 import { P3FES_SKILL } from '../tokens/p3fes/skill-service-token';
-import { P4G_SKILL } from '../tokens/p4g/skill-service-token';
+import { P4_SKILL } from '../tokens/p4/skill-service-token';
 
 export const serviceToken: any = {
   p3p: {
@@ -40,6 +40,6 @@ export const serviceToken: any = {
     triangleFusion: P4G_TRIANGLE_FUSION,
     fusionChart: P4G_FUSION_CHART,
     simulator: P4G_SIMULATOR,
-    skill: P4G_SKILL,
+    skill: P4_SKILL,
   },
 };
