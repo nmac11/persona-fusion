@@ -95,6 +95,11 @@ export class TriangleFusionsComponent implements OnInit {
       .sort((a, b) => a.level - b.level);
   }
 
+  simulatorQueryParams(): Object {
+    const [p1, p2, p3] = this.selectedPersonae.map(p => p.name.toLowerCase());
+    return {p1, p2, p3};
+  }
+
   private includesEveryFilterPersona: (fusion: Persona[]) => boolean = (
     fusion,
   ) =>
