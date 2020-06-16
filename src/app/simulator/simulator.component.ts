@@ -1,6 +1,7 @@
 import { Component, OnInit, Injector } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Persona } from '../models/persona';
+import { Skill } from '../models/skill';
 import { CompendiumService } from '../services/compendium.service';
 import { SimulatorService } from '../services/simulator.service';
 import { SkillService } from '../services/skill.service';
@@ -26,6 +27,7 @@ export class SimulatorComponent implements OnInit {
   constructor(
     private injector: Injector,
     private route: ActivatedRoute,
+    private router: Router,
     private personaListDialog: MatDialog,
     private skillsDialog: MatDialog,
   ) {
@@ -41,7 +43,9 @@ export class SimulatorComponent implements OnInit {
     );
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.createFusionNodesFromRouteParams();
+  }
 
   changePersona(fusionItem: FusionNode): void {
     const dialogRef = this.openPersonaListDialog(
@@ -82,6 +86,7 @@ export class SimulatorComponent implements OnInit {
   clearItems(): void {
     this.fusionItems = [];
     this.fusionYield = null;
+    this.updateQueryParams();
   }
 
   editSkills(fusionItem: FusionNode): void {
@@ -131,16 +136,63 @@ export class SimulatorComponent implements OnInit {
     );
   }
 
-  private createFusionNode(p: Persona): FusionNode {
+  private createFusionNodesFromRouteParams(): void {
+    const queryParams = this.route.parent.snapshot.queryParams;
+    for (let i = 2, param = queryParams['p1']; param; i++) {
+      this.createFusionNodeFromParam(param);
+      param = queryParams[`p${i}`];
+    }
+    this.fuse();
+  }
+
+  private createFusionNodeFromParam(param: string): void {
+    const [name, level, ...skillNames] = param.split(',');
+    const persona: Persona = this.compendiumService.find(name);
+    const skills: Skill[] = this.findSkills(skillNames);
+    if (persona)
+      this.fusionItems.push(this.createFusionNode(persona, +level, skills));
+  }
+
+  private findSkills(skillNames: string[]) {
+    return skillNames.reduce((skills, skillName) => {
+      const skill = this.skillService.find(skillName);
+      if (skill) skills.push(skill);
+      return skills;
+    }, []);
+  }
+
+  private createFusionNode(
+    p: Persona,
+    level: number = null,
+    skills: Skill[] = [],
+  ): FusionNode {
     return {
       persona: p,
-      currentLevel: p.level,
-      skills: p.skills.filter((skill) => skill.level === 0),
+      currentLevel: level >= p.level && level < 100 ? level : p.level,
+      skills: skills.length
+        ? skills
+        : p.skills.filter((skill) => skill.level === 0),
     };
   }
 
   private fuse(): void {
     this.fusionYield = this.simulatorService.fuse(this.fusionItems);
+    this.updateQueryParams();
+  }
+
+  private updateQueryParams(): void {
+    const queryParams = {};
+    if (this.fusionYield)
+      this.fusionItems.forEach((f, i) => {
+        queryParams['p' + (i + 1)] = [
+          f.persona.name.toLowerCase(),
+          f.currentLevel,
+          f.skills.slice(0, 8).map((skill) => skill.name.toLowerCase()),
+        ].join(',');
+      });
+    this.router.navigate([], {
+      queryParams,
+    });
   }
 
   private openPersonaListDialog(fn: (res) => void, options = {}) {

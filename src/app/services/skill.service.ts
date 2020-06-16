@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { Skill } from '../models/skill';
-import { partialMatchRegExp } from '../helpers/reg-exp-helpers';
+import { partialMatchRegExp, exactMatchRegExp } from '../helpers/reg-exp-helpers';
 
 @Injectable()
 export class SkillService {
@@ -10,5 +10,10 @@ export class SkillService {
     return type
       ? this.skills.filter((skill) => partialMatchRegExp(type).test(skill.name))
       : this.skills;
+  }
+
+  find(name: string): Skill {
+    const kwdRegex = exactMatchRegExp(name);
+    return this.skills.find((skill) => kwdRegex.test(skill.name));
   }
 }
