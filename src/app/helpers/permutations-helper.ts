@@ -1,4 +1,4 @@
-export function combinations(
+export function permutations(
   array: any[],
   depth: number,
   result: any[][] = null,
@@ -11,5 +11,5 @@ export function combinations(
     });
     return all;
   }, []);
-  return combinations(array, depth - 1, newRes);
+  return permutations(array, depth - 1, newRes);
 }
