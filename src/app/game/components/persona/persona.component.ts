@@ -17,7 +17,11 @@ export class PersonaComponent implements OnInit {
   compendiumService: CompendiumService;
   fusionChartService: FusionChartService;
 
-  constructor(private route: ActivatedRoute, private router: Router, private injector: Injector) {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private injector: Injector,
+  ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     const game = this.route.parent.snapshot.params.game;
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -37,5 +41,13 @@ export class PersonaComponent implements OnInit {
         );
       }
     });
+  }
+
+  queryParams(): Object {
+    const params = {};
+    this.specialFusions.forEach(
+      (p, i) => (params['p' + (i + 1)] = p.name.toLowerCase()),
+    );
+    return params;
   }
 }
