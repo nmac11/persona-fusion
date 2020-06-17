@@ -1,4 +1,5 @@
 import { Component, OnInit, Injector } from '@angular/core';
+import { Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Persona } from '../models/persona';
 import { Skill } from '../models/skill';
@@ -30,6 +31,7 @@ export class SimulatorComponent implements OnInit {
     private router: Router,
     private personaListDialog: MatDialog,
     private skillsDialog: MatDialog,
+    private location: Location,
   ) {
     const game = this.route.parent.snapshot.params.game;
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -142,7 +144,7 @@ export class SimulatorComponent implements OnInit {
       this.createFusionNodeFromParam(param);
       param = queryParams[`p${i}`];
     }
-    this.fuse();
+    this.fuse(false);
   }
 
   private createFusionNodeFromParam(param: string): void {
@@ -175,9 +177,9 @@ export class SimulatorComponent implements OnInit {
     };
   }
 
-  private fuse(): void {
+  private fuse(update = true): void {
     this.fusionYield = this.simulatorService.fuse(this.fusionItems);
-    this.updateQueryParams();
+    if (update) this.updateQueryParams();
   }
 
   private updateQueryParams(): void {
@@ -190,9 +192,21 @@ export class SimulatorComponent implements OnInit {
           f.skills.slice(0, 8).map((skill) => skill.name.toLowerCase()),
         ].join(',');
       });
-    this.router.navigate([], {
-      queryParams,
-    });
+
+    const path = this.route.snapshot.pathFromRoot
+      .map((o) => o.url[0])
+      .join('/');
+
+    if (Object.keys(queryParams).length) {
+      var esc = encodeURIComponent;
+      var query = Object.keys(queryParams)
+        .map((k) => esc(k) + '=' + esc(queryParams[k]))
+        .join('&');
+
+      this.location.replaceState(path, query);
+    } else {
+      this.location.replaceState(path);
+    }
   }
 
   private openPersonaListDialog(fn: (res) => void, options = {}) {
