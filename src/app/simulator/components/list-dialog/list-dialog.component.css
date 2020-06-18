@@ -1,11 +1,11 @@
-::ng-deep .cdk-overlay-pane {
+::ng-deep .simulator-list-overlay-pane {
   width: 100% !important;
   max-width: unset !important;
   padding: 48px;
   overflow: auto;
 }
 
-::ng-deep .cdk-overlay-pane mat-dialog-container {
+::ng-deep .simulator-list-overlay-pane mat-dialog-container {
   width: 400px;
   max-width: 80vw;
   margin: auto;

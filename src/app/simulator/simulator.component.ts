@@ -94,6 +94,7 @@ export class SimulatorComponent implements OnInit {
   editSkills(fusionItem: FusionNode): void {
     const dialogRef = this.personaListDialog.open(SkillsDialogComponent, {
       data: { fusionItem, skillService: this.skillService },
+      panelClass: 'simulator-skill-list-overlay-pane',
     });
     dialogRef.afterClosed().subscribe(() => this.fuse());
   }
@@ -216,6 +217,7 @@ export class SimulatorComponent implements OnInit {
     Object.assign(data, options);
     const dialogRef = this.personaListDialog.open(ListDialogComponent, {
       data,
+      panelClass: 'simulator-list-overlay-pane'
     });
     dialogRef.afterClosed().subscribe(fn);
   }
