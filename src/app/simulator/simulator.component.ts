@@ -99,6 +99,12 @@ export class SimulatorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(() => this.fuse());
   }
 
+  skillsToLearn(): Skill[] {
+    return this.fusionYield.persona.skills
+      .filter((s) => s.level)
+      .sort((a, b) => a.level - b.level);
+  }
+
   private setLevel(fusionItem, level): void {
     if (level > 99) fusionItem.currentLevel = 99;
     else if (level < fusionItem.persona.level)
@@ -217,7 +223,7 @@ export class SimulatorComponent implements OnInit {
     Object.assign(data, options);
     const dialogRef = this.personaListDialog.open(ListDialogComponent, {
       data,
-      panelClass: 'simulator-list-overlay-pane'
+      panelClass: 'simulator-list-overlay-pane',
     });
     dialogRef.afterClosed().subscribe(fn);
   }
