@@ -9,7 +9,7 @@ import { probability } from '../helpers/probability-helper';
 @Injectable()
 export class SkillInheritanceService {
   constructor(@Inject(Object) private inheritanceChart: any) {}
-
+  
   numberOfSkillsInherited(fusionItems: FusionNode[]): number {
     const totalSkills = fusionItems.reduce((total, item) => {
       total += item.skills.slice(0, 8).length;
@@ -38,9 +38,21 @@ export class SkillInheritanceService {
   ): InheritableSkill[] {
     const skillsWithPR = this.addProbRatios(inheritType, skills);
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
-    skillsWithPR.forEach(
-      (skill, i) => (skill.probability = probability(ratios, berths, i)),
-    );
+    const cache = {};
+    if (ratios.every((r) => r === ratios[0] && r !== 0)) {
+      const netProbRatio = ratios.reduce((sum, ratio) => sum + ratio, 0);
+      skillsWithPR.forEach(
+        (skill) =>
+          (skill.probability = (skill.probRatio * berths) / netProbRatio),
+      );
+    } else {
+      skillsWithPR.forEach((skill, i) => {
+        const cached = cache[skill.probRatio];
+        if (skill.probRatio === 0) skill.probability = 0;
+        skill.probability = cached ? cached : probability(ratios, berths, i);
+        cache[skill.probRatio] = skill.probability;
+      });
+    }
     return skillsWithPR;
   }
 

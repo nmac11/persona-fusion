@@ -1,4 +1,4 @@
-import { permutations } from './permutations-helper';
+import { modifiedPermutations } from './permutations-helper';
 
 export function probability(
   ratios: number[],
@@ -8,10 +8,11 @@ export function probability(
   const totalItems = ratios.reduce((total, a) => total + a, 0);
   let netProbability = 0;
   for (let berth = 1; berth <= berths; berth++) {
-    const scenarios = permutations(
+    const scenarios = modifiedPermutations(
       [...Array(ratios.length).keys()],
+      index,
       berth,
-    ).filter((combo) => combo[combo.length - 1] === index);
+    );
     netProbability += sumScenarioProbabilities(ratios, scenarios, totalItems);
   }
   return netProbability;
