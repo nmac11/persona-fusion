@@ -46,7 +46,7 @@ export class SkillInheritanceService {
     const skillsWithPR = this.addProbRatios(inheritType, skills);
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
     const cache = {};
-    if (ratios.every((r) => r === ratios[0] && r !== 0)) {
+    if (ratios.filter((r) => r !== 0).every((r) => r === ratios[0])) {
       const netProbRatio = ratios.reduce((sum, ratio) => sum + ratio, 0);
       skillsWithPR.forEach(
         (skill) =>
