@@ -144,6 +144,7 @@ export class SimulatorService {
       currentLevel: persona.level,
       skills: persona.skills.filter(skill => skill.level === 0),
       skillsInheritedCount: this.skillInheritanceService.numberOfSkillsInherited(
+        persona,
         fusionItems,
       ),
       inheritableSkills: this.skillInheritanceService.findInheritableSkills(

@@ -9,14 +9,21 @@ import { probability } from '../helpers/probability-helper';
 @Injectable()
 export class SkillInheritanceService {
   constructor(@Inject(Object) private inheritanceChart: any) {}
-  
-  numberOfSkillsInherited(fusionItems: FusionNode[]): number {
-    const totalSkills = fusionItems.reduce((total, item) => {
+
+  numberOfSkillsInherited(persona: Persona, fusionItems: FusionNode[]): number {
+    const maxInheritedSkills =
+      8 - persona.skills.filter((s) => s.level === 0).length;
+    const totalFusionSkills = fusionItems.reduce((total, item) => {
       total += item.skills.slice(0, 8).length;
       return total;
     }, 0);
     const chart = [0, 6, 9, 12, 24, 32, 99];
-    return chart.indexOf(chart.find((n) => totalSkills < n));
+    const totalInheritedSkills = chart.indexOf(
+      chart.find((n) => totalFusionSkills < n),
+    );
+    return totalInheritedSkills <= maxInheritedSkills
+      ? totalInheritedSkills
+      : maxInheritedSkills;
   }
 
   findInheritableSkills(
@@ -27,7 +34,7 @@ export class SkillInheritanceService {
     return this.addProbabilities(
       persona.inherits,
       fusionSkills,
-      this.numberOfSkillsInherited(fusionItems),
+      this.numberOfSkillsInherited(persona, fusionItems),
     ).sort((a, b) => b.probRatio - a.probRatio);
   }
 
