@@ -33,21 +33,15 @@
     justify-content: flex-start;
   "
 >
-  <div
+  <button
+    mat-button
     *ngFor="let fusion of fusions"
-    style="
-      display: flex;
-      flex-direction: column;
-      padding: 4px;
-      margin: 0 4px 4px 0;
-      flex: 0;
-    "
+    (click)="openBottomSheet(fusion)"
+    style="line-height: 8px; padding: 2px 8px; margin: 0 8px 8px 0"
     class="mat-elevation-z2"
   >
-    <a
-      mat-button
+    <span
       *ngFor="let persona of fusion"
-      routerLink="../{{ persona.name | lowercase }}"
       style="padding: 4px; margin-bottom: 0px;"
     >
       <h3
@@ -73,6 +67,6 @@
       >
         {{ persona.arcanaName }} / {{ persona.level }}
       </p>
-    </a>
-  </div>
+    </span>
+  </button>
 </div>

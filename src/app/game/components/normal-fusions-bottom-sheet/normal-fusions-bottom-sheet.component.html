@@ -1,0 +1,17 @@
+<mat-nav-list>
+  <a routerLink="/{{data.game}}/simulator" [queryParams]="queryParams()"
+     mat-list-item
+     (click)="openLink($event)">
+    <mat-icon mat-list-icon>merge_type</mat-icon>
+    <span mat-line>Simulate</span>
+    <span mat-line>Fuse {{fusionPersonaNames()}}</span>
+  </a>
+
+  <a *ngFor="let persona of data.fusion" routerLink="/{{data.game}}/persona/{{persona.name | lowercase}}"
+     mat-list-item
+     (click)="openLink($event)">
+    <mat-icon mat-list-icon>link</mat-icon>
+    <span mat-line>View {{persona.name}}</span>
+    <span mat-line>{{persona.arcanaName}} / Level {{persona.level}}</span>
+  </a>
+</mat-nav-list>

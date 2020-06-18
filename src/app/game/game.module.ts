@@ -9,6 +9,7 @@ import { NormalFusionsComponent } from './components/normal-fusions/normal-fusio
 import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
 import { ProvidersModule } from '../providers/providers.module';
 import { SimulatorModule } from '../simulator/simulator.module';
+import { NormalFusionsBottomSheetComponent } from './components/normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SimulatorModule } from '../simulator/simulator.module';
     PersonaComponent,
     NormalFusionsComponent,
     TriangleFusionsComponent,
+    NormalFusionsBottomSheetComponent,
   ],
   imports: [
     CommonModule,
@@ -25,5 +27,6 @@ import { SimulatorModule } from '../simulator/simulator.module';
     ProvidersModule,
     SimulatorModule,
   ],
+  entryComponents: [NormalFusionsBottomSheetComponent],
 })
 export class GameModule {}

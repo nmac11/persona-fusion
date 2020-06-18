@@ -14,6 +14,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 @NgModule({
   declarations: [],
@@ -33,6 +34,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatDialogModule,
     MatExpansionModule,
     MatBadgeModule,
+    MatBottomSheetModule,
   ],
 })
 export class MaterialModule {}

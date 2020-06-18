@@ -10,6 +10,8 @@ import { p3fesNormalFusionProvider } from '../../../tokens/p3fes/normal-fusion-s
 import { p4gNormalFusionProvider } from '../../../tokens/p4g/normal-fusion-service-token';
 import { p4NormalFusionProvider } from '../../../tokens/p4/normal-fusion-service-token';
 import { serviceToken } from '../../../helpers/service-token-helper';
+import { NormalFusionsBottomSheetComponent } from '../normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 @Component({
   selector: 'game-normal-fusions',
@@ -33,6 +35,7 @@ export class NormalFusionsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private injector: Injector,
+    private bottomSheet: MatBottomSheet,
   ) {
     const game = this.route.parent.snapshot.params.game;
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -49,6 +52,12 @@ export class NormalFusionsComponent implements OnInit {
         ? []
         : this.fusionService.findFusions(this.persona);
     }, 0);
+  }
+
+  openBottomSheet(fusion: Persona[]): void {
+    this.bottomSheet.open(NormalFusionsBottomSheetComponent, {
+      data: { game: this.route.parent.snapshot.params.game, fusion },
+    });
   }
 
   addFilter(event: any) {
