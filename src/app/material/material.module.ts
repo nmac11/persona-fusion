@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,6 +21,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
   declarations: [],
   imports: [CommonModule],
   exports: [
+    FlexLayoutModule,
     MatToolbarModule,
     MatSidenavModule,
     MatButtonModule,
