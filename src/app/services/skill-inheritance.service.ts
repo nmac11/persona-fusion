@@ -45,22 +45,35 @@ export class SkillInheritanceService {
   ): InheritableSkill[] {
     const skillsWithPR = this.addProbRatios(inheritType, skills);
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
-    const cache = {};
-    if (ratios.filter((r) => r !== 0).every((r) => r === ratios[0])) {
-      const netProbRatio = ratios.reduce((sum, ratio) => sum + ratio, 0);
-      skillsWithPR.forEach(
-        (skill) =>
-          (skill.probability = (skill.probRatio * berths) / netProbRatio),
-      );
-    } else {
-      skillsWithPR.forEach((skill, i) => {
-        const cached = cache[skill.probRatio];
-        if (skill.probRatio === 0) skill.probability = 0;
-        skill.probability = cached ? cached : probability(ratios, berths, i);
-        cache[skill.probRatio] = skill.probability;
-      });
-    }
+    if (ratios.filter((r) => r !== 0).every((r) => r === ratios[0]))
+      this.addProbabilitiesEqualRatios(skillsWithPR, ratios, berths);
+    else this.addProbabilitiesVariableRatios(skillsWithPR, ratios, berths);
     return skillsWithPR;
+  }
+
+  private addProbabilitiesEqualRatios(
+    skillsWithPR: InheritableSkill[],
+    ratios: number[],
+    berths: number,
+  ): void {
+    const netProbRatio = ratios.reduce((sum, ratio) => sum + ratio, 0);
+    skillsWithPR.forEach(
+      (skill) =>
+        (skill.probability = (skill.probRatio * berths) / netProbRatio || 0),
+    );
+  }
+
+  private addProbabilitiesVariableRatios(
+    skillsWithPR: InheritableSkill[],
+    ratios: number[],
+    berths: number,
+  ): void {
+    const cache = { 0: 0 };
+    skillsWithPR.forEach((skill, i) => {
+      const cached = cache[skill.probRatio];
+      skill.probability = cached ? cached : probability(ratios, berths, i);
+      cache[skill.probRatio] = skill.probability;
+    });
   }
 
   private addProbRatios(
