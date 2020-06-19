@@ -1,4 +1,4 @@
-<div *ngIf="persona; else noPersona">
+<div *ngIf="persona; else noPersona" style="height: 494px" gdColumns.gt-sm="240px auto" gdGap="16px">
   <mat-card>
     <mat-card-header>
       <mat-card-title>{{ persona.name }}</mat-card-title>
@@ -23,47 +23,46 @@
     </mat-card-content>
   </mat-card>
 
-  <div *ngIf="persona.special; else nonSpecial">
-    <mat-card class="mat-elevation-z2" id="special-fusions-container" style="margin: 8px 0;">
-      <mat-tab-group>
-        <mat-tab label="SPECIAL FUSION">
-          <a
-            mat-button
-            *ngFor="let persona of specialFusions"
-            routerLink="..//{{ persona.name | lowercase }}"
-            style="padding: 8px; margin-bottom: 0px;"
+  <mat-card class="mat-elevation-z2" *ngIf="persona.special; else nonSpecial" id="special-fusions-container">
+    <mat-tab-group>
+      <mat-tab label="SPECIAL FUSION">
+        <a
+          mat-button
+          *ngFor="let persona of specialFusions"
+          routerLink="..//{{ persona.name | lowercase }}"
+          style="padding: 8px; margin-bottom: 0px;"
+        >
+          <h3
+            class="mat-h3"
+            style="
+              white-space: nowrap;
+              margin: 0;
+              padding: 0;
+              line-height: 1rem;
+              font-size: 16px;
+            "
           >
-            <h3
-              class="mat-h3"
-              style="
-                white-space: nowrap;
-                margin: 0;
-                padding: 0;
-                line-height: 1rem;
-                font-size: 16px;
-              "
-            >
-              {{ persona.name }}
-            </h3>
-            <p
-              class="mat-caption"
-              style="
-                white-space: nowrap;
-                margin: 0;
-                line-height: 1rem;
-                font-size: 12px;
-              "
-            >
-              {{ persona.arcanaName }} / {{ persona.level }}
-            </p>
-          </a>
-          <a mat-flat-button color="primary" routerLink="../../simulator" [queryParams]="queryParams()" style="margin-top: 16px; width: 100%">SIMULATE</a>
-        </mat-tab>
-      </mat-tab-group>
+            {{ persona.name }}
+          </h3>
+          <p
+            class="mat-caption"
+            style="
+              white-space: nowrap;
+              margin: 0;
+              line-height: 1rem;
+              font-size: 12px;
+            "
+          >
+            {{ persona.arcanaName }} / {{ persona.level }}
+          </p>
+        </a>
+        <a mat-flat-button color="primary" routerLink="../../simulator" [queryParams]="queryParams()" style="margin-top: 16px; width: 100%">SIMULATE</a>
+      </mat-tab>
+    </mat-tab-group>
 
 
-    </mat-card>
-  </div>
+  </mat-card>
+
 </div>
 
 <ng-template #noPersona>
@@ -74,7 +73,7 @@
 </ng-template>
 
 <ng-template #nonSpecial>
-  <mat-card class="mat-elevation-z2" style="margin: 8px 0;">
+  <mat-card class="mat-elevation-z2">
     <mat-tab-group>
       <mat-tab label="NORMAL">
         <game-normal-fusions [persona]="persona"></game-normal-fusions>
