@@ -1,5 +1,10 @@
-<div *ngIf="persona; else noPersona" style="height: 494px" gdColumns.gt-sm="240px auto" gdGap="16px">
-  <mat-card>
+<div *ngIf="persona; else noPersona"
+     style="height: 494px"
+     gdColumns.gt-sm="320px auto"
+     gdRows="max-content auto"
+     gdRows.gt-sm="max-content max-content auto"
+     gdGap="16px">
+  <mat-card gdArea="1 / 1 / 2 / 2">
     <mat-card-header>
       <mat-card-title>{{ persona.name }}</mat-card-title>
       <mat-card-subtitle
@@ -23,7 +28,10 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="mat-elevation-z2" *ngIf="persona.special; else nonSpecial" id="special-fusions-container">
+  <mat-card class="mat-elevation-z2"
+            *ngIf="persona.special; else nonSpecial"
+            id="special-fusions-container"
+            gdArea="2 / 1 / 3 / 2" gdArea.gt-sm="1 / 2 / 3 / 2">
     <mat-tab-group>
       <mat-tab label="SPECIAL FUSION">
         <a
@@ -56,7 +64,8 @@
             {{ persona.arcanaName }} / {{ persona.level }}
           </p>
         </a>
-        <a mat-flat-button color="primary" routerLink="../../simulator" [queryParams]="queryParams()" style="margin-top: 16px; width: 100%">SIMULATE</a>
+        <a mat-flat-button color="primary" routerLink="../../simulator" [queryParams]="queryParams()"
+           style="width: 100%; margin-top: 16px">SIMULATE</a>
       </mat-tab>
     </mat-tab-group>
 
@@ -73,7 +82,7 @@
 </ng-template>
 
 <ng-template #nonSpecial>
-  <mat-card class="mat-elevation-z2">
+  <mat-card class="mat-elevation-z2" gdArea="2 / 1 / 3 / 2" gdArea.gt-sm="1 / 2 / 3 / 2">
     <mat-tab-group>
       <mat-tab label="NORMAL">
         <game-normal-fusions [persona]="persona"></game-normal-fusions>
