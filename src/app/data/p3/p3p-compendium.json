@@ -6,14 +6,14 @@
         "id": 1,
         "skills": [
             {
-                "name": "Agi",
-                "level": 2,
-                "type": "fire"
-            },
-            {
                 "name": "Bash",
                 "level": 0,
                 "type": "strike"
+            },
+            {
+                "name": "Agi",
+                "level": 2,
+                "type": "fire"
             },
             {
                 "name": "Tarunda",
@@ -49,14 +49,14 @@
         "id": 2,
         "skills": [
             {
-                "name": "Eerie Sound",
-                "level": 16,
-                "type": "ailment"
-            },
-            {
                 "name": "Evil Touch",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Single Shot",
+                "level": 0,
+                "type": "pierce"
             },
             {
                 "name": "Maragi",
@@ -69,9 +69,9 @@
                 "type": "passive"
             },
             {
-                "name": "Single Shot",
-                "level": 0,
-                "type": "pierce"
+                "name": "Eerie Sound",
+                "level": 16,
+                "type": "ailment"
             },
             {
                 "name": "Survive Light",
@@ -112,16 +112,6 @@
                 "type": "strike"
             },
             {
-                "name": "Bewilder",
-                "level": 27,
-                "type": "ailment"
-            },
-            {
-                "name": "Panic Boost",
-                "level": 25,
-                "type": "passive"
-            },
-            {
                 "name": "Pulinpa",
                 "level": 0,
                 "type": "ailment"
@@ -134,6 +124,16 @@
             {
                 "name": "Sexy Dance",
                 "level": 24,
+                "type": "ailment"
+            },
+            {
+                "name": "Panic Boost",
+                "level": 25,
+                "type": "passive"
+            },
+            {
+                "name": "Bewilder",
+                "level": 27,
                 "type": "ailment"
             }
         ],
@@ -176,24 +176,24 @@
                 "type": "ice"
             },
             {
-                "name": "Marakunda",
-                "level": 35,
-                "type": "support"
-            },
-            {
-                "name": "Matarukaja",
-                "level": 40,
-                "type": "support"
-            },
-            {
                 "name": "Mudo",
                 "level": 0,
                 "type": "dark"
             },
             {
+                "name": "Marakunda",
+                "level": 35,
+                "type": "support"
+            },
+            {
                 "name": "Trafuri",
                 "level": 37,
                 "type": "special"
+            },
+            {
+                "name": "Matarukaja",
+                "level": 40,
+                "type": "support"
             }
         ],
         "inherits": "all",
@@ -224,19 +224,14 @@
         "id": 5,
         "skills": [
             {
-                "name": "Cool Breeze",
-                "level": 49,
-                "type": "passive"
-            },
-            {
                 "name": "Gale Slash",
                 "level": 0,
                 "type": "slash"
             },
             {
-                "name": "Herculean Strike",
-                "level": 47,
-                "type": "strike"
+                "name": "Poison Mist",
+                "level": 0,
+                "type": "ailment"
             },
             {
                 "name": "Maragion",
@@ -244,9 +239,14 @@
                 "type": "fire"
             },
             {
-                "name": "Poison Mist",
-                "level": 0,
-                "type": "ailment"
+                "name": "Herculean Strike",
+                "level": 47,
+                "type": "strike"
+            },
+            {
+                "name": "Cool Breeze",
+                "level": 49,
+                "type": "passive"
             }
         ],
         "inherits": "all",
@@ -277,16 +277,6 @@
         "id": 6,
         "skills": [
             {
-                "name": "Evade Ice",
-                "level": 52,
-                "type": "passive"
-            },
-            {
-                "name": "Marakukaja",
-                "level": 54,
-                "type": "support"
-            },
-            {
                 "name": "Matarunda",
                 "level": 0,
                 "type": "support"
@@ -297,14 +287,24 @@
                 "type": "almighty"
             },
             {
-                "name": "Resist Ice",
-                "level": 56,
-                "type": "passive"
-            },
-            {
                 "name": "Stagnant Air",
                 "level": 0,
                 "type": "almighty"
+            },
+            {
+                "name": "Evade Ice",
+                "level": 52,
+                "type": "passive"
+            },
+            {
+                "name": "Marakukaja",
+                "level": 54,
+                "type": "support"
+            },
+            {
+                "name": "Resist Ice",
+                "level": 56,
+                "type": "passive"
             }
         ],
         "inherits": "all",
@@ -355,6 +355,11 @@
                 "type": "almighty"
             },
             {
+                "name": "Stagnant Air",
+                "level": 61,
+                "type": "almighty"
+            },
+            {
                 "name": "Null Fire",
                 "level": 63,
                 "type": "passive"
@@ -363,11 +368,6 @@
                 "name": "Repel Fire",
                 "level": 65,
                 "type": "passive"
-            },
-            {
-                "name": "Stagnant Air",
-                "level": 61,
-                "type": "almighty"
             }
         ],
         "inherits": "all",
@@ -410,16 +410,6 @@
                 "type": "passive"
             },
             {
-                "name": "Regenerate 3",
-                "level": 81,
-                "type": "passive"
-            },
-            {
-                "name": "Repel Strike",
-                "level": 83,
-                "type": "passive"
-            },
-            {
                 "name": "Tetrakarn",
                 "level": 0,
                 "type": "support"
@@ -428,6 +418,16 @@
                 "name": "Vorpal Blade",
                 "level": 79,
                 "type": "slash"
+            },
+            {
+                "name": "Regenerate 3",
+                "level": 81,
+                "type": "passive"
+            },
+            {
+                "name": "Repel Strike",
+                "level": 83,
+                "type": "passive"
             }
         ],
         "inherits": "all",
@@ -503,11 +503,6 @@
                 "type": "slash"
             },
             {
-                "name": "Maragi",
-                "level": 10,
-                "type": "fire"
-            },
-            {
                 "name": "Provoke",
                 "level": 6,
                 "type": "ailment"
@@ -516,6 +511,11 @@
                 "name": "Re Patra",
                 "level": 7,
                 "type": "recovery"
+            },
+            {
+                "name": "Maragi",
+                "level": 10,
+                "type": "fire"
             }
         ],
         "inherits": "fire",
@@ -551,16 +551,6 @@
                 "type": "ice"
             },
             {
-                "name": "Ice Boost",
-                "level": 11,
-                "type": "passive"
-            },
-            {
-                "name": "Mabufu",
-                "level": 13,
-                "type": "ice"
-            },
-            {
                 "name": "Pulinpa",
                 "level": 0,
                 "type": "ailment"
@@ -574,6 +564,16 @@
                 "name": "Sonic Punch",
                 "level": 10,
                 "type": "strike"
+            },
+            {
+                "name": "Ice Boost",
+                "level": 11,
+                "type": "passive"
+            },
+            {
+                "name": "Mabufu",
+                "level": 13,
+                "type": "ice"
             }
         ],
         "inherits": "ice",
@@ -609,14 +609,14 @@
                 "type": "fire"
             },
             {
-                "name": "Agilao",
-                "level": 19,
-                "type": "fire"
-            },
-            {
                 "name": "Maragi",
                 "level": 0,
                 "type": "fire"
+            },
+            {
+                "name": "Sukunda",
+                "level": 0,
+                "type": "support"
             },
             {
                 "name": "Provoke",
@@ -629,9 +629,9 @@
                 "type": "passive"
             },
             {
-                "name": "Sukunda",
-                "level": 0,
-                "type": "support"
+                "name": "Agilao",
+                "level": 19,
+                "type": "fire"
             }
         ],
         "inherits": "fire",
@@ -663,24 +663,19 @@
         "id": 13,
         "skills": [
             {
-                "name": "Agilao",
-                "level": 22,
-                "type": "fire"
-            },
-            {
-                "name": "Fire Boost",
-                "level": 24,
-                "type": "passive"
-            },
-            {
                 "name": "Maragi",
                 "level": 0,
                 "type": "fire"
             },
             {
-                "name": "Null Freeze",
-                "level": 26,
-                "type": "passive"
+                "name": "Re Patra",
+                "level": 0,
+                "type": "recovery"
+            },
+            {
+                "name": "Agilao",
+                "level": 22,
+                "type": "fire"
             },
             {
                 "name": "Rakunda",
@@ -688,9 +683,14 @@
                 "type": "support"
             },
             {
-                "name": "Re Patra",
-                "level": 0,
-                "type": "recovery"
+                "name": "Fire Boost",
+                "level": 24,
+                "type": "passive"
+            },
+            {
+                "name": "Null Freeze",
+                "level": 26,
+                "type": "passive"
             }
         ],
         "inherits": "fire",
@@ -726,16 +726,6 @@
                 "type": "fire"
             },
             {
-                "name": "Diarama",
-                "level": 33,
-                "type": "recovery"
-            },
-            {
-                "name": "Enradi",
-                "level": 29,
-                "type": "recovery"
-            },
-            {
                 "name": "Maragi",
                 "level": 0,
                 "type": "fire"
@@ -746,9 +736,19 @@
                 "type": "recovery"
             },
             {
+                "name": "Enradi",
+                "level": 29,
+                "type": "recovery"
+            },
+            {
                 "name": "Trafuri",
                 "level": 31,
                 "type": "special"
+            },
+            {
+                "name": "Diarama",
+                "level": 33,
+                "type": "recovery"
             }
         ],
         "inherits": "fire",
@@ -794,6 +794,11 @@
                 "type": "passive"
             },
             {
+                "name": "Wind Break",
+                "level": 36,
+                "type": "support"
+            },
+            {
                 "name": "Torrent Shot",
                 "level": 37,
                 "type": "pierce"
@@ -807,11 +812,6 @@
                 "name": "Wind Boost",
                 "level": 39,
                 "type": "passive"
-            },
-            {
-                "name": "Wind Break",
-                "level": 36,
-                "type": "support"
             }
         ],
         "inherits": "wind",
@@ -842,19 +842,14 @@
         "id": 16,
         "skills": [
             {
-                "name": "Agidyne",
-                "level": 46,
-                "type": "fire"
-            },
-            {
                 "name": "Agilao",
                 "level": 0,
                 "type": "fire"
             },
             {
-                "name": "Dodge Ice",
-                "level": 44,
-                "type": "passive"
+                "name": "Zan-ei",
+                "level": 0,
+                "type": "slash"
             },
             {
                 "name": "Matarunda",
@@ -862,9 +857,14 @@
                 "type": "support"
             },
             {
-                "name": "Zan-ei",
-                "level": 0,
-                "type": "slash"
+                "name": "Dodge Ice",
+                "level": 44,
+                "type": "passive"
+            },
+            {
+                "name": "Agidyne",
+                "level": 46,
+                "type": "fire"
             }
         ],
         "inherits": "fire",
@@ -906,11 +906,6 @@
                 "type": "slash"
             },
             {
-                "name": "Fire Amp",
-                "level": 59,
-                "type": "passive"
-            },
-            {
                 "name": "Fire Boost",
                 "level": 0,
                 "type": "passive"
@@ -924,6 +919,11 @@
                 "name": "Ragnarok",
                 "level": 58,
                 "type": "fire"
+            },
+            {
+                "name": "Fire Amp",
+                "level": 59,
+                "type": "passive"
             }
         ],
         "inherits": "fire",
@@ -997,14 +997,19 @@
         "id": 19,
         "skills": [
             {
-                "name": "Auto-Rakukaja",
-                "level": 15,
-                "type": "passive"
-            },
-            {
                 "name": "Dia",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Hama",
+                "level": 0,
+                "type": "light"
+            },
+            {
+                "name": "Poisma",
+                "level": 0,
+                "type": "ailment"
             },
             {
                 "name": "Dodge Pierce",
@@ -1017,14 +1022,9 @@
                 "type": "recovery"
             },
             {
-                "name": "Hama",
-                "level": 0,
-                "type": "light"
-            },
-            {
-                "name": "Poisma",
-                "level": 0,
-                "type": "ailment"
+                "name": "Auto-Rakukaja",
+                "level": 15,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -1055,11 +1055,6 @@
         "id": 20,
         "skills": [
             {
-                "name": "Bufula",
-                "level": 23,
-                "type": "ice"
-            },
-            {
                 "name": "Holy Arrow",
                 "level": 0,
                 "type": "pierce"
@@ -1067,6 +1062,11 @@
             {
                 "name": "Mabufu",
                 "level": 0,
+                "type": "ice"
+            },
+            {
+                "name": "Bufula",
+                "level": 23,
                 "type": "ice"
             },
             {
@@ -1118,19 +1118,14 @@
                 "type": "ice"
             },
             {
-                "name": "Dekaja",
-                "level": 31,
-                "type": "support"
-            },
-            {
-                "name": "Ice Boost",
-                "level": 29,
-                "type": "passive"
-            },
-            {
                 "name": "Mabufu",
                 "level": 0,
                 "type": "ice"
+            },
+            {
+                "name": "Posumudi",
+                "level": 0,
+                "type": "recovery"
             },
             {
                 "name": "Me Patra",
@@ -1138,9 +1133,14 @@
                 "type": "recovery"
             },
             {
-                "name": "Posumudi",
-                "level": 0,
-                "type": "recovery"
+                "name": "Ice Boost",
+                "level": 29,
+                "type": "passive"
+            },
+            {
+                "name": "Dekaja",
+                "level": 31,
+                "type": "support"
             }
         ],
         "inherits": "ice",
@@ -1181,24 +1181,24 @@
                 "type": "recovery"
             },
             {
-                "name": "Diarama",
-                "level": 39,
+                "name": "Media",
+                "level": 0,
                 "type": "recovery"
             },
             {
-                "name": "Media",
-                "level": 0,
+                "name": "Tentarafoo",
+                "level": 37,
+                "type": "ailment"
+            },
+            {
+                "name": "Diarama",
+                "level": 39,
                 "type": "recovery"
             },
             {
                 "name": "Panic Boost",
                 "level": 40,
                 "type": "passive"
-            },
-            {
-                "name": "Tentarafoo",
-                "level": 37,
-                "type": "ailment"
             }
         ],
         "inherits": "ice",
@@ -1229,11 +1229,6 @@
         "id": 23,
         "skills": [
             {
-                "name": "Bufudyne",
-                "level": 52,
-                "type": "ice"
-            },
-            {
                 "name": "Bufula",
                 "level": 0,
                 "type": "ice"
@@ -1244,9 +1239,9 @@
                 "type": "recovery"
             },
             {
-                "name": "Dodge Fire",
-                "level": 51,
-                "type": "passive"
+                "name": "Marakukaja",
+                "level": 0,
+                "type": "support"
             },
             {
                 "name": "Mabufula",
@@ -1254,9 +1249,14 @@
                 "type": "ice"
             },
             {
-                "name": "Marakukaja",
-                "level": 0,
-                "type": "support"
+                "name": "Dodge Fire",
+                "level": 51,
+                "type": "passive"
+            },
+            {
+                "name": "Bufudyne",
+                "level": 52,
+                "type": "ice"
             }
         ],
         "inherits": "ice",
@@ -1287,21 +1287,6 @@
         "id": 24,
         "skills": [
             {
-                "name": "Cool Breeze",
-                "level": 55,
-                "type": "passive"
-            },
-            {
-                "name": "Diarahan",
-                "level": 56,
-                "type": "recovery"
-            },
-            {
-                "name": "Fire Amp",
-                "level": 59,
-                "type": "passive"
-            },
-            {
                 "name": "Invigorate 1",
                 "level": 0,
                 "type": "passive"
@@ -1317,8 +1302,23 @@
                 "type": "recovery"
             },
             {
+                "name": "Cool Breeze",
+                "level": 55,
+                "type": "passive"
+            },
+            {
+                "name": "Diarahan",
+                "level": 56,
+                "type": "recovery"
+            },
+            {
                 "name": "Resist Ice",
                 "level": 58,
+                "type": "passive"
+            },
+            {
+                "name": "Fire Amp",
+                "level": 59,
                 "type": "passive"
             }
         ],
@@ -1351,24 +1351,9 @@
         "id": 25,
         "skills": [
             {
-                "name": "Amrita",
-                "level": 66,
-                "type": "recovery"
-            },
-            {
-                "name": "Invigorate 3",
-                "level": 72,
-                "type": "passive"
-            },
-            {
                 "name": "Mabufudyne",
                 "level": 0,
                 "type": "ice"
-            },
-            {
-                "name": "Magarudyne",
-                "level": 67,
-                "type": "wind"
             },
             {
                 "name": "Myriad Arrows",
@@ -1376,9 +1361,24 @@
                 "type": "pierce"
             },
             {
+                "name": "Amrita",
+                "level": 66,
+                "type": "recovery"
+            },
+            {
+                "name": "Magarudyne",
+                "level": 67,
+                "type": "wind"
+            },
+            {
                 "name": "Power Charge",
                 "level": 69,
                 "type": "support"
+            },
+            {
+                "name": "Invigorate 3",
+                "level": 72,
+                "type": "passive"
             }
         ],
         "inherits": "pierce",
@@ -1409,11 +1409,6 @@
         "id": 26,
         "skills": [
             {
-                "name": "Charm Boost",
-                "level": 35,
-                "type": "passive"
-            },
-            {
                 "name": "Diarama",
                 "level": 0,
                 "type": "recovery"
@@ -1429,14 +1424,19 @@
                 "type": "recovery"
             },
             {
-                "name": "Mediarama",
-                "level": 38,
-                "type": "recovery"
-            },
-            {
                 "name": "Sexy Dance",
                 "level": 34,
                 "type": "ailment"
+            },
+            {
+                "name": "Charm Boost",
+                "level": 35,
+                "type": "passive"
+            },
+            {
+                "name": "Mediarama",
+                "level": 38,
+                "type": "recovery"
             }
         ],
         "inherits": "recovery",
@@ -1467,9 +1467,24 @@
         "id": 27,
         "skills": [
             {
+                "name": "Fatal End",
+                "level": 0,
+                "type": "slash"
+            },
+            {
+                "name": "Sexy Dance",
+                "level": 0,
+                "type": "ailment"
+            },
+            {
                 "name": "Blade of Fury",
                 "level": 52,
                 "type": "slash"
+            },
+            {
+                "name": "Maragion",
+                "level": 53,
+                "type": "fire"
             },
             {
                 "name": "Charm Boost",
@@ -1480,21 +1495,6 @@
                 "name": "Deathbound",
                 "level": 56,
                 "type": "slash"
-            },
-            {
-                "name": "Fatal End",
-                "level": 0,
-                "type": "slash"
-            },
-            {
-                "name": "Maragion",
-                "level": 53,
-                "type": "fire"
-            },
-            {
-                "name": "Sexy Dance",
-                "level": 0,
-                "type": "ailment"
             }
         ],
         "inherits": "slash",
@@ -1525,12 +1525,12 @@
         "id": 28,
         "skills": [
             {
-                "name": "Amrita",
-                "level": 63,
-                "type": "recovery"
+                "name": "Bufudyne",
+                "level": 0,
+                "type": "ice"
             },
             {
-                "name": "Bufudyne",
+                "name": "Mabufula",
                 "level": 0,
                 "type": "ice"
             },
@@ -1538,11 +1538,6 @@
                 "name": "Ice Break",
                 "level": 59,
                 "type": "support"
-            },
-            {
-                "name": "Mabufula",
-                "level": 0,
-                "type": "ice"
             },
             {
                 "name": "Null Dark",
@@ -1553,6 +1548,11 @@
                 "name": "Resist Fire",
                 "level": 62,
                 "type": "passive"
+            },
+            {
+                "name": "Amrita",
+                "level": 63,
+                "type": "recovery"
             }
         ],
         "inherits": "ice",
@@ -1583,11 +1583,6 @@
         "id": 29,
         "skills": [
             {
-                "name": "Auto-Masuku",
-                "level": 67,
-                "type": "passive"
-            },
-            {
                 "name": "Bufudyne",
                 "level": 0,
                 "type": "ice"
@@ -1603,14 +1598,19 @@
                 "type": "recovery"
             },
             {
+                "name": "Samarecarm",
+                "level": 64,
+                "type": "recovery"
+            },
+            {
                 "name": "Poison Arrow",
                 "level": 65,
                 "type": "pierce"
             },
             {
-                "name": "Samarecarm",
-                "level": 64,
-                "type": "recovery"
+                "name": "Auto-Masuku",
+                "level": 67,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -1651,24 +1651,24 @@
                 "type": "passive"
             },
             {
-                "name": "Mabufudyne",
-                "level": 71,
-                "type": "ice"
-            },
-            {
                 "name": "Mahamaon",
                 "level": 0,
                 "type": "light"
             },
             {
-                "name": "Myriad Arrows",
-                "level": 75,
-                "type": "pierce"
+                "name": "Mabufudyne",
+                "level": 71,
+                "type": "ice"
             },
             {
                 "name": "Repel Dark",
                 "level": 73,
                 "type": "passive"
+            },
+            {
+                "name": "Myriad Arrows",
+                "level": 75,
+                "type": "pierce"
             }
         ],
         "inherits": "ice",
@@ -1699,23 +1699,18 @@
         "id": 31,
         "skills": [
             {
-                "name": "Ailment Boost",
-                "level": 78,
-                "type": "passive"
-            },
-            {
                 "name": "Mamudoon",
                 "level": 0,
                 "type": "dark"
             },
             {
-                "name": "Mudo Boost",
-                "level": 76,
-                "type": "passive"
+                "name": "Ziodyne",
+                "level": 0,
+                "type": "elec"
             },
             {
-                "name": "Null Fire",
-                "level": 80,
+                "name": "Mudo Boost",
+                "level": 76,
                 "type": "passive"
             },
             {
@@ -1724,9 +1719,14 @@
                 "type": "ailment"
             },
             {
-                "name": "Ziodyne",
-                "level": 0,
-                "type": "elec"
+                "name": "Ailment Boost",
+                "level": 78,
+                "type": "passive"
+            },
+            {
+                "name": "Null Fire",
+                "level": 80,
+                "type": "passive"
             }
         ],
         "inherits": "dark",
@@ -1757,16 +1757,6 @@
         "id": 32,
         "skills": [
             {
-                "name": "Absorb Fire",
-                "level": 84,
-                "type": "passive"
-            },
-            {
-                "name": "Akasha Arts",
-                "level": 83,
-                "type": "strike"
-            },
-            {
                 "name": "Ice Amp",
                 "level": 0,
                 "type": "passive"
@@ -1777,14 +1767,24 @@
                 "type": "ice"
             },
             {
-                "name": "Niflheim",
-                "level": 86,
-                "type": "ice"
-            },
-            {
                 "name": "Tetrakarn",
                 "level": 0,
                 "type": "support"
+            },
+            {
+                "name": "Akasha Arts",
+                "level": 83,
+                "type": "strike"
+            },
+            {
+                "name": "Absorb Fire",
+                "level": 84,
+                "type": "passive"
+            },
+            {
+                "name": "Niflheim",
+                "level": 86,
+                "type": "ice"
             }
         ],
         "inherits": "ice",
@@ -1831,11 +1831,6 @@
                 "type": "passive"
             },
             {
-                "name": "Repel Pierce",
-                "level": 90,
-                "type": "passive"
-            },
-            {
                 "name": "Repel Slash",
                 "level": 88,
                 "type": "passive"
@@ -1843,6 +1838,11 @@
             {
                 "name": "Repel Strike",
                 "level": 89,
+                "type": "passive"
+            },
+            {
+                "name": "Repel Pierce",
+                "level": 90,
                 "type": "passive"
             }
         ],
@@ -1874,11 +1874,6 @@
         "id": 34,
         "skills": [
             {
-                "name": "Auto-Sukukaja",
-                "level": 9,
-                "type": "passive"
-            },
-            {
                 "name": "Bash",
                 "level": 0,
                 "type": "strike"
@@ -1889,6 +1884,16 @@
                 "type": "ice"
             },
             {
+                "name": "Tarukaja",
+                "level": 0,
+                "type": "support"
+            },
+            {
+                "name": "Auto-Sukukaja",
+                "level": 9,
+                "type": "passive"
+            },
+            {
                 "name": "Poisma",
                 "level": 10,
                 "type": "ailment"
@@ -1897,11 +1902,6 @@
                 "name": "Posumudi",
                 "level": 11,
                 "type": "recovery"
-            },
-            {
-                "name": "Tarukaja",
-                "level": 0,
-                "type": "support"
             }
         ],
         "inherits": "ice",
@@ -1932,14 +1932,14 @@
         "id": 35,
         "skills": [
             {
-                "name": "Mazio",
-                "level": 17,
-                "type": "elec"
-            },
-            {
                 "name": "Media",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Zio",
+                "level": 0,
+                "type": "elec"
             },
             {
                 "name": "Survive Dark",
@@ -1947,14 +1947,14 @@
                 "type": "passive"
             },
             {
+                "name": "Mazio",
+                "level": 17,
+                "type": "elec"
+            },
+            {
                 "name": "Zan-ei",
                 "level": 18,
                 "type": "slash"
-            },
-            {
-                "name": "Zio",
-                "level": 0,
-                "type": "elec"
             },
             {
                 "name": "Zionga",
@@ -1995,21 +1995,6 @@
                 "type": "passive"
             },
             {
-                "name": "Elec Boost",
-                "level": 30,
-                "type": "passive"
-            },
-            {
-                "name": "Elec Break",
-                "level": 29,
-                "type": "support"
-            },
-            {
-                "name": "Getsu-ei",
-                "level": 27,
-                "type": "slash"
-            },
-            {
                 "name": "Mazio",
                 "level": 0,
                 "type": "elec"
@@ -2023,6 +2008,21 @@
                 "name": "Zionga",
                 "level": 26,
                 "type": "elec"
+            },
+            {
+                "name": "Getsu-ei",
+                "level": 27,
+                "type": "slash"
+            },
+            {
+                "name": "Elec Break",
+                "level": 29,
+                "type": "support"
+            },
+            {
+                "name": "Elec Boost",
+                "level": 30,
+                "type": "passive"
             }
         ],
         "inherits": "elec",
@@ -2064,9 +2064,9 @@
                 "type": "passive"
             },
             {
-                "name": "Growth 1",
-                "level": 33,
-                "type": "passive"
+                "name": "Mabufu",
+                "level": 0,
+                "type": "ice"
             },
             {
                 "name": "Ice Break",
@@ -2074,9 +2074,9 @@
                 "type": "support"
             },
             {
-                "name": "Mabufu",
-                "level": 0,
-                "type": "ice"
+                "name": "Growth 1",
+                "level": 33,
+                "type": "passive"
             },
             {
                 "name": "Mabufula",
@@ -2112,29 +2112,19 @@
         "id": 38,
         "skills": [
             {
-                "name": "Matarukaja",
-                "level": 37,
-                "type": "support"
-            },
-            {
-                "name": "Mazionga",
-                "level": 41,
-                "type": "elec"
-            },
-            {
-                "name": "Null Panic",
-                "level": 40,
-                "type": "passive"
-            },
-            {
-                "name": "Panic Boost",
-                "level": 42,
-                "type": "passive"
-            },
-            {
                 "name": "Tentarafoo",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Twin Shot",
+                "level": 0,
+                "type": "pierce"
+            },
+            {
+                "name": "Matarukaja",
+                "level": 37,
+                "type": "support"
             },
             {
                 "name": "Torrent Shot",
@@ -2142,9 +2132,19 @@
                 "type": "pierce"
             },
             {
-                "name": "Twin Shot",
-                "level": 0,
-                "type": "pierce"
+                "name": "Null Panic",
+                "level": 40,
+                "type": "passive"
+            },
+            {
+                "name": "Mazionga",
+                "level": 41,
+                "type": "elec"
+            },
+            {
+                "name": "Panic Boost",
+                "level": 42,
+                "type": "passive"
             }
         ],
         "inherits": "pierce",
@@ -2175,13 +2175,23 @@
         "id": 39,
         "skills": [
             {
-                "name": "Endure",
-                "level": 52,
+                "name": "Evade Fire",
+                "level": 0,
                 "type": "passive"
             },
             {
-                "name": "Evade Fire",
+                "name": "Mediarama",
                 "level": 0,
+                "type": "recovery"
+            },
+            {
+                "name": "Virus Breath",
+                "level": 48,
+                "type": "ailment"
+            },
+            {
+                "name": "Null Poison",
+                "level": 49,
                 "type": "passive"
             },
             {
@@ -2190,19 +2200,9 @@
                 "type": "strike"
             },
             {
-                "name": "Mediarama",
-                "level": 0,
-                "type": "recovery"
-            },
-            {
-                "name": "Null Poison",
-                "level": 49,
+                "name": "Endure",
+                "level": 52,
                 "type": "passive"
-            },
-            {
-                "name": "Virus Breath",
-                "level": 48,
-                "type": "ailment"
             }
         ],
         "inherits": "recovery",
@@ -2233,29 +2233,14 @@
         "id": 40,
         "skills": [
             {
-                "name": "Auto-Maraku",
-                "level": 56,
-                "type": "passive"
-            },
-            {
                 "name": "Counterstrike",
                 "level": 0,
-                "type": "passive"
-            },
-            {
-                "name": "Endure Dark",
-                "level": 57,
                 "type": "passive"
             },
             {
                 "name": "Heat Wave",
                 "level": 0,
                 "type": "strike"
-            },
-            {
-                "name": "Invigorate 2",
-                "level": 55,
-                "type": "passive"
             },
             {
                 "name": "Null Poison",
@@ -2266,6 +2251,21 @@
                 "name": "Virus Breath",
                 "level": 54,
                 "type": "ailment"
+            },
+            {
+                "name": "Invigorate 2",
+                "level": 55,
+                "type": "passive"
+            },
+            {
+                "name": "Auto-Maraku",
+                "level": 56,
+                "type": "passive"
+            },
+            {
+                "name": "Endure Dark",
+                "level": 57,
+                "type": "passive"
             }
         ],
         "inherits": "slash",
@@ -2297,23 +2297,8 @@
         "id": 41,
         "skills": [
             {
-                "name": "Elec Amp",
-                "level": 60,
-                "type": "passive"
-            },
-            {
                 "name": "Maziodyne",
                 "level": 0,
-                "type": "elec"
-            },
-            {
-                "name": "Spell Master",
-                "level": 65,
-                "type": "passive"
-            },
-            {
-                "name": "Thunder Reign",
-                "level": 63,
                 "type": "elec"
             },
             {
@@ -2325,6 +2310,21 @@
                 "name": "Ziodyne",
                 "level": 0,
                 "type": "elec"
+            },
+            {
+                "name": "Elec Amp",
+                "level": 60,
+                "type": "passive"
+            },
+            {
+                "name": "Thunder Reign",
+                "level": 63,
+                "type": "elec"
+            },
+            {
+                "name": "Spell Master",
+                "level": 65,
+                "type": "passive"
             }
         ],
         "inherits": "elec",
@@ -2355,14 +2355,14 @@
         "id": 42,
         "skills": [
             {
-                "name": "Auto-Rakukaja",
-                "level": 12,
-                "type": "passive"
-            },
-            {
                 "name": "Dia",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Zio",
+                "level": 0,
+                "type": "elec"
             },
             {
                 "name": "Enradi",
@@ -2370,14 +2370,14 @@
                 "type": "recovery"
             },
             {
+                "name": "Auto-Rakukaja",
+                "level": 12,
+                "type": "passive"
+            },
+            {
                 "name": "Me Patra",
                 "level": 13,
                 "type": "recovery"
-            },
-            {
-                "name": "Zio",
-                "level": 0,
-                "type": "elec"
             }
         ],
         "inherits": "elec",
@@ -2413,14 +2413,19 @@
                 "type": "fire"
             },
             {
-                "name": "Auto-Tarukaja",
-                "level": 15,
-                "type": "passive"
-            },
-            {
                 "name": "Double Fangs",
                 "level": 0,
                 "type": "pierce"
+            },
+            {
+                "name": "Tarukaja",
+                "level": 0,
+                "type": "support"
+            },
+            {
+                "name": "Auto-Tarukaja",
+                "level": 15,
+                "type": "passive"
             },
             {
                 "name": "Maragi",
@@ -2430,11 +2435,6 @@
             {
                 "name": "Rebellion",
                 "level": 17,
-                "type": "support"
-            },
-            {
-                "name": "Tarukaja",
-                "level": 0,
                 "type": "support"
             }
         ],
@@ -2466,24 +2466,9 @@
         "id": 44,
         "skills": [
             {
-                "name": "Dodge Fire",
-                "level": 29,
-                "type": "passive"
-            },
-            {
-                "name": "Fatal End",
-                "level": 32,
-                "type": "slash"
-            },
-            {
                 "name": "Gale Slash",
                 "level": 0,
                 "type": "slash"
-            },
-            {
-                "name": "Ice Boost",
-                "level": 30,
-                "type": "passive"
             },
             {
                 "name": "Mabufu",
@@ -2494,6 +2479,21 @@
                 "name": "Mazio",
                 "level": 28,
                 "type": "elec"
+            },
+            {
+                "name": "Dodge Fire",
+                "level": 29,
+                "type": "passive"
+            },
+            {
+                "name": "Ice Boost",
+                "level": 30,
+                "type": "passive"
+            },
+            {
+                "name": "Fatal End",
+                "level": 32,
+                "type": "slash"
             }
         ],
         "inherits": "ice",
@@ -2529,19 +2529,19 @@
                 "type": "fire"
             },
             {
+                "name": "Gale Slash",
+                "level": 0,
+                "type": "slash"
+            },
+            {
                 "name": "Auto-Sukukaja",
                 "level": 34,
                 "type": "passive"
             },
             {
-                "name": "Evade Wind",
-                "level": 38,
+                "name": "Sharp Student",
+                "level": 35,
                 "type": "passive"
-            },
-            {
-                "name": "Gale Slash",
-                "level": 0,
-                "type": "slash"
             },
             {
                 "name": "Mighty Swing",
@@ -2549,8 +2549,8 @@
                 "type": "slash"
             },
             {
-                "name": "Sharp Student",
-                "level": 35,
+                "name": "Evade Wind",
+                "level": 38,
                 "type": "passive"
             }
         ],
@@ -2583,14 +2583,19 @@
         "id": 46,
         "skills": [
             {
-                "name": "Growth 2",
-                "level": 43,
-                "type": "passive"
-            },
-            {
                 "name": "Mahama",
                 "level": 0,
                 "type": "light"
+            },
+            {
+                "name": "Zionga",
+                "level": 0,
+                "type": "elec"
+            },
+            {
+                "name": "Growth 2",
+                "level": 43,
+                "type": "passive"
             },
             {
                 "name": "Mazionga",
@@ -2598,19 +2603,14 @@
                 "type": "elec"
             },
             {
-                "name": "Mediarama",
-                "level": 46,
-                "type": "recovery"
-            },
-            {
                 "name": "Megido",
                 "level": 45,
                 "type": "almighty"
             },
             {
-                "name": "Zionga",
-                "level": 0,
-                "type": "elec"
+                "name": "Mediarama",
+                "level": 46,
+                "type": "recovery"
             }
         ],
         "inherits": "elec",
@@ -2641,18 +2641,28 @@
         "id": 47,
         "skills": [
             {
-                "name": "Apt Pupil",
-                "level": 53,
-                "type": "passive"
-            },
-            {
                 "name": "Dodge Slash",
                 "level": 0,
                 "type": "passive"
             },
             {
+                "name": "Zionga",
+                "level": 0,
+                "type": "elec"
+            },
+            {
+                "name": "Poison Arrow",
+                "level": 49,
+                "type": "pierce"
+            },
+            {
                 "name": "Elec Boost",
                 "level": 50,
+                "type": "passive"
+            },
+            {
+                "name": "Null Shock",
+                "level": 51,
                 "type": "passive"
             },
             {
@@ -2661,19 +2671,9 @@
                 "type": "support"
             },
             {
-                "name": "Null Shock",
-                "level": 51,
+                "name": "Apt Pupil",
+                "level": 53,
                 "type": "passive"
-            },
-            {
-                "name": "Poison Arrow",
-                "level": 49,
-                "type": "pierce"
-            },
-            {
-                "name": "Zionga",
-                "level": 0,
-                "type": "elec"
             }
         ],
         "inherits": "elec",
@@ -2715,13 +2715,13 @@
                 "type": "passive"
             },
             {
-                "name": "Hama Boost",
-                "level": 59,
-                "type": "passive"
-            },
-            {
                 "name": "Hamaon",
                 "level": 0,
+                "type": "light"
+            },
+            {
+                "name": "Samsara",
+                "level": 56,
                 "type": "light"
             },
             {
@@ -2730,9 +2730,9 @@
                 "type": "passive"
             },
             {
-                "name": "Samsara",
-                "level": 56,
-                "type": "light"
+                "name": "Hama Boost",
+                "level": 59,
+                "type": "passive"
             }
         ],
         "inherits": "light",
@@ -2765,29 +2765,9 @@
         "id": 49,
         "skills": [
             {
-                "name": "Invigorate 3",
-                "level": 68,
-                "type": "passive"
-            },
-            {
-                "name": "Makarakarn",
-                "level": 70,
-                "type": "support"
-            },
-            {
                 "name": "Mediarahan",
                 "level": 0,
                 "type": "recovery"
-            },
-            {
-                "name": "Null Pierce",
-                "level": 73,
-                "type": "passive"
-            },
-            {
-                "name": "Null Strike",
-                "level": 71,
-                "type": "passive"
             },
             {
                 "name": "Samarecarm",
@@ -2798,6 +2778,26 @@
                 "name": "Weary Thrust",
                 "level": 0,
                 "type": "strike"
+            },
+            {
+                "name": "Invigorate 3",
+                "level": 68,
+                "type": "passive"
+            },
+            {
+                "name": "Makarakarn",
+                "level": 70,
+                "type": "support"
+            },
+            {
+                "name": "Null Strike",
+                "level": 71,
+                "type": "passive"
+            },
+            {
+                "name": "Null Pierce",
+                "level": 73,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -2833,14 +2833,14 @@
                 "type": "recovery"
             },
             {
-                "name": "Pulinpa",
-                "level": 4,
-                "type": "ailment"
-            },
-            {
                 "name": "Rakunda",
                 "level": 3,
                 "type": "support"
+            },
+            {
+                "name": "Pulinpa",
+                "level": 4,
+                "type": "ailment"
             },
             {
                 "name": "Trafuri",
@@ -2876,11 +2876,6 @@
         "id": 51,
         "skills": [
             {
-                "name": "Charmdi",
-                "level": 8,
-                "type": "recovery"
-            },
-            {
                 "name": "Dia",
                 "level": 0,
                 "type": "recovery"
@@ -2891,19 +2886,24 @@
                 "type": "wind"
             },
             {
+                "name": "Sukunda",
+                "level": 0,
+                "type": "support"
+            },
+            {
                 "name": "Marin Karin",
                 "level": 7,
                 "type": "ailment"
             },
             {
+                "name": "Charmdi",
+                "level": 8,
+                "type": "recovery"
+            },
+            {
                 "name": "Mudo",
                 "level": 11,
                 "type": "dark"
-            },
-            {
-                "name": "Sukunda",
-                "level": 0,
-                "type": "support"
             }
         ],
         "inherits": "recovery",
@@ -2934,8 +2934,23 @@
         "id": 52,
         "skills": [
             {
-                "name": "Auto-Rakukaja",
-                "level": 19,
+                "name": "Power Slash",
+                "level": 0,
+                "type": "slash"
+            },
+            {
+                "name": "Tarukaja",
+                "level": 0,
+                "type": "support"
+            },
+            {
+                "name": "Zio",
+                "level": 0,
+                "type": "elec"
+            },
+            {
+                "name": "Sharp Student",
+                "level": 14,
                 "type": "passive"
             },
             {
@@ -2949,24 +2964,9 @@
                 "type": "elec"
             },
             {
-                "name": "Power Slash",
-                "level": 0,
-                "type": "slash"
-            },
-            {
-                "name": "Sharp Student",
-                "level": 14,
+                "name": "Auto-Rakukaja",
+                "level": 19,
                 "type": "passive"
-            },
-            {
-                "name": "Tarukaja",
-                "level": 0,
-                "type": "support"
-            },
-            {
-                "name": "Zio",
-                "level": 0,
-                "type": "elec"
             }
         ],
         "inherits": "pierce",
@@ -3002,16 +3002,6 @@
                 "type": "passive"
             },
             {
-                "name": "Charmdi",
-                "level": 22,
-                "type": "recovery"
-            },
-            {
-                "name": "Dekunda",
-                "level": 24,
-                "type": "support"
-            },
-            {
                 "name": "Magaru",
                 "level": 0,
                 "type": "wind"
@@ -3025,6 +3015,16 @@
                 "name": "Sexy Dance",
                 "level": 21,
                 "type": "ailment"
+            },
+            {
+                "name": "Charmdi",
+                "level": 22,
+                "type": "recovery"
+            },
+            {
+                "name": "Dekunda",
+                "level": 24,
+                "type": "support"
             }
         ],
         "inherits": "ailment",
@@ -3055,21 +3055,6 @@
         "id": 54,
         "skills": [
             {
-                "name": "Dodge Pierce",
-                "level": 32,
-                "type": "passive"
-            },
-            {
-                "name": "Dodge Strike",
-                "level": 30,
-                "type": "passive"
-            },
-            {
-                "name": "Dodge Wind",
-                "level": 29,
-                "type": "passive"
-            },
-            {
                 "name": "Posumudi",
                 "level": 0,
                 "type": "recovery"
@@ -3088,6 +3073,21 @@
                 "name": "Recarm",
                 "level": 28,
                 "type": "recovery"
+            },
+            {
+                "name": "Dodge Wind",
+                "level": 29,
+                "type": "passive"
+            },
+            {
+                "name": "Dodge Strike",
+                "level": 30,
+                "type": "passive"
+            },
+            {
+                "name": "Dodge Pierce",
+                "level": 32,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -3118,19 +3118,14 @@
         "id": 55,
         "skills": [
             {
-                "name": "Dekunda",
-                "level": 43,
-                "type": "support"
-            },
-            {
                 "name": "Diarama",
                 "level": 0,
                 "type": "recovery"
             },
             {
-                "name": "Divine Grace",
-                "level": 45,
-                "type": "passive"
+                "name": "Zionga",
+                "level": 0,
+                "type": "elec"
             },
             {
                 "name": "Growth 2",
@@ -3143,14 +3138,19 @@
                 "type": "recovery"
             },
             {
+                "name": "Dekunda",
+                "level": 43,
+                "type": "support"
+            },
+            {
                 "name": "Null Charm",
                 "level": 44,
                 "type": "passive"
             },
             {
-                "name": "Zionga",
-                "level": 0,
-                "type": "elec"
+                "name": "Divine Grace",
+                "level": 45,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -3181,26 +3181,6 @@
         "id": 56,
         "skills": [
             {
-                "name": "Divine Grace",
-                "level": 52,
-                "type": "passive"
-            },
-            {
-                "name": "Ice Amp",
-                "level": 54,
-                "type": "passive"
-            },
-            {
-                "name": "Mabufula",
-                "level": 51,
-                "type": "ice"
-            },
-            {
-                "name": "Magarula",
-                "level": 49,
-                "type": "wind"
-            },
-            {
                 "name": "Mediarama",
                 "level": 0,
                 "type": "recovery"
@@ -3209,6 +3189,26 @@
                 "name": "Mind Charge",
                 "level": 0,
                 "type": "support"
+            },
+            {
+                "name": "Magarula",
+                "level": 49,
+                "type": "wind"
+            },
+            {
+                "name": "Mabufula",
+                "level": 51,
+                "type": "ice"
+            },
+            {
+                "name": "Divine Grace",
+                "level": 52,
+                "type": "passive"
+            },
+            {
+                "name": "Ice Amp",
+                "level": 54,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -3249,9 +3249,9 @@
                 "type": "slash"
             },
             {
-                "name": "Matarukaja",
-                "level": 64,
-                "type": "support"
+                "name": "Null Charm",
+                "level": 0,
+                "type": "passive"
             },
             {
                 "name": "Mediarahan",
@@ -3259,9 +3259,9 @@
                 "type": "recovery"
             },
             {
-                "name": "Null Charm",
-                "level": 0,
-                "type": "passive"
+                "name": "Matarukaja",
+                "level": 64,
+                "type": "support"
             },
             {
                 "name": "Tempest Slash",
@@ -3303,16 +3303,6 @@
                 "type": "passive"
             },
             {
-                "name": "Bow Master",
-                "level": 73,
-                "type": "passive"
-            },
-            {
-                "name": "Megidola",
-                "level": 70,
-                "type": "almighty"
-            },
-            {
                 "name": "Myriad Arrows",
                 "level": 0,
                 "type": "pierce"
@@ -3321,6 +3311,16 @@
                 "name": "Samarecarm",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Megidola",
+                "level": 70,
+                "type": "almighty"
+            },
+            {
+                "name": "Bow Master",
+                "level": 73,
+                "type": "passive"
             },
             {
                 "name": "Spell Master",
@@ -3376,14 +3376,14 @@
                 "type": "support"
             },
             {
-                "name": "Sharp Student",
-                "level": 12,
-                "type": "passive"
-            },
-            {
                 "name": "Sukukaja",
                 "level": 8,
                 "type": "support"
+            },
+            {
+                "name": "Sharp Student",
+                "level": 12,
+                "type": "passive"
             }
         ],
         "inherits": "strike",
@@ -3419,11 +3419,6 @@
                 "type": "fire"
             },
             {
-                "name": "Auto-Tarukaja",
-                "level": 14,
-                "type": "passive"
-            },
-            {
                 "name": "Bewilder",
                 "level": 0,
                 "type": "ailment"
@@ -3434,14 +3429,19 @@
                 "type": "slash"
             },
             {
+                "name": "Sonic Punch",
+                "level": 11,
+                "type": "strike"
+            },
+            {
                 "name": "Rakunda",
                 "level": 12,
                 "type": "support"
             },
             {
-                "name": "Sonic Punch",
-                "level": 11,
-                "type": "strike"
+                "name": "Auto-Tarukaja",
+                "level": 14,
+                "type": "passive"
             }
         ],
         "inherits": "slash",
@@ -3472,24 +3472,9 @@
         "id": 61,
         "skills": [
             {
-                "name": "Assault Dive",
-                "level": 16,
-                "type": "strike"
-            },
-            {
-                "name": "Auto-Sukukaja",
-                "level": 19,
-                "type": "passive"
-            },
-            {
                 "name": "Bash",
                 "level": 0,
                 "type": "strike"
-            },
-            {
-                "name": "Sharp Student",
-                "level": 18,
-                "type": "passive"
             },
             {
                 "name": "Tarukaja",
@@ -3500,6 +3485,21 @@
                 "name": "Zio",
                 "level": 0,
                 "type": "elec"
+            },
+            {
+                "name": "Assault Dive",
+                "level": 16,
+                "type": "strike"
+            },
+            {
+                "name": "Sharp Student",
+                "level": 18,
+                "type": "passive"
+            },
+            {
+                "name": "Auto-Sukukaja",
+                "level": 19,
+                "type": "passive"
             }
         ],
         "inherits": "strike",
@@ -3530,19 +3530,19 @@
         "id": 62,
         "skills": [
             {
-                "name": "Counter",
-                "level": 21,
-                "type": "passive"
-            },
-            {
-                "name": "Getsu-ei",
-                "level": 24,
-                "type": "slash"
-            },
-            {
                 "name": "Rakunda",
                 "level": 0,
                 "type": "support"
+            },
+            {
+                "name": "Zan-ei",
+                "level": 0,
+                "type": "slash"
+            },
+            {
+                "name": "Counter",
+                "level": 21,
+                "type": "passive"
             },
             {
                 "name": "Rebellion",
@@ -3550,8 +3550,8 @@
                 "type": "support"
             },
             {
-                "name": "Zan-ei",
-                "level": 0,
+                "name": "Getsu-ei",
+                "level": 24,
                 "type": "slash"
             }
         ],
@@ -3583,16 +3583,6 @@
         "id": 63,
         "skills": [
             {
-                "name": "Auto-Tarukaja",
-                "level": 31,
-                "type": "passive"
-            },
-            {
-                "name": "Counter",
-                "level": 34,
-                "type": "passive"
-            },
-            {
                 "name": "Dodge Pierce",
                 "level": 0,
                 "type": "passive"
@@ -3603,14 +3593,24 @@
                 "type": "strike"
             },
             {
-                "name": "Null Rage",
-                "level": 35,
-                "type": "passive"
-            },
-            {
                 "name": "Rebellion",
                 "level": 0,
                 "type": "support"
+            },
+            {
+                "name": "Auto-Tarukaja",
+                "level": 31,
+                "type": "passive"
+            },
+            {
+                "name": "Counter",
+                "level": 34,
+                "type": "passive"
+            },
+            {
+                "name": "Null Rage",
+                "level": 35,
+                "type": "passive"
             },
             {
                 "name": "Resist Pierce",
@@ -3647,13 +3647,23 @@
         "id": 64,
         "skills": [
             {
-                "name": "Counterstrike",
-                "level": 40,
+                "name": "Masukukaja",
+                "level": 0,
+                "type": "support"
+            },
+            {
+                "name": "Swift Strike",
+                "level": 0,
+                "type": "strike"
+            },
+            {
+                "name": "Regenerate 1",
+                "level": 38,
                 "type": "passive"
             },
             {
-                "name": "Endure Dark",
-                "level": 43,
+                "name": "Counterstrike",
+                "level": 40,
                 "type": "passive"
             },
             {
@@ -3662,19 +3672,9 @@
                 "type": "strike"
             },
             {
-                "name": "Masukukaja",
-                "level": 0,
-                "type": "support"
-            },
-            {
-                "name": "Regenerate 1",
-                "level": 38,
+                "name": "Endure Dark",
+                "level": 43,
                 "type": "passive"
-            },
-            {
-                "name": "Swift Strike",
-                "level": 0,
-                "type": "strike"
             }
         ],
         "inherits": "strike",
@@ -3705,11 +3705,6 @@
         "id": 65,
         "skills": [
             {
-                "name": "Counterstrike",
-                "level": 46,
-                "type": "passive"
-            },
-            {
                 "name": "Cruel Attack",
                 "level": 0,
                 "type": "pierce"
@@ -3720,6 +3715,16 @@
                 "type": "support"
             },
             {
+                "name": "Swift Strike",
+                "level": 0,
+                "type": "strike"
+            },
+            {
+                "name": "Counterstrike",
+                "level": 46,
+                "type": "passive"
+            },
+            {
                 "name": "Gigantic Fist",
                 "level": 47,
                 "type": "strike"
@@ -3728,11 +3733,6 @@
                 "name": "Regenerate 1",
                 "level": 48,
                 "type": "passive"
-            },
-            {
-                "name": "Swift Strike",
-                "level": 0,
-                "type": "strike"
             }
         ],
         "inherits": "strike",
@@ -3764,21 +3764,6 @@
         "id": 66,
         "skills": [
             {
-                "name": "Auto-Mataru",
-                "level": 55,
-                "type": "passive"
-            },
-            {
-                "name": "Elec Amp",
-                "level": 59,
-                "type": "passive"
-            },
-            {
-                "name": "Heavy Master",
-                "level": 60,
-                "type": "passive"
-            },
-            {
                 "name": "High Counter",
                 "level": 0,
                 "type": "passive"
@@ -3792,6 +3777,21 @@
                 "name": "Ziodyne",
                 "level": 0,
                 "type": "elec"
+            },
+            {
+                "name": "Auto-Mataru",
+                "level": 55,
+                "type": "passive"
+            },
+            {
+                "name": "Elec Amp",
+                "level": 59,
+                "type": "passive"
+            },
+            {
+                "name": "Heavy Master",
+                "level": 60,
+                "type": "passive"
             }
         ],
         "inherits": "elec",
@@ -3822,19 +3822,9 @@
         "id": 67,
         "skills": [
             {
-                "name": "Charmdi",
-                "level": 8,
-                "type": "recovery"
-            },
-            {
                 "name": "Garu",
                 "level": 0,
                 "type": "wind"
-            },
-            {
-                "name": "Hama",
-                "level": 7,
-                "type": "light"
             },
             {
                 "name": "Patra",
@@ -3845,6 +3835,16 @@
                 "name": "Sukukaja",
                 "level": 5,
                 "type": "support"
+            },
+            {
+                "name": "Hama",
+                "level": 7,
+                "type": "light"
+            },
+            {
+                "name": "Charmdi",
+                "level": 8,
+                "type": "recovery"
             }
         ],
         "inherits": "wind",
@@ -3885,6 +3885,16 @@
                 "type": "light"
             },
             {
+                "name": "Sukukaja",
+                "level": 0,
+                "type": "support"
+            },
+            {
+                "name": "Patra",
+                "level": 11,
+                "type": "recovery"
+            },
+            {
                 "name": "Holy Arrow",
                 "level": 12,
                 "type": "pierce"
@@ -3895,19 +3905,9 @@
                 "type": "elec"
             },
             {
-                "name": "Patra",
-                "level": 11,
-                "type": "recovery"
-            },
-            {
                 "name": "Sharp Student",
                 "level": 14,
                 "type": "passive"
-            },
-            {
-                "name": "Sukukaja",
-                "level": 0,
-                "type": "support"
             }
         ],
         "inherits": "light",
@@ -3953,11 +3953,6 @@
                 "type": "pierce"
             },
             {
-                "name": "Mahama",
-                "level": 21,
-                "type": "light"
-            },
-            {
                 "name": "Media",
                 "level": 18,
                 "type": "recovery"
@@ -3966,6 +3961,11 @@
                 "name": "Recarm",
                 "level": 20,
                 "type": "recovery"
+            },
+            {
+                "name": "Mahama",
+                "level": 21,
+                "type": "light"
             }
         ],
         "inherits": "light",
@@ -4011,6 +4011,11 @@
                 "type": "light"
             },
             {
+                "name": "Zan-ei",
+                "level": 27,
+                "type": "slash"
+            },
+            {
                 "name": "Me Patra",
                 "level": 28,
                 "type": "recovery"
@@ -4019,11 +4024,6 @@
                 "name": "Revolution",
                 "level": 30,
                 "type": "support"
-            },
-            {
-                "name": "Zan-ei",
-                "level": 27,
-                "type": "slash"
             }
         ],
         "inherits": "light",
@@ -4054,16 +4054,6 @@
         "id": 71,
         "skills": [
             {
-                "name": "Endure Dark",
-                "level": 39,
-                "type": "passive"
-            },
-            {
-                "name": "Hamaon",
-                "level": 36,
-                "type": "light"
-            },
-            {
                 "name": "Infuriate",
                 "level": 0,
                 "type": "ailment"
@@ -4074,13 +4064,23 @@
                 "type": "light"
             },
             {
+                "name": "Survive Dark",
+                "level": 34,
+                "type": "passive"
+            },
+            {
+                "name": "Hamaon",
+                "level": 36,
+                "type": "light"
+            },
+            {
                 "name": "Rage Boost",
                 "level": 37,
                 "type": "passive"
             },
             {
-                "name": "Survive Dark",
-                "level": 34,
+                "name": "Endure Dark",
+                "level": 39,
                 "type": "passive"
             }
         ],
@@ -4112,16 +4112,6 @@
         "id": 72,
         "skills": [
             {
-                "name": "Endure Dark",
-                "level": 45,
-                "type": "passive"
-            },
-            {
-                "name": "Hama Boost",
-                "level": 46,
-                "type": "passive"
-            },
-            {
                 "name": "Hamaon",
                 "level": 0,
                 "type": "light"
@@ -4130,6 +4120,16 @@
                 "name": "Infuriate",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Endure Dark",
+                "level": 45,
+                "type": "passive"
+            },
+            {
+                "name": "Hama Boost",
+                "level": 46,
+                "type": "passive"
             },
             {
                 "name": "Mazionga",
@@ -4185,14 +4185,14 @@
                 "type": "light"
             },
             {
-                "name": "Mediarahan",
-                "level": 55,
-                "type": "recovery"
-            },
-            {
                 "name": "Recarmdra",
                 "level": 53,
                 "type": "special"
+            },
+            {
+                "name": "Mediarahan",
+                "level": 55,
+                "type": "recovery"
             },
             {
                 "name": "Resist Dark",
@@ -4229,24 +4229,9 @@
         "id": 74,
         "skills": [
             {
-                "name": "Akasha Arts",
-                "level": 64,
-                "type": "strike"
-            },
-            {
                 "name": "Auto-Mataru",
                 "level": 0,
                 "type": "passive"
-            },
-            {
-                "name": "Fist Master",
-                "level": 60,
-                "type": "passive"
-            },
-            {
-                "name": "God's Hand",
-                "level": 69,
-                "type": "strike"
             },
             {
                 "name": "Mediarahan",
@@ -4254,13 +4239,28 @@
                 "type": "recovery"
             },
             {
+                "name": "Vicious Strike",
+                "level": 0,
+                "type": "strike"
+            },
+            {
+                "name": "Fist Master",
+                "level": 60,
+                "type": "passive"
+            },
+            {
+                "name": "Akasha Arts",
+                "level": 64,
+                "type": "strike"
+            },
+            {
                 "name": "Repel Dark",
                 "level": 65,
                 "type": "passive"
             },
             {
-                "name": "Vicious Strike",
-                "level": 0,
+                "name": "God's Hand",
+                "level": 69,
                 "type": "strike"
             }
         ],
@@ -4292,11 +4292,6 @@
         "id": 75,
         "skills": [
             {
-                "name": "Auto-Tarukaja",
-                "level": 11,
-                "type": "passive"
-            },
-            {
                 "name": "Bufu",
                 "level": 0,
                 "type": "ice"
@@ -4307,9 +4302,14 @@
                 "type": "ailment"
             },
             {
-                "name": "Magaru",
-                "level": 14,
-                "type": "wind"
+                "name": "Tarunda",
+                "level": 0,
+                "type": "support"
+            },
+            {
+                "name": "Auto-Tarukaja",
+                "level": 11,
+                "type": "passive"
             },
             {
                 "name": "Mudo",
@@ -4317,9 +4317,9 @@
                 "type": "dark"
             },
             {
-                "name": "Tarunda",
-                "level": 0,
-                "type": "support"
+                "name": "Magaru",
+                "level": 14,
+                "type": "wind"
             }
         ],
         "inherits": "dark",
@@ -4355,19 +4355,14 @@
                 "type": "ailment"
             },
             {
-                "name": "Dodge Pierce",
-                "level": 21,
-                "type": "passive"
-            },
-            {
                 "name": "Double Fangs",
                 "level": 0,
                 "type": "pierce"
             },
             {
-                "name": "Eerie Sound",
-                "level": 22,
-                "type": "ailment"
+                "name": "Rakukaja",
+                "level": 0,
+                "type": "support"
             },
             {
                 "name": "Mazio",
@@ -4375,9 +4370,14 @@
                 "type": "elec"
             },
             {
-                "name": "Rakukaja",
-                "level": 0,
-                "type": "support"
+                "name": "Dodge Pierce",
+                "level": 21,
+                "type": "passive"
+            },
+            {
+                "name": "Eerie Sound",
+                "level": 22,
+                "type": "ailment"
             }
         ],
         "inherits": "pierce",
@@ -4418,6 +4418,11 @@
                 "type": "ailment"
             },
             {
+                "name": "Raging Tiger",
+                "level": 0,
+                "type": "passive"
+            },
+            {
                 "name": "Mamudo",
                 "level": 26,
                 "type": "dark"
@@ -4426,11 +4431,6 @@
                 "name": "Poison Mist",
                 "level": 28,
                 "type": "ailment"
-            },
-            {
-                "name": "Raging Tiger",
-                "level": 0,
-                "type": "passive"
             },
             {
                 "name": "Stagnant Air",
@@ -4471,24 +4471,24 @@
                 "type": "ailment"
             },
             {
-                "name": "Fire Break",
-                "level": 36,
-                "type": "support"
-            },
-            {
                 "name": "Foul Breath",
                 "level": 0,
-                "type": "almighty"
-            },
-            {
-                "name": "Megido",
-                "level": 37,
                 "type": "almighty"
             },
             {
                 "name": "Wind Break",
                 "level": 35,
                 "type": "support"
+            },
+            {
+                "name": "Fire Break",
+                "level": 36,
+                "type": "support"
+            },
+            {
+                "name": "Megido",
+                "level": 37,
+                "type": "almighty"
             },
             {
                 "name": "Ziodyne",
@@ -4524,19 +4524,9 @@
         "id": 79,
         "skills": [
             {
-                "name": "Distress Boost",
-                "level": 42,
-                "type": "passive"
-            },
-            {
                 "name": "Eerie Sound",
                 "level": 0,
                 "type": "ailment"
-            },
-            {
-                "name": "Fatal End",
-                "level": 43,
-                "type": "slash"
             },
             {
                 "name": "Getsu-ei",
@@ -4544,14 +4534,24 @@
                 "type": "slash"
             },
             {
+                "name": "Tarukaja",
+                "level": 0,
+                "type": "support"
+            },
+            {
                 "name": "Mighty Swing",
                 "level": 41,
                 "type": "slash"
             },
             {
-                "name": "Tarukaja",
-                "level": 0,
-                "type": "support"
+                "name": "Distress Boost",
+                "level": 42,
+                "type": "passive"
+            },
+            {
+                "name": "Fatal End",
+                "level": 43,
+                "type": "slash"
             }
         ],
         "inherits": "slash",
@@ -4582,18 +4582,8 @@
         "id": 80,
         "skills": [
             {
-                "name": "Cruel Attack",
-                "level": 48,
-                "type": "pierce"
-            },
-            {
                 "name": "Growth 1",
                 "level": 0,
-                "type": "passive"
-            },
-            {
-                "name": "Growth 2",
-                "level": 46,
                 "type": "passive"
             },
             {
@@ -4602,14 +4592,24 @@
                 "type": "support"
             },
             {
-                "name": "Resist Elec",
-                "level": 50,
-                "type": "passive"
-            },
-            {
                 "name": "Tentarafoo",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Growth 2",
+                "level": 46,
+                "type": "passive"
+            },
+            {
+                "name": "Cruel Attack",
+                "level": 48,
+                "type": "pierce"
+            },
+            {
+                "name": "Resist Elec",
+                "level": 50,
+                "type": "passive"
             }
         ],
         "inherits": "ailment",
@@ -4646,9 +4646,9 @@
                 "type": "ailment"
             },
             {
-                "name": "Fear Boost",
-                "level": 54,
-                "type": "passive"
+                "name": "Megido",
+                "level": 0,
+                "type": "almighty"
             },
             {
                 "name": "Ghastly Wail",
@@ -4656,14 +4656,14 @@
                 "type": "ailment"
             },
             {
-                "name": "Megido",
-                "level": 0,
-                "type": "almighty"
-            },
-            {
                 "name": "Mudoon",
                 "level": 53,
                 "type": "dark"
+            },
+            {
+                "name": "Fear Boost",
+                "level": 54,
+                "type": "passive"
             },
             {
                 "name": "Stagnant Air",
@@ -4704,18 +4704,8 @@
                 "type": "fire"
             },
             {
-                "name": "Alertness",
-                "level": 62,
-                "type": "passive"
-            },
-            {
                 "name": "Auto-Masuku",
                 "level": 0,
-                "type": "passive"
-            },
-            {
-                "name": "Fire Amp",
-                "level": 59,
                 "type": "passive"
             },
             {
@@ -4724,8 +4714,18 @@
                 "type": "passive"
             },
             {
+                "name": "Fire Amp",
+                "level": 59,
+                "type": "passive"
+            },
+            {
                 "name": "Regenerate 2",
                 "level": 60,
+                "type": "passive"
+            },
+            {
+                "name": "Alertness",
+                "level": 62,
                 "type": "passive"
             }
         ],
@@ -4759,29 +4759,9 @@
         "id": 83,
         "skills": [
             {
-                "name": "Alertness",
-                "level": 62,
-                "type": "passive"
-            },
-            {
                 "name": "Auto-Maraku",
                 "level": 0,
                 "type": "passive"
-            },
-            {
-                "name": "Null Strike",
-                "level": 67,
-                "type": "passive"
-            },
-            {
-                "name": "Repel Ice",
-                "level": 66,
-                "type": "passive"
-            },
-            {
-                "name": "Tetrakarn",
-                "level": 64,
-                "type": "support"
             },
             {
                 "name": "Vicious Strike",
@@ -4792,6 +4772,26 @@
                 "name": "Virus Breath",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Alertness",
+                "level": 62,
+                "type": "passive"
+            },
+            {
+                "name": "Tetrakarn",
+                "level": 64,
+                "type": "support"
+            },
+            {
+                "name": "Repel Ice",
+                "level": 66,
+                "type": "passive"
+            },
+            {
+                "name": "Null Strike",
+                "level": 67,
+                "type": "passive"
             }
         ],
         "inherits": "ailment",
@@ -4881,9 +4881,14 @@
         "id": 85,
         "skills": [
             {
-                "name": "Garula",
-                "level": 26,
+                "name": "Magaru",
+                "level": 0,
                 "type": "wind"
+            },
+            {
+                "name": "Tarunda",
+                "level": 0,
+                "type": "support"
             },
             {
                 "name": "Growth 1",
@@ -4891,8 +4896,8 @@
                 "type": "passive"
             },
             {
-                "name": "Magaru",
-                "level": 0,
+                "name": "Garula",
+                "level": 26,
                 "type": "wind"
             },
             {
@@ -4904,11 +4909,6 @@
                 "name": "Provoke",
                 "level": 28,
                 "type": "ailment"
-            },
-            {
-                "name": "Tarunda",
-                "level": 0,
-                "type": "support"
             }
         ],
         "inherits": "wind",
@@ -4939,11 +4939,6 @@
         "id": 86,
         "skills": [
             {
-                "name": "Auto-Rakukaja",
-                "level": 30,
-                "type": "passive"
-            },
-            {
                 "name": "Garula",
                 "level": 0,
                 "type": "wind"
@@ -4957,6 +4952,11 @@
                 "name": "Re Patra",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Auto-Rakukaja",
+                "level": 30,
+                "type": "passive"
             },
             {
                 "name": "Recarm",
@@ -5007,14 +5007,9 @@
                 "type": "wind"
             },
             {
-                "name": "Magarula",
-                "level": 44,
-                "type": "wind"
-            },
-            {
-                "name": "Me Patra",
-                "level": 42,
-                "type": "recovery"
+                "name": "Wind Boost",
+                "level": 40,
+                "type": "passive"
             },
             {
                 "name": "Null Distress",
@@ -5022,9 +5017,14 @@
                 "type": "passive"
             },
             {
-                "name": "Wind Boost",
-                "level": 40,
-                "type": "passive"
+                "name": "Me Patra",
+                "level": 42,
+                "type": "recovery"
+            },
+            {
+                "name": "Magarula",
+                "level": 44,
+                "type": "wind"
             }
         ],
         "inherits": "wind",
@@ -5055,23 +5055,8 @@
         "id": 88,
         "skills": [
             {
-                "name": "Dodge Elec",
-                "level": 47,
-                "type": "passive"
-            },
-            {
-                "name": "Evade Elec",
-                "level": 51,
-                "type": "passive"
-            },
-            {
                 "name": "Garula",
                 "level": 0,
-                "type": "wind"
-            },
-            {
-                "name": "Magarula",
-                "level": 50,
                 "type": "wind"
             },
             {
@@ -5083,6 +5068,21 @@
                 "name": "Recarm",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Dodge Elec",
+                "level": 47,
+                "type": "passive"
+            },
+            {
+                "name": "Magarula",
+                "level": 50,
+                "type": "wind"
+            },
+            {
+                "name": "Evade Elec",
+                "level": 51,
+                "type": "passive"
             }
         ],
         "inherits": "wind",
@@ -5113,19 +5113,24 @@
         "id": 89,
         "skills": [
             {
-                "name": "Garudyne",
-                "level": 58,
-                "type": "wind"
-            },
-            {
                 "name": "Magarula",
                 "level": 0,
                 "type": "wind"
             },
             {
+                "name": "Wind Boost",
+                "level": 0,
+                "type": "passive"
+            },
+            {
                 "name": "Mind Charge",
                 "level": 57,
                 "type": "support"
+            },
+            {
+                "name": "Garudyne",
+                "level": 58,
+                "type": "wind"
             },
             {
                 "name": "Resist Elec",
@@ -5135,11 +5140,6 @@
             {
                 "name": "Wind Amp",
                 "level": 60,
-                "type": "passive"
-            },
-            {
-                "name": "Wind Boost",
-                "level": 0,
                 "type": "passive"
             }
         ],
@@ -5173,16 +5173,6 @@
         "id": 90,
         "skills": [
             {
-                "name": "Absorb Elec",
-                "level": 69,
-                "type": "passive"
-            },
-            {
-                "name": "Invigorate 3",
-                "level": 67,
-                "type": "passive"
-            },
-            {
                 "name": "Magarudyne",
                 "level": 0,
                 "type": "wind"
@@ -5193,13 +5183,23 @@
                 "type": "wind"
             },
             {
+                "name": "Wind Amp",
+                "level": 0,
+                "type": "passive"
+            },
+            {
                 "name": "Regenerate 3",
                 "level": 66,
                 "type": "passive"
             },
             {
-                "name": "Wind Amp",
-                "level": 0,
+                "name": "Invigorate 3",
+                "level": 67,
+                "type": "passive"
+            },
+            {
+                "name": "Absorb Elec",
+                "level": 69,
                 "type": "passive"
             }
         ],
@@ -5231,11 +5231,6 @@
         "id": 91,
         "skills": [
             {
-                "name": "Auto-Sukukaja",
-                "level": 14,
-                "type": "passive"
-            },
-            {
                 "name": "Cleave",
                 "level": 0,
                 "type": "slash"
@@ -5249,6 +5244,11 @@
                 "name": "Mabufu",
                 "level": 13,
                 "type": "ice"
+            },
+            {
+                "name": "Auto-Sukukaja",
+                "level": 14,
+                "type": "passive"
             },
             {
                 "name": "Power Slash",
@@ -5284,18 +5284,13 @@
         "id": 92,
         "skills": [
             {
-                "name": "Counter",
-                "level": 21,
-                "type": "passive"
-            },
-            {
                 "name": "Dodge Slash",
                 "level": 0,
                 "type": "passive"
             },
             {
-                "name": "Gale Slash",
-                "level": 22,
+                "name": "Power Slash",
+                "level": 0,
                 "type": "slash"
             },
             {
@@ -5304,14 +5299,19 @@
                 "type": "slash"
             },
             {
-                "name": "Power Slash",
-                "level": 0,
-                "type": "slash"
-            },
-            {
                 "name": "Zionga",
                 "level": 20,
                 "type": "elec"
+            },
+            {
+                "name": "Counter",
+                "level": 21,
+                "type": "passive"
+            },
+            {
+                "name": "Gale Slash",
+                "level": 22,
+                "type": "slash"
             }
         ],
         "inherits": "slash",
@@ -5342,16 +5342,6 @@
         "id": 93,
         "skills": [
             {
-                "name": "Dodge Slash",
-                "level": 26,
-                "type": "passive"
-            },
-            {
-                "name": "Kill Rush",
-                "level": 25,
-                "type": "strike"
-            },
-            {
                 "name": "Mudo",
                 "level": 0,
                 "type": "dark"
@@ -5362,14 +5352,24 @@
                 "type": "support"
             },
             {
-                "name": "Swift Strike",
-                "level": 29,
-                "type": "strike"
-            },
-            {
                 "name": "Zan-ei",
                 "level": 0,
                 "type": "slash"
+            },
+            {
+                "name": "Kill Rush",
+                "level": 25,
+                "type": "strike"
+            },
+            {
+                "name": "Dodge Slash",
+                "level": 26,
+                "type": "passive"
+            },
+            {
+                "name": "Swift Strike",
+                "level": 29,
+                "type": "strike"
             }
         ],
         "inherits": "slash",
@@ -5405,23 +5405,18 @@
                 "type": "passive"
             },
             {
-                "name": "Endure Dark",
-                "level": 36,
-                "type": "passive"
+                "name": "Sukunda",
+                "level": 0,
+                "type": "support"
             },
             {
-                "name": "Evade Slash",
-                "level": 34,
-                "type": "passive"
+                "name": "Zan-ei",
+                "level": 0,
+                "type": "slash"
             },
             {
                 "name": "Revolution",
                 "level": 31,
-                "type": "support"
-            },
-            {
-                "name": "Sukunda",
-                "level": 0,
                 "type": "support"
             },
             {
@@ -5430,9 +5425,14 @@
                 "type": "passive"
             },
             {
-                "name": "Zan-ei",
-                "level": 0,
-                "type": "slash"
+                "name": "Evade Slash",
+                "level": 34,
+                "type": "passive"
+            },
+            {
+                "name": "Endure Dark",
+                "level": 36,
+                "type": "passive"
             }
         ],
         "inherits": "slash",
@@ -5463,24 +5463,9 @@
         "id": 95,
         "skills": [
             {
-                "name": "Blade of Fury",
-                "level": 43,
-                "type": "slash"
-            },
-            {
                 "name": "Counter",
                 "level": 0,
                 "type": "passive"
-            },
-            {
-                "name": "Evade Slash",
-                "level": 41,
-                "type": "passive"
-            },
-            {
-                "name": "Fatal End",
-                "level": 38,
-                "type": "slash"
             },
             {
                 "name": "Getsu-ei",
@@ -5491,6 +5476,21 @@
                 "name": "Recarm",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Fatal End",
+                "level": 38,
+                "type": "slash"
+            },
+            {
+                "name": "Evade Slash",
+                "level": 41,
+                "type": "passive"
+            },
+            {
+                "name": "Blade of Fury",
+                "level": 43,
+                "type": "slash"
             },
             {
                 "name": "Resist Slash",
@@ -5526,16 +5526,6 @@
         "id": 96,
         "skills": [
             {
-                "name": "Blade of Fury",
-                "level": 51,
-                "type": "slash"
-            },
-            {
-                "name": "Counterstrike",
-                "level": 49,
-                "type": "passive"
-            },
-            {
                 "name": "Evade Wind",
                 "level": 0,
                 "type": "passive"
@@ -5554,6 +5544,16 @@
                 "name": "Power Charge",
                 "level": 48,
                 "type": "support"
+            },
+            {
+                "name": "Counterstrike",
+                "level": 49,
+                "type": "passive"
+            },
+            {
+                "name": "Blade of Fury",
+                "level": 51,
+                "type": "slash"
             }
         ],
         "inherits": "slash",
@@ -5594,24 +5594,24 @@
                 "type": "slash"
             },
             {
-                "name": "Deathbound",
-                "level": 57,
-                "type": "slash"
-            },
-            {
-                "name": "High Counter",
-                "level": 60,
-                "type": "passive"
-            },
-            {
                 "name": "Marakunda",
                 "level": 0,
                 "type": "support"
             },
             {
+                "name": "Deathbound",
+                "level": 57,
+                "type": "slash"
+            },
+            {
                 "name": "Revolution",
                 "level": 59,
                 "type": "support"
+            },
+            {
+                "name": "High Counter",
+                "level": 60,
+                "type": "passive"
             }
         ],
         "inherits": "slash",
@@ -5643,23 +5643,8 @@
         "id": 98,
         "skills": [
             {
-                "name": "2hSwd Master",
-                "level": 66,
-                "type": "passive"
-            },
-            {
-                "name": "Arms Master",
-                "level": 65,
-                "type": "passive"
-            },
-            {
                 "name": "Auto-Masuku",
                 "level": 0,
-                "type": "passive"
-            },
-            {
-                "name": "High Counter",
-                "level": 62,
                 "type": "passive"
             },
             {
@@ -5673,9 +5658,24 @@
                 "type": "slash"
             },
             {
+                "name": "High Counter",
+                "level": 62,
+                "type": "passive"
+            },
+            {
                 "name": "Vorpal Blade",
                 "level": 63,
                 "type": "slash"
+            },
+            {
+                "name": "Arms Master",
+                "level": 65,
+                "type": "passive"
+            },
+            {
+                "name": "2hSwd Master",
+                "level": 66,
+                "type": "passive"
             }
         ],
         "inherits": "slash",
@@ -5706,24 +5706,9 @@
         "id": 99,
         "skills": [
             {
-                "name": "Foul Breath",
-                "level": 14,
-                "type": "almighty"
-            },
-            {
-                "name": "Media",
-                "level": 13,
-                "type": "recovery"
-            },
-            {
                 "name": "Poisma",
                 "level": 0,
                 "type": "ailment"
-            },
-            {
-                "name": "Poison Boost",
-                "level": 11,
-                "type": "passive"
             },
             {
                 "name": "Single Shot",
@@ -5734,6 +5719,21 @@
                 "name": "Zio",
                 "level": 0,
                 "type": "elec"
+            },
+            {
+                "name": "Poison Boost",
+                "level": 11,
+                "type": "passive"
+            },
+            {
+                "name": "Media",
+                "level": 13,
+                "type": "recovery"
+            },
+            {
+                "name": "Foul Breath",
+                "level": 14,
+                "type": "almighty"
             }
         ],
         "inherits": "ailment",
@@ -5764,22 +5764,12 @@
         "id": 100,
         "skills": [
             {
-                "name": "Auto-Rakukaja",
-                "level": 23,
-                "type": "passive"
-            },
-            {
-                "name": "Dekaja",
-                "level": 26,
-                "type": "support"
-            },
-            {
-                "name": "Dodge Strike",
-                "level": 24,
-                "type": "passive"
-            },
-            {
                 "name": "Mazio",
+                "level": 0,
+                "type": "elec"
+            },
+            {
+                "name": "Zio",
                 "level": 0,
                 "type": "elec"
             },
@@ -5789,9 +5779,19 @@
                 "type": "passive"
             },
             {
-                "name": "Zio",
-                "level": 0,
-                "type": "elec"
+                "name": "Auto-Rakukaja",
+                "level": 23,
+                "type": "passive"
+            },
+            {
+                "name": "Dodge Strike",
+                "level": 24,
+                "type": "passive"
+            },
+            {
+                "name": "Dekaja",
+                "level": 26,
+                "type": "support"
             }
         ],
         "inherits": "elec",
@@ -5832,6 +5832,11 @@
                 "type": "passive"
             },
             {
+                "name": "Getsu-ei",
+                "level": 0,
+                "type": "slash"
+            },
+            {
                 "name": "Dodge Ice",
                 "level": 30,
                 "type": "passive"
@@ -5840,11 +5845,6 @@
                 "name": "Fire Boost",
                 "level": 31,
                 "type": "passive"
-            },
-            {
-                "name": "Getsu-ei",
-                "level": 0,
-                "type": "slash"
             },
             {
                 "name": "Mighty Swing",
@@ -5880,19 +5880,14 @@
         "id": 102,
         "skills": [
             {
-                "name": "Counterstrike",
-                "level": 42,
-                "type": "passive"
-            },
-            {
-                "name": "Dodge Wind",
-                "level": 41,
-                "type": "passive"
-            },
-            {
                 "name": "Mahama",
                 "level": 0,
                 "type": "light"
+            },
+            {
+                "name": "Twin Shot",
+                "level": 0,
+                "type": "pierce"
             },
             {
                 "name": "Recarmdra",
@@ -5900,14 +5895,19 @@
                 "type": "special"
             },
             {
-                "name": "Resist Light",
-                "level": 43,
+                "name": "Dodge Wind",
+                "level": 41,
                 "type": "passive"
             },
             {
-                "name": "Twin Shot",
-                "level": 0,
-                "type": "pierce"
+                "name": "Counterstrike",
+                "level": 42,
+                "type": "passive"
+            },
+            {
+                "name": "Resist Light",
+                "level": 43,
+                "type": "passive"
             }
         ],
         "inherits": "light",
@@ -5938,21 +5938,6 @@
         "id": 103,
         "skills": [
             {
-                "name": "Diarahan",
-                "level": 54,
-                "type": "recovery"
-            },
-            {
-                "name": "Evade Strike",
-                "level": 52,
-                "type": "passive"
-            },
-            {
-                "name": "Gigantic Fist",
-                "level": 50,
-                "type": "strike"
-            },
-            {
                 "name": "Herculean Strike",
                 "level": 0,
                 "type": "strike"
@@ -5963,14 +5948,29 @@
                 "type": "passive"
             },
             {
+                "name": "Recarmdra",
+                "level": 0,
+                "type": "special"
+            },
+            {
+                "name": "Gigantic Fist",
+                "level": 50,
+                "type": "strike"
+            },
+            {
+                "name": "Evade Strike",
+                "level": 52,
+                "type": "passive"
+            },
+            {
                 "name": "Raging Tiger",
                 "level": 53,
                 "type": "passive"
             },
             {
-                "name": "Recarmdra",
-                "level": 0,
-                "type": "special"
+                "name": "Diarahan",
+                "level": 54,
+                "type": "recovery"
             }
         ],
         "inherits": "strike",
@@ -6001,11 +6001,6 @@
         "id": 104,
         "skills": [
             {
-                "name": "Endure Light",
-                "level": 57,
-                "type": "passive"
-            },
-            {
                 "name": "Evade Strike",
                 "level": 0,
                 "type": "passive"
@@ -6016,6 +6011,16 @@
                 "type": "strike"
             },
             {
+                "name": "Vicious Strike",
+                "level": 56,
+                "type": "strike"
+            },
+            {
+                "name": "Endure Light",
+                "level": 57,
+                "type": "passive"
+            },
+            {
                 "name": "Mamudoon",
                 "level": 58,
                 "type": "dark"
@@ -6024,11 +6029,6 @@
                 "name": "Recarmdra",
                 "level": 59,
                 "type": "special"
-            },
-            {
-                "name": "Vicious Strike",
-                "level": 56,
-                "type": "strike"
             }
         ],
         "inherits": "strike",
@@ -6060,24 +6060,9 @@
         "id": 105,
         "skills": [
             {
-                "name": "Absorb Fire",
-                "level": 66,
-                "type": "passive"
-            },
-            {
                 "name": "Agidyne",
                 "level": 0,
                 "type": "fire"
-            },
-            {
-                "name": "Endure",
-                "level": 64,
-                "type": "passive"
-            },
-            {
-                "name": "Fire Amp",
-                "level": 62,
-                "type": "passive"
             },
             {
                 "name": "Maragidyne",
@@ -6085,9 +6070,24 @@
                 "type": "fire"
             },
             {
+                "name": "Fire Amp",
+                "level": 62,
+                "type": "passive"
+            },
+            {
                 "name": "Vicious Strike",
                 "level": 63,
                 "type": "strike"
+            },
+            {
+                "name": "Endure",
+                "level": 64,
+                "type": "passive"
+            },
+            {
+                "name": "Absorb Fire",
+                "level": 66,
+                "type": "passive"
             }
         ],
         "inherits": "fire",
@@ -6120,11 +6120,6 @@
         "id": 106,
         "skills": [
             {
-                "name": "Enduring Soul",
-                "level": 75,
-                "type": "passive"
-            },
-            {
                 "name": "Ghastly Wail",
                 "level": 0,
                 "type": "ailment"
@@ -6140,14 +6135,19 @@
                 "type": "special"
             },
             {
+                "name": "Samarecarm",
+                "level": 70,
+                "type": "recovery"
+            },
+            {
                 "name": "Repel Light",
                 "level": 71,
                 "type": "passive"
             },
             {
-                "name": "Samarecarm",
-                "level": 70,
-                "type": "recovery"
+                "name": "Enduring Soul",
+                "level": 75,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -6183,14 +6183,9 @@
                 "type": "strike"
             },
             {
-                "name": "Dekaja",
-                "level": 21,
-                "type": "support"
-            },
-            {
-                "name": "Gale Slash",
-                "level": 23,
-                "type": "slash"
+                "name": "Mudo",
+                "level": 0,
+                "type": "dark"
             },
             {
                 "name": "Mamudo",
@@ -6198,14 +6193,19 @@
                 "type": "dark"
             },
             {
-                "name": "Mudo",
-                "level": 0,
-                "type": "dark"
+                "name": "Dekaja",
+                "level": 21,
+                "type": "support"
             },
             {
                 "name": "Provoke",
                 "level": 22,
                 "type": "ailment"
+            },
+            {
+                "name": "Gale Slash",
+                "level": 23,
+                "type": "slash"
             }
         ],
         "inherits": "dark",
@@ -6237,16 +6237,6 @@
         "id": 108,
         "skills": [
             {
-                "name": "Counter",
-                "level": 27,
-                "type": "passive"
-            },
-            {
-                "name": "Garula",
-                "level": 25,
-                "type": "wind"
-            },
-            {
                 "name": "Mamudo",
                 "level": 0,
                 "type": "dark"
@@ -6257,14 +6247,24 @@
                 "type": "dark"
             },
             {
-                "name": "Survive Light",
-                "level": 29,
-                "type": "passive"
-            },
-            {
                 "name": "Zan-ei",
                 "level": 0,
                 "type": "slash"
+            },
+            {
+                "name": "Garula",
+                "level": 25,
+                "type": "wind"
+            },
+            {
+                "name": "Counter",
+                "level": 27,
+                "type": "passive"
+            },
+            {
+                "name": "Survive Light",
+                "level": 29,
+                "type": "passive"
             }
         ],
         "inherits": "dark",
@@ -6295,11 +6295,6 @@
         "id": 109,
         "skills": [
             {
-                "name": "Fear Boost",
-                "level": 35,
-                "type": "passive"
-            },
-            {
                 "name": "Life Drain",
                 "level": 0,
                 "type": "almighty"
@@ -6310,9 +6305,9 @@
                 "type": "dark"
             },
             {
-                "name": "Mudo Boost",
-                "level": 36,
-                "type": "passive"
+                "name": "Tarunda",
+                "level": 0,
+                "type": "support"
             },
             {
                 "name": "Survive Light",
@@ -6320,14 +6315,19 @@
                 "type": "passive"
             },
             {
-                "name": "Tarunda",
-                "level": 0,
-                "type": "support"
-            },
-            {
                 "name": "Zionga",
                 "level": 34,
                 "type": "elec"
+            },
+            {
+                "name": "Fear Boost",
+                "level": 35,
+                "type": "passive"
+            },
+            {
+                "name": "Mudo Boost",
+                "level": 36,
+                "type": "passive"
             }
         ],
         "inherits": "dark",
@@ -6358,16 +6358,6 @@
         "id": 110,
         "skills": [
             {
-                "name": "Dekunda",
-                "level": 41,
-                "type": "support"
-            },
-            {
-                "name": "Ghastly Wail",
-                "level": 43,
-                "type": "ailment"
-            },
-            {
                 "name": "Mamudo",
                 "level": 0,
                 "type": "dark"
@@ -6383,9 +6373,19 @@
                 "type": "almighty"
             },
             {
+                "name": "Dekunda",
+                "level": 41,
+                "type": "support"
+            },
+            {
                 "name": "Mudoon",
                 "level": 42,
                 "type": "dark"
+            },
+            {
+                "name": "Ghastly Wail",
+                "level": 43,
+                "type": "ailment"
             }
         ],
         "inherits": "dark",
@@ -6421,21 +6421,6 @@
                 "type": "ailment"
             },
             {
-                "name": "Ghastly Wail",
-                "level": 48,
-                "type": "ailment"
-            },
-            {
-                "name": "Mamudoon",
-                "level": 46,
-                "type": "dark"
-            },
-            {
-                "name": "Mudo Boost",
-                "level": 49,
-                "type": "passive"
-            },
-            {
                 "name": "Mudoon",
                 "level": 0,
                 "type": "dark"
@@ -6443,6 +6428,21 @@
             {
                 "name": "Null Fear",
                 "level": 0,
+                "type": "passive"
+            },
+            {
+                "name": "Mamudoon",
+                "level": 46,
+                "type": "dark"
+            },
+            {
+                "name": "Ghastly Wail",
+                "level": 48,
+                "type": "ailment"
+            },
+            {
+                "name": "Mudo Boost",
+                "level": 49,
                 "type": "passive"
             },
             {
@@ -6480,14 +6480,19 @@
         "id": 112,
         "skills": [
             {
-                "name": "Die for Me!",
-                "level": 59,
-                "type": "dark"
-            },
-            {
                 "name": "Evil Touch",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Spirit Drain",
+                "level": 0,
+                "type": "almighty"
+            },
+            {
+                "name": "Die for Me!",
+                "level": 59,
+                "type": "dark"
             },
             {
                 "name": "Marakunda",
@@ -6495,19 +6500,14 @@
                 "type": "support"
             },
             {
-                "name": "Mudo Boost",
-                "level": 62,
-                "type": "passive"
-            },
-            {
                 "name": "Repel Dark",
                 "level": 61,
                 "type": "passive"
             },
             {
-                "name": "Spirit Drain",
-                "level": 0,
-                "type": "almighty"
+                "name": "Mudo Boost",
+                "level": 62,
+                "type": "passive"
             }
         ],
         "inherits": "dark",
@@ -6540,24 +6540,9 @@
         "id": 113,
         "skills": [
             {
-                "name": "1hSwd Master",
-                "level": 68,
-                "type": "passive"
-            },
-            {
-                "name": "Brave Blade",
-                "level": 71,
-                "type": "slash"
-            },
-            {
                 "name": "Ghastly Wail",
                 "level": 0,
                 "type": "ailment"
-            },
-            {
-                "name": "Mahamaon",
-                "level": 66,
-                "type": "light"
             },
             {
                 "name": "Megidola",
@@ -6567,6 +6552,21 @@
             {
                 "name": "Tempest Slash",
                 "level": 0,
+                "type": "slash"
+            },
+            {
+                "name": "Mahamaon",
+                "level": 66,
+                "type": "light"
+            },
+            {
+                "name": "1hSwd Master",
+                "level": 68,
+                "type": "passive"
+            },
+            {
+                "name": "Brave Blade",
+                "level": 71,
                 "type": "slash"
             }
         ],
@@ -6603,16 +6603,6 @@
                 "type": "wind"
             },
             {
-                "name": "Magaru",
-                "level": 16,
-                "type": "wind"
-            },
-            {
-                "name": "Media",
-                "level": 14,
-                "type": "recovery"
-            },
-            {
                 "name": "Patra",
                 "level": 0,
                 "type": "recovery"
@@ -6621,6 +6611,16 @@
                 "name": "Posumudi",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Media",
+                "level": 14,
+                "type": "recovery"
+            },
+            {
+                "name": "Magaru",
+                "level": 16,
+                "type": "wind"
             },
             {
                 "name": "Recarm",
@@ -6656,24 +6656,9 @@
         "id": 115,
         "skills": [
             {
-                "name": "Counter",
-                "level": 28,
-                "type": "passive"
-            },
-            {
-                "name": "Dodge Elec",
-                "level": 25,
-                "type": "passive"
-            },
-            {
                 "name": "Double Fangs",
                 "level": 0,
                 "type": "pierce"
-            },
-            {
-                "name": "Eerie Sound",
-                "level": 24,
-                "type": "ailment"
             },
             {
                 "name": "Hama",
@@ -6684,6 +6669,21 @@
                 "name": "Mabufu",
                 "level": 0,
                 "type": "ice"
+            },
+            {
+                "name": "Eerie Sound",
+                "level": 24,
+                "type": "ailment"
+            },
+            {
+                "name": "Dodge Elec",
+                "level": 25,
+                "type": "passive"
+            },
+            {
+                "name": "Counter",
+                "level": 28,
+                "type": "passive"
             }
         ],
         "inherits": "light",
@@ -6724,9 +6724,9 @@
                 "type": "ice"
             },
             {
-                "name": "Dekunda",
-                "level": 32,
-                "type": "support"
+                "name": "Swift Strike",
+                "level": 30,
+                "type": "strike"
             },
             {
                 "name": "Me Patra",
@@ -6734,14 +6734,14 @@
                 "type": "recovery"
             },
             {
+                "name": "Dekunda",
+                "level": 32,
+                "type": "support"
+            },
+            {
                 "name": "Resist Strike",
                 "level": 34,
                 "type": "passive"
-            },
-            {
-                "name": "Swift Strike",
-                "level": 30,
-                "type": "strike"
             }
         ],
         "inherits": "ice",
@@ -6772,18 +6772,8 @@
         "id": 117,
         "skills": [
             {
-                "name": "Diarama",
-                "level": 39,
-                "type": "recovery"
-            },
-            {
                 "name": "Garula",
                 "level": 0,
-                "type": "wind"
-            },
-            {
-                "name": "Magarula",
-                "level": 37,
                 "type": "wind"
             },
             {
@@ -6795,6 +6785,16 @@
                 "name": "Poison Mist",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Magarula",
+                "level": 37,
+                "type": "wind"
+            },
+            {
+                "name": "Diarama",
+                "level": 39,
+                "type": "recovery"
             },
             {
                 "name": "Virus Breath",
@@ -6830,14 +6830,19 @@
         "id": 118,
         "skills": [
             {
-                "name": "Agidyne",
-                "level": 46,
+                "name": "Maragion",
+                "level": 0,
                 "type": "fire"
             },
             {
-                "name": "Apt Pupil",
-                "level": 49,
-                "type": "passive"
+                "name": "Mighty Swing",
+                "level": 0,
+                "type": "slash"
+            },
+            {
+                "name": "Agidyne",
+                "level": 46,
+                "type": "fire"
             },
             {
                 "name": "Fire Boost",
@@ -6850,14 +6855,9 @@
                 "type": "support"
             },
             {
-                "name": "Maragion",
-                "level": 0,
-                "type": "fire"
-            },
-            {
-                "name": "Mighty Swing",
-                "level": 0,
-                "type": "slash"
+                "name": "Apt Pupil",
+                "level": 49,
+                "type": "passive"
             }
         ],
         "inherits": "fire",
@@ -6888,16 +6888,6 @@
         "id": 119,
         "skills": [
             {
-                "name": "Agidyne",
-                "level": 53,
-                "type": "fire"
-            },
-            {
-                "name": "Growth 3",
-                "level": 55,
-                "type": "passive"
-            },
-            {
                 "name": "Maragion",
                 "level": 0,
                 "type": "fire"
@@ -6908,9 +6898,19 @@
                 "type": "support"
             },
             {
+                "name": "Agidyne",
+                "level": 53,
+                "type": "fire"
+            },
+            {
                 "name": "Mediarama",
                 "level": 54,
                 "type": "recovery"
+            },
+            {
+                "name": "Growth 3",
+                "level": 55,
+                "type": "passive"
             },
             {
                 "name": "Resist Ice",
@@ -6956,16 +6956,6 @@
                 "type": "passive"
             },
             {
-                "name": "Endure",
-                "level": 61,
-                "type": "passive"
-            },
-            {
-                "name": "Maziodyne",
-                "level": 63,
-                "type": "elec"
-            },
-            {
                 "name": "Mazionga",
                 "level": 0,
                 "type": "elec"
@@ -6973,6 +6963,16 @@
             {
                 "name": "Ziodyne",
                 "level": 59,
+                "type": "elec"
+            },
+            {
+                "name": "Endure",
+                "level": 61,
+                "type": "passive"
+            },
+            {
+                "name": "Maziodyne",
+                "level": 63,
                 "type": "elec"
             }
         ],
@@ -7010,9 +7010,9 @@
                 "type": "wind"
             },
             {
-                "name": "Growth 3",
-                "level": 67,
-                "type": "passive"
+                "name": "Mabufudyne",
+                "level": 0,
+                "type": "ice"
             },
             {
                 "name": "Ice Amp",
@@ -7020,9 +7020,9 @@
                 "type": "passive"
             },
             {
-                "name": "Mabufudyne",
-                "level": 0,
-                "type": "ice"
+                "name": "Growth 3",
+                "level": 67,
+                "type": "passive"
             },
             {
                 "name": "Mediarahan",
@@ -7030,14 +7030,14 @@
                 "type": "recovery"
             },
             {
-                "name": "Repel Light",
-                "level": 71,
-                "type": "passive"
-            },
-            {
                 "name": "Samarecarm",
                 "level": 70,
                 "type": "recovery"
+            },
+            {
+                "name": "Repel Light",
+                "level": 71,
+                "type": "passive"
             }
         ],
         "inherits": "ice",
@@ -7078,14 +7078,9 @@
                 "type": "ailment"
             },
             {
-                "name": "Mazio",
-                "level": 12,
+                "name": "Zio",
+                "level": 0,
                 "type": "elec"
-            },
-            {
-                "name": "Mudo",
-                "level": 11,
-                "type": "dark"
             },
             {
                 "name": "Rakukaja",
@@ -7093,8 +7088,13 @@
                 "type": "support"
             },
             {
-                "name": "Zio",
-                "level": 0,
+                "name": "Mudo",
+                "level": 11,
+                "type": "dark"
+            },
+            {
+                "name": "Mazio",
+                "level": 12,
                 "type": "elec"
             }
         ],
@@ -7126,11 +7126,6 @@
         "id": 123,
         "skills": [
             {
-                "name": "Charm Boost",
-                "level": 21,
-                "type": "passive"
-            },
-            {
                 "name": "Evil Smile",
                 "level": 0,
                 "type": "ailment"
@@ -7141,9 +7136,9 @@
                 "type": "passive"
             },
             {
-                "name": "Kill Rush",
-                "level": 22,
-                "type": "strike"
+                "name": "Stagnant Air",
+                "level": 0,
+                "type": "almighty"
             },
             {
                 "name": "Marin Karin",
@@ -7156,9 +7151,14 @@
                 "type": "ailment"
             },
             {
-                "name": "Stagnant Air",
-                "level": 0,
-                "type": "almighty"
+                "name": "Charm Boost",
+                "level": 21,
+                "type": "passive"
+            },
+            {
+                "name": "Kill Rush",
+                "level": 22,
+                "type": "strike"
             }
         ],
         "inherits": "ailment",
@@ -7189,21 +7189,6 @@
         "id": 124,
         "skills": [
             {
-                "name": "Dekaja",
-                "level": 26,
-                "type": "support"
-            },
-            {
-                "name": "Evil Smile",
-                "level": 28,
-                "type": "ailment"
-            },
-            {
-                "name": "Foul Breath",
-                "level": 27,
-                "type": "almighty"
-            },
-            {
                 "name": "Kill Rush",
                 "level": 0,
                 "type": "strike"
@@ -7216,6 +7201,21 @@
             {
                 "name": "Tentarafoo",
                 "level": 0,
+                "type": "ailment"
+            },
+            {
+                "name": "Dekaja",
+                "level": 26,
+                "type": "support"
+            },
+            {
+                "name": "Foul Breath",
+                "level": 27,
+                "type": "almighty"
+            },
+            {
+                "name": "Evil Smile",
+                "level": 28,
                 "type": "ailment"
             }
         ],
@@ -7257,11 +7257,6 @@
                 "type": "ailment"
             },
             {
-                "name": "Fire Break",
-                "level": 38,
-                "type": "support"
-            },
-            {
                 "name": "Life Drain",
                 "level": 0,
                 "type": "almighty"
@@ -7272,14 +7267,19 @@
                 "type": "fire"
             },
             {
+                "name": "Stagnant Air",
+                "level": 36,
+                "type": "almighty"
+            },
+            {
                 "name": "Spirit Drain",
                 "level": 37,
                 "type": "almighty"
             },
             {
-                "name": "Stagnant Air",
-                "level": 36,
-                "type": "almighty"
+                "name": "Fire Break",
+                "level": 38,
+                "type": "support"
             }
         ],
         "inherits": "ailment",
@@ -7315,9 +7315,14 @@
                 "type": "fire"
             },
             {
-                "name": "Ailment Boost",
-                "level": 46,
-                "type": "passive"
+                "name": "Mudoon",
+                "level": 0,
+                "type": "dark"
+            },
+            {
+                "name": "Sexy Dance",
+                "level": 0,
+                "type": "ailment"
             },
             {
                 "name": "Fire Break",
@@ -7325,19 +7330,14 @@
                 "type": "support"
             },
             {
-                "name": "Mudoon",
-                "level": 0,
-                "type": "dark"
+                "name": "Ailment Boost",
+                "level": 46,
+                "type": "passive"
             },
             {
                 "name": "Null Light",
                 "level": 48,
                 "type": "passive"
-            },
-            {
-                "name": "Sexy Dance",
-                "level": 0,
-                "type": "ailment"
             }
         ],
         "inherits": "ailment",
@@ -7368,19 +7368,9 @@
         "id": 127,
         "skills": [
             {
-                "name": "Arrow Rain",
-                "level": 58,
-                "type": "pierce"
-            },
-            {
                 "name": "Garudyne",
                 "level": 0,
                 "type": "wind"
-            },
-            {
-                "name": "Poison Arrow",
-                "level": 55,
-                "type": "pierce"
             },
             {
                 "name": "Poison Mist",
@@ -7393,9 +7383,19 @@
                 "type": "almighty"
             },
             {
+                "name": "Poison Arrow",
+                "level": 55,
+                "type": "pierce"
+            },
+            {
                 "name": "Virus Breath",
                 "level": 57,
                 "type": "ailment"
+            },
+            {
+                "name": "Arrow Rain",
+                "level": 58,
+                "type": "pierce"
             }
         ],
         "inherits": "ailment",
@@ -7428,21 +7428,6 @@
         "id": 128,
         "skills": [
             {
-                "name": "Absorb Wind",
-                "level": 67,
-                "type": "passive"
-            },
-            {
-                "name": "Elec Break",
-                "level": 65,
-                "type": "support"
-            },
-            {
-                "name": "Fast Retreat",
-                "level": 64,
-                "type": "passive"
-            },
-            {
                 "name": "Makarakarn",
                 "level": 0,
                 "type": "support"
@@ -7453,14 +7438,29 @@
                 "type": "elec"
             },
             {
+                "name": "Sexy Dance",
+                "level": 0,
+                "type": "ailment"
+            },
+            {
                 "name": "Megidola",
                 "level": 63,
                 "type": "almighty"
             },
             {
-                "name": "Sexy Dance",
-                "level": 0,
-                "type": "ailment"
+                "name": "Fast Retreat",
+                "level": 64,
+                "type": "passive"
+            },
+            {
+                "name": "Elec Break",
+                "level": 65,
+                "type": "support"
+            },
+            {
+                "name": "Absorb Wind",
+                "level": 67,
+                "type": "passive"
             }
         ],
         "inherits": "ailment",
@@ -7491,11 +7491,6 @@
         "id": 129,
         "skills": [
             {
-                "name": "Absorb Strike",
-                "level": 74,
-                "type": "passive"
-            },
-            {
                 "name": "Evil Smile",
                 "level": 0,
                 "type": "ailment"
@@ -7506,8 +7501,13 @@
                 "type": "passive"
             },
             {
-                "name": "Null Pierce",
-                "level": 73,
+                "name": "Weary Thrust",
+                "level": 0,
+                "type": "strike"
+            },
+            {
+                "name": "Null Strike",
+                "level": 71,
                 "type": "passive"
             },
             {
@@ -7516,14 +7516,14 @@
                 "type": "passive"
             },
             {
-                "name": "Null Strike",
-                "level": 71,
+                "name": "Null Pierce",
+                "level": 73,
                 "type": "passive"
             },
             {
-                "name": "Weary Thrust",
-                "level": 0,
-                "type": "strike"
+                "name": "Absorb Strike",
+                "level": 74,
+                "type": "passive"
             }
         ],
         "inherits": "ailment",
@@ -7556,11 +7556,6 @@
         "id": 130,
         "skills": [
             {
-                "name": "High Counter",
-                "level": 85,
-                "type": "passive"
-            },
-            {
                 "name": "Magarudyne",
                 "level": 0,
                 "type": "wind"
@@ -7571,14 +7566,19 @@
                 "type": "support"
             },
             {
+                "name": "Primal Force",
+                "level": 83,
+                "type": "pierce"
+            },
+            {
                 "name": "Maziodyne",
                 "level": 84,
                 "type": "elec"
             },
             {
-                "name": "Primal Force",
-                "level": 83,
-                "type": "pierce"
+                "name": "High Counter",
+                "level": 85,
+                "type": "passive"
             },
             {
                 "name": "Victory Cry",
@@ -7614,26 +7614,6 @@
         "id": 131,
         "skills": [
             {
-                "name": "Cool Breeze",
-                "level": 37,
-                "type": "passive"
-            },
-            {
-                "name": "Cruel Attack",
-                "level": 34,
-                "type": "pierce"
-            },
-            {
-                "name": "Dodge Ice",
-                "level": 33,
-                "type": "passive"
-            },
-            {
-                "name": "Maragion",
-                "level": 32,
-                "type": "fire"
-            },
-            {
                 "name": "Revolution",
                 "level": 0,
                 "type": "support"
@@ -7642,6 +7622,26 @@
                 "name": "Twin Shot",
                 "level": 0,
                 "type": "pierce"
+            },
+            {
+                "name": "Maragion",
+                "level": 32,
+                "type": "fire"
+            },
+            {
+                "name": "Dodge Ice",
+                "level": 33,
+                "type": "passive"
+            },
+            {
+                "name": "Cruel Attack",
+                "level": 34,
+                "type": "pierce"
+            },
+            {
+                "name": "Cool Breeze",
+                "level": 37,
+                "type": "passive"
             }
         ],
         "inherits": "pierce",
@@ -7677,6 +7677,11 @@
                 "type": "support"
             },
             {
+                "name": "Torrent Shot",
+                "level": 0,
+                "type": "pierce"
+            },
+            {
                 "name": "Mazionga",
                 "level": 41,
                 "type": "elec"
@@ -7690,11 +7695,6 @@
                 "name": "Survive Dark",
                 "level": 44,
                 "type": "passive"
-            },
-            {
-                "name": "Torrent Shot",
-                "level": 0,
-                "type": "pierce"
             },
             {
                 "name": "Vile Assault",
@@ -7730,8 +7730,18 @@
         "id": 133,
         "skills": [
             {
-                "name": "Arms Master",
-                "level": 67,
+                "name": "Diarahan",
+                "level": 0,
+                "type": "recovery"
+            },
+            {
+                "name": "Maragidyne",
+                "level": 0,
+                "type": "fire"
+            },
+            {
+                "name": "Fire Amp",
+                "level": 62,
                 "type": "passive"
             },
             {
@@ -7740,24 +7750,14 @@
                 "type": "pierce"
             },
             {
-                "name": "Diarahan",
-                "level": 0,
-                "type": "recovery"
-            },
-            {
-                "name": "Fire Amp",
-                "level": 62,
-                "type": "passive"
-            },
-            {
-                "name": "Maragidyne",
-                "level": 0,
-                "type": "fire"
-            },
-            {
                 "name": "Myriad Arrows",
                 "level": 65,
                 "type": "pierce"
+            },
+            {
+                "name": "Arms Master",
+                "level": 67,
+                "type": "passive"
             }
         ],
         "inherits": "fire",
@@ -7803,9 +7803,9 @@
                 "type": "passive"
             },
             {
-                "name": "Regenerate 3",
-                "level": 73,
-                "type": "passive"
+                "name": "Weary Thrust",
+                "level": 70,
+                "type": "strike"
             },
             {
                 "name": "Spear Master",
@@ -7813,9 +7813,9 @@
                 "type": "passive"
             },
             {
-                "name": "Weary Thrust",
-                "level": 70,
-                "type": "strike"
+                "name": "Regenerate 3",
+                "level": 73,
+                "type": "passive"
             }
         ],
         "inherits": "pierce",
@@ -7848,24 +7848,9 @@
         "id": 135,
         "skills": [
             {
-                "name": "Arms Master",
-                "level": 79,
-                "type": "passive"
-            },
-            {
-                "name": "Magarudyne",
-                "level": 75,
-                "type": "wind"
-            },
-            {
                 "name": "Marakunda",
                 "level": 0,
                 "type": "support"
-            },
-            {
-                "name": "Myriad Arrows",
-                "level": 76,
-                "type": "pierce"
             },
             {
                 "name": "Power Charge",
@@ -7876,6 +7861,21 @@
                 "name": "Tempest Slash",
                 "level": 0,
                 "type": "slash"
+            },
+            {
+                "name": "Magarudyne",
+                "level": 75,
+                "type": "wind"
+            },
+            {
+                "name": "Myriad Arrows",
+                "level": 76,
+                "type": "pierce"
+            },
+            {
+                "name": "Arms Master",
+                "level": 79,
+                "type": "passive"
             }
         ],
         "inherits": "dark",
@@ -7907,11 +7907,6 @@
         "id": 136,
         "skills": [
             {
-                "name": "Absorb Ice",
-                "level": 84,
-                "type": "passive"
-            },
-            {
                 "name": "Maralagidyne",
                 "level": 0,
                 "type": "fire",
@@ -7923,19 +7918,24 @@
                 "type": "pierce"
             },
             {
-                "name": "Power Charge",
-                "level": 80,
-                "type": "support"
-            },
-            {
                 "name": "Primal Force",
                 "level": 79,
                 "type": "pierce"
             },
             {
+                "name": "Power Charge",
+                "level": 80,
+                "type": "support"
+            },
+            {
                 "name": "Tetrakarn",
                 "level": 82,
                 "type": "support"
+            },
+            {
+                "name": "Absorb Ice",
+                "level": 84,
+                "type": "passive"
             }
         ],
         "inherits": "pierce",
@@ -7972,14 +7972,14 @@
                 "type": "passive"
             },
             {
-                "name": "Invigorate 3",
-                "level": 86,
-                "type": "passive"
-            },
-            {
                 "name": "Maziodyne",
                 "level": 0,
                 "type": "elec"
+            },
+            {
+                "name": "Sexy Dance",
+                "level": 0,
+                "type": "ailment"
             },
             {
                 "name": "Pralaya",
@@ -7987,9 +7987,9 @@
                 "type": "pierce"
             },
             {
-                "name": "Sexy Dance",
-                "level": 0,
-                "type": "ailment"
+                "name": "Invigorate 3",
+                "level": 86,
+                "type": "passive"
             },
             {
                 "name": "Victory Cry",
@@ -8026,6 +8026,21 @@
         "id": 138,
         "skills": [
             {
+                "name": "Invigorate 3",
+                "level": 0,
+                "type": "passive"
+            },
+            {
+                "name": "Vorpal Blade",
+                "level": 0,
+                "type": "slash"
+            },
+            {
+                "name": "Primal Force",
+                "level": 89,
+                "type": "pierce"
+            },
+            {
                 "name": "Absorb Strike",
                 "level": 91,
                 "type": "passive"
@@ -8034,21 +8049,6 @@
                 "name": "Arms Master",
                 "level": 92,
                 "type": "passive"
-            },
-            {
-                "name": "Invigorate 3",
-                "level": 0,
-                "type": "passive"
-            },
-            {
-                "name": "Primal Force",
-                "level": 89,
-                "type": "pierce"
-            },
-            {
-                "name": "Vorpal Blade",
-                "level": 0,
-                "type": "slash"
             }
         ],
         "inherits": "pierce",
@@ -8084,16 +8084,6 @@
                 "type": "strike"
             },
             {
-                "name": "Counter",
-                "level": 20,
-                "type": "passive"
-            },
-            {
-                "name": "Dodge Wind",
-                "level": 22,
-                "type": "passive"
-            },
-            {
                 "name": "Double Fangs",
                 "level": 0,
                 "type": "pierce"
@@ -8101,6 +8091,16 @@
             {
                 "name": "Regenerate 1",
                 "level": 0,
+                "type": "passive"
+            },
+            {
+                "name": "Counter",
+                "level": 20,
+                "type": "passive"
+            },
+            {
+                "name": "Dodge Wind",
+                "level": 22,
                 "type": "passive"
             },
             {
@@ -8137,26 +8137,6 @@
         "id": 140,
         "skills": [
             {
-                "name": "Auto-Sukukaja",
-                "level": 33,
-                "type": "passive"
-            },
-            {
-                "name": "Auto-Tarukaja",
-                "level": 31,
-                "type": "passive"
-            },
-            {
-                "name": "Power Charge",
-                "level": 29,
-                "type": "support"
-            },
-            {
-                "name": "Resist Fire",
-                "level": 32,
-                "type": "passive"
-            },
-            {
                 "name": "Sharp Student",
                 "level": 0,
                 "type": "passive"
@@ -8170,6 +8150,26 @@
                 "name": "Zionga",
                 "level": 0,
                 "type": "elec"
+            },
+            {
+                "name": "Power Charge",
+                "level": 29,
+                "type": "support"
+            },
+            {
+                "name": "Auto-Tarukaja",
+                "level": 31,
+                "type": "passive"
+            },
+            {
+                "name": "Resist Fire",
+                "level": 32,
+                "type": "passive"
+            },
+            {
+                "name": "Auto-Sukukaja",
+                "level": 33,
+                "type": "passive"
             }
         ],
         "inherits": "pierce",
@@ -8200,21 +8200,6 @@
         "id": 141,
         "skills": [
             {
-                "name": "Cool Breeze",
-                "level": 41,
-                "type": "passive"
-            },
-            {
-                "name": "Dodge Fire",
-                "level": 44,
-                "type": "passive"
-            },
-            {
-                "name": "Garudyne",
-                "level": 43,
-                "type": "wind"
-            },
-            {
                 "name": "Magarula",
                 "level": 0,
                 "type": "wind"
@@ -8228,6 +8213,21 @@
                 "name": "Marin Karin",
                 "level": 0,
                 "type": "ailment"
+            },
+            {
+                "name": "Cool Breeze",
+                "level": 41,
+                "type": "passive"
+            },
+            {
+                "name": "Garudyne",
+                "level": 43,
+                "type": "wind"
+            },
+            {
+                "name": "Dodge Fire",
+                "level": 44,
+                "type": "passive"
             }
         ],
         "inherits": "wind",
@@ -8258,23 +8258,8 @@
         "id": 142,
         "skills": [
             {
-                "name": "Ailment Boost",
-                "level": 55,
-                "type": "passive"
-            },
-            {
                 "name": "Evade Pierce",
                 "level": 0,
-                "type": "passive"
-            },
-            {
-                "name": "Invigorate 2",
-                "level": 51,
-                "type": "passive"
-            },
-            {
-                "name": "Null Light",
-                "level": 54,
                 "type": "passive"
             },
             {
@@ -8283,14 +8268,29 @@
                 "type": "almighty"
             },
             {
+                "name": "Virus Breath",
+                "level": 0,
+                "type": "ailment"
+            },
+            {
+                "name": "Invigorate 2",
+                "level": 51,
+                "type": "passive"
+            },
+            {
                 "name": "Vile Assault",
                 "level": 53,
                 "type": "pierce"
             },
             {
-                "name": "Virus Breath",
-                "level": 0,
-                "type": "ailment"
+                "name": "Null Light",
+                "level": 54,
+                "type": "passive"
+            },
+            {
+                "name": "Ailment Boost",
+                "level": 55,
+                "type": "passive"
             }
         ],
         "inherits": "ailment",
@@ -8331,14 +8331,9 @@
                 "type": "slash"
             },
             {
-                "name": "Endure",
-                "level": 64,
-                "type": "passive"
-            },
-            {
-                "name": "High Counter",
-                "level": 62,
-                "type": "passive"
+                "name": "Power Charge",
+                "level": 0,
+                "type": "support"
             },
             {
                 "name": "Magarudyne",
@@ -8346,13 +8341,18 @@
                 "type": "wind"
             },
             {
-                "name": "Power Charge",
-                "level": 0,
-                "type": "support"
+                "name": "High Counter",
+                "level": 62,
+                "type": "passive"
             },
             {
                 "name": "Wind Amp",
                 "level": 63,
+                "type": "passive"
+            },
+            {
+                "name": "Endure",
+                "level": 64,
                 "type": "passive"
             }
         ],
@@ -8384,19 +8384,9 @@
         "id": 144,
         "skills": [
             {
-                "name": "Amrita",
-                "level": 68,
-                "type": "recovery"
-            },
-            {
                 "name": "Arrow Rain",
                 "level": 0,
                 "type": "pierce"
-            },
-            {
-                "name": "High Counter",
-                "level": 69,
-                "type": "passive"
             },
             {
                 "name": "Magarudyne",
@@ -8407,6 +8397,16 @@
                 "name": "Mediarama",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Amrita",
+                "level": 68,
+                "type": "recovery"
+            },
+            {
+                "name": "High Counter",
+                "level": 69,
+                "type": "passive"
             },
             {
                 "name": "Repel Wind",
@@ -8443,19 +8443,14 @@
         "id": 145,
         "skills": [
             {
-                "name": "Absorb Elec",
-                "level": 75,
-                "type": "passive"
-            },
-            {
-                "name": "High Counter",
-                "level": 73,
-                "type": "passive"
-            },
-            {
                 "name": "Masukukaja",
                 "level": 0,
                 "type": "support"
+            },
+            {
+                "name": "Myriad Arrows",
+                "level": 0,
+                "type": "pierce"
             },
             {
                 "name": "Maziodyne",
@@ -8463,9 +8458,14 @@
                 "type": "elec"
             },
             {
-                "name": "Myriad Arrows",
-                "level": 0,
-                "type": "pierce"
+                "name": "High Counter",
+                "level": 73,
+                "type": "passive"
+            },
+            {
+                "name": "Absorb Elec",
+                "level": 75,
+                "type": "passive"
             },
             {
                 "name": "Primal Force",
@@ -8501,11 +8501,6 @@
         "id": 146,
         "skills": [
             {
-                "name": "Absorb Ice",
-                "level": 84,
-                "type": "passive"
-            },
-            {
                 "name": "Evade Ice",
                 "level": 0,
                 "type": "passive"
@@ -8516,14 +8511,14 @@
                 "type": "passive"
             },
             {
-                "name": "Growth 3",
-                "level": 80,
-                "type": "passive"
-            },
-            {
                 "name": "Maragidyne",
                 "level": 0,
                 "type": "fire"
+            },
+            {
+                "name": "Growth 3",
+                "level": 80,
+                "type": "passive"
             },
             {
                 "name": "Primal Force",
@@ -8533,6 +8528,11 @@
             {
                 "name": "Repel Ice",
                 "level": 83,
+                "type": "passive"
+            },
+            {
+                "name": "Absorb Ice",
+                "level": 84,
                 "type": "passive"
             }
         ],
@@ -8565,11 +8565,6 @@
         "id": 147,
         "skills": [
             {
-                "name": "Absorb Slash",
-                "level": 92,
-                "type": "passive"
-            },
-            {
                 "name": "Maragidyne",
                 "level": 0,
                 "type": "fire"
@@ -8580,14 +8575,19 @@
                 "type": "support"
             },
             {
+                "name": "Primal Force",
+                "level": 0,
+                "type": "pierce"
+            },
+            {
                 "name": "Morning Star",
                 "level": 91,
                 "type": "almighty"
             },
             {
-                "name": "Primal Force",
-                "level": 0,
-                "type": "pierce"
+                "name": "Absorb Slash",
+                "level": 92,
+                "type": "passive"
             },
             {
                 "name": "Salvation",
@@ -8628,9 +8628,9 @@
                 "type": "passive"
             },
             {
-                "name": "Dodge Strike",
-                "level": 19,
-                "type": "passive"
+                "name": "Power Slash",
+                "level": 0,
+                "type": "slash"
             },
             {
                 "name": "Growth 1",
@@ -8638,8 +8638,13 @@
                 "type": "passive"
             },
             {
-                "name": "Poison Boost",
-                "level": 21,
+                "name": "Raging Tiger",
+                "level": 18,
+                "type": "passive"
+            },
+            {
+                "name": "Dodge Strike",
+                "level": 19,
                 "type": "passive"
             },
             {
@@ -8648,13 +8653,8 @@
                 "type": "ailment"
             },
             {
-                "name": "Power Slash",
-                "level": 0,
-                "type": "slash"
-            },
-            {
-                "name": "Raging Tiger",
-                "level": 18,
+                "name": "Poison Boost",
+                "level": 21,
                 "type": "passive"
             }
         ],
@@ -8691,16 +8691,6 @@
                 "type": "passive"
             },
             {
-                "name": "Dekaja",
-                "level": 28,
-                "type": "support"
-            },
-            {
-                "name": "Ice Boost",
-                "level": 31,
-                "type": "passive"
-            },
-            {
                 "name": "Kill Rush",
                 "level": 0,
                 "type": "strike"
@@ -8711,9 +8701,19 @@
                 "type": "ice"
             },
             {
+                "name": "Dekaja",
+                "level": 28,
+                "type": "support"
+            },
+            {
                 "name": "Swift Strike",
                 "level": 30,
                 "type": "strike"
+            },
+            {
+                "name": "Ice Boost",
+                "level": 31,
+                "type": "passive"
             }
         ],
         "inherits": "strike",
@@ -8745,16 +8745,6 @@
         "id": 150,
         "skills": [
             {
-                "name": "Endure Light",
-                "level": 48,
-                "type": "passive"
-            },
-            {
-                "name": "Mamudoon",
-                "level": 45,
-                "type": "dark"
-            },
-            {
                 "name": "Marakunda",
                 "level": 0,
                 "type": "support"
@@ -8765,14 +8755,24 @@
                 "type": "slash"
             },
             {
+                "name": "Virus Breath",
+                "level": 43,
+                "type": "ailment"
+            },
+            {
+                "name": "Mamudoon",
+                "level": 45,
+                "type": "dark"
+            },
+            {
                 "name": "Survive Light",
                 "level": 46,
                 "type": "passive"
             },
             {
-                "name": "Virus Breath",
-                "level": 43,
-                "type": "ailment"
+                "name": "Endure Light",
+                "level": 48,
+                "type": "passive"
             }
         ],
         "inherits": "slash",
@@ -8803,11 +8803,6 @@
         "id": 151,
         "skills": [
             {
-                "name": "Heat Wave",
-                "level": 51,
-                "type": "strike"
-            },
-            {
                 "name": "Mazionga",
                 "level": 0,
                 "type": "elec"
@@ -8818,9 +8813,14 @@
                 "type": "support"
             },
             {
-                "name": "Regenerate 2",
-                "level": 53,
-                "type": "passive"
+                "name": "Ziodyne",
+                "level": 50,
+                "type": "elec"
+            },
+            {
+                "name": "Heat Wave",
+                "level": 51,
+                "type": "strike"
             },
             {
                 "name": "Resist Wind",
@@ -8828,9 +8828,9 @@
                 "type": "passive"
             },
             {
-                "name": "Ziodyne",
-                "level": 50,
-                "type": "elec"
+                "name": "Regenerate 2",
+                "level": 53,
+                "type": "passive"
             }
         ],
         "inherits": "elec",
@@ -8866,24 +8866,9 @@
                 "type": "slash"
             },
             {
-                "name": "Deathbound",
-                "level": 60,
-                "type": "slash"
-            },
-            {
-                "name": "Invigorate 2",
-                "level": 64,
-                "type": "passive"
-            },
-            {
                 "name": "Mamudoon",
                 "level": 0,
                 "type": "dark"
-            },
-            {
-                "name": "Megidola",
-                "level": 63,
-                "type": "almighty"
             },
             {
                 "name": "Null Slash",
@@ -8891,8 +8876,23 @@
                 "type": "passive"
             },
             {
+                "name": "Deathbound",
+                "level": 60,
+                "type": "slash"
+            },
+            {
                 "name": "Null Wind",
                 "level": 62,
+                "type": "passive"
+            },
+            {
+                "name": "Megidola",
+                "level": 63,
+                "type": "almighty"
+            },
+            {
+                "name": "Invigorate 2",
+                "level": 64,
                 "type": "passive"
             }
         ],
@@ -8929,6 +8929,11 @@
                 "type": "fire"
             },
             {
+                "name": "Maragidyne",
+                "level": 0,
+                "type": "fire"
+            },
+            {
                 "name": "Fire Amp",
                 "level": 68,
                 "type": "passive"
@@ -8937,11 +8942,6 @@
                 "name": "Fire Break",
                 "level": 69,
                 "type": "support"
-            },
-            {
-                "name": "Maragidyne",
-                "level": 0,
-                "type": "fire"
             },
             {
                 "name": "Null Ice",
@@ -8982,19 +8982,9 @@
         "id": 154,
         "skills": [
             {
-                "name": "Bufudyne",
-                "level": 72,
-                "type": "ice"
-            },
-            {
                 "name": "Mamudoon",
                 "level": 0,
                 "type": "dark"
-            },
-            {
-                "name": "Maragidyne",
-                "level": 75,
-                "type": "fire"
             },
             {
                 "name": "Megidola",
@@ -9002,14 +8992,24 @@
                 "type": "almighty"
             },
             {
+                "name": "Poison Mist",
+                "level": 0,
+                "type": "ailment"
+            },
+            {
+                "name": "Bufudyne",
+                "level": 72,
+                "type": "ice"
+            },
+            {
                 "name": "Mudo Boost",
                 "level": 73,
                 "type": "passive"
             },
             {
-                "name": "Poison Mist",
-                "level": 0,
-                "type": "ailment"
+                "name": "Maragidyne",
+                "level": 75,
+                "type": "fire"
             }
         ],
         "inherits": "dark",
@@ -9042,11 +9042,6 @@
         "id": 155,
         "skills": [
             {
-                "name": "Akasha Arts",
-                "level": 76,
-                "type": "strike"
-            },
-            {
                 "name": "Hama Boost",
                 "level": 0,
                 "type": "passive"
@@ -9060,6 +9055,11 @@
                 "name": "Makarakarn",
                 "level": 0,
                 "type": "support"
+            },
+            {
+                "name": "Akasha Arts",
+                "level": 76,
+                "type": "strike"
             },
             {
                 "name": "Regenerate 3",
@@ -9105,9 +9105,19 @@
                 "type": "recovery"
             },
             {
-                "name": "Growth 2",
-                "level": 37,
-                "type": "passive"
+                "name": "Sukukaja",
+                "level": 0,
+                "type": "support"
+            },
+            {
+                "name": "Zan-ei",
+                "level": 0,
+                "type": "slash"
+            },
+            {
+                "name": "Masukunda",
+                "level": 31,
+                "type": "support"
             },
             {
                 "name": "Infuriate",
@@ -9120,19 +9130,9 @@
                 "type": "passive"
             },
             {
-                "name": "Masukunda",
-                "level": 31,
-                "type": "support"
-            },
-            {
-                "name": "Sukukaja",
-                "level": 0,
-                "type": "support"
-            },
-            {
-                "name": "Zan-ei",
-                "level": 0,
-                "type": "slash"
+                "name": "Growth 2",
+                "level": 37,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -9163,19 +9163,9 @@
         "id": 157,
         "skills": [
             {
-                "name": "Garudyne",
-                "level": 44,
-                "type": "wind"
-            },
-            {
                 "name": "Growth 2",
                 "level": 0,
                 "type": "passive"
-            },
-            {
-                "name": "Heat Wave",
-                "level": 46,
-                "type": "strike"
             },
             {
                 "name": "Magarula",
@@ -9183,14 +9173,24 @@
                 "type": "wind"
             },
             {
-                "name": "Mahamaon",
-                "level": 47,
-                "type": "light"
-            },
-            {
                 "name": "Marakukaja",
                 "level": 0,
                 "type": "support"
+            },
+            {
+                "name": "Garudyne",
+                "level": 44,
+                "type": "wind"
+            },
+            {
+                "name": "Heat Wave",
+                "level": 46,
+                "type": "strike"
+            },
+            {
+                "name": "Mahamaon",
+                "level": 47,
+                "type": "light"
             },
             {
                 "name": "Wind Boost",
@@ -9226,11 +9226,6 @@
         "id": 158,
         "skills": [
             {
-                "name": "Amrita",
-                "level": 57,
-                "type": "recovery"
-            },
-            {
                 "name": "Garudyne",
                 "level": 0,
                 "type": "wind"
@@ -9241,9 +9236,14 @@
                 "type": "passive"
             },
             {
-                "name": "Magarudyne",
-                "level": 60,
-                "type": "wind"
+                "name": "Null Panic",
+                "level": 0,
+                "type": "passive"
+            },
+            {
+                "name": "Amrita",
+                "level": 57,
+                "type": "recovery"
             },
             {
                 "name": "Null Elec",
@@ -9251,9 +9251,9 @@
                 "type": "passive"
             },
             {
-                "name": "Null Panic",
-                "level": 0,
-                "type": "passive"
+                "name": "Magarudyne",
+                "level": 60,
+                "type": "wind"
             }
         ],
         "inherits": "wind",
@@ -9284,16 +9284,6 @@
         "id": 159,
         "skills": [
             {
-                "name": "Auto-Masuku",
-                "level": 65,
-                "type": "passive"
-            },
-            {
-                "name": "Bufudyne",
-                "level": 67,
-                "type": "ice"
-            },
-            {
                 "name": "Growth 3",
                 "level": 0,
                 "type": "passive"
@@ -9307,6 +9297,16 @@
                 "name": "Mediarahan",
                 "level": 0,
                 "type": "recovery"
+            },
+            {
+                "name": "Auto-Masuku",
+                "level": 65,
+                "type": "passive"
+            },
+            {
+                "name": "Bufudyne",
+                "level": 67,
+                "type": "ice"
             },
             {
                 "name": "Repel Dark",
@@ -9347,24 +9347,24 @@
                 "type": "recovery"
             },
             {
-                "name": "Mabufudyne",
-                "level": 74,
-                "type": "ice"
-            },
-            {
                 "name": "Magarudyne",
                 "level": 0,
                 "type": "wind"
             },
             {
-                "name": "Tetrakarn",
-                "level": 76,
-                "type": "support"
-            },
-            {
                 "name": "Wind Amp",
                 "level": 72,
                 "type": "passive"
+            },
+            {
+                "name": "Mabufudyne",
+                "level": 74,
+                "type": "ice"
+            },
+            {
+                "name": "Tetrakarn",
+                "level": 76,
+                "type": "support"
             }
         ],
         "inherits": "wind",
@@ -9405,9 +9405,9 @@
                 "type": "ice"
             },
             {
-                "name": "God's Hand",
-                "level": 82,
-                "type": "strike"
+                "name": "Ziodyne",
+                "level": 0,
+                "type": "elec"
             },
             {
                 "name": "Mind Charge",
@@ -9415,14 +9415,14 @@
                 "type": "support"
             },
             {
+                "name": "God's Hand",
+                "level": 82,
+                "type": "strike"
+            },
+            {
                 "name": "Salvation",
                 "level": 86,
                 "type": "recovery"
-            },
-            {
-                "name": "Ziodyne",
-                "level": 0,
-                "type": "elec"
             }
         ],
         "inherits": "strike",
@@ -9465,13 +9465,8 @@
                 "type": "strike"
             },
             {
-                "name": "Megidolaon",
-                "level": 88,
-                "type": "almighty"
-            },
-            {
-                "name": "Spell Master",
-                "level": 91,
+                "name": "Unshaken Will",
+                "level": 0,
                 "type": "passive"
             },
             {
@@ -9480,8 +9475,13 @@
                 "type": "support"
             },
             {
-                "name": "Unshaken Will",
-                "level": 0,
+                "name": "Megidolaon",
+                "level": 88,
+                "type": "almighty"
+            },
+            {
+                "name": "Spell Master",
+                "level": 91,
                 "type": "passive"
             }
         ],
@@ -9518,23 +9518,23 @@
                 "type": "light"
             },
             {
-                "name": "Makarakarn",
-                "level": 61,
-                "type": "support"
-            },
-            {
                 "name": "Mamudoon",
                 "level": 0,
                 "type": "dark"
             },
             {
-                "name": "Null Elec",
-                "level": 64,
-                "type": "passive"
+                "name": "Makarakarn",
+                "level": 61,
+                "type": "support"
             },
             {
                 "name": "Null Ice",
                 "level": 62,
+                "type": "passive"
+            },
+            {
+                "name": "Null Elec",
+                "level": 64,
                 "type": "passive"
             },
             {
@@ -9581,9 +9581,9 @@
                 "type": "light"
             },
             {
-                "name": "Ice Break",
-                "level": 68,
-                "type": "support"
+                "name": "Mudoon",
+                "level": 0,
+                "type": "dark"
             },
             {
                 "name": "Mabufudyne",
@@ -9591,9 +9591,9 @@
                 "type": "ice"
             },
             {
-                "name": "Mudoon",
-                "level": 0,
-                "type": "dark"
+                "name": "Ice Break",
+                "level": 68,
+                "type": "support"
             },
             {
                 "name": "Tetrakarn",
@@ -9629,16 +9629,6 @@
         "id": 165,
         "skills": [
             {
-                "name": "Heaven's Blade",
-                "level": 77,
-                "type": "slash"
-            },
-            {
-                "name": "Mabufudyne",
-                "level": 74,
-                "type": "ice"
-            },
-            {
                 "name": "Maziodyne",
                 "level": 0,
                 "type": "elec"
@@ -9649,9 +9639,19 @@
                 "type": "recovery"
             },
             {
+                "name": "Mabufudyne",
+                "level": 74,
+                "type": "ice"
+            },
+            {
                 "name": "Repel Dark",
                 "level": 75,
                 "type": "passive"
+            },
+            {
+                "name": "Heaven's Blade",
+                "level": 77,
+                "type": "slash"
             }
         ],
         "inherits": "light",
@@ -9682,16 +9682,6 @@
         "id": 166,
         "skills": [
             {
-                "name": "Black Viper",
-                "level": 86,
-                "type": "almighty"
-            },
-            {
-                "name": "Invigorate 3",
-                "level": 82,
-                "type": "passive"
-            },
-            {
                 "name": "Maragidyne",
                 "level": 0,
                 "type": "fire"
@@ -9707,9 +9697,19 @@
                 "type": "passive"
             },
             {
+                "name": "Invigorate 3",
+                "level": 82,
+                "type": "passive"
+            },
+            {
                 "name": "Repel Light",
                 "level": 83,
                 "type": "passive"
+            },
+            {
+                "name": "Black Viper",
+                "level": 86,
+                "type": "almighty"
             }
         ],
         "inherits": "light-dark",
@@ -9801,29 +9801,9 @@
         "id": 168,
         "skills": [
             {
-                "name": "Absorb Pierce",
-                "level": 95,
-                "type": "passive"
-            },
-            {
-                "name": "Enduring Soul",
-                "level": 97,
-                "type": "passive"
-            },
-            {
                 "name": "God's Hand",
                 "level": 0,
                 "type": "strike"
-            },
-            {
-                "name": "Invigorate 3",
-                "level": 94,
-                "type": "passive"
-            },
-            {
-                "name": "Magic Skill Up",
-                "level": 98,
-                "type": "passive"
             },
             {
                 "name": "Megidolaon",
@@ -9839,6 +9819,26 @@
                 "name": "Salvation",
                 "level": 93,
                 "type": "recovery"
+            },
+            {
+                "name": "Invigorate 3",
+                "level": 94,
+                "type": "passive"
+            },
+            {
+                "name": "Absorb Pierce",
+                "level": 95,
+                "type": "passive"
+            },
+            {
+                "name": "Enduring Soul",
+                "level": 97,
+                "type": "passive"
+            },
+            {
+                "name": "Magic Skill Up",
+                "level": 98,
+                "type": "passive"
             }
         ],
         "inherits": "light-dark",
@@ -9874,16 +9874,6 @@
                 "type": "slash"
             },
             {
-                "name": "Fire Amp",
-                "level": 65,
-                "type": "passive"
-            },
-            {
-                "name": "High Counter",
-                "level": 67,
-                "type": "passive"
-            },
-            {
                 "name": "Mahamaon",
                 "level": 0,
                 "type": "light"
@@ -9894,9 +9884,19 @@
                 "type": "fire"
             },
             {
+                "name": "Fire Amp",
+                "level": 65,
+                "type": "passive"
+            },
+            {
                 "name": "Tempest Slash",
                 "level": 66,
                 "type": "slash"
+            },
+            {
+                "name": "High Counter",
+                "level": 67,
+                "type": "passive"
             }
         ],
         "inherits": "light",
@@ -9927,19 +9927,14 @@
         "id": 170,
         "skills": [
             {
-                "name": "Absorb Pierce",
-                "level": 74,
-                "type": "passive"
-            },
-            {
                 "name": "Mamudoon",
                 "level": 0,
                 "type": "dark"
             },
             {
-                "name": "Matarunda",
-                "level": 72,
-                "type": "support"
+                "name": "Virus Breath",
+                "level": 0,
+                "type": "ailment"
             },
             {
                 "name": "Revolution",
@@ -9947,9 +9942,14 @@
                 "type": "support"
             },
             {
-                "name": "Virus Breath",
-                "level": 0,
-                "type": "ailment"
+                "name": "Matarunda",
+                "level": 72,
+                "type": "support"
+            },
+            {
+                "name": "Absorb Pierce",
+                "level": 74,
+                "type": "passive"
             }
         ],
         "inherits": "dark",
@@ -9980,19 +9980,9 @@
         "id": 171,
         "skills": [
             {
-                "name": "Absorb Wind",
-                "level": 81,
-                "type": "passive"
-            },
-            {
                 "name": "Dekunda",
                 "level": 0,
                 "type": "support"
-            },
-            {
-                "name": "High Counter",
-                "level": 78,
-                "type": "passive"
             },
             {
                 "name": "Mediarahan",
@@ -10000,14 +9990,24 @@
                 "type": "recovery"
             },
             {
+                "name": "Weary Thrust",
+                "level": 76,
+                "type": "strike"
+            },
+            {
+                "name": "High Counter",
+                "level": 78,
+                "type": "passive"
+            },
+            {
                 "name": "Samarecarm",
                 "level": 79,
                 "type": "recovery"
             },
             {
-                "name": "Weary Thrust",
-                "level": 76,
-                "type": "strike"
+                "name": "Absorb Wind",
+                "level": 81,
+                "type": "passive"
             }
         ],
         "inherits": "recovery",
@@ -10038,19 +10038,19 @@
         "id": 172,
         "skills": [
             {
-                "name": "Akasha Arts",
-                "level": 82,
-                "type": "strike"
-            },
-            {
-                "name": "Brave Blade",
-                "level": 85,
-                "type": "slash"
-            },
-            {
                 "name": "Mahamaon",
                 "level": 0,
                 "type": "light"
+            },
+            {
+                "name": "Megidola",
+                "level": 0,
+                "type": "almighty"
+            },
+            {
+                "name": "Akasha Arts",
+                "level": 82,
+                "type": "strike"
             },
             {
                 "name": "Mediarahan",
@@ -10058,9 +10058,9 @@
                 "type": "recovery"
             },
             {
-                "name": "Megidola",
-                "level": 0,
-                "type": "almighty"
+                "name": "Brave Blade",
+                "level": 85,
+                "type": "slash"
             }
         ],
         "inherits": "light",
@@ -10113,6 +10113,11 @@
                 "type": "almighty"
             },
             {
+                "name": "Repel Ice",
+                "level": 91,
+                "type": "passive"
+            },
+            {
                 "name": "Repel Elec",
                 "level": 92,
                 "type": "passive"
@@ -10120,11 +10125,6 @@
             {
                 "name": "Repel Fire",
                 "level": 93,
-                "type": "passive"
-            },
-            {
-                "name": "Repel Ice",
-                "level": 91,
                 "type": "passive"
             }
         ],
