@@ -50,4 +50,8 @@ export class PersonaComponent implements OnInit {
     );
     return params;
   }
+
+  stats() {
+    return Object.keys(this.persona?.stats);
+  }
 }
