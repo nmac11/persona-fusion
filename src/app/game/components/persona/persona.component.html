@@ -34,42 +34,17 @@
             gdArea="2 / 1 / 3 / 2" gdArea.gt-sm="1 / 2 / 3 / 2">
     <mat-tab-group>
       <mat-tab label="SPECIAL FUSION">
-        <a
-          mat-button
-          *ngFor="let persona of specialFusions"
-          routerLink="..//{{ persona.name | lowercase }}"
-          style="padding: 8px; margin-bottom: 0px;"
-        >
-          <h3
-            class="mat-h3"
-            style="
-              white-space: nowrap;
-              margin: 0;
-              padding: 0;
-              line-height: 1rem;
-              font-size: 16px;
-            "
-          >
-            {{ persona.name }}
-          </h3>
-          <p
-            class="mat-caption"
-            style="
-              white-space: nowrap;
-              margin: 0;
-              line-height: 1rem;
-              font-size: 12px;
-            "
-          >
-            {{ persona.arcanaName }} / {{ persona.level }}
-          </p>
-        </a>
+        <mat-nav-list>
+          <a mat-line mat-list-item *ngFor="let p of specialFusions"
+             routerLink="..//{{ p.name | lowercase }}">
+             <span mat-line>{{p.name}}</span>
+             <span mat-line>{{ p.arcanaName }} / Level {{ p.level }}</span>
+          </a>          
+        </mat-nav-list>
         <a mat-flat-button color="primary" routerLink="../../simulator" [queryParams]="queryParams()"
            style="width: 100%; margin-top: 16px">SIMULATE</a>
       </mat-tab>
     </mat-tab-group>
-
-
   </mat-card>
 
 </div>
