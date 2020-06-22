@@ -2,3 +2,7 @@
   color: #3f51b5;
   font-weight: 500;/*color: #fff;*/
 }
+
+::ng-deep mat-expansion-panel-header .mat-content {
+  flex-direction: column;
+}
