@@ -14,6 +14,7 @@ import { p4SkillInheritanceProvider } from '../tokens/p4/skill-inheritance-servi
 import { p4gSkillInheritanceProvider } from '../tokens/p4g/skill-inheritance-service-token';
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,13 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     ListDialogComponent,
     SkillsDialogComponent,
   ],
-  imports: [CommonModule, MaterialModule, FormsModule, DragDropModule],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    FormsModule,
+    DragDropModule,
+    SharedModule,
+  ],
   entryComponents: [ListDialogComponent, SkillsDialogComponent],
   providers: [
     p3pSimulatorProvider,
