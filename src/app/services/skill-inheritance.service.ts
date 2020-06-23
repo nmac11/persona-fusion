@@ -45,7 +45,8 @@ export class SkillInheritanceService {
   ): InheritableSkill[] {
     const skillsWithPR = this.addProbRatios(inheritType, skills);
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
-    if (ratios.filter((r) => r !== 0).every((r) => r === ratios[0]))
+    const nonZeroRatios = ratios.filter((r) => r !== 0);
+    if (nonZeroRatios.every((r) => r === nonZeroRatios[0]))
       this.addProbabilitiesEqualRatios(skillsWithPR, ratios, berths);
     else this.addProbabilitiesVariableRatios(skillsWithPR, ratios, berths);
     return skillsWithPR;
@@ -57,10 +58,10 @@ export class SkillInheritanceService {
     berths: number,
   ): void {
     const netProbRatio = ratios.reduce((sum, ratio) => sum + ratio, 0);
-    skillsWithPR.forEach(
-      (skill) =>
-        (skill.probability = (skill.probRatio * berths) / netProbRatio || 0),
-    );
+    skillsWithPR.forEach((skill) => {
+      const prob = (skill.probRatio * berths) / netProbRatio || 0;
+      skill.probability = prob > 1 ? 1 : prob;
+    });
   }
 
   private addProbabilitiesVariableRatios(
@@ -71,7 +72,9 @@ export class SkillInheritanceService {
     const cache = { 0: 0 };
     skillsWithPR.forEach((skill, i) => {
       const cached = cache[skill.probRatio];
-      skill.probability = cached ? cached : probability(ratios, berths, i);
+      skill.probability = isNaN(cached)
+        ? probability(ratios, berths, i)
+        : cached;
       cache[skill.probRatio] = skill.probability;
     });
   }
