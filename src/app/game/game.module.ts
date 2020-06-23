@@ -10,6 +10,7 @@ import { TriangleFusionsComponent } from './components/triangle-fusions/triangle
 import { ProvidersModule } from '../providers/providers.module';
 import { SimulatorModule } from '../simulator/simulator.module';
 import { NormalFusionsBottomSheetComponent } from './components/normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NormalFusionsBottomSheetComponent } from './components/normal-fusions-b
     RouterModule,
     ProvidersModule,
     SimulatorModule,
+    SharedModule,
   ],
   entryComponents: [NormalFusionsBottomSheetComponent],
 })
