@@ -51,7 +51,18 @@ export class PersonaComponent implements OnInit {
     return params;
   }
 
-  stats() {
+  stats(): Object {
     return Object.keys(this.persona?.stats);
+  }
+
+  affinities(): Object {
+    return Object.keys(this.persona?.affinities);
+  }
+
+  skills(): string {
+    return this.persona?.skills
+      .filter((s) => s.level === 0)
+      .map((s) => s.name)
+      .join(', ');
   }
 }
