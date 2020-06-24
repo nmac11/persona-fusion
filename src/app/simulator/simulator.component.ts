@@ -29,8 +29,7 @@ export class SimulatorComponent implements OnInit {
     private injector: Injector,
     private route: ActivatedRoute,
     private router: Router,
-    private personaListDialog: MatDialog,
-    private skillsDialog: MatDialog,
+    private matDialog: MatDialog,
     private location: Location,
   ) {
     const game = this.route.parent.snapshot.params.game;
@@ -47,26 +46,6 @@ export class SimulatorComponent implements OnInit {
 
   ngOnInit(): void {
     this.createFusionNodesFromRouteParams();
-  }
-
-  changePersona(fusionItem: FusionNode): void {
-    const dialogRef = this.openPersonaListDialog(
-      (p: Persona) => {
-        if (p) {
-          Object.assign(fusionItem, this.createFusionNode(p));
-          this.fuse();
-        }
-      },
-      { persona: fusionItem.persona },
-    );
-  }
-
-  changeLevel(event: any, fusionItem: FusionNode): void {
-    const inputLevel = event.target.value;
-    const previousLevel = fusionItem.currentLevel;
-    this.setLevel(fusionItem, inputLevel);
-    this.updateSkills(fusionItem, previousLevel);
-    this.fuse();
   }
 
   addItem(): void {
@@ -91,58 +70,15 @@ export class SimulatorComponent implements OnInit {
     this.updateQueryParams();
   }
 
-  editSkills(fusionItem: FusionNode): void {
-    const dialogRef = this.personaListDialog.open(SkillsDialogComponent, {
-      data: { fusionItem, skillService: this.skillService },
-      panelClass: 'simulator-skill-list-overlay-pane',
-    });
-    dialogRef.afterClosed().subscribe(() => this.fuse());
-  }
-
   skillsToLearn(): Skill[] {
     return this.fusionYield.persona.skills
       .filter((s) => s.level)
       .sort((a, b) => a.level - b.level);
   }
 
-  private setLevel(fusionItem, level): void {
-    if (level > 99) fusionItem.currentLevel = 99;
-    else if (level < fusionItem.persona.level)
-      fusionItem.currentLevel = fusionItem.persona.level;
-    else fusionItem.currentLevel = level;
-  }
-
-  private updateSkills(fusionItem, previousLevel): void {
-    const currentLevel = fusionItem.currentLevel;
-    if (currentLevel > previousLevel)
-      this.learnSkills(fusionItem, previousLevel, currentLevel);
-    else this.unlearnSkills(fusionItem, previousLevel, currentLevel);
-  }
-
-  private learnSkills(
-    fusionItem: FusionNode,
-    previousLevel: number,
-    currentLevel: number,
-  ) {
-    const acquiredSkills = fusionItem.persona.skills.filter(
-      (skill) =>
-        skill.level > previousLevel &&
-        skill.level <= currentLevel &&
-        !fusionItem.skills.some(
-          (learnedSkill) => learnedSkill.name === skill.name,
-        ),
-    );
-    fusionItem.skills.push(...acquiredSkills);
-  }
-
-  private unlearnSkills(
-    fusionItem: FusionNode,
-    previousLevel: number,
-    currentLevel: number,
-  ) {
-    fusionItem.skills = fusionItem.skills.filter(
-      (skill) => skill.level <= currentLevel || !skill.level,
-    );
+  fuse(update = true): void {
+    this.fusionYield = this.simulatorService.fuse(this.fusionItems);
+    if (update) this.updateQueryParams();
   }
 
   private createFusionNodesFromRouteParams(): void {
@@ -184,11 +120,6 @@ export class SimulatorComponent implements OnInit {
     };
   }
 
-  private fuse(update = true): void {
-    this.fusionYield = this.simulatorService.fuse(this.fusionItems);
-    if (update) this.updateQueryParams();
-  }
-
   private updateQueryParams(): void {
     const queryParams = {};
     if (this.fusionYield)
@@ -221,7 +152,7 @@ export class SimulatorComponent implements OnInit {
       compendium: this.compendiumService,
     };
     Object.assign(data, options);
-    const dialogRef = this.personaListDialog.open(ListDialogComponent, {
+    const dialogRef = this.matDialog.open(ListDialogComponent, {
       data,
       panelClass: 'simulator-list-overlay-pane',
     });

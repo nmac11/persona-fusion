@@ -15,12 +15,14 @@ import { p4gSkillInheritanceProvider } from '../tokens/p4g/skill-inheritance-ser
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SharedModule } from '../shared/shared.module';
+import { FusionItemComponent } from './components/fusion-item/fusion-item.component';
 
 @NgModule({
   declarations: [
     SimulatorComponent,
     ListDialogComponent,
     SkillsDialogComponent,
+    FusionItemComponent,
   ],
   imports: [
     CommonModule,
