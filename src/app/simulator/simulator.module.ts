@@ -16,6 +16,7 @@ import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SharedModule } from '../shared/shared.module';
 import { FusionItemComponent } from './components/fusion-item/fusion-item.component';
+import { DialogPersonaListComponent } from './components/dialog-persona-list/dialog-persona-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FusionItemComponent } from './components/fusion-item/fusion-item.compon
     ListDialogComponent,
     SkillsDialogComponent,
     FusionItemComponent,
+    DialogPersonaListComponent,
   ],
   imports: [
     CommonModule,
