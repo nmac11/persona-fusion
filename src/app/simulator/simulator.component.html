@@ -34,6 +34,11 @@
       
     </mat-expansion-panel>
 
+    <div fxLayout="row" fxLayoutAlign="end">
+      <button mat-button color="accent" [disabled]="!fusionYield">SAVE</button>
+      <button mat-button color="accent">LOAD</button>
+    </div>
+
     <div fxLayout="column" fxLayoutGap="16px">
       <mat-accordion multi>
         <simulator-fusion-item 
