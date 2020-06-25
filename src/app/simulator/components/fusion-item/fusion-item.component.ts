@@ -39,18 +39,6 @@ export class FusionItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // changePersona(fusionItem: FusionNode): void {
-  //   const dialogRef = this.openPersonaListDialog(
-  //     (p: Persona) => {
-  //       if (p) {
-  //         Object.assign(fusionItem, this.createFusionNode(p));
-  //         this.fuse();
-  //       }
-  //     },
-  //     { persona: fusionItem.persona },
-  //   );
-  // }
-
   onDelete(): void {
     this.delete.emit(null);
   }
