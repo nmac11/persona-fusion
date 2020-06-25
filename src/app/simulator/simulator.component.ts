@@ -49,7 +49,8 @@ export class SimulatorComponent implements OnInit {
   }
 
   fusionItemPlaceholders(): number[] {
-    return Array(3 - this.fusionItems.length);
+    const length = 3 - this.fusionItems.length;
+    return Array(length >= 0 ? length : 0);
   }
 
   addItem(): void {
