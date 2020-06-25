@@ -1,5 +1,5 @@
 <h1 mat-dialog-title>
-  <ng-container *ngIf="selectedPersona; else noSelection">Selected: {{selectedPersona.name}}</ng-container>
+  <ng-container *ngIf="selectedItem; else noSelection">Selected: {{selectedItem.persona.name}}</ng-container>
   <ng-template #noSelection>Select a Persona</ng-template>
 </h1>
 <mat-dialog-content>
@@ -10,6 +10,7 @@
       </ng-template>
       <simulator-dialog-persona-list
         [compendium]="data.compendium"
+        [fusionNodeHelper]="data.fusionNodeHelper"
         (dblClickSelection)="submitSelection($event)"
         (changeSelected)="selectionChange($event)">
       </simulator-dialog-persona-list>
@@ -25,6 +26,6 @@
 </mat-dialog-content>
 <mat-dialog-actions style="justify-content: flex-end;">
   <button mat-button (click)="onCancel()">CANCEL</button>
-  <button mat-raised-button *ngIf="selectedPersona" [mat-dialog-close]="selectedPersona" color="primary" cdkFocusInitial>DONE</button>
-  <button mat-button *ngIf="!selectedPersona" [mat-dialog-close]="selectedPersona" color="primary" disabled>DONE</button>
+  <button mat-raised-button *ngIf="selectedItem" [mat-dialog-close]="selectedItem" color="primary" cdkFocusInitial>DONE</button>
+  <button mat-button *ngIf="!selectedItem" [mat-dialog-close]="selectedItem" color="primary" disabled>DONE</button>
 </mat-dialog-actions>

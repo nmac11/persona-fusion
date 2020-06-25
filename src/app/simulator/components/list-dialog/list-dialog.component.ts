@@ -1,7 +1,9 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Persona } from '../../../models/persona';
+import { FusionNode } from '../../../models/fusion-node';
 import { CompendiumService } from '../../../services/compendium.service';
+import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
 
 @Component({
   selector: 'simulator-list-dialog',
@@ -9,25 +11,26 @@ import { CompendiumService } from '../../../services/compendium.service';
   styleUrls: ['./list-dialog.component.css'],
 })
 export class ListDialogComponent {
-  selectedPersona: Persona;
+  selectedItem: FusionNode;
 
   constructor(
     public dialogRef: MatDialogRef<ListDialogComponent>,
     @Inject(MAT_DIALOG_DATA)
-    public data: { compendium: CompendiumService; persona?: Persona },
-  ) {
-    this.selectedPersona = data.persona;
-  }
+    public data: {
+      compendium: CompendiumService;
+      fusionNodeHelper: FusionNodeHelper;
+    },
+  ) {}
 
   onCancel(): void {
     this.dialogRef.close();
   }
 
-  selectionChange(persona: Persona): void {
-    this.selectedPersona = persona;
+  selectionChange(fusionItem: FusionNode): void {
+    this.selectedItem = fusionItem;
   }
 
-  submitSelection(persona: Persona): void {
-    this.dialogRef.close(persona);
+  submitSelection(fusionItem: FusionNode): void {
+    this.dialogRef.close(fusionItem);
   }
 }

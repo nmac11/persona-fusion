@@ -12,6 +12,7 @@ import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.
 import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
 import { MatDialog } from '@angular/material/dialog';
+import { FusionNodeHelper } from './helpers/fusion-node-helper';
 
 @Component({
   selector: 'simulator-root',
@@ -24,6 +25,7 @@ export class SimulatorComponent implements OnInit {
   compendiumService: CompendiumService;
   simulatorService: SimulatorService;
   skillService: SkillService;
+  fusionNodeHelper: FusionNodeHelper;
 
   constructor(
     private injector: Injector,
@@ -45,7 +47,11 @@ export class SimulatorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.createFusionNodesFromRouteParams();
+    this.fusionNodeHelper = new FusionNodeHelper(
+      this.compendiumService,
+      this.skillService,
+    );
+    this.loadFusionNodesFromRouteParams();
   }
 
   fusionItemPlaceholders(): number[] {
@@ -54,11 +60,9 @@ export class SimulatorComponent implements OnInit {
   }
 
   addItem(): void {
-    let persona: Persona;
-    this.openPersonaListDialog((p: Persona) => {
-      persona = p;
-      if (p) {
-        this.fusionItems.push(this.createFusionNode(p));
+    this.openPersonaListDialog((fusionItem: FusionNode) => {
+      if (fusionItem) {
+        this.fusionItems.push(fusionItem);
         this.fuse();
       }
     });
@@ -86,43 +90,11 @@ export class SimulatorComponent implements OnInit {
     if (update) this.updateQueryParams();
   }
 
-  private createFusionNodesFromRouteParams(): void {
-    const queryParams = this.route.parent.snapshot.queryParams;
-    for (let i = 2, param = queryParams['p1']; param; i++) {
-      this.createFusionNodeFromParam(param);
-      param = queryParams[`p${i}`];
-    }
+  private loadFusionNodesFromRouteParams(): void {
+    this.fusionItems = this.fusionNodeHelper.createFusionNodesFromRouteParams(
+      this.route.parent.snapshot.queryParams,
+    );
     this.fuse(false);
-  }
-
-  private createFusionNodeFromParam(param: string): void {
-    const [name, level, ...skillNames] = param.split(',');
-    const persona: Persona = this.compendiumService.find(name);
-    const skills: Skill[] = this.findSkills(skillNames);
-    if (persona)
-      this.fusionItems.push(this.createFusionNode(persona, +level, skills));
-  }
-
-  private findSkills(skillNames: string[]) {
-    return skillNames.reduce((skills, skillName) => {
-      const skill = this.skillService.find(skillName);
-      if (skill) skills.push(skill);
-      return skills;
-    }, []);
-  }
-
-  private createFusionNode(
-    p: Persona,
-    level: number = null,
-    skills: Skill[] = [],
-  ): FusionNode {
-    return {
-      persona: p,
-      currentLevel: level >= p.level && level < 100 ? level : p.level,
-      skills: skills.length
-        ? skills
-        : p.skills.filter((skill) => skill.level === 0),
-    };
   }
 
   private updateQueryParams(): void {
@@ -155,6 +127,7 @@ export class SimulatorComponent implements OnInit {
   private openPersonaListDialog(fn: (res) => void, options = {}) {
     const data = {
       compendium: this.compendiumService,
+      fusionNodeHelper: this.fusionNodeHelper,
     };
     Object.assign(data, options);
     const dialogRef = this.matDialog.open(ListDialogComponent, {

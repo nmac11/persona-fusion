@@ -11,8 +11,10 @@ import {
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
 import { Persona } from '../../../models/persona';
+import { FusionNode } from '../../../models/fusion-node';
 import { CompendiumService } from '../../../services/compendium.service';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
+import { FusionNodeHelper } from '../../helpers/fusion-node-helper'
 
 @Component({
   selector: 'simulator-dialog-persona-list',
@@ -22,8 +24,9 @@ import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
 export class DialogPersonaListComponent implements OnInit, AfterViewInit {
   @ViewChild('filterField') filterField: ElementRef;
   @Input('compendium') compendiumService: CompendiumService;
-  @Output() changeSelected: EventEmitter<Persona | null> = new EventEmitter();
-  @Output() dblClickSelection: EventEmitter<Persona> = new EventEmitter();
+  @Input('fusionNodeHelper') fusionNodeHelper: FusionNodeHelper;
+  @Output() changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
+  @Output() dblClickSelection: EventEmitter<FusionNode> = new EventEmitter();
 
   list: Persona[];
 
@@ -55,10 +58,12 @@ export class DialogPersonaListComponent implements OnInit, AfterViewInit {
   }
 
   selectionChange(persona: Persona): void {
-    this.changeSelected.emit(persona);
+    const fusionNode = this.fusionNodeHelper.createFusionNode(persona);
+    this.changeSelected.emit(fusionNode);
   }
 
   dblClickSubmit(persona: Persona): void {
-    this.dblClickSelection.emit(persona);
+    const fusionNode = this.fusionNodeHelper.createFusionNode(persona);
+    this.dblClickSelection.emit(fusionNode);
   }
 }
