@@ -48,6 +48,10 @@ export class SimulatorComponent implements OnInit {
     this.createFusionNodesFromRouteParams();
   }
 
+  fusionItemPlaceholders(): number[] {
+    return Array(3 - this.fusionItems.length);
+  }
+
   addItem(): void {
     let persona: Persona;
     this.openPersonaListDialog((p: Persona) => {

@@ -2,7 +2,7 @@
   <shared-persona-info *ngIf="fusionYield; else noFusion" [persona]="fusionYield.persona"></shared-persona-info>
   <ng-template #noFusion>
     <div>
-      <mat-card>
+      <mat-card style="height: 100%">
         <mat-card-header>
           <mat-card-title>Fusion Simulator</mat-card-title>
           <mat-card-subtitle>{{ fusionItems.length > 1 ? 'Cannot fuse current items.' : 'Add personae to proceed.'}}</mat-card-subtitle>
@@ -10,7 +10,7 @@
       </mat-card>
     </div>
   </ng-template>
-  <div fxLayout="column" fxLayoutGap="24px">
+  <div fxLayout="column" fxLayoutGap="16px">
     <mat-expansion-panel *ngIf="fusionYield" expanded>
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -35,19 +35,35 @@
     </mat-expansion-panel>
 
     <div fxLayout="column" fxLayoutGap="16px">
-      <mat-accordion *ngIf="fusionItems.length" multi>
+      <mat-accordion multi>
         <simulator-fusion-item 
           *ngFor="let fusionItem of fusionItems; let i = index;"
           (delete)="removeItem(i)"
           (change)="fuse()"
           [fusionItem]="fusionItem"></simulator-fusion-item>
+        <div *ngFor="let n of fusionItemPlaceholders()"
+             class="mat-body-2"
+             style="box-sizing: border-box;
+                    border-radius: 4px;
+                    height: 48px;
+                    width: 100%;
+                    margin-top: 8px;
+                    border: 2px dashed rgba(0,0,0,.12);
+                    color: rgba(0,0,0,.37);
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    padding: 0 24px;">
+                    PERSONA
+        </div>
       </mat-accordion>
+
       <div fxLayout="column" fxLayoutGap="8px">
         <button mat-flat-button color="primary" style="width: 100%" (click)="addItem()">
           <mat-icon>add</mat-icon> ADD PERSONA
         </button>
 
-        <button *ngIf="fusionItems.length" mat-stroked-button color="warn" style="width: 100%" (click)="clearItems()">
+        <button mat-stroked-button color="warn" style="width: 100%" (click)="clearItems()" [disabled]="!fusionItems.length">
           <mat-icon>clear_all</mat-icon> CLEAR
         </button>
       </div>
