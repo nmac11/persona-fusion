@@ -3,20 +3,23 @@ import { P3P_NORMAL_FUSION } from '../tokens/p3p/normal-fusion-service-token';
 import { P3P_TRIANGLE_FUSION } from '../tokens/p3p/triangle-fusion-service-token';
 import { P3P_FUSION_CHART } from '../tokens/p3p/fusion-chart-service-token';
 import { P3P_SIMULATOR } from '../tokens/p3p/simulator-service-token';
-import { P3FES_SIMULATOR } from '../tokens/p3fes/simulator-service-token';
 import { P3P_SKILL } from '../tokens/p3p/skill-service-token';
+import { P3P_PERSONA_STORE } from '../tokens/p3p/persona-store-service-token';
 
 import { P3FES_COMPENDIUM } from '../tokens/p3fes/compendium-service-token';
 import { P3FES_NORMAL_FUSION } from '../tokens/p3fes/normal-fusion-service-token';
 import { P3FES_TRIANGLE_FUSION } from '../tokens/p3fes/triangle-fusion-service-token';
 import { P3FES_FUSION_CHART } from '../tokens/p3fes/fusion-chart-service-token';
+import { P3FES_SIMULATOR } from '../tokens/p3fes/simulator-service-token';
 import { P3FES_SKILL } from '../tokens/p3fes/skill-service-token';
+import { P3FES_PERSONA_STORE } from '../tokens/p3fes/persona-store-service-token';
 
 import { P4G_COMPENDIUM } from '../tokens/p4g/compendium-service-token';
 import { P4G_NORMAL_FUSION } from '../tokens/p4g/normal-fusion-service-token';
 import { P4G_TRIANGLE_FUSION } from '../tokens/p4g/triangle-fusion-service-token';
 import { P4G_FUSION_CHART } from '../tokens/p4g/fusion-chart-service-token';
 import { P4G_SIMULATOR } from '../tokens/p4g/simulator-service-token';
+import { P4G_PERSONA_STORE } from '../tokens/p4g/persona-store-service-token';
 
 import { P4_COMPENDIUM } from '../tokens/p4/compendium-service-token';
 import { P4_NORMAL_FUSION } from '../tokens/p4/normal-fusion-service-token';
@@ -24,6 +27,7 @@ import { P4_TRIANGLE_FUSION } from '../tokens/p4/triangle-fusion-service-token';
 import { P4_FUSION_CHART } from '../tokens/p4/fusion-chart-service-token';
 import { P4_SIMULATOR } from '../tokens/p4/simulator-service-token';
 import { P4_SKILL } from '../tokens/p4/skill-service-token';
+import { P4_PERSONA_STORE } from '../tokens/p4/persona-store-service-token';
 
 export const serviceToken: any = {
   p3p: {
@@ -33,6 +37,7 @@ export const serviceToken: any = {
     fusionChart: P3P_FUSION_CHART,
     simulator: P3P_SIMULATOR,
     skill: P3P_SKILL,
+    personaStore: P3P_PERSONA_STORE,
   },
   p3fes: {
     compendium: P3FES_COMPENDIUM,
@@ -41,6 +46,7 @@ export const serviceToken: any = {
     fusionChart: P3FES_FUSION_CHART,
     simulator: P3FES_SIMULATOR,
     skill: P3FES_SKILL,
+    personaStore: P3FES_PERSONA_STORE,
   },
   p4g: {
     compendium: P4G_COMPENDIUM,
@@ -49,6 +55,7 @@ export const serviceToken: any = {
     fusionChart: P4G_FUSION_CHART,
     simulator: P4G_SIMULATOR,
     skill: P4_SKILL,
+    personaStore: P4G_PERSONA_STORE,
   },
   p4: {
     compendium: P4_COMPENDIUM,
@@ -57,5 +64,6 @@ export const serviceToken: any = {
     fusionChart: P4_FUSION_CHART,
     simulator: P4_SIMULATOR,
     skill: P4_SKILL,
+    personaStore: P4_PERSONA_STORE,
   },
 };

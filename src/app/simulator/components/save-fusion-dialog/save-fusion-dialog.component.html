@@ -1,0 +1,42 @@
+<form [formGroup]="saveForm" (ngSubmit)="onSave()">
+  <h1 mat-dialog-title>
+    Save {{fusionItem.persona.name}}
+  </h1>
+  <mat-dialog-content style="max-height: 60vh;" >
+    <div style="background: #fff; z-index: 10; position: sticky; top: 0">
+      <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Save name</mat-label>
+        <input #saveNameField autocomplete="off" formControlName="saveName" matInput>
+        <mat-error *ngIf="saveForm.get('saveName').getError('required')">Save name is required.</mat-error>
+        <mat-error *ngIf="saveForm.get('saveName').getError('unavailable')">A record with that name already exists.</mat-error>
+      </mat-form-field>
+    </div>
+
+    <mat-selection-list #skills (selectionChange)="updateSelections($event)">
+      <div mat-subheader>Skills</div>
+      <mat-list-option *ngFor="let skill of fusionItem.inheritableSkills" [value]="skill">
+        <span mat-line>{{skill.name}}</span>
+        <small mat-line>{{skill.type}}</small>
+      </mat-list-option>
+    </mat-selection-list>
+
+    <div class="mat-body-2" style="position: sticky; bottom: 0; background: #fff; text-align: center; color: #f44336">
+      <span *ngIf="saveForm.get('skills').getError('over')">
+        Too many skills. Please uncheck {{saveForm.get('skills').getError('over')}}.
+      </span>
+      <span *ngIf="skills.selectedOptions.selected.length !== 0 && saveForm.get('skills').getError('under')">
+        Pick {{saveForm.get('skills').getError('under')}} more.
+      </span>
+    </div>
+    <div *ngIf="skills.selectedOptions.selected.length === 0"
+         class="mat-body-2"
+         style="position: sticky; bottom: 0; background: #fff; text-align: center;">
+      <span>Pick {{fusionItem.skillsInheritedCount}} skill<span *ngIf="fusionItem.skillsInheritedCount !== 1">s</span>.</span>
+    </div>
+
+  </mat-dialog-content>
+  <mat-dialog-actions style="justify-content: flex-end;">
+    <button type="button" mat-button (click)="onCancel()">CANCEL</button>
+    <button type="submit" mat-raised-button color="primary" [disabled]="!saveForm.valid">SAVE</button>
+  </mat-dialog-actions>
+</form>

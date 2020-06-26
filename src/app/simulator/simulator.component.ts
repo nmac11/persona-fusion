@@ -9,10 +9,12 @@ import { SkillService } from '../services/skill.service';
 import { serviceToken } from '../helpers/service-token-helper';
 import { ListDialogComponent } from './components/list-dialog/list-dialog.component';
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
+import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
 import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
 import { MatDialog } from '@angular/material/dialog';
 import { FusionNodeHelper } from './helpers/fusion-node-helper';
+import { PersonaStoreService } from '../services/persona-store.service';
 
 @Component({
   selector: 'simulator-root',
@@ -25,6 +27,7 @@ export class SimulatorComponent implements OnInit {
   compendiumService: CompendiumService;
   simulatorService: SimulatorService;
   skillService: SkillService;
+  personaStoreService: PersonaStoreService;
   fusionNodeHelper: FusionNodeHelper;
 
   constructor(
@@ -44,6 +47,9 @@ export class SimulatorComponent implements OnInit {
     this.skillService = this.injector.get<SkillService>(
       serviceToken[game].skill,
     );
+    this.personaStoreService = this.injector.get<PersonaStoreService>(
+      serviceToken[game].personaStore,
+    );
   }
 
   ngOnInit(): void {
@@ -57,6 +63,10 @@ export class SimulatorComponent implements OnInit {
   fusionItemPlaceholders(): number[] {
     const length = 3 - this.fusionItems.length;
     return Array(length >= 0 ? length : 0);
+  }
+
+  saveFusion(): void {
+    this.openSaveFusionDialog();
   }
 
   addItem(): void {
@@ -124,16 +134,26 @@ export class SimulatorComponent implements OnInit {
     }
   }
 
-  private openPersonaListDialog(fn: (res) => void, options = {}) {
+  private openPersonaListDialog(fn: (res) => void): void {
     const data = {
       compendium: this.compendiumService,
       fusionNodeHelper: this.fusionNodeHelper,
     };
-    Object.assign(data, options);
     const dialogRef = this.matDialog.open(ListDialogComponent, {
       data,
       panelClass: 'simulator-list-overlay-pane',
     });
     dialogRef.afterClosed().subscribe(fn);
+  }
+
+  private openSaveFusionDialog(): void {
+    const dialogRef = this.matDialog.open(SaveFusionDialogComponent, {
+      data: {
+        fusionItem: this.fusionYield,
+        personaStore: this.personaStoreService,
+        fusionNodeHelper: this.fusionNodeHelper,
+      },
+      panelClass: 'simulator-save-overlay-pane',
+    });
   }
 }
