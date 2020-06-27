@@ -24,6 +24,7 @@ import { DialogPersonaListComponent } from './components/dialog-persona-list/dia
 import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
 import { NgxIndexedDBModule } from 'ngx-indexed-db';
 import { appDbConfig } from './config/app-db-config';
+import { DialogSavedListComponent } from './components/dialog-saved-list/dialog-saved-list.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { appDbConfig } from './config/app-db-config';
     FusionItemComponent,
     DialogPersonaListComponent,
     SaveFusionDialogComponent,
+    DialogSavedListComponent,
   ],
   imports: [
     CommonModule,

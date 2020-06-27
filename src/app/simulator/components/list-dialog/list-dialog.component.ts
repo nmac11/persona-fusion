@@ -3,6 +3,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Persona } from '../../../models/persona';
 import { FusionNode } from '../../../models/fusion-node';
 import { CompendiumService } from '../../../services/compendium.service';
+import { PersonaStoreService } from '../../../services/persona-store.service';
 import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
 
 @Component({
@@ -18,6 +19,7 @@ export class ListDialogComponent {
     @Inject(MAT_DIALOG_DATA)
     public data: {
       compendium: CompendiumService;
+      personaStore: PersonaStoreService;
       fusionNodeHelper: FusionNodeHelper;
     },
   ) {}

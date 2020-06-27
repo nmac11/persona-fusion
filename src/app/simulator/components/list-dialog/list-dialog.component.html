@@ -8,18 +8,26 @@
       <ng-template matTabLabel>
         PERSONAS
       </ng-template>
-      <simulator-dialog-persona-list
-        [compendium]="data.compendium"
-        [fusionNodeHelper]="data.fusionNodeHelper"
-        (dblClickSelection)="submitSelection($event)"
-        (changeSelected)="selectionChange($event)">
-      </simulator-dialog-persona-list>
+      <ng-template matTabContent>
+        <simulator-dialog-persona-list
+          [compendium]="data.compendium"
+          [fusionNodeHelper]="data.fusionNodeHelper"
+          (dblClickSelection)="submitSelection($event)"
+          (changeSelected)="selectionChange($event)">
+        </simulator-dialog-persona-list>
+      </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template matTabLabel>
         SAVED
       </ng-template>
-      Content 2
+      <ng-template matTabContent>
+        <simulator-dialog-saved-list
+          [personaStore]="data.personaStore"
+          (changeSelected)="selectionChange($event)"
+          (dblClickSelection)="submitSelection($event)">        
+        </simulator-dialog-saved-list>
+      </ng-template>
     </mat-tab>
   </mat-tab-group>
 

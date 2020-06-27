@@ -137,6 +137,7 @@ export class SimulatorComponent implements OnInit {
   private openPersonaListDialog(fn: (res) => void): void {
     const data = {
       compendium: this.compendiumService,
+      personaStore: this.personaStoreService,
       fusionNodeHelper: this.fusionNodeHelper,
     };
     const dialogRef = this.matDialog.open(ListDialogComponent, {
