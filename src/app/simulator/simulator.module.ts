@@ -12,18 +12,13 @@ import { p4SimulatorProvider } from '../tokens/p4/simulator-service-token';
 import { p3SkillInheritanceProvider } from '../tokens/p3/skill-inheritance-service-token';
 import { p4SkillInheritanceProvider } from '../tokens/p4/skill-inheritance-service-token';
 import { p4gSkillInheritanceProvider } from '../tokens/p4g/skill-inheritance-service-token';
-import { p3pPersonaStoreProvider } from '../tokens/p3p/persona-store-service-token';
-import { p3fesPersonaStoreProvider } from '../tokens/p3fes/persona-store-service-token';
-import { p4PersonaStoreProvider } from '../tokens/p4/persona-store-service-token';
-import { p4gPersonaStoreProvider } from '../tokens/p4g/persona-store-service-token';
 import { SkillsDialogComponent } from './components/skills-dialog/skills-dialog.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SharedModule } from '../shared/shared.module';
 import { FusionItemComponent } from './components/fusion-item/fusion-item.component';
 import { DialogPersonaListComponent } from './components/dialog-persona-list/dialog-persona-list.component';
 import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
-import { NgxIndexedDBModule } from 'ngx-indexed-db';
-import { appDbConfig } from './config/app-db-config';
+import { PersonaStoreModule } from '../persona-store/persona-store.module';
 import { DialogSavedListComponent } from './components/dialog-saved-list/dialog-saved-list.component';
 
 @NgModule({
@@ -43,7 +38,7 @@ import { DialogSavedListComponent } from './components/dialog-saved-list/dialog-
     ReactiveFormsModule,
     DragDropModule,
     SharedModule,
-    NgxIndexedDBModule.forRoot(appDbConfig),
+    PersonaStoreModule,
   ],
   entryComponents: [
     ListDialogComponent,
@@ -58,10 +53,6 @@ import { DialogSavedListComponent } from './components/dialog-saved-list/dialog-
     p3SkillInheritanceProvider,
     p4SkillInheritanceProvider,
     p4gSkillInheritanceProvider,
-    p3pPersonaStoreProvider,
-    p3fesPersonaStoreProvider,
-    p4PersonaStoreProvider,
-    p4gPersonaStoreProvider,
   ],
 })
 export class SimulatorModule {}
