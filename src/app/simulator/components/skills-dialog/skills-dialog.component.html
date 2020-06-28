@@ -2,47 +2,53 @@
   <ng-container>{{data.fusionItem.persona.name}}</ng-container>
 </h1>
 <mat-dialog-content>
-  <mat-tab-group style="height: 360px">
+  <mat-tab-group>
     <mat-tab>
       <ng-template matTabLabel>
-          <span [matBadge]="data.fusionItem.skills.length" matBadgeOverlap="false">LEARNED</span>
+        <span [matBadge]="data.fusionItem.skills.length" matBadgeOverlap="false">LEARNED</span>
       </ng-template>
-      <mat-list cdkDropList (cdkDropListDropped)="drop($event)">
-        <mat-list-item cdkDrag *ngFor="let skill of data.fusionItem.skills; let i = index"
-          [style.color]="(i < 8) ? 'rgba(0,0,0,.87)' : 'rgba(0,0,0,.54)'">
-          <mat-icon mat-list-icon cdkDragHandle>unfold_more</mat-icon>
-          <span matLine>
-            {{skill.name}}
-          </span>
-          <button mat-icon-button (click)="remove(i)">
-            <mat-icon color="warn">remove</mat-icon>
-          </button>
-        </mat-list-item>
-      </mat-list>
+      <ng-template matTabContent>
+        <mat-list cdkDropList (cdkDropListDropped)="drop($event)" style="height: 50vh; min-height: 280px; max-height: 580px;">
+          <mat-list-item cdkDrag *ngFor="let skill of data.fusionItem.skills; let i = index"
+            [style.color]="(i < 8) ? 'rgba(0,0,0,.87)' : 'rgba(0,0,0,.54)'">
+            <mat-icon mat-list-icon cdkDragHandle>unfold_more</mat-icon>
+            <span matLine>
+              {{skill.name}}
+            </span>
+            <button mat-icon-button (click)="remove(i)">
+              <mat-icon color="warn">remove</mat-icon>
+            </button>
+          </mat-list-item>
+        </mat-list>
+      </ng-template>
     </mat-tab>
     <mat-tab label="ALL">
-      <div style="position: sticky; top: 0; z-index: 100; background: #fff">
-        <mat-form-field appearance="fill" style="width: 100%; box-sizing: border-box;">
-          <mat-label>Filter</mat-label>
-          <input #filterField autocomplete="off" matInput>
-          <button *ngIf="filterField.value"
-              matSuffix mat-icon-button 
-              (click)="clearFilter()">
-        <mat-icon>close</mat-icon>
-      </button>
-        </mat-form-field>
-      </div>
-      <mat-list>
-        <mat-list-item *ngFor="let skill of skills">
-          <span matLine>
-            {{skill.name}}
-          </span>
-          <span mat-line class="mat-caption mat-body-1">{{skill.type}}</span>
-          <button mat-icon-button (click)="add(skill)">
-            <mat-icon color="primary">add</mat-icon>
-          </button>
-        </mat-list-item>
-      </mat-list>
+      <ng-template matTabContent>
+        <div style="position: sticky; top: 0; z-index: 100; background: #fff">
+          <mat-form-field appearance="fill" style="width: 100%; box-sizing: border-box;">
+            <mat-label>Filter</mat-label>
+            <input #filterField autocomplete="off" matInput inputDebouncer (debouncedInput)="applyFilter($event)">
+            <button *ngIf="filterField.value"
+                matSuffix mat-icon-button 
+                (click)="filterField.value = ''; clearFilter()">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <mat-list>
+          <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+            <mat-list-item *cdkVirtualFor="let skill of skills">
+              <span matLine>
+                {{skill.name}}
+              </span>
+              <span mat-line class="mat-caption mat-body-1">{{skill.type}}</span>
+              <button mat-icon-button (click)="add(skill)">
+                <mat-icon color="primary">add</mat-icon>
+              </button>
+            </mat-list-item>
+          </cdk-virtual-scroll-viewport>
+        </mat-list>
+      </ng-template>
     </mat-tab>
   </mat-tab-group>
 </mat-dialog-content>

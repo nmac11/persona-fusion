@@ -1,7 +1,6 @@
 import {
   Component,
   OnInit,
-  AfterViewInit,
   Inject,
   Injector,
   ViewChild,
@@ -22,9 +21,8 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
   templateUrl: './skills-dialog.component.html',
   styleUrls: ['./skills-dialog.component.css'],
 })
-export class SkillsDialogComponent implements OnInit, AfterViewInit {
+export class SkillsDialogComponent implements OnInit {
   skills: Skill[];
-  @ViewChild('filterField') filterField: ElementRef;
 
   constructor(
     public dialogRef: MatDialogRef<SkillsDialogComponent>,
@@ -42,14 +40,6 @@ export class SkillsDialogComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {}
-
-  ngAfterViewInit(): void {
-    fromEvent(this.filterField.nativeElement, 'keyup')
-      .pipe(debounceTime(200))
-      .subscribe((k: KeyboardEvent) =>
-        this.applyFilter(this.filterField.nativeElement.value),
-      );
-  }
 
   onCancel(): void {
     this.dialogRef.close();
@@ -75,10 +65,9 @@ export class SkillsDialogComponent implements OnInit, AfterViewInit {
 
   clearFilter() {
     this.skills = this.data.skillService.getAll();
-    this.filterField.nativeElement.value = '';
   }
 
-  private applyFilter(key: string = ''): void {
+  applyFilter(key: string = ''): void {
     this.skills = this.data.skillService
       .getAll()
       .filter(
