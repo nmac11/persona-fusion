@@ -1,10 +1,12 @@
 <div style="background: #fff; z-index: 10; position: sticky; top: 0">
   <mat-form-field appearance="fill" style="width: 100%;">
     <mat-label>Filter</mat-label>
-    <input matInput type="text" #filterField (keydown.enter)="$event.target.blur();false" autocomplete="off">
+    <input matInput type="text" #filterField (keydown.enter)="$event.target.blur();false" 
+            inputDebouncer
+            (debouncedInput)="applyFilter($event)" autocomplete="off">
     <button *ngIf="filterField.value"
-            matSuffix mat-icon-button 
-            (click)="clearFilter()">
+            matSuffix mat-icon-button
+            (click)="filterField.value = ''; clearFilter()">
       <mat-icon>close</mat-icon>
     </button>
   </mat-form-field>
@@ -18,8 +20,7 @@
       <span mat-line>{{savedPersona.data.persona.name}} ({{savedPersona.name}})</span>
       <span mat-line>{{savedPersona.data.persona.arcanaName}} / {{savedPersona.data.currentLevel}}</span>
     </mat-list-option>
-    </cdk-virtual-scroll-viewport>
-
+  </cdk-virtual-scroll-viewport>
 </mat-selection-list>
 <p *ngIf="!list?.length" class="mat-body-1">
   No results.

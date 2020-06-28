@@ -2,7 +2,6 @@ import {
   Component,
   OnInit,
   ViewChild,
-  AfterViewInit,
   ElementRef,
   Input,
   Output,
@@ -23,7 +22,6 @@ import { PersonaStoreService } from '../../../services/persona-store.service';
   styleUrls: ['./dialog-saved-list.component.css'],
 })
 export class DialogSavedListComponent implements OnInit {
-  @ViewChild('filterField') filterField: ElementRef;
   @Input('personaStore') personaStoreService: PersonaStoreService;
   @Output()
   changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
@@ -37,22 +35,12 @@ export class DialogSavedListComponent implements OnInit {
     this.loadList();
   }
 
-  ngAfterViewInit(): void {
-    fromEvent(this.filterField.nativeElement, 'keyup')
-      .pipe(debounceTime(200), distinctUntilChanged())
-      .subscribe(
-        async (k: KeyboardEvent) =>
-          await this.applyFilter(this.filterField.nativeElement.value),
-      );
-  }
-
   async loadList(): Promise<void> {
     this.list = await this.personaStoreService.loadAll();
   }
 
   async clearFilter(): Promise<void> {
     await this.loadList();
-    this.filterField.nativeElement.value = '';
   }
 
   async applyFilter(filter: string): Promise<void> {

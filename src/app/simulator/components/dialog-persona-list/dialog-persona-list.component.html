@@ -1,25 +1,27 @@
 <div style="background: #fff; z-index: 10; position: sticky; top: 0">
   <mat-form-field appearance="fill" style="width: 100%;">
     <mat-label>Filter</mat-label>
-    <input matInput type="text" #filterField (keydown.enter)="$event.target.blur();false" autocomplete="off">
+    <input matInput type="text" #filterField (keydown.enter)="$event.target.blur();false" 
+            inputDebouncer
+            (debouncedInput)="applyFilter($event)" autocomplete="off">
     <button *ngIf="filterField.value"
-            matSuffix mat-icon-button 
-            (click)="clearFilter()">
+            matSuffix mat-icon-button
+            (click)="filterField.value = ''; clearFilter()">
       <mat-icon>close</mat-icon>
     </button>
   </mat-form-field>
 </div>
-  <mat-selection-list *ngIf="list.length"
-                      multiple="false"
-                      #selectionList
-                      (selectionChange)="selectionChange($event.option.value)">
-      <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
-        <mat-list-option *cdkVirtualFor="let persona of list" [value]="persona" (dblclick)="dblClickSubmit(persona)">
-          <span mat-line>{{persona.name}}</span>
-          <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
-        </mat-list-option>
-      </cdk-virtual-scroll-viewport>
-  </mat-selection-list>
-<p *ngIf="!list.length" class="mat-body-1">
+<mat-selection-list *ngIf="list?.length"
+                    multiple="false"
+                    #selectionList
+                    (selectionChange)="selectionChange($event.option.value)">
+  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+    <mat-list-option *cdkVirtualFor="let persona of list" [value]="persona" (dblclick)="dblClickSubmit(persona)">
+      <span mat-line>{{persona.name}}</span>
+      <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
+    </mat-list-option>
+  </cdk-virtual-scroll-viewport>
+</mat-selection-list>
+<p *ngIf="!list?.length" class="mat-body-1">
   No results.
 </p>

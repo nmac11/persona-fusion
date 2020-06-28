@@ -1,8 +1,6 @@
 import {
   Component,
   OnInit,
-  ViewChild,
-  AfterViewInit,
   ElementRef,
   Input,
   Output,
@@ -21,8 +19,7 @@ import { FusionNodeHelper } from '../../helpers/fusion-node-helper'
   templateUrl: './dialog-persona-list.component.html',
   styleUrls: ['./dialog-persona-list.component.css'],
 })
-export class DialogPersonaListComponent implements OnInit, AfterViewInit {
-  @ViewChild('filterField') filterField: ElementRef;
+export class DialogPersonaListComponent implements OnInit {
   @Input('compendium') compendiumService: CompendiumService;
   @Input('fusionNodeHelper') fusionNodeHelper: FusionNodeHelper;
   @Output() changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
@@ -36,17 +33,8 @@ export class DialogPersonaListComponent implements OnInit, AfterViewInit {
     this.list = this.compendiumService.getAll();
   }
 
-  ngAfterViewInit(): void {
-    fromEvent(this.filterField.nativeElement, 'keyup')
-      .pipe(debounceTime(200), distinctUntilChanged())
-      .subscribe((k: KeyboardEvent) =>
-        this.applyFilter(this.filterField.nativeElement.value),
-      );
-  }
-
   clearFilter(): void {
     this.list = this.compendiumService.getAll();
-    this.filterField.nativeElement.value = '';
   }
 
   applyFilter(filter: string): void {
