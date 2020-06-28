@@ -13,10 +13,13 @@
                     multiple="false"
                     #selectionList
                     (selectionChange)="selectionChange($event.option.value)">
-  <mat-list-option *ngFor="let savedPersona of list" [value]="savedPersona" (dblclick)="dblClickSubmit(savedPersona)">
-    <span mat-line>{{savedPersona.data.persona.name}} ({{savedPersona.name}})</span>
-    <span mat-line>{{savedPersona.data.persona.arcanaName}} / {{savedPersona.data.currentLevel}}</span>
-  </mat-list-option>
+  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+    <mat-list-option *cdkVirtualFor="let savedPersona of list" [value]="savedPersona" (dblclick)="dblClickSubmit(savedPersona)">
+      <span mat-line>{{savedPersona.data.persona.name}} ({{savedPersona.name}})</span>
+      <span mat-line>{{savedPersona.data.persona.arcanaName}} / {{savedPersona.data.currentLevel}}</span>
+    </mat-list-option>
+    </cdk-virtual-scroll-viewport>
+
 </mat-selection-list>
 <p *ngIf="!list?.length" class="mat-body-1">
   No results.

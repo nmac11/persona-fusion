@@ -9,15 +9,17 @@
     </button>
   </mat-form-field>
 </div>
-<mat-selection-list *ngIf="list.length"
-                    multiple="false"
-                    #selectionList
-                    (selectionChange)="selectionChange($event.option.value)">
-  <mat-list-option *ngFor="let persona of list" [value]="persona" (dblclick)="dblClickSubmit(persona)">
-    <span mat-line>{{persona.name}}</span>
-    <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
-  </mat-list-option>
-</mat-selection-list>
+  <mat-selection-list *ngIf="list.length"
+                      multiple="false"
+                      #selectionList
+                      (selectionChange)="selectionChange($event.option.value)">
+      <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+        <mat-list-option *cdkVirtualFor="let persona of list" [value]="persona" (dblclick)="dblClickSubmit(persona)">
+          <span mat-line>{{persona.name}}</span>
+          <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
+        </mat-list-option>
+      </cdk-virtual-scroll-viewport>
+  </mat-selection-list>
 <p *ngIf="!list.length" class="mat-body-1">
   No results.
 </p>

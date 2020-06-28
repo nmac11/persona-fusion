@@ -11,12 +11,14 @@
   margin: auto;
 }
 
-::ng-deep .simulator-list-overlay-pane mat-tab-body {
-  height: 50vh;
-  max-height: 500px;
-  min-height: 200px;
-}
-
 ::ng-deep .simulator-list-overlay-pane mat-dialog-content {
   max-height: unset;
+}
+
+::ng-deep .simulator-list-overlay-pane .virtual-scroll {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40vh;
+  max-height: 500px;
+  min-height: 200px;
 }

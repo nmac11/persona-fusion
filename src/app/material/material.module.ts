@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CdkScrollableModule, ScrollingModule } from '@angular/cdk/scrolling';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -22,6 +23,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
   declarations: [],
   imports: [CommonModule],
   exports: [
+    CdkScrollableModule,
+    ScrollingModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatSidenavModule,
