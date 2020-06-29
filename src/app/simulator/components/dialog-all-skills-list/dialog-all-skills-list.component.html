@@ -1,0 +1,24 @@
+<div style="position: sticky; top: 0; z-index: 100; background: #fff">
+  <mat-form-field appearance="fill" style="width: 100%; box-sizing: border-box;">
+    <mat-label>Filter</mat-label>
+    <input #filterField autocomplete="off" matInput inputDebouncer (debouncedInput)="applyFilter($event)">
+    <button *ngIf="filterField.value"
+        matSuffix mat-icon-button 
+        (click)="filterField.value = ''; clearFilter()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+<mat-list>
+  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+    <mat-list-item *cdkVirtualFor="let skill of skills">
+      <span matLine>
+        {{skill.name}}
+      </span>
+      <span mat-line class="mat-caption mat-body-1">{{skill.type}}</span>
+      <button mat-icon-button (click)="add(skill)">
+        <mat-icon color="primary">add</mat-icon>
+      </button>
+    </mat-list-item>
+  </cdk-virtual-scroll-viewport>
+</mat-list>

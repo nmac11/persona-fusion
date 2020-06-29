@@ -20,6 +20,8 @@ import { DialogPersonaListComponent } from './components/dialog-persona-list/dia
 import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
 import { PersonaStoreModule } from '../persona-store/persona-store.module';
 import { DialogSavedListComponent } from './components/dialog-saved-list/dialog-saved-list.component';
+import { DialogAllSkillsListComponent } from './components/dialog-all-skills-list/dialog-all-skills-list.component';
+import { DialogLearnedSkillsListComponent } from './components/dialog-learned-skills-list/dialog-learned-skills-list.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { DialogSavedListComponent } from './components/dialog-saved-list/dialog-
     DialogPersonaListComponent,
     SaveFusionDialogComponent,
     DialogSavedListComponent,
+    DialogAllSkillsListComponent,
+    DialogLearnedSkillsListComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,13 @@
+<mat-list cdkDropList (cdkDropListDropped)="drop($event)" class="learned-skill-list">
+  <mat-list-item cdkDrag *ngFor="let skill of skills; let i = index"
+    class="learned-skill"
+    [style.color]="(i < 8) ? 'rgba(0,0,0,.87)' : 'rgba(0,0,0,.54)'">
+    <mat-icon mat-list-icon cdkDragHandle>unfold_more</mat-icon>
+    <span matLine>
+      {{skill.name}}
+    </span>
+    <button mat-icon-button (click)="remove(i)">
+      <mat-icon color="warn">remove</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>
