@@ -83,10 +83,9 @@ export class SaveFusionDialogComponent implements OnInit {
     fusionItemCopy.skills = [...this.fusionItem.skills];
     fusionItemCopy.skills.push(...formValue.skills);
 
-    this.personaStoreService.save({
-      name: this.saveForm.get('saveName').value,
-      data: fusionItemCopy,
-    });
+    fusionItemCopy.saveName = formValue.saveName;
+
+    this.personaStoreService.save(fusionItemCopy);
 
     this.onCancel();
   }

@@ -1,5 +1,8 @@
 <h1 mat-dialog-title>
-  <ng-container *ngIf="selectedItem; else noSelection">Selected: {{selectedItem.persona.name}}</ng-container>
+  <ng-container *ngIf="selectedItem; else noSelection">
+    Selected: {{selectedItem.persona.name}}
+    <span *ngIf="selectedItem.saveName">({{selectedItem.saveName}})</span>
+  </ng-container>
   <ng-template #noSelection>Select a Persona</ng-template>
 </h1>
 <mat-dialog-content>

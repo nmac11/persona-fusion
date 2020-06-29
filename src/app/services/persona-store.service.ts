@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { NgxIndexedDBService } from 'ngx-indexed-db';
-import { StoredFusionNode } from '../models/stored-fusion-node';
+import { FusionNode } from '../models/fusion-node';
 
 @Injectable()
 export class PersonaStoreService {
@@ -13,15 +13,15 @@ export class PersonaStoreService {
     this.storeName = game + '_personas';
   }
 
-  load(name: string): Promise<StoredFusionNode> {
-    return this.dbService.getByIndex(this.storeName, 'name', name);
+  load(name: string): Promise<FusionNode> {
+    return this.dbService.getByIndex(this.storeName, 'saveName', name);
   }
 
-  save(data: StoredFusionNode) {
+  save(data: FusionNode) {
     this.dbService.add(this.storeName, data);
   }
 
-  loadAll(): Promise<StoredFusionNode[]> {
+  loadAll(): Promise<FusionNode[]> {
     return this.dbService.getAll(this.storeName);
   }
 }

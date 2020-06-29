@@ -15,10 +15,11 @@
                     multiple="false"
                     #selectionList
                     (selectionChange)="selectionChange($event.option.value)">
-  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="88">
     <mat-list-option *cdkVirtualFor="let savedPersona of list" [value]="savedPersona" (dblclick)="dblClickSubmit(savedPersona)">
-      <span mat-line>{{savedPersona.data.persona.name}} ({{savedPersona.name}})</span>
-      <span mat-line>{{savedPersona.data.persona.arcanaName}} / {{savedPersona.data.currentLevel}}</span>
+      <span mat-line>{{savedPersona.persona.name}}</span>
+      <span mat-line>{{savedPersona.saveName}}</span>
+      <span mat-line>{{savedPersona.persona.arcanaName}} / {{savedPersona.currentLevel}}</span>
     </mat-list-option>
   </cdk-virtual-scroll-viewport>
 </mat-selection-list>

@@ -6,4 +6,5 @@ export interface FusionNode {
   currentLevel: number;
   skills: Skill[];
   components?: FusionNode[];
+  saveName?: string;
 }

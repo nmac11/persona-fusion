@@ -11,7 +11,6 @@ import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
 import { Persona } from '../../../models/persona';
 import { FusionNode } from '../../../models/fusion-node';
-import { StoredFusionNode } from '../../../models/stored-fusion-node';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
 import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
 import { PersonaStoreService } from '../../../services/persona-store.service';
@@ -27,7 +26,7 @@ export class DialogSavedListComponent implements OnInit {
   changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
   @Output() dblClickSelection: EventEmitter<FusionNode> = new EventEmitter();
 
-  list: StoredFusionNode[];
+  list: FusionNode[];
 
   constructor() {}
 
@@ -45,20 +44,20 @@ export class DialogSavedListComponent implements OnInit {
 
   async applyFilter(filter: string): Promise<void> {
     this.list = (await this.personaStoreService.loadAll()).filter(
-      (storedPersona: StoredFusionNode) => {
+      (storedPersona: FusionNode) => {
         return (
-          partialMatchRegExp(filter).test(storedPersona.name) ||
-          partialMatchRegExp(filter).test(storedPersona.data.persona.name)
+          partialMatchRegExp(filter).test(storedPersona.saveName) ||
+          partialMatchRegExp(filter).test(storedPersona.persona.name)
         );
       },
     );
   }
 
-  selectionChange(storedFusionNode: StoredFusionNode): void {
-    this.changeSelected.emit(storedFusionNode.data);
+  selectionChange(storedFusionNode: FusionNode): void {
+    this.changeSelected.emit(storedFusionNode);
   }
 
-  dblClickSubmit(storedFusionNode: StoredFusionNode): void {
-    this.dblClickSelection.emit(storedFusionNode.data);
+  dblClickSubmit(storedFusionNode: FusionNode): void {
+    this.dblClickSelection.emit(storedFusionNode);
   }
 }
