@@ -44,7 +44,8 @@ export class FusionNodeHelper {
   private findSkills(skillNames: string[]): Skill[] {
     return skillNames.reduce((skills, skillName) => {
       const skill = this.skillService.find(skillName);
-      if (skill) skills.push(skill);
+      if (skill && !skills.some((learned) => learned.name === skill.name))
+        skills.push(skill);
       return skills;
     }, []);
   }
