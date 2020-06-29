@@ -27,7 +27,6 @@ export class ChangeDebouncerDirective implements OnDestroy {
 
   @HostListener('change', ['$event.target.value'])
   onChange(text: string): void {
-    console.log(text)
     this.subject.next(text);
   }
 }
