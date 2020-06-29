@@ -55,10 +55,9 @@ export class FusionItemComponent implements OnInit {
     dialogRef.afterClosed().subscribe(() => this.onChange());
   }
 
-  changeLevel(event: any): void {
-    const inputLevel = event.target.value;
+  changeLevel(inputLevel: string): void {
     const previousLevel = this.fusionItem.currentLevel;
-    this.setLevel(inputLevel);
+    this.setLevel(+inputLevel);
     this.updateSkills(previousLevel);
     this.onChange();
   }

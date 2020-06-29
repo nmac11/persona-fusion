@@ -13,7 +13,8 @@
       <mat-label>Level</mat-label>
       <input type="number" autocomplete="off" matInput
       [ngModel]="fusionItem.currentLevel"
-      (change)="changeLevel($event)"
+      changeDebouncer
+      (debouncedChange)="changeLevel($event)"
       (keydown.enter)="$event.target.blur();false"
       [value]="fusionItem.currentLevel"
       [min]="fusionItem.persona.level"
