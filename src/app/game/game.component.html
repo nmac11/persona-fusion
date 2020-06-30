@@ -1,10 +1,22 @@
 <mat-toolbar style="display: flex; justify-content: space-between;">
-  <span style="padding-left: 8px;">{{title | uppercase}}</span>
-  <div>
-    <a routerLink="." mat-button>LIST</a>
+  <span style="padding-left: 8px; display: flex; flex-direction: row; align-items: center;">{{title | uppercase}}
+    <mat-icon style="margin: 0 8px;">chevron_right</mat-icon>
+    {{ page }}</span> 
+  <div fxHide.lt-sm>
+    <a routerLink="." mat-button>PERSONAE</a>
+    <a routerLink="./my-list" mat-button>MY LIST</a>
     <a routerLink="./simulator" mat-button>SIMULATOR</a>
   </div>
+  <button fxHide fxShow.lt-sm mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
 </mat-toolbar>
 <div style="padding: 8px; max-width: 960px; margin: auto;">
   <router-outlet></router-outlet>
 </div>
+
+<mat-menu #menu="matMenu">
+  <a mat-menu-item routerLink=".">Personae</a>
+  <a mat-menu-item routerLink="./my-list">My List</a>
+  <a mat-menu-item routerLink="./simulator">Simulator</a>
+</mat-menu>

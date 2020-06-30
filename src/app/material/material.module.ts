@@ -18,6 +18,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [],
@@ -42,6 +43,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatBadgeModule,
     MatBottomSheetModule,
     MatProgressBarModule,
+    MatMenuModule,
   ],
 })
 export class MaterialModule {}
