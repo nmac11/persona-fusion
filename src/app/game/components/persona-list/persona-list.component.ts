@@ -3,7 +3,6 @@ import {
   OnInit,
   AfterViewInit,
   ViewChild,
-  ElementRef,
   Injector,
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -11,8 +10,6 @@ import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { fromEvent } from 'rxjs';
-import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { serviceToken } from '../../../helpers/service-token-helper';
 
 @Component({
@@ -22,8 +19,6 @@ import { serviceToken } from '../../../helpers/service-token-helper';
 })
 export class PersonaListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
-  @ViewChild('filterField') filterField: ElementRef;
-  @ViewChild('clrFilterFieldBtn') clrFilterFieldBtn: ElementRef;
   compendiumService: CompendiumService;
 
   personae: MatTableDataSource<Persona>;
@@ -48,11 +43,6 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.personae.sort = this.sort;
-    fromEvent(this.filterField.nativeElement, 'keyup')
-      .pipe(debounceTime(200), distinctUntilChanged())
-      .subscribe((k: KeyboardEvent) =>
-        this.applyFilter(this.filterField.nativeElement.value),
-      );
   }
 
   applyFilter(key: string = '') {
@@ -60,7 +50,6 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
   }
 
   clearFilter() {
-    this.filterField.nativeElement.value = '';
     setTimeout(() => {
       this.personae.filter = '';
     }, 100);
