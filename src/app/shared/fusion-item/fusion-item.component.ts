@@ -7,21 +7,20 @@ import {
   EventEmitter,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FusionNode } from '../../../models/fusion-node';
-import { Persona } from '../../../models/persona';
+import { FusionNode } from '../../models/fusion-node';
+import { Persona } from '../../models/persona';
 import { SkillsDialogComponent } from '../skills-dialog/skills-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
-import { SkillService } from '../../../services/skill.service';
-import { serviceToken } from '../../../helpers/service-token-helper';
+import { SkillService } from '../../services/skill.service';
+import { serviceToken } from '../../helpers/service-token-helper';
 
 @Component({
-  selector: 'simulator-fusion-item',
+  selector: 'shared-fusion-item',
   templateUrl: './fusion-item.component.html',
   styleUrls: ['./fusion-item.component.css'],
 })
 export class FusionItemComponent implements OnInit {
   @Input('fusionItem') fusionItem: FusionNode;
-  @Output() delete: EventEmitter<any> = new EventEmitter();
   @Output() change: EventEmitter<any> = new EventEmitter();
 
   skillService: SkillService;
@@ -38,10 +37,6 @@ export class FusionItemComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-
-  onDelete(): void {
-    this.delete.emit(null);
-  }
 
   onChange(): void {
     this.change.emit(null);

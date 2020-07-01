@@ -8,17 +8,17 @@
         <span [matBadge]="data.fusionItem.skills.length" matBadgeOverlap="false">LEARNED</span>
       </ng-template>
       <ng-template matTabContent>
-        <simulator-dialog-learned-skills-list
+        <shared-dialog-learned-skills-list
           [skills]="data.fusionItem.skills">
-        </simulator-dialog-learned-skills-list>
+        </shared-dialog-learned-skills-list>
       </ng-template>
     </mat-tab>
     <mat-tab label="ALL">
       <ng-template matTabContent>
-        <simulator-dialog-all-skills-list
+        <shared-dialog-all-skills-list
           [skillService]="data.skillService"
           [learnedSkills]="data.fusionItem.skills">
-        </simulator-dialog-all-skills-list>
+        </shared-dialog-all-skills-list>
       </ng-template>
     </mat-tab>
   </mat-tab-group>

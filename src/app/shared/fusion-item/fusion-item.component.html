@@ -1,0 +1,18 @@
+<mat-form-field appearance="fill" style="width: 60px;">
+  <mat-label>Level</mat-label>
+  <input type="number" autocomplete="off" matInput
+  [ngModel]="fusionItem.currentLevel"
+  changeDebouncer
+  (debouncedChange)="changeLevel($event)"
+  (keydown.enter)="$event.target.blur();false"
+  [value]="fusionItem.currentLevel"
+  [min]="fusionItem.persona.level"
+  max="99"
+  required>
+</mat-form-field>
+<mat-chip-list>
+  <mat-chip *ngFor="let skill of fusionItem.skills; let si = index" [color]="(si < 8) ? 'primary' : 'basic'" selected>
+    {{skill.name}}
+  </mat-chip>
+  <button mat-icon-button color="primary" (click)="editSkills()"><mat-icon>add_circle_outline</mat-icon></button>
+</mat-chip-list>

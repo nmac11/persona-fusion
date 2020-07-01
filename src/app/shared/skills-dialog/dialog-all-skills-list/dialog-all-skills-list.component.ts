@@ -4,7 +4,7 @@ import { Skill } from '../../../models/skill';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
 
 @Component({
-  selector: 'simulator-dialog-all-skills-list',
+  selector: 'shared-dialog-all-skills-list',
   templateUrl: './dialog-all-skills-list.component.html',
   styleUrls: ['./dialog-all-skills-list.component.css'],
 })

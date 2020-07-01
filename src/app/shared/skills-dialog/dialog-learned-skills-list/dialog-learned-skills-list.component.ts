@@ -3,7 +3,7 @@ import { Skill } from '../../../models/skill';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'simulator-dialog-learned-skills-list',
+  selector: 'shared-dialog-learned-skills-list',
   templateUrl: './dialog-learned-skills-list.component.html',
   styleUrls: ['./dialog-learned-skills-list.component.css'],
 })

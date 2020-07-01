@@ -41,11 +41,24 @@
 
     <div fxLayout="column" fxLayoutGap="16px">
       <mat-accordion multi>
-        <simulator-fusion-item 
-          *ngFor="let fusionItem of fusionItems; let i = index;"
-          (delete)="removeItem(i)"
-          (change)="fuse()"
-          [fusionItem]="fusionItem"></simulator-fusion-item>
+        <mat-expansion-panel *ngFor="let fusionItem of fusionItems; let i = index;">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ fusionItem.persona.name }}
+            </mat-panel-title>
+            <mat-panel-description>
+               <small class="mat-caption">{{ fusionItem.persona.arcanaName }} / Level {{ fusionItem.currentLevel }}</small>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ng-template matExpansionPanelContent>
+            <shared-fusion-item 
+              (change)="fuse()"
+              [fusionItem]="fusionItem"></shared-fusion-item>
+            <div style="margin-top: 16px; width: 100%; display: flex; flex-direction: row; justify-content: flex-end;">
+              <button mat-icon-button color="accent" (click)="removeItem(i)"><mat-icon>delete</mat-icon></button>
+            </div>
+          </ng-template>
+        </mat-expansion-panel>
         <div *ngFor="let n of fusionItemPlaceholders()"
              class="mat-body-2"
              style="box-sizing: border-box;
