@@ -12,6 +12,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { serviceToken } from '../helpers/service-token-helper';
 import { partialMatchRegExp } from '../helpers/reg-exp-helpers';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'my-list-root',
@@ -20,6 +21,7 @@ import { partialMatchRegExp } from '../helpers/reg-exp-helpers';
 })
 export class MyListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   personaStoreService: PersonaStoreService;
 
@@ -45,10 +47,15 @@ export class MyListComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {}
 
-  async loadList(): Promise<void> {
-    this.savedPersonae = new MatTableDataSource<FusionNode>(
-      await this.personaStoreService.loadAll(),
-    );
+  loadList(): void {
+    this.personaStoreService
+      .loadAll()
+      .then((savedPersonae) => this.setDataSource(savedPersonae));
+  }
+
+  setDataSource(savedPersonae: FusionNode[]): void {
+    this.savedPersonae = new MatTableDataSource<FusionNode>(savedPersonae);
+    this.savedPersonae.paginator = this.paginator;
     this.configFilter();
     this.configSort();
   }

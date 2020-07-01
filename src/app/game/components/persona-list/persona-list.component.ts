@@ -9,6 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { MatSort } from '@angular/material/sort';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { serviceToken } from '../../../helpers/service-token-helper';
 
@@ -19,6 +20,7 @@ import { serviceToken } from '../../../helpers/service-token-helper';
 })
 export class PersonaListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   compendiumService: CompendiumService;
 
   personae: MatTableDataSource<Persona>;
@@ -43,6 +45,7 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.personae.sort = this.sort;
+    this.personae.paginator = this.paginator;
   }
 
   applyFilter(key: string = '') {
