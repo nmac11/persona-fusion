@@ -1,0 +1,16 @@
+<div *ngIf="fusionNode?.persona; else noData"
+     gdColumns.gt-sm="320px auto"
+     gdRows="max-content auto"
+     gdRows.gt-sm
+     gdGap="16px">
+  <shared-persona-info [persona]="fusionNode.persona"></shared-persona-info>
+  <mat-card class="mat-elevation-z2">    
+  </mat-card>
+</div>
+
+<ng-template #noData>
+  <p class="mat-body-1">
+    No data found.
+  </p>
+  <a routerLink="../../my-list" mat-button color="accent">GO BACK</a>
+</ng-template>

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { GameComponent } from './game/game.component';
 import { PersonaListComponent } from './game/components/persona-list/persona-list.component';
+import { EditPersonaComponent } from './my-list/components/edit-persona/edit-persona.component';
 import { PersonaComponent } from './game/components/persona/persona.component';
 import { SimulatorComponent } from './simulator/simulator.component';
 import { MyListComponent } from './my-list/my-list.component';
@@ -24,6 +25,11 @@ const routes: Routes = [
         path: 'my-list',
         component: MyListComponent,
         data: { page: 'My List' },
+      },
+      {
+        path: 'edit/:save_name',
+        component: EditPersonaComponent,
+        data: { page: 'Edit' },
       },
       {
         path: 'simulator',
