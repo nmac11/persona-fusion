@@ -77,6 +77,13 @@
         </small>
       </mat-panel-description>
     </mat-expansion-panel-header>
+
+    <table style="width: 100%; margin-bottom :8px;">
+      <tr>
+        <td style="width: 50%">Inherits</td>
+        <td style="width: 50%">{{persona.inherits | titlecase}}</td>
+      </tr>
+    </table>
     <table style="width: 100%">
       <tr *ngFor="let skill of persona.skills">
         <td style="width: 50%">{{skill.name}}</td>

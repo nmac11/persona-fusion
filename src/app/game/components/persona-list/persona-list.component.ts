@@ -22,7 +22,7 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
   compendiumService: CompendiumService;
 
   personae: MatTableDataSource<Persona>;
-  displayedColumns: string[] = ['name', 'level', 'arcanaName'];
+  displayedColumns: string[] = ['name', 'level', 'arcanaName', 'inherits'];
 
   constructor(
     private injector: Injector,
