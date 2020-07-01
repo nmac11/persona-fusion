@@ -10,7 +10,7 @@ export class PersonaStoreService {
     @Inject(String) game: string,
     private dbService: NgxIndexedDBService,
   ) {
-    this.storeName = game + '_personas';
+    this.storeName = game + '_personae';
   }
 
   load(name: string): Promise<FusionNode> {
