@@ -1,6 +1,8 @@
 import { Persona } from '../../models/persona';
 import { Skill } from '../../models/skill';
+import { InheritableSkill } from '../../models/inheritable-skill';
 import { FusionNode } from '../../models/fusion-node';
+import { FusionResult } from '../../models/fusion-result';
 import { CompendiumService } from '../../services/compendium.service';
 import { SkillService } from '../../services/skill.service';
 
@@ -32,6 +34,38 @@ export class FusionNodeHelper {
       param = queryParams[`p${i}`];
     }
     return fusionItems;
+  }
+
+  convertFusionResult(
+    fusionResult: FusionResult,
+    inheritedSkills: InheritableSkill[],
+  ): FusionNode {
+    const {
+      skillsInheritedCount,
+      inheritableSkills,
+      ...fusionNode
+    } = fusionResult;
+    fusionNode.skills = this.generateSkills(
+      fusionResult.skills,
+      inheritedSkills,
+    );
+    return fusionNode;
+  }
+
+  private generateSkills(
+    innateSkills: Skill[],
+    inheritedSkills: InheritableSkill[],
+  ): Skill[] {
+    return [...innateSkills, ...this.convertInheritedSkills(inheritedSkills)];
+  }
+
+  private convertInheritedSkills(
+    inheritableSkills: InheritableSkill[],
+  ): Skill[] {
+    return inheritableSkills.map((s) => {
+      const { probRatio, probability, ...skill } = s;
+      return skill;
+    });
   }
 
   private createFusionNodeFromParam(param: string): FusionNode {

@@ -15,7 +15,8 @@ import { MatSelectionList } from '@angular/material/list';
 import { SkillsValidators } from '../../validators/skills-validators';
 import { SaveNameValidators } from '../../validators/save-name-validators';
 import { PersonaStoreService } from '../../../services/persona-store.service';
-//import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
 
 @Component({
   selector: 'simulator-save-fusion-dialog',
@@ -34,9 +35,10 @@ export class SaveFusionDialogComponent implements OnInit {
     public data: {
       fusionItem: FusionResult;
       personaStore: PersonaStoreService;
-      //fusionNodeHelper: FusionNodeHelper;
+      fusionNodeHelper: FusionNodeHelper;
     },
     private fb: FormBuilder,
+    private snackBar: MatSnackBar,
   ) {
     this.fusionItem = data.fusionItem;
     this.personaStoreService = data.personaStore;
@@ -65,28 +67,28 @@ export class SaveFusionDialogComponent implements OnInit {
     this.saveForm.patchValue({ skills: this.skillsSelection._value });
   }
 
-  onSave(): void {
+  async onSave(): Promise<void> {
     if (!this.saveForm.valid) return;
+    const fusionNode = this.createFusionNode();
+    const success = await this.personaStoreService.save(fusionNode);
+    this.showSaveStatus(fusionNode.saveName, success);
+    if (success) this.onCancel();
+  }
+
+  private createFusionNode(): FusionNode {
     const formValue = this.saveForm.value;
+    const fusionNode = this.data.fusionNodeHelper.convertFusionResult(
+      this.fusionItem,
+      formValue.skills,
+    );
+    fusionNode.saveName = formValue.saveName;
+    return fusionNode;
+  }
 
-    formValue.skills = formValue.skills.map((s) => {
-      const { probRatio, probability, ...skill } = s;
-      return skill;
-    });
-
-    const {
-      skillsInheritedCount,
-      inheritableSkills,
-      ...fusionItemCopy
-    } = this.fusionItem;
-
-    fusionItemCopy.skills = [...this.fusionItem.skills];
-    fusionItemCopy.skills.push(...formValue.skills);
-
-    fusionItemCopy.saveName = formValue.saveName;
-
-    this.personaStoreService.save(fusionItemCopy);
-
-    this.onCancel();
+  private showSaveStatus(saveName: string, success = true): void {
+    const message = success
+      ? `SUCCESS: Saved '${saveName}'.`
+      : `ERROR: Failed to save '${saveName}'.`;
+    this.snackBar.open(message, 'CLOSE', { duration: 1000 });
   }
 }
