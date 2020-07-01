@@ -74,6 +74,8 @@ export class MyListComponent implements OnInit, AfterViewInit {
           return item.persona.name;
         case 'arcanaName':
           return item.persona.arcanaName;
+        case 'saveName':
+          return item.saveName.toLowerCase();
         default:
           return item[property];
       }
