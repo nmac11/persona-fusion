@@ -22,14 +22,15 @@ export class PersonaStoreService {
     try {
       await this.dbService.add(this.storeName, data);
       return true;
-    }
-    catch(error) {
+    } catch (error) {
       console.error(error);
-      return false
+      return false;
     }
   }
 
-  loadAll(): Promise<FusionNode[]> {
-    return this.dbService.getAll(this.storeName);
+  async loadAll(): Promise<FusionNode[]> {
+    return ((await this.dbService.getAll(
+      this.storeName,
+    )) as FusionNode[]).reverse();
   }
 }
