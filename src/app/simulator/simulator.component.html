@@ -2,7 +2,7 @@
   <shared-persona-info *ngIf="fusionYield; else noFusion" [persona]="fusionYield.persona"></shared-persona-info>
   <ng-template #noFusion>
     <div>
-      <mat-card style="height: 100%">
+      <mat-card style="height: 100%; box-sizing: border-box;">
         <mat-card-header>
           <mat-card-title>Fusion Simulator</mat-card-title>
           <mat-card-subtitle>{{ fusionItems.length > 1 ? 'Cannot fuse current items.' : 'Add personae to proceed.'}}</mat-card-subtitle>
