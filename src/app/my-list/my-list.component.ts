@@ -13,6 +13,8 @@ import { MatTableDataSource } from '@angular/material/table';
 import { serviceToken } from '../helpers/service-token-helper';
 import { partialMatchRegExp } from '../helpers/reg-exp-helpers';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatDialog } from '@angular/material/dialog';
+import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
 
 @Component({
   selector: 'my-list-root',
@@ -37,6 +39,7 @@ export class MyListComponent implements OnInit, AfterViewInit {
     private injector: Injector,
     private route: ActivatedRoute,
     private router: Router,
+    private dialog: MatDialog,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     const game = this.route.parent.snapshot.params.game;
@@ -59,6 +62,15 @@ export class MyListComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.savedPersonae.filter = '';
     }, 100);
+  }
+
+  openCreatePersonaDialog(): void {
+    const dialogRef = this.dialog.open(CreatePersonaComponent, {
+      panelClass: 'my-list-create-overlay-pane',
+    });
+    dialogRef.afterClosed().subscribe((refresh) => {
+      if (refresh) this.loadList();
+    });
   }
 
   private loadList(): void {

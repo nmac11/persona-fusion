@@ -1,0 +1,29 @@
+<form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+  <h1 mat-dialog-title>Create Persona</h1>
+  <div mat-dialog-content>
+    <div style="background: #fff; z-index: 10; position: static; top: 0">
+      <mat-form-field appearance="fill" style="width: 100%;">
+        <mat-label>Save name</mat-label>
+        <input #saveNameField autocomplete="off" formControlName="saveName" matInput required>
+        <mat-error *ngIf="createForm.get('saveName').getError('required')">Save name is required.</mat-error>
+        <mat-error *ngIf="createForm.get('saveName').getError('unavailable')">A record with that name already exists.</mat-error>
+      </mat-form-field>
+    </div>
+    <shared-dialog-persona-list (changeSelected)="selectionChange($event)"></shared-dialog-persona-list>
+    <p class="mat-body-1">
+      <span *ngIf="selectedItem; else noPersona">
+        Selected:
+        <span class="mat-body-2">{{selectedItem.persona.name}}</span>
+      </span>
+      <ng-template #noPersona>
+        <span>
+          Please select a persona.
+        </span>
+      </ng-template>
+    </p>
+  </div>
+  <div mat-dialog-actions style="justify-content: flex-end;">
+    <button mat-button type="button" mat-dialog-close>CANCEL</button>
+    <button mat-flat-button type="submit" color="primary" [disabled]="!createForm.valid">CREATE</button>
+  </div>
+</form>

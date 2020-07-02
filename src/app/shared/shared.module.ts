@@ -31,10 +31,11 @@ import { DialogSavedListComponent } from './dialog-saved-list/dialog-saved-list.
   entryComponents: [SkillsDialogComponent, ListDialogComponent],
   exports: [
     PersonaInfoComponent,
-    SkillsDialogComponent,
     FusionItemComponent,
     InputDebouncerDirective,
     ChangeDebouncerDirective,
+    DialogPersonaListComponent,
+    DialogSavedListComponent,
   ],
 })
 export class SharedModule {}

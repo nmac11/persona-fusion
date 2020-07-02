@@ -1,3 +1,6 @@
+<div style="padding: 8px; width: 100%">
+  <button mat-button color="accent" (click)="openCreatePersonaDialog()"><mat-icon>add</mat-icon> CREATE PERSONA</button>
+</div>
 <mat-form-field style="width: 100%; padding: 8px; box-sizing: border-box;">
   <mat-label>Filter</mat-label>
   <input matInput #filterField inputDebouncer (debouncedInput)="applyFilter($event)" (keydown.enter)="$event.target.blur();false">

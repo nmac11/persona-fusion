@@ -1,16 +1,16 @@
-::ng-deep .simulator-list-overlay-pane {
+::ng-deep .my-list-create-overlay-pane {
   width: 100% !important;
   max-width: unset !important;
   padding: 48px;
   overflow: auto;
 }
 
-::ng-deep .simulator-list-overlay-pane mat-dialog-container {
+::ng-deep .my-list-create-overlay-pane mat-dialog-container {
   width: 400px;
   max-width: 80vw;
   margin: auto;
 }
 
-::ng-deep .simulator-list-overlay-pane mat-dialog-content {
+::ng-deep .my-list-create-overlay-pane .mat-dialog-content {
   max-height: unset;
 }

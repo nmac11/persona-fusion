@@ -1,5 +1,5 @@
 import { AbstractControl } from '@angular/forms';
-import { PersonaStoreService } from '../../services/persona-store.service';
+import { PersonaStoreService } from '../services/persona-store.service';
 
 export class SaveNameValidators {
   static availability(storeService: PersonaStoreService) {
