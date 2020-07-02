@@ -6,7 +6,7 @@
     <div style="background: #fff; z-index: 10; position: sticky; top: 0">
       <mat-form-field appearance="fill" style="width: 100%;">
         <mat-label>Save name</mat-label>
-        <input #saveNameField autocomplete="off" formControlName="saveName" matInput>
+        <input #saveNameField autocomplete="off" formControlName="saveName" matInput required>
         <mat-error *ngIf="saveForm.get('saveName').getError('required')">Save name is required.</mat-error>
         <mat-error *ngIf="saveForm.get('saveName').getError('unavailable')">A record with that name already exists.</mat-error>
       </mat-form-field>
