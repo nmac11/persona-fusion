@@ -10,6 +10,9 @@ import { SkillsDialogComponent } from './skills-dialog/skills-dialog.component';
 import { FusionItemComponent } from './fusion-item/fusion-item.component';
 import { DialogAllSkillsListComponent } from './skills-dialog/dialog-all-skills-list/dialog-all-skills-list.component';
 import { DialogLearnedSkillsListComponent } from './skills-dialog/dialog-learned-skills-list/dialog-learned-skills-list.component';
+import { ListDialogComponent } from './list-dialog/list-dialog.component';
+import { DialogPersonaListComponent } from './dialog-persona-list/dialog-persona-list.component';
+import { DialogSavedListComponent } from './dialog-saved-list/dialog-saved-list.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { DialogLearnedSkillsListComponent } from './skills-dialog/dialog-learned
     ChangeDebouncerDirective,
     DialogAllSkillsListComponent,
     DialogLearnedSkillsListComponent,
+    ListDialogComponent,
+    DialogPersonaListComponent,
+    DialogSavedListComponent,
   ],
   imports: [CommonModule, MaterialModule, FormsModule, DragDropModule],
-  entryComponents: [SkillsDialogComponent],
+  entryComponents: [SkillsDialogComponent, ListDialogComponent],
   exports: [
     PersonaInfoComponent,
     SkillsDialogComponent,

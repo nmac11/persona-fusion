@@ -9,14 +9,14 @@ import {
 } from '@angular/core';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
-import { Persona } from '../../../models/persona';
-import { FusionNode } from '../../../models/fusion-node';
-import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
-import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
-import { PersonaStoreService } from '../../../services/persona-store.service';
+import { Persona } from '../../models/persona';
+import { FusionNode } from '../../models/fusion-node';
+import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
+import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper';
+import { PersonaStoreService } from '../../services/persona-store.service';
 
 @Component({
-  selector: 'simulator-dialog-saved-list',
+  selector: 'shared-dialog-saved-list',
   templateUrl: './dialog-saved-list.component.html',
   styleUrls: ['./dialog-saved-list.component.css'],
 })

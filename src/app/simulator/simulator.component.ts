@@ -7,7 +7,7 @@ import { CompendiumService } from '../services/compendium.service';
 import { SimulatorService } from '../services/simulator.service';
 import { SkillService } from '../services/skill.service';
 import { serviceToken } from '../helpers/service-token-helper';
-import { ListDialogComponent } from './components/list-dialog/list-dialog.component';
+import { ListDialogComponent } from '../shared/list-dialog/list-dialog.component';
 import { SkillsDialogComponent } from '../shared/skills-dialog/skills-dialog.component';
 import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
 import { FusionNode } from '../models/fusion-node';

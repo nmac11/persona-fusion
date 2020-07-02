@@ -12,12 +12,12 @@
         PERSONAE
       </ng-template>
       <ng-template matTabContent>
-        <simulator-dialog-persona-list
+        <shared-dialog-persona-list
           [compendium]="data.compendium"
           [fusionNodeHelper]="data.fusionNodeHelper"
           (dblClickSelection)="submitSelection($event)"
           (changeSelected)="selectionChange($event)">
-        </simulator-dialog-persona-list>
+        </shared-dialog-persona-list>
       </ng-template>
     </mat-tab>
     <mat-tab>
@@ -25,11 +25,11 @@
         SAVED
       </ng-template>
       <ng-template matTabContent>
-        <simulator-dialog-saved-list
+        <shared-dialog-saved-list
           [personaStore]="data.personaStore"
           (changeSelected)="selectionChange($event)"
           (dblClickSelection)="submitSelection($event)">        
-        </simulator-dialog-saved-list>
+        </shared-dialog-saved-list>
       </ng-template>
     </mat-tab>
   </mat-tab-group>

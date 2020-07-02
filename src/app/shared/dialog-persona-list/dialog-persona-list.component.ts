@@ -8,14 +8,14 @@ import {
 } from '@angular/core';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
-import { Persona } from '../../../models/persona';
-import { FusionNode } from '../../../models/fusion-node';
-import { CompendiumService } from '../../../services/compendium.service';
-import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
-import { FusionNodeHelper } from '../../helpers/fusion-node-helper'
+import { Persona } from '../../models/persona';
+import { FusionNode } from '../../models/fusion-node';
+import { CompendiumService } from '../../services/compendium.service';
+import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
+import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper'
 
 @Component({
-  selector: 'simulator-dialog-persona-list',
+  selector: 'shared-dialog-persona-list',
   templateUrl: './dialog-persona-list.component.html',
   styleUrls: ['./dialog-persona-list.component.css'],
 })
