@@ -7878,7 +7878,7 @@
                 "type": "passive"
             }
         ],
-        "inherits": "dark",
+        "inherits": "slash",
         "stats": {
             "st": 56,
             "ma": 46,
@@ -9654,7 +9654,7 @@
                 "type": "slash"
             }
         ],
-        "inherits": "light",
+        "inherits": "elec",
         "stats": {
             "st": 51,
             "ma": 47,
