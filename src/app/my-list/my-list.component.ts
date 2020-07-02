@@ -47,20 +47,34 @@ export class MyListComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {}
 
-  loadList(): void {
+  ngAfterViewInit(): void {
+    this.loadList();
+  }
+
+  applyFilter(key: string = '') {
+    this.savedPersonae.filter = key.toLowerCase();
+  }
+
+  clearFilter() {
+    setTimeout(() => {
+      this.savedPersonae.filter = '';
+    }, 100);
+  }
+
+  private loadList(): void {
     this.personaStoreService
       .loadAll()
       .then((savedPersonae) => this.setDataSource(savedPersonae));
   }
 
-  setDataSource(savedPersonae: FusionNode[]): void {
+  private setDataSource(savedPersonae: FusionNode[]): void {
     this.savedPersonae = new MatTableDataSource<FusionNode>(savedPersonae);
     this.savedPersonae.paginator = this.paginator;
     this.configFilter();
     this.configSort();
   }
 
-  configFilter(): void {
+  private configFilter(): void {
     this.savedPersonae.filterPredicate = (data, filter) => {
       const filteredProperties = [
         data.saveName,
@@ -74,7 +88,7 @@ export class MyListComponent implements OnInit, AfterViewInit {
     };
   }
 
-  configSort(): void {
+  private configSort(): void {
     this.savedPersonae.sortingDataAccessor = (item, property) => {
       switch (property) {
         case 'persona':
@@ -88,19 +102,5 @@ export class MyListComponent implements OnInit, AfterViewInit {
       }
     };
     this.savedPersonae.sort = this.sort;
-  }
-
-  ngAfterViewInit(): void {
-    this.loadList();
-  }
-
-  applyFilter(key: string = '') {
-    this.savedPersonae.filter = key.toLowerCase();
-  }
-
-  clearFilter() {
-    setTimeout(() => {
-      this.savedPersonae.filter = '';
-    }, 100);
   }
 }
