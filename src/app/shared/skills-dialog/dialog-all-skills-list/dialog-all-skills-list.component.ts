@@ -1,7 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Injector } from '@angular/core';
 import { SkillService } from '../../../services/skill.service';
 import { Skill } from '../../../models/skill';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
+import { ActivatedRoute } from '@angular/router';
+import { serviceToken } from '../../../helpers/service-token-helper';
 
 @Component({
   selector: 'shared-dialog-all-skills-list',
@@ -9,11 +11,16 @@ import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
   styleUrls: ['./dialog-all-skills-list.component.css'],
 })
 export class DialogAllSkillsListComponent implements OnInit {
-  @Input('skillService') skillService: SkillService;
   @Input('learnedSkills') learnedSkills: Skill[];
+  skillService: SkillService;
   skills: Skill[];
 
-  constructor() {}
+  constructor(private route: ActivatedRoute, private injector: Injector) {
+    const game = this.route.firstChild.snapshot.params.game;
+    this.skillService = this.injector.get<SkillService>(
+      serviceToken[game].skill,
+    );
+  }
 
   ngOnInit(): void {
     this.skills = this.skillService
@@ -28,9 +35,7 @@ export class DialogAllSkillsListComponent implements OnInit {
     this.learnedSkills.push(skill);
     this.skills = this.skills.filter(
       (skill) =>
-        !this.learnedSkills.some(
-          (fskill) => fskill.name === skill.name,
-        ),
+        !this.learnedSkills.some((fskill) => fskill.name === skill.name),
     );
   }
 

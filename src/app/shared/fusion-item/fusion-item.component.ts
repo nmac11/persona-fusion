@@ -44,7 +44,7 @@ export class FusionItemComponent implements OnInit {
 
   editSkills(): void {
     const dialogRef = this.matDialog.open(SkillsDialogComponent, {
-      data: { fusionItem: this.fusionItem, skillService: this.skillService },
+      data: { fusionItem: this.fusionItem },
       panelClass: 'simulator-skill-list-overlay-pane',
     });
     dialogRef.afterClosed().subscribe(() => this.onChange());

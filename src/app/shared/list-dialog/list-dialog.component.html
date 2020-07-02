@@ -13,8 +13,6 @@
       </ng-template>
       <ng-template matTabContent>
         <shared-dialog-persona-list
-          [compendium]="data.compendium"
-          [fusionNodeHelper]="data.fusionNodeHelper"
           (dblClickSelection)="submitSelection($event)"
           (changeSelected)="selectionChange($event)">
         </shared-dialog-persona-list>
@@ -26,7 +24,6 @@
       </ng-template>
       <ng-template matTabContent>
         <shared-dialog-saved-list
-          [personaStore]="data.personaStore"
           (changeSelected)="selectionChange($event)"
           (dblClickSelection)="submitSelection($event)">        
         </shared-dialog-saved-list>

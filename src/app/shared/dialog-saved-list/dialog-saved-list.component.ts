@@ -2,18 +2,16 @@ import {
   Component,
   OnInit,
   ViewChild,
-  ElementRef,
-  Input,
   Output,
   EventEmitter,
+  Injector,
 } from '@angular/core';
-import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import { fromEvent } from 'rxjs';
 import { Persona } from '../../models/persona';
 import { FusionNode } from '../../models/fusion-node';
 import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
-import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper';
 import { PersonaStoreService } from '../../services/persona-store.service';
+import { ActivatedRoute } from '@angular/router';
+import { serviceToken } from '../../helpers/service-token-helper';
 
 @Component({
   selector: 'shared-dialog-saved-list',
@@ -21,14 +19,19 @@ import { PersonaStoreService } from '../../services/persona-store.service';
   styleUrls: ['./dialog-saved-list.component.css'],
 })
 export class DialogSavedListComponent implements OnInit {
-  @Input('personaStore') personaStoreService: PersonaStoreService;
+  personaStoreService: PersonaStoreService;
   @Output()
   changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
   @Output() dblClickSelection: EventEmitter<FusionNode> = new EventEmitter();
 
   list: FusionNode[];
 
-  constructor() {}
+  constructor(private route: ActivatedRoute, private injector: Injector) {
+    const game = this.route.firstChild.snapshot.params.game;
+    this.personaStoreService = this.injector.get<PersonaStoreService>(
+      serviceToken[game].personaStore,
+    );
+  }
 
   ngOnInit(): void {
     this.loadList();

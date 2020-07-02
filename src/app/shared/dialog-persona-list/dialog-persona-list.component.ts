@@ -1,18 +1,20 @@
 import {
   Component,
   OnInit,
-  ElementRef,
-  Input,
   Output,
   EventEmitter,
+  Injector,
 } from '@angular/core';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
 import { Persona } from '../../models/persona';
 import { FusionNode } from '../../models/fusion-node';
 import { CompendiumService } from '../../services/compendium.service';
+import { SkillService } from '../../services/skill.service';
 import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
-import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper'
+import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper';
+import { ActivatedRoute } from '@angular/router';
+import { serviceToken } from '../../helpers/service-token-helper';
 
 @Component({
   selector: 'shared-dialog-persona-list',
@@ -20,14 +22,18 @@ import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper'
   styleUrls: ['./dialog-persona-list.component.css'],
 })
 export class DialogPersonaListComponent implements OnInit {
-  @Input('compendium') compendiumService: CompendiumService;
-  @Input('fusionNodeHelper') fusionNodeHelper: FusionNodeHelper;
-  @Output() changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
+  compendiumService: CompendiumService;
+  fusionNodeHelper: FusionNodeHelper;
+
+  @Output()
+  changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
   @Output() dblClickSelection: EventEmitter<FusionNode> = new EventEmitter();
 
   list: Persona[];
 
-  constructor() {}
+  constructor(private injector: Injector, private route: ActivatedRoute) {
+    this.fetchServices();
+  }
 
   ngOnInit(): void {
     this.list = this.compendiumService.getAll();
@@ -53,5 +59,19 @@ export class DialogPersonaListComponent implements OnInit {
   dblClickSubmit(persona: Persona): void {
     const fusionNode = this.fusionNodeHelper.createFusionNode(persona);
     this.dblClickSelection.emit(fusionNode);
+  }
+
+  private fetchServices(): void {
+    const game = this.route.firstChild.snapshot.params.game;
+    this.compendiumService = this.injector.get<CompendiumService>(
+      serviceToken[game].compendium,
+    );
+    const skillService = this.injector.get<SkillService>(
+      serviceToken[game].skill,
+    );
+    this.fusionNodeHelper = new FusionNodeHelper(
+      this.compendiumService,
+      skillService,
+    );
   }
 }

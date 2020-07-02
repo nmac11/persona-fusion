@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef } from '@angular/material/dialog';
 import { Persona } from '../../models/persona';
 import { FusionNode } from '../../models/fusion-node';
 import { CompendiumService } from '../../services/compendium.service';
@@ -14,15 +14,7 @@ import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper';
 export class ListDialogComponent {
   selectedItem: FusionNode;
 
-  constructor(
-    public dialogRef: MatDialogRef<ListDialogComponent>,
-    @Inject(MAT_DIALOG_DATA)
-    public data: {
-      compendium: CompendiumService;
-      personaStore: PersonaStoreService;
-      fusionNodeHelper: FusionNodeHelper;
-    },
-  ) {}
+  constructor(public dialogRef: MatDialogRef<ListDialogComponent>) {}
 
   onCancel(): void {
     this.dialogRef.close();

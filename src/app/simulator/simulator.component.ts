@@ -135,13 +135,7 @@ export class SimulatorComponent implements OnInit {
   }
 
   private openPersonaListDialog(fn: (res) => void): void {
-    const data = {
-      compendium: this.compendiumService,
-      personaStore: this.personaStoreService,
-      fusionNodeHelper: this.fusionNodeHelper,
-    };
     const dialogRef = this.matDialog.open(ListDialogComponent, {
-      data,
       panelClass: 'simulator-list-overlay-pane',
     });
     dialogRef.afterClosed().subscribe(fn);
@@ -151,8 +145,6 @@ export class SimulatorComponent implements OnInit {
     const dialogRef = this.matDialog.open(SaveFusionDialogComponent, {
       data: {
         fusionItem: this.fusionYield,
-        personaStore: this.personaStoreService,
-        fusionNodeHelper: this.fusionNodeHelper,
       },
       panelClass: 'simulator-save-overlay-pane',
     });

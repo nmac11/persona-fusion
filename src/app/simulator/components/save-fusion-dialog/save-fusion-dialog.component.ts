@@ -2,10 +2,12 @@ import {
   Component,
   OnInit,
   Inject,
+  Injector,
   ViewChild,
   AfterViewInit,
   ElementRef,
 } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FusionResult } from '../../../models/fusion-result';
@@ -15,8 +17,11 @@ import { MatSelectionList } from '@angular/material/list';
 import { SkillsValidators } from '../../validators/skills-validators';
 import { SaveNameValidators } from '../../validators/save-name-validators';
 import { PersonaStoreService } from '../../../services/persona-store.service';
+import { CompendiumService } from '../../../services/compendium.service';
+import { SkillService } from '../../../services/skill.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
+import { serviceToken } from '../../../helpers/service-token-helper';
 
 @Component({
   selector: 'simulator-save-fusion-dialog',
@@ -27,6 +32,7 @@ export class SaveFusionDialogComponent implements OnInit {
   saveForm: FormGroup;
   fusionItem: FusionResult;
   personaStoreService: PersonaStoreService;
+  fusionNodeHelper: FusionNodeHelper;
   @ViewChild('skills') skillsSelection: MatSelectionList;
 
   constructor(
@@ -34,27 +40,17 @@ export class SaveFusionDialogComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA)
     public data: {
       fusionItem: FusionResult;
-      personaStore: PersonaStoreService;
-      fusionNodeHelper: FusionNodeHelper;
     },
     private fb: FormBuilder,
     private snackBar: MatSnackBar,
+    private route: ActivatedRoute,
+    private injector: Injector,
   ) {
     this.fusionItem = data.fusionItem;
-    this.personaStoreService = data.personaStore;
-    this.saveForm = this.fb.group({
-      saveName: [
-        '',
-        {
-          validators: [Validators.required],
-          asyncValidators: [SaveNameValidators.availability(data.personaStore)],
-        },
-      ],
-      skills: [
-        [],
-        SkillsValidators.count(this.fusionItem.skillsInheritedCount),
-      ],
-    });
+
+    this.fetchServices();
+
+    this.initializeSaveForm();
   }
 
   ngOnInit(): void {}
@@ -67,6 +63,41 @@ export class SaveFusionDialogComponent implements OnInit {
     this.saveForm.patchValue({ skills: this.skillsSelection._value });
   }
 
+  private fetchServices(): void {
+    const game = this.route.firstChild.snapshot.params.game;
+    this.personaStoreService = this.injector.get<PersonaStoreService>(
+      serviceToken[game].personaStore,
+    );
+    const compendiumService = this.injector.get<CompendiumService>(
+      serviceToken[game].compendium,
+    );
+    const skillService = this.injector.get<SkillService>(
+      serviceToken[game].skill,
+    );
+    this.fusionNodeHelper = new FusionNodeHelper(
+      compendiumService,
+      skillService,
+    );
+  }
+
+  private initializeSaveForm(): void {
+    this.saveForm = this.fb.group({
+      saveName: [
+        '',
+        {
+          validators: [Validators.required],
+          asyncValidators: [
+            SaveNameValidators.availability(this.personaStoreService),
+          ],
+        },
+      ],
+      skills: [
+        [],
+        SkillsValidators.count(this.fusionItem.skillsInheritedCount),
+      ],
+    });
+  }
+
   async onSave(): Promise<void> {
     if (!this.saveForm.valid) return;
     const fusionNode = this.createFusionNode();
@@ -77,7 +108,7 @@ export class SaveFusionDialogComponent implements OnInit {
 
   private createFusionNode(): FusionNode {
     const formValue = this.saveForm.value;
-    const fusionNode = this.data.fusionNodeHelper.convertFusionResult(
+    const fusionNode = this.fusionNodeHelper.convertFusionResult(
       this.fusionItem,
       formValue.skills,
     );
