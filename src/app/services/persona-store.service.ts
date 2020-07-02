@@ -18,9 +18,28 @@ export class PersonaStoreService {
   }
 
   async save(data: FusionNode): Promise<boolean> {
-    let saveState: boolean;
     try {
       await this.dbService.add(this.storeName, data);
+      return true;
+    } catch (error) {
+      console.error(error);
+      return false;
+    }
+  }
+
+  async update(data: FusionNode): Promise<boolean> {
+    try {
+      await this.dbService.update(this.storeName, data);
+      return true;
+    } catch (error) {
+      console.error(error);
+      return false;
+    }
+  }
+
+  async delete(id: number): Promise<boolean> {
+    try {
+      await this.dbService.delete(this.storeName, id);
       return true;
     } catch (error) {
       console.error(error);

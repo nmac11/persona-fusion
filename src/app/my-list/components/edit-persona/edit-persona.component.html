@@ -1,13 +1,29 @@
 <div *ngIf="fusionNode?.persona; else noData"
+     gdAreas="main | personaInfo"
+     gdAreas.gt-sm="personaInfo main"
      gdColumns.gt-sm="320px auto"
      gdRows="max-content auto"
      gdRows.gt-sm
      gdGap="16px">
-  <shared-persona-info [persona]="fusionNode.persona"></shared-persona-info>
-  <mat-card class="mat-elevation-z2">    
-  </mat-card>
+  <shared-persona-info [persona]="fusionNode.persona" gdArea="personaInfo"></shared-persona-info>
+  <div gdArea="main">
+    <mat-card class="mat-elevation-z2">
+      <mat-card-header>
+        <mat-card-title>{{fusionNode.saveName}}</mat-card-title>
+        <mat-card-subtitle>
+          {{fusionNode.persona.name}} / {{fusionNode.persona.arcanaName}} / Lv. {{fusionNode.currentLevel}}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <shared-fusion-item [fusionItem]="fusionNode"></shared-fusion-item>
+      </mat-card-content>
+      <mat-card-actions fxLayout fxLayoutAlign="end" style="padding: 8px">
+        <button mat-flat-button color="accent" (click)="onUpdate()">SAVE</button>
+        <button mat-stroked-button color="accent" (click)="confirmDelete()">DELETE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
-
 <ng-template #noData>
   <p class="mat-body-1">
     No data found.
