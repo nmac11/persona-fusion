@@ -36,7 +36,7 @@ export class SimulatorComponent implements OnInit {
     private location: Location,
     private activeGameService: ActiveGameService,
   ) {
-      const tokens = this.activeGameService.getTokenSet('sim');
+      const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
       tokens.compendium,
     );
