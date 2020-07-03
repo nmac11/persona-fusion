@@ -46,12 +46,13 @@ export class MyListComponent implements OnInit, AfterViewInit {
     this.personaStoreService = this.injector.get<PersonaStoreService>(
       tokens.personaStore,
     );
+    this.savedPersonae = new MatTableDataSource<FusionNode>();
   }
 
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    this.loadList();
+    this.setUpDataSource();
   }
 
   applyFilter(key: string = '') {
@@ -69,21 +70,21 @@ export class MyListComponent implements OnInit, AfterViewInit {
       panelClass: 'my-list-create-overlay-pane',
     });
     dialogRef.afterClosed().subscribe((refresh) => {
-      if (refresh) this.loadList();
+      if (refresh) this.loadData();
     });
   }
 
-  private loadList(): void {
+  private loadData(): void {
     this.personaStoreService
       .loadAll()
-      .then((savedPersonae) => this.setDataSource(savedPersonae));
+      .then((savedPersonae) => (this.savedPersonae.data = savedPersonae));
   }
 
-  private setDataSource(savedPersonae: FusionNode[]): void {
-    this.savedPersonae = new MatTableDataSource<FusionNode>(savedPersonae);
-    this.savedPersonae.paginator = this.paginator;
+  private setUpDataSource(): void {
+    this.loadData();
     this.configFilter();
     this.configSort();
+    this.savedPersonae.paginator = this.paginator;
   }
 
   private configFilter(): void {
