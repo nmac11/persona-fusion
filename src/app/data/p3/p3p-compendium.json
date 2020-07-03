@@ -417,7 +417,8 @@
             {
                 "name": "Vorpal Blade",
                 "level": 79,
-                "type": "slash"
+                "type": "slash",
+                "exclusive": true
             },
             {
                 "name": "Regenerate 3",
@@ -2777,7 +2778,8 @@
             {
                 "name": "Weary Thrust",
                 "level": 0,
-                "type": "strike"
+                "type": "strike",
+                "exclusive": true
             },
             {
                 "name": "Invigorate 3",
@@ -5665,7 +5667,8 @@
             {
                 "name": "Vorpal Blade",
                 "level": 63,
-                "type": "slash"
+                "type": "slash",
+                "exclusive": true
             },
             {
                 "name": "Arms Master",
@@ -6492,7 +6495,8 @@
             {
                 "name": "Die for Me!",
                 "level": 59,
-                "type": "dark"
+                "type": "dark",
+                "exclusive": true
             },
             {
                 "name": "Marakunda",
@@ -7503,7 +7507,8 @@
             {
                 "name": "Weary Thrust",
                 "level": 0,
-                "type": "strike"
+                "type": "strike",
+                "exclusive": true
             },
             {
                 "name": "Null Strike",
@@ -7805,7 +7810,8 @@
             {
                 "name": "Weary Thrust",
                 "level": 70,
-                "type": "strike"
+                "type": "strike",
+                "exclusive": true
             },
             {
                 "name": "Spear Master",
@@ -8033,7 +8039,8 @@
             {
                 "name": "Vorpal Blade",
                 "level": 0,
-                "type": "slash"
+                "type": "slash",
+                "exclusive": true
             },
             {
                 "name": "Primal Force",
@@ -9651,7 +9658,8 @@
             {
                 "name": "Heaven's Blade",
                 "level": 77,
-                "type": "slash"
+                "type": "slash",
+                "exclusive": true
             }
         ],
         "inherits": "elec",
@@ -9709,7 +9717,8 @@
             {
                 "name": "Black Viper",
                 "level": 86,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             }
         ],
         "inherits": "light-dark",
@@ -9838,7 +9847,8 @@
             {
                 "name": "Magic Skill Up",
                 "level": 98,
-                "type": "passive"
+                "type": "passive",
+                "exclusive": true
             }
         ],
         "inherits": "light-dark",
@@ -9992,7 +10002,8 @@
             {
                 "name": "Weary Thrust",
                 "level": 76,
-                "type": "strike"
+                "type": "strike",
+                "exclusive": true
             },
             {
                 "name": "High Counter",

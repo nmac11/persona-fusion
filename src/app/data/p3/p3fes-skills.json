@@ -113,7 +113,8 @@
     },
     {
         "name": "Black Viper",
-        "type": "almighty"
+        "type": "almighty",
+        "exclusive": true
     },
     {
         "name": "Blade of Fury",
@@ -405,7 +406,8 @@
     },
     {
         "name": "Heaven's Blade",
-        "type": "slash"
+        "type": "slash",
+        "exclusive": true
     },
     {
         "name": "Heavy Master",
@@ -1001,11 +1003,13 @@
     },
     {
         "name": "Vorpal Blade",
-        "type": "slash"
+        "type": "slash",
+        "exclusive": true
     },
     {
         "name": "Weary Thrust",
-        "type": "strike"
+        "type": "strike",
+        "exclusive": true
     },
     {
         "name": "Wind Amp",

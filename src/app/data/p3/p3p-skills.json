@@ -113,7 +113,8 @@
     },
     {
         "name": "Black Viper",
-        "type": "almighty"
+        "type": "almighty",
+        "exclusive": true
     },
     {
         "name": "Blade of Fury",
@@ -189,7 +190,8 @@
     },
     {
         "name": "Die for Me!",
-        "type": "dark"
+        "type": "dark",
+        "exclusive": true
     },
     {
         "name": "Distress Boost",
@@ -405,7 +407,8 @@
     },
     {
         "name": "Heaven's Blade",
-        "type": "slash"
+        "type": "slash",
+        "exclusive": true
     },
     {
         "name": "Heavy Master",
@@ -1001,11 +1004,13 @@
     },
     {
         "name": "Vorpal Blade",
-        "type": "slash"
+        "type": "slash",
+        "exclusive": true
     },
     {
         "name": "Weary Thrust",
-        "type": "strike"
+        "type": "strike",
+        "exclusive": true
     },
     {
         "name": "Wind Amp",
@@ -1070,7 +1075,8 @@
     },
     {
         "name": "Magic Skill Up",
-        "type": "passive"
+        "type": "passive",
+        "exclusive": true
     },
     {
         "name": "Physical Boost",
