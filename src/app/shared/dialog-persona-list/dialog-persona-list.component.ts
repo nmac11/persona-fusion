@@ -5,16 +5,13 @@ import {
   EventEmitter,
   Injector,
 } from '@angular/core';
-import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import { fromEvent } from 'rxjs';
 import { Persona } from '../../models/persona';
 import { FusionNode } from '../../models/fusion-node';
 import { CompendiumService } from '../../services/compendium.service';
 import { SkillService } from '../../services/skill.service';
 import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
 import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper';
-import { ActivatedRoute } from '@angular/router';
-import { serviceToken } from '../../helpers/service-token-helper';
+import { ActiveGameService } from '../../services/active-game.service';
 
 @Component({
   selector: 'shared-dialog-persona-list',
@@ -31,7 +28,10 @@ export class DialogPersonaListComponent implements OnInit {
 
   list: Persona[];
 
-  constructor(private injector: Injector, private route: ActivatedRoute) {
+  constructor(
+    private injector: Injector,
+    private activeGameService: ActiveGameService,
+  ) {
     this.fetchServices();
   }
 
@@ -62,13 +62,11 @@ export class DialogPersonaListComponent implements OnInit {
   }
 
   private fetchServices(): void {
-    const game = this.route.firstChild.snapshot.params.game;
+    const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
-      serviceToken[game].compendium,
+      tokens.compendium,
     );
-    const skillService = this.injector.get<SkillService>(
-      serviceToken[game].skill,
-    );
+    const skillService = this.injector.get<SkillService>(tokens.skill);
     this.fusionNodeHelper = new FusionNodeHelper(
       this.compendiumService,
       skillService,

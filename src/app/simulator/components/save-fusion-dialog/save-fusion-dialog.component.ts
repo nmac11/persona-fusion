@@ -7,7 +7,6 @@ import {
   AfterViewInit,
   ElementRef,
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FusionResult } from '../../../models/fusion-result';
@@ -21,7 +20,7 @@ import { CompendiumService } from '../../../services/compendium.service';
 import { SkillService } from '../../../services/skill.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
-import { serviceToken } from '../../../helpers/service-token-helper';
+import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'simulator-save-fusion-dialog',
@@ -43,13 +42,11 @@ export class SaveFusionDialogComponent implements OnInit {
     },
     private fb: FormBuilder,
     private snackBar: MatSnackBar,
-    private route: ActivatedRoute,
+    private activeGameService: ActiveGameService,
     private injector: Injector,
   ) {
     this.fusionItem = data.fusionItem;
-
     this.fetchServices();
-
     this.initializeSaveForm();
   }
 
@@ -64,16 +61,14 @@ export class SaveFusionDialogComponent implements OnInit {
   }
 
   private fetchServices(): void {
-    const game = this.route.firstChild.snapshot.params.game;
+    const tokens = this.activeGameService.getTokenSet();
     this.personaStoreService = this.injector.get<PersonaStoreService>(
-      serviceToken[game].personaStore,
+      tokens.personaStore,
     );
     const compendiumService = this.injector.get<CompendiumService>(
-      serviceToken[game].compendium,
+      tokens.compendium,
     );
-    const skillService = this.injector.get<SkillService>(
-      serviceToken[game].skill,
-    );
+    const skillService = this.injector.get<SkillService>(tokens.skill);
     this.fusionNodeHelper = new FusionNodeHelper(
       compendiumService,
       skillService,

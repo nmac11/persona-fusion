@@ -12,6 +12,7 @@ import { SimulatorModule } from '../simulator/simulator.module';
 import { NormalFusionsBottomSheetComponent } from './components/normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
 import { SharedModule } from '../shared/shared.module';
 import { MyListModule } from '../my-list/my-list.module';
+import { ActiveGameService } from '../services/active-game.service';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MyListModule } from '../my-list/my-list.module';
     SharedModule,
     MyListModule,
   ],
+  providers: [ActiveGameService],
   entryComponents: [NormalFusionsBottomSheetComponent],
 })
 export class GameModule {}

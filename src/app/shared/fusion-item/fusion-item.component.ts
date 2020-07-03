@@ -6,13 +6,12 @@ import {
   Output,
   EventEmitter,
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { FusionNode } from '../../models/fusion-node';
 import { Persona } from '../../models/persona';
 import { SkillsDialogComponent } from '../skills-dialog/skills-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 import { SkillService } from '../../services/skill.service';
-import { serviceToken } from '../../helpers/service-token-helper';
+import { ActiveGameService } from '../../services/active-game.service';
 
 @Component({
   selector: 'shared-fusion-item',
@@ -27,13 +26,11 @@ export class FusionItemComponent implements OnInit {
 
   constructor(
     private matDialog: MatDialog,
-    private route: ActivatedRoute,
     private injector: Injector,
+    private activeGameService: ActiveGameService,
   ) {
-    const game = this.route.parent.snapshot.params.game;
-    this.skillService = this.injector.get<SkillService>(
-      serviceToken[game].skill,
-    );
+    const tokens = this.activeGameService.getTokenSet();
+    this.skillService = this.injector.get<SkillService>(tokens.skill);
   }
 
   ngOnInit(): void {}

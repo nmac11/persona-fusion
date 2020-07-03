@@ -1,3 +1,5 @@
+import { InjectionToken } from '@angular/core';
+
 import { P3P_COMPENDIUM } from '../tokens/p3p/compendium-service-token';
 import { P3P_NORMAL_FUSION } from '../tokens/p3p/normal-fusion-service-token';
 import { P3P_TRIANGLE_FUSION } from '../tokens/p3p/triangle-fusion-service-token';
@@ -28,8 +30,25 @@ import { P4_FUSION_CHART } from '../tokens/p4/fusion-chart-service-token';
 import { P4_SIMULATOR } from '../tokens/p4/simulator-service-token';
 import { P4_SKILL } from '../tokens/p4/skill-service-token';
 import { P4_PERSONA_STORE } from '../tokens/p4/persona-store-service-token';
+import { CompendiumService } from '../services/compendium.service';
+import { NormalFusionService } from '../services/normal-fusion.service';
+import { TriangleFusionService } from '../services/triangle-fusion.service';
+import { FusionChartService } from '../services/fusion-chart.service';
+import { SimulatorService } from '../services/simulator.service';
+import { SkillService } from '../services/skill.service';
+import { PersonaStoreService } from '../services/persona-store.service';
 
-export const serviceToken: any = {
+export interface ServiceTokenSet {
+  compendium: InjectionToken<CompendiumService>;
+  normalFusion: InjectionToken<NormalFusionService>;
+  triangleFusion: InjectionToken<TriangleFusionService>;
+  fusionChart: InjectionToken<FusionChartService>;
+  simulator: InjectionToken<SimulatorService>;
+  skill: InjectionToken<SkillService>;
+  personaStore: InjectionToken<PersonaStoreService>;
+}
+
+export const serviceToken: { [key: string]: ServiceTokenSet } = {
   p3p: {
     compendium: P3P_COMPENDIUM,
     normalFusion: P3P_NORMAL_FUSION,

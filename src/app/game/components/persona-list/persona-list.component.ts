@@ -5,13 +5,13 @@ import {
   ViewChild,
   Injector,
 } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { serviceToken } from '../../../helpers/service-token-helper';
+import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'game-persona-list',
@@ -28,22 +28,21 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
 
   constructor(
     private injector: Injector,
-    private route: ActivatedRoute,
     private router: Router,
+    private activeGameService: ActiveGameService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const game = this.route.parent.snapshot.params.game;
+    this.personae = new MatTableDataSource<Persona>();
+    const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
-      serviceToken[game].compendium,
+      tokens.compendium,
     );
-    this.personae = new MatTableDataSource<Persona>(
-      this.compendiumService.getAll(),
-    );
+    this.personae.data = this.compendiumService.getAll();
   }
 
   ngOnInit(): void {}
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     this.personae.sort = this.sort;
     this.personae.paginator = this.paginator;
   }

@@ -6,7 +6,6 @@ import { Skill } from '../models/skill';
 import { CompendiumService } from '../services/compendium.service';
 import { SimulatorService } from '../services/simulator.service';
 import { SkillService } from '../services/skill.service';
-import { serviceToken } from '../helpers/service-token-helper';
 import { ListDialogComponent } from '../shared/list-dialog/list-dialog.component';
 import { SkillsDialogComponent } from '../shared/skills-dialog/skills-dialog.component';
 import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
@@ -14,7 +13,7 @@ import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
 import { MatDialog } from '@angular/material/dialog';
 import { FusionNodeHelper } from './helpers/fusion-node-helper';
-import { PersonaStoreService } from '../services/persona-store.service';
+import { ActiveGameService } from '../services/active-game.service';
 
 @Component({
   selector: 'simulator-root',
@@ -27,30 +26,27 @@ export class SimulatorComponent implements OnInit {
   compendiumService: CompendiumService;
   simulatorService: SimulatorService;
   skillService: SkillService;
-  personaStoreService: PersonaStoreService;
   fusionNodeHelper: FusionNodeHelper;
 
   constructor(
     private injector: Injector,
-    private route: ActivatedRoute,
     private router: Router,
+    private route: ActivatedRoute,
     private matDialog: MatDialog,
     private location: Location,
+    private activeGameService: ActiveGameService,
   ) {
-    const game = this.route.parent.snapshot.params.game;
+      const tokens = this.activeGameService.getTokenSet('sim');
     this.compendiumService = this.injector.get<CompendiumService>(
-      serviceToken[game].compendium,
+      tokens.compendium,
     );
     this.simulatorService = this.injector.get<SimulatorService>(
-      serviceToken[game].simulator,
+      tokens.simulator,
     );
-    this.skillService = this.injector.get<SkillService>(
-      serviceToken[game].skill,
-    );
-    this.personaStoreService = this.injector.get<PersonaStoreService>(
-      serviceToken[game].personaStore,
-    );
-  }
+    this.skillService = this.injector.get<SkillService>(tokens.skill);
+  
+}
+    
 
   ngOnInit(): void {
     this.fusionNodeHelper = new FusionNodeHelper(

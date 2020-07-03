@@ -1,11 +1,11 @@
 import { Component, OnInit, Injector } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PersonaStoreService } from '../../../services/persona-store.service';
-import { serviceToken } from '../../../helpers/service-token-helper';
 import { FusionNode } from '../../../models/fusion-node';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDeleteDialogComponent } from '../confirm-delete-dialog/confirm-delete-dialog.component';
+import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'my-list-edit-persona',
@@ -22,11 +22,12 @@ export class EditPersonaComponent implements OnInit {
     private router: Router,
     private snackBar: MatSnackBar,
     private dialog: MatDialog,
+    private activeGameService: ActiveGameService,
   ) {
-    const game = this.route.parent.snapshot.params.game;
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    const tokens = this.activeGameService.getTokenSet();
     this.personaStoreService = this.injector.get<PersonaStoreService>(
-      serviceToken[game].personaStore,
+      tokens.personaStore,
     );
   }
 

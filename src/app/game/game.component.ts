@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { ActiveGameService } from '../services/active-game.service';
 
 @Component({
   selector: 'game-root',
@@ -12,10 +13,15 @@ export class GameComponent implements OnInit, OnDestroy {
   page: string;
   routeDataSub: Subscription;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private activeGame: ActiveGameService,
+  ) {}
 
   ngOnInit(): void {
-    this.title = this.route.snapshot.params.game;
+    const game = this.route.snapshot.data.game;
+    this.title = game;
+    this.activeGame.game = game;
     this.routeDataSub = this.route.firstChild.data.subscribe(
       (data) => (this.page = data.page),
     );

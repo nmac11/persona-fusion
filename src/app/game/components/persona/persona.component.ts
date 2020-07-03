@@ -1,39 +1,41 @@
-import { OnInit, Component, Injector } from '@angular/core';
+import { OnInit, Component, Injector, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { FusionChartService } from '../../../services/fusion-chart.service';
 import { Persona } from '../../../models/persona';
-import { Observer, Observable } from 'rxjs';
-import { serviceToken } from '../../../helpers/service-token-helper';
+import { Observer, Observable, Subscription } from 'rxjs';
+import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'game-persona',
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css'],
 })
-export class PersonaComponent implements OnInit {
+export class PersonaComponent implements OnInit, OnDestroy {
   persona: Persona;
   specialFusions: Persona[] = [];
   compendiumService: CompendiumService;
   fusionChartService: FusionChartService;
+  routeParamsSub: Subscription;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private injector: Injector,
+    private activeGameService: ActiveGameService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const game = this.route.parent.snapshot.params.game;
+    const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
-      serviceToken[game].compendium,
+      tokens.compendium,
     );
     this.fusionChartService = this.injector.get<FusionChartService>(
-      serviceToken[game].fusionChart,
+      tokens.fusionChart,
     );
   }
 
   ngOnInit(): void {
-    this.route.params.subscribe((p: object) => {
+    this.routeParamsSub = this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
       if (this.persona?.special) {
         this.specialFusions = this.fusionChartService.getSpecialFusions(
@@ -41,6 +43,10 @@ export class PersonaComponent implements OnInit {
         );
       }
     });
+  }
+
+  ngOnDestroy(): void {
+    this.routeParamsSub.unsubscribe();
   }
 
   queryParams(): Object {

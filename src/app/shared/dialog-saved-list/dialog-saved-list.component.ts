@@ -10,8 +10,7 @@ import { Persona } from '../../models/persona';
 import { FusionNode } from '../../models/fusion-node';
 import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
 import { PersonaStoreService } from '../../services/persona-store.service';
-import { ActivatedRoute } from '@angular/router';
-import { serviceToken } from '../../helpers/service-token-helper';
+import { ActiveGameService } from '../../services/active-game.service';
 
 @Component({
   selector: 'shared-dialog-saved-list',
@@ -26,10 +25,13 @@ export class DialogSavedListComponent implements OnInit {
 
   list: FusionNode[];
 
-  constructor(private route: ActivatedRoute, private injector: Injector) {
-    const game = this.route.firstChild.snapshot.params.game;
+  constructor(
+    private activeGameService: ActiveGameService,
+    private injector: Injector,
+  ) {
+    const tokens = this.activeGameService.getTokenSet();
     this.personaStoreService = this.injector.get<PersonaStoreService>(
-      serviceToken[game].personaStore,
+      tokens.personaStore,
     );
   }
 

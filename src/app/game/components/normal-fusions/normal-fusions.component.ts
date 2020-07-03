@@ -1,5 +1,4 @@
 import { Component, OnInit, Injector, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { NormalFusionService } from '../../../services/normal-fusion.service';
@@ -9,9 +8,9 @@ import { p3pNormalFusionProvider } from '../../../tokens/p3p/normal-fusion-servi
 import { p3fesNormalFusionProvider } from '../../../tokens/p3fes/normal-fusion-service-token';
 import { p4gNormalFusionProvider } from '../../../tokens/p4g/normal-fusion-service-token';
 import { p4NormalFusionProvider } from '../../../tokens/p4/normal-fusion-service-token';
-import { serviceToken } from '../../../helpers/service-token-helper';
 import { NormalFusionsBottomSheetComponent } from '../normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'game-normal-fusions',
@@ -33,17 +32,13 @@ export class NormalFusionsComponent implements OnInit {
   nameFilters: string[] = [];
 
   constructor(
-    private route: ActivatedRoute,
     private injector: Injector,
     private bottomSheet: MatBottomSheet,
+    private activeGameService: ActiveGameService,
   ) {
-    const game = this.route.parent.snapshot.params.game;
-    this.compendiumService = this.injector.get<CompendiumService>(
-      serviceToken[game].compendium,
-    );
-    this.fusionService = this.injector.get<NormalFusionService>(
-      serviceToken[game].normalFusion,
-    );
+    const tokens = this.activeGameService.getTokenSet();
+    this.compendiumService = injector.get<CompendiumService>(tokens.compendium);
+    this.fusionService = injector.get<NormalFusionService>(tokens.normalFusion);
   }
 
   ngOnInit(): void {
@@ -56,7 +51,7 @@ export class NormalFusionsComponent implements OnInit {
 
   openBottomSheet(fusion: Persona[]): void {
     this.bottomSheet.open(NormalFusionsBottomSheetComponent, {
-      data: { game: this.route.parent.snapshot.params.game, fusion },
+      data: fusion,
     });
   }
 

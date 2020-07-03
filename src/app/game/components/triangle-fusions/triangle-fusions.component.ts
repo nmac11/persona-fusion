@@ -1,7 +1,6 @@
 import { Component, OnInit, Injector, Input } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
-import { ActivatedRoute } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { TriangleFusionService } from '../../../services/triangle-fusion.service';
@@ -9,7 +8,7 @@ import { p3pTriangleFusionProvider } from '../../../tokens/p3p/triangle-fusion-s
 import { p3fesTriangleFusionProvider } from '../../../tokens/p3fes/triangle-fusion-service-token';
 import { p4gTriangleFusionProvider } from '../../../tokens/p4g/triangle-fusion-service-token';
 import { p4TriangleFusionProvider } from '../../../tokens/p4/triangle-fusion-service-token';
-import { serviceToken } from '../../../helpers/service-token-helper';
+import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'game-triangle-fusions',
@@ -32,13 +31,16 @@ export class TriangleFusionsComponent implements OnInit {
   @Input('persona') persona: Persona;
   nameFilters: string[] = [];
 
-  constructor(private route: ActivatedRoute, private injector: Injector) {
-    const game = this.route.parent.snapshot.params.game;
+  constructor(
+    private injector: Injector,
+    private activeGameService: ActiveGameService,
+  ) {
+    const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
-      serviceToken[game].compendium,
+      tokens.compendium,
     );
     this.fusionService = this.injector.get<TriangleFusionService>(
-      serviceToken[game].triangleFusion,
+      tokens.triangleFusion,
     );
   }
 
@@ -96,8 +98,8 @@ export class TriangleFusionsComponent implements OnInit {
   }
 
   simulatorQueryParams(): Object {
-    const [p1, p2, p3] = this.selectedPersonae.map(p => p.name.toLowerCase());
-    return {p1, p2, p3};
+    const [p1, p2, p3] = this.selectedPersonae.map((p) => p.name.toLowerCase());
+    return { p1, p2, p3 };
   }
 
   private includesEveryFilterPersona: (fusion: Persona[]) => boolean = (

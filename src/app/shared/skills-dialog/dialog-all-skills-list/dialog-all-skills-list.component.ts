@@ -2,8 +2,7 @@ import { Component, OnInit, Input, Injector } from '@angular/core';
 import { SkillService } from '../../../services/skill.service';
 import { Skill } from '../../../models/skill';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
-import { ActivatedRoute } from '@angular/router';
-import { serviceToken } from '../../../helpers/service-token-helper';
+import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'shared-dialog-all-skills-list',
@@ -15,11 +14,12 @@ export class DialogAllSkillsListComponent implements OnInit {
   skillService: SkillService;
   skills: Skill[];
 
-  constructor(private route: ActivatedRoute, private injector: Injector) {
-    const game = this.route.firstChild.snapshot.params.game;
-    this.skillService = this.injector.get<SkillService>(
-      serviceToken[game].skill,
-    );
+  constructor(
+    private activeGameService: ActiveGameService,
+    private injector: Injector,
+  ) {
+    const tokens = this.activeGameService.getTokenSet();
+    this.skillService = this.injector.get<SkillService>(tokens.skill);
   }
 
   ngOnInit(): void {

@@ -5,16 +5,16 @@ import {
   ViewChild,
   Injector,
 } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { PersonaStoreService } from '../services/persona-store.service';
 import { FusionNode } from '../models/fusion-node';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { serviceToken } from '../helpers/service-token-helper';
 import { partialMatchRegExp } from '../helpers/reg-exp-helpers';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
 import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
+import { ActiveGameService } from '../services/active-game.service';
 
 @Component({
   selector: 'my-list-root',
@@ -37,14 +37,14 @@ export class MyListComponent implements OnInit, AfterViewInit {
 
   constructor(
     private injector: Injector,
-    private route: ActivatedRoute,
+    private activeGameService: ActiveGameService,
     private router: Router,
     private dialog: MatDialog,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const game = this.route.parent.snapshot.params.game;
+    const tokens = this.activeGameService.getTokenSet();
     this.personaStoreService = this.injector.get<PersonaStoreService>(
-      serviceToken[game].personaStore,
+      tokens.personaStore,
     );
   }
 
