@@ -53,12 +53,12 @@ export class CreatePersonaComponent implements OnInit {
     if (!this.createForm.valid) return;
     const formValue = this.createForm.value;
     const { saveName, fusionNode } = formValue;
-    const success = await this.personaStoreService.save({
+    const saveId = await this.personaStoreService.save({
       ...fusionNode,
       saveName,
     });
-    this.openSnackBar(success);
-    if (success) this.dialogRef.close(true);
+    this.openSnackBar(typeof saveId === 'number');
+    this.dialogRef.close(saveId);
   }
 
   private openSnackBar(success: boolean): void {

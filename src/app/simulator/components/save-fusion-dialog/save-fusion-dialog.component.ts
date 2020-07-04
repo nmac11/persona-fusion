@@ -96,7 +96,8 @@ export class SaveFusionDialogComponent implements OnInit {
   async onSave(): Promise<void> {
     if (!this.saveForm.valid) return;
     const fusionNode = this.createFusionNode();
-    const success = await this.personaStoreService.save(fusionNode);
+    const saveId = await this.personaStoreService.save(fusionNode);
+    const success = typeof saveId === 'number';
     this.showSaveStatus(fusionNode.saveName, success);
     if (success) this.onCancel();
   }

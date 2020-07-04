@@ -13,14 +13,13 @@ export class PersonaStoreService {
     this.storeName = game + '_personae';
   }
 
-  load(name: string): Promise<FusionNode> {
-    return this.dbService.getByIndex(this.storeName, 'saveName', name);
+  load(id: number): Promise<FusionNode> {
+    return this.dbService.getByKey(this.storeName, id);
   }
 
-  async save(data: FusionNode): Promise<boolean> {
+  async save(data: FusionNode): Promise<number | false> {
     try {
-      await this.dbService.add(this.storeName, data);
-      return true;
+      return await this.dbService.add(this.storeName, data);
     } catch (error) {
       console.error(error);
       return false;

@@ -29,7 +29,7 @@ const routes: Routes = [
         data: { page: 'My List' },
       },
       {
-        path: 'edit/:save_name',
+        path: 'edit/:save_id',
         component: EditPersonaComponent,
         data: { page: 'Edit' },
       },

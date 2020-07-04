@@ -32,9 +32,9 @@ export class EditPersonaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const saveName = this.route.snapshot.params.save_name;
+    const saveId = +this.route.snapshot.params['save_id'];
     this.personaStoreService
-      .load(saveName)
+      .load(saveId)
       .then((fusionNode) => (this.fusionNode = fusionNode));
   }
 

@@ -5,7 +5,7 @@ import {
   ViewChild,
   Injector,
 } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PersonaStoreService } from '../services/persona-store.service';
 import { FusionNode } from '../models/fusion-node';
 import { MatSort } from '@angular/material/sort';
@@ -40,6 +40,7 @@ export class MyListComponent implements OnInit, AfterViewInit {
     private activeGameService: ActiveGameService,
     private router: Router,
     private dialog: MatDialog,
+    private route: ActivatedRoute,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     const tokens = this.activeGameService.getTokenSet();
@@ -69,15 +70,10 @@ export class MyListComponent implements OnInit, AfterViewInit {
     const dialogRef = this.dialog.open(CreatePersonaComponent, {
       panelClass: 'my-list-create-overlay-pane',
     });
-    dialogRef.afterClosed().subscribe((refresh) => {
-      if (refresh) this.loadData();
+    dialogRef.afterClosed().subscribe((saveId) => {
+      if (saveId)
+        this.router.navigate([`../edit/${saveId}`], { relativeTo: this.route });
     });
-  }
-
-  private loadData(): void {
-    this.personaStoreService
-      .loadAll()
-      .then((savedPersonae) => (this.savedPersonae.data = savedPersonae));
   }
 
   private setUpDataSource(): void {
@@ -85,6 +81,12 @@ export class MyListComponent implements OnInit, AfterViewInit {
     this.configFilter();
     this.configSort();
     this.savedPersonae.paginator = this.paginator;
+  }
+
+  private loadData(): void {
+    this.personaStoreService
+      .loadAll()
+      .then((savedPersonae) => (this.savedPersonae.data = savedPersonae));
   }
 
   private configFilter(): void {

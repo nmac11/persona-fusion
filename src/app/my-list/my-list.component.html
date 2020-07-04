@@ -16,7 +16,7 @@
     <ng-container matColumnDef="saveName">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Save Name </th>
       <td mat-cell *matCellDef="let savedPersona">
-        <a class="persona-list-link" routerLink="../edit/{{savedPersona.saveName}}">
+        <a class="persona-list-link" routerLink="../edit/{{savedPersona.id}}">
           {{savedPersona.saveName}}
         </a>
       </td>
