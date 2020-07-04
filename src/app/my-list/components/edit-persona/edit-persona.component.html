@@ -17,9 +17,12 @@
       <mat-card-content>
         <shared-fusion-item [fusionItem]="fusionNode"></shared-fusion-item>
       </mat-card-content>
-      <mat-card-actions fxLayout fxLayoutAlign="end" style="padding: 8px">
-        <button mat-flat-button color="accent" (click)="onUpdate()">SAVE</button>
-        <button mat-stroked-button color="accent" (click)="confirmDelete()">DELETE</button>
+      <mat-card-actions fxLayout fxLayoutAlign="space-between" style="padding: 8px">
+        <button mat-button color="accent" (click)="confirmDelete()">DELETE</button>
+        <div fxLayout fxLayoutGap="4px">
+          <a mat-button color="accent" routerLink="../../my-list">BACK</a>
+          <button mat-flat-button color="accent" (click)="onUpdate()">SAVE</button>
+        </div>
       </mat-card-actions>
     </mat-card>
   </div>
