@@ -6,8 +6,8 @@
      gdRows.gt-sm
      gdGap="16px">
   <shared-persona-info [persona]="fusionNode.persona" gdArea="personaInfo"></shared-persona-info>
-  <div gdArea="main">
-    <mat-card class="mat-elevation-z2">
+  <div gdArea="main" fxLayout="column" fxLayoutGap="16px">
+    <mat-card>
       <mat-card-header>
         <mat-card-title>{{fusionNode.saveName}}</mat-card-title>
         <mat-card-subtitle>
@@ -25,6 +25,8 @@
         </div>
       </mat-card-actions>
     </mat-card>
+    <my-list-fusion-tree *ngIf="fusionNode.fusionComponents?.length" [fusionNode]="fusionNode">
+    </my-list-fusion-tree>
   </div>
 </div>
 <ng-template #noData>

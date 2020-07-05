@@ -9,6 +9,7 @@ import { EditPersonaComponent } from './components/edit-persona/edit-persona.com
 import { ConfirmDeleteDialogComponent } from './components/confirm-delete-dialog/confirm-delete-dialog.component';
 import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
 import { PersonaStoreModule } from '../persona-store/persona-store.module';
+import { FusionTreeComponent } from './components/fusion-tree/fusion-tree.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PersonaStoreModule } from '../persona-store/persona-store.module';
     EditPersonaComponent,
     ConfirmDeleteDialogComponent,
     CreatePersonaComponent,
+    FusionTreeComponent,
   ],
   entryComponents: [ConfirmDeleteDialogComponent, CreatePersonaComponent],
   imports: [

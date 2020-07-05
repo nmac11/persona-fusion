@@ -141,6 +141,7 @@ export class SimulatorService {
   ): FusionResult {
     return {
       persona,
+      fusionComponents: fusionItems,
       currentLevel: persona.level,
       skills: persona.skills.filter(skill => skill.level === 0),
       skillsInheritedCount: this.skillInheritanceService.numberOfSkillsInherited(

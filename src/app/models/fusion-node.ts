@@ -6,6 +6,6 @@ export interface FusionNode {
   persona: Persona;
   currentLevel: number;
   skills: Skill[];
-  components?: FusionNode[];
+  fusionComponents?: FusionNode[];
   saveName?: string;
 }
