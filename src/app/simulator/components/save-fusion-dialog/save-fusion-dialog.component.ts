@@ -21,6 +21,7 @@ import { SkillService } from '../../../services/skill.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
 import { ActiveGameService } from '../../../services/active-game.service';
+import { InheritableSkill } from '../../../models/inheritable-skill';
 
 @Component({
   selector: 'simulator-save-fusion-dialog',
@@ -60,6 +61,16 @@ export class SaveFusionDialogComponent implements OnInit {
     this.saveForm.patchValue({ skills: this.skillsSelection._value });
   }
 
+  inheritableSkills(): InheritableSkill[] {
+    return this.fusionItem.inheritableSkills.filter((s) => s.probRatio > 0);
+  }
+
+  skillsInheritedCount(): number {
+    const skillsInheritedCount = this.fusionItem.skillsInheritedCount;
+    const inheritableSkillsCount = this.inheritableSkills().length;
+    return Math.min(skillsInheritedCount, inheritableSkillsCount);
+  }
+
   private fetchServices(): void {
     const tokens = this.activeGameService.getTokenSet();
     this.personaStoreService = this.injector.get<PersonaStoreService>(
@@ -88,7 +99,7 @@ export class SaveFusionDialogComponent implements OnInit {
       ],
       skills: [
         [],
-        SkillsValidators.count(this.fusionItem.skillsInheritedCount),
+        SkillsValidators.count(this.skillsInheritedCount()),
       ],
     });
   }

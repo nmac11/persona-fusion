@@ -14,7 +14,7 @@
 
     <mat-selection-list #skills (selectionChange)="updateSelections($event)">
       <div mat-subheader>Skills</div>
-      <mat-list-option *ngFor="let skill of fusionItem.inheritableSkills" [value]="skill">
+      <mat-list-option *ngFor="let skill of inheritableSkills()" [value]="skill">
         <span mat-line>{{skill.name}}</span>
         <small mat-line>{{skill.type}}</small>
       </mat-list-option>
@@ -31,7 +31,7 @@
     <div *ngIf="skills.selectedOptions.selected.length === 0"
          class="mat-body-2"
          style="position: sticky; bottom: 0; background: #fff; text-align: center;">
-      <span>Pick {{fusionItem.skillsInheritedCount}} skill<span *ngIf="fusionItem.skillsInheritedCount !== 1">s</span>.</span>
+      <span>Pick {{skillsInheritedCount()}} skill<span *ngIf="fusionItem.skillsInheritedCount !== 1">s</span>.</span>
     </div>
 
   </mat-dialog-content>
