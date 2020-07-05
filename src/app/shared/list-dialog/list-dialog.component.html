@@ -1,11 +1,22 @@
 <h1 mat-dialog-title>
-  <ng-container *ngIf="selectedItem; else noSelection">
-    Selected: {{selectedItem.persona.name}}
-    <span *ngIf="selectedItem.saveName">({{selectedItem.saveName}})</span>
-  </ng-container>
-  <ng-template #noSelection>Select a Persona</ng-template>
+  Add Persona
 </h1>
 <mat-dialog-content>
+  <div *ngIf="selectedItem; else noSelection" class="mat-body-1">
+    Selected: 
+    <span class="mat-body-2">
+      <span *ngIf="selectedItem.saveName">
+          {{selectedItem.saveName}}, 
+      </span>
+      {{selectedItem?.persona.name}} (Lv. {{selectedItem.currentLevel}})
+    </span>
+  </div>
+  
+  <ng-template #noSelection>
+    <div class="mat-body-1">
+      Select a Persona.
+    </div>
+  </ng-template>
   <mat-tab-group>
     <mat-tab>
       <ng-template matTabLabel>
