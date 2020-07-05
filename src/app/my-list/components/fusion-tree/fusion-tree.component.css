@@ -14,5 +14,10 @@
 }
 
 .fusion-tree li {
+  white-space: nowrap;
   border-left: 1px solid rgba(0,0,0,.26);
+}
+
+:host ::ng-deep .fusion-tree-ex-panel .mat-expansion-panel-body {
+  overflow: auto;
 }
