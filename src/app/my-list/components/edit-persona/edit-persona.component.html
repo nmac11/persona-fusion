@@ -1,14 +1,15 @@
 <div *ngIf="fusionNode?.persona; else noData"
      gdAreas="main | personaInfo"
      gdAreas.gt-sm="personaInfo main"
-     gdColumns.gt-sm="320px auto"
+     gdColumns="minmax(0, 1fr)"
+     gdColumns.gt-sm="320px minmax(0, 1fr)"
      gdRows="max-content auto"
      gdRows.gt-sm
      gdGap="16px">
   <shared-persona-info [persona]="fusionNode.persona" gdArea="personaInfo"></shared-persona-info>
   <div gdArea="main" fxLayout="column" fxLayoutGap="16px">
     <mat-card>
-      <mat-card-header>
+      <mat-card-header style="overflow: hidden; text-overflow: ellipsis;">
         <mat-card-title>{{fusionNode.saveName}}</mat-card-title>
         <mat-card-subtitle>
           {{fusionNode.persona.name}} / {{fusionNode.persona.arcanaName}} / Lv. {{fusionNode.currentLevel}}
