@@ -23,9 +23,14 @@ export class FusionChartService {
   }
 
   getSpecialFusions(persona: Persona): Persona[] {
-    return this.specialFusions
-      .find((sf) => sf.persona === persona.name)
-      .requirements.map((name) => this.compendiumService.find(name));
+    const specialFusion = this.specialFusions.find(
+      (sf) => sf.persona === persona.name,
+    );
+    return specialFusion
+      ? specialFusion.requirements.map((name) =>
+          this.compendiumService.find(name),
+        )
+      : [];
   }
 
   trySpecialFusion(personae: Persona[]): Persona {

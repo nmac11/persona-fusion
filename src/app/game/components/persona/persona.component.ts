@@ -13,7 +13,7 @@ import { ActiveGameService } from '../../../services/active-game.service';
 })
 export class PersonaComponent implements OnInit, OnDestroy {
   persona: Persona;
-  specialFusions: Persona[] = [];
+  specialFusion: Persona[] = [];
   compendiumService: CompendiumService;
   fusionChartService: FusionChartService;
   routeParamsSub: Subscription;
@@ -37,11 +37,9 @@ export class PersonaComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.routeParamsSub = this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
-      if (this.persona?.special) {
-        this.specialFusions = this.fusionChartService.getSpecialFusions(
-          this.persona,
-        );
-      }
+      this.specialFusion = this.fusionChartService.getSpecialFusions(
+        this.persona,
+      );
     });
   }
 
@@ -51,7 +49,7 @@ export class PersonaComponent implements OnInit, OnDestroy {
 
   queryParams(): Object {
     const params = {};
-    this.specialFusions.forEach(
+    this.specialFusion.forEach(
       (p, i) => (params['p' + (i + 1)] = p.name.toLowerCase()),
     );
     return params;

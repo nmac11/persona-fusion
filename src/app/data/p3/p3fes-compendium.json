@@ -456,7 +456,7 @@
         "name": "Orpheus Telos",
         "level": 90,
         "arcana": 0,
-        "special": true,
+        "special": false,
         "specialCondition": "Max all social links",
         "id": 9,
         "skills": [
