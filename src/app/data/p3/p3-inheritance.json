@@ -173,7 +173,7 @@
         "elec": 1,
         "wind": 1,
         "light": 0.2,
-        "dark": 0.2,
+        "dark": 0,
         "almighty": 1,
         "ailment": 0.2,
         "recovery": 8,
