@@ -17,7 +17,8 @@ export class SkillInheritanceService {
       total += item.skills.slice(0, 8).length;
       return total;
     }, 0);
-    const chart = [0, 6, 9, 12, 24, 32, 99];
+    // Not possible to inherit exactly 7 skills
+    const chart = [0, 6, 9, 12, 24, 32, 42, 42, 99];
     const totalInheritedSkills = chart.indexOf(
       chart.find((n) => totalFusionSkills < n),
     );
