@@ -17,6 +17,10 @@ export class PersonaStoreService {
     return this.dbService.getByKey(this.storeName, id);
   }
 
+  loadByName(name: string): Promise<FusionNode> {
+    return this.dbService.getByIndex(this.storeName, 'saveName', name);
+  }
+
   async save(data: FusionNode): Promise<number | false> {
     try {
       return await this.dbService.add(this.storeName, data);

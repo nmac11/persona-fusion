@@ -57,8 +57,9 @@ export class CreatePersonaComponent implements OnInit {
       ...fusionNode,
       saveName,
     });
-    this.openSnackBar(typeof saveId === 'number');
-    this.dialogRef.close(saveId);
+    const success = typeof saveId === 'number';
+    this.openSnackBar(success);
+    if (success) this.dialogRef.close(saveId);
   }
 
   private openSnackBar(success: boolean): void {

@@ -5,7 +5,7 @@ export class SaveNameValidators {
   static availability(storeService: PersonaStoreService) {
     return async (control: AbstractControl) => {
       const name = control.value;
-      const existing = await storeService.load(name);
+      const existing = await storeService.loadByName(name);
       return existing ? { unavailable: true } : null;
     };
   }
