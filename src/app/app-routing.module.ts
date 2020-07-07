@@ -9,6 +9,7 @@ import { SimulatorComponent } from './simulator/simulator.component';
 import { MyListComponent } from './my-list/my-list.component';
 import { ValidGameGuard } from './valid-game.guard';
 import { GameNameResolver } from './resolvers/game-name.resolver';
+import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -42,6 +43,11 @@ const routes: Routes = [
         path: 'persona/:persona_name',
         component: PersonaComponent,
         data: { page: 'Persona' },
+      },
+      {
+        path: 'settings',
+        component: SettingsComponent,
+        data: { page: 'Settings' },
       },
     ],
   },

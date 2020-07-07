@@ -3,9 +3,10 @@
     <mat-icon style="margin: 0 8px;">chevron_right</mat-icon>
     {{ page }}</span> 
   <div fxHide.lt-sm>
-    <a routerLink="." mat-button>PERSONAE</a>
-    <a routerLink="./my-list" mat-button>MY LIST</a>
-    <a routerLink="./simulator" mat-button>SIMULATOR</a>
+    <a routerLink="." routerLinkActive="active-toolbar-link" [routerLinkActiveOptions]="{ exact: true }" mat-button>PERSONAE</a>
+    <a routerLink="./my-list" routerLinkActive="active-toolbar-link" mat-button>MY LIST</a>
+    <a routerLink="./simulator" routerLinkActive="active-toolbar-link" mat-button>SIMULATOR</a>
+    <a routerLink="./settings" routerLinkActive="active-toolbar-link" mat-button>SETTINGS</a>
   </div>
   <button fxHide fxShow.lt-sm mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon>more_vert</mat-icon>
@@ -19,4 +20,5 @@
   <a mat-menu-item routerLink=".">Personae</a>
   <a mat-menu-item routerLink="./my-list">My List</a>
   <a mat-menu-item routerLink="./simulator">Simulator</a>
+  <a mat-menu-item routerLink="./settings">Settings</a>
 </mat-menu>
