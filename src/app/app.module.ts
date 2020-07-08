@@ -7,7 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { GameModule } from './game/game.module';
-
+import { AppDbModule } from './app-db/app-db.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -17,6 +17,7 @@ import { GameModule } from './game/game.module';
     BrowserAnimationsModule,
     MaterialModule,
     GameModule,
+    AppDbModule,
   ],
   bootstrap: [AppComponent],
 })
