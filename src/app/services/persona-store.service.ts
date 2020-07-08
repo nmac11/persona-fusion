@@ -4,14 +4,10 @@ import { FusionNode } from '../models/fusion-node';
 
 @Injectable()
 export class PersonaStoreService {
-  storeName: string;
-
   constructor(
-    @Inject(String) game: string,
+    @Inject(String) private storeName: string,
     private dbService: NgxIndexedDBService,
-  ) {
-    this.storeName = game + '_personae';
-  }
+  ) {}
 
   load(id: number): Promise<FusionNode> {
     return this.dbService.getByKey(this.storeName, id);

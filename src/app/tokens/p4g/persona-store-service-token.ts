@@ -5,7 +5,7 @@ import { NgxIndexedDBService } from 'ngx-indexed-db';
 function p4gPersonaStoreFactory(
   ngxIndexedDB: NgxIndexedDBService,
 ): PersonaStoreService {
-  return new PersonaStoreService('p4g', ngxIndexedDB);
+  return new PersonaStoreService('p4g_personae', ngxIndexedDB);
 }
 
 export const P4G_PERSONA_STORE = new InjectionToken<PersonaStoreService>(
