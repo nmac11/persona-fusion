@@ -6,9 +6,7 @@ import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 export class CompendiumService {
   private arcanaGroups: Persona[][];
 
-  constructor(
-    @Inject(Array) private compendium: Array<Persona>,
-  ) {
+  constructor(@Inject(Array) private compendium: Array<Persona>) {
     this.buildArcanaGroups();
   }
 
@@ -38,7 +36,7 @@ export class CompendiumService {
   getNextRankFromLevel(arcana: number, level: number): Persona {
     return (
       this.arcanaGroups[arcana]
-        .filter((p: Persona) => !p.special)
+        .filter(this.filterRestricted)
         .find((p: Persona) => p.level >= level) || this.getHighestRank(arcana)
     );
   }
@@ -48,24 +46,24 @@ export class CompendiumService {
       this.arcanaGroups[arcana]
         .concat()
         .sort((a, b) => b.level - a.level)
-        .filter((p: Persona) => !p.special)
+        .filter(this.filterRestricted)
         .find((p: Persona) => p.level <= level) || this.getLowestRank(arcana)
     );
   }
 
   getHighestRank(arcana: number): Persona {
-    const group = this.arcanaGroups[arcana].filter((p: Persona) => !p.special);
+    const group = this.arcanaGroups[arcana].filter(this.filterRestricted);
     return group[group.length - 1];
   }
 
   getLowestRank(arcana: number): Persona {
-    const group = this.arcanaGroups[arcana].filter((p: Persona) => !p.special);
+    const group = this.arcanaGroups[arcana].filter(this.filterRestricted);
     return group[0];
   }
 
   getNextRank(current: Persona): Persona {
     return this.arcanaGroups[current.arcana]
-      .filter((p: Persona) => !p.special)
+      .filter(this.filterRestricted)
       .find((p: Persona) => p.level > current.level);
   }
 
@@ -73,7 +71,11 @@ export class CompendiumService {
     return this.arcanaGroups[current.arcana]
       .concat()
       .sort((a, b) => b.level - a.level)
-      .filter((p: Persona) => !p.special)
+      .filter(this.filterRestricted)
       .find((p: Persona) => p.level < current.level);
   }
+
+  private filterRestricted: (p: Persona) => boolean = (p) => {
+    return !p.special;
+  };
 }
