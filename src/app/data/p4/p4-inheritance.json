@@ -141,5 +141,19 @@
         "ailment": 0.8,
         "recovery": 5.3,
         "support": 20
+    },
+    "none": {
+        "phys": 0,
+        "fire": 0,
+        "ice": 0,
+        "elec": 0,
+        "wind": 0,
+        "light": 0,
+        "dark": 0,
+        "almighty": 0,
+        "ailment": 0,
+        "recovery": 0,
+        "support": 0,
+        "passive": 0
     }
 }

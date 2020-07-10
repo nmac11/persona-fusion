@@ -12360,7 +12360,7 @@
                 "type": "passive"
             }
         ],
-        "inherits": "almighty",
+        "inherits": "none",
         "stats": {
             "st": 80,
             "ma": 80,
