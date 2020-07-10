@@ -6,16 +6,20 @@ import { SkillInheritanceService } from '../../services/skill-inheritance.servic
 import { P3P_COMPENDIUM } from '../../tokens/p3p/compendium-service-token';
 import { P3P_FUSION_CHART } from '../../tokens/p3p/fusion-chart-service-token';
 import { P3_SKILL_INHERITANCE } from '../../tokens/p3/skill-inheritance-service-token';
+import { SettingsService } from '../../services/settings.service';
+import { P3P_SETTINGS } from './settings-service-token';
 
 function p3pSimulatorFactory(
   fusionChartService: FusionChartService,
   compendiumService: CompendiumService,
   skillInheritanceService: SkillInheritanceService,
+  settingsService: SettingsService,
 ): SimulatorService {
   return new SimulatorService(
     fusionChartService,
     compendiumService,
     skillInheritanceService,
+    settingsService,
   );
 }
 
@@ -26,5 +30,5 @@ export const P3P_SIMULATOR = new InjectionToken<SimulatorService>(
 export const p3pSimulatorProvider: Provider = {
   provide: P3P_SIMULATOR,
   useFactory: p3pSimulatorFactory,
-  deps: [P3P_FUSION_CHART, P3P_COMPENDIUM, P3_SKILL_INHERITANCE],
+  deps: [P3P_FUSION_CHART, P3P_COMPENDIUM, P3_SKILL_INHERITANCE, P3P_SETTINGS],
 };

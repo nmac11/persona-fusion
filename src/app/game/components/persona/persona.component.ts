@@ -5,6 +5,7 @@ import { FusionChartService } from '../../../services/fusion-chart.service';
 import { Persona } from '../../../models/persona';
 import { Observer, Observable, Subscription } from 'rxjs';
 import { ActiveGameService } from '../../../services/active-game.service';
+import { SettingsService } from '../../../services/settings.service';
 
 @Component({
   selector: 'game-persona',
@@ -16,6 +17,7 @@ export class PersonaComponent implements OnInit, OnDestroy {
   specialFusion: Persona[] = [];
   compendiumService: CompendiumService;
   fusionChartService: FusionChartService;
+  settingsService: SettingsService;
   routeParamsSub: Subscription;
 
   constructor(
@@ -32,6 +34,9 @@ export class PersonaComponent implements OnInit, OnDestroy {
     this.fusionChartService = this.injector.get<FusionChartService>(
       tokens.fusionChart,
     );
+    this.settingsService = this.injector.get<SettingsService>(
+      tokens.settings,
+    );
   }
 
   ngOnInit(): void {
@@ -45,6 +50,10 @@ export class PersonaComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.routeParamsSub.unsubscribe();
+  }
+
+  allowedFusion(): boolean {
+    return this.settingsService.testPersona(this.persona);
   }
 
   queryParams(): Object {

@@ -5,6 +5,7 @@ import { SkillInheritanceService } from './skill-inheritance.service';
 import { Persona } from '../models/persona';
 import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
+import { SettingsService } from './settings.service';
 
 @Injectable()
 export class SimulatorService {
@@ -13,6 +14,7 @@ export class SimulatorService {
     @Inject(CompendiumService) private compendiumService: CompendiumService,
     @Inject(SkillInheritanceService)
     private skillInheritanceService: SkillInheritanceService,
+    @Inject(SettingsService) private SettingsService: SettingsService,
   ) {}
 
   fuse(fusionItems: FusionNode[]): FusionResult {
@@ -33,9 +35,10 @@ export class SimulatorService {
   }
 
   private fuseSpecial(fusionItems: FusionNode[]): Persona {
-    return this.fusionChartService.trySpecialFusion(
+    const p = this.fusionChartService.trySpecialFusion(
       fusionItems.map((f) => f.persona),
     );
+    if (p && this.SettingsService.testPersona(p)) return p;
   }
 
   private fuseNormal(fusionItems: FusionNode[]): Persona {
@@ -143,7 +146,7 @@ export class SimulatorService {
       persona,
       fusionComponents: fusionItems,
       currentLevel: persona.level,
-      skills: persona.skills.filter(skill => skill.level === 0),
+      skills: persona.skills.filter((skill) => skill.level === 0),
       skillsInheritedCount: this.skillInheritanceService.numberOfSkillsInherited(
         persona,
         fusionItems,
