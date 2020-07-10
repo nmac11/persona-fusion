@@ -1067,7 +1067,7 @@
         "level": 78,
         "name": "Mada",
         "ultimate": true,
-        "preReqs": ["SL_MAGCIAN"],
+        "preReqs": ["SL_MAGICIAN"],
         "id": 19,
         "skills": [
             {
