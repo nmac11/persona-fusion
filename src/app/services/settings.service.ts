@@ -21,8 +21,13 @@ export class SettingsService {
     this.settings = this.settingsPreloaderService.load(this.storeName);
     if (!this.settings) {
       this.settings = { name: this.storeName, values: this.defaults };
-      this.settingsPreloaderService.save(this.settings);
+      this.saveAndReloadDefaults();
     }
+  }
+
+  private async saveAndReloadDefaults(): Promise<void> {
+    await this.settingsPreloaderService.save(this.settings);
+    this.settings = this.settingsPreloaderService.load(this.storeName);
   }
 
   getValues(): { [key: string]: boolean } {
