@@ -2,6 +2,7 @@ import { Inject, Injectable } from '@angular/core';
 import { NgxIndexedDBService } from 'ngx-indexed-db';
 import { SettingsPreloaderService } from './settings-preloader.service';
 import { GameSettings } from '../models/game-settings';
+import { Persona } from '../models/persona';
 
 @Injectable()
 export class SettingsService {
@@ -35,5 +36,9 @@ export class SettingsService {
     } catch (e) {
       throw 'Save failed!';
     }
+  }
+
+  testPersona(p: Persona): boolean {
+    return !p.preReqs || p.preReqs.every((preReq) => this.getValues()[preReq]);
   }
 }

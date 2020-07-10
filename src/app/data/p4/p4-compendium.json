@@ -478,6 +478,7 @@
         "level": 64,
         "name": "Loki",
         "ultimate": true,
+        "preReqs": ["SL_FOOL"],
         "id": 9,
         "skills": [
             {
@@ -1066,6 +1067,7 @@
         "level": 78,
         "name": "Mada",
         "ultimate": true,
+        "preReqs": ["SL_MAGICIAN"],
         "id": 19,
         "skills": [
             {
@@ -1606,6 +1608,7 @@
         "level": 79,
         "name": "Scathach",
         "ultimate": true,
+        "preReqs": ["SL_PRIESTESS"],
         "id": 28,
         "skills": [
             {
@@ -2126,6 +2129,7 @@
         "level": 79,
         "name": "Isis",
         "ultimate": true,
+        "preReqs": ["SL_EMPRESS"],
         "id": 37,
         "skills": [
             {
@@ -2620,6 +2624,7 @@
         "level": 74,
         "name": "Odin",
         "ultimate": true,
+        "preReqs": ["SL_EMPEROR"],
         "id": 45,
         "skills": [
             {
@@ -3238,6 +3243,7 @@
         "level": 76,
         "name": "Kohryu",
         "ultimate": true,
+        "preReqs": ["SL_HIEROPHANT"],
         "special": true,
         "id": 55,
         "skills": [
@@ -3596,6 +3602,7 @@
         "level": 71,
         "name": "Ishtar",
         "ultimate": true,
+        "preReqs": ["SL_LOVERS"],
         "id": 61,
         "skills": [
             {
@@ -4193,6 +4200,7 @@
         "level": 80,
         "name": "Futsunushi",
         "ultimate": true,
+        "preReqs": ["SL_CHARIOT"],
         "special": true,
         "id": 71,
         "skills": [
@@ -4805,6 +4813,7 @@
         "level": 74,
         "name": "Sraosha",
         "ultimate": true,
+        "preReqs": ["SL_JUSTICE"],
         "id": 81,
         "skills": [
             {
@@ -5396,6 +5405,7 @@
         "level": 82,
         "name": "Ongyo-ki",
         "ultimate": true,
+        "preReqs": ["SL_HERMIT"],
         "special": true,
         "id": 91,
         "skills": [
@@ -5754,6 +5764,7 @@
         "level": 72,
         "name": "Norn",
         "ultimate": true,
+        "preReqs": ["SL_FORTUNE"],
         "special": true,
         "id": 97,
         "skills": [
@@ -6352,6 +6363,7 @@
         "level": 90,
         "name": "Zaou-Gongen",
         "ultimate": true,
+        "preReqs": ["SL_STRENGTH"],
         "id": 107,
         "skills": [
             {
@@ -6903,6 +6915,7 @@
         "level": 82,
         "name": "Attis",
         "ultimate": true,
+        "preReqs": ["SL_HANGEDMAN"],
         "id": 116,
         "skills": [
             {
@@ -7394,6 +7407,7 @@
         "level": 78,
         "name": "Mahakala",
         "ultimate": true,
+        "preReqs": ["SL_DEATH"],
         "special": true,
         "id": 124,
         "skills": [
@@ -8052,6 +8066,7 @@
         "level": 73,
         "name": "Vishnu",
         "ultimate": true,
+        "preReqs": ["SL_TEMPERANCE"],
         "id": 135,
         "skills": [
             {
@@ -8638,6 +8653,7 @@
         "level": 81,
         "name": "Beelzebub",
         "ultimate": true,
+        "preReqs": ["SL_DEVIL"],
         "special": true,
         "id": 145,
         "skills": [
@@ -9070,6 +9086,7 @@
         "level": 80,
         "name": "Shiva",
         "ultimate": true,
+        "preReqs": ["SL_TOWER"],
         "special": true,
         "id": 152,
         "skills": [
@@ -9552,6 +9569,7 @@
         "level": 87,
         "name": "Helel",
         "ultimate": true,
+        "preReqs": ["SL_STAR"],
         "id": 160,
         "skills": [
             {
@@ -10098,6 +10116,7 @@
         "level": 84,
         "name": "Sandalphon",
         "ultimate": true,
+        "preReqs": ["SL_MOON"],
         "id": 169,
         "skills": [
             {
@@ -10700,6 +10719,7 @@
         "level": 86,
         "name": "Asura",
         "ultimate": true,
+        "preReqs": ["SL_SUN"],
         "id": 179,
         "skills": [
             {
@@ -11078,7 +11098,7 @@
         "arcana": 20,
         "level": 90,
         "name": "Ardha",
-        "ultimate": true,
+        "preReqs": ["SL_JUDGEMENT"],
         "special": true,
         "id": 185,
         "skills": [
@@ -11147,6 +11167,7 @@
         "level": 93,
         "name": "Lucifer",
         "ultimate": true,
+        "preReqs": ["SL_JUDGEMENT"],
         "special": true,
         "id": 186,
         "skills": [
@@ -11216,6 +11237,7 @@
         "name": "Izanagi-no-Okami",
         "special": true,
         "specialCondition": "Unlock true ending",
+        "preReqs": ["UL_IZANAGINOOKAMI"],
         "id": 187,
         "skills": [
             {

@@ -15,4 +15,5 @@ export class Persona {
   special?: boolean;
   keyItem?: boolean;
   specialCondition?: string;
+  preReqs?: string[];
 }

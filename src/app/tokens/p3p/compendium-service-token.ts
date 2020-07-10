@@ -1,9 +1,13 @@
 import { InjectionToken, Provider } from '@angular/core';
 import { CompendiumService } from '../../services/compendium.service';
 import compendium from '../../data/p3/p3p-compendium.json';
+import { SettingsService } from '../../services/settings.service';
+import { P3P_SETTINGS } from './settings-service-token';
 
-function p3pCompendiumFactory(): CompendiumService {
-  return new CompendiumService(compendium);
+function p3pCompendiumFactory(
+  settingsService: SettingsService,
+): CompendiumService {
+  return new CompendiumService(compendium, settingsService);
 }
 
 export const P3P_COMPENDIUM = new InjectionToken<CompendiumService>(
@@ -13,4 +17,5 @@ export const P3P_COMPENDIUM = new InjectionToken<CompendiumService>(
 export const p3pCompendiumProvider: Provider = {
   provide: P3P_COMPENDIUM,
   useFactory: p3pCompendiumFactory,
+  deps: [P3P_SETTINGS]
 };

@@ -396,6 +396,7 @@
         "level": 76,
         "arcana": 0,
         "ultimate": true,
+        "preReqs": ["SL_FOOL"],
         "special": true,
         "id": 8,
         "skills": [
@@ -458,6 +459,7 @@
         "arcana": 0,
         "special": false,
         "specialCondition": "Max all social links",
+        "preReqs": ["UL_ORPHEUSTELOS"],
         "id": 9,
         "skills": [
             {
@@ -661,6 +663,7 @@
         "level": 20,
         "arcana": 1,
         "keyItem": true,
+        "preReqs": ["IT_SMALLCHEONGSAM"],
         "id": 13,
         "skills": [
             {
@@ -894,6 +897,7 @@
         "level": 52,
         "arcana": 1,
         "ultimate": true,
+        "preReqs": ["SL_MAGICIAN"],
         "id": 17,
         "skills": [
             {
@@ -1349,6 +1353,7 @@
         "level": 64,
         "arcana": 2,
         "ultimate": true,
+        "preReqs": ["SL_PRIESTESS"],
         "id": 25,
         "skills": [
             {
@@ -1814,6 +1819,7 @@
         "level": 84,
         "arcana": 3,
         "ultimate": true,
+        "preReqs": ["SL_EMPRESS"],
         "id": 33,
         "skills": [
             {
@@ -2052,6 +2058,7 @@
         "level": 30,
         "arcana": 4,
         "keyItem": true,
+        "preReqs": ["IT_SUGARKEY"],
         "id": 37,
         "skills": [
             {
@@ -2295,6 +2302,7 @@
         "level": 57,
         "arcana": 4,
         "ultimate": true,
+        "preReqs": ["SL_EMPEROR"],
         "id": 41,
         "skills": [
             {
@@ -2581,6 +2589,7 @@
         "level": 41,
         "arcana": 5,
         "keyItem": true,
+        "preReqs": ["IT_BOOKOFANCIENTS"],
         "id": 46,
         "skills": [
             {
@@ -2762,6 +2771,7 @@
         "level": 66,
         "arcana": 5,
         "ultimate": true,
+        "preReqs": ["SL_HIEROPHANT"],
         "special": true,
         "id": 49,
         "skills": [
@@ -3297,6 +3307,7 @@
         "level": 68,
         "arcana": 6,
         "ultimate": true,
+        "preReqs": ["SL_LOVERS"],
         "id": 58,
         "skills": [
             {
@@ -3646,6 +3657,7 @@
         "level": 37,
         "arcana": 7,
         "keyItem": true,
+        "preReqs": ["IT_MACHINECORE"],
         "id": 64,
         "skills": [
             {
@@ -3763,6 +3775,7 @@
         "level": 53,
         "arcana": 7,
         "ultimate": true,
+        "preReqs": ["SL_CHARIOT"],
         "id": 66,
         "skills": [
             {
@@ -4228,6 +4241,7 @@
         "level": 59,
         "arcana": 8,
         "ultimate": true,
+        "preReqs": ["SL_JUSTICE"],
         "id": 74,
         "skills": [
             {
@@ -4640,6 +4654,7 @@
         "level": 50,
         "arcana": 9,
         "keyItem": true,
+        "preReqs": ["IT_MARIONETTE"],
         "id": 81,
         "skills": [
             {
@@ -4757,6 +4772,7 @@
         "level": 60,
         "arcana": 9,
         "ultimate": true,
+        "preReqs": ["SL_HERMIT"],
         "special": true,
         "id": 83,
         "skills": [
@@ -4880,6 +4896,7 @@
         "level": 23,
         "arcana": 10,
         "keyItem": true,
+        "preReqs": ["IT_BLUESCALE"],
         "id": 85,
         "skills": [
             {
@@ -5171,6 +5188,7 @@
         "level": 62,
         "arcana": 10,
         "ultimate": true,
+        "preReqs": ["SL_FORTUNE"],
         "special": true,
         "id": 90,
         "skills": [
@@ -5642,6 +5660,7 @@
         "level": 59,
         "arcana": 11,
         "ultimate": true,
+        "preReqs": ["SL_STRENGTH"],
         "id": 98,
         "skills": [
             {
@@ -6060,6 +6079,7 @@
         "level": 60,
         "arcana": 12,
         "keyItem": true,
+        "preReqs": ["IT_REDMUFFLER"],
         "id": 105,
         "skills": [
             {
@@ -6119,6 +6139,7 @@
         "level": 67,
         "arcana": 12,
         "ultimate": true,
+        "preReqs": ["SL_HANGEDMAN"],
         "special": true,
         "id": 106,
         "skills": [
@@ -6237,6 +6258,7 @@
         "level": 24,
         "arcana": 13,
         "keyItem": true,
+        "preReqs": ["IT_TORNBLACKCLOTH"],
         "id": 108,
         "skills": [
             {
@@ -6540,6 +6562,7 @@
         "level": 64,
         "arcana": 13,
         "ultimate": true,
+        "preReqs": ["SL_DEATH"],
         "special": true,
         "id": 113,
         "skills": [
@@ -7006,6 +7029,7 @@
         "level": 64,
         "arcana": 14,
         "ultimate": true,
+        "preReqs": ["SL_TEMPERANCE"],
         "id": 121,
         "skills": [
             {
@@ -7428,6 +7452,7 @@
         "level": 61,
         "arcana": 15,
         "keyItem": true,
+        "preReqs": ["IT_LILYPETAL"],
         "special": true,
         "id": 128,
         "skills": [
@@ -7557,6 +7582,7 @@
         "level": 81,
         "arcana": 15,
         "ultimate": true,
+        "preReqs": ["SL_DEVIL"],
         "special": true,
         "id": 130,
         "skills": [
@@ -7850,6 +7876,7 @@
         "level": 73,
         "arcana": 16,
         "keyItem": true,
+        "preReqs": ["IT_MASAKADOS"],
         "special": true,
         "id": 135,
         "skills": [
@@ -8029,6 +8056,7 @@
         "level": 86,
         "arcana": 16,
         "ultimate": true,
+        "preReqs": ["SL_TOWER"],
         "id": 138,
         "skills": [
             {
@@ -8447,6 +8475,7 @@
         "level": 70,
         "arcana": 17,
         "keyItem": true,
+        "preReqs": ["IT_RAINBOWFEATHER"],
         "id": 145,
         "skills": [
             {
@@ -8569,6 +8598,7 @@
         "level": 88,
         "arcana": 17,
         "ultimate": true,
+        "preReqs": ["SL_STAR"],
         "id": 147,
         "skills": [
             {
@@ -9045,6 +9075,7 @@
         "level": 74,
         "arcana": 18,
         "ultimate": true,
+        "preReqs": ["SL_MOON"],
         "special": true,
         "id": 155,
         "skills": [
@@ -9458,6 +9489,7 @@
         "level": 85,
         "arcana": 19,
         "ultimate": true,
+        "preReqs": ["SL_SUN"],
         "special": true,
         "id": 162,
         "skills": [
@@ -9806,6 +9838,7 @@
         "level": 90,
         "arcana": 20,
         "ultimate": true,
+        "preReqs": ["SL_JUDGEMENT"],
         "special": true,
         "id": 168,
         "skills": [
@@ -10100,6 +10133,7 @@
         "level": 87,
         "arcana": 21,
         "ultimate": true,
+        "preReqs": ["SL_AEON"],
         "special": true,
         "id": 173,
         "skills": [

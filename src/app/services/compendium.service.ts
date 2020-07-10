@@ -1,12 +1,16 @@
 import { Injectable, Inject } from '@angular/core';
 import { Persona } from '../models/persona';
 import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
+import { SettingsService } from './settings.service';
 
 @Injectable()
 export class CompendiumService {
   private arcanaGroups: Persona[][];
 
-  constructor(@Inject(Array) private compendium: Array<Persona>) {
+  constructor(
+    @Inject(Array) private compendium: Array<Persona>,
+    @Inject(SettingsService) private settingsService: SettingsService,
+  ) {
     this.buildArcanaGroups();
   }
 
@@ -76,6 +80,9 @@ export class CompendiumService {
   }
 
   private filterRestricted: (p: Persona) => boolean = (p) => {
-    return !p.special;
+    return (
+      !p.special &&
+      this.settingsService.testPersona(p)
+    );
   };
 }
