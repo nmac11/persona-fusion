@@ -1,4 +1,16 @@
+#settings-form {
+  margin-bottom: 24px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+li {
+  padding: 4px;
+}
+
+:host ::ng-deep .mat-checkbox.mat-accent .mat-checkbox-inner-container {
+    margin: 4px 8px auto 0;
 }

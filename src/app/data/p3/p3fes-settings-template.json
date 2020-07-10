@@ -92,53 +92,53 @@
   "Items": {
     "IT_BLUESCALE": {
       "label": "Blue Scale",
-      "description": "Empusa"
+      "description": "Enables the fusion of Empusa"
     },
     "IT_REDMUFFLER": {
       "label": "Red Muffler",
-      "description": "Hell Biker"
+      "description": "Enables the fusion of Hell Biker"
     },
     "IT_SMALLCHEONGSAM": {
       "label": "Small Cheongsam",
-      "description": "Hua Po"
+      "description": "Enables the fusion of Hua Po"
     },
     "IT_RAINBOWFEATHER": {
       "label": "Rainbow Feather",
-      "description": "Kartikeya"
+      "description": "Enables the fusion of Kartikeya"
     },
     "IT_SUGARKEY": {
       "label": "Sugar Key",
-      "description": "King Frost"
+      "description": "Enables the fusion of King Frost"
     },
     "IT_LILYPETAL": {
       "label": "Lily Petal",
-      "description": "Lilith"
+      "description": "Enables the fusion of Lilith"
     },
     "IT_MASAKADOS": {
       "label": "Masakados",
-      "description": "Masakado"
+      "description": "Enables the fusion of Masakado"
     },
     "IT_MACHINECORE": {
       "label": "Machine Core",
-      "description": "Nata Taishi"
+      "description": "Enables the fusion of Nata Taishi"
     },
     "IT_MARIONETTE": {
       "label": "Marionette",
-      "description": "Nebiros"
+      "description": "Enables the fusion of Nebiros"
     },
     "IT_TORNBLACKCLOTH": {
       "label": "Torn Black Cloth",
-      "description": "Pale Rider"
+      "description": "Enables the fusion of Pale Rider"
     },
     "IT_BOOKOFANCIENTS": {
       "label": "Book of Ancients",
-      "description": "Thoth"
+      "description": "Enables the fusion of Thoth"
     }
   },
   "Ultimate Persona": {
     "UL_ORPHEUSTELOS": {
       "label": "Orpheus Telos",
-      "description": "Orpheus Telos"
+      "description": "Enables the fusion Orpheus Telos"
     }
   }
 }
