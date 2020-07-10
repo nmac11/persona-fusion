@@ -22,6 +22,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [],
@@ -50,6 +51,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSnackBarModule,
     MatPaginatorModule,
     MatTreeModule,
+    MatCheckboxModule,
   ],
 })
 export class MaterialModule {}

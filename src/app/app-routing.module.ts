@@ -8,7 +8,7 @@ import { PersonaComponent } from './game/components/persona/persona.component';
 import { SimulatorComponent } from './simulator/simulator.component';
 import { MyListComponent } from './my-list/my-list.component';
 import { ValidGameGuard } from './valid-game.guard';
-import { GameNameResolver } from './resolvers/game-name.resolver';
+import { GameResolver } from './resolvers/game.resolver';
 import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
@@ -16,7 +16,7 @@ const routes: Routes = [
   {
     path: ':game',
     component: GameComponent,
-    resolve: { game: GameNameResolver },
+    resolve: { game: GameResolver },
     canActivate: [ValidGameGuard],
     children: [
       {

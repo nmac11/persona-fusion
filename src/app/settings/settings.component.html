@@ -1,1 +1,19 @@
-Settings page works!
+<form [formGroup]="settingsForm" (ngSubmit)="saveSettings()">
+  <div *ngFor="let category of settingsTemplate | keyvalue">
+    <h2 class="mat-h2">{{ category.key }}</h2>
+    <ul>
+      <li *ngFor="let item of category.value | keyvalue">
+        <mat-checkbox [formControlName]="item.key">
+          {{ item.value.label }} ({{item.value.description}})
+        </mat-checkbox>
+      </li>
+    </ul>
+  </div>
+  <button
+    type="submit"
+    mat-flat-button
+    color="primary"
+    [disabled]="settingsForm.pristine">
+    SAVE
+  </button>
+</form>

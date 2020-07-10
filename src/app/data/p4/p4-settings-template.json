@@ -1,0 +1,94 @@
+{
+  "Social Links": {
+    "SL_FOOL": {
+      "label": "Fool",
+      "description": "Investigation Team Social Link"
+    },
+    "SL_MAGICIAN": {
+      "label": "Magician",
+      "description": "Yosuke Hanamura Social Link"
+    },
+    "SL_PRIESTESS": {
+      "label": "Priestess",
+      "description": "Yukiko Amagi Social Link"
+    },
+    "SL_EMPRESS": {
+      "label": "Empress",
+      "description": "Margaret Social Link"
+    },
+    "SL_EMPEROR": {
+      "label": "Emperor",
+      "description": "Kanji Tatsumi Social Link"
+    },
+    "SL_HIEROPHANT": {
+      "label": "Hierophant",
+      "description": "Ryotaro Dojima Social Link"
+    },
+    "SL_LOVERS": {
+      "label": "Lovers",
+      "description": "Rise Kujikawa Social Link"
+    },
+    "SL_CHARIOT": {
+      "label": "Chariot",
+      "description": "Chie Satonaka Social Link"
+    },
+    "SL_JUSTICE": {
+      "label": "Justice",
+      "description": "Nanako Dojima Social Link"
+    },
+    "SL_HERMIT": {
+      "label": "Hermit",
+      "description": "Fox Social Link"
+    },
+    "SL_FORTUNE": {
+      "label": "Fortune",
+      "description": "Naoto Shirogane Social Link"
+    },
+    "SL_STRENGTH": {
+      "label": "Strength",
+      "description": "Fellow Athletes Social Link"
+    },
+    "SL_HANGEDMAN": {
+      "label": "Hanged Man",
+      "description": "Saki's Brother Social Link"
+    },
+    "SL_DEATH": {
+      "label": "Death",
+      "description": "Old Lady Social Link"
+    },
+    "SL_TEMPERANCE": {
+      "label": "Temperance",
+      "description": "Young Mother Social Link"
+    },
+    "SL_DEVIL": {
+      "label": "Devil",
+      "description": "Nurse Social Link"
+    },
+    "SL_TOWER": {
+      "label": "Tower",
+      "description": "Tutored Student Social Link"
+    },
+    "SL_STAR": {
+      "label": "Star",
+      "description": "Teddie Social Link"
+    },
+    "SL_MOON": {
+      "label": "Moon",
+      "description": "Ai Ebihara Social Link"
+    },
+    "SL_SUN": {
+      "label": "Sun",
+      "description": "Yumi Ozawa Social Link"
+    },
+    "SL_JUDGEMENT": {
+      "label": "Judgement",
+      "description": "Seekers of Truth Social Link"
+    }
+  },
+  "Ultimate Persona": {
+    "UL_IZANAGINOOKAMI": {
+      "label": "Izanagi-no-Okami",
+      "description": "Izanagi-no-Okami"
+    }
+  }
+}

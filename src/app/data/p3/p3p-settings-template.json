@@ -1,0 +1,144 @@
+{
+  "Social Links": {
+    "SL_FOOL": {
+      "label": "Fool",
+      "description": "SEES Social Link"
+    },
+    "SL_MAGICIAN": {
+      "label": "Magician",
+      "description": "Classmate | Junpei Iori Social Link"
+    },
+    "SL_PRIESTESS": {
+      "label": "Priestess",
+      "description": "Fuuka Yamagishi Social Link"
+    },
+    "SL_EMPRESS": {
+      "label": "Empress",
+      "description": "Mitsuru Kirijo Social Link"
+    },
+    "SL_EMPEROR": {
+      "label": "Emperor",
+      "description": "Student Council Social Link"
+    },
+    "SL_HIEROPHANT": {
+      "label": "Hierophant",
+      "description": "Old Couple Social Link"
+    },
+    "SL_LOVERS": {
+      "label": "Lovers",
+      "description": "Yukari Takeba Social Link"
+    },
+    "SL_CHARIOT": {
+      "label": "Chariot",
+      "description": "(Kendo/Swim/Track) | (Tennis/Volleyball) Social Link"
+    },
+    "SL_JUSTICE": {
+      "label": "Justice",
+      "description": "Treasurer | Ken Amada Social Link"
+    },
+    "SL_HERMIT": {
+      "label": "Hermit",
+      "description": "Online Game | (Health Committee/Librarian) Social Link"
+    },
+    "SL_FORTUNE": {
+      "label": "Fortune",
+      "description": "(Art/Music/Photography) Club | Ryoji Mochizuki Social Link"
+    },
+    "SL_STRENGTH": {
+      "label": "Strength",
+      "description": "Team Manager | Koromaru Social Link"
+    },
+    "SL_HANGEDMAN": {
+      "label": "Hanged Man",
+      "description": "Girl at the Shrine Social Link"
+    },
+    "SL_DEATH": {
+      "label": "Death",
+      "description": "Mysterious Boy Social Link"
+    },
+    "SL_TEMPERANCE": {
+      "label": "Temperance",
+      "description": "Transfer Student Social Link"
+    },
+    "SL_DEVIL": {
+      "label": "Devil",
+      "description": "Businessman Social Link"
+    },
+    "SL_TOWER": {
+      "label": "Tower",
+      "description": "Unusual Monk Social Link"
+    },
+    "SL_STAR": {
+      "label": "Star",
+      "description": "Rival Athlete | Akihiko Sanada Social Link"
+    },
+    "SL_MOON": {
+      "label": "Moon",
+      "description": "Gourmet King | Shinjiro Aragaki Social Link"
+    },
+    "SL_SUN": {
+      "label": "Sun",
+      "description": "Dying Young Man Social Link"
+    },
+    "SL_JUDGEMENT": {
+      "label": "Judgement",
+      "description": "Nyx Annihilation Team Social Link"
+    },
+    "SL_AEON": {
+      "label": "Aeon",
+      "description": "Aigis Social Link"
+    }
+  },
+  "Items": {
+    "IT_BLUESCALE": {
+      "label": "Blue Scale",
+      "description": "Empusa"
+    },
+    "IT_REDMUFFLER": {
+      "label": "Red Muffler",
+      "description": "Hell Biker"
+    },
+    "IT_SMALLCHEONGSAM": {
+      "label": "Small Cheongsam",
+      "description": "Hua Po"
+    },
+    "IT_RAINBOWFEATHER": {
+      "label": "Rainbow Feather",
+      "description": "Kartikeya"
+    },
+    "IT_SUGARKEY": {
+      "label": "Sugar Key",
+      "description": "King Frost"
+    },
+    "IT_LILYPETAL": {
+      "label": "Lily Petal",
+      "description": "Lilith"
+    },
+    "IT_MASAKADOS": {
+      "label": "Masakados",
+      "description": "Masakado"
+    },
+    "IT_MACHINECORE": {
+      "label": "Machine Core",
+      "description": "Nata Taishi"
+    },
+    "IT_MARIONETTE": {
+      "label": "Marionette",
+      "description": "Nebiros"
+    },
+    "IT_TORNBLACKCLOTH": {
+      "label": "Torn Black Cloth",
+      "description": "Pale Rider"
+    },
+    "IT_BOOKOFANCIENTS": {
+      "label": "Book of Ancients",
+      "description": "Thoth"
+    }
+  },
+  "Ultimate Persona": {
+    "UL_ORPHEUSTELOS": {
+      "label": "Orpheus Telos",
+      "description": "Orpheus Telos"
+    }
+  }
+}

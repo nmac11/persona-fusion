@@ -14,6 +14,7 @@ import { FusionResult } from '../models/fusion-result';
 import { MatDialog } from '@angular/material/dialog';
 import { FusionNodeHelper } from './helpers/fusion-node-helper';
 import { ActiveGameService } from '../services/active-game.service';
+import { SettingsService } from '../services/settings.service';
 
 @Component({
   selector: 'simulator-root',
@@ -28,6 +29,8 @@ export class SimulatorComponent implements OnInit {
   skillService: SkillService;
   fusionNodeHelper: FusionNodeHelper;
 
+  settingsService: SettingsService;
+
   constructor(
     private injector: Injector,
     private router: Router,
@@ -36,7 +39,7 @@ export class SimulatorComponent implements OnInit {
     private location: Location,
     private activeGameService: ActiveGameService,
   ) {
-      const tokens = this.activeGameService.getTokenSet();
+    const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
       tokens.compendium,
     );
@@ -44,9 +47,7 @@ export class SimulatorComponent implements OnInit {
       tokens.simulator,
     );
     this.skillService = this.injector.get<SkillService>(tokens.skill);
-  
-}
-    
+  }
 
   ngOnInit(): void {
     this.fusionNodeHelper = new FusionNodeHelper(

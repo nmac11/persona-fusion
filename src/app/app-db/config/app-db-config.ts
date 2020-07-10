@@ -15,10 +15,14 @@ function metaGenerator(storeName: string): ObjectStoreMeta[] {
 }
 
 const GAME_STORES: ObjectStoreMeta[] = metaGenerator('personae');
-const GAME_SETTINGS: ObjectStoreMeta[] = metaGenerator('settings');
+const GAME_SETTINGS: ObjectStoreMeta = {
+  store: 'settings',
+  storeConfig: { keyPath: 'id', autoIncrement: true },
+  storeSchema: [{ name: 'name', keypath: 'name', options: { unique: true } }],
+};
 
 export const appDbConfig: DBConfig = {
   name: 'FusionToolDB',
   version: 1,
-  objectStoresMeta: [...GAME_STORES, ...GAME_SETTINGS],
+  objectStoresMeta: [...GAME_STORES, GAME_SETTINGS],
 };
