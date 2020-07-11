@@ -15,6 +15,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { FusionNodeHelper } from './helpers/fusion-node-helper';
 import { ActiveGameService } from '../services/active-game.service';
 import { SettingsService } from '../services/settings.service';
+import { AppSettingsService } from '../services/app-settings.service';
 
 @Component({
   selector: 'simulator-root',
@@ -38,6 +39,7 @@ export class SimulatorComponent implements OnInit {
     private matDialog: MatDialog,
     private location: Location,
     private activeGameService: ActiveGameService,
+    private appSettingsService: AppSettingsService,
   ) {
     const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -95,6 +97,10 @@ export class SimulatorComponent implements OnInit {
   fuse(update = true): void {
     this.fusionYield = this.simulatorService.fuse(this.fusionItems);
     if (update) this.updateQueryParams();
+  }
+
+  showProbabilities(): boolean {
+    return this.appSettingsService.getValues()['PROBABILITY'];
   }
 
   private loadFusionNodesFromRouteParams(): void {

@@ -5,10 +5,14 @@ import { Skill } from '../models/skill';
 import { InheritableSkill } from '../models/inheritable-skill';
 import { FusionResult } from '../models/fusion-result';
 import { probability } from '../helpers/probability-helper';
+import { AppSettingsService } from '../services/app-settings.service';
 
 @Injectable()
 export class SkillInheritanceService {
-  constructor(@Inject(Object) private inheritanceChart: any) {}
+  constructor(
+    @Inject(Object) private inheritanceChart: any,
+    private appSettingsService: AppSettingsService,
+  ) {}
 
   numberOfSkillsInherited(persona: Persona, fusionItems: FusionNode[]): number {
     const maxInheritedSkills =
@@ -45,12 +49,20 @@ export class SkillInheritanceService {
     berths: number,
   ): InheritableSkill[] {
     const skillsWithPR = this.addProbRatios(inheritType, skills);
+    if (this.appSettingsService.getValues()['PROBABILITY'])
+      this.calculateProbabilities(skillsWithPR, berths);
+    return skillsWithPR;
+  }
+
+  private calculateProbabilities(
+    skillsWithPR: InheritableSkill[],
+    berths: number,
+  ): void {
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
     const nonZeroRatios = ratios.filter((r) => r !== 0);
     if (nonZeroRatios.every((r) => r === nonZeroRatios[0]))
       this.addProbabilitiesEqualRatios(skillsWithPR, ratios, berths);
     else this.addProbabilitiesVariableRatios(skillsWithPR, ratios, berths);
-    return skillsWithPR;
   }
 
   private addProbabilitiesEqualRatios(

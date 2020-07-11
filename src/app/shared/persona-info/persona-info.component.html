@@ -23,7 +23,7 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-expansion-panel expanded>
+  <mat-expansion-panel [expanded]="expanded()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Base Stats
@@ -34,18 +34,20 @@
         </small>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <table>
-      <tr *ngFor="let stat of stats()">
-        <td style="width: 24px; padding-right: 8px"><small class="mat-body-1">{{stat | uppercase}}</small></td>
-        <td style="width: 100%"><mat-progress-bar mode="determinate" value="{{persona.stats[stat] / .99}}">
-          </mat-progress-bar>
-        </td>
-        <td style="width: 24px; padding-left: 8px; text-align: right;"><small class="mat-body-1">{{persona.stats[stat]}}</small></td>
-      </tr>
-    </table>
+    <ng-template matExpansionPanelContent>
+      <table>
+        <tr *ngFor="let stat of stats()">
+          <td style="width: 24px; padding-right: 8px"><small class="mat-body-1">{{stat | uppercase}}</small></td>
+          <td style="width: 100%"><mat-progress-bar mode="determinate" value="{{persona.stats[stat] / .99}}">
+            </mat-progress-bar>
+          </td>
+          <td style="width: 24px; padding-left: 8px; text-align: right;"><small class="mat-body-1">{{persona.stats[stat]}}</small></td>
+        </tr>
+      </table>
+    </ng-template>
   </mat-expansion-panel>
 
-  <mat-expansion-panel expanded>
+  <mat-expansion-panel [expanded]="expanded()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Affinities
@@ -58,15 +60,17 @@
         </small>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <table style="width: 100%">
-      <tr *ngFor="let element of affinities()">
-        <td style="width: 50%">{{element | titlecase}}</td>
-        <td style="width: 50%">{{ { s: 'Strong', w: 'Weak', 'd': 'Absorb', r: 'Repel', n: 'Block', '-': '--' }[persona.affinities[element]]}}</td>
-      </tr>
-    </table>
+    <ng-template matExpansionPanelContent>
+      <table style="width: 100%">
+        <tr *ngFor="let element of affinities()">
+          <td style="width: 50%">{{element | titlecase}}</td>
+          <td style="width: 50%">{{ { s: 'Strong', w: 'Weak', 'd': 'Absorb', r: 'Repel', n: 'Block', '-': '--' }[persona.affinities[element]]}}</td>
+        </tr>
+      </table>
+    </ng-template>
   </mat-expansion-panel>
 
-  <mat-expansion-panel expanded>
+  <mat-expansion-panel [expanded]="expanded()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Skills
@@ -77,18 +81,19 @@
         </small>
       </mat-panel-description>
     </mat-expansion-panel-header>
-
-    <table style="width: 100%; margin-bottom :8px;">
-      <tr>
-        <td style="width: 50%">Inherits</td>
-        <td style="width: 50%">{{persona.inherits | titlecase}}</td>
-      </tr>
-    </table>
-    <table style="width: 100%">
-      <tr *ngFor="let skill of persona.skills">
-        <td style="width: 50%">{{skill.name}}</td>
-        <td style="width: 50%">{{skill.level === 0 ? 'Innate' : 'Lv. ' + skill.level}}</td>
-      </tr>
-    </table>
+    <ng-template matExpansionPanelContent>
+      <table style="width: 100%; margin-bottom :8px;">
+        <tr>
+          <td style="width: 50%">Inherits</td>
+          <td style="width: 50%">{{persona.inherits | titlecase}}</td>
+        </tr>
+      </table>
+      <table style="width: 100%">
+        <tr *ngFor="let skill of persona.skills">
+          <td style="width: 50%">{{skill.name}}</td>
+          <td style="width: 50%">{{skill.level === 0 ? 'Innate' : 'Lv. ' + skill.level}}</td>
+        </tr>
+      </table>
+    </ng-template>
   </mat-expansion-panel>
 </div>
