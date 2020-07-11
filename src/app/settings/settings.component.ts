@@ -29,8 +29,8 @@ export class SettingsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  async loadSettings() {
-    this.settings = await this.settingsService.getValues();
+  loadSettings(): void {
+    this.settings = this.settingsService.getValues();
     const settingsFormControls = Object.keys(this.settings).reduce(
       (res, key) => {
         res[key] = new FormControl(this.settings[key]);
