@@ -1,0 +1,37 @@
+<mat-toolbar style="display: flex; justify-content: space-between;">
+  <span style="padding-left: 8px; display: flex; flex-direction: row; align-items: center;">
+    App Settings
+  </span> 
+</mat-toolbar>
+<div style="padding: 8px; max-width: 960px; margin: auto;">
+  <form [formGroup]="appSettingsForm" (ngSubmit)="saveSettings()" id="app-settings-form">
+    <h2 class="mat-h2">General</h2>
+    <ul>
+      <li>
+        <mat-checkbox formControlName="PROBABILITY">
+          <span class="mat-body-2">Calculate probabilities</span><br>
+        </mat-checkbox>
+      </li>
+      <li>
+        <mat-checkbox formControlName="EXPANDDETAILS">
+          <span class="mat-body-2">Expand Persona info</span><br>
+        </mat-checkbox>
+      </li>
+    </ul>
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="appSettingsForm.pristine">
+      SAVE CHANGES
+    </button>
+  </form>
+  <div>
+    <h2 class="mat-h2">Database</h2>
+    <button
+      mat-flat-button
+      color="warn">
+      CLEAR DATABASE
+    </button>
+  </div>
+</div>

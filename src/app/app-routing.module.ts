@@ -11,9 +11,15 @@ import { ValidGameGuard } from './valid-game.guard';
 import { GameResolver } from './resolvers/game.resolver';
 import { SettingsComponent } from './settings/settings.component';
 import { SettingsResolver } from './resolvers/settings.resolver';
+import { AppSettingsComponent } from './components/app-settings/app-settings.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  {
+    path: 'settings',
+    component: AppSettingsComponent,
+    resolve: { settings: SettingsResolver },
+  },
   {
     path: ':game',
     component: GameComponent,

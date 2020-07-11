@@ -25,5 +25,9 @@ export class AppComponent {
   {
     url: '/p4g',
     title: 'Persona 4 Golden'
+  },
+  {
+    url: '/settings',
+    title: 'Settings'
   }];
 }
