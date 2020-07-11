@@ -10,13 +10,14 @@ import { MyListComponent } from './my-list/my-list.component';
 import { ValidGameGuard } from './valid-game.guard';
 import { GameResolver } from './resolvers/game.resolver';
 import { SettingsComponent } from './settings/settings.component';
+import { SettingsResolver } from './resolvers/settings.resolver';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: ':game',
     component: GameComponent,
-    resolve: { game: GameResolver },
+    resolve: { game: GameResolver, settings: SettingsResolver },
     canActivate: [ValidGameGuard],
     children: [
       {
