@@ -1,7 +1,7 @@
 import { Component, OnInit, Injector } from '@angular/core';
 import { ActiveGameService } from '../services/active-game.service';
 import { SettingsService } from '../services/settings.service';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
@@ -18,7 +18,6 @@ export class SettingsComponent implements OnInit {
   constructor(
     private injector: Injector,
     private activeGameService: ActiveGameService,
-    private fb: FormBuilder,
     private snackBar: MatSnackBar,
   ) {
     const tokens = this.activeGameService.getTokenSet();
