@@ -36,4 +36,12 @@ export class AppSettingsService {
       throw 'Save failed!';
     }
   }
+
+  async wipe(): Promise<void> {
+    try {
+      await this.settingsPreloaderService.wipeDatabase();
+    } catch (e) {
+      throw 'Couldn\'t clear database!';
+    }
+  }
 }

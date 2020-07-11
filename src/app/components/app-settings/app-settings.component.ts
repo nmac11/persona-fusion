@@ -3,7 +3,8 @@ import { AppSettingsService } from '../../services/app-settings.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { GameSettings } from '../../models/game-settings';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmClearDatabaseDialogComponent } from '../confirm-clear-database-dialog/confirm-clear-database-dialog.component';
 @Component({
   selector: 'app-settings',
   templateUrl: './app-settings.component.html',
@@ -16,6 +17,7 @@ export class AppSettingsComponent implements OnInit {
   constructor(
     private appSettingsService: AppSettingsService,
     private snackBar: MatSnackBar,
+    private dialog: MatDialog,
   ) {}
 
   async ngOnInit(): Promise<void> {
@@ -35,6 +37,22 @@ export class AppSettingsComponent implements OnInit {
       await this.appSettingsService.save(this.appSettingsForm.value);
       this.appSettingsForm.markAsPristine();
       this.openSnackbar('SUCCESS: Settings have been updated.');
+    } catch (e) {
+      this.openSnackbar(`ERROR: ${e}`);
+    }
+  }
+
+  confirmClearDatabase(): void {
+    const dialogRef = this.dialog.open(ConfirmClearDatabaseDialogComponent, { width: '300px' });
+    dialogRef.afterClosed().subscribe((confirm) => {
+      if (confirm) this.onClearDatabase();
+    });
+  }
+
+  private async onClearDatabase(): Promise<void> {
+   try {
+      await this.appSettingsService.wipe();
+      this.openSnackbar('SUCCESS: Database has been cleared.');
     } catch (e) {
       this.openSnackbar(`ERROR: ${e}`);
     }

@@ -10,9 +10,15 @@ import { GameModule } from './game/game.module';
 import { AppDbModule } from './app-db/app-db.module';
 import { AppSettingsComponent } from './components/app-settings/app-settings.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmClearDatabaseDialogComponent } from './components/confirm-clear-database-dialog/confirm-clear-database-dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AppSettingsComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AppSettingsComponent,
+    ConfirmClearDatabaseDialogComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppDbModule,
     ReactiveFormsModule,
   ],
+  entryComponents: [ConfirmClearDatabaseDialogComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -20,6 +20,13 @@ export class SettingsPreloaderService {
     return status;
   }
 
+  async wipeDatabase(): Promise<void> {
+    let storeNames = ['p3fes', 'p3p', 'p4', 'p4g'];
+    await Promise.all(
+      storeNames.map((name) => this.dbService.clear(name + '_personae')),
+    );
+  }
+
   load(game: string): GameSettings {
     return this.allSettings.find((settings) => settings.name === game);
   }
