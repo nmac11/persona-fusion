@@ -3,17 +3,20 @@ import { CommonModule } from '@angular/common';
 import { SettingsComponent } from './settings.component';
 import { MaterialModule } from '../material/material.module';
 import { AppDbModule } from '../app-db/app-db.module';
-import { SettingsStoreModule } from '../settings-store/settings-store.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { p3pSettingsProvider } from '../tokens/p3p/settings-service-token';
+import { p3fesSettingsProvider } from '../tokens/p3fes/settings-service-token';
+import { p4SettingsProvider } from '../tokens/p4/settings-service-token';
+import { p4gSettingsProvider } from '../tokens/p4g/settings-service-token';
 
 @NgModule({
   declarations: [SettingsComponent],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    SettingsStoreModule,
-    FormsModule,
-    ReactiveFormsModule,
+  imports: [CommonModule, MaterialModule, FormsModule, ReactiveFormsModule],
+  providers: [
+    p3pSettingsProvider,
+    p3fesSettingsProvider,
+    p4SettingsProvider,
+    p4gSettingsProvider,
   ],
 })
 export class SettingsModule {}
