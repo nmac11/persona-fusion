@@ -61,8 +61,8 @@ export class SkillInheritanceService {
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
     const nonZeroRatios = ratios.filter((r) => r !== 0);
     if (nonZeroRatios.every((r) => r === nonZeroRatios[0]))
-      this.addProbabilitiesEqualRatios(skillsWithPR, ratios, berths);
-    else this.addProbabilitiesVariableRatios(skillsWithPR, ratios, berths);
+      this.addProbabilitiesEqualRatios(skillsWithPR, nonZeroRatios, berths);
+    else this.addProbabilitiesVariableRatios(skillsWithPR, nonZeroRatios, berths);
   }
 
   private addProbabilitiesEqualRatios(
