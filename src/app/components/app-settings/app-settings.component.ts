@@ -28,7 +28,6 @@ export class AppSettingsComponent implements OnInit {
       {},
     );
     this.appSettingsForm = new FormGroup(settingsFormControls);
-    console.log(this.appSettingsForm.value);
   }
 
   async saveSettings(): Promise<void> {
