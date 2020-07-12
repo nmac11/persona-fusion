@@ -5,15 +5,17 @@ export function probability(
   berths: number,
   index: number,
 ): number {
-  const totalItems = ratios.reduce((total, a) => total + a, 0);
+  if (ratios[index] === 0) return 0;
+  const nonZeroRatios = ratios.filter(r => r > 0);
+  const totalItems = nonZeroRatios.reduce((total, a) => total + a, 0);
   let netProbability = 0;
   for (let berth = 1; berth <= berths; berth++) {
     const scenarios = modifiedPermutations(
-      [...Array(ratios.length).keys()],
+      [...Array(nonZeroRatios.length).keys()],
       index,
       berth,
     );
-    netProbability += sumScenarioProbabilities(ratios, scenarios, totalItems);
+    netProbability += sumScenarioProbabilities(nonZeroRatios, scenarios, totalItems);
   }
   return netProbability;
 }
