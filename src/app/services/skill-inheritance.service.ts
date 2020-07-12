@@ -58,6 +58,7 @@ export class SkillInheritanceService {
     skillsWithPR: InheritableSkill[],
     berths: number,
   ): void {
+    skillsWithPR.sort((a, b) => b.probRatio - a.probRatio);
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
     const nonZeroRatios = ratios.filter((r) => r !== 0);
     if (nonZeroRatios.every((r) => r === nonZeroRatios[0]))
