@@ -173,7 +173,7 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "requirements": ["DLC_IZANAGI"],
+    "preReqs": ["DLC_IZANAGI"],
     "stats": {
       "st": 14,
       "ma": 13,
@@ -240,7 +240,7 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "requirements": ["DLC_IZANAGI"],
+    "preReqs": ["DLC_IZANAGI"],
     "stats": {
       "st": 16,
       "ma": 15,
@@ -307,7 +307,7 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "requirements": ["DLC_ORPHEUS"],
+    "preReqs": ["DLC_ORPHEUS"],
     "stats": {
       "st": 17,
       "ma": 17,
@@ -374,7 +374,7 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "requirements": ["DLC_ORPHEUS"],
+    "preReqs": ["DLC_ORPHEUS"],
     "stats": {
       "st": 19,
       "ma": 19,
@@ -877,7 +877,7 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "ultimate": true,
-    "requirements": ["SL_FOOL"],
+    "preReqs": ["SL_FOOL"],
     "stats": {
       "st": 56,
       "ma": 51,
@@ -949,7 +949,7 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "ultimate": true,
-    "requirements": ["UL_SATANAEL"],
+    "preReqs": ["UL_SATANAEL"],
     "specialCondition": "Unlock true ending",
     "stats": {
       "st": 63,
@@ -1508,7 +1508,7 @@
     "arcanaName": "Magician",
     "arcana": 1,
     "ultimate": true,
-    "requirements": ["SL_MAGICIAN"],
+    "preReqs": ["SL_MAGICIAN"],
     "stats": {
       "st": 54,
       "ma": 48,
@@ -2077,7 +2077,7 @@
     "arcanaName": "Priestess",
     "arcana": 2,
     "ultimate": true,
-    "requirements": ["SL_PRIESTESS"],
+    "preReqs": ["SL_PRIESTESS"],
     "stats": {
       "st": 44,
       "ma": 48,
@@ -2592,7 +2592,7 @@
     "arcanaName": "Empress",
     "arcana": 3,
     "ultimate": true,
-    "requirements": ["SL_EMPRESS"],
+    "preReqs": ["SL_EMPRESS"],
     "stats": {
       "st": 55,
       "ma": 48,
@@ -3231,7 +3231,7 @@
     "arcanaName": "Emperor",
     "arcana": 4,
     "ultimate": true,
-    "requirements": ["SL_EMPEROR"],
+    "preReqs": ["SL_EMPEROR"],
     "stats": {
       "st": 53,
       "ma": 52,
@@ -3781,7 +3781,7 @@
     "arcanaName": "Hierophant",
     "arcana": 5,
     "ultimate": true,
-    "requirements": ["SL_HIEROPHANT"],
+    "preReqs": ["SL_HIEROPHANT"],
     "stats": {
       "st": 43,
       "ma": 51,
@@ -4334,7 +4334,7 @@
     "arcanaName": "Lovers",
     "arcana": 6,
     "ultimate": true,
-    "requirements": ["SL_LOVERS"],
+    "preReqs": ["SL_LOVERS"],
     "stats": {
       "st": 48,
       "ma": 59,
@@ -4952,7 +4952,7 @@
     "arcanaName": "Chariot",
     "arcana": 7,
     "ultimate": true,
-    "requirements": ["SL_CHARIOT"],
+    "preReqs": ["SL_CHARIOT"],
     "stats": {
       "st": 54,
       "ma": 56,
@@ -5522,7 +5522,7 @@
     "arcanaName": "Justice",
     "arcana": 8,
     "ultimate": true,
-    "requirements": ["SL_JUSTICE"],
+    "preReqs": ["SL_JUSTICE"],
     "stats": {
       "st": 54,
       "ma": 61,
@@ -6145,7 +6145,7 @@
     "arcanaName": "Hermit",
     "arcana": 9,
     "ultimate": true,
-    "requirements": ["SL_HERMIT"],
+    "preReqs": ["SL_HERMIT"],
     "stats": {
       "st": 56,
       "ma": 42,
@@ -6345,7 +6345,7 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "requirements": ["DLC_ARIADNE"],
+    "preReqs": ["DLC_ARIADNE"],
     "stats": {
       "st": 23,
       "ma": 19,
@@ -6540,7 +6540,7 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "requirements": ["DLC_ARIADNE"],
+    "preReqs": ["DLC_ARIADNE"],
     "stats": {
       "st": 36,
       "ma": 23,
@@ -6735,7 +6735,7 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "requirements": ["DLC_ASTERIUS"],
+    "preReqs": ["DLC_ASTERIUS"],
     "stats": {
       "st": 43,
       "ma": 43,
@@ -6802,7 +6802,7 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "requirements": ["DLC_ASTERIUS"],
+    "preReqs": ["DLC_ASTERIUS"],
     "stats": {
       "st": 46,
       "ma": 46,
@@ -6869,7 +6869,7 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "ultimate": true,
-    "requirements": ["SL_FORTUNE"],
+    "preReqs": ["SL_FORTUNE"],
     "stats": {
       "st": 40,
       "ma": 47,
@@ -7428,7 +7428,7 @@
     "arcanaName": "Strength",
     "arcana": 11,
     "ultimate": true,
-    "requirements": ["SL_STRENGTH"],
+    "preReqs": ["SL_STRENGTH"],
     "stats": {
       "st": 57,
       "ma": 45,
@@ -7998,7 +7998,7 @@
     "arcanaName": "Hanged Man",
     "arcana": 12,
     "ultimate": true,
-    "requirements": ["SL_HANGEDMAN"],
+    "preReqs": ["SL_HANGEDMAN"],
     "stats": {
       "st": 56,
       "ma": 50,
@@ -8567,7 +8567,7 @@
     "arcanaName": "Death",
     "arcana": 13,
     "dlc": true,
-    "requirements": ["DLC_THANATOS"],
+    "preReqs": ["DLC_THANATOS"],
     "stats": {
       "st": 43,
       "ma": 49,
@@ -8634,7 +8634,7 @@
     "arcanaName": "Death",
     "arcana": 13,
     "dlc": true,
-    "requirements": ["DLC_THANATOS"],
+    "preReqs": ["DLC_THANATOS"],
     "stats": {
       "st": 45,
       "ma": 51,
@@ -8761,7 +8761,7 @@
     "arcanaName": "Death",
     "arcana": 13,
     "ultimate": true,
-    "requirements": ["SL_DEATH"],
+    "preReqs": ["SL_DEATH"],
     "stats": {
       "st": 43,
       "ma": 59,
@@ -9459,7 +9459,7 @@
     "arcanaName": "Temperance",
     "arcana": 14,
     "ultimate": true,
-    "requirements": ["SL_TEMPERANCE"],
+    "preReqs": ["SL_TEMPERANCE"],
     "stats": {
       "st": 54,
       "ma": 56,
@@ -10018,7 +10018,7 @@
     "arcanaName": "Devil",
     "arcana": 15,
     "ultimate": true,
-    "requirements": ["SL_DEVIL"],
+    "preReqs": ["SL_DEVIL"],
     "stats": {
       "st": 55,
       "ma": 60,
@@ -10276,7 +10276,7 @@
     "arcanaName": "Tower",
     "arcana": 16,
     "dlc": true,
-    "requirements": ["DLC_MAGATSUIZANAGI"],
+    "preReqs": ["DLC_MAGATSUIZANAGI"],
     "stats": {
       "st": 37,
       "ma": 35,
@@ -10343,7 +10343,7 @@
     "arcanaName": "Tower",
     "arcana": 16,
     "dlc": true,
-    "requirements": ["DLC_MAGATSUIZANAGI"],
+    "preReqs": ["DLC_MAGATSUIZANAGI"],
     "stats": {
       "st": 40,
       "ma": 38,
@@ -10664,7 +10664,7 @@
     "arcanaName": "Tower",
     "arcana": 16,
     "ultimate": true,
-    "requirements": ["SL_TOWER"],
+    "preReqs": ["SL_TOWER"],
     "stats": {
       "st": 52,
       "ma": 51,
@@ -11309,7 +11309,7 @@
     "arcanaName": "Star",
     "arcana": 17,
     "ultimate": true,
-    "requirements": ["SL_STAR"],
+    "preReqs": ["SL_STAR"],
     "stats": {
       "st": 61,
       "ma": 59,
@@ -11499,7 +11499,7 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "requirements": ["DLC_KAGUYA"],
+    "preReqs": ["DLC_KAGUYA"],
     "stats": {
       "st": 11,
       "ma": 15,
@@ -11694,7 +11694,7 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "requirements": ["DLC_KAGUYA"],
+    "preReqs": ["DLC_KAGUYA"],
     "stats": {
       "st": 17,
       "ma": 20,
@@ -11943,7 +11943,7 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "requirements": ["DLC_TSUKIYOMI"],
+    "preReqs": ["DLC_TSUKIYOMI"],
     "stats": {
       "st": 38,
       "ma": 32,
@@ -12010,7 +12010,7 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "requirements": ["DLC_TSUKIYOMI"],
+    "preReqs": ["DLC_TSUKIYOMI"],
     "stats": {
       "st": 41,
       "ma": 35,
@@ -12141,7 +12141,7 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "ultimate": true,
-    "requirements": ["SL_MOON"],
+    "preReqs": ["SL_MOON"],
     "stats": {
       "st": 46,
       "ma": 51,
@@ -12646,7 +12646,7 @@
     "arcanaName": "Sun",
     "arcana": 19,
     "ultimate": true,
-    "requirements": ["SL_SUN"],
+    "preReqs": ["SL_SUN"],
     "stats": {
       "st": 52,
       "ma": 48,
@@ -12959,7 +12959,7 @@
     "arcanaName": "Judgement",
     "arcana": 20,
     "dlc": true,
-    "requirements": ["DLC_MESSIAH"],
+    "preReqs": ["DLC_MESSIAH"],
     "stats": {
       "st": 50,
       "ma": 50,
@@ -13161,7 +13161,7 @@
     "arcanaName": "Judgement",
     "arcana": 20,
     "dlc": true,
-    "requirements": ["DLC_MESSIAH"],
+    "preReqs": ["DLC_MESSIAH"],
     "stats": {
       "st": 56,
       "ma": 56,
@@ -13233,7 +13233,7 @@
     "arcanaName": "Judgement",
     "arcana": 20,
     "ultimate": true,
-    "requirements": ["SL_JUDGEMENT"],
+    "preReqs": ["SL_JUDGEMENT"],
     "stats": {
       "st": 62,
       "ma": 59,
