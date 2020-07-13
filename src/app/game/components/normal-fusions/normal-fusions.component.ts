@@ -8,6 +8,7 @@ import { p3pNormalFusionProvider } from '../../../tokens/p3p/normal-fusion-servi
 import { p3fesNormalFusionProvider } from '../../../tokens/p3fes/normal-fusion-service-token';
 import { p4gNormalFusionProvider } from '../../../tokens/p4g/normal-fusion-service-token';
 import { p4NormalFusionProvider } from '../../../tokens/p4/normal-fusion-service-token';
+import { p5NormalFusionProvider } from '../../../tokens/p5/normal-fusion-service-token';
 import { NormalFusionsBottomSheetComponent } from '../normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { ActiveGameService } from '../../../services/active-game.service';
@@ -21,6 +22,7 @@ import { ActiveGameService } from '../../../services/active-game.service';
     p3fesNormalFusionProvider,
     p4gNormalFusionProvider,
     p4NormalFusionProvider,
+    p5NormalFusionProvider,
   ],
 })
 export class NormalFusionsComponent implements OnInit {

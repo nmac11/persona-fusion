@@ -5,15 +5,18 @@ import { p3pCompendiumProvider } from '../tokens/p3p/compendium-service-token';
 import { p3fesCompendiumProvider } from '../tokens/p3fes/compendium-service-token';
 import { p4gCompendiumProvider } from '../tokens/p4g/compendium-service-token';
 import { p4CompendiumProvider } from '../tokens/p4/compendium-service-token';
+import { p5CompendiumProvider } from '../tokens/p5/compendium-service-token';
 
 import { p3pFusionChartProvider } from '../tokens/p3p/fusion-chart-service-token';
 import { p3fesFusionChartProvider } from '../tokens/p3fes/fusion-chart-service-token';
 import { p4gFusionChartProvider } from '../tokens/p4g/fusion-chart-service-token';
 import { p4FusionChartProvider } from '../tokens/p4/fusion-chart-service-token';
+import { p5FusionChartProvider } from '../tokens/p5/fusion-chart-service-token';
 
 import { p3pSkillProvider } from '../tokens/p3p/skill-service-token';
 import { p3fesSkillProvider } from '../tokens/p3fes/skill-service-token';
 import { p4SkillProvider } from '../tokens/p4/skill-service-token';
+import { p5SkillProvider } from '../tokens/p5/skill-service-token';
 
 @NgModule({
   declarations: [],
@@ -23,13 +26,16 @@ import { p4SkillProvider } from '../tokens/p4/skill-service-token';
     p3fesCompendiumProvider,
     p4gCompendiumProvider,
     p4CompendiumProvider,
+    p5CompendiumProvider,
     p3pFusionChartProvider,
     p3fesFusionChartProvider,
     p4gFusionChartProvider,
     p4FusionChartProvider,
+    p5FusionChartProvider,
     p3pSkillProvider,
     p3fesSkillProvider,
     p4SkillProvider,
+    p5SkillProvider,
   ],
 })
 export class ProvidersModule {}

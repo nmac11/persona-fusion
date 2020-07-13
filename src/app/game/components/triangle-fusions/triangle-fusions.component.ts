@@ -8,6 +8,7 @@ import { p3pTriangleFusionProvider } from '../../../tokens/p3p/triangle-fusion-s
 import { p3fesTriangleFusionProvider } from '../../../tokens/p3fes/triangle-fusion-service-token';
 import { p4gTriangleFusionProvider } from '../../../tokens/p4g/triangle-fusion-service-token';
 import { p4TriangleFusionProvider } from '../../../tokens/p4/triangle-fusion-service-token';
+import { p5TriangleFusionProvider } from '../../../tokens/p5/triangle-fusion-service-token';
 import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
@@ -19,6 +20,7 @@ import { ActiveGameService } from '../../../services/active-game.service';
     p3fesTriangleFusionProvider,
     p4gTriangleFusionProvider,
     p4TriangleFusionProvider,
+    p5TriangleFusionProvider,
   ],
 })
 export class TriangleFusionsComponent implements OnInit {
