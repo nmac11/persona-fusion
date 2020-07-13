@@ -85,6 +85,44 @@
       "description": "Sae Nijima Confidant"
     }
   },
+  "DLCs": {
+    "DLC_IZANAGI": {
+      "label": "Izanagi",
+      "description": "Enables the fusion of Izanagi and Izanagi Picaro"
+    },
+    "DLC_ORPHEUS": {
+      "label": "Orpheus",
+      "description": "Enables the fusion of Orpheus and Orpheus Picaro"
+    },
+    "DLC_ARIADNE": {
+      "label": "Ariadne",
+      "description": "Enables the fusion of Ariadne and Ariadne Picaro"
+    },
+    "DLC_ASTERIUS": {
+      "label": "Asterius",
+      "description": "Enables the fusion of Asterius and Asterius Picaro"
+    },
+    "DLC_THANATOS": {
+      "label": "Thanatos",
+      "description": "Enables the fusion of Thanatos and Thanatos Picaro"
+    },
+    "DLC_MAGATSUIZANAGI": {
+      "label": "Magatsu-Izanagi",
+      "description": "Enables the fusion of Magatsu-Izanagi and Magatsu-Izanagi Picaro"
+    },
+    "DLC_KAGUYA": {
+      "label": "Kaguya",
+      "description": "Enables the fusion of Kaguya and Kaguya Picaro"
+    },
+    "DLC_TSUKIYOMI": {
+      "label": "Tsukiyomi",
+      "description": "Enables the fusion of Tsukiyomi and Tsukiyomi Picaro"
+    },
+    "DLC_MESSIAH": {
+      "label": "Messiah",
+      "description": "Enables the fusion of Messiah and Messiah Picaro"
+    }
+  },
   "Ultimate Persona": {
     "UL_SATANAEL": {
       "label": "Satanael",
