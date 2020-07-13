@@ -1,0 +1,94 @@
+{
+  "Confidants": {
+    "SL_FOOL": {
+      "label": "Fool",
+      "description": "Igor Confidant"
+    },
+    "SL_MAGICIAN": {
+      "label": "Magician",
+      "description": "Morgana Confidant"
+    },
+    "SL_PRIESTESS": {
+      "label": "Priestess",
+      "description": "Makoto Nijima Confidant"
+    },
+    "SL_EMPRESS": {
+      "label": "Empress",
+      "description": "Haru Okumura Confidant"
+    },
+    "SL_EMPEROR": {
+      "label": "Emperor",
+      "description": "Kitagawa Yusuke Confidant"
+    },
+    "SL_HIEROPHANT": {
+      "label": "Hierophant",
+      "description": "Sojiro Sakura Confidant"
+    },
+    "SL_LOVERS": {
+      "label": "Lovers",
+      "description": "Ann Takamaki Confidant"
+    },
+    "SL_CHARIOT": {
+      "label": "Chariot",
+      "description": "Ryuji Sakamoto Confidant"
+    },
+    "SL_JUSTICE": {
+      "label": "Justice",
+      "description": "Goro Akechi Confidant"
+    },
+    "SL_HERMIT": {
+      "label": "Hermit",
+      "description": "Futaba Sakura Confidant"
+    },
+    "SL_FORTUNE": {
+      "label": "Fortune",
+      "description": "Chihaya Mifune Confidant"
+    },
+    "SL_STRENGTH": {
+      "label": "Strength",
+      "description": "Caroline & Justine Confidant"
+    },
+    "SL_HANGEDMAN": {
+      "label": "Hanged Man",
+      "description": "Munehisa Iwai Confidant"
+    },
+    "SL_DEATH": {
+      "label": "Death",
+      "description": "Tae Takemi Confidant"
+    },
+    "SL_TEMPERANCE": {
+      "label": "Temperance",
+      "description": "Sadayo Kawakami Confidant"
+    },
+    "SL_DEVIL": {
+      "label": "Devil",
+      "description": "Oya Ichiko Confidant"
+    },
+    "SL_TOWER": {
+      "label": "Tower",
+      "description": "Shinya Oda Confidant"
+    },
+    "SL_STAR": {
+      "label": "Star",
+      "description": "Hifumi Togo Confidant"
+    },
+    "SL_MOON": {
+      "label": "Moon",
+      "description": "Yuki Mishima Confidant"
+    },
+    "SL_SUN": {
+      "label": "Sun",
+      "description": "Toranosuke Yoshida Confidant"
+    },
+    "SL_JUDGEMENT": {
+      "label": "Judgement",
+      "description": "Sae Nijima Confidant"
+    }
+  },
+  "Ultimate Persona": {
+    "UL_SATANAEL": {
+      "label": "Satanael",
+      "description": "Enables the fusion of Satanael"
+    }
+  }
+}

@@ -16,4 +16,6 @@ export class Persona {
   keyItem?: boolean;
   specialCondition?: string;
   preReqs?: string[];
+  gem?: boolean;
+  dlc?: boolean;
 }

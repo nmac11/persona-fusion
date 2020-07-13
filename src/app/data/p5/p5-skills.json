@@ -1,0 +1,1448 @@
+[
+  {
+    "name": "Absorb Bless",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Curse",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Elec",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Fire",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Ice",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Nuke",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Phys",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Psy",
+    "type": "passive"
+  },
+  {
+    "name": "Absorb Wind",
+    "type": "passive"
+  },
+  {
+    "name": "Abysmal Surge",
+    "type": "ailment"
+  },
+  {
+    "name": "Abyssal Wings",
+    "type": "curse",
+    "exclusive": true
+  },
+  {
+    "name": "Adverse Resolve",
+    "type": "passive"
+  },
+  {
+    "name": "Agi",
+    "type": "fire"
+  },
+  {
+    "name": "Agidyne",
+    "type": "fire"
+  },
+  {
+    "name": "Agilao",
+    "type": "fire"
+  },
+  {
+    "name": "Agneyastra",
+    "type": "phys"
+  },
+  {
+    "name": "Ailment Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Ali Dance",
+    "type": "passive"
+  },
+  {
+    "name": "Almighty Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Almighty Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Ambient Aid",
+    "type": "passive"
+  },
+  {
+    "name": "Amrita Drop",
+    "type": "healing"
+  },
+  {
+    "name": "Amrita Shower",
+    "type": "healing"
+  },
+  {
+    "name": "Angelic Grace",
+    "type": "passive"
+  },
+  {
+    "name": "Apt Pupil",
+    "type": "passive"
+  },
+  {
+    "name": "Arms Master",
+    "type": "passive"
+  },
+  {
+    "name": "Assault Dive",
+    "type": "phys"
+  },
+  {
+    "name": "Atomic Flare",
+    "type": "nuke"
+  },
+  {
+    "name": "Attack Master",
+    "type": "passive"
+  },
+  {
+    "name": "Auto-Maraku",
+    "type": "passive"
+  },
+  {
+    "name": "Auto-Masuku",
+    "type": "passive"
+  },
+  {
+    "name": "Auto-Mataru",
+    "type": "passive"
+  },
+  {
+    "name": "Ayamur",
+    "type": "phys",
+    "exclusive": true
+  },
+  {
+    "name": "Bad Beat",
+    "type": "phys"
+  },
+  {
+    "name": "Baisudi",
+    "type": "healing"
+  },
+  {
+    "name": "Beast Weaver",
+    "type": "phys",
+    "exclusive": true
+  },
+  {
+    "name": "Black Viper",
+    "type": "almighty"
+  },
+  {
+    "name": "Blazing Hell",
+    "type": "fire"
+  },
+  {
+    "name": "Bless Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Bless Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Bloodbath",
+    "type": "phys"
+  },
+  {
+    "name": "Brain Buster",
+    "type": "phys"
+  },
+  {
+    "name": "Brain Jack",
+    "type": "ailment"
+  },
+  {
+    "name": "Brain Shake",
+    "type": "phys"
+  },
+  {
+    "name": "Brainwash Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Brave Blade",
+    "type": "phys"
+  },
+  {
+    "name": "Bufu",
+    "type": "ice"
+  },
+  {
+    "name": "Bufudyne",
+    "type": "ice"
+  },
+  {
+    "name": "Bufula",
+    "type": "ice"
+  },
+  {
+    "name": "Burn Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Cadenza",
+    "type": "healing",
+    "exclusive": true
+  },
+  {
+    "name": "Charge",
+    "type": "support"
+  },
+  {
+    "name": "Cleave",
+    "type": "phys"
+  },
+  {
+    "name": "Climate Decorum",
+    "type": "passive"
+  },
+  {
+    "name": "Concentrate",
+    "type": "support"
+  },
+  {
+    "name": "Confuse Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Cornered Fang",
+    "type": "phys"
+  },
+  {
+    "name": "Cosmic Flare",
+    "type": "nuke"
+  },
+  {
+    "name": "Counter",
+    "type": "passive"
+  },
+  {
+    "name": "Counterstrike",
+    "type": "passive"
+  },
+  {
+    "name": "Cripple",
+    "type": "passive"
+  },
+  {
+    "name": "Cross Slash",
+    "type": "phys",
+    "exclusive": true
+  },
+  {
+    "name": "Curse Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Curse Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Dazzler",
+    "type": "ailment"
+  },
+  {
+    "name": "Deadly Fury",
+    "type": "phys"
+  },
+  {
+    "name": "Deathbound",
+    "type": "phys"
+  },
+  {
+    "name": "Debilitate",
+    "type": "support"
+  },
+  {
+    "name": "Defense Master",
+    "type": "passive"
+  },
+  {
+    "name": "Dekaja",
+    "type": "support"
+  },
+  {
+    "name": "Dekunda",
+    "type": "support"
+  },
+  {
+    "name": "Demonic Decree",
+    "type": "curse"
+  },
+  {
+    "name": "Despair Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Dia",
+    "type": "healing"
+  },
+  {
+    "name": "Diamond Dust",
+    "type": "ice"
+  },
+  {
+    "name": "Diarahan",
+    "type": "healing"
+  },
+  {
+    "name": "Diarama",
+    "type": "healing"
+  },
+  {
+    "name": "Die For Me!",
+    "type": "curse",
+    "exclusive": true
+  },
+  {
+    "name": "Divine Grace",
+    "type": "passive"
+  },
+  {
+    "name": "Divine Judgement",
+    "type": "bless"
+  },
+  {
+    "name": "Dizzy Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Bless",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Curse",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Elec",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Fire",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Ice",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Nuke",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Physical",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Psy",
+    "type": "passive"
+  },
+  {
+    "name": "Dodge Wind",
+    "type": "passive"
+  },
+  {
+    "name": "Door of Hades",
+    "type": "almighty",
+    "exclusive": true
+  },
+  {
+    "name": "Dormin Rush",
+    "type": "phys"
+  },
+  {
+    "name": "Dormina",
+    "type": "ailment"
+  },
+  {
+    "name": "Double Fangs",
+    "type": "phys"
+  },
+  {
+    "name": "Dream Needle",
+    "type": "phys"
+  },
+  {
+    "name": "Eiga",
+    "type": "curse"
+  },
+  {
+    "name": "Eigaon",
+    "type": "curse"
+  },
+  {
+    "name": "Eiha",
+    "type": "curse"
+  },
+  {
+    "name": "Elec Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Elec Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Elec Break",
+    "type": "support"
+  },
+  {
+    "name": "Elec Wall",
+    "type": "support"
+  },
+  {
+    "name": "Endure",
+    "type": "passive"
+  },
+  {
+    "name": "Enduring Soul",
+    "type": "passive"
+  },
+  {
+    "name": "Energy Drop",
+    "type": "healing"
+  },
+  {
+    "name": "Energy Shower",
+    "type": "healing"
+  },
+  {
+    "name": "Evade Bless",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Curse",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Elec",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Fire",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Ice",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Nuke",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Physical",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Psy",
+    "type": "passive"
+  },
+  {
+    "name": "Evade Wind",
+    "type": "passive"
+  },
+  {
+    "name": "Evil Smile",
+    "type": "ailment"
+  },
+  {
+    "name": "Evil Touch",
+    "type": "ailment"
+  },
+  {
+    "name": "Fast Heal",
+    "type": "passive"
+  },
+  {
+    "name": "Fear Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Fire Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Fire Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Fire Break",
+    "type": "support"
+  },
+  {
+    "name": "Fire Wall",
+    "type": "support"
+  },
+  {
+    "name": "Firm Stance",
+    "type": "passive"
+  },
+  {
+    "name": "Flash Bomb",
+    "type": "phys"
+  },
+  {
+    "name": "Forget Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Fortified Moxy",
+    "type": "passive"
+  },
+  {
+    "name": "Fortify Spirit",
+    "type": "passive"
+  },
+  {
+    "name": "Foul Breath",
+    "type": "almighty"
+  },
+  {
+    "name": "Freeze Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Frei",
+    "type": "nuke"
+  },
+  {
+    "name": "Freidyne",
+    "type": "nuke"
+  },
+  {
+    "name": "Freila",
+    "type": "nuke"
+  },
+  {
+    "name": "Garu",
+    "type": "wind"
+  },
+  {
+    "name": "Garudyne",
+    "type": "wind"
+  },
+  {
+    "name": "Garula",
+    "type": "wind"
+  },
+  {
+    "name": "Ghastly Wail",
+    "type": "almighty"
+  },
+  {
+    "name": "Giant Slice",
+    "type": "phys"
+  },
+  {
+    "name": "Gigantomachia",
+    "type": "phys"
+  },
+  {
+    "name": "God's Hand",
+    "type": "phys"
+  },
+  {
+    "name": "Growth 1",
+    "type": "passive"
+  },
+  {
+    "name": "Growth 2",
+    "type": "passive"
+  },
+  {
+    "name": "Growth 3",
+    "type": "passive"
+  },
+  {
+    "name": "Hama",
+    "type": "bless"
+  },
+  {
+    "name": "Hama Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Hamaon",
+    "type": "bless"
+  },
+  {
+    "name": "Hassou Tobi",
+    "type": "phys",
+    "exclusive": true
+  },
+  {
+    "name": "Headbutt",
+    "type": "phys"
+  },
+  {
+    "name": "Heat Riser",
+    "type": "support"
+  },
+  {
+    "name": "Heat Up",
+    "type": "passive"
+  },
+  {
+    "name": "Heat Wave",
+    "type": "phys"
+  },
+  {
+    "name": "High Counter",
+    "type": "passive"
+  },
+  {
+    "name": "Hysterical Slap",
+    "type": "phys"
+  },
+  {
+    "name": "Ice Age",
+    "type": "ice"
+  },
+  {
+    "name": "Ice Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Ice Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Ice Break",
+    "type": "support"
+  },
+  {
+    "name": "Ice Wall",
+    "type": "support"
+  },
+  {
+    "name": "Inferno",
+    "type": "fire"
+  },
+  {
+    "name": "Insta-Heal",
+    "type": "passive"
+  },
+  {
+    "name": "Invigorate 1",
+    "type": "passive"
+  },
+  {
+    "name": "Invigorate 2",
+    "type": "passive"
+  },
+  {
+    "name": "Invigorate 3",
+    "type": "passive"
+  },
+  {
+    "name": "Kouga",
+    "type": "bless"
+  },
+  {
+    "name": "Kougaon",
+    "type": "bless"
+  },
+  {
+    "name": "Kouha",
+    "type": "bless"
+  },
+  {
+    "name": "Life Aid",
+    "type": "passive"
+  },
+  {
+    "name": "Life Drain",
+    "type": "almighty"
+  },
+  {
+    "name": "Lucky Punch",
+    "type": "phys"
+  },
+  {
+    "name": "Lullaby",
+    "type": "ailment"
+  },
+  {
+    "name": "Lunge",
+    "type": "phys"
+  },
+  {
+    "name": "Mabaisudi",
+    "type": "healing"
+  },
+  {
+    "name": "Mabufu",
+    "type": "ice"
+  },
+  {
+    "name": "Mabufudyne",
+    "type": "ice"
+  },
+  {
+    "name": "Mabufula",
+    "type": "ice"
+  },
+  {
+    "name": "Maeiga",
+    "type": "curse"
+  },
+  {
+    "name": "Maeigaon",
+    "type": "curse"
+  },
+  {
+    "name": "Maeiha",
+    "type": "curse"
+  },
+  {
+    "name": "Mafrei",
+    "type": "nuke"
+  },
+  {
+    "name": "Mafreidyne",
+    "type": "nuke"
+  },
+  {
+    "name": "Mafreila",
+    "type": "nuke"
+  },
+  {
+    "name": "Magaru",
+    "type": "wind"
+  },
+  {
+    "name": "Magarudyne",
+    "type": "wind"
+  },
+  {
+    "name": "Magarula",
+    "type": "wind"
+  },
+  {
+    "name": "Magatsu Mandala",
+    "type": "curse",
+    "exclusive": true
+  },
+  {
+    "name": "Magic Ability",
+    "type": "passive"
+  },
+  {
+    "name": "Mahama",
+    "type": "bless"
+  },
+  {
+    "name": "Mahamaon",
+    "type": "bless"
+  },
+  {
+    "name": "Makajam",
+    "type": "ailment"
+  },
+  {
+    "name": "Makajamaon",
+    "type": "ailment"
+  },
+  {
+    "name": "Makara Break",
+    "type": "support"
+  },
+  {
+    "name": "Makarakarn",
+    "type": "support"
+  },
+  {
+    "name": "Makouga",
+    "type": "bless"
+  },
+  {
+    "name": "Makougaon",
+    "type": "bless"
+  },
+  {
+    "name": "Makouha",
+    "type": "bless"
+  },
+  {
+    "name": "Mamudo",
+    "type": "curse"
+  },
+  {
+    "name": "Mamudoon",
+    "type": "curse"
+  },
+  {
+    "name": "Mapsi",
+    "type": "psy"
+  },
+  {
+    "name": "Mapsio",
+    "type": "psy"
+  },
+  {
+    "name": "Mapsiodyne",
+    "type": "psy"
+  },
+  {
+    "name": "Maragi",
+    "type": "fire"
+  },
+  {
+    "name": "Maragidyne",
+    "type": "fire"
+  },
+  {
+    "name": "Maragion",
+    "type": "fire"
+  },
+  {
+    "name": "Marakukaja",
+    "type": "support"
+  },
+  {
+    "name": "Marakunda",
+    "type": "support"
+  },
+  {
+    "name": "Marin Karin",
+    "type": "ailment"
+  },
+  {
+    "name": "Masukukaja",
+    "type": "support"
+  },
+  {
+    "name": "Masukunda",
+    "type": "support"
+  },
+  {
+    "name": "Matarukaja",
+    "type": "support"
+  },
+  {
+    "name": "Matarunda",
+    "type": "support"
+  },
+  {
+    "name": "Mazio",
+    "type": "elec"
+  },
+  {
+    "name": "Maziodyne",
+    "type": "elec"
+  },
+  {
+    "name": "Mazionga",
+    "type": "elec"
+  },
+  {
+    "name": "Me Patra",
+    "type": "healing"
+  },
+  {
+    "name": "Media",
+    "type": "healing"
+  },
+  {
+    "name": "Mediarahan",
+    "type": "healing"
+  },
+  {
+    "name": "Mediarama",
+    "type": "healing"
+  },
+  {
+    "name": "Megaton Raid",
+    "type": "phys"
+  },
+  {
+    "name": "Megido",
+    "type": "almighty"
+  },
+  {
+    "name": "Megidola",
+    "type": "almighty"
+  },
+  {
+    "name": "Megidolaon",
+    "type": "almighty"
+  },
+  {
+    "name": "Memory Blow",
+    "type": "phys"
+  },
+  {
+    "name": "Mind Slice",
+    "type": "phys"
+  },
+  {
+    "name": "Miracle Punch",
+    "type": "phys"
+  },
+  {
+    "name": "Morning Star",
+    "type": "almighty",
+    "exclusive": true
+  },
+  {
+    "name": "Mudo",
+    "type": "curse"
+  },
+  {
+    "name": "Mudo Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Mudoon",
+    "type": "curse"
+  },
+  {
+    "name": "Myriad Slashes",
+    "type": "phys"
+  },
+  {
+    "name": "Negative Pile",
+    "type": "phys"
+  },
+  {
+    "name": "Nocturnal Flash",
+    "type": "ailment"
+  },
+  {
+    "name": "Nuke Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Nuke Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Nuke Break",
+    "type": "support"
+  },
+  {
+    "name": "Nuke Wall",
+    "type": "support"
+  },
+  {
+    "name": "Null Bless",
+    "type": "passive"
+  },
+  {
+    "name": "Null Brainwash",
+    "type": "passive"
+  },
+  {
+    "name": "Null Confuse",
+    "type": "passive"
+  },
+  {
+    "name": "Null Curse",
+    "type": "passive"
+  },
+  {
+    "name": "Null Despair",
+    "type": "passive"
+  },
+  {
+    "name": "Null Dizzy",
+    "type": "passive"
+  },
+  {
+    "name": "Null Elec",
+    "type": "passive"
+  },
+  {
+    "name": "Null Fear",
+    "type": "passive"
+  },
+  {
+    "name": "Null Fire",
+    "type": "passive"
+  },
+  {
+    "name": "Null Forget",
+    "type": "passive"
+  },
+  {
+    "name": "Null Ice",
+    "type": "passive"
+  },
+  {
+    "name": "Null Nuke",
+    "type": "passive"
+  },
+  {
+    "name": "Null Phys",
+    "type": "passive"
+  },
+  {
+    "name": "Null Psy",
+    "type": "passive"
+  },
+  {
+    "name": "Null Rage",
+    "type": "passive"
+  },
+  {
+    "name": "Null Sleep",
+    "type": "passive"
+  },
+  {
+    "name": "Null Wind",
+    "type": "passive"
+  },
+  {
+    "name": "Ominous Words",
+    "type": "ailment"
+  },
+  {
+    "name": "One-shot Kill",
+    "type": "gun"
+  },
+  {
+    "name": "Oni Kagura",
+    "type": "phys"
+  },
+  {
+    "name": "Oratorio",
+    "type": "healing",
+    "exclusive": true
+  },
+  {
+    "name": "Panta Rhei",
+    "type": "wind"
+  },
+  {
+    "name": "Patra",
+    "type": "healing"
+  },
+  {
+    "name": "Pressing Stance",
+    "type": "passive"
+  },
+  {
+    "name": "Psi",
+    "type": "psy"
+  },
+  {
+    "name": "Psio",
+    "type": "psy"
+  },
+  {
+    "name": "Psiodyne",
+    "type": "psy"
+  },
+  {
+    "name": "Psy Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Psy Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Psy Break",
+    "type": "support"
+  },
+  {
+    "name": "Psy Wall",
+    "type": "support"
+  },
+  {
+    "name": "Psycho Blast",
+    "type": "psy"
+  },
+  {
+    "name": "Psycho Force",
+    "type": "psy"
+  },
+  {
+    "name": "Pulinpa",
+    "type": "ailment"
+  },
+  {
+    "name": "Rage Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Rakukaja",
+    "type": "support"
+  },
+  {
+    "name": "Rakunda",
+    "type": "support"
+  },
+  {
+    "name": "Rampage",
+    "type": "phys"
+  },
+  {
+    "name": "Rebellion",
+    "type": "support"
+  },
+  {
+    "name": "Recarm",
+    "type": "healing"
+  },
+  {
+    "name": "Regenerate 1",
+    "type": "passive"
+  },
+  {
+    "name": "Regenerate 2",
+    "type": "passive"
+  },
+  {
+    "name": "Regenerate 3",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Bless",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Curse",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Elec",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Fire",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Ice",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Nuke",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Phys",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Psy",
+    "type": "passive"
+  },
+  {
+    "name": "Repel Wind",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Bless",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Brainwash",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Confuse",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Curse",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Despair",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Dizzy",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Elec",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Fear",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Fire",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Forget",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Ice",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Nuke",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Phys",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Psy",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Rage",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Sleep",
+    "type": "passive"
+  },
+  {
+    "name": "Resist Wind",
+    "type": "passive"
+  },
+  {
+    "name": "Revolution",
+    "type": "support"
+  },
+  {
+    "name": "Riot Gun",
+    "type": "gun"
+  },
+  {
+    "name": "Rising Slash",
+    "type": "phys"
+  },
+  {
+    "name": "Salvation",
+    "type": "healing"
+  },
+  {
+    "name": "Samarecarm",
+    "type": "healing"
+  },
+  {
+    "name": "Samsara",
+    "type": "bless",
+    "exclusive": true
+  },
+  {
+    "name": "Sharp Student",
+    "type": "passive"
+  },
+  {
+    "name": "Shining Arrows",
+    "type": "bless",
+    "exclusive": true
+  },
+  {
+    "name": "Shock Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Skull Cracker",
+    "type": "phys"
+  },
+  {
+    "name": "Sledgehammer",
+    "type": "phys"
+  },
+  {
+    "name": "Sleep Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Snap",
+    "type": "gun"
+  },
+  {
+    "name": "Snipe",
+    "type": "passive"
+  },
+  {
+    "name": "Soul Chain",
+    "type": "passive"
+  },
+  {
+    "name": "Speed Master",
+    "type": "passive"
+  },
+  {
+    "name": "Spell Master",
+    "type": "passive"
+  },
+  {
+    "name": "Spirit Drain",
+    "type": "almighty"
+  },
+  {
+    "name": "Stagnant Air",
+    "type": "almighty"
+  },
+  {
+    "name": "Sukukaja",
+    "type": "support"
+  },
+  {
+    "name": "Sukunda",
+    "type": "support"
+  },
+  {
+    "name": "Survival Trick",
+    "type": "passive"
+  },
+  {
+    "name": "Swift Strike",
+    "type": "phys"
+  },
+  {
+    "name": "Sword Dance",
+    "type": "phys"
+  },
+  {
+    "name": "Tarukaja",
+    "type": "support"
+  },
+  {
+    "name": "Tarunda",
+    "type": "support"
+  },
+  {
+    "name": "Taunt",
+    "type": "ailment"
+  },
+  {
+    "name": "Tempest Slash",
+    "type": "phys"
+  },
+  {
+    "name": "Tentarafoo",
+    "type": "ailment"
+  },
+  {
+    "name": "Terror Claw",
+    "type": "phys"
+  },
+  {
+    "name": "Tetra Break",
+    "type": "support"
+  },
+  {
+    "name": "Tetraja",
+    "type": "support"
+  },
+  {
+    "name": "Tetrakarn",
+    "type": "support"
+  },
+  {
+    "name": "Thermopylae",
+    "type": "support"
+  },
+  {
+    "name": "Thunder Reign",
+    "type": "elec"
+  },
+  {
+    "name": "Titanomachia",
+    "type": "fire",
+    "exclusive": true
+  },
+  {
+    "name": "Touch n' Go",
+    "type": "passive"
+  },
+  {
+    "name": "Trigger Happy",
+    "type": "passive"
+  },
+  {
+    "name": "Triple Down",
+    "type": "gun"
+  },
+  {
+    "name": "Unshaken Will",
+    "type": "passive"
+  },
+  {
+    "name": "Vacuum Wave",
+    "type": "wind"
+  },
+  {
+    "name": "Vajra Blast",
+    "type": "phys"
+  },
+  {
+    "name": "Vicious Strike",
+    "type": "phys"
+  },
+  {
+    "name": "Victory Cry",
+    "type": "passive"
+  },
+  {
+    "name": "Vorpal Blade",
+    "type": "phys"
+  },
+  {
+    "name": "Wage War",
+    "type": "ailment"
+  },
+  {
+    "name": "Wild Thunder",
+    "type": "elec"
+  },
+  {
+    "name": "Wind Amp",
+    "type": "passive"
+  },
+  {
+    "name": "Wind Boost",
+    "type": "passive"
+  },
+  {
+    "name": "Wind Break",
+    "type": "support"
+  },
+  {
+    "name": "Wind Wall",
+    "type": "support"
+  },
+  {
+    "name": "Zio",
+    "type": "elec"
+  },
+  {
+    "name": "Ziodyne",
+    "type": "elec"
+  },
+  {
+    "name": "Zionga",
+    "type": "elec"
+  }
+]
