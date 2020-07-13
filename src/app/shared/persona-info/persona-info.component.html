@@ -15,10 +15,12 @@
         <mat-chip *ngIf="persona.specialCondition" color="accent" selected>{{
           persona.specialCondition
         }}</mat-chip>
+        <mat-chip *ngIf="persona.dlc" color="accent" selected>DLC</mat-chip>
         <mat-chip *ngIf="persona.ultimate" color="accent" selected
           >Ultimate Persona</mat-chip
         >
         <mat-chip *ngIf="persona.keyItem">Key item</mat-chip>
+        <mat-chip *ngIf="persona.gem">Gem</mat-chip>
       </mat-chip-list>
     </mat-card-content>
   </mat-card>

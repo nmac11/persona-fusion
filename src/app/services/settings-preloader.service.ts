@@ -21,7 +21,7 @@ export class SettingsPreloaderService {
   }
 
   async wipeDatabase(): Promise<void> {
-    let storeNames = ['p3fes', 'p3p', 'p4', 'p4g'];
+    let storeNames = ['p3fes', 'p3p', 'p4', 'p4g', 'p5'];
     await Promise.all(
       storeNames.map((name) => this.dbService.clear(name + '_personae')),
     );
