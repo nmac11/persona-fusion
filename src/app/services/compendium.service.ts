@@ -81,7 +81,7 @@ export class CompendiumService {
 
   private filterRestricted: (p: Persona) => boolean = (p) => {
     return (
-      !p.special &&
+      !(p.special || p.gem) &&
       this.settingsService.testPersona(p)
     );
   };
