@@ -56,7 +56,13 @@ export class TriangleFusionService {
 
   private testFusion(p1: Persona, p2: Persona, p3: Persona): boolean {
     const fusionLevel = Math.floor((p1.level + p2.level + p3.level) / 3 + 5);
-    let result = this.getNextRank(fusionLevel, p1, p2, p3);
+    let result = this.compendiumService.findClosestOneRankHigher(
+      this.persona.arcana,
+      fusionLevel,
+      p1,
+      p2,
+      p3,
+    );
     return this.persona.id === result?.id;
   }
 
@@ -78,25 +84,5 @@ export class TriangleFusionService {
 
   private validateUniqueness(p1: Persona, p2: Persona, p3: Persona) {
     return p1.id !== p2.id && p1.id !== p3.id && p2.id !== p3.id;
-  }
-
-  private getNextRank(
-    fusionLevel: number,
-    p1: Persona,
-    p2: Persona,
-    p3: Persona,
-  ) {
-    let result = this.compendiumService.getNextRankFromLevel(
-      this.persona.arcana,
-      fusionLevel,
-    );
-    while (
-      result?.id === p1.id ||
-      result?.id === p2.id ||
-      result?.id === p3.id
-    ) {
-      result = this.compendiumService.getNextRank(result);
-    }
-    return result;
   }
 }

@@ -58,7 +58,12 @@ export class SimulatorService {
     p2: Persona,
     fusionLevel: number,
   ): Persona {
-    return this.getPreviousRank(arcana, p1, p2, fusionLevel);
+    return this.compendiumService.findClosestOneRankLower(
+      arcana,
+      fusionLevel,
+      p1,
+      p2,
+    );
   }
 
   private fuseNormalDifferentArcana(
@@ -68,21 +73,6 @@ export class SimulatorService {
     fusionLevel: number,
   ): Persona {
     return this.compendiumService.getNextRankFromLevel(arcana, fusionLevel);
-  }
-
-  private getPreviousRank(
-    arcana: number,
-    p1: Persona,
-    p2: Persona,
-    fusionLevel: number,
-  ) {
-    let result = this.compendiumService.getPreviousRankFromLevel(
-      arcana,
-      fusionLevel,
-    );
-    while (result?.id === p1.id || result?.id === p2.id)
-      result = this.compendiumService.getPreviousRank(result);
-    return result;
   }
 
   private findNormalFusionArcana([a1, a2]: number[]): number {
@@ -106,7 +96,7 @@ export class SimulatorService {
       p3.arcana,
     ]);
     if (arcana === undefined) return;
-    return this.getNextRank(arcana, p1, p2, p3, fusionLevel);
+    return this.compendiumService.findClosestOneRankHigher(arcana, fusionLevel, p1, p2, p3);
   }
 
   private sortFusionItems(fusionItems: FusionNode[]): FusionNode[] {
@@ -116,28 +106,7 @@ export class SimulatorService {
         b.currentLevel - a.currentLevel || a.persona.arcana - b.persona.arcana,
     );
   }
-
-  private getNextRank(
-    arcana: number,
-    p1: Persona,
-    p2: Persona,
-    p3: Persona,
-    fusionLevel: number,
-  ): Persona {
-    let result = this.compendiumService.getNextRankFromLevel(
-      arcana,
-      fusionLevel,
-    );
-    while (
-      result?.id === p1.id ||
-      result?.id === p2.id ||
-      result?.id === p3.id
-    ) {
-      result = this.compendiumService.getNextRank(result);
-    }
-    return result;
-  }
-
+  
   private createFusionResult(
     persona: Persona,
     fusionItems: FusionNode[],

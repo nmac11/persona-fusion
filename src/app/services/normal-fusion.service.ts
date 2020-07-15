@@ -76,7 +76,12 @@ export class NormalFusionService {
   }
 
   private testFusionSameArcana(p1: Persona, p2: Persona, fusionLevel: number) {
-    let result = this.getPreviousRank(p1, p2, fusionLevel);
+    let result = this.compendiumService.findClosestOneRankLower(
+      this.persona.arcana,
+      fusionLevel,
+      p1,
+      p2,
+    );
     return result?.id === this.persona.id;
   }
 
@@ -90,15 +95,5 @@ export class NormalFusionService {
       fusionLevel,
     );
     return result.id === this.persona.id;
-  }
-
-  private getPreviousRank(p1: Persona, p2: Persona, fusionLevel: number) {
-    let result = this.compendiumService.getPreviousRankFromLevel(
-      this.persona.arcana,
-      fusionLevel,
-    );
-    while (result?.id === p1.id || result?.id === p2.id)
-      result = this.compendiumService.getPreviousRank(result);
-    return result;
   }
 }

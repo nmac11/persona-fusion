@@ -79,10 +79,29 @@ export class CompendiumService {
       .find((p: Persona) => p.level < current.level);
   }
 
+  findClosestOneRankLower(
+    arcana: number,
+    level: number,
+    ...exclusions: Persona[]
+  ): Persona {
+    let persona = this.getPreviousRankFromLevel(arcana, level);
+    while (exclusions.map((p) => p.id).includes(persona?.id))
+      persona = this.getPreviousRank(persona);
+    return persona;
+  }
+
+  findClosestOneRankHigher(
+    arcana: number,
+    level: number,
+    ...exclusions: Persona[]
+  ): Persona {
+    let persona = this.getNextRankFromLevel(arcana, level);
+    while (exclusions.map((p) => p.id).includes(persona?.id))
+      persona = this.getNextRank(persona);
+    return persona;
+  }
+
   private filterRestricted: (p: Persona) => boolean = (p) => {
-    return (
-      !(p.special || p.gem) &&
-      this.settingsService.testPersona(p)
-    );
+    return !(p.special || p.gem) && this.settingsService.testPersona(p);
   };
 }
