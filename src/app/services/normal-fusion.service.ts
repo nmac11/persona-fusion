@@ -38,7 +38,8 @@ export class NormalFusionService {
     arcanaFusions.forEach(([arc1, arc2]) => {
       arc1.forEach((p1: Persona) =>
         arc2.forEach((p2: Persona) => {
-          if (this.testFusion(p1, p2)) this.addToList([p1, p2]);
+          if (this.validate(p1, p2) && this.testFusion(p1, p2))
+            this.addToList([p1, p2]);
         }),
       );
     });
@@ -52,7 +53,6 @@ export class NormalFusionService {
   }
 
   private testFusion(p1: Persona, p2: Persona): boolean {
-    if (!this.validate(p1, p2)) return false;
     const fusionLevel = Math.floor((p1.level + p2.level) / 2 + 1);
     return p1.arcana === p2.arcana
       ? this.testFusionSameArcana(p1, p2, fusionLevel)

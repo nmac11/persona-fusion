@@ -39,7 +39,8 @@ export class TriangleFusionService {
       arc1.forEach((p1) =>
         arc2.forEach((p2) =>
           arc3.forEach((p3) => {
-            if (this.testFusion(p1, p2, p3)) this.addToList([p1, p2, p3]);
+            if (this.validate(p1, p2, p3) && this.testFusion(p1, p2, p3))
+              this.addToList([p1, p2, p3]);
           }),
         ),
       );
@@ -54,7 +55,6 @@ export class TriangleFusionService {
   }
 
   private testFusion(p1: Persona, p2: Persona, p3: Persona): boolean {
-    if (!this.validate(p1, p2, p3)) return false;
     const fusionLevel = Math.floor((p1.level + p2.level + p3.level) / 3 + 5);
     let result = this.getNextRank(fusionLevel, p1, p2, p3);
     return this.persona.id === result?.id;
