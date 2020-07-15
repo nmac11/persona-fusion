@@ -7,6 +7,7 @@ import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
 import { SettingsService } from './settings.service';
 import { NormalFusion } from '../lib/normal-fusion';
+import { TriangleFusion } from '../lib/triangle-fusion';
 
 @Injectable()
 export class SimulatorService {
@@ -49,34 +50,13 @@ export class SimulatorService {
     return fusion.fuseUnknownArcana(this.fusionChartService);
   }
 
-  private findNormalFusionArcana([a1, a2]: number[]): number {
-    return this.fusionChartService.findNormalFusionChartResult([a1, a2]);
-  }
-
-  private findTriangleFusionArcana([a1, a2, a3]: number[]): number {
-    const a2a3 = this.findNormalFusionArcana([a2, a3]);
-    return this.fusionChartService.findTriangleFusionChartResult([a1, a2a3]);
-  }
-
   private fuseTriangle(fusionItems: FusionNode[]): Persona {
     if (fusionItems.length !== 3) return;
     const [p1, p2, p3] = this.sortFusionItems(fusionItems).map(
       (f) => f.persona,
     );
-    const fusionLevel = Math.floor((p1.level + p2.level + p3.level) / 3) + 5;
-    const arcana = this.findTriangleFusionArcana([
-      p1.arcana,
-      p2.arcana,
-      p3.arcana,
-    ]);
-    if (arcana === undefined) return;
-    return this.compendiumService.findClosestOneRankHigher(
-      arcana,
-      fusionLevel,
-      p1,
-      p2,
-      p3,
-    );
+    const fusion = new TriangleFusion(this.compendiumService, p1, p2, p3);
+    return fusion.fuseUnknownArcana(this.fusionChartService);
   }
 
   private sortFusionItems(fusionItems: FusionNode[]): FusionNode[] {
@@ -86,7 +66,7 @@ export class SimulatorService {
         b.currentLevel - a.currentLevel || a.persona.arcana - b.persona.arcana,
     );
   }
-  
+
   private createFusionResult(
     persona: Persona,
     fusionItems: FusionNode[],

@@ -2,6 +2,7 @@ import { Injectable, Inject } from '@angular/core';
 import { FusionChartService } from '../services/fusion-chart.service';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
+import { TriangleFusion } from '../lib/triangle-fusion';
 
 @Injectable()
 export class TriangleFusionService {
@@ -55,15 +56,13 @@ export class TriangleFusionService {
   }
 
   private testFusion(p1: Persona, p2: Persona, p3: Persona): boolean {
-    const fusionLevel = Math.floor((p1.level + p2.level + p3.level) / 3 + 5);
-    let result = this.compendiumService.findClosestOneRankHigher(
-      this.persona.arcana,
-      fusionLevel,
+    const result = new TriangleFusion(
+      this.compendiumService,
       p1,
       p2,
       p3,
-    );
-    return this.persona.id === result?.id;
+    ).fuseKnownArcana(this.persona.arcana);
+    return result?.id === this.persona.id;
   }
 
   private validate(p1: Persona, p2: Persona, p3: Persona) {
