@@ -6,6 +6,7 @@ import { Persona } from '../models/persona';
 import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
 import { SettingsService } from './settings.service';
+import { NormalFusion } from '../lib/normal-fusion';
 
 @Injectable()
 export class SimulatorService {
@@ -44,35 +45,8 @@ export class SimulatorService {
   private fuseNormal(fusionItems: FusionNode[]): Persona {
     if (fusionItems.length !== 2) return;
     const [p1, p2] = fusionItems.map((f) => f.persona);
-    const fusionLevel = Math.floor((p1.level + p2.level) / 2) + 1;
-    const arcana = this.findNormalFusionArcana([p1.arcana, p2.arcana]);
-    if (arcana === undefined) return;
-    return p1.arcana === p2.arcana
-      ? this.fuseNormalSameArcana(arcana, p1, p2, fusionLevel)
-      : this.fuseNormalDifferentArcana(arcana, p1, p2, fusionLevel);
-  }
-
-  private fuseNormalSameArcana(
-    arcana: number,
-    p1: Persona,
-    p2: Persona,
-    fusionLevel: number,
-  ): Persona {
-    return this.compendiumService.findClosestOneRankLower(
-      arcana,
-      fusionLevel,
-      p1,
-      p2,
-    );
-  }
-
-  private fuseNormalDifferentArcana(
-    arcana: number,
-    p1: Persona,
-    p2: Persona,
-    fusionLevel: number,
-  ): Persona {
-    return this.compendiumService.getNextRankFromLevel(arcana, fusionLevel);
+    const fusion = new NormalFusion(this.compendiumService, p1, p2);
+    return fusion.fuseUnknownArcana(this.fusionChartService);
   }
 
   private findNormalFusionArcana([a1, a2]: number[]): number {
@@ -96,7 +70,13 @@ export class SimulatorService {
       p3.arcana,
     ]);
     if (arcana === undefined) return;
-    return this.compendiumService.findClosestOneRankHigher(arcana, fusionLevel, p1, p2, p3);
+    return this.compendiumService.findClosestOneRankHigher(
+      arcana,
+      fusionLevel,
+      p1,
+      p2,
+      p3,
+    );
   }
 
   private sortFusionItems(fusionItems: FusionNode[]): FusionNode[] {

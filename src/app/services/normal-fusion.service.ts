@@ -1,6 +1,7 @@
 import { Injectable, Inject } from '@angular/core';
 import { FusionChartService } from '../services/fusion-chart.service';
 import { CompendiumService } from '../services/compendium.service';
+import { NormalFusion } from '../lib/normal-fusion';
 import { Persona } from '../models/persona';
 
 @Injectable()
@@ -53,10 +54,12 @@ export class NormalFusionService {
   }
 
   private testFusion(p1: Persona, p2: Persona): boolean {
-    const fusionLevel = Math.floor((p1.level + p2.level) / 2 + 1);
-    return p1.arcana === p2.arcana
-      ? this.testFusionSameArcana(p1, p2, fusionLevel)
-      : this.testFusionDifferentArcana(p1, p2, fusionLevel);
+    const result = new NormalFusion(
+      this.compendiumService,
+      p1,
+      p2,
+    ).fuseKnownArcana(this.persona.arcana);
+    return result?.id === this.persona.id;
   }
 
   private validate(p1: Persona, p2: Persona): boolean {
@@ -67,33 +70,11 @@ export class NormalFusionService {
     return !(p1.level < p2.level && p1.arcana === p2.arcana);
   }
 
-  private validateUniqueness(p1: Persona, p2: Persona) {
+  private validateUniqueness(p1: Persona, p2: Persona): boolean {
     return !(
       p1.id === p2.id ||
       p1.id === this.persona.id ||
       p2.id === this.persona.id
     );
-  }
-
-  private testFusionSameArcana(p1: Persona, p2: Persona, fusionLevel: number) {
-    let result = this.compendiumService.findClosestOneRankLower(
-      this.persona.arcana,
-      fusionLevel,
-      p1,
-      p2,
-    );
-    return result?.id === this.persona.id;
-  }
-
-  private testFusionDifferentArcana(
-    p1: Persona,
-    p2: Persona,
-    fusionLevel: number,
-  ) {
-    const result = this.compendiumService.getNextRankFromLevel(
-      this.persona.arcana,
-      fusionLevel,
-    );
-    return result.id === this.persona.id;
   }
 }
