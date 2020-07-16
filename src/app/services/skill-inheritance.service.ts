@@ -14,7 +14,7 @@ export class SkillInheritanceService {
     private appSettingsService: AppSettingsService,
   ) {}
 
-  numberOfSkillsInherited(persona: Persona, fusionItems: FusionNode[]): number {
+  countSkillsInherited(persona: Persona, fusionItems: FusionNode[]): number {
     const maxInheritedSkills =
       8 - persona.skills.filter((s) => s.level === 0).length;
     const totalFusionSkills = fusionItems.reduce((total, item) => {
@@ -39,7 +39,7 @@ export class SkillInheritanceService {
     return this.addProbabilities(
       persona.inherits,
       fusionSkills,
-      this.numberOfSkillsInherited(persona, fusionItems),
+      this.countSkillsInherited(persona, fusionItems),
     ).sort((a, b) => b.probRatio - a.probRatio);
   }
 

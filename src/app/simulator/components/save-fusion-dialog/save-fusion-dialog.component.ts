@@ -65,12 +65,6 @@ export class SaveFusionDialogComponent implements OnInit {
     return this.fusionItem.inheritableSkills.filter((s) => s.probRatio > 0);
   }
 
-  skillsInheritedCount(): number {
-    const skillsInheritedCount = this.fusionItem.skillsInheritedCount;
-    const inheritableSkillsCount = this.inheritableSkills().length;
-    return Math.min(skillsInheritedCount, inheritableSkillsCount);
-  }
-
   private fetchServices(): void {
     const tokens = this.activeGameService.getTokenSet();
     this.personaStoreService = this.injector.get<PersonaStoreService>(
@@ -99,7 +93,7 @@ export class SaveFusionDialogComponent implements OnInit {
       ],
       skills: [
         [],
-        SkillsValidators.count(this.skillsInheritedCount()),
+        SkillsValidators.count(this.fusionItem.skillsInheritedCount),
       ],
     });
   }

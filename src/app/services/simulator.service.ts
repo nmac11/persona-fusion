@@ -8,6 +8,7 @@ import { FusionResult } from '../models/fusion-result';
 import { SettingsService } from './settings.service';
 import { NormalFusion } from '../lib/normal-fusion';
 import { TriangleFusion } from '../lib/triangle-fusion';
+import { InheritableSkill } from '../models/inheritable-skill';
 
 @Injectable()
 export class SimulatorService {
@@ -71,19 +72,46 @@ export class SimulatorService {
     persona: Persona,
     fusionItems: FusionNode[],
   ): FusionResult {
+    const inheritableSkills = this.findInheritableSkills(persona, fusionItems);
+    const skillsInheritedCount = this.countSkillsInherited(
+      persona,
+      fusionItems,
+      inheritableSkills,
+    );
     return {
       persona,
       fusionComponents: fusionItems,
       currentLevel: persona.level,
       skills: persona.skills.filter((skill) => skill.level === 0),
-      skillsInheritedCount: this.skillInheritanceService.numberOfSkillsInherited(
-        persona,
-        fusionItems,
-      ),
-      inheritableSkills: this.skillInheritanceService.findInheritableSkills(
-        persona,
-        fusionItems,
-      ),
+      skillsInheritedCount,
+      inheritableSkills,
     };
+  }
+
+  private findInheritableSkills(
+    persona: Persona,
+    fusionItems: FusionNode[],
+  ): InheritableSkill[] {
+    return this.skillInheritanceService.findInheritableSkills(
+      persona,
+      fusionItems,
+    );
+  }
+
+  private countSkillsInherited(
+    persona: Persona,
+    fusionItems: FusionNode[],
+    inheritableSkills: InheritableSkill[],
+  ): number {
+    const filteredInheritableSkillsCount = inheritableSkills.filter(
+      (s) => s.probRatio > 0,
+    ).length;
+    return Math.min(
+      this.skillInheritanceService.countSkillsInherited(
+        persona,
+        fusionItems,
+      ),
+      filteredInheritableSkillsCount,
+    );
   }
 }
