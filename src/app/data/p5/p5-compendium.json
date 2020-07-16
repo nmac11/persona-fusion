@@ -948,7 +948,6 @@
     "level": 95,
     "arcanaName": "Fool",
     "arcana": 0,
-    "ultimate": true,
     "preReqs": ["UL_SATANAEL"],
     "specialCondition": "Unlock true ending",
     "stats": {
