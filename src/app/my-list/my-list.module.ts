@@ -10,6 +10,7 @@ import { ConfirmDeleteDialogComponent } from './components/confirm-delete-dialog
 import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
 import { PersonaStoreModule } from '../persona-store/persona-store.module';
 import { FusionTreeComponent } from './components/fusion-tree/fusion-tree.component';
+import { ViewTreeItemDialogComponent } from './components/view-tree-item-dialog/view-tree-item-dialog.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,13 @@ import { FusionTreeComponent } from './components/fusion-tree/fusion-tree.compon
     ConfirmDeleteDialogComponent,
     CreatePersonaComponent,
     FusionTreeComponent,
+    ViewTreeItemDialogComponent,
   ],
-  entryComponents: [ConfirmDeleteDialogComponent, CreatePersonaComponent],
+  entryComponents: [
+    ConfirmDeleteDialogComponent,
+    CreatePersonaComponent,
+    ViewTreeItemDialogComponent,
+  ],
   imports: [
     CommonModule,
     MaterialModule,
