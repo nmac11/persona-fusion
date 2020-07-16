@@ -37,48 +37,6 @@ export class CompendiumService {
     return this.compendium.find((persona) => persona.id === id);
   }
 
-  getNextRankFromLevel(arcana: number, level: number): Persona {
-    return (
-      this.arcanaGroups[arcana]
-        .filter(this.filterRestricted)
-        .find((p: Persona) => p.level >= level) || this.getHighestRank(arcana)
-    );
-  }
-
-  getPreviousRankFromLevel(arcana: number, level: number): Persona {
-    return (
-      this.arcanaGroups[arcana]
-        .concat()
-        .sort((a, b) => b.level - a.level)
-        .filter(this.filterRestricted)
-        .find((p: Persona) => p.level <= level) || this.getLowestRank(arcana)
-    );
-  }
-
-  getHighestRank(arcana: number): Persona {
-    const group = this.arcanaGroups[arcana].filter(this.filterRestricted);
-    return group[group.length - 1];
-  }
-
-  getLowestRank(arcana: number): Persona {
-    const group = this.arcanaGroups[arcana].filter(this.filterRestricted);
-    return group[0];
-  }
-
-  getNextRank(current: Persona): Persona {
-    return this.arcanaGroups[current.arcana]
-      .filter(this.filterRestricted)
-      .find((p: Persona) => p.level > current.level);
-  }
-
-  getPreviousRank(current: Persona): Persona {
-    return this.arcanaGroups[current.arcana]
-      .concat()
-      .sort((a, b) => b.level - a.level)
-      .filter(this.filterRestricted)
-      .find((p: Persona) => p.level < current.level);
-  }
-
   findClosestOneRankLower(
     arcana: number,
     level: number,
@@ -99,6 +57,48 @@ export class CompendiumService {
     while (exclusions.map((p) => p.id).includes(persona?.id))
       persona = this.getNextRank(persona);
     return persona;
+  }
+
+  getNextRankFromLevel(arcana: number, level: number): Persona {
+    return (
+      this.arcanaGroups[arcana]
+        .filter(this.filterRestricted)
+        .find((p: Persona) => p.level >= level) || this.getHighestRank(arcana)
+    );
+  }
+
+  private getPreviousRankFromLevel(arcana: number, level: number): Persona {
+    return (
+      this.arcanaGroups[arcana]
+        .concat()
+        .sort((a, b) => b.level - a.level)
+        .filter(this.filterRestricted)
+        .find((p: Persona) => p.level <= level) || this.getLowestRank(arcana)
+    );
+  }
+
+  private getHighestRank(arcana: number): Persona {
+    const group = this.arcanaGroups[arcana].filter(this.filterRestricted);
+    return group[group.length - 1];
+  }
+
+  private getLowestRank(arcana: number): Persona {
+    const group = this.arcanaGroups[arcana].filter(this.filterRestricted);
+    return group[0];
+  }
+
+  private getNextRank(current: Persona): Persona {
+    return this.arcanaGroups[current.arcana]
+      .filter(this.filterRestricted)
+      .find((p: Persona) => p.level > current.level);
+  }
+
+  private getPreviousRank(current: Persona): Persona {
+    return this.arcanaGroups[current.arcana]
+      .concat()
+      .sort((a, b) => b.level - a.level)
+      .filter(this.filterRestricted)
+      .find((p: Persona) => p.level < current.level);
   }
 
   private filterRestricted: (p: Persona) => boolean = (p) => {
