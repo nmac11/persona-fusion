@@ -34,7 +34,7 @@ export class NormalFusion {
   }
 
   private sameArcanaFusion(): Persona {
-    return this.compendiumService.findClosestOneRankLower(
+    return this.compendiumService.findClosestDowngrade(
       this.fusionArcana,
       this.fusionLevel,
       this.p1,
@@ -43,7 +43,7 @@ export class NormalFusion {
   }
 
   private differentArcanaFusion(): Persona {
-    return this.compendiumService.getNextRankFromLevel(
+    return this.compendiumService.findClosestUpgrade(
       this.fusionArcana,
       this.fusionLevel,
     );

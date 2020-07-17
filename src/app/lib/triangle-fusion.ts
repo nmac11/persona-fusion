@@ -27,7 +27,7 @@ export class TriangleFusion {
   private fuse(): Persona {
     this.fusionLevel =
       Math.floor((this.pA.level + this.pB1.level + this.pB2.level) / 3) + 5;
-    return this.compendiumService.findClosestOneRankHigher(
+    return this.compendiumService.findClosestUpgrade(
       this.fusionArcana,
       this.fusionLevel,
       this.pA,
