@@ -55,11 +55,37 @@ export class CompendiumService {
     ...exclusions: Persona[]
   ): Persona {
     let persona =
-      this.findEqualOrLowerRank(arcana, level) ||
-      this.getLowestRank(arcana);
+      this.findEqualOrLowerRank(arcana, level) || this.getLowestRank(arcana);
     while (exclusions.map((p) => p.id).includes(persona?.id))
       persona = this.getPreviousRank(persona);
     return persona;
+  }
+
+  upgradeOneRank(persona: Persona, currentLevel: number = null): Persona {
+    const level = currentLevel || persona.level;
+    return this.findHigherRank(persona.arcana, level);
+  }
+
+  upgradeTwoRanks(persona: Persona, currentLevel: number = null): Persona {
+    const firstUpgrade = this.upgradeOneRank(persona, currentLevel);
+    if (firstUpgrade) return this.getNextRank(firstUpgrade);
+  }
+
+  downgradeOneRank(persona: Persona, currentLevel: number = null): Persona {
+    const level = currentLevel || persona.level;
+    let downgrade = this.findLowerRank(persona.arcana, level);
+    return downgrade?.id === persona.id
+      ? this.getPreviousRank(downgrade)
+      : downgrade;
+  }
+
+  downgradeTwoRanks(persona: Persona, currentLevel: number = null): Persona {
+    const firstDowngrade = this.downgradeOneRank(persona, currentLevel);
+    if (!firstDowngrade) return;
+    let secondDowngrade = this.getPreviousRank(firstDowngrade);
+    return secondDowngrade?.id === persona.id
+      ? this.getPreviousRank(secondDowngrade)
+      : secondDowngrade;
   }
 
   private findEqualOrHigherRank(arcana: number, level: number): Persona {
@@ -74,6 +100,20 @@ export class CompendiumService {
       .sort((a, b) => b.level - a.level)
       .filter(this.filterRestricted)
       .find((p: Persona) => p.level <= level);
+  }
+
+  private findHigherRank(arcana: number, level: number): Persona {
+    return this.arcanaGroups[arcana]
+      .filter(this.filterRestricted)
+      .find((p: Persona) => p.level > level);
+  }
+
+  private findLowerRank(arcana: number, level: number): Persona {
+    return this.arcanaGroups[arcana]
+      .concat()
+      .sort((a, b) => b.level - a.level)
+      .filter(this.filterRestricted)
+      .find((p: Persona) => p.level < level);
   }
 
   private getHighestRank(arcana: number): Persona {
