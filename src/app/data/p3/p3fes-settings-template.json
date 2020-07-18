@@ -2,143 +2,177 @@
   "Social Links": {
     "SL_FOOL": {
       "label": "Fool",
-      "description": "SEES Social Link"
+      "description": "SEES",
+      "unlocks": ["Susano-o"]
     },
     "SL_MAGICIAN": {
       "label": "Magician",
-      "description": "Classmate Social Link"
+      "description": "Classmate",
+      "unlocks": ["Surt"]
     },
     "SL_PRIESTESS": {
       "label": "Priestess",
-      "description": "Fuuka Yamagishi Social Link"
+      "description": "Fuuka Yamagishi",
+      "unlocks": ["Scathach"]
     },
     "SL_EMPRESS": {
       "label": "Empress",
-      "description": "Mitsuru Kirijo Social Link"
+      "description": "Mitsuru Kirijo",
+      "unlocks": ["Alilat"]
     },
     "SL_EMPEROR": {
       "label": "Emperor",
-      "description": "Student Council Social Link"
+      "description": "Student Council",
+      "unlocks": ["Odin"]
     },
     "SL_HIEROPHANT": {
       "label": "Hierophant",
-      "description": "Old Couple Social Link"
+      "description": "Old Couple",
+      "unlocks": ["Kohryu"]
     },
     "SL_LOVERS": {
       "label": "Lovers",
-      "description": "Yukari Takeba Social Link"
+      "description": "Yukari Takeba",
+      "unlocks": ["Cybele"]
     },
     "SL_CHARIOT": {
       "label": "Chariot",
-      "description": "(Kendo/Swim/Track) Social Link"
+      "description": "Kendo/Swim/Track",
+      "unlocks": ["Thor"]
     },
     "SL_JUSTICE": {
       "label": "Justice",
-      "description": "Treasurer Social Link"
+      "description": "Treasurer",
+      "unlocks": ["Melchizedek"]
     },
     "SL_HERMIT": {
       "label": "Hermit",
-      "description": "Online Game Social Link"
+      "description": "Online Game",
+      "unlocks": ["Arahabaki"]
     },
     "SL_FORTUNE": {
       "label": "Fortune",
-      "description": "(Art/Music/Photography) Club Social Link"
+      "description": "Art/Music/Photography Club",
+      "unlocks": ["Norn"]
     },
     "SL_STRENGTH": {
       "label": "Strength",
-      "description": "Team Manager Social Link"
+      "description": "Team Manager",
+      "unlocks": ["Siegfried"]
     },
     "SL_HANGEDMAN": {
       "label": "Hanged Man",
-      "description": "Girl at the Shrine Social Link"
+      "description": "Girl at the Shrine",
+      "unlocks": ["Attis"]
     },
     "SL_DEATH": {
       "label": "Death",
-      "description": "Mysterious Boy Social Link"
+      "description": "Mysterious Boy",
+      "unlocks": ["Thanatos"]
     },
     "SL_TEMPERANCE": {
       "label": "Temperance",
-      "description": "Transfer Student Social Link"
+      "description": "Transfer Student",
+      "unlocks": ["Yurlungur"]
     },
     "SL_DEVIL": {
       "label": "Devil",
-      "description": "Businessman Social Link"
+      "description": "Businessman",
+      "unlocks": ["Beelzebub"]
     },
     "SL_TOWER": {
       "label": "Tower",
-      "description": "Unusual Monk Social Link"
+      "description": "Unusual Monk",
+      "unlocks": ["Chi You"]
     },
     "SL_STAR": {
       "label": "Star",
-      "description": "Rival Athlete Social Link"
+      "description": "Rival Athlete",
+      "unlocks": ["Helel"]
     },
     "SL_MOON": {
       "label": "Moon",
-      "description": "Gourmet King Social Link"
+      "description": "Gourmet King",
+      "unlocks": ["Sandalphon"]
     },
     "SL_SUN": {
       "label": "Sun",
-      "description": "Dying Young Man Social Link"
+      "description": "Dying Young Man",
+      "unlocks": ["Asura"]
     },
     "SL_JUDGEMENT": {
       "label": "Judgement",
-      "description": "Nyx Annihilation Team Social Link"
+      "description": "Nyx Annihilation Team",
+      "unlocks": ["Messiah"]
     },
     "SL_AEON": {
       "label": "Aeon",
-      "description": "Aigis Social Link"
+      "description": "Aigis",
+      "unlocks": ["Metatron"]
     }
   },
-  "Items": {
+  "Quests": {
     "IT_BLUESCALE": {
       "label": "Blue Scale",
-      "description": "Enables the fusion of Empusa"
+      "description": "Quest 57",
+      "unlocks": ["Empusa"]
     },
     "IT_REDMUFFLER": {
       "label": "Red Muffler",
-      "description": "Enables the fusion of Hell Biker"
+      "description": "Quest 59",
+      "unlocks": ["Hell Biker"]
     },
     "IT_SMALLCHEONGSAM": {
       "label": "Small Cheongsam",
-      "description": "Enables the fusion of Hua Po"
+      "description": "Quest 56",
+      "unlocks": ["Hua Po"]
     },
     "IT_RAINBOWFEATHER": {
       "label": "Rainbow Feather",
-      "description": "Enables the fusion of Kartikeya"
+      "description": "Quest 60",
+      "unlocks": ["Kartikeya"]
     },
     "IT_SUGARKEY": {
       "label": "Sugar Key",
-      "description": "Enables the fusion of King Frost"
+      "description": "Quest 22",
+      "unlocks": ["King Frost"]
     },
     "IT_LILYPETAL": {
       "label": "Lily Petal",
-      "description": "Enables the fusion of Lilith"
+      "description": "Quest 48",
+      "unlocks": ["Lilith"]
     },
     "IT_MASAKADOS": {
       "label": "Masakados",
-      "description": "Enables the fusion of Masakado"
+      "description": "Quest 52",
+      "unlocks": ["Masakado"]
     },
     "IT_MACHINECORE": {
       "label": "Machine Core",
-      "description": "Enables the fusion of Nata Taishi"
+      "description": "Quest 29",
+      "unlocks": ["Nata Taishi"]
     },
     "IT_MARIONETTE": {
       "label": "Marionette",
-      "description": "Enables the fusion of Nebiros"
+      "description": "Quest 42",
+      "unlocks": ["Nebiros"]
     },
     "IT_TORNBLACKCLOTH": {
       "label": "Torn Black Cloth",
-      "description": "Enables the fusion of Pale Rider"
+      "description": "Quest 8",
+      "unlocks": ["Pale Rider"]
     },
     "IT_BOOKOFANCIENTS": {
       "label": "Book of Ancients",
-      "description": "Enables the fusion of Thoth"
+      "description": "Quest 58",
+      "unlocks": ["Thoth"]
     }
   },
   "Ultimate Persona": {
     "UL_ORPHEUSTELOS": {
-      "label": "Orpheus Telos",
-      "description": "Enables the fusion Orpheus Telos"
+      "label": "Colorless Mask",
+      "description": "Max all social links",
+      "unlocks": ["Orpheus Telos"]
     }
   }
 }

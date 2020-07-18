@@ -2,101 +2,125 @@
   "Social Links": {
     "SL_FOOL": {
       "label": "Fool",
-      "description": "Investigation Team Social Link"
+      "description": "Investigation Team",
+      "unlocks": ["Loki"]
     },
     "SL_MAGICIAN": {
       "label": "Magician",
-      "description": "Yosuke Hanamura Social Link"
+      "description": "Yosuke Hanamura",
+      "unlocks": ["Mada"]
     },
     "SL_PRIESTESS": {
       "label": "Priestess",
-      "description": "Yukiko Amagi Social Link"
+      "description": "Yukiko Amagi",
+      "unlocks": ["Scathach"]
     },
     "SL_EMPRESS": {
       "label": "Empress",
-      "description": "Margaret Social Link"
+      "description": "Margaret",
+      "unlocks": ["Isis"]
     },
     "SL_EMPEROR": {
       "label": "Emperor",
-      "description": "Kanji Tatsumi Social Link"
+      "description": "Kanji Tatsumi",
+      "unlocks": ["Odin"]
     },
     "SL_HIEROPHANT": {
       "label": "Hierophant",
-      "description": "Ryotaro Dojima Social Link"
+      "description": "Ryotaro Dojima",
+      "unlocks": ["Kohryu"]
     },
     "SL_LOVERS": {
       "label": "Lovers",
-      "description": "Rise Kujikawa Social Link"
+      "description": "Rise Kujikawa",
+      "unlocks": ["Ishtar"]
     },
     "SL_CHARIOT": {
       "label": "Chariot",
-      "description": "Chie Satonaka Social Link"
+      "description": "Chie Satonaka",
+      "unlocks": ["Futsunushi"]
     },
     "SL_JUSTICE": {
       "label": "Justice",
-      "description": "Nanako Dojima Social Link"
+      "description": "Nanako Dojima",
+      "unlocks": ["Sraosha"]
     },
     "SL_HERMIT": {
       "label": "Hermit",
-      "description": "Fox Social Link"
+      "description": "Fox",
+      "unlocks": ["Ongyo-ki"]
     },
     "SL_FORTUNE": {
       "label": "Fortune",
-      "description": "Naoto Shirogane Social Link"
+      "description": "Naoto Shirogane",
+      "unlocks": ["Norn"]
     },
     "SL_STRENGTH": {
       "label": "Strength",
-      "description": "Fellow Athletes Social Link"
+      "description": "Fellow Athletes",
+      "unlocks": ["Zaou-Gongen"]
     },
     "SL_HANGEDMAN": {
       "label": "Hanged Man",
-      "description": "Saki's Brother Social Link"
+      "description": "Saki's Brother",
+      "unlocks": ["Attis"]
     },
     "SL_DEATH": {
       "label": "Death",
-      "description": "Old Lady Social Link"
+      "description": "Old Lady",
+      "unlocks": ["Mahakala"]
     },
     "SL_TEMPERANCE": {
       "label": "Temperance",
-      "description": "Young Mother Social Link"
+      "description": "Young Mother",
+      "unlocks": ["Vishnu"]
     },
     "SL_DEVIL": {
       "label": "Devil",
-      "description": "Nurse Social Link"
+      "description": "Nurse",
+      "unlocks": ["Beelzebub"]
     },
     "SL_TOWER": {
       "label": "Tower",
-      "description": "Tutored Student Social Link"
+      "description": "Tutored Student",
+      "unlocks": ["Shiva"]
     },
     "SL_STAR": {
       "label": "Star",
-      "description": "Teddie Social Link"
+      "description": "Teddie",
+      "unlocks": ["Helel"]
     },
     "SL_MOON": {
       "label": "Moon",
-      "description": "Ai Ebihara Social Link"
+      "description": "Ai Ebihara",
+      "unlocks": ["Sandalphon"]
     },
     "SL_SUN": {
       "label": "Sun",
-      "description": "Yumi Ozawa/Ayane Matsunaga Social Link"
+      "description": "Yumi Ozawa/Ayane Matsunaga",
+      "unlocks": ["Asura"]
     },
     "SL_JUDGEMENT": {
       "label": "Judgement",
-      "description": "Seekers of Truth Social Link"
+      "description": "Seekers of Truth",
+      "unlocks": ["Ardha", "Lucifer"]
     },
     "SL_JESTER": {
       "label": "Jester",
-      "description": "Tohru Adachi Social Link"
+      "description": "Tohru Adachi",
+      "unlocks": ["Magatsu-Izanagi"]
     },
     "SL_AEON": {
       "label": "Aeon",
-      "description": "Marie Social Link"
+      "description": "Marie",
+      "unlocks": ["Kaguya"]
     }
   },
   "Ultimate Persona": {
     "UL_IZANAGINOOKAMI": {
       "label": "Izanagi-no-Okami",
-      "description": "Enables the fusion of Izanagi-no-Okami"
+      "description": "Unlock true ending",
+      "unlocks": ["Izanagi-no-Okami"]
     }
   }
 }

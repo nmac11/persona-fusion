@@ -4,8 +4,9 @@
     <ul>
       <li *ngFor="let item of category.value | keyvalue">
         <mat-checkbox [formControlName]="item.key">
-          <span class="mat-body-2">{{ item.value.label }}</span><br>
-          <small class="mat-caption">{{item.value.description}}</small>
+          <span class="mat-body-2">{{ item.value.label }}</span>
+          <span class="mat-body-1" *ngIf="item.value.description"> ({{item.value.description}})</span> <br>
+          <small class="mat-caption">{{item.value.unlocks.join(', ')}}</small>
         </mat-checkbox>
       </li>
     </ul>

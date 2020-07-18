@@ -2,131 +2,160 @@
   "Confidants": {
     "SL_FOOL": {
       "label": "Fool",
-      "description": "Igor Confidant"
+      "description": "Igor",
+      "unlocks": ["Vishnu"]
     },
     "SL_MAGICIAN": {
       "label": "Magician",
-      "description": "Morgana Confidant"
+      "description": "Morgana",
+      "unlocks": ["Futsunushi"]
     },
     "SL_PRIESTESS": {
       "label": "Priestess",
-      "description": "Makoto Nijima Confidant"
+      "description": "Makoto Nijima",
+      "unlocks": ["Cybele"]
     },
     "SL_EMPRESS": {
       "label": "Empress",
-      "description": "Haru Okumura Confidant"
+      "description": "Haru Okumura",
+      "unlocks": ["Mother Harlot"]
     },
     "SL_EMPEROR": {
       "label": "Emperor",
-      "description": "Kitagawa Yusuke Confidant"
+      "description": "Kitagawa Yusuke",
+      "unlocks": ["Odin"]
     },
     "SL_HIEROPHANT": {
       "label": "Hierophant",
-      "description": "Sojiro Sakura Confidant"
+      "description": "Sojiro Sakura",
+      "unlocks": ["Kohryu"]
     },
     "SL_LOVERS": {
       "label": "Lovers",
-      "description": "Ann Takamaki Confidant"
+      "description": "Ann Takamaki",
+      "unlocks": ["Ishtar"]
     },
     "SL_CHARIOT": {
       "label": "Chariot",
-      "description": "Ryuji Sakamoto Confidant"
+      "description": "Ryuji Sakamoto",
+      "unlocks": ["Chi You"]
     },
     "SL_JUSTICE": {
       "label": "Justice",
-      "description": "Goro Akechi Confidant"
+      "description": "Goro Akechi",
+      "unlocks": ["Metatron"]
     },
     "SL_HERMIT": {
       "label": "Hermit",
-      "description": "Futaba Sakura Confidant"
+      "description": "Futaba Sakura",
+      "unlocks": ["Ongyo-Ki"]
     },
     "SL_FORTUNE": {
       "label": "Fortune",
-      "description": "Chihaya Mifune Confidant"
+      "description": "Chihaya Mifune",
+      "unlocks": ["Lakshmi"]
     },
     "SL_STRENGTH": {
       "label": "Strength",
-      "description": "Caroline & Justine Confidant"
+      "description": "Caroline & Justine",
+      "unlocks": ["Zaou-Gongen"]
     },
     "SL_HANGEDMAN": {
       "label": "Hanged Man",
-      "description": "Munehisa Iwai Confidant"
+      "description": "Munehisa Iwai",
+      "unlocks": ["Attis"]
     },
     "SL_DEATH": {
       "label": "Death",
-      "description": "Tae Takemi Confidant"
+      "description": "Tae Takemi",
+      "unlocks": ["Alice"]
     },
     "SL_TEMPERANCE": {
       "label": "Temperance",
-      "description": "Sadayo Kawakami Confidant"
+      "description": "Sadayo Kawakami",
+      "unlocks": ["Ardha"]
     },
     "SL_DEVIL": {
       "label": "Devil",
-      "description": "Oya Ichiko Confidant"
+      "description": "Oya Ichiko",
+      "unlocks": ["Beelzebub"]
     },
     "SL_TOWER": {
       "label": "Tower",
-      "description": "Shinya Oda Confidant"
+      "description": "Shinya Oda",
+      "unlocks": ["Mada"]
     },
     "SL_STAR": {
       "label": "Star",
-      "description": "Hifumi Togo Confidant"
+      "description": "Hifumi Togo",
+      "unlocks": ["Lucifer"]
     },
     "SL_MOON": {
       "label": "Moon",
-      "description": "Yuki Mishima Confidant"
+      "description": "Yuki Mishima",
+      "unlocks": ["Sandalphon"]
     },
     "SL_SUN": {
       "label": "Sun",
-      "description": "Toranosuke Yoshida Confidant"
+      "description": "Toranosuke Yoshida",
+      "unlocks": ["Asura-Ou"]
     },
     "SL_JUDGEMENT": {
       "label": "Judgement",
-      "description": "Sae Nijima Confidant"
+      "description": "Sae Nijima",
+      "unlocks": ["Satan"]
     }
   },
   "DLCs": {
     "DLC_IZANAGI": {
       "label": "Izanagi",
-      "description": "Enables the fusion of Izanagi and Izanagi Picaro"
+      "unlocks": ["Izanagi", "Izanagi Picaro"]
     },
     "DLC_ORPHEUS": {
       "label": "Orpheus",
-      "description": "Enables the fusion of Orpheus and Orpheus Picaro"
+      "unlocks": ["Orpheus", "Orpheus Picaro"]
     },
     "DLC_ARIADNE": {
       "label": "Ariadne",
-      "description": "Enables the fusion of Ariadne and Ariadne Picaro"
+      "unlocks": ["Ariadne", "Ariadne Picaro"]
+
     },
     "DLC_ASTERIUS": {
       "label": "Asterius",
-      "description": "Enables the fusion of Asterius and Asterius Picaro"
+      "unlocks": ["Asterius", "Asterius Picaro"]
+
     },
     "DLC_THANATOS": {
       "label": "Thanatos",
-      "description": "Enables the fusion of Thanatos and Thanatos Picaro"
+      "unlocks": ["Thanatos", "Thanatos Picaro"]
+
     },
     "DLC_MAGATSUIZANAGI": {
       "label": "Magatsu-Izanagi",
-      "description": "Enables the fusion of Magatsu-Izanagi and Magatsu-Izanagi Picaro"
+      "unlocks": ["Magatsu-Izanagi", "Magatsu-Izanagi Picaro"]
+
     },
     "DLC_KAGUYA": {
       "label": "Kaguya",
-      "description": "Enables the fusion of Kaguya and Kaguya Picaro"
+      "unlocks": ["Kaguya", "Kaguya Picaro"]
+
     },
     "DLC_TSUKIYOMI": {
       "label": "Tsukiyomi",
-      "description": "Enables the fusion of Tsukiyomi and Tsukiyomi Picaro"
+      "unlocks": ["Tsukiyomi", "Tsukiyomi Picaro"]
+
     },
     "DLC_MESSIAH": {
       "label": "Messiah",
-      "description": "Enables the fusion of Messiah and Messiah Picaro"
+      "unlocks": ["Messiah", "Messiah Picaro"]
+
     }
   },
   "Ultimate Persona": {
     "UL_SATANAEL": {
       "label": "Satanael",
-      "description": "Enables the fusion of Satanael"
+      "description": "Unlock true ending",
+      "unlocks": ["Satanael"]
     }
   }
 }
