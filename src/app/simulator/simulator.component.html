@@ -1,4 +1,4 @@
-<div gdColumns gdColumns.gt-sm="320px auto" gdGap="16px">
+<div gdColumns="minmax(0, 1fr)" gdColumns.gt-sm="320px minmax(0, 1fr)" gdGap="16px">
   <shared-persona-info *ngIf="fusionYield; else noFusion" [persona]="fusionYield.persona"></shared-persona-info>
   <ng-template #noFusion>
     <div>
