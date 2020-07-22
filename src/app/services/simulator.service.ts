@@ -13,6 +13,7 @@ import { SettingsService } from './settings.service';
 import { NormalFusion } from '../lib/normal-fusion';
 import { TriangleFusion } from '../lib/triangle-fusion';
 import { InheritableSkill } from '../models/inheritable-skill';
+import { GemFusion } from '../lib/gem-fusion';
 
 export abstract class SimulatorService {
   constructor(
@@ -49,7 +50,7 @@ export abstract class SimulatorService {
   }
 
   private fuseNormal(fusionItems: FusionNode[]): Persona {
-    if (fusionItems.length !== 2) return;
+    if (fusionItems.length !== 2 || this.checkGemFusion(fusionItems)) return;
     const [p1, p2] = fusionItems.map((f) => f.persona);
     const fusion = new NormalFusion(this.compendiumService, p1, p2);
     return fusion.fuseUnknownArcana(this.fusionChartService);
@@ -98,6 +99,12 @@ export abstract class SimulatorService {
     return Math.min(
       this.skillInheritanceService.countSkillsInherited(persona, fusionItems),
       filteredInheritableSkillsCount,
+    );
+  }
+
+  protected checkGemFusion([f1, f2]: FusionNode[]): boolean {
+    return (
+      (f1.persona.gem && !f2.persona.gem) || (!f1.persona.gem && f2.persona.gem)
     );
   }
 }
@@ -161,6 +168,19 @@ export class P5SimulatorService extends SimulatorService {
   }
 
   protected fuseOther(fusionItems: FusionNode[]): Persona {
-    return;
+    return this.fuseWithGem(fusionItems);
+  }
+
+  private fuseWithGem(fusionItems: FusionNode[]): Persona {
+    if (fusionItems.length !== 2 || !this.checkGemFusion(fusionItems)) return;
+    const fusibleLevel = fusionItems.find((f) => !f.persona.gem).currentLevel;
+    const personae = fusionItems.map((f) => f.persona);
+    const fusion = new GemFusion(
+      this.compendiumService,
+      this.fusionChartService,
+      personae,
+      fusibleLevel,
+    );
+    return fusion.fuse();
   }
 }

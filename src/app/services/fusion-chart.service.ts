@@ -142,4 +142,8 @@ export class P5FusionChartService extends FusionChartService {
       return res;
     }, {});
   }
+
+  getGemOffset(arcana: number, gemName: string): number {
+    return this.gemFusionChart[gemName][arcana];
+  }
 }

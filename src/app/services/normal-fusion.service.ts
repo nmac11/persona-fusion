@@ -63,11 +63,19 @@ export class NormalFusionService {
   }
 
   private validate(p1: Persona, p2: Persona): boolean {
-    return this.validateLevels(p1, p2) && this.validateUniqueness(p1, p2);
+    return (
+      this.validateLevels(p1, p2) &&
+      this.validateUniqueness(p1, p2) &&
+      this.validateNotGemFusion(p1, p2)
+    );
   }
 
   private validateLevels(p1: Persona, p2: Persona): boolean {
     return !(p1.level < p2.level && p1.arcana === p2.arcana);
+  }
+
+  private validateNotGemFusion(p1: Persona, p2: Persona): boolean {
+    return (!p1.gem && !p2.gem) || (p1.gem && p2.gem);
   }
 
   private validateUniqueness(p1: Persona, p2: Persona): boolean {
