@@ -1,5 +1,9 @@
 import { Injectable, Inject } from '@angular/core';
-import { FusionChartService } from './fusion-chart.service';
+import {
+  P5FusionChartService,
+  P3P4FusionChartService,
+  FusionChartService,
+} from './fusion-chart.service';
 import { CompendiumService } from './compendium.service';
 import { SkillInheritanceService } from './skill-inheritance.service';
 import { Persona } from '../models/persona';
@@ -10,14 +14,14 @@ import { NormalFusion } from '../lib/normal-fusion';
 import { TriangleFusion } from '../lib/triangle-fusion';
 import { InheritableSkill } from '../models/inheritable-skill';
 
-@Injectable()
-export class SimulatorService {
+export abstract class SimulatorService {
   constructor(
-    @Inject(FusionChartService) private fusionChartService: FusionChartService,
-    @Inject(CompendiumService) private compendiumService: CompendiumService,
+    @Inject(FusionChartService)
+    protected fusionChartService: FusionChartService,
+    @Inject(CompendiumService) protected compendiumService: CompendiumService,
     @Inject(SkillInheritanceService)
-    private skillInheritanceService: SkillInheritanceService,
-    @Inject(SettingsService) private SettingsService: SettingsService,
+    protected skillInheritanceService: SkillInheritanceService,
+    @Inject(SettingsService) protected settingsService: SettingsService,
   ) {}
 
   fuse(fusionItems: FusionNode[]): FusionResult {
@@ -25,7 +29,7 @@ export class SimulatorService {
     const persona =
       this.fuseSpecial(fusionItems) ||
       this.fuseNormal(fusionItems) ||
-      this.fuseTriangle(fusionItems);
+      this.fuseOther(fusionItems);
 
     if (persona) {
       return this.createFusionResult(persona, fusionItems);
@@ -41,7 +45,7 @@ export class SimulatorService {
     const p = this.fusionChartService.trySpecialFusion(
       fusionItems.map((f) => f.persona),
     );
-    if (p && this.SettingsService.testPersona(p)) return p;
+    if (p && this.settingsService.testPersona(p)) return p;
   }
 
   private fuseNormal(fusionItems: FusionNode[]): Persona {
@@ -51,22 +55,7 @@ export class SimulatorService {
     return fusion.fuseUnknownArcana(this.fusionChartService);
   }
 
-  private fuseTriangle(fusionItems: FusionNode[]): Persona {
-    if (fusionItems.length !== 3) return;
-    const [p1, p2, p3] = this.sortFusionItems(fusionItems).map(
-      (f) => f.persona,
-    );
-    const fusion = new TriangleFusion(this.compendiumService, p1, p2, p3);
-    return fusion.fuseUnknownArcana(this.fusionChartService);
-  }
-
-  private sortFusionItems(fusionItems: FusionNode[]): FusionNode[] {
-    const fusionItemsCopy: FusionNode[] = [...fusionItems];
-    return fusionItemsCopy.sort(
-      (a, b) =>
-        b.currentLevel - a.currentLevel || a.persona.arcana - b.persona.arcana,
-    );
-  }
+  protected abstract fuseOther(fusionItems: FusionNode[]): Persona;
 
   private createFusionResult(
     persona: Persona,
@@ -107,11 +96,71 @@ export class SimulatorService {
       (s) => s.probRatio > 0,
     ).length;
     return Math.min(
-      this.skillInheritanceService.countSkillsInherited(
-        persona,
-        fusionItems,
-      ),
+      this.skillInheritanceService.countSkillsInherited(persona, fusionItems),
       filteredInheritableSkillsCount,
     );
+  }
+}
+
+@Injectable()
+export class P3P4SimulatorService extends SimulatorService {
+  constructor(
+    @Inject(P3P4FusionChartService)
+    protected fusionChartService: P3P4FusionChartService,
+    @Inject(CompendiumService) protected compendiumService: CompendiumService,
+    @Inject(SkillInheritanceService)
+    protected skillInheritanceService: SkillInheritanceService,
+    @Inject(SettingsService) protected settingsService: SettingsService,
+  ) {
+    super(
+      fusionChartService,
+      compendiumService,
+      skillInheritanceService,
+      settingsService,
+    );
+  }
+
+  private fuseTriangle(fusionItems: FusionNode[]): Persona {
+    if (fusionItems.length !== 3) return;
+    const [p1, p2, p3] = this.sortFusionItems(fusionItems).map(
+      (f) => f.persona,
+    );
+    const fusion = new TriangleFusion(this.compendiumService, p1, p2, p3);
+    return fusion.fuseUnknownArcana(this.fusionChartService);
+  }
+
+  private sortFusionItems(fusionItems: FusionNode[]): FusionNode[] {
+    const fusionItemsCopy: FusionNode[] = [...fusionItems];
+    return fusionItemsCopy.sort(
+      (a, b) =>
+        b.currentLevel - a.currentLevel || a.persona.arcana - b.persona.arcana,
+    );
+  }
+
+  protected fuseOther(fusionItems: FusionNode[]): Persona {
+    return this.fuseTriangle(fusionItems);
+  }
+}
+
+@Injectable()
+export class P5SimulatorService extends SimulatorService {
+  constructor(
+    @Inject(P5FusionChartService)
+    protected fusionChartService: P5FusionChartService,
+    @Inject(CompendiumService) protected compendiumService: CompendiumService,
+    @Inject(SkillInheritanceService)
+    protected skillInheritanceService: SkillInheritanceService,
+    @Inject(SettingsService) protected settingsService: SettingsService,
+  ) {
+    super(
+      fusionChartService,
+      compendiumService,
+      skillInheritanceService,
+      settingsService,
+    );
+  }
+
+  protected fuseOther(fusionItems: FusionNode[]): Persona {
+    return;
   }
 }

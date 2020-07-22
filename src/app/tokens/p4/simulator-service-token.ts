@@ -1,7 +1,7 @@
 import { InjectionToken, Provider } from '@angular/core';
-import { SimulatorService } from '../../services/simulator.service';
+import { P3P4SimulatorService } from '../../services/simulator.service';
 import { CompendiumService } from '../../services/compendium.service';
-import { FusionChartService } from '../../services/fusion-chart.service';
+import { P3P4FusionChartService } from '../../services/fusion-chart.service';
 import { SkillInheritanceService } from '../../services/skill-inheritance.service';
 import { P4_COMPENDIUM } from '../../tokens/p4/compendium-service-token';
 import { P4_FUSION_CHART } from '../../tokens/p4/fusion-chart-service-token';
@@ -10,12 +10,12 @@ import { SettingsService } from '../../services/settings.service';
 import { P4_SETTINGS } from './settings-service-token';
 
 function p4SimulatorFactory(
-  fusionChartService: FusionChartService,
+  fusionChartService: P3P4FusionChartService,
   compendiumService: CompendiumService,
   skillInheritanceService: SkillInheritanceService,
   settingsService: SettingsService,
-): SimulatorService {
-  return new SimulatorService(
+): P3P4SimulatorService {
+  return new P3P4SimulatorService(
     fusionChartService,
     compendiumService,
     skillInheritanceService,
@@ -23,7 +23,7 @@ function p4SimulatorFactory(
   );
 }
 
-export const P4_SIMULATOR = new InjectionToken<SimulatorService>(
+export const P4_SIMULATOR = new InjectionToken<P3P4SimulatorService>(
   'P4_SIMULATOR',
 );
 

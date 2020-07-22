@@ -3,22 +3,15 @@ import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
 import { SpecialFusion } from '../models/special-fusion';
 
-@Injectable()
-export class FusionChartService {
+export abstract class FusionChartService {
   constructor(
-    @Inject(CompendiumService) private compendiumService: CompendiumService,
-    @Inject(Object) private normalFusionChart: number[][][],
-    @Inject(Object) private triangleFusionChart: number[][][],
-    @Inject(Object) private specialFusions: SpecialFusion[],
+    @Inject(CompendiumService) protected compendiumService: CompendiumService,
+    @Inject(Object) protected specialFusions: SpecialFusion[],
+    @Inject(Object) protected normalFusionChart: number[][][],
   ) {}
 
   getPossibleNormalFusions(arcana: number): Persona[][][] {
     const formulas = this.normalFusionChart[arcana];
-    return this.mapFormulasToPersonae(formulas, arcana);
-  }
-
-  getPossibleTriangleFusions(arcana: number): Persona[][][] {
-    const formulas = this.getTriangleFormulas(arcana);
     return this.mapFormulasToPersonae(formulas, arcana);
   }
 
@@ -49,11 +42,7 @@ export class FusionChartService {
     return this.findFusionChartResult(this.normalFusionChart, fusionArcana);
   }
 
-  findTriangleFusionChartResult(fusionArcana: number[]): number {
-    return this.findFusionChartResult(this.triangleFusionChart, fusionArcana);
-  }
-
-  private findFusionChartResult(fusionChart, [a1, a2]: number[]): number {
+  protected findFusionChartResult(fusionChart, [a1, a2]: number[]): number {
     for (let i = 0; i < fusionChart.length; i++) {
       if (
         fusionChart[i].some(
@@ -66,7 +55,7 @@ export class FusionChartService {
     }
   }
 
-  private mapFormulasToPersonae(
+  protected mapFormulasToPersonae(
     formulas: number[][],
     arcana: number,
   ): Persona[][][] {
@@ -74,25 +63,33 @@ export class FusionChartService {
       arcanaFusion.map((a: number) => this.compendiumService.getAll(a)),
     );
   }
+}
+
+@Injectable()
+export class P3P4FusionChartService extends FusionChartService {
+  constructor(
+    @Inject(CompendiumService) protected compendiumService: CompendiumService,
+    @Inject(Object) protected specialFusions: SpecialFusion[],
+    @Inject(Object) protected normalFusionChart: number[][][],
+    @Inject(Object) private triangleFusionChart: number[][][],
+  ) {
+    super(compendiumService, specialFusions, normalFusionChart);
+  }
+
+  getPossibleTriangleFusions(arcana: number): Persona[][][] {
+    const formulas = this.getTriangleFormulas(arcana);
+    return this.mapFormulasToPersonae(formulas, arcana);
+  }
+
+  findTriangleFusionChartResult(fusionArcana: number[]): number {
+    return this.findFusionChartResult(this.triangleFusionChart, fusionArcana);
+  }
 
   private getTriangleFormulas(arcana: number): number[][] {
     return this.triangleFusionChart[arcana].reduce(
       this.triangleFormulaReducer,
       [],
     );
-  }
-
-  private addUniqueFormula(formulas: number[][], newFormulas: number[][]) {
-    newFormulas.forEach((newFormula) => {
-      if (
-        !formulas.some((formulaFromList) => {
-          for (let x = 0; x < 3; x++)
-            if (formulaFromList[x] !== newFormula[x]) return false;
-          return true;
-        })
-      )
-        formulas.push(newFormula);
-    });
   }
 
   private triangleFormulaReducer: (
@@ -112,4 +109,37 @@ export class FusionChartService {
     this.addUniqueFormula(formulas, mappedFormulas);
     return formulas;
   };
+
+  private addUniqueFormula(formulas: number[][], newFormulas: number[][]) {
+    newFormulas.forEach((newFormula) => {
+      if (
+        !formulas.some((formulaFromList) => {
+          for (let x = 0; x < 3; x++)
+            if (formulaFromList[x] !== newFormula[x]) return false;
+          return true;
+        })
+      )
+        formulas.push(newFormula);
+    });
+  }
+}
+
+@Injectable()
+export class P5FusionChartService extends FusionChartService {
+  constructor(
+    @Inject(CompendiumService) protected compendiumService: CompendiumService,
+    @Inject(Object) protected specialFusions: SpecialFusion[],
+    @Inject(Object) protected normalFusionChart: number[][][],
+    @Inject(Object) private gemFusionChart: { [key: string]: number[] },
+  ) {
+    super(compendiumService, specialFusions, normalFusionChart);
+  }
+
+  getGemFormulas(arcana: number): { [key: string]: number } {
+    return Object.entries(this.gemFusionChart).reduce((res, [gem, effect]) => {
+      const group = (res[effect[arcana]] = res[effect[arcana]] || []);
+      group.push(gem);
+      return res;
+    }, {});
+  }
 }

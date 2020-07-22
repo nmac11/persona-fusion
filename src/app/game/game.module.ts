@@ -14,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
 import { MyListModule } from '../my-list/my-list.module';
 import { ActiveGameService } from '../services/active-game.service';
 import { SettingsModule } from '../settings/settings.module';
+import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SettingsModule } from '../settings/settings.module';
     NormalFusionsComponent,
     TriangleFusionsComponent,
     NormalFusionsBottomSheetComponent,
+    GemFusionsComponent,
   ],
   imports: [
     CommonModule,

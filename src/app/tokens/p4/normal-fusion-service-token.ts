@@ -12,7 +12,7 @@ function p4NormalFusionFactory(
   return new NormalFusionService(arcanaFusionService, compendiumService);
 }
 
-export const P4_NORMAL_FUSION = new InjectionToken<CompendiumService>(
+export const P4_NORMAL_FUSION = new InjectionToken<NormalFusionService>(
   'P4_NORMAL_FUSION',
 );
 

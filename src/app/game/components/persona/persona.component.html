@@ -21,8 +21,11 @@
       <mat-tab *ngIf="!persona.special" label="NORMAL">
         <game-normal-fusions [persona]="persona"></game-normal-fusions>
       </mat-tab>
-      <mat-tab *ngIf="!persona.special" label="TRIANGLE">
+      <mat-tab *ngIf="showTriangleFusions()" label="TRIANGLE">
         <game-triangle-fusions [persona]="persona"></game-triangle-fusions>
+      </mat-tab> -->
+      <mat-tab *ngIf="showGemFusions()" label="GEM">
+        <game-gem-fusions [persona]="persona"></game-gem-fusions>
       </mat-tab>
     </mat-tab-group>
   </mat-card>

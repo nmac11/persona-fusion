@@ -1,7 +1,7 @@
 import { InjectionToken, Provider } from '@angular/core';
-import { SimulatorService } from '../../services/simulator.service';
+import { P5SimulatorService } from '../../services/simulator.service';
 import { CompendiumService } from '../../services/compendium.service';
-import { FusionChartService } from '../../services/fusion-chart.service';
+import { P5FusionChartService } from '../../services/fusion-chart.service';
 import { SkillInheritanceService } from '../../services/skill-inheritance.service';
 import { P5_COMPENDIUM } from '../../tokens/p5/compendium-service-token';
 import { P5_FUSION_CHART } from '../../tokens/p5/fusion-chart-service-token';
@@ -10,12 +10,12 @@ import { SettingsService } from '../../services/settings.service';
 import { P5_SETTINGS } from './settings-service-token';
 
 function p5SimulatorFactory(
-  fusionChartService: FusionChartService,
+  fusionChartService: P5FusionChartService,
   compendiumService: CompendiumService,
   skillInheritanceService: SkillInheritanceService,
   settingsService: SettingsService,
-): SimulatorService {
-  return new SimulatorService(
+): P5SimulatorService {
+  return new P5SimulatorService(
     fusionChartService,
     compendiumService,
     skillInheritanceService,
@@ -23,7 +23,7 @@ function p5SimulatorFactory(
   );
 }
 
-export const P5_SIMULATOR = new InjectionToken<SimulatorService>(
+export const P5_SIMULATOR = new InjectionToken<P5SimulatorService>(
   'P5_SIMULATOR',
 );
 

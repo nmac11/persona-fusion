@@ -1,6 +1,6 @@
 import { Persona } from '../models/persona';
 import { CompendiumService } from '../services/compendium.service';
-import { FusionChartService } from '../services/fusion-chart.service';
+import { P3P4FusionChartService } from '../services/fusion-chart.service';
 
 export class TriangleFusion {
   fusionLevel: number;
@@ -18,7 +18,7 @@ export class TriangleFusion {
     return this.fuse();
   }
 
-  fuseUnknownArcana(fusionChartService: FusionChartService): Persona {
+  fuseUnknownArcana(fusionChartService: P3P4FusionChartService): Persona {
     this.fusionArcana = this.findTriangleFusionArcana(fusionChartService);
     if (this.fusionArcana === undefined) return;
     return this.fuse();
@@ -37,7 +37,7 @@ export class TriangleFusion {
   }
 
   private findTriangleFusionArcana(
-    fusionChartService: FusionChartService,
+    fusionChartService: P3P4FusionChartService,
   ): number {
     const [aA, aB1, aB2] = [this.pA, this.pB1, this.pB2].map((p) => p.arcana);
     const aB = fusionChartService.findNormalFusionChartResult([aB1, aB2]);

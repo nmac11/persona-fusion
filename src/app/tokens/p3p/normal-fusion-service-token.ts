@@ -12,7 +12,7 @@ function p3pNormalFusionFactory(
   return new NormalFusionService(arcanaFusionService, compendiumService);
 }
 
-export const P3P_NORMAL_FUSION = new InjectionToken<CompendiumService>(
+export const P3P_NORMAL_FUSION = new InjectionToken<NormalFusionService>(
   'P3P_NORMAL_FUSION',
 );
 

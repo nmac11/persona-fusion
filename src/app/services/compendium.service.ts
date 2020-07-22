@@ -28,6 +28,10 @@ export class CompendiumService {
     return arcana !== null ? this.arcanaGroups[arcana] : this.compendium;
   }
 
+  getAllWithRestrictions(arcana: number): Array<Persona> {
+    return this.arcanaGroups[arcana].filter(this.filterRestricted);
+  }
+
   find(name: string): Persona {
     const kwdRegex = exactMatchRegExp(name);
     return this.compendium.find((persona) => kwdRegex.test(persona.name));

@@ -34,9 +34,7 @@ export class PersonaComponent implements OnInit, OnDestroy {
     this.fusionChartService = this.injector.get<FusionChartService>(
       tokens.fusionChart,
     );
-    this.settingsService = this.injector.get<SettingsService>(
-      tokens.settings,
-    );
+    this.settingsService = this.injector.get<SettingsService>(tokens.settings);
   }
 
   ngOnInit(): void {
@@ -63,4 +61,17 @@ export class PersonaComponent implements OnInit, OnDestroy {
     );
     return params;
   }
+
+  showTriangleFusions: () => boolean = () => {
+    return (
+      !this.persona.special &&
+      ['p3fes', 'p3p', 'p4', 'p4g'].includes(this.activeGameService.game)
+    );
+  };
+
+  showGemFusions: () => boolean = () => {
+    return (
+      !this.persona.special && ['p5'].includes(this.activeGameService.game)
+    );
+  };
 }

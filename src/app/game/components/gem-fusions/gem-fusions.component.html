@@ -1,0 +1,11 @@
+<div *ngIf="fusions" >
+  <div *ngFor="let fusion of fusions">
+    Gems: {{fusion.gems.join(', ')}}<br>
+    Personae: 
+    <ul>
+      <li *ngFor="let persona of fusion.personae">
+      {{persona.persona.name}} Lv. {{persona.persona.level}} ({{persona.levelRange.join('-')}}) 
+    </li>
+    </ul>
+  </div>
+</div>

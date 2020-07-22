@@ -37,7 +37,7 @@ import { P4_SETTINGS } from '../tokens/p4/settings-service-token';
 
 import { P5_COMPENDIUM } from '../tokens/p5/compendium-service-token';
 import { P5_NORMAL_FUSION } from '../tokens/p5/normal-fusion-service-token';
-import { P5_TRIANGLE_FUSION } from '../tokens/p5/triangle-fusion-service-token';
+import { P5_GEM_FUSION } from '../tokens/p5/gem-fusion-service-token';
 import { P5_FUSION_CHART } from '../tokens/p5/fusion-chart-service-token';
 import { P5_SIMULATOR } from '../tokens/p5/simulator-service-token';
 import { P5_SKILL } from '../tokens/p5/skill-service-token';
@@ -52,11 +52,13 @@ import { SimulatorService } from '../services/simulator.service';
 import { SkillService } from '../services/skill.service';
 import { PersonaStoreService } from '../services/persona-store.service';
 import { SettingsService } from '../services/settings.service';
+import { GemFusionService } from '../services/gem-fusion.service';
 
 export interface ServiceTokenSet {
   compendium: InjectionToken<CompendiumService>;
   normalFusion: InjectionToken<NormalFusionService>;
-  triangleFusion: InjectionToken<TriangleFusionService>;
+  triangleFusion?: InjectionToken<TriangleFusionService>;
+  gemFusion?: InjectionToken<GemFusionService>;
   fusionChart: InjectionToken<FusionChartService>;
   simulator: InjectionToken<SimulatorService>;
   skill: InjectionToken<SkillService>;
@@ -108,11 +110,11 @@ export const serviceToken: { [key: string]: ServiceTokenSet } = {
   p5: {
     compendium: P5_COMPENDIUM,
     normalFusion: P5_NORMAL_FUSION,
-    triangleFusion: P5_TRIANGLE_FUSION,
     fusionChart: P5_FUSION_CHART,
     simulator: P5_SIMULATOR,
     skill: P5_SKILL,
     personaStore: P5_PERSONA_STORE,
     settings: P5_SETTINGS,
+    gemFusion: P5_GEM_FUSION,
   },
 };
