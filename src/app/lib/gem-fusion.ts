@@ -17,7 +17,10 @@ export class GemFusion {
       fusible.arcana,
       gem.name,
     );
+    return this.findResult(fusible, offset);
+  }
 
+  private findResult(fusible: Persona, offset: number): Persona {
     switch (offset) {
       case -2:
         return this.compendiumService.downgradeTwoRanks(
