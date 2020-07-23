@@ -40,9 +40,10 @@ export class PersonaComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.routeParamsSub = this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
-      this.specialFusion = this.fusionChartService.getSpecialFusions(
-        this.persona,
-      );
+      if (this.persona)
+        this.specialFusion = this.fusionChartService.getSpecialFusions(
+          this.persona,
+        );
     });
   }
 
@@ -50,8 +51,10 @@ export class PersonaComponent implements OnInit, OnDestroy {
     this.routeParamsSub.unsubscribe();
   }
 
-  allowedFusion(): boolean {
-    return this.settingsService.testPersona(this.persona);
+  status(): string {
+    if (!this.settingsService.testPersona(this.persona)) return 'blocked';
+    else if (this.persona.gem) return 'gem';
+    else return 'allowed';
   }
 
   queryParams(): Object {
