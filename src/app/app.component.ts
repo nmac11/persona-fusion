@@ -32,6 +32,6 @@ export class AppComponent {
   },
   {
     url: '/settings',
-    title: 'Settings'
+    title: 'App Settings'
   }];
 }

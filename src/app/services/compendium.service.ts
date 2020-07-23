@@ -2,6 +2,7 @@ import { Injectable, Inject } from '@angular/core';
 import { Persona } from '../models/persona';
 import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 import { SettingsService } from './settings.service';
+import { AppSettingsService } from './app-settings.service';
 
 @Injectable()
 export class CompendiumService {
@@ -10,6 +11,7 @@ export class CompendiumService {
   constructor(
     @Inject(Array) private compendium: Array<Persona>,
     @Inject(SettingsService) private settingsService: SettingsService,
+    private appSettingsService: AppSettingsService,
   ) {
     this.buildArcanaGroups();
   }
@@ -25,7 +27,11 @@ export class CompendiumService {
   }
 
   getAll(arcana: number = null): Array<Persona> {
-    return arcana !== null ? this.arcanaGroups[arcana] : this.compendium;
+    let personae =
+      arcana !== null ? this.arcanaGroups[arcana] : this.compendium;
+    if (this.appSettingsService.getValues()['HIDEBLOCKED'])
+      personae = personae.filter((p) => this.settingsService.testPersona(p));
+    return personae;
   }
 
   getAllWithRestrictions(arcana: number): Array<Persona> {
