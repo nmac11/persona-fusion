@@ -1,33 +1,48 @@
 [
     {
         "name": "Orpheus",
-        "level": 1,
+        "level": 25,
         "arcana": 0,
         "id": 1,
         "skills": [
             {
-                "name": "Bash",
+                "name": "Agi",
+                "level": 0,
+                "type": "fire"
+            },
+            {
+                "name": "Assault Dive",
                 "level": 0,
                 "type": "strike"
             },
             {
-                "name": "Agi",
-                "level": 2,
+                "name": "Dia",
+                "level": 0,
+                "type": "recovery"
+            },
+            {
+                "name": "Agilao",
+                "level": 26,
                 "type": "fire"
             },
             {
                 "name": "Tarunda",
-                "level": 6,
+                "level": 27,
                 "type": "support"
+            },
+            {
+                "name": "Swift Strike",
+                "level": 28,
+                "type": "strike"
             }
         ],
         "inherits": "fire",
         "stats": {
-            "st": 2,
-            "ma": 2,
-            "en": 2,
-            "ag": 2,
-            "lu": 2
+            "st": 17,
+            "ma": 20,
+            "en": 18,
+            "ag": 15,
+            "lu": 12
         },
         "affinities": {
             "slash": "-",
@@ -396,7 +411,9 @@
         "level": 76,
         "arcana": 0,
         "ultimate": true,
-        "preReqs": ["SL_FOOL"],
+        "preReqs": [
+            "SL_FOOL"
+        ],
         "special": true,
         "id": 8,
         "skills": [
@@ -459,7 +476,9 @@
         "arcana": 0,
         "special": false,
         "specialCondition": "Max all social links",
-        "preReqs": ["UL_ORPHEUSTELOS"],
+        "preReqs": [
+            "UL_ORPHEUSTELOS"
+        ],
         "id": 9,
         "skills": [
             {
@@ -663,7 +682,9 @@
         "level": 20,
         "arcana": 1,
         "keyItem": true,
-        "preReqs": ["IT_SMALLCHEONGSAM"],
+        "preReqs": [
+            "IT_SMALLCHEONGSAM"
+        ],
         "id": 13,
         "skills": [
             {
@@ -897,7 +918,9 @@
         "level": 52,
         "arcana": 1,
         "ultimate": true,
-        "preReqs": ["SL_MAGICIAN"],
+        "preReqs": [
+            "SL_MAGICIAN"
+        ],
         "id": 17,
         "skills": [
             {
@@ -912,23 +935,23 @@
             },
             {
                 "name": "Fire Boost",
-                "level": 0,
+                "level": 53,
                 "type": "passive"
             },
             {
-                "name": "Maragidyne",
+                "name": "Matarukaja",
                 "level": 54,
+                "type": "support"
+            },
+            {
+                "name": "Maragidyne",
+                "level": 55,
                 "type": "fire"
             },
             {
                 "name": "Ragnarok",
-                "level": 58,
+                "level": 56,
                 "type": "fire"
-            },
-            {
-                "name": "Fire Amp",
-                "level": 59,
-                "type": "passive"
             }
         ],
         "inherits": "fire",
@@ -1250,17 +1273,17 @@
             },
             {
                 "name": "Mabufula",
-                "level": 49,
+                "level": 48,
                 "type": "ice"
             },
             {
                 "name": "Dodge Fire",
-                "level": 51,
+                "level": 49,
                 "type": "passive"
             },
             {
                 "name": "Bufudyne",
-                "level": 52,
+                "level": 50,
                 "type": "ice"
             }
         ],
@@ -1353,7 +1376,9 @@
         "level": 64,
         "arcana": 2,
         "ultimate": true,
-        "preReqs": ["SL_PRIESTESS"],
+        "preReqs": [
+            "SL_PRIESTESS"
+        ],
         "id": 25,
         "skills": [
             {
@@ -1819,7 +1844,9 @@
         "level": 84,
         "arcana": 3,
         "ultimate": true,
-        "preReqs": ["SL_EMPRESS"],
+        "preReqs": [
+            "SL_EMPRESS"
+        ],
         "id": 33,
         "skills": [
             {
@@ -2058,7 +2085,9 @@
         "level": 30,
         "arcana": 4,
         "keyItem": true,
-        "preReqs": ["IT_SUGARKEY"],
+        "preReqs": [
+            "IT_SUGARKEY"
+        ],
         "id": 37,
         "skills": [
             {
@@ -2302,14 +2331,11 @@
         "level": 57,
         "arcana": 4,
         "ultimate": true,
-        "preReqs": ["SL_EMPEROR"],
+        "preReqs": [
+            "SL_EMPEROR"
+        ],
         "id": 41,
         "skills": [
-            {
-                "name": "Maziodyne",
-                "level": 0,
-                "type": "elec"
-            },
             {
                 "name": "Vile Assault",
                 "level": 0,
@@ -2321,18 +2347,23 @@
                 "type": "elec"
             },
             {
+                "name": "Maziodyne",
+                "level": 58,
+                "type": "elec"
+            },
+            {
                 "name": "Elec Amp",
-                "level": 60,
+                "level": 59,
                 "type": "passive"
             },
             {
                 "name": "Thunder Reign",
-                "level": 63,
+                "level": 60,
                 "type": "elec"
             },
             {
                 "name": "Spell Master",
-                "level": 65,
+                "level": 61,
                 "type": "passive"
             }
         ],
@@ -2589,7 +2620,9 @@
         "level": 41,
         "arcana": 5,
         "keyItem": true,
-        "preReqs": ["IT_BOOKOFANCIENTS"],
+        "preReqs": [
+            "IT_BOOKOFANCIENTS"
+        ],
         "id": 46,
         "skills": [
             {
@@ -2771,7 +2804,9 @@
         "level": 66,
         "arcana": 5,
         "ultimate": true,
-        "preReqs": ["SL_HIEROPHANT"],
+        "preReqs": [
+            "SL_HIEROPHANT"
+        ],
         "special": true,
         "id": 49,
         "skills": [
@@ -2788,27 +2823,26 @@
             {
                 "name": "Weary Thrust",
                 "level": 0,
-                "type": "strike",
-                "exclusive": true
+                "type": "strike"
             },
             {
                 "name": "Invigorate 3",
-                "level": 68,
+                "level": 67,
                 "type": "passive"
             },
             {
                 "name": "Makarakarn",
-                "level": 70,
+                "level": 68,
                 "type": "support"
             },
             {
                 "name": "Null Strike",
-                "level": 71,
+                "level": 69,
                 "type": "passive"
             },
             {
                 "name": "Null Pierce",
-                "level": 73,
+                "level": 70,
                 "type": "passive"
             }
         ],
@@ -3077,11 +3111,6 @@
                 "type": "elec"
             },
             {
-                "name": "Growth 2",
-                "level": 40,
-                "type": "passive"
-            },
-            {
                 "name": "Mediarama",
                 "level": 42,
                 "type": "recovery"
@@ -3244,7 +3273,9 @@
         "level": 68,
         "arcana": 6,
         "ultimate": true,
-        "preReqs": ["SL_LOVERS"],
+        "preReqs": [
+            "SL_LOVERS"
+        ],
         "id": 57,
         "skills": [
             {
@@ -3264,17 +3295,17 @@
             },
             {
                 "name": "Megidola",
-                "level": 70,
+                "level": 69,
                 "type": "almighty"
             },
             {
-                "name": "Bow Master",
-                "level": 73,
-                "type": "passive"
+                "name": "Amrita",
+                "level": 70,
+                "type": "recovery"
             },
             {
                 "name": "Spell Master",
-                "level": 75,
+                "level": 71,
                 "type": "passive"
             }
         ],
@@ -3594,7 +3625,9 @@
         "level": 37,
         "arcana": 7,
         "keyItem": true,
-        "preReqs": ["IT_MACHINECORE"],
+        "preReqs": [
+            "IT_MACHINECORE"
+        ],
         "id": 63,
         "skills": [
             {
@@ -3712,14 +3745,11 @@
         "level": 53,
         "arcana": 7,
         "ultimate": true,
-        "preReqs": ["SL_CHARIOT"],
+        "preReqs": [
+            "SL_CHARIOT"
+        ],
         "id": 65,
         "skills": [
-            {
-                "name": "High Counter",
-                "level": 0,
-                "type": "passive"
-            },
             {
                 "name": "Vicious Strike",
                 "level": 0,
@@ -3731,18 +3761,23 @@
                 "type": "elec"
             },
             {
+                "name": "High Counter",
+                "level": 54,
+                "type": "passive"
+            },
+            {
                 "name": "Auto-Mataru",
                 "level": 55,
                 "type": "passive"
             },
             {
-                "name": "Elec Amp",
-                "level": 59,
-                "type": "passive"
+                "name": "Gigantic Fist",
+                "level": 56,
+                "type": "strike"
             },
             {
-                "name": "Heavy Master",
-                "level": 60,
+                "name": "Elec Amp",
+                "level": 57,
                 "type": "passive"
             }
         ],
@@ -4178,11 +4213,13 @@
         "level": 59,
         "arcana": 8,
         "ultimate": true,
-        "preReqs": ["SL_JUSTICE"],
+        "preReqs": [
+            "SL_JUSTICE"
+        ],
         "id": 73,
         "skills": [
             {
-                "name": "Auto-Mataru",
+                "name": "Growth 3",
                 "level": 0,
                 "type": "passive"
             },
@@ -4197,23 +4234,23 @@
                 "type": "strike"
             },
             {
-                "name": "Fist Master",
+                "name": "Auto-Mataru",
                 "level": 60,
                 "type": "passive"
             },
             {
                 "name": "Akasha Arts",
-                "level": 64,
+                "level": 61,
                 "type": "strike"
             },
             {
                 "name": "Repel Dark",
-                "level": 65,
+                "level": 62,
                 "type": "passive"
             },
             {
                 "name": "God's Hand",
-                "level": 69,
+                "level": 63,
                 "type": "strike"
             }
         ],
@@ -4261,17 +4298,17 @@
             },
             {
                 "name": "Auto-Tarukaja",
-                "level": 11,
+                "level": 10,
                 "type": "passive"
             },
             {
                 "name": "Mudo",
-                "level": 13,
+                "level": 11,
                 "type": "dark"
             },
             {
                 "name": "Magaru",
-                "level": 14,
+                "level": 12,
                 "type": "wind"
             }
         ],
@@ -4591,7 +4628,9 @@
         "level": 50,
         "arcana": 9,
         "keyItem": true,
-        "preReqs": ["IT_MARIONETTE"],
+        "preReqs": [
+            "IT_MARIONETTE"
+        ],
         "id": 80,
         "skills": [
             {
@@ -4709,7 +4748,9 @@
         "level": 60,
         "arcana": 9,
         "ultimate": true,
-        "preReqs": ["SL_HERMIT"],
+        "preReqs": [
+            "SL_HERMIT"
+        ],
         "special": true,
         "id": 82,
         "skills": [
@@ -4833,7 +4874,9 @@
         "level": 23,
         "arcana": 10,
         "keyItem": true,
-        "preReqs": ["IT_BLUESCALE"],
+        "preReqs": [
+            "IT_BLUESCALE"
+        ],
         "id": 84,
         "skills": [
             {
@@ -4848,22 +4891,22 @@
             },
             {
                 "name": "Growth 1",
-                "level": 25,
+                "level": 24,
                 "type": "passive"
             },
             {
                 "name": "Garula",
-                "level": 26,
+                "level": 25,
                 "type": "wind"
             },
             {
                 "name": "Mazio",
-                "level": 27,
+                "level": 26,
                 "type": "elec"
             },
             {
                 "name": "Provoke",
-                "level": 28,
+                "level": 27,
                 "type": "ailment"
             }
         ],
@@ -5125,7 +5168,9 @@
         "level": 62,
         "arcana": 10,
         "ultimate": true,
-        "preReqs": ["SL_FORTUNE"],
+        "preReqs": [
+            "SL_FORTUNE"
+        ],
         "special": true,
         "id": 89,
         "skills": [
@@ -5597,7 +5642,9 @@
         "level": 59,
         "arcana": 11,
         "ultimate": true,
-        "preReqs": ["SL_STRENGTH"],
+        "preReqs": [
+            "SL_STRENGTH"
+        ],
         "id": 97,
         "skills": [
             {
@@ -5617,23 +5664,17 @@
             },
             {
                 "name": "High Counter",
-                "level": 62,
+                "level": 60,
                 "type": "passive"
             },
             {
                 "name": "Vorpal Blade",
                 "level": 63,
-                "type": "slash",
-                "exclusive": true
+                "type": "slash"
             },
             {
                 "name": "Arms Master",
                 "level": 65,
-                "type": "passive"
-            },
-            {
-                "name": "2hSwd Master",
-                "level": 66,
                 "type": "passive"
             }
         ],
@@ -6016,7 +6057,9 @@
         "level": 60,
         "arcana": 12,
         "keyItem": true,
-        "preReqs": ["IT_REDMUFFLER"],
+        "preReqs": [
+            "IT_REDMUFFLER"
+        ],
         "id": 104,
         "skills": [
             {
@@ -6076,7 +6119,9 @@
         "level": 67,
         "arcana": 12,
         "ultimate": true,
-        "preReqs": ["SL_HANGEDMAN"],
+        "preReqs": [
+            "SL_HANGEDMAN"
+        ],
         "special": true,
         "id": 105,
         "skills": [
@@ -6097,27 +6142,27 @@
             },
             {
                 "name": "Samarecarm",
-                "level": 70,
+                "level": 68,
                 "type": "recovery"
             },
             {
                 "name": "Repel Light",
-                "level": 71,
+                "level": 69,
                 "type": "passive"
             },
             {
                 "name": "Enduring Soul",
-                "level": 75,
+                "level": 71,
                 "type": "passive"
             }
         ],
         "inherits": "recovery",
         "stats": {
-            "st": 46,
-            "ma": 54,
-            "en": 56,
-            "ag": 44,
-            "lu": 32
+            "st": 51,
+            "ma": 59,
+            "en": 61,
+            "ag": 54,
+            "lu": 40
         },
         "affinities": {
             "slash": "s",
@@ -6195,7 +6240,9 @@
         "level": 24,
         "arcana": 13,
         "keyItem": true,
-        "preReqs": ["IT_TORNBLACKCLOTH"],
+        "preReqs": [
+            "IT_TORNBLACKCLOTH"
+        ],
         "id": 107,
         "skills": [
             {
@@ -6452,24 +6499,24 @@
                 "type": "almighty"
             },
             {
-                "name": "Die for Me!",
-                "level": 59,
-                "type": "dark"
-            },
-            {
                 "name": "Marakunda",
-                "level": 60,
+                "level": 57,
                 "type": "support"
             },
             {
                 "name": "Repel Dark",
-                "level": 61,
+                "level": 58,
                 "type": "passive"
             },
             {
                 "name": "Mudo Boost",
-                "level": 62,
+                "level": 59,
                 "type": "passive"
+            },
+            {
+                "name": "Die for Me!",
+                "level": 60,
+                "type": "dark"
             }
         ],
         "inherits": "dark",
@@ -6478,7 +6525,7 @@
             "ma": 50,
             "en": 27,
             "ag": 42,
-            "lu": 39
+            "lu": 42
         },
         "affinities": {
             "slash": "-",
@@ -6498,7 +6545,9 @@
         "level": 64,
         "arcana": 13,
         "ultimate": true,
-        "preReqs": ["SL_DEATH"],
+        "preReqs": [
+            "SL_DEATH"
+        ],
         "special": true,
         "id": 112,
         "skills": [
@@ -6519,23 +6568,23 @@
             },
             {
                 "name": "Mahamaon",
-                "level": 66,
+                "level": 65,
                 "type": "light"
             },
             {
-                "name": "1hSwd Master",
-                "level": 68,
-                "type": "passive"
+                "name": "Maragidyne",
+                "level": 66,
+                "type": "fire"
             },
             {
                 "name": "Brave Blade",
-                "level": 71,
+                "level": 67,
                 "type": "slash"
             }
         ],
         "inherits": "dark",
         "stats": {
-            "st": 48,
+            "st": 51,
             "ma": 51,
             "en": 44,
             "ag": 39,
@@ -6965,7 +7014,9 @@
         "level": 64,
         "arcana": 14,
         "ultimate": true,
-        "preReqs": ["SL_TEMPERANCE"],
+        "preReqs": [
+            "SL_TEMPERANCE"
+        ],
         "id": 120,
         "skills": [
             {
@@ -6974,33 +7025,33 @@
                 "type": "wind"
             },
             {
+                "name": "Ice Amp",
+                "level": 0,
+                "type": "passive"
+            },
+            {
                 "name": "Mabufudyne",
                 "level": 0,
                 "type": "ice"
             },
             {
-                "name": "Ice Amp",
-                "level": 66,
-                "type": "passive"
-            },
-            {
                 "name": "Growth 3",
-                "level": 67,
+                "level": 65,
                 "type": "passive"
             },
             {
                 "name": "Mediarahan",
-                "level": 68,
+                "level": 66,
                 "type": "recovery"
             },
             {
                 "name": "Samarecarm",
-                "level": 70,
+                "level": 67,
                 "type": "recovery"
             },
             {
                 "name": "Repel Light",
-                "level": 71,
+                "level": 68,
                 "type": "passive"
             }
         ],
@@ -7325,7 +7376,9 @@
         "level": 61,
         "arcana": 15,
         "keyItem": true,
-        "preReqs": ["IT_LILYPETAL"],
+        "preReqs": [
+            "IT_LILYPETAL"
+        ],
         "special": true,
         "id": 126,
         "skills": [
@@ -7455,7 +7508,9 @@
         "level": 81,
         "arcana": 15,
         "ultimate": true,
-        "preReqs": ["SL_DEVIL"],
+        "preReqs": [
+            "SL_DEVIL"
+        ],
         "special": true,
         "id": 128,
         "skills": [
@@ -7709,13 +7764,7 @@
             {
                 "name": "Weary Thrust",
                 "level": 70,
-                "type": "strike",
-                "exclusive": true
-            },
-            {
-                "name": "Spear Master",
-                "level": 71,
-                "type": "passive"
+                "type": "strike"
             },
             {
                 "name": "Regenerate 3",
@@ -7749,7 +7798,9 @@
         "level": 73,
         "arcana": 16,
         "keyItem": true,
-        "preReqs": ["IT_MASAKADOS"],
+        "preReqs": [
+            "IT_MASAKADOS"
+        ],
         "special": true,
         "id": 133,
         "skills": [
@@ -7929,7 +7980,9 @@
         "level": 86,
         "arcana": 16,
         "ultimate": true,
-        "preReqs": ["SL_TOWER"],
+        "preReqs": [
+            "SL_TOWER"
+        ],
         "id": 136,
         "skills": [
             {
@@ -8227,7 +8280,9 @@
         "level": 70,
         "arcana": 17,
         "keyItem": true,
-        "preReqs": ["IT_RAINBOWFEATHER"],
+        "preReqs": [
+            "IT_RAINBOWFEATHER"
+        ],
         "id": 141,
         "skills": [
             {
@@ -8350,7 +8405,9 @@
         "level": 88,
         "arcana": 17,
         "ultimate": true,
-        "preReqs": ["SL_STAR"],
+        "preReqs": [
+            "SL_STAR"
+        ],
         "id": 143,
         "skills": [
             {
@@ -8827,7 +8884,9 @@
         "level": 74,
         "arcana": 18,
         "ultimate": true,
-        "preReqs": ["SL_MOON"],
+        "preReqs": [
+            "SL_MOON"
+        ],
         "special": true,
         "id": 151,
         "skills": [
@@ -9241,7 +9300,9 @@
         "level": 85,
         "arcana": 19,
         "ultimate": true,
-        "preReqs": ["SL_SUN"],
+        "preReqs": [
+            "SL_SUN"
+        ],
         "special": true,
         "id": 158,
         "skills": [
@@ -9431,19 +9492,18 @@
             },
             {
                 "name": "Mabufudyne",
-                "level": 74,
+                "level": 73,
                 "type": "ice"
             },
             {
                 "name": "Repel Dark",
-                "level": 75,
+                "level": 74,
                 "type": "passive"
             },
             {
                 "name": "Heaven's Blade",
                 "level": 77,
-                "type": "slash",
-                "exclusive": true
+                "type": "slash"
             }
         ],
         "inherits": "elec",
@@ -9459,9 +9519,9 @@
             "strike": "-",
             "pierce": "-",
             "fire": "-",
-            "ice": "s",
+            "ice": "-",
             "electricity": "s",
-            "wind": "-",
+            "wind": "s",
             "light": "r",
             "darkness": "w"
         },
@@ -9590,7 +9650,9 @@
         "level": 90,
         "arcana": 20,
         "ultimate": true,
-        "preReqs": ["SL_JUDGEMENT"],
+        "preReqs": [
+            "SL_JUDGEMENT"
+        ],
         "special": true,
         "id": 164,
         "skills": [
@@ -9879,7 +9941,9 @@
         "level": 87,
         "arcana": 21,
         "ultimate": true,
-        "preReqs": ["SL_AEON"],
+        "preReqs": [
+            "SL_AEON"
+        ],
         "special": true,
         "id": 169,
         "skills": [
