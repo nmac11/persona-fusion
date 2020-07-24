@@ -53,6 +53,15 @@ import { P5_SKILL } from '../tokens/p5/skill-service-token';
 import { P5_PERSONA_STORE } from '../tokens/p5/persona-store-service-token';
 import { P5_SETTINGS } from '../tokens/p5/settings-service-token';
 
+import { P5R_COMPENDIUM } from '../tokens/p5r/compendium-service-token';
+import { P5R_NORMAL_FUSION } from '../tokens/p5r/normal-fusion-service-token';
+import { P5R_GEM_FUSION } from '../tokens/p5r/gem-fusion-service-token';
+import { P5R_FUSION_CHART } from '../tokens/p5r/fusion-chart-service-token';
+import { P5R_SIMULATOR } from '../tokens/p5r/simulator-service-token';
+import { P5R_SKILL } from '../tokens/p5r/skill-service-token';
+import { P5R_PERSONA_STORE } from '../tokens/p5r/persona-store-service-token';
+import { P5R_SETTINGS } from '../tokens/p5r/settings-service-token';
+
 import { CompendiumService } from '../services/compendium.service';
 import { NormalFusionService } from '../services/normal-fusion.service';
 import { TriangleFusionService } from '../services/triangle-fusion.service';
@@ -135,5 +144,15 @@ export const serviceToken: { [key: string]: ServiceTokenSet } = {
     personaStore: P5_PERSONA_STORE,
     settings: P5_SETTINGS,
     gemFusion: P5_GEM_FUSION,
+  },
+  p5r: {
+    compendium: P5R_COMPENDIUM,
+    normalFusion: P5R_NORMAL_FUSION,
+    fusionChart: P5R_FUSION_CHART,
+    simulator: P5R_SIMULATOR,
+    skill: P5R_SKILL,
+    personaStore: P5R_PERSONA_STORE,
+    settings: P5R_SETTINGS,
+    gemFusion: P5R_GEM_FUSION,
   },
 };
