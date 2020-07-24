@@ -23,7 +23,6 @@ import { P3ANS_NORMAL_FUSION } from '../tokens/p3ans/normal-fusion-service-token
 import { P3ANS_TRIANGLE_FUSION } from '../tokens/p3ans/triangle-fusion-service-token';
 import { P3ANS_FUSION_CHART } from '../tokens/p3ans/fusion-chart-service-token';
 import { P3ANS_SIMULATOR } from '../tokens/p3ans/simulator-service-token';
-import { P3ANS_SKILL } from '../tokens/p3ans/skill-service-token';
 import { P3ANS_PERSONA_STORE } from '../tokens/p3ans/persona-store-service-token';
 import { P3ANS_SETTINGS } from '../tokens/p3ans/settings-service-token';
 
@@ -111,7 +110,7 @@ export const serviceToken: { [key: string]: ServiceTokenSet } = {
     triangleFusion: P3ANS_TRIANGLE_FUSION,
     fusionChart: P3ANS_FUSION_CHART,
     simulator: P3ANS_SIMULATOR,
-    skill: P3ANS_SKILL,
+    skill: P3FES_SKILL,
     personaStore: P3ANS_PERSONA_STORE,
     settings: P3ANS_SETTINGS,
   },

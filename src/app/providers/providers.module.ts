@@ -19,7 +19,6 @@ import { p5rFusionChartProvider } from '../tokens/p5r/fusion-chart-service-token
 
 import { p3pSkillProvider } from '../tokens/p3p/skill-service-token';
 import { p3fesSkillProvider } from '../tokens/p3fes/skill-service-token';
-import { p3ansSkillProvider } from '../tokens/p3ans/skill-service-token';
 import { p4SkillProvider } from '../tokens/p4/skill-service-token';
 import { p5SkillProvider } from '../tokens/p5/skill-service-token';
 import { p5rSkillProvider } from '../tokens/p5r/skill-service-token';
@@ -44,7 +43,6 @@ import { p5rSkillProvider } from '../tokens/p5r/skill-service-token';
     p5rFusionChartProvider,
     p3pSkillProvider,
     p3fesSkillProvider,
-    p3ansSkillProvider,
     p4SkillProvider,
     p5SkillProvider,
     p5rSkillProvider,
