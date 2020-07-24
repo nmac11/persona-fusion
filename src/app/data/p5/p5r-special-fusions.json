@@ -1,0 +1,138 @@
+[
+  {
+    "persona": "Alice",
+    "requirements": ["Belial", "Nebiros"]
+  },
+  {
+    "persona": "Ardha",
+    "requirements": ["Shiva", "Parvati"]
+  },
+  {
+    "persona": "Asura",
+    "requirements": ["Jikokuten", "Zouchouten", "Koumokuten", "Bishamonten"]
+  },
+  {
+    "persona": "Black Frost",
+    "requirements": ["Jack-o'-Lantern", "Jack Frost", "King Frost"]
+  },
+  {
+    "persona": "Bugs",
+    "requirements": ["Pixie", "Pisaca", "Hariti"]
+  },
+  {
+    "persona": "Chi You",
+    "requirements": [
+      "White Rider",
+      "Hecatoncheires",
+      "Thor",
+      "Cu Chulainn",
+      "Yoshitsune"
+    ]
+  },
+  {
+    "persona": "Flauros",
+    "requirements": ["Berith", "Eligor", "Orobas"]
+  },
+  {
+    "persona": "Hell Biker",
+    "requirements": ["Archangel", "Matador", "Decarabia"]
+  },
+  {
+    "persona": "Izanagi-no-Okami",
+    "requirements": [
+      "Yamata-no-Orochi",
+      "Throne",
+      "Inugami",
+      "Raja Naga",
+      "Barong",
+      "Norn"
+    ]
+  },
+  {
+    "persona": "Izanagi-no-Okami Picaro",
+    "requirements": [
+      "Okuninushi",
+      "Orthrus",
+      "Kali",
+      "Mithras",
+      "Cu Chulainn",
+      "Lucifer"
+    ]
+  },
+  {
+    "persona": "Kohryu",
+    "requirements": ["Seiryu", "Byakko", "Suzaku", "Genbu"]
+  },
+  {
+    "persona": "Lucifer",
+    "requirements": [
+      "Anubis",
+      "Ananta",
+      "Trumpeter",
+      "Michael",
+      "Metatron",
+      "Satan"
+    ]
+  },
+  {
+    "persona": "Metatron",
+    "requirements": [
+      "Principality",
+      "Power",
+      "Dominion",
+      "Melchizedek",
+      "Sandalphon",
+      "Michael"
+    ]
+  },
+  {
+    "persona": "Michael",
+    "requirements": ["Gabriel", "Raphael", "Uriel"]
+  },
+  {
+    "persona": "Neko Shogun",
+    "requirements": ["Kodama", "Sudama", "Anzu"]
+  },
+  {
+    "persona": "Ongyo-Ki",
+    "requirements": ["Kin-Ki", "Sui-Ki", "Fuu-Ki"]
+  },
+  {
+    "persona": "Satanael",
+    "requirements": ["Arsene", "Anzu", "Ishtar", "Satan", "Lucifer", "Michael"]
+  },
+  {
+    "persona": "Seth",
+    "requirements": ["Isis", "Anubis", "Thoth", "Horus"]
+  },
+  {
+    "persona": "Shiva",
+    "requirements": ["Barong", "Rangda"]
+  },
+  {
+    "persona": "Sraosha",
+    "requirements": ["Mithra", "Mithras", "Melchizedek", "Lilith", "Gabriel"]
+  },
+  {
+    "persona": "Tam Lin",
+    "requirements": ["Cait Sith", "High Pixie", "Leanan Sidhe"]
+  },
+  {
+    "persona": "Trumpeter",
+    "requirements": ["White Rider", "Red Rider", "Black Rider", "Pale Rider"]
+  },
+  {
+    "persona": "Vasuki",
+    "requirements": ["Naga", "Ananta", "Raja Naga"]
+  },
+  {
+    "persona": "Yoshitsune",
+    "requirements": [
+      "Shiki-Ouji",
+      "Arahabaki",
+      "Okuninushi",
+      "Yatagarasu",
+      "Futsunushi"
+    ]
+  }
+]

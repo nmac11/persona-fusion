@@ -1121,7 +1121,7 @@
         },
         "id": 17,
         "preReqs": [
-          "UL_SATANAEL"
+            "UL_SATANAEL"
         ]
     },
     {
@@ -5669,7 +5669,6 @@
     },
     {
         "name": "Throne",
-        "special": true,
         "inherits": "bless",
         "level": 72,
         "arcanaName": "Justice",
@@ -9006,7 +9005,8 @@
             "bless": "w",
             "curse": "-"
         },
-        "id": 140
+        "id": 140,
+        "special": true
     },
     {
         "name": "Hope Diamond",
@@ -13149,7 +13149,8 @@
         "preReqs": [
             "SL_SUN"
         ],
-        "ultimate": true
+        "ultimate": true,
+        "special": true
     },
     {
         "name": "Anubis",
@@ -13866,7 +13867,8 @@
             "bless": "d",
             "curse": "w"
         },
-        "id": 215
+        "id": 215,
+        "special": true
     },
     {
         "name": "Unicorn",
@@ -14922,7 +14924,8 @@
         "id": 231,
         "preReqs": [
             "DLC_IZANAGINOOKAMI"
-        ]
+        ],
+        "special": true
     },
     {
         "name": "Izanagi-no-Okami Picaro",
@@ -14994,6 +14997,7 @@
         "id": 232,
         "preReqs": [
             "DLC_IZANAGINOOKAMI"
-        ]
+        ],
+        "special": true
     }
 ]
