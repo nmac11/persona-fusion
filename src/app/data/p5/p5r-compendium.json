@@ -169,7 +169,10 @@
             "bless": "s",
             "curse": "w"
         },
-        "id": 3
+        "id": 3,
+        "preReqs": [
+            "DLC_ORPHEUSF"
+        ]
     },
     {
         "name": "Orpheus F Picaro",
@@ -233,7 +236,10 @@
             "bless": "s",
             "curse": "w"
         },
-        "id": 4
+        "id": 4,
+        "preReqs": [
+            "DLC_ORPHEUSF"
+        ]
     },
     {
         "name": "High Pixie",
@@ -356,7 +362,10 @@
             "bless": "-",
             "curse": "n"
         },
-        "id": 6
+        "id": 6,
+        "preReqs": [
+            "DLC_IZANAGI"
+        ]
     },
     {
         "name": "Izanagi Picaro",
@@ -420,7 +429,10 @@
             "bless": "-",
             "curse": "n"
         },
-        "id": 7
+        "id": 7,
+        "preReqs": [
+            "DLC_IZANAGI"
+        ]
     },
     {
         "name": "Orpheus",
@@ -484,7 +496,10 @@
             "bless": "s",
             "curse": "w"
         },
-        "id": 8
+        "id": 8,
+        "preReqs": [
+            "DLC_ORPHEUS"
+        ]
     },
     {
         "name": "Orpheus Picaro",
@@ -548,7 +563,10 @@
             "bless": "s",
             "curse": "w"
         },
-        "id": 9
+        "id": 9,
+        "preReqs": [
+            "DLC_ORPHEUS"
+        ]
     },
     {
         "name": "Legion",
@@ -955,7 +973,10 @@
             "bless": "w",
             "curse": "n"
         },
-        "id": 15
+        "id": 15,
+        "preReqs": [
+            "DLC_RAOUL"
+        ]
     },
     {
         "name": "Vishnu",
@@ -1024,7 +1045,11 @@
             "bless": "n",
             "curse": "n"
         },
-        "id": 16
+        "id": 16,
+        "preReqs": [
+            "SL_FOOL"
+        ],
+        "ultimate": true
     },
     {
         "name": "Satanael",
@@ -1094,7 +1119,10 @@
             "bless": "n",
             "curse": "d"
         },
-        "id": 17
+        "id": 17,
+        "preReqs": [
+          "UL_SATANAEL"
+        ]
     },
     {
         "name": "Jack-o'-Lantern",
@@ -1783,7 +1811,11 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 28
+        "id": 28,
+        "preReqs": [
+            "SL_MAGICIAN"
+        ],
+        "ultimate": true
     },
     {
         "name": "Silky",
@@ -2360,7 +2392,11 @@
             "bless": "n",
             "curse": "-"
         },
-        "id": 37
+        "id": 37,
+        "preReqs": [
+            "SL_PRIESTESS"
+        ],
+        "ultimate": true
     },
     {
         "name": "Queen's Necklace",
@@ -2957,7 +2993,11 @@
             "bless": "w",
             "curse": "n"
         },
-        "id": 46
+        "id": 46,
+        "preReqs": [
+            "SL_EMPRESS"
+        ],
+        "ultimate": true
     },
     {
         "name": "Regent",
@@ -3544,7 +3584,11 @@
             "bless": "r",
             "curse": "r"
         },
-        "id": 55
+        "id": 55,
+        "preReqs": [
+            "SL_EMPEROR"
+        ],
+        "ultimate": true
     },
     {
         "name": "Berith",
@@ -3973,7 +4017,11 @@
             "bless": "n",
             "curse": "-"
         },
-        "id": 62
+        "id": 62,
+        "preReqs": [
+            "SL_HIEROPHANT"
+        ],
+        "ultimate": true
     },
     {
         "name": "Pixie",
@@ -4529,7 +4577,11 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 71
+        "id": 71,
+        "preReqs": [
+            "SL_LOVERS"
+        ],
+        "ultimate": true
     },
     {
         "name": "Agathion",
@@ -4972,7 +5024,10 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 78
+        "id": 78,
+        "preReqs": [
+            "DLC_ATHENA"
+        ]
     },
     {
         "name": "Athena Picaro",
@@ -5041,7 +5096,10 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 79
+        "id": 79,
+        "preReqs": [
+            "DLC_ATHENA"
+        ]
     },
     {
         "name": "Cerberus",
@@ -5229,7 +5287,11 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 82
+        "id": 82,
+        "preReqs": [
+            "SL_CHARIOT"
+        ],
+        "ultimate": true
     },
     {
         "name": "Angel",
@@ -5802,7 +5864,11 @@
             "bless": "-",
             "curse": "w"
         },
-        "id": 91
+        "id": 91,
+        "preReqs": [
+            "SL_JUSTICE"
+        ],
+        "ultimate": true
     },
     {
         "name": "Bicorn",
@@ -6546,7 +6612,11 @@
             "bless": "r",
             "curse": "r"
         },
-        "id": 103
+        "id": 103,
+        "preReqs": [
+            "SL_HERMIT"
+        ],
+        "ultimate": true
     },
     {
         "name": "Stone of Scone",
@@ -6759,7 +6829,10 @@
             "bless": "s",
             "curse": "-"
         },
-        "id": 106
+        "id": 106,
+        "preReqs": [
+            "DLC_ARIADNE"
+        ]
     },
     {
         "name": "Lachesis",
@@ -6951,7 +7024,10 @@
             "bless": "s",
             "curse": "-"
         },
-        "id": 109
+        "id": 109,
+        "preReqs": [
+            "DLC_ARIADNE"
+        ]
     },
     {
         "name": "Fortuna",
@@ -7143,7 +7219,10 @@
             "bless": "-",
             "curse": "n"
         },
-        "id": 112
+        "id": 112,
+        "preReqs": [
+            "DLC_ASTERIUS"
+        ]
     },
     {
         "name": "Asterius Picaro",
@@ -7207,7 +7286,10 @@
             "bless": "-",
             "curse": "n"
         },
-        "id": 113
+        "id": 113,
+        "preReqs": [
+            "DLC_ASTERIUS"
+        ]
     },
     {
         "name": "Lakshmi",
@@ -7271,7 +7353,11 @@
             "bless": "s",
             "curse": "-"
         },
-        "id": 114
+        "id": 114,
+        "preReqs": [
+            "SL_FORTUNE"
+        ],
+        "ultimate": true
     },
     {
         "name": "Kelpie",
@@ -7902,7 +7988,11 @@
             "bless": "n",
             "curse": "n"
         },
-        "id": 124
+        "id": 124,
+        "preReqs": [
+            "SL_STRENGTH"
+        ],
+        "ultimate": true
     },
     {
         "name": "Hua Po",
@@ -8553,7 +8643,11 @@
             "bless": "-",
             "curse": "w"
         },
-        "id": 134
+        "id": 134,
+        "preReqs": [
+            "SL_HANGEDMAN"
+        ],
+        "ultimate": true
     },
     {
         "name": "Mandrake",
@@ -9189,7 +9283,10 @@
             "bless": "w",
             "curse": "r"
         },
-        "id": 144
+        "id": 144,
+        "preReqs": [
+            "DLC_THANATOS"
+        ]
     },
     {
         "name": "Thanatos Picaro",
@@ -9253,7 +9350,10 @@
             "bless": "w",
             "curse": "r"
         },
-        "id": 145
+        "id": 145,
+        "preReqs": [
+            "DLC_THANATOS"
+        ]
     },
     {
         "name": "Mot",
@@ -9377,7 +9477,11 @@
             "bless": "w",
             "curse": "r"
         },
-        "id": 147
+        "id": 147,
+        "preReqs": [
+            "SL_DEATH"
+        ],
+        "ultimate": true
     },
     {
         "name": "Genbu",
@@ -9954,7 +10058,11 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 156
+        "id": 156,
+        "preReqs": [
+            "SL_TEMPERANCE"
+        ],
+        "ultimate": true
     },
     {
         "name": "Incubus",
@@ -10521,7 +10629,11 @@
             "bless": "w",
             "curse": "r"
         },
-        "id": 165
+        "id": 165,
+        "preReqs": [
+            "SL_DEVIL"
+        ],
+        "ultimate": true
     },
     {
         "name": "Belphegor",
@@ -10708,7 +10820,10 @@
             "bless": "n",
             "curse": "n"
         },
-        "id": 168
+        "id": 168,
+        "preReqs": [
+            "DLC_MAGATSUIZANAGI"
+        ]
     },
     {
         "name": "Magatsu-Izanagi Picaro",
@@ -10772,7 +10887,10 @@
             "bless": "n",
             "curse": "n"
         },
-        "id": 169
+        "id": 169,
+        "preReqs": [
+            "DLC_MAGATSUIZANAGI"
+        ]
     },
     {
         "name": "Seth",
@@ -11094,7 +11212,11 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 174
+        "id": 174,
+        "preReqs": [
+            "SL_TOWER"
+        ],
+        "ultimate": true
     },
     {
         "name": "Kodama",
@@ -11674,7 +11796,11 @@
             "bless": "w",
             "curse": "d"
         },
-        "id": 183
+        "id": 183,
+        "preReqs": [
+            "SL_STAR"
+        ],
+        "ultimate": true
     },
     {
         "name": "Succubus",
@@ -11856,7 +11982,10 @@
             "bless": "n",
             "curse": "n"
         },
-        "id": 186
+        "id": 186,
+        "preReqs": [
+            "DLC_KAGUYA"
+        ]
     },
     {
         "name": "Black Ooze",
@@ -12048,7 +12177,10 @@
             "bless": "n",
             "curse": "n"
         },
-        "id": 189
+        "id": 189,
+        "preReqs": [
+            "DLC_KAGUYA"
+        ]
     },
     {
         "name": "Mothman",
@@ -12235,7 +12367,10 @@
             "bless": "s",
             "curse": "r"
         },
-        "id": 192
+        "id": 192,
+        "preReqs": [
+            "DLC_TSUKIYOMI"
+        ]
     },
     {
         "name": "Tsukiyomi Picaro",
@@ -12299,7 +12434,10 @@
             "bless": "s",
             "curse": "r"
         },
-        "id": 193
+        "id": 193,
+        "preReqs": [
+            "DLC_TSUKIYOMI"
+        ]
     },
     {
         "name": "Lilith",
@@ -12491,7 +12629,11 @@
             "bless": "r",
             "curse": "n"
         },
-        "id": 196
+        "id": 196,
+        "preReqs": [
+            "SL_MOON"
+        ],
+        "ultimate": true
     },
     {
         "name": "Suzaku",
@@ -13003,7 +13145,11 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 204
+        "id": 204,
+        "preReqs": [
+            "SL_SUN"
+        ],
+        "ultimate": true
     },
     {
         "name": "Anubis",
@@ -13319,7 +13465,10 @@
             "bless": "r",
             "curse": "w"
         },
-        "id": 209
+        "id": 209,
+        "preReqs": [
+            "DLC_MESSIAH"
+        ]
     },
     {
         "name": "Shiva",
@@ -13518,7 +13667,10 @@
             "bless": "r",
             "curse": "w"
         },
-        "id": 212
+        "id": 212,
+        "preReqs": [
+            "DLC_MESSIAH"
+        ]
     },
     {
         "name": "Satan",
@@ -13587,7 +13739,11 @@
             "bless": "-",
             "curse": "r"
         },
-        "id": 213
+        "id": 213,
+        "preReqs": [
+            "SL_JUDGEMENT"
+        ],
+        "ultimate": true
     },
     {
         "name": "Phoenix",
@@ -14179,7 +14335,11 @@
             "bless": "d",
             "curse": "-"
         },
-        "id": 222
+        "id": 222,
+        "preReqs": [
+            "SL_FAITH"
+        ],
+        "ultimate": true
     },
     {
         "name": "Kusi Mitama",
@@ -14686,7 +14846,11 @@
             "bless": "d",
             "curse": "n"
         },
-        "id": 230
+        "id": 230,
+        "preReqs": [
+            "SL_COUNCILLOR"
+        ],
+        "ultimate": true
     },
     {
         "name": "Izanagi-no-Okami",
@@ -14755,7 +14919,10 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 231
+        "id": 231,
+        "preReqs": [
+            "DLC_IZANAGINOOKAMI"
+        ]
     },
     {
         "name": "Izanagi-no-Okami Picaro",
@@ -14824,6 +14991,9 @@
             "bless": "-",
             "curse": "-"
         },
-        "id": 232
+        "id": 232,
+        "preReqs": [
+            "DLC_IZANAGINOOKAMI"
+        ]
     }
 ]
