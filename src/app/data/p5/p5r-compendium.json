@@ -810,21 +810,6 @@
                 "name": "Maeigaon",
                 "level": 0,
                 "type": "curse"
-            },
-            {
-                "name": "Foul Stench",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Ailment Hunter",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Cursed Bloodline",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -1984,21 +1969,6 @@
                 "name": "Dodge Curse",
                 "level": 0,
                 "type": "passive"
-            },
-            {
-                "name": "Crisis Control",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Bloodstained Eyes",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Rare Antibody",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -2452,21 +2422,6 @@
                 "name": "Sukunda",
                 "level": 0,
                 "type": "support"
-            },
-            {
-                "name": "Potent Hypnosis",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Relief Bloodline",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Savior Bloodline",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -3053,21 +3008,6 @@
                 "name": "Maeiha",
                 "level": 0,
                 "type": "curse"
-            },
-            {
-                "name": "Mighty Gaze",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Skillful Technique",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Skillful Combo",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -6671,21 +6611,6 @@
                 "name": "Eiga",
                 "level": 0,
                 "type": "curse"
-            },
-            {
-                "name": "Relentless",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Gluttonmouth",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Intense Focus",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -7648,21 +7573,6 @@
                 "name": "Maeiga",
                 "level": 0,
                 "type": "curse"
-            },
-            {
-                "name": "Heated Bloodline",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Electric Bloodline",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Atomic Bloodline",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -8293,21 +8203,6 @@
                 "name": "Eigaon",
                 "level": 0,
                 "type": "curse"
-            },
-            {
-                "name": "Frigid Bloodline",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Wind Bloodline",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Psychic Bloodline",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -9062,21 +8957,6 @@
                 "name": "Fast Heal",
                 "level": 0,
                 "type": "passive"
-            },
-            {
-                "name": "Internal Hypnosis",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Striking Weight",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Retaliating Body",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
@@ -14052,21 +13932,6 @@
                 "name": "Demonic Decree",
                 "level": 0,
                 "type": "curse"
-            },
-            {
-                "name": "Immunity",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Mouth of Savoring",
-                "level": 0,
-                "type": "trait"
-            },
-            {
-                "name": "Blessed Bloodline",
-                "level": 0,
-                "type": "trait"
             }
         ],
         "affinities": {
