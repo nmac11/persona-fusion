@@ -6,6 +6,7 @@ import { AppDbModule } from '../app-db/app-db.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { p3pSettingsProvider } from '../tokens/p3p/settings-service-token';
 import { p3fesSettingsProvider } from '../tokens/p3fes/settings-service-token';
+import { p3ansSettingsProvider } from '../tokens/p3ans/settings-service-token';
 import { p4SettingsProvider } from '../tokens/p4/settings-service-token';
 import { p4gSettingsProvider } from '../tokens/p4g/settings-service-token';
 import { p5SettingsProvider } from '../tokens/p5/settings-service-token';
@@ -16,6 +17,7 @@ import { p5SettingsProvider } from '../tokens/p5/settings-service-token';
   providers: [
     p3pSettingsProvider,
     p3fesSettingsProvider,
+    p3ansSettingsProvider,
     p4SettingsProvider,
     p5SettingsProvider,
     p4gSettingsProvider,

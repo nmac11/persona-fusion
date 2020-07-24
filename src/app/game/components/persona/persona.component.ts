@@ -68,7 +68,7 @@ export class PersonaComponent implements OnInit, OnDestroy {
   showTriangleFusions: () => boolean = () => {
     return (
       !this.persona.special &&
-      ['p3fes', 'p3p', 'p4', 'p4g'].includes(this.activeGameService.game)
+      ['p3fes', 'p3ans', 'p3p', 'p4', 'p4g'].includes(this.activeGameService.game)
     );
   };
 

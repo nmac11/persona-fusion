@@ -6,6 +6,7 @@ import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
 import { p3pNormalFusionProvider } from '../../../tokens/p3p/normal-fusion-service-token';
 import { p3fesNormalFusionProvider } from '../../../tokens/p3fes/normal-fusion-service-token';
+import { p3ansNormalFusionProvider } from '../../../tokens/p3ans/normal-fusion-service-token';
 import { p4gNormalFusionProvider } from '../../../tokens/p4g/normal-fusion-service-token';
 import { p4NormalFusionProvider } from '../../../tokens/p4/normal-fusion-service-token';
 import { p5NormalFusionProvider } from '../../../tokens/p5/normal-fusion-service-token';
@@ -20,6 +21,7 @@ import { ActiveGameService } from '../../../services/active-game.service';
   providers: [
     p3pNormalFusionProvider,
     p3fesNormalFusionProvider,
+    p3ansNormalFusionProvider,
     p4gNormalFusionProvider,
     p4NormalFusionProvider,
     p5NormalFusionProvider,

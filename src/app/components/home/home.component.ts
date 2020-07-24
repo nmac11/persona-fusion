@@ -11,8 +11,12 @@ export class HomeComponent implements OnInit {
     url: '/p3p',
     platform: 'PSP',
   },{
-    title: 'Persona 3 FES',
+    title: 'Persona 3 FES: The Journey',
     url: '/p3fes',
+    platform: 'PS2',
+  },{
+    title: 'Persona 3 FES: The Answer',
+    url: '/p3ans',
     platform: 'PS2',
   },{
     title: 'Persona 4',

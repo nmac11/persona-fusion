@@ -16,7 +16,11 @@ export class AppComponent {
   },
   {
     url: '/p3fes',
-    title: 'Persona 3 FES'
+    title: 'Persona 3 FES: The Journey'
+  },
+  {
+    url: '/p3ans',
+    title: 'Persona 3 FES: The Answer'
   },
   {
     url: '/p4',

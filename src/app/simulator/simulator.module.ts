@@ -6,6 +6,7 @@ import { ProvidersModule } from '../providers/providers.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { p3pSimulatorProvider } from '../tokens/p3p/simulator-service-token';
 import { p3fesSimulatorProvider } from '../tokens/p3fes/simulator-service-token';
+import { p3ansSimulatorProvider } from '../tokens/p3ans/simulator-service-token';
 import { p4gSimulatorProvider } from '../tokens/p4g/simulator-service-token';
 import { p4SimulatorProvider } from '../tokens/p4/simulator-service-token';
 import { p5SimulatorProvider } from '../tokens/p5/simulator-service-token';
@@ -36,6 +37,7 @@ import { PersonaStoreModule } from '../persona-store/persona-store.module';
   providers: [
     p3pSimulatorProvider,
     p3fesSimulatorProvider,
+    p3ansSimulatorProvider,
     p4gSimulatorProvider,
     p4SimulatorProvider,
     p5SimulatorProvider,
