@@ -177,7 +177,6 @@
         "name": "Black Frost",
         "level": 34,
         "arcana": 0,
-        "special": true,
         "id": 4,
         "skills": [
             {
@@ -410,11 +409,6 @@
         "name": "Susano-o",
         "level": 76,
         "arcana": 0,
-        "ultimate": true,
-        "preReqs": [
-            "SL_FOOL"
-        ],
-        "special": true,
         "id": 8,
         "skills": [
             {
@@ -474,11 +468,6 @@
         "name": "Orpheus Telos",
         "level": 90,
         "arcana": 0,
-        "special": false,
-        "specialCondition": "Max all social links",
-        "preReqs": [
-            "UL_ORPHEUSTELOS"
-        ],
         "id": 9,
         "skills": [
             {
@@ -681,10 +670,6 @@
         "name": "Hua Po",
         "level": 20,
         "arcana": 1,
-        "keyItem": true,
-        "preReqs": [
-            "IT_SMALLCHEONGSAM"
-        ],
         "id": 13,
         "skills": [
             {
@@ -917,10 +902,6 @@
         "name": "Surt",
         "level": 52,
         "arcana": 1,
-        "ultimate": true,
-        "preReqs": [
-            "SL_MAGICIAN"
-        ],
         "id": 17,
         "skills": [
             {
@@ -1375,10 +1356,6 @@
         "name": "Scathach",
         "level": 64,
         "arcana": 2,
-        "ultimate": true,
-        "preReqs": [
-            "SL_PRIESTESS"
-        ],
         "id": 25,
         "skills": [
             {
@@ -1843,10 +1820,6 @@
         "name": "Alilat",
         "level": 84,
         "arcana": 3,
-        "ultimate": true,
-        "preReqs": [
-            "SL_EMPRESS"
-        ],
         "id": 33,
         "skills": [
             {
@@ -2084,10 +2057,6 @@
         "name": "King Frost",
         "level": 30,
         "arcana": 4,
-        "keyItem": true,
-        "preReqs": [
-            "IT_SUGARKEY"
-        ],
         "id": 37,
         "skills": [
             {
@@ -2330,10 +2299,6 @@
         "name": "Odin",
         "level": 57,
         "arcana": 4,
-        "ultimate": true,
-        "preReqs": [
-            "SL_EMPEROR"
-        ],
         "id": 41,
         "skills": [
             {
@@ -2619,10 +2584,6 @@
         "name": "Thoth",
         "level": 41,
         "arcana": 5,
-        "keyItem": true,
-        "preReqs": [
-            "IT_BOOKOFANCIENTS"
-        ],
         "id": 46,
         "skills": [
             {
@@ -2744,7 +2705,6 @@
         "name": "Daisoujou",
         "level": 53,
         "arcana": 5,
-        "special": true,
         "id": 48,
         "skills": [
             {
@@ -2803,11 +2763,6 @@
         "name": "Kohryu",
         "level": 66,
         "arcana": 5,
-        "ultimate": true,
-        "preReqs": [
-            "SL_HIEROPHANT"
-        ],
-        "special": true,
         "id": 49,
         "skills": [
             {
@@ -3272,10 +3227,6 @@
         "name": "Cybele",
         "level": 68,
         "arcana": 6,
-        "ultimate": true,
-        "preReqs": [
-            "SL_LOVERS"
-        ],
         "id": 57,
         "skills": [
             {
@@ -3624,10 +3575,6 @@
         "name": "Nata Taishi",
         "level": 37,
         "arcana": 7,
-        "keyItem": true,
-        "preReqs": [
-            "IT_MACHINECORE"
-        ],
         "id": 63,
         "skills": [
             {
@@ -3744,10 +3691,6 @@
         "name": "Thor",
         "level": 53,
         "arcana": 7,
-        "ultimate": true,
-        "preReqs": [
-            "SL_CHARIOT"
-        ],
         "id": 65,
         "skills": [
             {
@@ -4212,10 +4155,6 @@
         "name": "Melchizedek",
         "level": 59,
         "arcana": 8,
-        "ultimate": true,
-        "preReqs": [
-            "SL_JUSTICE"
-        ],
         "id": 73,
         "skills": [
             {
@@ -4627,10 +4566,6 @@
         "name": "Nebiros",
         "level": 50,
         "arcana": 9,
-        "keyItem": true,
-        "preReqs": [
-            "IT_MARIONETTE"
-        ],
         "id": 80,
         "skills": [
             {
@@ -4747,11 +4682,6 @@
         "name": "Arahabaki",
         "level": 60,
         "arcana": 9,
-        "ultimate": true,
-        "preReqs": [
-            "SL_HERMIT"
-        ],
-        "special": true,
         "id": 82,
         "skills": [
             {
@@ -4873,10 +4803,6 @@
         "name": "Empusa",
         "level": 23,
         "arcana": 10,
-        "keyItem": true,
-        "preReqs": [
-            "IT_BLUESCALE"
-        ],
         "id": 84,
         "skills": [
             {
@@ -5167,11 +5093,6 @@
         "name": "Norn",
         "level": 62,
         "arcana": 10,
-        "ultimate": true,
-        "preReqs": [
-            "SL_FORTUNE"
-        ],
-        "special": true,
         "id": 89,
         "skills": [
             {
@@ -5641,10 +5562,6 @@
         "name": "Siegfried",
         "level": 59,
         "arcana": 11,
-        "ultimate": true,
-        "preReqs": [
-            "SL_STRENGTH"
-        ],
         "id": 97,
         "skills": [
             {
@@ -6056,10 +5973,6 @@
         "name": "Hell Biker",
         "level": 60,
         "arcana": 12,
-        "keyItem": true,
-        "preReqs": [
-            "IT_REDMUFFLER"
-        ],
         "id": 104,
         "skills": [
             {
@@ -6118,11 +6031,6 @@
         "name": "Attis",
         "level": 67,
         "arcana": 12,
-        "ultimate": true,
-        "preReqs": [
-            "SL_HANGEDMAN"
-        ],
-        "special": true,
         "id": 105,
         "skills": [
             {
@@ -6239,10 +6147,6 @@
         "name": "Pale Rider",
         "level": 24,
         "arcana": 13,
-        "keyItem": true,
-        "preReqs": [
-            "IT_TORNBLACKCLOTH"
-        ],
         "id": 107,
         "skills": [
             {
@@ -6485,7 +6389,6 @@
         "name": "Alice",
         "level": 56,
         "arcana": 13,
-        "special": true,
         "id": 111,
         "skills": [
             {
@@ -6544,11 +6447,6 @@
         "name": "Thanatos",
         "level": 64,
         "arcana": 13,
-        "ultimate": true,
-        "preReqs": [
-            "SL_DEATH"
-        ],
-        "special": true,
         "id": 112,
         "skills": [
             {
@@ -7013,10 +6911,6 @@
         "name": "Yurlungur",
         "level": 64,
         "arcana": 14,
-        "ultimate": true,
-        "preReqs": [
-            "SL_TEMPERANCE"
-        ],
         "id": 120,
         "skills": [
             {
@@ -7375,11 +7269,6 @@
         "name": "Lilith",
         "level": 61,
         "arcana": 15,
-        "keyItem": true,
-        "preReqs": [
-            "IT_LILYPETAL"
-        ],
-        "special": true,
         "id": 126,
         "skills": [
             {
@@ -7507,11 +7396,6 @@
         "name": "Beelzebub",
         "level": 81,
         "arcana": 15,
-        "ultimate": true,
-        "preReqs": [
-            "SL_DEVIL"
-        ],
-        "special": true,
         "id": 128,
         "skills": [
             {
@@ -7797,11 +7681,6 @@
         "name": "Masakado",
         "level": 73,
         "arcana": 16,
-        "keyItem": true,
-        "preReqs": [
-            "IT_MASAKADOS"
-        ],
-        "special": true,
         "id": 133,
         "skills": [
             {
@@ -7860,7 +7739,6 @@
         "name": "Mara",
         "level": 77,
         "arcana": 16,
-        "special": true,
         "id": 134,
         "skills": [
             {
@@ -7979,10 +7857,6 @@
         "name": "Chi You",
         "level": 86,
         "arcana": 16,
-        "ultimate": true,
-        "preReqs": [
-            "SL_TOWER"
-        ],
         "id": 136,
         "skills": [
             {
@@ -8279,10 +8153,6 @@
         "name": "Kartikeya",
         "level": 70,
         "arcana": 17,
-        "keyItem": true,
-        "preReqs": [
-            "IT_RAINBOWFEATHER"
-        ],
         "id": 141,
         "skills": [
             {
@@ -8404,10 +8274,6 @@
         "name": "Helel",
         "level": 88,
         "arcana": 17,
-        "ultimate": true,
-        "preReqs": [
-            "SL_STAR"
-        ],
         "id": 143,
         "skills": [
             {
@@ -8587,7 +8453,6 @@
         "name": "Girimehkala",
         "level": 42,
         "arcana": 18,
-        "special": true,
         "id": 146,
         "skills": [
             {
@@ -8883,11 +8748,6 @@
         "name": "Sandalphon",
         "level": 74,
         "arcana": 18,
-        "ultimate": true,
-        "preReqs": [
-            "SL_MOON"
-        ],
-        "special": true,
         "id": 151,
         "skills": [
             {
@@ -9299,11 +9159,6 @@
         "name": "Asura",
         "level": 85,
         "arcana": 19,
-        "ultimate": true,
-        "preReqs": [
-            "SL_SUN"
-        ],
-        "special": true,
         "id": 158,
         "skills": [
             {
@@ -9590,7 +9445,6 @@
         "name": "Lucifer",
         "level": 89,
         "arcana": 20,
-        "special": true,
         "id": 163,
         "skills": [
             {
@@ -9649,10 +9503,6 @@
         "name": "Messiah",
         "level": 90,
         "arcana": 20,
-        "ultimate": true,
-        "preReqs": [
-            "SL_JUDGEMENT"
-        ],
         "special": true,
         "id": 164,
         "skills": [
@@ -9940,11 +9790,6 @@
         "name": "Metatron",
         "level": 87,
         "arcana": 21,
-        "ultimate": true,
-        "preReqs": [
-            "SL_AEON"
-        ],
-        "special": true,
         "id": 169,
         "skills": [
             {
