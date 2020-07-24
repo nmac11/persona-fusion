@@ -1,0 +1,191 @@
+{
+  "Confidants": {
+    "SL_FOOL": {
+      "label": "Fool",
+      "description": "Igor",
+      "unlocks": ["Vishnu"]
+    },
+    "SL_MAGICIAN": {
+      "label": "Magician",
+      "description": "Morgana",
+      "unlocks": ["Futsunushi"]
+    },
+    "SL_PRIESTESS": {
+      "label": "Priestess",
+      "description": "Makoto Nijima",
+      "unlocks": ["Cybele"]
+    },
+    "SL_EMPRESS": {
+      "label": "Empress",
+      "description": "Haru Okumura",
+      "unlocks": ["Mother Harlot"]
+    },
+    "SL_EMPEROR": {
+      "label": "Emperor",
+      "description": "Kitagawa Yusuke",
+      "unlocks": ["Odin"]
+    },
+    "SL_HIEROPHANT": {
+      "label": "Hierophant",
+      "description": "Sojiro Sakura",
+      "unlocks": ["Kohryu"]
+    },
+    "SL_LOVERS": {
+      "label": "Lovers",
+      "description": "Ann Takamaki",
+      "unlocks": ["Ishtar"]
+    },
+    "SL_CHARIOT": {
+      "label": "Chariot",
+      "description": "Ryuji Sakamoto",
+      "unlocks": ["Chi You"]
+    },
+    "SL_JUSTICE": {
+      "label": "Justice",
+      "description": "Goro Akechi",
+      "unlocks": ["Metatron"]
+    },
+    "SL_HERMIT": {
+      "label": "Hermit",
+      "description": "Futaba Sakura",
+      "unlocks": ["Ongyo-Ki"]
+    },
+    "SL_FORTUNE": {
+      "label": "Fortune",
+      "description": "Chihaya Mifune",
+      "unlocks": ["Lakshmi"]
+    },
+    "SL_STRENGTH": {
+      "label": "Strength",
+      "description": "Caroline & Justine",
+      "unlocks": ["Zaou-Gongen"]
+    },
+    "SL_HANGEDMAN": {
+      "label": "Hanged Man",
+      "description": "Munehisa Iwai",
+      "unlocks": ["Attis"]
+    },
+    "SL_DEATH": {
+      "label": "Death",
+      "description": "Tae Takemi",
+      "unlocks": ["Alice"]
+    },
+    "SL_TEMPERANCE": {
+      "label": "Temperance",
+      "description": "Sadayo Kawakami",
+      "unlocks": ["Ardha"]
+    },
+    "SL_DEVIL": {
+      "label": "Devil",
+      "description": "Oya Ichiko",
+      "unlocks": ["Beelzebub"]
+    },
+    "SL_TOWER": {
+      "label": "Tower",
+      "description": "Shinya Oda",
+      "unlocks": ["Mada"]
+    },
+    "SL_STAR": {
+      "label": "Star",
+      "description": "Hifumi Togo",
+      "unlocks": ["Lucifer"]
+    },
+    "SL_MOON": {
+      "label": "Moon",
+      "description": "Yuki Mishima",
+      "unlocks": ["Sandalphon"]
+    },
+    "SL_SUN": {
+      "label": "Sun",
+      "description": "Toranosuke Yoshida",
+      "unlocks": ["Asura-Ou"]
+    },
+    "SL_JUDGEMENT": {
+      "label": "Judgement",
+      "description": "Sae Nijima",
+      "unlocks": ["Satan"]
+    },
+    "SL_FAITH": {
+      "label": "Faith",
+      "description": "Kasumi Yoshizawa",
+      "unlocks": ["Maria"]
+    },
+    "SL_COUNCILLOR": {
+      "label": "Councillor",
+      "description": "Takuto Maruki",
+      "unlocks": ["Vohu Manah"]
+    }
+  },
+  "DLCs": {
+    "DLC_IZANAGI": {
+      "label": "Izanagi",
+      "unlocks": ["Izanagi", "Izanagi Picaro"]
+    },
+    "DLC_ORPHEUS": {
+      "label": "Orpheus",
+      "unlocks": ["Orpheus", "Orpheus Picaro"]
+    },
+    "DLC_ARIADNE": {
+      "label": "Ariadne",
+      "unlocks": ["Ariadne", "Ariadne Picaro"]
+
+    },
+    "DLC_ASTERIUS": {
+      "label": "Asterius",
+      "unlocks": ["Asterius", "Asterius Picaro"]
+
+    },
+    "DLC_THANATOS": {
+      "label": "Thanatos",
+      "unlocks": ["Thanatos", "Thanatos Picaro"]
+
+    },
+    "DLC_MAGATSUIZANAGI": {
+      "label": "Magatsu-Izanagi",
+      "unlocks": ["Magatsu-Izanagi", "Magatsu-Izanagi Picaro"]
+
+    },
+    "DLC_KAGUYA": {
+      "label": "Kaguya",
+      "unlocks": ["Kaguya", "Kaguya Picaro"]
+
+    },
+    "DLC_TSUKIYOMI": {
+      "label": "Tsukiyomi",
+      "unlocks": ["Tsukiyomi", "Tsukiyomi Picaro"]
+
+    },
+    "DLC_MESSIAH": {
+      "label": "Messiah",
+      "unlocks": ["Messiah", "Messiah Picaro"]
+
+    },
+    "DLC_ORPHEUSF": {
+      "label": "Orpheus F",
+      "unlocks": ["Orpheus F", "Orpheus F Picaro"]
+
+    },
+    "DLC_ATHENA": {
+      "label": "Athena",
+      "unlocks": ["Athena", "Athena Picaro"]
+
+    },
+    "DLC_IZANAGINOOKAMI": {
+      "label": "Izanagi-no-Okami",
+      "unlocks": ["Izanagi-no-Okami", "Izanagi-no-Okami Picaro"]
+
+    },
+    "DLC_RAOUL": {
+      "label": "Raoul",
+      "unlocks": ["Raoul"]
+
+    }
+  },
+  "Ultimate Persona": {
+    "UL_SATANAEL": {
+      "label": "Satanael",
+      "description": "Unlock true ending",
+      "unlocks": ["Satanael"]
+    }
+  }
+}
