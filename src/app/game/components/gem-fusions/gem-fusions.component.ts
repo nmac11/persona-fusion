@@ -1,5 +1,6 @@
 import { Component, OnInit, Injector, Input } from '@angular/core';
 import { p5GemFusionProvider } from '../../../tokens/p5/gem-fusion-service-token';
+import { p5rGemFusionProvider } from '../../../tokens/p5r/gem-fusion-service-token';
 import { ActiveGameService } from '../../../services/active-game.service';
 import { CompendiumService } from '../../../services/compendium.service';
 import { GemFusionService } from '../../../services/gem-fusion.service';
@@ -9,7 +10,7 @@ import { Persona } from '../../../models/persona';
   selector: 'game-gem-fusions',
   templateUrl: './gem-fusions.component.html',
   styleUrls: ['./gem-fusions.component.css'],
-  providers: [p5GemFusionProvider],
+  providers: [p5GemFusionProvider, p5rGemFusionProvider],
 })
 export class GemFusionsComponent implements OnInit {
   @Input('persona') persona: Persona;

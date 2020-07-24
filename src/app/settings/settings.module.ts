@@ -10,6 +10,7 @@ import { p3ansSettingsProvider } from '../tokens/p3ans/settings-service-token';
 import { p4SettingsProvider } from '../tokens/p4/settings-service-token';
 import { p4gSettingsProvider } from '../tokens/p4g/settings-service-token';
 import { p5SettingsProvider } from '../tokens/p5/settings-service-token';
+import { p5rSettingsProvider } from '../tokens/p5r/settings-service-token';
 
 @NgModule({
   declarations: [SettingsComponent],
@@ -19,8 +20,9 @@ import { p5SettingsProvider } from '../tokens/p5/settings-service-token';
     p3fesSettingsProvider,
     p3ansSettingsProvider,
     p4SettingsProvider,
-    p5SettingsProvider,
     p4gSettingsProvider,
+    p5SettingsProvider,
+    p5rSettingsProvider,
   ],
 })
 export class SettingsModule {}

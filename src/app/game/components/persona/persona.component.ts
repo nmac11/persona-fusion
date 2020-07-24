@@ -74,7 +74,7 @@ export class PersonaComponent implements OnInit, OnDestroy {
 
   showGemFusions: () => boolean = () => {
     return (
-      !this.persona.special && ['p5'].includes(this.activeGameService.game)
+      !this.persona.special && ['p5', 'p5r'].includes(this.activeGameService.game)
     );
   };
 }

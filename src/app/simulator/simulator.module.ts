@@ -10,6 +10,7 @@ import { p3ansSimulatorProvider } from '../tokens/p3ans/simulator-service-token'
 import { p4gSimulatorProvider } from '../tokens/p4g/simulator-service-token';
 import { p4SimulatorProvider } from '../tokens/p4/simulator-service-token';
 import { p5SimulatorProvider } from '../tokens/p5/simulator-service-token';
+import { p5rSimulatorProvider } from '../tokens/p5r/simulator-service-token';
 import { p3SkillInheritanceProvider } from '../tokens/p3/skill-inheritance-service-token';
 import { p4SkillInheritanceProvider } from '../tokens/p4/skill-inheritance-service-token';
 import { p4gSkillInheritanceProvider } from '../tokens/p4g/skill-inheritance-service-token';
@@ -41,6 +42,7 @@ import { PersonaStoreModule } from '../persona-store/persona-store.module';
     p4gSimulatorProvider,
     p4SimulatorProvider,
     p5SimulatorProvider,
+    p5rSimulatorProvider,
     p3SkillInheritanceProvider,
     p4SkillInheritanceProvider,
     p4gSkillInheritanceProvider,

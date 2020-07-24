@@ -30,6 +30,10 @@ export class HomeComponent implements OnInit {
     title: 'Persona 5',
     url: '/p5',
     platform: 'PS3 / PS4',
+  },{
+    title: 'Persona 5 Royal',
+    url: '/p5r',
+    platform: 'PS4',
   }];
 
   constructor() {}

@@ -6,6 +6,7 @@ import { p3ansPersonaStoreProvider } from '../tokens/p3ans/persona-store-service
 import { p4PersonaStoreProvider } from '../tokens/p4/persona-store-service-token';
 import { p4gPersonaStoreProvider } from '../tokens/p4g/persona-store-service-token';
 import { p5PersonaStoreProvider } from '../tokens/p5/persona-store-service-token';
+import { p5rPersonaStoreProvider } from '../tokens/p5r/persona-store-service-token';
 
 @NgModule({
   declarations: [],
@@ -17,6 +18,7 @@ import { p5PersonaStoreProvider } from '../tokens/p5/persona-store-service-token
     p4PersonaStoreProvider,
     p4gPersonaStoreProvider,
     p5PersonaStoreProvider,
+    p5rPersonaStoreProvider,
   ],
 })
 export class PersonaStoreModule {}

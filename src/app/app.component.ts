@@ -35,6 +35,10 @@ export class AppComponent {
     title: 'Persona 5'
   },
   {
+    url: '/p5r',
+    title: 'Persona 5 Royal'
+  },
+  {
     url: '/settings',
     title: 'App Settings'
   }];
