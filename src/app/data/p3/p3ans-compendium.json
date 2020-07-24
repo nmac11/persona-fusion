@@ -1,67 +1,9 @@
 [
     {
-        "name": "Orpheus",
-        "level": 25,
-        "arcana": 0,
-        "id": 1,
-        "skills": [
-            {
-                "name": "Agi",
-                "level": 0,
-                "type": "fire"
-            },
-            {
-                "name": "Assault Dive",
-                "level": 0,
-                "type": "strike"
-            },
-            {
-                "name": "Dia",
-                "level": 0,
-                "type": "recovery"
-            },
-            {
-                "name": "Agilao",
-                "level": 26,
-                "type": "fire"
-            },
-            {
-                "name": "Tarunda",
-                "level": 27,
-                "type": "support"
-            },
-            {
-                "name": "Swift Strike",
-                "level": 28,
-                "type": "strike"
-            }
-        ],
-        "inherits": "fire",
-        "stats": {
-            "st": 17,
-            "ma": 20,
-            "en": 18,
-            "ag": 15,
-            "lu": 12
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
-        "arcanaName": "Fool"
-    },
-    {
         "name": "Slime",
         "level": 12,
         "arcana": 0,
-        "id": 2,
+        "id": 1,
         "skills": [
             {
                 "name": "Evil Touch",
@@ -119,7 +61,7 @@
         "name": "Legion",
         "level": 22,
         "arcana": 0,
-        "id": 3,
+        "id": 2,
         "skills": [
             {
                 "name": "Assault Dive",
@@ -170,6 +112,64 @@
             "wind": "-",
             "light": "w",
             "darkness": "n"
+        },
+        "arcanaName": "Fool"
+    },
+    {
+        "name": "Orpheus",
+        "level": 25,
+        "arcana": 0,
+        "id": 3,
+        "skills": [
+            {
+                "name": "Agi",
+                "level": 0,
+                "type": "fire"
+            },
+            {
+                "name": "Assault Dive",
+                "level": 0,
+                "type": "strike"
+            },
+            {
+                "name": "Dia",
+                "level": 0,
+                "type": "recovery"
+            },
+            {
+                "name": "Agilao",
+                "level": 26,
+                "type": "fire"
+            },
+            {
+                "name": "Tarunda",
+                "level": 27,
+                "type": "support"
+            },
+            {
+                "name": "Swift Strike",
+                "level": 28,
+                "type": "strike"
+            }
+        ],
+        "inherits": "fire",
+        "stats": {
+            "st": 17,
+            "ma": 20,
+            "en": 18,
+            "ag": 15,
+            "lu": 12
+        },
+        "affinities": {
+            "slash": "-",
+            "strike": "-",
+            "pierce": "-",
+            "fire": "-",
+            "ice": "-",
+            "electricity": "w",
+            "wind": "-",
+            "light": "-",
+            "darkness": "w"
         },
         "arcanaName": "Fool"
     },
