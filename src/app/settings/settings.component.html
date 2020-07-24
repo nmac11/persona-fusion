@@ -1,21 +1,28 @@
-<form [formGroup]="settingsForm" (ngSubmit)="saveSettings()" id="settings-form">
-  <div *ngFor="let category of settingsTemplate | keyvalue">
-    <h2 class="mat-h2">{{ category.key }}</h2>
-    <ul>
-      <li *ngFor="let item of category.value | keyvalue">
-        <mat-checkbox [formControlName]="item.key">
-          <span class="mat-body-2">{{ item.value.label }}</span>
-          <span class="mat-body-1" *ngIf="item.value.description"> ({{item.value.description}})</span> <br>
-          <small class="mat-caption">{{item.value.unlocks.join(', ')}}</small>
-        </mat-checkbox>
-      </li>
-    </ul>
-  </div>
-  <button
-    type="submit"
-    mat-raised-button
-    color="primary"
-    [disabled]="settingsForm.pristine">
-    SAVE CHANGES
-  </button>
-</form>
+<div class="mat-body-1" *ngIf="noSettings(); else settingsContainer">
+  <h2 class="mat-h2">Nothing to change</h2>
+  No settings for this game.
+</div>
+
+<ng-template #settingsContainer>
+  <form [formGroup]="settingsForm" (ngSubmit)="saveSettings()" id="settings-form">
+    <div *ngFor="let category of settingsTemplate | keyvalue">
+      <h2 class="mat-h2">{{ category.key }}</h2>
+      <ul>
+        <li *ngFor="let item of category.value | keyvalue">
+          <mat-checkbox [formControlName]="item.key">
+            <span class="mat-body-2">{{ item.value.label }}</span>
+            <span class="mat-body-1" *ngIf="item.value.description"> ({{item.value.description}})</span> <br>
+            <small class="mat-caption">{{item.value.unlocks.join(', ')}}</small>
+          </mat-checkbox>
+        </li>
+      </ul>
+    </div>
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="settingsForm.pristine">
+      SAVE CHANGES
+    </button>
+  </form>
+</ng-template>

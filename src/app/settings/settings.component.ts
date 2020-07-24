@@ -40,6 +40,10 @@ export class SettingsComponent implements OnInit {
     this.settingsForm = new FormGroup(settingsFormControls);
   }
 
+  noSettings(): boolean {
+    return Object.keys(this.settings).length === 0;
+  }
+
   async saveSettings(): Promise<void> {
     try {
       await this.settingsService.save(this.settingsForm.value);
