@@ -18,6 +18,15 @@ import { P3FES_SKILL } from '../tokens/p3fes/skill-service-token';
 import { P3FES_PERSONA_STORE } from '../tokens/p3fes/persona-store-service-token';
 import { P3FES_SETTINGS } from '../tokens/p3fes/settings-service-token';
 
+import { P3ANS_COMPENDIUM } from '../tokens/p3ans/compendium-service-token';
+import { P3ANS_NORMAL_FUSION } from '../tokens/p3ans/normal-fusion-service-token';
+import { P3ANS_TRIANGLE_FUSION } from '../tokens/p3ans/triangle-fusion-service-token';
+import { P3ANS_FUSION_CHART } from '../tokens/p3ans/fusion-chart-service-token';
+import { P3ANS_SIMULATOR } from '../tokens/p3ans/simulator-service-token';
+import { P3ANS_SKILL } from '../tokens/p3ans/skill-service-token';
+import { P3ANS_PERSONA_STORE } from '../tokens/p3ans/persona-store-service-token';
+import { P3ANS_SETTINGS } from '../tokens/p3ans/settings-service-token';
+
 import { P4G_COMPENDIUM } from '../tokens/p4g/compendium-service-token';
 import { P4G_NORMAL_FUSION } from '../tokens/p4g/normal-fusion-service-token';
 import { P4G_TRIANGLE_FUSION } from '../tokens/p4g/triangle-fusion-service-token';
@@ -86,6 +95,16 @@ export const serviceToken: { [key: string]: ServiceTokenSet } = {
     skill: P3FES_SKILL,
     personaStore: P3FES_PERSONA_STORE,
     settings: P3FES_SETTINGS,
+  },
+  p3ans: {
+    compendium: P3ANS_COMPENDIUM,
+    normalFusion: P3ANS_NORMAL_FUSION,
+    triangleFusion: P3ANS_TRIANGLE_FUSION,
+    fusionChart: P3ANS_FUSION_CHART,
+    simulator: P3ANS_SIMULATOR,
+    skill: P3ANS_SKILL,
+    personaStore: P3ANS_PERSONA_STORE,
+    settings: P3ANS_SETTINGS,
   },
   p4g: {
     compendium: P4G_COMPENDIUM,
