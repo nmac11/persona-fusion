@@ -8,7 +8,7 @@ export class TitleService {
   constructor(private titleSetter: Title) {}
 
   setTitle(...pageTitle): void {
-    let title = 'Fusion Tool';
+    let title = 'Persona Fusion Simulator';
     if (pageTitle !== []) title = `${pageTitle.join(' - ')} - ${title}`;
     this.titleSetter.setTitle(title);
   }
