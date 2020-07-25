@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TitleService } from '../../services/title.service';
 
 @Component({
   selector: 'app-home',
@@ -36,7 +37,9 @@ export class HomeComponent implements OnInit {
     platform: 'PS4',
   }];
 
-  constructor() {}
+  constructor(private titleService: TitleService) {
+    this.titleService.setTitle('Home');
+  }
 
   ngOnInit(): void {}
 }

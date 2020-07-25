@@ -6,6 +6,7 @@ import { Persona } from '../../../models/persona';
 import { Observer, Observable, Subscription } from 'rxjs';
 import { ActiveGameService } from '../../../services/active-game.service';
 import { SettingsService } from '../../../services/settings.service';
+import { TitleService } from '../../../services/title.service';
 
 @Component({
   selector: 'game-persona',
@@ -25,6 +26,7 @@ export class PersonaComponent implements OnInit, OnDestroy {
     private router: Router,
     private injector: Injector,
     private activeGameService: ActiveGameService,
+    private titleService: TitleService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     const tokens = this.activeGameService.getTokenSet();
@@ -40,10 +42,20 @@ export class PersonaComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.routeParamsSub = this.route.params.subscribe((p: object) => {
       this.persona = this.compendiumService.find(p['persona_name']);
-      if (this.persona)
+      if (this.persona) {
         this.specialFusion = this.fusionChartService.getSpecialFusions(
           this.persona,
         );
+        this.titleService.setTitle(
+          this.persona.name,
+          this.activeGameService.fullGameName,
+        );
+      } else {
+        this.titleService.setTitle(
+          'Persona not found',
+          this.activeGameService.fullGameName,
+        );
+      }
     });
   }
 
@@ -68,13 +80,16 @@ export class PersonaComponent implements OnInit, OnDestroy {
   showTriangleFusions: () => boolean = () => {
     return (
       !this.persona.special &&
-      ['p3fes', 'p3ans', 'p3p', 'p4', 'p4g'].includes(this.activeGameService.game)
+      ['p3fes', 'p3ans', 'p3p', 'p4', 'p4g'].includes(
+        this.activeGameService.game,
+      )
     );
   };
 
   showGemFusions: () => boolean = () => {
     return (
-      !this.persona.special && ['p5', 'p5r'].includes(this.activeGameService.game)
+      !this.persona.special &&
+      ['p5', 'p5r'].includes(this.activeGameService.game)
     );
   };
 }

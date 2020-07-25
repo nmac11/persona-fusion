@@ -5,6 +5,8 @@ import { GameSettings } from '../../models/game-settings';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmClearDatabaseDialogComponent } from '../confirm-clear-database-dialog/confirm-clear-database-dialog.component';
+import { TitleService } from '../../services/title.service';
+
 @Component({
   selector: 'app-settings',
   templateUrl: './app-settings.component.html',
@@ -18,7 +20,10 @@ export class AppSettingsComponent implements OnInit {
     private appSettingsService: AppSettingsService,
     private snackBar: MatSnackBar,
     private dialog: MatDialog,
-  ) {}
+    private titleService: TitleService,
+  ) {
+    this.titleService.setTitle('App Settings');
+  }
 
   async ngOnInit(): Promise<void> {
     this.settings = this.appSettingsService.getValues();

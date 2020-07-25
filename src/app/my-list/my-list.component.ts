@@ -15,6 +15,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
 import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
 import { ActiveGameService } from '../services/active-game.service';
+import { TitleService } from '../services/title.service';
 
 @Component({
   selector: 'my-list-root',
@@ -41,6 +42,7 @@ export class MyListComponent implements OnInit, AfterViewInit {
     private router: Router,
     private dialog: MatDialog,
     private route: ActivatedRoute,
+    private titleService: TitleService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     const tokens = this.activeGameService.getTokenSet();
@@ -48,6 +50,10 @@ export class MyListComponent implements OnInit, AfterViewInit {
       tokens.personaStore,
     );
     this.savedPersonae = new MatTableDataSource<FusionNode>();
+    this.titleService.setTitle(
+      'My List',
+      this.activeGameService.fullGameName,
+    );
   }
 
   ngOnInit(): void {}

@@ -16,6 +16,7 @@ import { FusionNodeHelper } from './helpers/fusion-node-helper';
 import { ActiveGameService } from '../services/active-game.service';
 import { SettingsService } from '../services/settings.service';
 import { AppSettingsService } from '../services/app-settings.service';
+import { TitleService } from '../services/title.service';
 
 @Component({
   selector: 'simulator-root',
@@ -40,6 +41,7 @@ export class SimulatorComponent implements OnInit {
     private location: Location,
     private activeGameService: ActiveGameService,
     private appSettingsService: AppSettingsService,
+    private titleService: TitleService,
   ) {
     const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -49,6 +51,10 @@ export class SimulatorComponent implements OnInit {
       tokens.simulator,
     );
     this.skillService = this.injector.get<SkillService>(tokens.skill);
+    this.titleService.setTitle(
+      'Simulator',
+      this.activeGameService.fullGameName,
+    );
   }
 
   ngOnInit(): void {

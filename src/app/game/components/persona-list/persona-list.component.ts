@@ -12,6 +12,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActiveGameService } from '../../../services/active-game.service';
+import { TitleService } from '../../../services/title.service';
 
 @Component({
   selector: 'game-persona-list',
@@ -30,6 +31,7 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
     private injector: Injector,
     private router: Router,
     private activeGameService: ActiveGameService,
+    private titleService: TitleService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     this.personae = new MatTableDataSource<Persona>();
@@ -38,6 +40,7 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
       tokens.compendium,
     );
     this.personae.data = this.compendiumService.getAll();
+    this.titleService.setTitle(this.activeGameService.fullGameName);
   }
 
   ngOnInit(): void {}

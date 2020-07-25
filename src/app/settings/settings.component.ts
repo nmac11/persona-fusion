@@ -3,6 +3,7 @@ import { ActiveGameService } from '../services/active-game.service';
 import { SettingsService } from '../services/settings.service';
 import { FormArray, FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { TitleService } from '../services/title.service';
 
 @Component({
   selector: 'settings-root',
@@ -19,11 +20,13 @@ export class SettingsComponent implements OnInit {
     private injector: Injector,
     private activeGameService: ActiveGameService,
     private snackBar: MatSnackBar,
+    private titleService: TitleService,
   ) {
     const tokens = this.activeGameService.getTokenSet();
     this.settingsService = this.injector.get<SettingsService>(tokens.settings);
     this.settingsTemplate = this.settingsService.template;
     this.loadSettings();
+    this.titleService.setTitle('Settings', this.activeGameService.fullGameName);
   }
 
   ngOnInit(): void {}
