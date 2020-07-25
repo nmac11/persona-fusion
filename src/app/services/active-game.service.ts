@@ -1,7 +1,7 @@
 import { Injectable, InjectionToken } from '@angular/core';
 import { serviceToken, ServiceTokenSet } from '../helpers/service-token-helper';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class ActiveGameService {
   private _game: string;
 

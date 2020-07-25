@@ -12,7 +12,6 @@ import { SimulatorModule } from '../simulator/simulator.module';
 import { NormalFusionsBottomSheetComponent } from './components/normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
 import { SharedModule } from '../shared/shared.module';
 import { MyListModule } from '../my-list/my-list.module';
-import { ActiveGameService } from '../services/active-game.service';
 import { SettingsModule } from '../settings/settings.module';
 import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.component';
 
@@ -36,7 +35,6 @@ import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.compon
     MyListModule,
     SettingsModule,
   ],
-  providers: [ActiveGameService],
   entryComponents: [NormalFusionsBottomSheetComponent],
 })
 export class GameModule {}

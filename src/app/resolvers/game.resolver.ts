@@ -12,10 +12,10 @@ import { ActiveGameService } from '../services/active-game.service';
 export class GameResolver implements Resolve<string> {
   constructor(private activeGameService: ActiveGameService) {}
 
-  async resolve(
+  resolve(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot,
-  ): Promise<string> {
+  ): string {
     const game = route.params.game;
     this.activeGameService.game = game;
     return game;

@@ -19,9 +19,9 @@ export class GameComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    const game = this.route.snapshot.data.game;
+    const game = this.activeGame.game;
     this.title = game;
-    this.activeGame.game = game;
+
     this.routeDataSub = this.route.firstChild.data.subscribe(
       (data) => (this.page = data.page),
     );
