@@ -12,6 +12,7 @@ import { GameResolver } from './resolvers/game.resolver';
 import { SettingsComponent } from './settings/settings.component';
 import { SettingsResolver } from './resolvers/settings.resolver';
 import { AppSettingsComponent } from './components/app-settings/app-settings.component';
+import { ReferenceComponent } from './components/reference/reference.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,10 @@ const routes: Routes = [
     path: 'settings',
     component: AppSettingsComponent,
     resolve: { settings: SettingsResolver },
+  },
+  {
+    path: 'reference',
+    component: ReferenceComponent,
   },
   {
     path: ':game',
