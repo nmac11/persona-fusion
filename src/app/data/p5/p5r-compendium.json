@@ -7907,7 +7907,7 @@
         "name": "Hua Po",
         "inherits": "fire",
         "level": 9,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 4,
@@ -7966,7 +7966,7 @@
         "name": "Inugami",
         "inherits": "fire",
         "level": 14,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 11,
@@ -8030,7 +8030,7 @@
         "name": "Orthrus",
         "inherits": "fire",
         "level": 21,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 16,
@@ -8089,7 +8089,7 @@
         "name": "Take-Minakata",
         "inherits": "elec",
         "level": 26,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 17,
@@ -8153,7 +8153,7 @@
         "name": "Emperor's Amulet",
         "inherits": "almighty",
         "level": 35,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "gem": true,
         "stats": {
@@ -8223,7 +8223,7 @@
         "name": "Hecatoncheires",
         "inherits": "phys",
         "level": 42,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 35,
@@ -8287,7 +8287,7 @@
         "name": "Jatayu",
         "inherits": "wind",
         "level": 51,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 31,
@@ -8351,7 +8351,7 @@
         "name": "Moloch",
         "inherits": "fire",
         "level": 60,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 32,
@@ -8415,7 +8415,7 @@
         "name": "Macabre",
         "inherits": "curse",
         "level": 73,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 48,
@@ -8479,7 +8479,7 @@
         "name": "Attis",
         "inherits": "fire",
         "level": 82,
-        "arcanaName": "Hanged",
+        "arcanaName": "Hanged Man",
         "arcana": 12,
         "stats": {
             "st": 49,
@@ -8539,7 +8539,7 @@
         },
         "id": 134,
         "preReqs": [
-            "SL_HANGEDMAN"
+            "SL_HANGED MANMAN"
         ],
         "ultimate": true
     },
