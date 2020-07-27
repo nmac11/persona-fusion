@@ -124,7 +124,8 @@
             {
                 "name": "Neo Cadenza",
                 "level": 0,
-                "type": "healing"
+                "type": "healing",
+                "exclusive": true
             },
             {
                 "name": "Agi",
@@ -191,7 +192,8 @@
             {
                 "name": "Neo Cadenza",
                 "level": 0,
-                "type": "healing"
+                "type": "healing",
+                "exclusive": true
             },
             {
                 "name": "Maragi",
@@ -317,7 +319,8 @@
             {
                 "name": "Cross Slash",
                 "level": 0,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Zionga",
@@ -384,7 +387,8 @@
             {
                 "name": "Cross Slash",
                 "level": 0,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Zionga",
@@ -451,7 +455,8 @@
             {
                 "name": "Cadenza",
                 "level": 0,
-                "type": "healing"
+                "type": "healing",
+                "exclusive": true
             },
             {
                 "name": "Agilao",
@@ -518,7 +523,8 @@
             {
                 "name": "Cadenza",
                 "level": 0,
-                "type": "healing"
+                "type": "healing",
+                "exclusive": true
             },
             {
                 "name": "Maragion",
@@ -908,7 +914,8 @@
             {
                 "name": "Phantom Show",
                 "level": 0,
-                "type": "ailment"
+                "type": "ailment",
+                "exclusive": true
             },
             {
                 "name": "Eigaon",
@@ -1074,7 +1081,8 @@
             {
                 "name": "Black Viper",
                 "level": 96,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Heat Riser",
@@ -3430,7 +3438,8 @@
             {
                 "name": "Ayamur",
                 "level": 84,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Tetraja",
@@ -3729,7 +3738,8 @@
             {
                 "name": "Samsara",
                 "level": 41,
-                "type": "bless"
+                "type": "bless",
+                "exclusive": true
             },
             {
                 "name": "Bless Boost",
@@ -4914,7 +4924,8 @@
             {
                 "name": "Akasha Arts",
                 "level": 0,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Marakukaja",
@@ -4986,7 +4997,8 @@
             {
                 "name": "Akasha Arts",
                 "level": 0,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Matarukaja",
@@ -6708,7 +6720,8 @@
             {
                 "name": "Beast Weaver",
                 "level": 0,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Apt Pupil",
@@ -6903,7 +6916,8 @@
             {
                 "name": "Beast Weaver",
                 "level": 0,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             },
             {
                 "name": "Apt Pupil",
@@ -7098,7 +7112,8 @@
             {
                 "name": "Titanomachia",
                 "level": 0,
-                "type": "fire"
+                "type": "fire",
+                "exclusive": true
             },
             {
                 "name": "Maragidyne",
@@ -7165,7 +7180,8 @@
             {
                 "name": "Titanomachia",
                 "level": 0,
-                "type": "fire"
+                "type": "fire",
+                "exclusive": true
             },
             {
                 "name": "Maragidyne",
@@ -9118,7 +9134,8 @@
             {
                 "name": "Door of Hades",
                 "level": 0,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Maeigaon",
@@ -9185,7 +9202,8 @@
             {
                 "name": "Door of Hades",
                 "level": 0,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Maeigaon",
@@ -9327,7 +9345,8 @@
             {
                 "name": "Die For Me!",
                 "level": 85,
-                "type": "curse"
+                "type": "curse",
+                "exclusive": true
             },
             {
                 "name": "Megidolaon",
@@ -10655,7 +10674,8 @@
             {
                 "name": "Magatsu Mandala",
                 "level": 0,
-                "type": "curse"
+                "type": "curse",
+                "exclusive": true
             },
             {
                 "name": "Megidola",
@@ -10722,7 +10742,8 @@
             {
                 "name": "Magatsu Mandala",
                 "level": 0,
-                "type": "curse"
+                "type": "curse",
+                "exclusive": true
             },
             {
                 "name": "Megidola",
@@ -11008,7 +11029,8 @@
             {
                 "name": "Hassou Tobi",
                 "level": 94,
-                "type": "phys"
+                "type": "phys",
+                "exclusive": true
             }
         ],
         "affinities": {
@@ -11576,7 +11598,8 @@
             {
                 "name": "Abyssal Eye",
                 "level": 86,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Wind Amp",
@@ -11636,7 +11659,8 @@
             {
                 "name": "Morning Star",
                 "level": 94,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Spell Master",
@@ -11817,7 +11841,8 @@
             {
                 "name": "Shining Arrows",
                 "level": 0,
-                "type": "bless"
+                "type": "bless",
+                "exclusive": true
             },
             {
                 "name": "Mediarama",
@@ -12012,7 +12037,8 @@
             {
                 "name": "Shining Arrows",
                 "level": 0,
-                "type": "bless"
+                "type": "bless",
+                "exclusive": true
             },
             {
                 "name": "Mediarama",
@@ -12202,7 +12228,8 @@
             {
                 "name": "Abyssal Wings",
                 "level": 0,
-                "type": "curse"
+                "type": "curse",
+                "exclusive": true
             },
             {
                 "name": "Absorb Curse",
@@ -12269,7 +12296,8 @@
             {
                 "name": "Abyssal Wings",
                 "level": 0,
-                "type": "curse"
+                "type": "curse",
+                "exclusive": true
             },
             {
                 "name": "Absorb Curse",
@@ -13010,7 +13038,8 @@
             {
                 "name": "Unshaken Will",
                 "level": 81,
-                "type": "passive"
+                "type": "passive",
+                "exclusive": true
             }
         ],
         "affinities": {
@@ -13296,7 +13325,8 @@
             {
                 "name": "Oratorio",
                 "level": 0,
-                "type": "healing"
+                "type": "healing",
+                "exclusive": true
             },
             {
                 "name": "Megidolaon",
@@ -13498,7 +13528,8 @@
             {
                 "name": "Oratorio",
                 "level": 0,
-                "type": "healing"
+                "type": "healing",
+                "exclusive": true
             },
             {
                 "name": "Megidolaon",
@@ -13585,7 +13616,8 @@
             {
                 "name": "Black Viper",
                 "level": 94,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Invigorate 3",
@@ -14167,7 +14199,8 @@
             {
                 "name": "Holy Benevolence",
                 "level": 0,
-                "type": "healing"
+                "type": "healing",
+                "exclusive": true
             },
             {
                 "name": "Heat Riser",
@@ -14177,7 +14210,8 @@
             {
                 "name": "Holy Embrace",
                 "level": 96,
-                "type": "passive"
+                "type": "passive",
+                "exclusive": true
             },
             {
                 "name": "Angelic Grace",
@@ -14187,7 +14221,8 @@
             {
                 "name": "Holy Whisper",
                 "level": 98,
-                "type": "passive"
+                "type": "passive",
+                "exclusive": true
             }
         ],
         "affinities": {
@@ -14736,7 +14771,8 @@
             {
                 "name": "Myriad Truths",
                 "level": 0,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Victory Cry",
@@ -14809,7 +14845,8 @@
             {
                 "name": "Myriad Truths",
                 "level": 0,
-                "type": "almighty"
+                "type": "almighty",
+                "exclusive": true
             },
             {
                 "name": "Victory Cry",
