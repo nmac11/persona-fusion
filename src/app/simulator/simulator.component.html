@@ -31,6 +31,9 @@
               {{skill.probability * 100 | number: '1.2-2'}}%
             </ng-container>
           </small>
+          <ng-template #skillWithPrR>
+            {{skill.probRatio | number: '1.2-2'}}
+          </ng-template>
         </mat-chip>
         <mat-chip color="primary" *ngFor="let skill of skillsToLearn()" selected>
           {{skill.name}} <small style="margin-left: 8px">Lv. {{skill.level}}</small>
@@ -107,7 +110,3 @@
     </div>
   </div>
 </div>
-
-<ng-template #skillWithPrR>
-  {{skill.probRatio | number: '1.2-2'}}
-</ng-template>
