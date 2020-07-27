@@ -135,7 +135,7 @@ export class P5FusionChartService extends FusionChartService {
     super(compendiumService, specialFusions, normalFusionChart);
   }
 
-  getGemFormulas(arcana: number): { [key: string]: number } {
+  getGemFormulas(arcana: number): any {
     return Object.entries(this.gemFusionChart).reduce((res, [gem, effect]) => {
       const group = (res[effect[arcana]] = res[effect[arcana]] || []);
       group.push(gem);

@@ -18,20 +18,26 @@ export class GemFusionsComponent implements OnInit {
   private compendiumService: CompendiumService;
   private fusionService: GemFusionService;
 
+
   constructor(
     private injector: Injector,
     private activeGameService: ActiveGameService,
   ) {
     const tokens = this.activeGameService.getTokenSet();
-    this.compendiumService = this.injector.get<CompendiumService>(tokens.compendium);
+    this.compendiumService = this.injector.get<CompendiumService>(
+      tokens.compendium,
+    );
     this.fusionService = this.injector.get<GemFusionService>(tokens.gemFusion);
   }
 
+  queryParams(gem: Persona, persona: Persona, minLevel: number): Object {
+    const p2 = persona.name + ',' + minLevel;
+    return { p1: gem.name, p2 };
+  }
+
   ngOnInit(): void {
-    setTimeout(() => {
-      this.fusions = this.persona?.special
-        ? []
-        : this.fusionService.findFusions(this.persona);
-    }, 0);
+    this.fusions = this.persona?.special
+      ? []
+      : this.fusionService.findFusions(this.persona);
   }
 }

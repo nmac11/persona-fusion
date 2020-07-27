@@ -11,23 +11,36 @@ export class GemFusionService {
     @Inject(CompendiumService) private compendiumService: CompendiumService,
   ) {}
 
-  findFusions(persona: Persona) {
+  findFusions(
+    persona: Persona,
+  ): {
+    offset: number;
+    gem: Persona;
+    personae: { persona: Persona; levelRange: number[] }[];
+  }[] {
     return Object.entries(
       this.arcanaFusionService.getGemFormulas(persona.arcana),
-    ).reduce((res, [offset, gems]) => {
-      const group = {
-        offset,
-        personae: this.findGemFusibles(persona, +offset),
-        gems,
-      };
-
-      if (group.personae.length) res.push(group);
-
-      return res;
-    }, []);
+    )
+      .sort((a, b) => +b[0] - +a[0])
+      .reduce((res, [offset, gemNames]) => {
+        const group = {
+          offset,
+          personae: this.findGemFusibles(persona, +offset),
+        };
+        const gems = (gemNames as string[]).map((name) =>
+          this.compendiumService.find(name),
+        );
+        if (group.personae.length) {
+          gems.forEach((gem) => res.push({ gem, ...group }));
+        }
+        return res;
+      }, []);
   }
 
-  private findGemFusibles(persona: Persona, offset: number) {
+  private findGemFusibles(
+    persona: Persona,
+    offset: number,
+  ): { persona: Persona; levelRange: number[] }[] {
     let personae;
     switch (offset) {
       case 1:
@@ -48,7 +61,7 @@ export class GemFusionService {
     });
   }
 
-  private calculateLevelRange(target, fusible, offset) {
+  private calculateLevelRange(target, fusible, offset): number[] {
     const arcanaFamily = this.compendiumService
       .getAllWithRestrictions(fusible.arcana)
       .filter((p) => p.id !== fusible.id);
@@ -76,24 +89,27 @@ export class GemFusionService {
     return range;
   }
 
-  private gemFusibles(persona: Persona, fn: (p: Persona) => boolean) {
+  private gemFusibles(
+    persona: Persona,
+    fn: (p: Persona) => boolean,
+  ): Persona[] {
     return this.compendiumService
       .getAll(persona.arcana)
       .filter((p) => p.id !== persona.id && !p.gem && fn(p));
   }
 
-  private gemFusiblesPlus1(persona: Persona) {
+  private gemFusiblesPlus1(persona: Persona): Persona[] {
     return this.gemFusibles(persona, (p) => p.level < persona.level);
   }
 
-  private gemFusiblesPlus2(persona: Persona) {
+  private gemFusiblesPlus2(persona: Persona): Persona[] {
     return this.gemFusibles(
       persona,
       (p) => p.level < this.compendiumService.downgradeOneRank(persona)?.level,
     );
   }
 
-  private gemFusiblesMinus1(persona: Persona) {
+  private gemFusiblesMinus1(persona: Persona): Persona[] {
     return this.gemFusibles(persona, (p) => {
       const levelLimit = this.compendiumService.upgradeOneRank(persona)?.level;
       if (!levelLimit) return true;
@@ -101,7 +117,7 @@ export class GemFusionService {
     });
   }
 
-  private gemFusiblesMinus2(persona: Persona) {
+  private gemFusiblesMinus2(persona: Persona): Persona[] {
     return this.gemFusibles(persona, (p) => {
       let levelLimit = this.compendiumService.upgradeTwoRanks(persona)?.level;
       const upgrade = this.compendiumService.upgradeOneRank(persona);
