@@ -109,6 +109,12 @@ export class SimulatorComponent implements OnInit {
     return this.appSettingsService.getValues()['PROBABILITY'];
   }
 
+  randomInheritance(): boolean {
+    return ['p3p', 'p3fes', 'p3ans', 'p4'].includes(
+      this.activeGameService.game,
+    );
+  }
+
   private loadFusionNodesFromRouteParams(): void {
     this.fusionItems = this.fusionNodeHelper.createFusionNodesFromRouteParams(
       this.route.parent.snapshot.queryParams,
