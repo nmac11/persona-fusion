@@ -16,9 +16,14 @@
                     #selectionList
                     (selectionChange)="selectionChange($event.option.value)" dense>
   <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="60">
-    <mat-list-option *cdkVirtualFor="let persona of list" [value]="persona" (dblclick)="dblClickSubmit(persona)">
-      <span mat-line>{{persona.name}}</span>
-      <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
+    <mat-list-option *cdkVirtualFor="let filtered of list" [value]="filtered.persona" (dblclick)="dblClickSubmit(filtered.persona)">
+      <span mat-line>{{filtered.persona.name}} / Lv. {{filtered.persona.level}}</span>
+      <span mat-line *ngIf="filtered.matchedSkills.length > 0; else arcana">
+        {{matchedSkills(filtered.matchedSkills)}}
+      </span>
+      <ng-template #arcana>
+        <span mat-line >Arcana: {{filtered.persona.arcanaName}}</span>
+      </ng-template>
     </mat-list-option>
   </cdk-virtual-scroll-viewport>
 </mat-selection-list>

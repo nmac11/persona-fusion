@@ -4,4 +4,5 @@
   height: 40vh;
   max-height: 500px;
   min-height: 200px;
+  overflow-x: hidden;
 }
