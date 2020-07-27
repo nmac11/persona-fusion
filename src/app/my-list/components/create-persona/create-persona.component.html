@@ -5,8 +5,8 @@
       <mat-form-field appearance="fill" style="width: 100%;">
         <mat-label>Save name</mat-label>
         <input #saveNameField autocomplete="off" formControlName="saveName" matInput maxlength="30">
-        <mat-error *ngIf="createForm.get('saveName').getError('required')">Save name is required.</mat-error>
         <mat-error *ngIf="createForm.get('saveName').getError('unavailable')">A record with that name already exists.</mat-error>
+        <mat-error *ngIf="createForm.get('saveName').getError('empty')">Save name is required.</mat-error>
       </mat-form-field>
     </div>
     <shared-dialog-persona-list (changeSelected)="selectionChange($event)"></shared-dialog-persona-list>

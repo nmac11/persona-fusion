@@ -85,7 +85,7 @@ export class SaveFusionDialogComponent implements OnInit {
       saveName: [
         '',
         {
-          validators: [Validators.required],
+          validators: [Validators.required, SaveNameValidators.empty],
           asyncValidators: [
             SaveNameValidators.availability(this.personaStoreService),
           ],
@@ -113,7 +113,7 @@ export class SaveFusionDialogComponent implements OnInit {
       this.fusionItem,
       formValue.skills,
     );
-    fusionNode.saveName = formValue.saveName;
+    fusionNode.saveName = formValue.saveName.trim();
     return fusionNode;
   }
 

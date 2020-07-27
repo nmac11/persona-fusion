@@ -32,7 +32,7 @@ export class CreatePersonaComponent implements OnInit {
       saveName: [
         '',
         {
-          validators: Validators.required,
+          validators: [Validators.required, SaveNameValidators.empty],
           asyncValidators: SaveNameValidators.availability(
             this.personaStoreService,
           ),
@@ -55,7 +55,7 @@ export class CreatePersonaComponent implements OnInit {
     const { saveName, fusionNode } = formValue;
     const saveId = await this.personaStoreService.save({
       ...fusionNode,
-      saveName,
+      saveName: saveName.trim(),
     });
     const success = typeof saveId === 'number';
     this.openSnackBar(success);
