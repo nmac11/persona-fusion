@@ -9,8 +9,8 @@
     </button>
   </mat-form-field>
 </div>
-<mat-list>
-  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+<mat-list dense>
+  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="60">
     <mat-list-item *cdkVirtualFor="let skill of skills">
       <span matLine>
         {{skill.name}}

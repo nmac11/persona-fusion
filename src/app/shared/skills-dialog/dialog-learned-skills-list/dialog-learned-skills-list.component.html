@@ -1,4 +1,4 @@
-<mat-list cdkDropList (cdkDropListDropped)="drop($event)" class="learned-skill-list">
+<mat-list cdkDropList (cdkDropListDropped)="drop($event)" class="learned-skill-list" dense>
   <mat-list-item cdkDrag *ngFor="let skill of skills; let i = index"
     class="learned-skill"
     [style.color]="(i < 8) ? 'rgba(0,0,0,.87)' : 'rgba(0,0,0,.54)'">

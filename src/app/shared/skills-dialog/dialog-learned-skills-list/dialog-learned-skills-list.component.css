@@ -18,7 +18,7 @@
 ::ng-deep .learned-skill.cdk-drag-preview .mat-list-item-content {
   display: flex;
   align-items: center;
-  padding: 0 56px;
+  padding: 0 0 0 56px;
 }
 
 ::ng-deep .learned-skill.cdk-drag-preview .mat-list-item-content mat-icon {

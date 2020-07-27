@@ -14,8 +14,9 @@
 <mat-selection-list *ngIf="list?.length"
                     multiple="false"
                     #selectionList
-                    (selectionChange)="selectionChange($event.option.value)">
-  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="88">
+                    (selectionChange)="selectionChange($event.option.value)"
+                    dense>
+  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="76">
     <mat-list-option *cdkVirtualFor="let savedPersona of list" [value]="savedPersona" (dblclick)="dblClickSubmit(savedPersona)">
       <span mat-line>{{savedPersona.persona.name}}</span>
       <span mat-line>{{savedPersona.saveName}}</span>

@@ -14,8 +14,8 @@
 <mat-selection-list *ngIf="list?.length"
                     multiple="false"
                     #selectionList
-                    (selectionChange)="selectionChange($event.option.value)">
-  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="72">
+                    (selectionChange)="selectionChange($event.option.value)" dense>
+  <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="60">
     <mat-list-option *cdkVirtualFor="let persona of list" [value]="persona" (dblclick)="dblClickSubmit(persona)">
       <span mat-line>{{persona.name}}</span>
       <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
