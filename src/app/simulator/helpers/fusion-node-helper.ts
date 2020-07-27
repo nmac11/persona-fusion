@@ -17,12 +17,13 @@ export class FusionNodeHelper {
     level: number = null,
     skills: Skill[] = [],
   ): FusionNode {
+    const currentLevel = level >= p.level && level < 100 ? level : p.level;
     return {
       persona: p,
-      currentLevel: level >= p.level && level < 100 ? level : p.level,
+      currentLevel,
       skills: skills.length
         ? skills
-        : p.skills.filter((skill) => skill.level === 0),
+        : p.skills.filter((skill) => skill.level <= currentLevel),
     };
   }
 
