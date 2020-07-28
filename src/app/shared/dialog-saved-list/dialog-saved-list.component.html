@@ -18,9 +18,11 @@
                     dense>
   <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="76">
     <mat-list-option *cdkVirtualFor="let savedPersona of list" [value]="savedPersona" (dblclick)="dblClickSubmit(savedPersona)">
-      <span mat-line>{{savedPersona.persona.name}}</span>
-      <span mat-line>{{savedPersona.saveName}}</span>
-      <span mat-line>{{savedPersona.persona.arcanaName}} / {{savedPersona.currentLevel}}</span>
+      <span mat-line>{{savedPersona.fusionNode.saveName}}</span>
+      <span mat-line>
+        {{savedPersona.fusionNode.persona.name}} / {{savedPersona.fusionNode.persona.arcanaName}} / {{savedPersona.fusionNode.currentLevel}}
+      </span>
+      <span mat-line>{{skillsSummary(savedPersona)}}</span>
     </mat-list-option>
   </cdk-virtual-scroll-viewport>
 </mat-selection-list>

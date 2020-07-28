@@ -11,6 +11,12 @@ import { FusionNode } from '../../models/fusion-node';
 import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
 import { PersonaStoreService } from '../../services/persona-store.service';
 import { ActiveGameService } from '../../services/active-game.service';
+import { Skill } from '../../models/skill';
+
+interface FilteredFusionNode {
+  fusionNode: FusionNode;
+  matchedSkills: Skill[];
+}
 
 @Component({
   selector: 'shared-dialog-saved-list',
@@ -23,7 +29,7 @@ export class DialogSavedListComponent implements OnInit {
   changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
   @Output() dblClickSelection: EventEmitter<FusionNode> = new EventEmitter();
 
-  list: FusionNode[];
+  list: FilteredFusionNode[];
 
   constructor(
     private activeGameService: ActiveGameService,
@@ -39,8 +45,19 @@ export class DialogSavedListComponent implements OnInit {
     this.loadList();
   }
 
+  skillsSummary(filteredFusionNode: FilteredFusionNode): string {
+    const skills =
+      filteredFusionNode.matchedSkills.length === 0
+        ? filteredFusionNode.fusionNode.skills
+        : filteredFusionNode.matchedSkills;
+
+    return skills.map((s) => s.name).join(', ');
+  }
+
   async loadList(): Promise<void> {
-    this.list = await this.personaStoreService.loadAll();
+    this.list = (await this.personaStoreService.loadAll()).map(
+      this.filterFunction,
+    );
   }
 
   async clearFilter(): Promise<void> {
@@ -48,21 +65,37 @@ export class DialogSavedListComponent implements OnInit {
   }
 
   async applyFilter(filter: string): Promise<void> {
-    this.list = (await this.personaStoreService.loadAll()).filter(
-      (storedPersona: FusionNode) => {
-        return (
-          partialMatchRegExp(filter).test(storedPersona.saveName) ||
-          partialMatchRegExp(filter).test(storedPersona.persona.name)
-        );
-      },
-    );
+    if (filter === '') this.loadList();
+    else
+      this.list = (await this.personaStoreService.loadAll()).reduce(
+        (res, f) => {
+          const matchedName =
+            partialMatchRegExp(filter).test(f.persona.name) ||
+            partialMatchRegExp(filter).test(f.saveName);
+          const matchedSkills = f.skills.filter((s) =>
+            partialMatchRegExp(filter).test(s.name),
+          );
+          if (matchedName) res.unshift({ fusionNode: f, matchedSkills });
+          else if (matchedSkills.length > 0)
+            res.push({ fusionNode: f, matchedSkills });
+          return res;
+        },
+        [],
+      );
   }
 
-  selectionChange(storedFusionNode: FusionNode): void {
-    this.changeSelected.emit(storedFusionNode);
+  selectionChange(filteredFusionNode: FilteredFusionNode): void {
+    this.changeSelected.emit(filteredFusionNode.fusionNode);
   }
 
-  dblClickSubmit(storedFusionNode: FusionNode): void {
-    this.dblClickSelection.emit(storedFusionNode);
+  dblClickSubmit(filteredFusionNode: FilteredFusionNode): void {
+    this.dblClickSelection.emit(filteredFusionNode.fusionNode);
   }
+
+  private filterFunction: (f: FusionNode) => FilteredFusionNode = (f) => {
+    return {
+      fusionNode: f,
+      matchedSkills: f.skills,
+    };
+  };
 }

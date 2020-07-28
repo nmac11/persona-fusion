@@ -6,8 +6,8 @@
 }
 
 ::ng-deep .simulator-list-overlay-pane mat-dialog-container {
-  width: 400px;
-  max-width: 80vw;
+  width: 600px;
+  max-width: 90vw;
   margin: auto;
 }
 
