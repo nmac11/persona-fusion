@@ -44,20 +44,42 @@ export class FusionNodeHelper {
     const {
       skillsInheritedCount,
       inheritableSkills,
+      fusionComponents,
+      skills,
       ...fusionNode
     } = fusionResult;
-    fusionNode.skills = this.generateSkills(
+
+    this.limitFusionComponentsSkills(<FusionNode>fusionNode, fusionComponents);
+
+    this.generateSkills(
+      <FusionNode>fusionNode,
       fusionResult.skills,
       inheritedSkills,
     );
-    return fusionNode;
+    return <FusionNode>fusionNode;
+  }
+
+  private limitFusionComponentsSkills(
+    fusionNode: FusionNode,
+    fusionComponents,
+  ): void {
+    fusionNode.fusionComponents = fusionComponents.reduce((res, f) => {
+      const { skills, ...copy } = f;
+      copy.skills = skills.slice(0, 8);
+      res.push(copy);
+      return res;
+    }, []);
   }
 
   private generateSkills(
+    fusionNode: FusionNode,
     innateSkills: Skill[],
     inheritedSkills: InheritableSkill[],
-  ): Skill[] {
-    return [...innateSkills, ...this.convertInheritedSkills(inheritedSkills)];
+  ): void {
+    fusionNode.skills = [
+      ...innateSkills,
+      ...this.convertInheritedSkills(inheritedSkills),
+    ];
   }
 
   private convertInheritedSkills(
