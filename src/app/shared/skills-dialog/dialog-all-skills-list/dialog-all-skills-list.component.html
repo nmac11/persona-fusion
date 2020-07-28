@@ -13,7 +13,7 @@
   <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="60">
     <mat-list-item *cdkVirtualFor="let skill of skills">
       <span matLine>
-        {{skill.name}}
+        <span class="mat-body-2">{{skill.name}}</span>
       </span>
       <span mat-line class="mat-caption mat-body-1">{{skill.type}}</span>
       <button mat-icon-button (click)="add(skill)">
