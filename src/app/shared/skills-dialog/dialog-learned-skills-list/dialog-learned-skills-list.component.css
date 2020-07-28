@@ -12,16 +12,27 @@
               0 3px 14px 2px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: row !important;
-  color: red;
+  cursor: pointer;
+}
+
+.drag-handle {
+  cursor: grabbing;
 }
 
 ::ng-deep .learned-skill.cdk-drag-preview .mat-list-item-content {
   display: flex;
   align-items: center;
-  padding: 0 0 0 56px;
 }
 
-::ng-deep .learned-skill.cdk-drag-preview .mat-list-item-content mat-icon {
+::ng-deep .learned-skill.cdk-drag-preview .mat-list-item-content .drag-handle {
+  padding: 0 16px 0 24px;
+}
+
+::ng-deep .learned-skill.cdk-drag-preview .mat-list-item-content .remove-button {
+  display: none;
+}
+
+::ng-deep .learned-skill.cdk-drag-preview .mat-list-item-content .skill-type {
   display: none;
 }
 
