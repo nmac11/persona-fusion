@@ -1,13 +1,13 @@
 ::ng-deep .simulator-save-overlay-pane {
   width: 100% !important;
   max-width: unset !important;
-  padding: 48px;
+  padding: 16px 32px;
   overflow: auto;
 }
 
 ::ng-deep .simulator-save-overlay-pane mat-dialog-container {
-  width: 400px;
-  max-width: 80vw;
+  width: 480px;
+  max-width: 90vw;
   margin: auto;
 }
 
