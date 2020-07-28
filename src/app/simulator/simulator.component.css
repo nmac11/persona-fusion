@@ -1,3 +1,16 @@
+.simulator-main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.simulator-main-container > * {
+  margin-bottom: 16px;
+}
+
+.simulator-main-container > *:last-child {
+  margin-bottom: 0;
+}
+
 .skill-legend {
   display: inline-block;
   margin-right: 4px;

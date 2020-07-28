@@ -1,0 +1,12 @@
+.persona-info-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.persona-info-container > * {
+  margin-bottom: 16px;
+}
+
+.persona-info-container > *:last-child {
+  margin-bottom: 0px;
+}
