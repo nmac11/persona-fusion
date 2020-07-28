@@ -20,7 +20,7 @@
     <mat-list-option *cdkVirtualFor="let savedPersona of list" [value]="savedPersona" (dblclick)="dblClickSubmit(savedPersona)">
       <span mat-line>{{savedPersona.fusionNode.saveName}}</span>
       <span mat-line>
-        {{savedPersona.fusionNode.persona.name}} / {{savedPersona.fusionNode.persona.arcanaName}} / {{savedPersona.fusionNode.currentLevel}}
+        <span class="mat-body-2">{{savedPersona.fusionNode.persona.name}}</span> / {{savedPersona.fusionNode.currentLevel}} / {{savedPersona.fusionNode.persona.arcanaName}}
       </span>
       <span mat-line>{{skillsSummary(savedPersona)}}</span>
     </mat-list-option>

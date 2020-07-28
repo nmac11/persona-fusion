@@ -95,7 +95,7 @@ export class DialogSavedListComponent implements OnInit {
   private filterFunction: (f: FusionNode) => FilteredFusionNode = (f) => {
     return {
       fusionNode: f,
-      matchedSkills: f.skills,
+      matchedSkills: f.skills.slice(0, 8),
     };
   };
 }

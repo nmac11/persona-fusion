@@ -73,7 +73,9 @@ export class DialogPersonaListComponent implements OnInit {
       }, []);
   }
 
-  matchedSkills(skills: Skill[]): string {
+  skillsSummary(f: FilteredPersona): string {
+    const skills =
+      f.matchedSkills.length > 0 ? f.matchedSkills : f.persona.skills;
     return skills
       .map((s) => {
         const levelSuffix = s.level > 0 ? ` (${s.level})` : '';
