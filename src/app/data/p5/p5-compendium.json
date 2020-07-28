@@ -5,13 +5,13 @@
     "level": 1,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 2,
-      "ma": 2,
-      "en": 2,
-      "ag": 3,
-      "lu": 1
-    },
+    "stats": [
+      2,
+      2,
+      2,
+      3,
+      1
+    ],
     "skills": [
       {
         "name": "Eiha",
@@ -39,18 +39,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "s"
-    },
+    "affinities": "---w----ws",
     "id": 1
   },
   {
@@ -59,13 +48,13 @@
     "level": 8,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 7,
-      "ma": 3,
-      "en": 9,
-      "ag": 8,
-      "lu": 4
-    },
+    "stats": [
+      7,
+      3,
+      9,
+      8,
+      4
+    ],
     "skills": [
       {
         "name": "Snap",
@@ -93,18 +82,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s---w-----",
     "id": 2
   },
   {
@@ -113,13 +91,13 @@
     "level": 16,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 8,
-      "ma": 14,
-      "en": 10,
-      "ag": 13,
-      "lu": 10
-    },
+    "stats": [
+      8,
+      14,
+      10,
+      13,
+      10
+    ],
     "skills": [
       {
         "name": "Dormina",
@@ -152,18 +130,7 @@
         "type": "wind"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-w--ss-w--",
     "id": 3
   },
   {
@@ -173,14 +140,16 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "preReqs": ["DLC_IZANAGI"],
-    "stats": {
-      "st": 14,
-      "ma": 13,
-      "en": 13,
-      "ag": 14,
-      "lu": 13
-    },
+    "preReqs": [
+      "DLC_IZANAGI"
+    ],
+    "stats": [
+      14,
+      13,
+      13,
+      14,
+      13
+    ],
     "skills": [
       {
         "name": "Cross Slash",
@@ -219,18 +188,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "----sw---n",
     "id": 4
   },
   {
@@ -240,14 +198,16 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "preReqs": ["DLC_IZANAGI"],
-    "stats": {
-      "st": 16,
-      "ma": 15,
-      "en": 15,
-      "ag": 16,
-      "lu": 14
-    },
+    "preReqs": [
+      "DLC_IZANAGI"
+    ],
+    "stats": [
+      16,
+      15,
+      15,
+      16,
+      14
+    ],
     "skills": [
       {
         "name": "Cross Slash",
@@ -286,18 +246,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "----nw---n",
     "id": 5
   },
   {
@@ -307,14 +256,16 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "preReqs": ["DLC_ORPHEUS"],
-    "stats": {
-      "st": 17,
-      "ma": 17,
-      "en": 17,
-      "ag": 17,
-      "lu": 17
-    },
+    "preReqs": [
+      "DLC_ORPHEUS"
+    ],
+    "stats": [
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
     "skills": [
       {
         "name": "Cadenza",
@@ -353,18 +304,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "w"
-    },
+    "affinities": "----w---sw",
     "id": 6
   },
   {
@@ -374,14 +314,16 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "dlc": true,
-    "preReqs": ["DLC_ORPHEUS"],
-    "stats": {
-      "st": 19,
-      "ma": 19,
-      "en": 19,
-      "ag": 19,
-      "lu": 19
-    },
+    "preReqs": [
+      "DLC_ORPHEUS"
+    ],
+    "stats": [
+      19,
+      19,
+      19,
+      19,
+      19
+    ],
     "skills": [
       {
         "name": "Cadenza",
@@ -420,18 +362,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "w"
-    },
+    "affinities": "----w---sw",
     "id": 7
   },
   {
@@ -440,13 +371,13 @@
     "level": 32,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 21,
-      "ma": 23,
-      "en": 19,
-      "ag": 22,
-      "lu": 18
-    },
+    "stats": [
+      21,
+      23,
+      19,
+      22,
+      18
+    ],
     "skills": [
       {
         "name": "Agilao",
@@ -484,18 +415,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "w",
-      "gun": "-",
-      "fire": "r",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "-",
-      "curse": "s"
-    },
+    "affinities": "w-r----s-s",
     "id": 8
   },
   {
@@ -504,13 +424,13 @@
     "level": 38,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 24,
-      "ma": 24,
-      "en": 30,
-      "ag": 23,
-      "lu": 20
-    },
+    "stats": [
+      24,
+      24,
+      30,
+      23,
+      20
+    ],
     "skills": [
       {
         "name": "Life Drain",
@@ -543,18 +463,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "sss---s-wn",
     "id": 9
   },
   {
@@ -563,13 +472,13 @@
     "level": 42,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 32,
-      "ma": 24,
-      "en": 25,
-      "ag": 31,
-      "lu": 21
-    },
+    "stats": [
+      32,
+      24,
+      25,
+      31,
+      21
+    ],
     "skills": [
       {
         "name": "Counterstrike",
@@ -597,18 +506,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "--s-----wn",
     "id": 10
   },
   {
@@ -618,13 +516,13 @@
     "level": 49,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 35,
-      "ma": 33,
-      "en": 30,
-      "ag": 32,
-      "lu": 24
-    },
+    "stats": [
+      35,
+      33,
+      30,
+      32,
+      24
+    ],
     "skills": [
       {
         "name": "Masukunda",
@@ -662,18 +560,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "------sw-n",
     "id": 11
   },
   {
@@ -683,13 +570,13 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "gem": true,
-    "stats": {
-      "st": 50,
-      "ma": 50,
-      "en": 50,
-      "ag": 50,
-      "lu": 50
-    },
+    "stats": [
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
     "skills": [
       {
         "name": "Mabufudyne",
@@ -732,18 +619,7 @@
         "type": "elec"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "n",
-      "fire": "r",
-      "ice": "r",
-      "electricity": "r",
-      "wind": "r",
-      "psychic": "r",
-      "nuke": "r",
-      "bless": "-",
-      "curse": "r"
-    },
+    "affinities": "snrrrrrr-r",
     "id": 12
   },
   {
@@ -752,13 +628,13 @@
     "level": 61,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 35,
-      "ma": 41,
-      "en": 38,
-      "ag": 40,
-      "lu": 36
-    },
+    "stats": [
+      35,
+      41,
+      38,
+      40,
+      36
+    ],
     "skills": [
       {
         "name": "Abysmal Surge",
@@ -796,18 +672,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "----r---ss",
     "id": 13
   },
   {
@@ -817,13 +682,13 @@
     "level": 67,
     "arcanaName": "Fool",
     "arcana": 0,
-    "stats": {
-      "st": 44,
-      "ma": 46,
-      "en": 41,
-      "ag": 42,
-      "lu": 35
-    },
+    "stats": [
+      44,
+      46,
+      41,
+      42,
+      35
+    ],
     "skills": [
       {
         "name": "Mabufudyne",
@@ -856,18 +721,7 @@
         "type": "ice"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "r",
-      "ice": "d",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "n",
-      "bless": "-",
-      "curse": "r"
-    },
+    "affinities": "--rd---n-r",
     "id": 14
   },
   {
@@ -877,14 +731,16 @@
     "arcanaName": "Fool",
     "arcana": 0,
     "ultimate": true,
-    "preReqs": ["SL_FOOL"],
-    "stats": {
-      "st": 56,
-      "ma": 51,
-      "en": 49,
-      "ag": 57,
-      "lu": 43
-    },
+    "preReqs": [
+      "SL_FOOL"
+    ],
+    "stats": [
+      56,
+      51,
+      49,
+      57,
+      43
+    ],
     "skills": [
       {
         "name": "Ali Dance",
@@ -927,18 +783,7 @@
         "type": "gun"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "d",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "--wd----nn",
     "id": 15
   },
   {
@@ -948,15 +793,17 @@
     "level": 95,
     "arcanaName": "Fool",
     "arcana": 0,
-    "preReqs": ["UL_SATANAEL"],
+    "preReqs": [
+      "UL_SATANAEL"
+    ],
     "specialCondition": "Unlock true ending",
-    "stats": {
-      "st": 63,
-      "ma": 60,
-      "en": 57,
-      "ag": 56,
-      "lu": 56
-    },
+    "stats": [
+      63,
+      60,
+      57,
+      56,
+      56
+    ],
     "skills": [
       {
         "name": "Maeigaon",
@@ -999,18 +846,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "s",
-      "ice": "s",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "s",
-      "nuke": "s",
-      "bless": "n",
-      "curse": "d"
-    },
+    "affinities": "ssssssssnd",
     "id": 16
   },
   {
@@ -1019,13 +855,13 @@
     "level": 2,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 2,
-      "ma": 3,
-      "en": 3,
-      "ag": 3,
-      "lu": 2
-    },
+    "stats": [
+      2,
+      3,
+      3,
+      3,
+      2
+    ],
     "skills": [
       {
         "name": "Agi",
@@ -1053,18 +889,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-wdw-w----",
     "id": 17
   },
   {
@@ -1073,13 +898,13 @@
     "level": 11,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 8,
-      "ma": 9,
-      "en": 7,
-      "ag": 9,
-      "lu": 7
-    },
+    "stats": [
+      8,
+      9,
+      7,
+      9,
+      7
+    ],
     "skills": [
       {
         "name": "Baisudi",
@@ -1112,18 +937,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "n",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--wn------",
     "id": 18
   },
   {
@@ -1132,13 +946,13 @@
     "level": 17,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 13,
-      "ma": 10,
-      "en": 12,
-      "ag": 15,
-      "lu": 8
-    },
+    "stats": [
+      13,
+      10,
+      12,
+      15,
+      8
+    ],
     "skills": [
       {
         "name": "Evil Touch",
@@ -1176,18 +990,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----w-s---",
     "id": 19
   },
   {
@@ -1196,13 +999,13 @@
     "level": 24,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 11,
-      "ma": 13,
-      "en": 14,
-      "ag": 20,
-      "lu": 21
-    },
+    "stats": [
+      11,
+      13,
+      14,
+      20,
+      21
+    ],
     "skills": [
       {
         "name": "Dormin Rush",
@@ -1240,18 +1043,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----ws----",
     "id": 20
   },
   {
@@ -1260,13 +1052,13 @@
     "level": 28,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 16,
-      "ma": 19,
-      "en": 19,
-      "ag": 18,
-      "lu": 19
-    },
+    "stats": [
+      16,
+      19,
+      19,
+      18,
+      19
+    ],
     "skills": [
       {
         "name": "Life Drain",
@@ -1309,18 +1101,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "-"
-    },
+    "affinities": "--d-----w-",
     "id": 21
   },
   {
@@ -1329,13 +1110,13 @@
     "level": 43,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 23,
-      "ma": 35,
-      "en": 26,
-      "ag": 30,
-      "lu": 22
-    },
+    "stats": [
+      23,
+      35,
+      26,
+      30,
+      22
+    ],
     "skills": [
       {
         "name": "Makajamaon",
@@ -1368,18 +1149,7 @@
         "type": "fire"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--n-sw----",
     "id": 22
   },
   {
@@ -1388,13 +1158,13 @@
     "level": 48,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 28,
-      "ma": 34,
-      "en": 30,
-      "ag": 33,
-      "lu": 26
-    },
+    "stats": [
+      28,
+      34,
+      30,
+      33,
+      26
+    ],
     "skills": [
       {
         "name": "Bloodbath",
@@ -1427,18 +1197,7 @@
         "type": "curse"
       }
     ],
-    "affinities": {
-      "physical": "r",
-      "gun": "r",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "rrn-w---wn",
     "id": 23
   },
   {
@@ -1447,13 +1206,13 @@
     "level": 59,
     "arcanaName": "Magician",
     "arcana": 1,
-    "stats": {
-      "st": 37,
-      "ma": 40,
-      "en": 39,
-      "ag": 35,
-      "lu": 33
-    },
+    "stats": [
+      37,
+      40,
+      39,
+      35,
+      33
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -1486,18 +1245,7 @@
         "type": "fire"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--dw------",
     "id": 24
   },
   {
@@ -1507,14 +1255,16 @@
     "arcanaName": "Magician",
     "arcana": 1,
     "ultimate": true,
-    "preReqs": ["SL_MAGICIAN"],
-    "stats": {
-      "st": 54,
-      "ma": 48,
-      "en": 47,
-      "ag": 49,
-      "lu": 37
-    },
+    "preReqs": [
+      "SL_MAGICIAN"
+    ],
+    "stats": [
+      54,
+      48,
+      47,
+      49,
+      37
+    ],
     "skills": [
       {
         "name": "Ali Dance",
@@ -1557,18 +1307,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s------w--",
     "id": 25
   },
   {
@@ -1577,13 +1316,13 @@
     "level": 6,
     "arcanaName": "Priestess",
     "arcana": 2,
-    "stats": {
-      "st": 4,
-      "ma": 7,
-      "en": 4,
-      "ag": 5,
-      "lu": 5
-    },
+    "stats": [
+      4,
+      7,
+      4,
+      5,
+      5
+    ],
     "skills": [
       {
         "name": "Bufu",
@@ -1611,18 +1350,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "s",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--wsw-----",
     "id": 26
   },
   {
@@ -1631,13 +1359,13 @@
     "level": 11,
     "arcanaName": "Priestess",
     "arcana": 2,
-    "stats": {
-      "st": 7,
-      "ma": 11,
-      "en": 6,
-      "ag": 10,
-      "lu": 6
-    },
+    "stats": [
+      7,
+      11,
+      6,
+      10,
+      6
+    ],
     "skills": [
       {
         "name": "Bufu",
@@ -1670,18 +1398,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---sw-----",
     "id": 27
   },
   {
@@ -1691,13 +1408,13 @@
     "arcanaName": "Priestess",
     "arcana": 2,
     "gem": true,
-    "stats": {
-      "st": 25,
-      "ma": 25,
-      "en": 25,
-      "ag": 25,
-      "lu": 25
-    },
+    "stats": [
+      25,
+      25,
+      25,
+      25,
+      25
+    ],
     "skills": [
       {
         "name": "Dodge Bless",
@@ -1740,18 +1457,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "s",
-      "ice": "s",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "sssssss-nn",
     "id": 28
   },
   {
@@ -1760,13 +1466,13 @@
     "level": 26,
     "arcanaName": "Priestess",
     "arcana": 2,
-    "stats": {
-      "st": 15,
-      "ma": 21,
-      "en": 16,
-      "ag": 18,
-      "lu": 15
-    },
+    "stats": [
+      15,
+      21,
+      16,
+      18,
+      15
+    ],
     "skills": [
       {
         "name": "Agilao",
@@ -1804,18 +1510,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "------w-nn",
     "id": 29
   },
   {
@@ -1824,13 +1519,13 @@
     "level": 40,
     "arcanaName": "Priestess",
     "arcana": 2,
-    "stats": {
-      "st": 22,
-      "ma": 31,
-      "en": 24,
-      "ag": 28,
-      "lu": 22
-    },
+    "stats": [
+      22,
+      31,
+      24,
+      28,
+      22
+    ],
     "skills": [
       {
         "name": "Energy Drop",
@@ -1863,18 +1558,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "n",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "--w--n--s-",
     "id": 30
   },
   {
@@ -1883,13 +1567,13 @@
     "level": 45,
     "arcanaName": "Priestess",
     "arcana": 2,
-    "stats": {
-      "st": 29,
-      "ma": 30,
-      "en": 28,
-      "ag": 30,
-      "lu": 25
-    },
+    "stats": [
+      29,
+      30,
+      28,
+      30,
+      25
+    ],
     "skills": [
       {
         "name": "Magarula",
@@ -1927,18 +1611,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "r",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "---r-----n",
     "id": 31
   },
   {
@@ -1947,13 +1620,13 @@
     "level": 50,
     "arcanaName": "Priestess",
     "arcana": 2,
-    "stats": {
-      "st": 30,
-      "ma": 35,
-      "en": 32,
-      "ag": 33,
-      "lu": 27
-    },
+    "stats": [
+      30,
+      35,
+      32,
+      33,
+      27
+    ],
     "skills": [
       {
         "name": "Me Patra",
@@ -1991,18 +1664,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---ns--w--",
     "id": 32
   },
   {
@@ -2011,13 +1673,13 @@
     "level": 55,
     "arcanaName": "Priestess",
     "arcana": 2,
-    "stats": {
-      "st": 35,
-      "ma": 39,
-      "en": 34,
-      "ag": 34,
-      "lu": 30
-    },
+    "stats": [
+      35,
+      39,
+      34,
+      34,
+      30
+    ],
     "skills": [
       {
         "name": "Evil Touch",
@@ -2055,18 +1717,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "r",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "---r-----n",
     "id": 33
   },
   {
@@ -2076,14 +1727,16 @@
     "arcanaName": "Priestess",
     "arcana": 2,
     "ultimate": true,
-    "preReqs": ["SL_PRIESTESS"],
-    "stats": {
-      "st": 44,
-      "ma": 48,
-      "en": 45,
-      "ag": 51,
-      "lu": 38
-    },
+    "preReqs": [
+      "SL_PRIESTESS"
+    ],
+    "stats": [
+      44,
+      48,
+      45,
+      51,
+      38
+    ],
     "skills": [
       {
         "name": "Makougaon",
@@ -2121,18 +1774,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "--s-w---n-",
     "id": 34
   },
   {
@@ -2142,13 +1784,13 @@
     "arcanaName": "Empress",
     "arcana": 3,
     "gem": true,
-    "stats": {
-      "st": 15,
-      "ma": 15,
-      "en": 15,
-      "ag": 15,
-      "lu": 15
-    },
+    "stats": [
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
     "skills": [
       {
         "name": "Media",
@@ -2191,18 +1833,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "w",
-      "fire": "s",
-      "ice": "s",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "s",
-      "nuke": "s",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "swssssssss",
     "id": 35
   },
   {
@@ -2211,13 +1842,13 @@
     "level": 20,
     "arcanaName": "Empress",
     "arcana": 3,
-    "stats": {
-      "st": 14,
-      "ma": 11,
-      "en": 13,
-      "ag": 16,
-      "lu": 13
-    },
+    "stats": [
+      14,
+      11,
+      13,
+      16,
+      13
+    ],
     "skills": [
       {
         "name": "Counter",
@@ -2250,18 +1881,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---s---w--",
     "id": 36
   },
   {
@@ -2270,13 +1890,13 @@
     "level": 26,
     "arcanaName": "Empress",
     "arcana": 3,
-    "stats": {
-      "st": 21,
-      "ma": 15,
-      "en": 18,
-      "ag": 19,
-      "lu": 12
-    },
+    "stats": [
+      21,
+      15,
+      18,
+      19,
+      12
+    ],
     "skills": [
       {
         "name": "Agilao",
@@ -2314,18 +1934,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "-s-ws----n",
     "id": 37
   },
   {
@@ -2334,13 +1943,13 @@
     "level": 40,
     "arcanaName": "Empress",
     "arcana": 3,
-    "stats": {
-      "st": 24,
-      "ma": 29,
-      "en": 25,
-      "ag": 26,
-      "lu": 23
-    },
+    "stats": [
+      24,
+      29,
+      25,
+      26,
+      23
+    ],
     "skills": [
       {
         "name": "Energy Shower",
@@ -2383,18 +1992,7 @@
         "type": "almighty"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "-----ws-s-",
     "id": 38
   },
   {
@@ -2403,13 +2001,13 @@
     "level": 50,
     "arcanaName": "Empress",
     "arcana": 3,
-    "stats": {
-      "st": 34,
-      "ma": 32,
-      "en": 34,
-      "ag": 28,
-      "lu": 29
-    },
+    "stats": [
+      34,
+      32,
+      34,
+      28,
+      29
+    ],
     "skills": [
       {
         "name": "Bad Beat",
@@ -2447,18 +2045,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--s-------",
     "id": 39
   },
   {
@@ -2467,13 +2054,13 @@
     "level": 56,
     "arcanaName": "Empress",
     "arcana": 3,
-    "stats": {
-      "st": 32,
-      "ma": 40,
-      "en": 35,
-      "ag": 38,
-      "lu": 30
-    },
+    "stats": [
+      32,
+      40,
+      35,
+      38,
+      30
+    ],
     "skills": [
       {
         "name": "Freidyne",
@@ -2506,18 +2093,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "s",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "------wsss",
     "id": 40
   },
   {
@@ -2526,13 +2102,13 @@
     "level": 77,
     "arcanaName": "Empress",
     "arcana": 3,
-    "stats": {
-      "st": 53,
-      "ma": 45,
-      "en": 46,
-      "ag": 53,
-      "lu": 41
-    },
+    "stats": [
+      53,
+      45,
+      46,
+      53,
+      41
+    ],
     "skills": [
       {
         "name": "Psiodyne",
@@ -2570,18 +2146,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "r",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "s"
-    },
+    "affinities": "--n---r--s",
     "id": 41
   },
   {
@@ -2591,14 +2156,16 @@
     "arcanaName": "Empress",
     "arcana": 3,
     "ultimate": true,
-    "preReqs": ["SL_EMPRESS"],
-    "stats": {
-      "st": 55,
-      "ma": 48,
-      "en": 46,
-      "ag": 49,
-      "lu": 49
-    },
+    "preReqs": [
+      "SL_EMPRESS"
+    ],
+    "stats": [
+      55,
+      48,
+      46,
+      49,
+      49
+    ],
     "skills": [
       {
         "name": "Mabufudyne",
@@ -2636,18 +2203,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "----r---wn",
     "id": 42
   },
   {
@@ -2657,13 +2213,13 @@
     "arcanaName": "Emperor",
     "arcana": 4,
     "gem": true,
-    "stats": {
-      "st": 10,
-      "ma": 10,
-      "en": 10,
-      "ag": 10,
-      "lu": 10
-    },
+    "stats": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
     "skills": [
       {
         "name": "Mabufu",
@@ -2706,18 +2262,7 @@
         "type": "elec"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "s",
-      "ice": "s",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "w",
-      "nuke": "w",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "sssssswwnn",
     "id": 43
   },
   {
@@ -2726,13 +2271,13 @@
     "level": 16,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 12,
-      "ma": 10,
-      "en": 13,
-      "ag": 10,
-      "lu": 10
-    },
+    "stats": [
+      12,
+      10,
+      13,
+      10,
+      10
+    ],
     "skills": [
       {
         "name": "Maragi",
@@ -2765,18 +2310,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-ss-w-----",
     "id": 44
   },
   {
@@ -2785,13 +2319,13 @@
     "level": 28,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 20,
-      "ma": 17,
-      "en": 19,
-      "ag": 18,
-      "lu": 17
-    },
+    "stats": [
+      20,
+      17,
+      19,
+      18,
+      17
+    ],
     "skills": [
       {
         "name": "Counter",
@@ -2824,18 +2358,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "s",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "------ws--",
     "id": 45
   },
   {
@@ -2844,13 +2367,13 @@
     "level": 36,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 21,
-      "ma": 28,
-      "en": 21,
-      "ag": 24,
-      "lu": 21
-    },
+    "stats": [
+      21,
+      28,
+      21,
+      24,
+      21
+    ],
     "skills": [
       {
         "name": "Freila",
@@ -2888,18 +2411,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "n",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "------wnn-",
     "id": 46
   },
   {
@@ -2908,13 +2420,13 @@
     "level": 44,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 30,
-      "ma": 28,
-      "en": 29,
-      "ag": 28,
-      "lu": 24
-    },
+    "stats": [
+      30,
+      28,
+      29,
+      28,
+      24
+    ],
     "skills": [
       {
         "name": "Mapsio",
@@ -2952,18 +2464,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "r",
-      "wind": "w",
-      "psychic": "n",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----rwnw--",
     "id": 47
   },
   {
@@ -2972,13 +2473,13 @@
     "level": 52,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 33,
-      "ma": 35,
-      "en": 33,
-      "ag": 37,
-      "lu": 25
-    },
+    "stats": [
+      33,
+      35,
+      33,
+      37,
+      25
+    ],
     "skills": [
       {
         "name": "Elec Break",
@@ -3011,18 +2512,7 @@
         "type": "elec"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "-s--sw--nw",
     "id": 48
   },
   {
@@ -3031,13 +2521,13 @@
     "level": 61,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 38,
-      "ma": 39,
-      "en": 45,
-      "ag": 33,
-      "lu": 35
-    },
+    "stats": [
+      38,
+      39,
+      45,
+      33,
+      35
+    ],
     "skills": [
       {
         "name": "Bufudyne",
@@ -3075,18 +2565,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "d",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "---d----n-",
     "id": 49
   },
   {
@@ -3095,13 +2574,13 @@
     "level": 66,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 40,
-      "ma": 44,
-      "en": 43,
-      "ag": 43,
-      "lu": 35
-    },
+    "stats": [
+      40,
+      44,
+      43,
+      43,
+      35
+    ],
     "skills": [
       {
         "name": "Brain Jack",
@@ -3144,18 +2623,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "n",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----s-nw--",
     "id": 50
   },
   {
@@ -3164,13 +2632,13 @@
     "level": 75,
     "arcanaName": "Emperor",
     "arcana": 4,
-    "stats": {
-      "st": 48,
-      "ma": 50,
-      "en": 47,
-      "ag": 47,
-      "lu": 40
-    },
+    "stats": [
+      48,
+      50,
+      47,
+      47,
+      40
+    ],
     "skills": [
       {
         "name": "Magarudyne",
@@ -3209,18 +2677,7 @@
         "exclusive": true
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "d",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "--s--d--ss",
     "id": 51
   },
   {
@@ -3230,14 +2687,16 @@
     "arcanaName": "Emperor",
     "arcana": 4,
     "ultimate": true,
-    "preReqs": ["SL_EMPEROR"],
-    "stats": {
-      "st": 53,
-      "ma": 52,
-      "en": 54,
-      "ag": 52,
-      "lu": 42
-    },
+    "preReqs": [
+      "SL_EMPEROR"
+    ],
+    "stats": [
+      53,
+      52,
+      54,
+      52,
+      42
+    ],
     "skills": [
       {
         "name": "Marakukaja",
@@ -3275,18 +2734,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "d",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "r"
-    },
+    "affinities": "----nd--rr",
     "id": 52
   },
   {
@@ -3295,13 +2743,13 @@
     "level": 9,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 8,
-      "ma": 6,
-      "en": 7,
-      "ag": 9,
-      "lu": 7
-    },
+    "stats": [
+      8,
+      6,
+      7,
+      9,
+      7
+    ],
     "skills": [
       {
         "name": "Cleave",
@@ -3329,18 +2777,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "n",
-      "fire": "s",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-nsw------",
     "id": 53
   },
   {
@@ -3349,13 +2786,13 @@
     "level": 17,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 11,
-      "ma": 14,
-      "en": 15,
-      "ag": 12,
-      "lu": 6
-    },
+    "stats": [
+      11,
+      14,
+      15,
+      12,
+      6
+    ],
     "skills": [
       {
         "name": "Dekaja",
@@ -3388,18 +2825,7 @@
         "type": "ailment"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "s"
-    },
+    "affinities": "-----s--ws",
     "id": 54
   },
   {
@@ -3408,13 +2834,13 @@
     "level": 22,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 14,
-      "ma": 15,
-      "en": 15,
-      "ag": 18,
-      "lu": 11
-    },
+    "stats": [
+      14,
+      15,
+      15,
+      18,
+      11
+    ],
     "skills": [
       {
         "name": "Dream Needle",
@@ -3442,18 +2868,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "w",
-      "wind": "n",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---swn----",
     "id": 55
   },
   {
@@ -3462,13 +2877,13 @@
     "level": 25,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 14,
-      "ma": 18,
-      "en": 15,
-      "ag": 21,
-      "lu": 14
-    },
+    "stats": [
+      14,
+      18,
+      15,
+      21,
+      14
+    ],
     "skills": [
       {
         "name": "Garula",
@@ -3501,18 +2916,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "r",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-w--sr-w--",
     "id": 56
   },
   {
@@ -3521,13 +2925,13 @@
     "level": 39,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 20,
-      "ma": 27,
-      "en": 25,
-      "ag": 28,
-      "lu": 24
-    },
+    "stats": [
+      20,
+      27,
+      25,
+      28,
+      24
+    ],
     "skills": [
       {
         "name": "Assault Dive",
@@ -3565,18 +2969,7 @@
         "type": "bless"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "---n--s-nw",
     "id": 57
   },
   {
@@ -3585,13 +2978,13 @@
     "level": 42,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 22,
-      "ma": 33,
-      "en": 24,
-      "ag": 25,
-      "lu": 29
-    },
+    "stats": [
+      22,
+      33,
+      24,
+      25,
+      29
+    ],
     "skills": [
       {
         "name": "Makouga",
@@ -3630,18 +3023,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "-s------nw",
     "id": 58
   },
   {
@@ -3650,13 +3032,13 @@
     "level": 63,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 41,
-      "ma": 39,
-      "en": 40,
-      "ag": 42,
-      "lu": 34
-    },
+    "stats": [
+      41,
+      39,
+      40,
+      42,
+      34
+    ],
     "skills": [
       {
         "name": "Marin Karin",
@@ -3694,18 +3076,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "d",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "n",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---dw-n---",
     "id": 59
   },
   {
@@ -3714,13 +3085,13 @@
     "level": 67,
     "arcanaName": "Hierophant",
     "arcana": 5,
-    "stats": {
-      "st": 49,
-      "ma": 37,
-      "en": 42,
-      "ag": 45,
-      "lu": 35
-    },
+    "stats": [
+      49,
+      37,
+      42,
+      45,
+      35
+    ],
     "skills": [
       {
         "name": "Diarahan",
@@ -3758,18 +3129,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "--dw----ss",
     "id": 60
   },
   {
@@ -3780,14 +3140,16 @@
     "arcanaName": "Hierophant",
     "arcana": 5,
     "ultimate": true,
-    "preReqs": ["SL_HIEROPHANT"],
-    "stats": {
-      "st": 43,
-      "ma": 51,
-      "en": 50,
-      "ag": 53,
-      "lu": 38
-    },
+    "preReqs": [
+      "SL_HIEROPHANT"
+    ],
+    "stats": [
+      43,
+      51,
+      50,
+      53,
+      38
+    ],
     "skills": [
       {
         "name": "Mapsiodyne",
@@ -3825,18 +3187,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "n",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "----r-wnn-",
     "id": 61
   },
   {
@@ -3845,13 +3196,13 @@
     "level": 2,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 1,
-      "ma": 3,
-      "en": 3,
-      "ag": 4,
-      "lu": 2
-    },
+    "stats": [
+      1,
+      3,
+      3,
+      4,
+      2
+    ],
     "skills": [
       {
         "name": "Dia",
@@ -3879,18 +3230,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "w"
-    },
+    "affinities": "-w-ws---sw",
     "id": 62
   },
   {
@@ -3899,13 +3239,13 @@
     "level": 6,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 4,
-      "ma": 6,
-      "en": 5,
-      "ag": 6,
-      "lu": 4
-    },
+    "stats": [
+      4,
+      6,
+      5,
+      6,
+      4
+    ],
     "skills": [
       {
         "name": "Bufu",
@@ -3938,18 +3278,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---sw-----",
     "id": 63
   },
   {
@@ -3958,13 +3287,13 @@
     "level": 19,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 9,
-      "ma": 17,
-      "en": 12,
-      "ag": 16,
-      "lu": 10
-    },
+    "stats": [
+      9,
+      17,
+      12,
+      16,
+      10
+    ],
     "skills": [
       {
         "name": "Psio",
@@ -3997,18 +3326,7 @@
         "type": "curse"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--w--ss---",
     "id": 64
   },
   {
@@ -4017,13 +3335,13 @@
     "level": 29,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 15,
-      "ma": 22,
-      "en": 19,
-      "ag": 20,
-      "lu": 18
-    },
+    "stats": [
+      15,
+      22,
+      19,
+      20,
+      18
+    ],
     "skills": [
       {
         "name": "Bufula",
@@ -4056,18 +3374,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--d---w---",
     "id": 65
   },
   {
@@ -4076,13 +3383,13 @@
     "level": 42,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 24,
-      "ma": 30,
-      "en": 26,
-      "ag": 28,
-      "lu": 25
-    },
+    "stats": [
+      24,
+      30,
+      26,
+      28,
+      25
+    ],
     "skills": [
       {
         "name": "Hysterical Slap",
@@ -4120,18 +3427,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "r",
-      "curse": "-"
-    },
+    "affinities": "-------wr-",
     "id": 66
   },
   {
@@ -4140,13 +3436,13 @@
     "level": 50,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 27,
-      "ma": 36,
-      "en": 29,
-      "ag": 35,
-      "lu": 30
-    },
+    "stats": [
+      27,
+      36,
+      29,
+      35,
+      30
+    ],
     "skills": [
       {
         "name": "Energy Drop",
@@ -4184,18 +3480,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "--w-ns--s-",
     "id": 67
   },
   {
@@ -4204,13 +3489,13 @@
     "level": 56,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 33,
-      "ma": 39,
-      "en": 33,
-      "ag": 39,
-      "lu": 31
-    },
+    "stats": [
+      33,
+      39,
+      33,
+      39,
+      31
+    ],
     "skills": [
       {
         "name": "Diarama",
@@ -4248,18 +3533,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "r",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "w"
-    },
+    "affinities": "---r--s-sw",
     "id": 68
   },
   {
@@ -4268,13 +3542,13 @@
     "level": 78,
     "arcanaName": "Lovers",
     "arcana": 6,
-    "stats": {
-      "st": 57,
-      "ma": 45,
-      "en": 49,
-      "ag": 55,
-      "lu": 35
-    },
+    "stats": [
+      57,
+      45,
+      49,
+      55,
+      35
+    ],
     "skills": [
       {
         "name": "Charge",
@@ -4312,18 +3586,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "d",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "n",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "---d--n-n-",
     "id": 69
   },
   {
@@ -4333,14 +3596,16 @@
     "arcanaName": "Lovers",
     "arcana": 6,
     "ultimate": true,
-    "preReqs": ["SL_LOVERS"],
-    "stats": {
-      "st": 48,
-      "ma": 59,
-      "en": 49,
-      "ag": 58,
-      "lu": 48
-    },
+    "preReqs": [
+      "SL_LOVERS"
+    ],
+    "stats": [
+      48,
+      59,
+      49,
+      58,
+      48
+    ],
     "skills": [
       {
         "name": "Absorb Wind",
@@ -4378,18 +3643,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----nw----",
     "id": 70
   },
   {
@@ -4398,13 +3652,13 @@
     "level": 3,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 3,
-      "ma": 4,
-      "en": 5,
-      "ag": 7,
-      "lu": 3
-    },
+    "stats": [
+      3,
+      4,
+      5,
+      7,
+      3
+    ],
     "skills": [
       {
         "name": "Baisudi",
@@ -4437,18 +3691,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-s--sw----",
     "id": 71
   },
   {
@@ -4457,13 +3700,13 @@
     "level": 10,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 9,
-      "ma": 6,
-      "en": 11,
-      "ag": 6,
-      "lu": 5
-    },
+    "stats": [
+      9,
+      6,
+      11,
+      6,
+      5
+    ],
     "skills": [
       {
         "name": "Evil Touch",
@@ -4491,18 +3734,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s-w--w----",
     "id": 72
   },
   {
@@ -4511,13 +3743,13 @@
     "level": 16,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 13,
-      "ma": 9,
-      "en": 12,
-      "ag": 13,
-      "lu": 8
-    },
+    "stats": [
+      13,
+      9,
+      12,
+      13,
+      8
+    ],
     "skills": [
       {
         "name": "Double Fangs",
@@ -4550,18 +3782,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "ss------nw",
     "id": 73
   },
   {
@@ -4570,13 +3791,13 @@
     "level": 21,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 21,
-      "ma": 11,
-      "en": 15,
-      "ag": 16,
-      "lu": 13
-    },
+    "stats": [
+      21,
+      11,
+      15,
+      16,
+      13
+    ],
     "skills": [
       {
         "name": "Snap",
@@ -4614,18 +3835,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "n",
-      "gun": "n",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "nn-----w-n",
     "id": 74
   },
   {
@@ -4634,13 +3844,13 @@
     "level": 25,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 21,
-      "ma": 13,
-      "en": 21,
-      "ag": 15,
-      "lu": 12
-    },
+    "stats": [
+      21,
+      13,
+      21,
+      15,
+      12
+    ],
     "skills": [
       {
         "name": "Rakukaja",
@@ -4678,18 +3888,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "ss----w---",
     "id": 75
   },
   {
@@ -4698,13 +3897,13 @@
     "level": 31,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 20,
-      "ma": 19,
-      "en": 20,
-      "ag": 20,
-      "lu": 21
-    },
+    "stats": [
+      20,
+      19,
+      20,
+      20,
+      21
+    ],
     "skills": [
       {
         "name": "Freila",
@@ -4737,18 +3936,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s--w------",
     "id": 76
   },
   {
@@ -4757,13 +3945,13 @@
     "level": 39,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 24,
-      "ma": 24,
-      "en": 25,
-      "ag": 26,
-      "lu": 25
-    },
+    "stats": [
+      24,
+      24,
+      25,
+      26,
+      25
+    ],
     "skills": [
       {
         "name": "Evil Touch",
@@ -4806,18 +3994,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "r"
-    },
+    "affinities": "--nw----nr",
     "id": 77
   },
   {
@@ -4826,13 +4003,13 @@
     "level": 55,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 39,
-      "ma": 35,
-      "en": 32,
-      "ag": 39,
-      "lu": 27
-    },
+    "stats": [
+      39,
+      35,
+      32,
+      39,
+      27
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -4865,18 +4042,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--dw---s--",
     "id": 78
   },
   {
@@ -4885,13 +4051,13 @@
     "level": 64,
     "arcanaName": "Chariot",
     "arcana": 7,
-    "stats": {
-      "st": 44,
-      "ma": 39,
-      "en": 43,
-      "ag": 38,
-      "lu": 35
-    },
+    "stats": [
+      44,
+      39,
+      43,
+      38,
+      35
+    ],
     "skills": [
       {
         "name": "High Counter",
@@ -4929,18 +4095,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "d",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "s---d-w-ss",
     "id": 79
   },
   {
@@ -4951,14 +4106,16 @@
     "arcanaName": "Chariot",
     "arcana": 7,
     "ultimate": true,
-    "preReqs": ["SL_CHARIOT"],
-    "stats": {
-      "st": 54,
-      "ma": 56,
-      "en": 53,
-      "ag": 52,
-      "lu": 50
-    },
+    "preReqs": [
+      "SL_CHARIOT"
+    ],
+    "stats": [
+      54,
+      56,
+      53,
+      52,
+      50
+    ],
     "skills": [
       {
         "name": "Gigantomachia",
@@ -4996,18 +4153,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "n",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "ss----nw--",
     "id": 80
   },
   {
@@ -5016,13 +4162,13 @@
     "level": 12,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 7,
-      "ma": 9,
-      "en": 9,
-      "ag": 9,
-      "lu": 9
-    },
+    "stats": [
+      7,
+      9,
+      9,
+      9,
+      9
+    ],
     "skills": [
       {
         "name": "Dazzler",
@@ -5060,18 +4206,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "----s---nw",
     "id": 81
   },
   {
@@ -5080,13 +4215,13 @@
     "level": 16,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 13,
-      "ma": 10,
-      "en": 13,
-      "ag": 12,
-      "lu": 7
-    },
+    "stats": [
+      13,
+      10,
+      13,
+      12,
+      7
+    ],
     "skills": [
       {
         "name": "Dazzler",
@@ -5119,18 +4254,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "----w---nw",
     "id": 82
   },
   {
@@ -5139,13 +4263,13 @@
     "level": 29,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 17,
-      "ma": 19,
-      "en": 18,
-      "ag": 21,
-      "lu": 19
-    },
+    "stats": [
+      17,
+      19,
+      18,
+      21,
+      19
+    ],
     "skills": [
       {
         "name": "Makajamaon",
@@ -5178,18 +4302,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "--s-----nw",
     "id": 83
   },
   {
@@ -5198,13 +4311,13 @@
     "level": 41,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 30,
-      "ma": 26,
-      "en": 28,
-      "ag": 25,
-      "lu": 21
-    },
+    "stats": [
+      30,
+      26,
+      28,
+      25,
+      21
+    ],
     "skills": [
       {
         "name": "Hamaon",
@@ -5242,18 +4355,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "-w---s--nw",
     "id": 84
   },
   {
@@ -5262,13 +4364,13 @@
     "level": 60,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 37,
-      "ma": 38,
-      "en": 41,
-      "ag": 39,
-      "lu": 32
-    },
+    "stats": [
+      37,
+      38,
+      41,
+      39,
+      32
+    ],
     "skills": [
       {
         "name": "Hamaon",
@@ -5306,18 +4408,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "d",
-      "curse": "n"
-    },
+    "affinities": "-----ws-dn",
     "id": 85
   },
   {
@@ -5326,13 +4417,13 @@
     "level": 68,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 46,
-      "ma": 47,
-      "en": 45,
-      "ag": 48,
-      "lu": 40
-    },
+    "stats": [
+      46,
+      47,
+      45,
+      48,
+      40
+    ],
     "skills": [
       {
         "name": "Hamaon",
@@ -5370,18 +4461,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "r",
-      "bless": "n",
-      "curse": "s"
-    },
+    "affinities": "-w-----rns",
     "id": 86
   },
   {
@@ -5391,13 +4471,13 @@
     "level": 71,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 42,
-      "ma": 49,
-      "en": 47,
-      "ag": 46,
-      "lu": 36
-    },
+    "stats": [
+      42,
+      49,
+      47,
+      46,
+      36
+    ],
     "skills": [
       {
         "name": "Hama Boost",
@@ -5435,18 +4515,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "--d----snw",
     "id": 87
   },
   {
@@ -5455,13 +4524,13 @@
     "level": 81,
     "arcanaName": "Justice",
     "arcana": 8,
-    "stats": {
-      "st": 50,
-      "ma": 54,
-      "en": 49,
-      "ag": 55,
-      "lu": 42
-    },
+    "stats": [
+      50,
+      54,
+      49,
+      55,
+      42
+    ],
     "skills": [
       {
         "name": "Bloodbath",
@@ -5499,18 +4568,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "d",
-      "bless": "r",
-      "curse": "-"
-    },
+    "affinities": "--n----dr-",
     "id": 88
   },
   {
@@ -5521,14 +4579,16 @@
     "arcanaName": "Justice",
     "arcana": 8,
     "ultimate": true,
-    "preReqs": ["SL_JUSTICE"],
-    "stats": {
-      "st": 54,
-      "ma": 61,
-      "en": 60,
-      "ag": 57,
-      "lu": 42
-    },
+    "preReqs": [
+      "SL_JUSTICE"
+    ],
+    "stats": [
+      54,
+      61,
+      60,
+      57,
+      42
+    ],
     "skills": [
       {
         "name": "Mahamaon",
@@ -5571,18 +4631,7 @@
         "type": "bless"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "r",
-      "psychic": "d",
-      "nuke": "d",
-      "bless": "-",
-      "curse": "w"
-    },
+    "affinities": "----wrdd-w",
     "id": 89
   },
   {
@@ -5591,13 +4640,13 @@
     "level": 4,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 5,
-      "ma": 3,
-      "en": 3,
-      "ag": 5,
-      "lu": 3
-    },
+    "stats": [
+      5,
+      3,
+      3,
+      5,
+      3
+    ],
     "skills": [
       {
         "name": "Lunge",
@@ -5625,18 +4674,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "s"
-    },
+    "affinities": "----w----s",
     "id": 90
   },
   {
@@ -5645,13 +4683,13 @@
     "level": 9,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 5,
-      "ma": 8,
-      "en": 6,
-      "ag": 9,
-      "lu": 6
-    },
+    "stats": [
+      5,
+      8,
+      6,
+      9,
+      6
+    ],
     "skills": [
       {
         "name": "Bufu",
@@ -5684,18 +4722,7 @@
         "type": "ice"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "w",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-sws-s----",
     "id": 91
   },
   {
@@ -5704,13 +4731,13 @@
     "level": 13,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 11,
-      "ma": 7,
-      "en": 14,
-      "ag": 6,
-      "lu": 8
-    },
+    "stats": [
+      11,
+      7,
+      14,
+      6,
+      8
+    ],
     "skills": [
       {
         "name": "Resist Dizzy",
@@ -5743,18 +4770,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "r",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "--sw-r--ss",
     "id": 92
   },
   {
@@ -5763,13 +4779,13 @@
     "level": 17,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 9,
-      "ma": 14,
-      "en": 12,
-      "ag": 13,
-      "lu": 10
-    },
+    "stats": [
+      9,
+      14,
+      12,
+      13,
+      10
+    ],
     "skills": [
       {
         "name": "Lucky Punch",
@@ -5807,18 +4823,7 @@
         "type": "wind"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "r",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---w-r-w--",
     "id": 93
   },
   {
@@ -5827,13 +4832,13 @@
     "level": 24,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 15,
-      "ma": 17,
-      "en": 15,
-      "ag": 17,
-      "lu": 15
-    },
+    "stats": [
+      15,
+      17,
+      15,
+      17,
+      15
+    ],
     "skills": [
       {
         "name": "Double Fangs",
@@ -5871,18 +4876,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----nw----",
     "id": 94
   },
   {
@@ -5891,13 +4885,13 @@
     "level": 35,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 21,
-      "ma": 23,
-      "en": 22,
-      "ag": 24,
-      "lu": 22
-    },
+    "stats": [
+      21,
+      23,
+      22,
+      24,
+      22
+    ],
     "skills": [
       {
         "name": "Abysmal Surge",
@@ -5930,18 +4924,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "r",
-      "gun": "r",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "w",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "rr----wwss",
     "id": 95
   },
   {
@@ -5950,13 +4933,13 @@
     "level": 42,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 29,
-      "ma": 25,
-      "en": 27,
-      "ag": 26,
-      "lu": 26
-    },
+    "stats": [
+      29,
+      25,
+      27,
+      26,
+      26
+    ],
     "skills": [
       {
         "name": "Hysterical Slap",
@@ -5994,18 +4977,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "s"
-    },
+    "affinities": "--nw-----s",
     "id": 96
   },
   {
@@ -6014,13 +4986,13 @@
     "level": 49,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 37,
-      "ma": 32,
-      "en": 34,
-      "ag": 31,
-      "lu": 25
-    },
+    "stats": [
+      37,
+      32,
+      34,
+      31,
+      25
+    ],
     "skills": [
       {
         "name": "Assault Dive",
@@ -6063,18 +5035,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "s--w----s-",
     "id": 97
   },
   {
@@ -6083,13 +5044,13 @@
     "level": 56,
     "arcanaName": "Hermit",
     "arcana": 9,
-    "stats": {
-      "st": 34,
-      "ma": 38,
-      "en": 34,
-      "ag": 42,
-      "lu": 27
-    },
+    "stats": [
+      34,
+      38,
+      34,
+      42,
+      27
+    ],
     "skills": [
       {
         "name": "Brain Buster",
@@ -6122,18 +5083,7 @@
         "type": "wind"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "r",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "---w-r--ss",
     "id": 98
   },
   {
@@ -6144,14 +5094,16 @@
     "arcanaName": "Hermit",
     "arcana": 9,
     "ultimate": true,
-    "preReqs": ["SL_HERMIT"],
-    "stats": {
-      "st": 56,
-      "ma": 42,
-      "en": 47,
-      "ag": 48,
-      "lu": 39
-    },
+    "preReqs": [
+      "SL_HERMIT"
+    ],
+    "stats": [
+      56,
+      42,
+      47,
+      48,
+      39
+    ],
     "skills": [
       {
         "name": "Makajamaon",
@@ -6189,18 +5141,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "r"
-    },
+    "affinities": "ss------rr",
     "id": 99
   },
   {
@@ -6210,13 +5151,13 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "gem": true,
-    "stats": {
-      "st": 20,
-      "ma": 20,
-      "en": 20,
-      "ag": 20,
-      "lu": 20
-    },
+    "stats": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
     "skills": [
       {
         "name": "Agilao",
@@ -6259,18 +5200,7 @@
         "type": "elec"
       }
     ],
-    "affinities": {
-      "physical": "n",
-      "gun": "n",
-      "fire": "n",
-      "ice": "n",
-      "electricity": "n",
-      "wind": "n",
-      "psychic": "n",
-      "nuke": "n",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "nnnnnnnnnw",
     "id": 100
   },
   {
@@ -6279,13 +5209,13 @@
     "level": 26,
     "arcanaName": "Fortune",
     "arcana": 10,
-    "stats": {
-      "st": 14,
-      "ma": 19,
-      "en": 17,
-      "ag": 20,
-      "lu": 15
-    },
+    "stats": [
+      14,
+      19,
+      17,
+      20,
+      15
+    ],
     "skills": [
       {
         "name": "Mahama",
@@ -6323,18 +5253,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "n",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---w-n-w--",
     "id": 101
   },
   {
@@ -6344,14 +5263,16 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "preReqs": ["DLC_ARIADNE"],
-    "stats": {
-      "st": 23,
-      "ma": 19,
-      "en": 20,
-      "ag": 17,
-      "lu": 18
-    },
+    "preReqs": [
+      "DLC_ARIADNE"
+    ],
+    "stats": [
+      23,
+      19,
+      20,
+      17,
+      18
+    ],
     "skills": [
       {
         "name": "Beast Weaver",
@@ -6390,18 +5311,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "n",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "-s----wns-",
     "id": 102
   },
   {
@@ -6410,13 +5320,13 @@
     "level": 34,
     "arcanaName": "Fortune",
     "arcana": 10,
-    "stats": {
-      "st": 18,
-      "ma": 25,
-      "en": 22,
-      "ag": 25,
-      "lu": 19
-    },
+    "stats": [
+      18,
+      25,
+      22,
+      25,
+      19
+    ],
     "skills": [
       {
         "name": "Bufula",
@@ -6454,18 +5364,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "w",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---nws----",
     "id": 103
   },
   {
@@ -6474,13 +5373,13 @@
     "level": 39,
     "arcanaName": "Fortune",
     "arcana": 10,
-    "stats": {
-      "st": 23,
-      "ma": 30,
-      "en": 22,
-      "ag": 27,
-      "lu": 22
-    },
+    "stats": [
+      23,
+      30,
+      22,
+      27,
+      22
+    ],
     "skills": [
       {
         "name": "Elec Break",
@@ -6518,18 +5417,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "n",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--w--n----",
     "id": 104
   },
   {
@@ -6539,14 +5427,16 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "preReqs": ["DLC_ARIADNE"],
-    "stats": {
-      "st": 36,
-      "ma": 23,
-      "en": 29,
-      "ag": 24,
-      "lu": 21
-    },
+    "preReqs": [
+      "DLC_ARIADNE"
+    ],
+    "stats": [
+      36,
+      23,
+      29,
+      24,
+      21
+    ],
     "skills": [
       {
         "name": "Beast Weaver",
@@ -6585,18 +5475,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "n",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "-s----wns-",
     "id": 105
   },
   {
@@ -6605,13 +5484,13 @@
     "level": 46,
     "arcanaName": "Fortune",
     "arcana": 10,
-    "stats": {
-      "st": 23,
-      "ma": 32,
-      "en": 29,
-      "ag": 34,
-      "lu": 27
-    },
+    "stats": [
+      23,
+      32,
+      29,
+      34,
+      27
+    ],
     "skills": [
       {
         "name": "Magarula",
@@ -6649,18 +5528,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "n",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--n-wn----",
     "id": 106
   },
   {
@@ -6669,13 +5537,13 @@
     "level": 52,
     "arcanaName": "Fortune",
     "arcana": 10,
-    "stats": {
-      "st": 30,
-      "ma": 38,
-      "en": 33,
-      "ag": 34,
-      "lu": 28
-    },
+    "stats": [
+      30,
+      38,
+      33,
+      34,
+      28
+    ],
     "skills": [
       {
         "name": "Garudyne",
@@ -6713,18 +5581,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "d",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---s-d----",
     "id": 107
   },
   {
@@ -6734,14 +5591,16 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "preReqs": ["DLC_ASTERIUS"],
-    "stats": {
-      "st": 43,
-      "ma": 43,
-      "en": 32,
-      "ag": 32,
-      "lu": 25
-    },
+    "preReqs": [
+      "DLC_ASTERIUS"
+    ],
+    "stats": [
+      43,
+      43,
+      32,
+      32,
+      25
+    ],
     "skills": [
       {
         "name": "Titanomachia",
@@ -6780,18 +5639,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "--sw--s--n",
     "id": 108
   },
   {
@@ -6801,14 +5649,16 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "dlc": true,
-    "preReqs": ["DLC_ASTERIUS"],
-    "stats": {
-      "st": 46,
-      "ma": 46,
-      "en": 36,
-      "ag": 36,
-      "lu": 29
-    },
+    "preReqs": [
+      "DLC_ASTERIUS"
+    ],
+    "stats": [
+      46,
+      46,
+      36,
+      36,
+      29
+    ],
     "skills": [
       {
         "name": "Titanomachia",
@@ -6847,18 +5697,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "--sw--s--n",
     "id": 109
   },
   {
@@ -6868,14 +5707,16 @@
     "arcanaName": "Fortune",
     "arcana": 10,
     "ultimate": true,
-    "preReqs": ["SL_FORTUNE"],
-    "stats": {
-      "st": 40,
-      "ma": 47,
-      "en": 43,
-      "ag": 46,
-      "lu": 38
-    },
+    "preReqs": [
+      "SL_FORTUNE"
+    ],
+    "stats": [
+      40,
+      47,
+      43,
+      46,
+      38
+    ],
     "skills": [
       {
         "name": "Bufudyne",
@@ -6913,18 +5754,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "--ws----s-",
     "id": 110
   },
   {
@@ -6933,13 +5763,13 @@
     "level": 6,
     "arcanaName": "Strength",
     "arcana": 11,
-    "stats": {
-      "st": 5,
-      "ma": 5,
-      "en": 5,
-      "ag": 6,
-      "lu": 4
-    },
+    "stats": [
+      5,
+      5,
+      5,
+      6,
+      4
+    ],
     "skills": [
       {
         "name": "Garu",
@@ -6967,18 +5797,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---sw-----",
     "id": 111
   },
   {
@@ -6987,13 +5806,13 @@
     "level": 14,
     "arcanaName": "Strength",
     "arcana": 11,
-    "stats": {
-      "st": 8,
-      "ma": 12,
-      "en": 11,
-      "ag": 9,
-      "lu": 9
-    },
+    "stats": [
+      8,
+      12,
+      11,
+      9,
+      9
+    ],
     "skills": [
       {
         "name": "Bufu",
@@ -7031,18 +5850,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--w--s----",
     "id": 112
   },
   {
@@ -7051,13 +5859,13 @@
     "level": 19,
     "arcanaName": "Strength",
     "arcana": 11,
-    "stats": {
-      "st": 17,
-      "ma": 8,
-      "en": 16,
-      "ag": 13,
-      "lu": 10
-    },
+    "stats": [
+      17,
+      8,
+      16,
+      13,
+      10
+    ],
     "skills": [
       {
         "name": "Counter",
@@ -7090,18 +5898,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "ss--------",
     "id": 113
   },
   {
@@ -7110,13 +5907,13 @@
     "level": 24,
     "arcanaName": "Strength",
     "arcana": 11,
-    "stats": {
-      "st": 20,
-      "ma": 15,
-      "en": 18,
-      "ag": 17,
-      "lu": 9
-    },
+    "stats": [
+      20,
+      15,
+      18,
+      17,
+      9
+    ],
     "skills": [
       {
         "name": "Giant Slice",
@@ -7154,18 +5951,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "s"
-    },
+    "affinities": "s-s--w--ws",
     "id": 114
   },
   {
@@ -7175,13 +5961,13 @@
     "arcanaName": "Strength",
     "arcana": 11,
     "gem": true,
-    "stats": {
-      "st": 30,
-      "ma": 30,
-      "en": 30,
-      "ag": 30,
-      "lu": 30
-    },
+    "stats": [
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
     "skills": [
       {
         "name": "Mabufula",
@@ -7224,18 +6010,7 @@
         "type": "elec"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "n",
-      "fire": "n",
-      "ice": "n",
-      "electricity": "-",
-      "wind": "n",
-      "psychic": "n",
-      "nuke": "n",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "snnn-nnnnn",
     "id": 115
   },
   {
@@ -7244,13 +6019,13 @@
     "level": 31,
     "arcanaName": "Strength",
     "arcana": 11,
-    "stats": {
-      "st": 22,
-      "ma": 19,
-      "en": 24,
-      "ag": 18,
-      "lu": 17
-    },
+    "stats": [
+      22,
+      19,
+      24,
+      18,
+      17
+    ],
     "skills": [
       {
         "name": "Giant Slice",
@@ -7288,18 +6063,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s----w----",
     "id": 116
   },
   {
@@ -7308,13 +6072,13 @@
     "level": 44,
     "arcanaName": "Strength",
     "arcana": 11,
-    "stats": {
-      "st": 33,
-      "ma": 24,
-      "en": 28,
-      "ag": 29,
-      "lu": 25
-    },
+    "stats": [
+      33,
+      24,
+      28,
+      29,
+      25
+    ],
     "skills": [
       {
         "name": "Counterstrike",
@@ -7347,18 +6111,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "-s------n-",
     "id": 117
   },
   {
@@ -7367,13 +6120,13 @@
     "level": 69,
     "arcanaName": "Strength",
     "arcana": 11,
-    "stats": {
-      "st": 51,
-      "ma": 37,
-      "en": 47,
-      "ag": 48,
-      "lu": 31
-    },
+    "stats": [
+      51,
+      37,
+      47,
+      48,
+      31
+    ],
     "skills": [
       {
         "name": "High Counter",
@@ -7406,18 +6159,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "n",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "n--s---w--",
     "id": 118
   },
   {
@@ -7427,14 +6169,16 @@
     "arcanaName": "Strength",
     "arcana": 11,
     "ultimate": true,
-    "preReqs": ["SL_STRENGTH"],
-    "stats": {
-      "st": 57,
-      "ma": 45,
-      "en": 50,
-      "ag": 56,
-      "lu": 39
-    },
+    "preReqs": [
+      "SL_STRENGTH"
+    ],
+    "stats": [
+      57,
+      45,
+      50,
+      56,
+      39
+    ],
     "skills": [
       {
         "name": "Abysmal Surge",
@@ -7472,18 +6216,7 @@
         "type": "fire"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "r",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "--r-w---nn",
     "id": 119
   },
   {
@@ -7492,13 +6225,13 @@
     "level": 9,
     "arcanaName": "Hanged Man",
     "arcana": 12,
-    "stats": {
-      "st": 4,
-      "ma": 10,
-      "en": 4,
-      "ag": 8,
-      "lu": 8
-    },
+    "stats": [
+      4,
+      10,
+      4,
+      8,
+      8
+    ],
     "skills": [
       {
         "name": "Agi",
@@ -7531,18 +6264,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "r",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-wrw------",
     "id": 120
   },
   {
@@ -7551,13 +6273,13 @@
     "level": 14,
     "arcanaName": "Hanged Man",
     "arcana": 12,
-    "stats": {
-      "st": 12,
-      "ma": 11,
-      "en": 9,
-      "ag": 12,
-      "lu": 8
-    },
+    "stats": [
+      12,
+      11,
+      9,
+      12,
+      8
+    ],
     "skills": [
       {
         "name": "Giant Slice",
@@ -7595,18 +6317,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "--n--w---n",
     "id": 121
   },
   {
@@ -7615,13 +6326,13 @@
     "level": 21,
     "arcanaName": "Hanged Man",
     "arcana": 12,
-    "stats": {
-      "st": 16,
-      "ma": 14,
-      "en": 14,
-      "ag": 19,
-      "lu": 7
-    },
+    "stats": [
+      16,
+      14,
+      14,
+      19,
+      7
+    ],
     "skills": [
       {
         "name": "Agilao",
@@ -7654,18 +6365,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--dw---s--",
     "id": 122
   },
   {
@@ -7674,13 +6374,13 @@
     "level": 29,
     "arcanaName": "Hanged Man",
     "arcana": 12,
-    "stats": {
-      "st": 20,
-      "ma": 22,
-      "en": 21,
-      "ag": 18,
-      "lu": 13
-    },
+    "stats": [
+      20,
+      22,
+      21,
+      18,
+      13
+    ],
     "skills": [
       {
         "name": "Assault Dive",
@@ -7713,18 +6413,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "s"
-    },
+    "affinities": "----r-w--s",
     "id": 123
   },
   {
@@ -7734,13 +6423,13 @@
     "arcanaName": "Hanged Man",
     "arcana": 12,
     "gem": true,
-    "stats": {
-      "st": 35,
-      "ma": 35,
-      "en": 35,
-      "ag": 35,
-      "lu": 35
-    },
+    "stats": [
+      35,
+      35,
+      35,
+      35,
+      35
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -7783,18 +6472,7 @@
         "type": "elec"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "n",
-      "fire": "-",
-      "ice": "d",
-      "electricity": "d",
-      "wind": "d",
-      "psychic": "d",
-      "nuke": "d",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "sn-dddddnn",
     "id": 124
   },
   {
@@ -7803,13 +6481,13 @@
     "level": 42,
     "arcanaName": "Hanged Man",
     "arcana": 12,
-    "stats": {
-      "st": 29,
-      "ma": 25,
-      "en": 30,
-      "ag": 25,
-      "lu": 24
-    },
+    "stats": [
+      29,
+      25,
+      30,
+      25,
+      24
+    ],
     "skills": [
       {
         "name": "Regenerate 2",
@@ -7847,18 +6525,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "-s------wn",
     "id": 125
   },
   {
@@ -7867,13 +6534,13 @@
     "level": 60,
     "arcanaName": "Hanged Man",
     "arcana": 12,
-    "stats": {
-      "st": 32,
-      "ma": 45,
-      "en": 42,
-      "ag": 31,
-      "lu": 37
-    },
+    "stats": [
+      32,
+      45,
+      42,
+      31,
+      37
+    ],
     "skills": [
       {
         "name": "Evil Smile",
@@ -7911,18 +6578,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "r",
-      "ice": "w",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "d",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "--rwssd--n",
     "id": 126
   },
   {
@@ -7932,13 +6588,13 @@
     "level": 68,
     "arcanaName": "Hanged Man",
     "arcana": 12,
-    "stats": {
-      "st": 41,
-      "ma": 46,
-      "en": 45,
-      "ag": 42,
-      "lu": 37
-    },
+    "stats": [
+      41,
+      46,
+      45,
+      42,
+      37
+    ],
     "skills": [
       {
         "name": "Brain Jack",
@@ -7976,18 +6632,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "n",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "w"
-    },
+    "affinities": "---nn----w",
     "id": 127
   },
   {
@@ -7997,14 +6642,16 @@
     "arcanaName": "Hanged Man",
     "arcana": 12,
     "ultimate": true,
-    "preReqs": ["SL_HANGEDMAN"],
-    "stats": {
-      "st": 56,
-      "ma": 50,
-      "en": 48,
-      "ag": 51,
-      "lu": 48
-    },
+    "preReqs": [
+      "SL_HANGEDMAN"
+    ],
+    "stats": [
+      56,
+      50,
+      48,
+      51,
+      48
+    ],
     "skills": [
       {
         "name": "Maragidyne",
@@ -8042,18 +6689,7 @@
         "type": "fire"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "r",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "w"
-    },
+    "affinities": "--n--r---w",
     "id": 128
   },
   {
@@ -8062,13 +6698,13 @@
     "level": 3,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 2,
-      "ma": 3,
-      "en": 3,
-      "ag": 4,
-      "lu": 4
-    },
+    "stats": [
+      2,
+      3,
+      3,
+      4,
+      4
+    ],
     "skills": [
       {
         "name": "Energy Drop",
@@ -8096,18 +6732,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--w-s-----",
     "id": 129
   },
   {
@@ -8116,13 +6741,13 @@
     "level": 9,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 9,
-      "ma": 5,
-      "en": 6,
-      "ag": 10,
-      "lu": 4
-    },
+    "stats": [
+      9,
+      5,
+      6,
+      10,
+      4
+    ],
     "skills": [
       {
         "name": "Dazzler",
@@ -8155,18 +6780,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----sw----",
     "id": 130
   },
   {
@@ -8175,13 +6789,13 @@
     "level": 19,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 12,
-      "ma": 13,
-      "en": 12,
-      "ag": 16,
-      "lu": 11
-    },
+    "stats": [
+      12,
+      13,
+      12,
+      16,
+      11
+    ],
     "skills": [
       {
         "name": "Null Dizzy",
@@ -8214,18 +6828,7 @@
         "type": "wind"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "n",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----wn----",
     "id": 131
   },
   {
@@ -8234,13 +6837,13 @@
     "level": 29,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 19,
-      "ma": 21,
-      "en": 21,
-      "ag": 17,
-      "lu": 16
-    },
+    "stats": [
+      19,
+      21,
+      21,
+      17,
+      16
+    ],
     "skills": [
       {
         "name": "Dream Needle",
@@ -8278,18 +6881,7 @@
         "type": "curse"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "--w-s---wn",
     "id": 132
   },
   {
@@ -8298,13 +6890,13 @@
     "level": 39,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 26,
-      "ma": 27,
-      "en": 24,
-      "ag": 30,
-      "lu": 17
-    },
+    "stats": [
+      26,
+      27,
+      24,
+      30,
+      17
+    ],
     "skills": [
       {
         "name": "Agilao",
@@ -8347,18 +6939,7 @@
         "type": "curse"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "r",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "-"
-    },
+    "affinities": "--r--s--w-",
     "id": 133
   },
   {
@@ -8368,13 +6949,13 @@
     "arcanaName": "Death",
     "arcana": 13,
     "gem": true,
-    "stats": {
-      "st": 40,
-      "ma": 40,
-      "en": 40,
-      "ag": 40,
-      "lu": 40
-    },
+    "stats": [
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
     "skills": [
       {
         "name": "Auto-Maraku",
@@ -8417,18 +6998,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "n",
-      "fire": "r",
-      "ice": "r",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "r",
-      "nuke": "r",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "snrrr-rrnn",
     "id": 134
   },
   {
@@ -8437,13 +7007,13 @@
     "level": 53,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 34,
-      "ma": 34,
-      "en": 33,
-      "ag": 39,
-      "lu": 26
-    },
+    "stats": [
+      34,
+      34,
+      33,
+      39,
+      26
+    ],
     "skills": [
       {
         "name": "Abysmal Surge",
@@ -8481,18 +7051,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "r"
-    },
+    "affinities": "-----s--wr",
     "id": 135
   },
   {
@@ -8501,13 +7060,13 @@
     "level": 62,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 40,
-      "ma": 37,
-      "en": 39,
-      "ag": 38,
-      "lu": 39
-    },
+    "stats": [
+      40,
+      37,
+      39,
+      38,
+      39
+    ],
     "skills": [
       {
         "name": "Bloodbath",
@@ -8545,18 +7104,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "w",
-      "ice": "d",
-      "electricity": "n",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "r"
-    },
+    "affinities": "-swdn---wr",
     "id": 136
   },
   {
@@ -8566,14 +7114,16 @@
     "arcanaName": "Death",
     "arcana": 13,
     "dlc": true,
-    "preReqs": ["DLC_THANATOS"],
-    "stats": {
-      "st": 43,
-      "ma": 49,
-      "en": 41,
-      "ag": 38,
-      "lu": 31
-    },
+    "preReqs": [
+      "DLC_THANATOS"
+    ],
+    "stats": [
+      43,
+      49,
+      41,
+      38,
+      31
+    ],
     "skills": [
       {
         "name": "Door of Hades",
@@ -8612,18 +7162,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "r"
-    },
+    "affinities": "s-------wr",
     "id": 137
   },
   {
@@ -8633,14 +7172,16 @@
     "arcanaName": "Death",
     "arcana": 13,
     "dlc": true,
-    "preReqs": ["DLC_THANATOS"],
-    "stats": {
-      "st": 45,
-      "ma": 51,
-      "en": 43,
-      "ag": 40,
-      "lu": 35
-    },
+    "preReqs": [
+      "DLC_THANATOS"
+    ],
+    "stats": [
+      45,
+      51,
+      43,
+      40,
+      35
+    ],
     "skills": [
       {
         "name": "Door of Hades",
@@ -8679,18 +7220,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "r"
-    },
+    "affinities": "s-------wr",
     "id": 138
   },
   {
@@ -8699,13 +7229,13 @@
     "level": 72,
     "arcanaName": "Death",
     "arcana": 13,
-    "stats": {
-      "st": 43,
-      "ma": 51,
-      "en": 48,
-      "ag": 42,
-      "lu": 39
-    },
+    "stats": [
+      43,
+      51,
+      48,
+      42,
+      39
+    ],
     "skills": [
       {
         "name": "Matarukaja",
@@ -8738,18 +7268,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "d",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "r"
-    },
+    "affinities": "-s--dw---r",
     "id": 139
   },
   {
@@ -8760,14 +7279,16 @@
     "arcanaName": "Death",
     "arcana": 13,
     "ultimate": true,
-    "preReqs": ["SL_DEATH"],
-    "stats": {
-      "st": 43,
-      "ma": 59,
-      "en": 40,
-      "ag": 57,
-      "lu": 45
-    },
+    "preReqs": [
+      "SL_DEATH"
+    ],
+    "stats": [
+      43,
+      59,
+      40,
+      57,
+      45
+    ],
     "skills": [
       {
         "name": "Dekunda",
@@ -8806,18 +7327,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "s",
-      "bless": "w",
-      "curse": "r"
-    },
+    "affinities": "------sswr",
     "id": 140
   },
   {
@@ -8826,13 +7336,13 @@
     "level": 7,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 5,
-      "ma": 6,
-      "en": 7,
-      "ag": 6,
-      "lu": 4
-    },
+    "stats": [
+      5,
+      6,
+      7,
+      6,
+      4
+    ],
     "skills": [
       {
         "name": "Bufu",
@@ -8865,18 +7375,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---nw-s---",
     "id": 141
   },
   {
@@ -8885,13 +7384,13 @@
     "level": 11,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 7,
-      "ma": 8,
-      "en": 8,
-      "ag": 11,
-      "lu": 6
-    },
+    "stats": [
+      7,
+      8,
+      8,
+      11,
+      6
+    ],
     "skills": [
       {
         "name": "Garu",
@@ -8924,18 +7423,7 @@
         "type": "ailment"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "-"
-    },
+    "affinities": "---w-s--w-",
     "id": 142
   },
   {
@@ -8944,13 +7432,13 @@
     "level": 15,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 13,
-      "ma": 12,
-      "en": 8,
-      "ag": 11,
-      "lu": 8
-    },
+    "stats": [
+      13,
+      12,
+      8,
+      11,
+      8
+    ],
     "skills": [
       {
         "name": "Double Fangs",
@@ -8988,18 +7476,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "----ws-sn-",
     "id": 143
   },
   {
@@ -9008,13 +7485,13 @@
     "level": 20,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 12,
-      "ma": 14,
-      "en": 14,
-      "ag": 15,
-      "lu": 12
-    },
+    "stats": [
+      12,
+      14,
+      14,
+      15,
+      12
+    ],
     "skills": [
       {
         "name": "Baisudi",
@@ -9047,18 +7524,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "----w---ss",
     "id": 144
   },
   {
@@ -9067,13 +7533,13 @@
     "level": 25,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 19,
-      "ma": 12,
-      "en": 19,
-      "ag": 17,
-      "lu": 15
-    },
+    "stats": [
+      19,
+      12,
+      19,
+      17,
+      15
+    ],
     "skills": [
       {
         "name": "Defense Master",
@@ -9111,18 +7577,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "w"
-    },
+    "affinities": "s-------sw",
     "id": 145
   },
   {
@@ -9131,13 +7586,13 @@
     "level": 33,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 19,
-      "ma": 26,
-      "en": 19,
-      "ag": 24,
-      "lu": 18
-    },
+    "stats": [
+      19,
+      26,
+      19,
+      24,
+      18
+    ],
     "skills": [
       {
         "name": "Diarama",
@@ -9175,18 +7630,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "---nw---n-",
     "id": 146
   },
   {
@@ -9195,13 +7639,13 @@
     "level": 49,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 32,
-      "ma": 32,
-      "en": 31,
-      "ag": 32,
-      "lu": 27
-    },
+    "stats": [
+      32,
+      32,
+      31,
+      32,
+      27
+    ],
     "skills": [
       {
         "name": "Counterstrike",
@@ -9239,18 +7683,7 @@
         "type": "ice"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "d",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "s"
-    },
+    "affinities": "--wd---w-s",
     "id": 147
   },
   {
@@ -9259,13 +7692,13 @@
     "level": 55,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 33,
-      "ma": 37,
-      "en": 36,
-      "ag": 35,
-      "lu": 31
-    },
+    "stats": [
+      33,
+      37,
+      36,
+      35,
+      31
+    ],
     "skills": [
       {
         "name": "Elec Break",
@@ -9303,18 +7736,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----n-----",
     "id": 148
   },
   {
@@ -9323,13 +7745,13 @@
     "level": 62,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 38,
-      "ma": 41,
-      "en": 43,
-      "ag": 37,
-      "lu": 34
-    },
+    "stats": [
+      38,
+      41,
+      43,
+      37,
+      34
+    ],
     "skills": [
       {
         "name": "Bufudyne",
@@ -9367,18 +7789,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---s---w--",
     "id": 149
   },
   {
@@ -9387,13 +7798,13 @@
     "level": 77,
     "arcanaName": "Temperance",
     "arcana": 14,
-    "stats": {
-      "st": 43,
-      "ma": 51,
-      "en": 48,
-      "ag": 54,
-      "lu": 42
-    },
+    "stats": [
+      43,
+      51,
+      48,
+      54,
+      42
+    ],
     "skills": [
       {
         "name": "Mabufudyne",
@@ -9436,18 +7847,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "n",
-      "nuke": "-",
-      "bless": "d",
-      "curse": "-"
-    },
+    "affinities": "------n-d-",
     "id": 150
   },
   {
@@ -9458,14 +7858,16 @@
     "arcanaName": "Temperance",
     "arcana": 14,
     "ultimate": true,
-    "preReqs": ["SL_TEMPERANCE"],
-    "stats": {
-      "st": 54,
-      "ma": 56,
-      "en": 55,
-      "ag": 54,
-      "lu": 40
-    },
+    "preReqs": [
+      "SL_TEMPERANCE"
+    ],
+    "stats": [
+      54,
+      56,
+      55,
+      54,
+      40
+    ],
     "skills": [
       {
         "name": "Cosmic Flare",
@@ -9503,18 +7905,7 @@
         "type": "healing"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "n",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s--nn-----",
     "id": 151
   },
   {
@@ -9523,13 +7914,13 @@
     "level": 5,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 4,
-      "ma": 6,
-      "en": 4,
-      "ag": 5,
-      "lu": 3
-    },
+    "stats": [
+      4,
+      6,
+      4,
+      5,
+      3
+    ],
     "skills": [
       {
         "name": "Evil Touch",
@@ -9557,18 +7948,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "-"
-    },
+    "affinities": "-w--s---w-",
     "id": 152
   },
   {
@@ -9577,13 +7957,13 @@
     "level": 10,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 5,
-      "ma": 9,
-      "en": 7,
-      "ag": 10,
-      "lu": 6
-    },
+    "stats": [
+      5,
+      9,
+      7,
+      10,
+      6
+    ],
     "skills": [
       {
         "name": "Bufu",
@@ -9616,18 +7996,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "w",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-wws------",
     "id": 153
   },
   {
@@ -9637,13 +8006,13 @@
     "level": 25,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 19,
-      "ma": 14,
-      "en": 18,
-      "ag": 18,
-      "lu": 13
-    },
+    "stats": [
+      19,
+      14,
+      18,
+      18,
+      13
+    ],
     "skills": [
       {
         "name": "Dekaja",
@@ -9676,18 +8045,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--nw-s-s--",
     "id": 154
   },
   {
@@ -9696,13 +8054,13 @@
     "level": 32,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 17,
-      "ma": 23,
-      "en": 18,
-      "ag": 25,
-      "lu": 20
-    },
+    "stats": [
+      17,
+      23,
+      18,
+      25,
+      20
+    ],
     "skills": [
       {
         "name": "Bufula",
@@ -9740,18 +8098,7 @@
         "type": "ice"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "-w-s-w--wn",
     "id": 155
   },
   {
@@ -9760,13 +8107,13 @@
     "level": 43,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 29,
-      "ma": 30,
-      "en": 27,
-      "ag": 26,
-      "lu": 24
-    },
+    "stats": [
+      29,
+      30,
+      27,
+      26,
+      24
+    ],
     "skills": [
       {
         "name": "Maeiga",
@@ -9804,18 +8151,7 @@
         "type": "curse"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "-----s--wn",
     "id": 156
   },
   {
@@ -9824,13 +8160,13 @@
     "level": 58,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 34,
-      "ma": 42,
-      "en": 36,
-      "ag": 38,
-      "lu": 31
-    },
+    "stats": [
+      34,
+      42,
+      36,
+      38,
+      31
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -9868,18 +8204,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "--s-----wn",
     "id": 157
   },
   {
@@ -9888,13 +8213,13 @@
     "level": 62,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 39,
-      "ma": 40,
-      "en": 42,
-      "ag": 36,
-      "lu": 36
-    },
+    "stats": [
+      39,
+      40,
+      42,
+      36,
+      36
+    ],
     "skills": [
       {
         "name": "Eigaon",
@@ -9932,18 +8257,7 @@
         "type": "almighty"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "r"
-    },
+    "affinities": "------s-wr",
     "id": 158
   },
   {
@@ -9952,13 +8266,13 @@
     "level": 68,
     "arcanaName": "Devil",
     "arcana": 15,
-    "stats": {
-      "st": 45,
-      "ma": 41,
-      "en": 46,
-      "ag": 43,
-      "lu": 36
-    },
+    "stats": [
+      45,
+      41,
+      46,
+      43,
+      36
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -9996,18 +8310,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "---------n",
     "id": 159
   },
   {
@@ -10017,14 +8320,16 @@
     "arcanaName": "Devil",
     "arcana": 15,
     "ultimate": true,
-    "preReqs": ["SL_DEVIL"],
-    "stats": {
-      "st": 55,
-      "ma": 60,
-      "en": 54,
-      "ag": 56,
-      "lu": 34
-    },
+    "preReqs": [
+      "SL_DEVIL"
+    ],
+    "stats": [
+      55,
+      60,
+      54,
+      56,
+      34
+    ],
     "skills": [
       {
         "name": "Evil Smile",
@@ -10067,18 +8372,7 @@
         "type": "almighty"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "r"
-    },
+    "affinities": "--d-----wr",
     "id": 160
   },
   {
@@ -10087,13 +8381,13 @@
     "level": 32,
     "arcanaName": "Tower",
     "arcana": 16,
-    "stats": {
-      "st": 18,
-      "ma": 21,
-      "en": 20,
-      "ag": 27,
-      "lu": 17
-    },
+    "stats": [
+      18,
+      21,
+      20,
+      27,
+      17
+    ],
     "skills": [
       {
         "name": "Flash Bomb",
@@ -10131,18 +8425,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "d",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-----dw---",
     "id": 161
   },
   {
@@ -10151,13 +8434,13 @@
     "level": 37,
     "arcanaName": "Tower",
     "arcana": 16,
-    "stats": {
-      "st": 25,
-      "ma": 27,
-      "en": 24,
-      "ag": 23,
-      "lu": 19
-    },
+    "stats": [
+      25,
+      27,
+      24,
+      23,
+      19
+    ],
     "skills": [
       {
         "name": "Bufula",
@@ -10190,18 +8473,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "s",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "-",
-      "curse": "r"
-    },
+    "affinities": "--wss--s-r",
     "id": 162
   },
   {
@@ -10210,13 +8482,13 @@
     "level": 41,
     "arcanaName": "Tower",
     "arcana": 16,
-    "stats": {
-      "st": 26,
-      "ma": 27,
-      "en": 25,
-      "ag": 29,
-      "lu": 23
-    },
+    "stats": [
+      26,
+      27,
+      25,
+      29,
+      23
+    ],
     "skills": [
       {
         "name": "Mapsio",
@@ -10254,18 +8526,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "--------wn",
     "id": 163
   },
   {
@@ -10275,14 +8536,16 @@
     "arcanaName": "Tower",
     "arcana": 16,
     "dlc": true,
-    "preReqs": ["DLC_MAGATSUIZANAGI"],
-    "stats": {
-      "st": 37,
-      "ma": 35,
-      "en": 32,
-      "ag": 25,
-      "lu": 10
-    },
+    "preReqs": [
+      "DLC_MAGATSUIZANAGI"
+    ],
+    "stats": [
+      37,
+      35,
+      32,
+      25,
+      10
+    ],
     "skills": [
       {
         "name": "Magatsu Mandala",
@@ -10321,18 +8584,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "-s-----wnn",
     "id": 164
   },
   {
@@ -10342,14 +8594,16 @@
     "arcanaName": "Tower",
     "arcana": 16,
     "dlc": true,
-    "preReqs": ["DLC_MAGATSUIZANAGI"],
-    "stats": {
-      "st": 40,
-      "ma": 38,
-      "en": 35,
-      "ag": 27,
-      "lu": 11
-    },
+    "preReqs": [
+      "DLC_MAGATSUIZANAGI"
+    ],
+    "stats": [
+      40,
+      38,
+      35,
+      27,
+      11
+    ],
     "skills": [
       {
         "name": "Magatsu Mandala",
@@ -10388,18 +8642,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "-s-----wnn",
     "id": 165
   },
   {
@@ -10409,13 +8652,13 @@
     "level": 51,
     "arcanaName": "Tower",
     "arcana": 16,
-    "stats": {
-      "st": 34,
-      "ma": 37,
-      "en": 33,
-      "ag": 37,
-      "lu": 31
-    },
+    "stats": [
+      34,
+      37,
+      33,
+      37,
+      31
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -10448,18 +8691,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "r",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "n",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "s"
-    },
+    "affinities": "--r--n--ws",
     "id": 166
   },
   {
@@ -10468,13 +8700,13 @@
     "level": 59,
     "arcanaName": "Tower",
     "arcana": 16,
-    "stats": {
-      "st": 38,
-      "ma": 43,
-      "en": 37,
-      "ag": 45,
-      "lu": 30
-    },
+    "stats": [
+      38,
+      43,
+      37,
+      45,
+      30
+    ],
     "skills": [
       {
         "name": "Flash Bomb",
@@ -10512,18 +8744,7 @@
         "type": "almighty"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "d",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "s"
-    },
+    "affinities": "--wd----ss",
     "id": 167
   },
   {
@@ -10532,13 +8753,13 @@
     "level": 73,
     "arcanaName": "Tower",
     "arcana": 16,
-    "stats": {
-      "st": 47,
-      "ma": 46,
-      "en": 49,
-      "ag": 45,
-      "lu": 39
-    },
+    "stats": [
+      47,
+      46,
+      49,
+      45,
+      39
+    ],
     "skills": [
       {
         "name": "Maragidyne",
@@ -10576,18 +8797,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "n",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "r"
-    },
+    "affinities": "-ndw----sr",
     "id": 168
   },
   {
@@ -10597,13 +8807,13 @@
     "level": 79,
     "arcanaName": "Tower",
     "arcana": 16,
-    "stats": {
-      "st": 58,
-      "ma": 47,
-      "en": 45,
-      "ag": 53,
-      "lu": 41
-    },
+    "stats": [
+      58,
+      47,
+      45,
+      53,
+      41
+    ],
     "skills": [
       {
         "name": "Brave Blade",
@@ -10642,18 +8852,7 @@
         "exclusive": true
       }
     ],
-    "affinities": {
-      "physical": "n",
-      "gun": "-",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "-"
-    },
+    "affinities": "n-s-r---r-",
     "id": 169
   },
   {
@@ -10663,14 +8862,16 @@
     "arcanaName": "Tower",
     "arcana": 16,
     "ultimate": true,
-    "preReqs": ["SL_TOWER"],
-    "stats": {
-      "st": 52,
-      "ma": 51,
-      "en": 58,
-      "ag": 56,
-      "lu": 45
-    },
+    "preReqs": [
+      "SL_TOWER"
+    ],
+    "stats": [
+      52,
+      51,
+      58,
+      56,
+      45
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -10713,18 +8914,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "n",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--dw--sn--",
     "id": 170
   },
   {
@@ -10733,13 +8923,13 @@
     "level": 11,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 9,
-      "ma": 11,
-      "en": 8,
-      "ag": 10,
-      "lu": 4
-    },
+    "stats": [
+      9,
+      11,
+      8,
+      10,
+      4
+    ],
     "skills": [
       {
         "name": "Garu",
@@ -10777,18 +8967,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--ws------",
     "id": 171
   },
   {
@@ -10797,13 +8976,13 @@
     "level": 23,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 14,
-      "ma": 17,
-      "en": 16,
-      "ag": 15,
-      "lu": 14
-    },
+    "stats": [
+      14,
+      17,
+      16,
+      15,
+      14
+    ],
     "skills": [
       {
         "name": "Garula",
@@ -10836,18 +9015,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "d",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "----wd----",
     "id": 172
   },
   {
@@ -10857,13 +9025,13 @@
     "level": 30,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 19,
-      "ma": 20,
-      "en": 19,
-      "ag": 21,
-      "lu": 18
-    },
+    "stats": [
+      19,
+      20,
+      19,
+      21,
+      18
+    ],
     "skills": [
       {
         "name": "Diarama",
@@ -10901,18 +9069,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "w",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "s"
-    },
+    "affinities": "s---sw--ns",
     "id": 173
   },
   {
@@ -10921,13 +9078,13 @@
     "level": 36,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 23,
-      "ma": 26,
-      "en": 24,
-      "ag": 22,
-      "lu": 20
-    },
+    "stats": [
+      23,
+      26,
+      24,
+      22,
+      20
+    ],
     "skills": [
       {
         "name": "Makajam",
@@ -10965,18 +9122,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "n",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "n",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-n----nw--",
     "id": 174
   },
   {
@@ -10985,13 +9131,13 @@
     "level": 43,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 24,
-      "ma": 30,
-      "en": 31,
-      "ag": 26,
-      "lu": 25
-    },
+    "stats": [
+      24,
+      30,
+      31,
+      26,
+      25
+    ],
     "skills": [
       {
         "name": "Defense Master",
@@ -11034,18 +9180,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "d",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---dw-----",
     "id": 175
   },
   {
@@ -11054,13 +9189,13 @@
     "level": 52,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 30,
-      "ma": 36,
-      "en": 29,
-      "ag": 39,
-      "lu": 29
-    },
+    "stats": [
+      30,
+      36,
+      29,
+      39,
+      29
+    ],
     "skills": [
       {
         "name": "Amrita Shower",
@@ -11098,18 +9233,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "-"
-    },
+    "affinities": "-w---s--r-",
     "id": 176
   },
   {
@@ -11118,13 +9242,13 @@
     "level": 64,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 43,
-      "ma": 38,
-      "en": 40,
-      "ag": 40,
-      "lu": 38
-    },
+    "stats": [
+      43,
+      38,
+      40,
+      40,
+      38
+    ],
     "skills": [
       {
         "name": "Matarunda",
@@ -11157,18 +9281,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "---w--s-s-",
     "id": 177
   },
   {
@@ -11177,13 +9290,13 @@
     "level": 67,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 47,
-      "ma": 36,
-      "en": 44,
-      "ag": 47,
-      "lu": 34
-    },
+    "stats": [
+      47,
+      36,
+      44,
+      47,
+      34
+    ],
     "skills": [
       {
         "name": "Deadly Fury",
@@ -11221,18 +9334,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "w",
-      "wind": "r",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "-"
-    },
+    "affinities": "ss--wr--n-",
     "id": 178
   },
   {
@@ -11242,13 +9344,13 @@
     "level": 80,
     "arcanaName": "Star",
     "arcana": 17,
-    "stats": {
-      "st": 47,
-      "ma": 56,
-      "en": 45,
-      "ag": 56,
-      "lu": 43
-    },
+    "stats": [
+      47,
+      56,
+      45,
+      56,
+      43
+    ],
     "skills": [
       {
         "name": "Hama Boost",
@@ -11286,18 +9388,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "d",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "w"
-    },
+    "affinities": "----d---rw",
     "id": 179
   },
   {
@@ -11308,14 +9399,16 @@
     "arcanaName": "Star",
     "arcana": 17,
     "ultimate": true,
-    "preReqs": ["SL_STAR"],
-    "stats": {
-      "st": 61,
-      "ma": 59,
-      "en": 59,
-      "ag": 56,
-      "lu": 51
-    },
+    "preReqs": [
+      "SL_STAR"
+    ],
+    "stats": [
+      61,
+      59,
+      59,
+      56,
+      51
+    ],
     "skills": [
       {
         "name": "Blazing Hell",
@@ -11359,18 +9452,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "-"
-    },
+    "affinities": "--------w-",
     "id": 180
   },
   {
@@ -11379,13 +9461,13 @@
     "level": 7,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 4,
-      "ma": 7,
-      "en": 5,
-      "ag": 8,
-      "lu": 4
-    },
+    "stats": [
+      4,
+      7,
+      5,
+      8,
+      4
+    ],
     "skills": [
       {
         "name": "Marin Karin",
@@ -11418,18 +9500,7 @@
         "type": "curse"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "-ws-----wn",
     "id": 181
   },
   {
@@ -11438,13 +9509,13 @@
     "level": 12,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 9,
-      "ma": 12,
-      "en": 7,
-      "ag": 10,
-      "lu": 5
-    },
+    "stats": [
+      9,
+      12,
+      7,
+      10,
+      5
+    ],
     "skills": [
       {
         "name": "Ice Wall",
@@ -11477,18 +9548,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "-ws-----wn",
     "id": 182
   },
   {
@@ -11498,14 +9558,16 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "preReqs": ["DLC_KAGUYA"],
-    "stats": {
-      "st": 11,
-      "ma": 15,
-      "en": 12,
-      "ag": 11,
-      "lu": 6
-    },
+    "preReqs": [
+      "DLC_KAGUYA"
+    ],
+    "stats": [
+      11,
+      15,
+      12,
+      11,
+      6
+    ],
     "skills": [
       {
         "name": "Shining Arrows",
@@ -11544,18 +9606,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "--w--s--nn",
     "id": 183
   },
   {
@@ -11564,13 +9615,13 @@
     "level": 20,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 16,
-      "ma": 10,
-      "en": 17,
-      "ag": 14,
-      "lu": 10
-    },
+    "stats": [
+      16,
+      10,
+      17,
+      14,
+      10
+    ],
     "skills": [
       {
         "name": "Maeiha",
@@ -11608,18 +9659,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "s",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "--ws-----n",
     "id": 184
   },
   {
@@ -11628,13 +9668,13 @@
     "level": 24,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 16,
-      "ma": 15,
-      "en": 15,
-      "ag": 18,
-      "lu": 15
-    },
+    "stats": [
+      16,
+      15,
+      15,
+      18,
+      15
+    ],
     "skills": [
       {
         "name": "Bufula",
@@ -11672,18 +9712,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "d",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "---ds--w--",
     "id": 185
   },
   {
@@ -11693,14 +9722,16 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "preReqs": ["DLC_KAGUYA"],
-    "stats": {
-      "st": 17,
-      "ma": 20,
-      "en": 19,
-      "ag": 15,
-      "lu": 11
-    },
+    "preReqs": [
+      "DLC_KAGUYA"
+    ],
+    "stats": [
+      17,
+      20,
+      19,
+      15,
+      11
+    ],
     "skills": [
       {
         "name": "Shining Arrows",
@@ -11739,18 +9770,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "--w-----nn",
     "id": 186
   },
   {
@@ -11759,13 +9779,13 @@
     "level": 29,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 19,
-      "ma": 18,
-      "en": 20,
-      "ag": 16,
-      "lu": 21
-    },
+    "stats": [
+      19,
+      18,
+      20,
+      16,
+      21
+    ],
     "skills": [
       {
         "name": "Evil Touch",
@@ -11803,18 +9823,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "s",
-      "electricity": "w",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "ss-sw-w-wn",
     "id": 187
   },
   {
@@ -11823,13 +9832,13 @@
     "level": 33,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 21,
-      "ma": 24,
-      "en": 16,
-      "ag": 24,
-      "lu": 21
-    },
+    "stats": [
+      21,
+      24,
+      16,
+      24,
+      21
+    ],
     "skills": [
       {
         "name": "Mazionga",
@@ -11862,18 +9871,7 @@
         "type": "ailment"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "w",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "-",
-      "psychic": "s",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "-w--n-s---",
     "id": 188
   },
   {
@@ -11882,13 +9880,13 @@
     "level": 44,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 36,
-      "ma": 24,
-      "en": 32,
-      "ag": 32,
-      "lu": 15
-    },
+    "stats": [
+      36,
+      24,
+      32,
+      32,
+      15
+    ],
     "skills": [
       {
         "name": "Marakunda",
@@ -11921,18 +9919,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "r",
-      "gun": "r",
-      "fire": "s",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "w",
-      "curse": "n"
-    },
+    "affinities": "rrs-----wn",
     "id": 189
   },
   {
@@ -11942,14 +9929,16 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "preReqs": ["DLC_TSUKIYOMI"],
-    "stats": {
-      "st": 38,
-      "ma": 32,
-      "en": 33,
-      "ag": 37,
-      "lu": 17
-    },
+    "preReqs": [
+      "DLC_TSUKIYOMI"
+    ],
+    "stats": [
+      38,
+      32,
+      33,
+      37,
+      17
+    ],
     "skills": [
       {
         "name": "Abyssal Wings",
@@ -11988,18 +9977,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "s",
-      "curse": "r"
-    },
+    "affinities": "s------wsr",
     "id": 190
   },
   {
@@ -12009,14 +9987,16 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "dlc": true,
-    "preReqs": ["DLC_TSUKIYOMI"],
-    "stats": {
-      "st": 41,
-      "ma": 35,
-      "en": 36,
-      "ag": 40,
-      "lu": 20
-    },
+    "preReqs": [
+      "DLC_TSUKIYOMI"
+    ],
+    "stats": [
+      41,
+      35,
+      36,
+      40,
+      20
+    ],
     "skills": [
       {
         "name": "Abyssal Wings",
@@ -12055,18 +10035,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "s",
-      "curse": "r"
-    },
+    "affinities": "s------wsr",
     "id": 191
   },
   {
@@ -12075,13 +10044,13 @@
     "level": 60,
     "arcanaName": "Moon",
     "arcana": 18,
-    "stats": {
-      "st": 33,
-      "ma": 43,
-      "en": 37,
-      "ag": 39,
-      "lu": 35
-    },
+    "stats": [
+      33,
+      43,
+      37,
+      39,
+      35
+    ],
     "skills": [
       {
         "name": "Mabufudyne",
@@ -12119,18 +10088,7 @@
         "type": "fire"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "r",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "n"
-    },
+    "affinities": "--wr-----n",
     "id": 192
   },
   {
@@ -12140,14 +10098,16 @@
     "arcanaName": "Moon",
     "arcana": 18,
     "ultimate": true,
-    "preReqs": ["SL_MOON"],
-    "stats": {
-      "st": 46,
-      "ma": 51,
-      "en": 49,
-      "ag": 48,
-      "lu": 38
-    },
+    "preReqs": [
+      "SL_MOON"
+    ],
+    "stats": [
+      46,
+      51,
+      49,
+      48,
+      38
+    ],
     "skills": [
       {
         "name": "Amrita Shower",
@@ -12180,18 +10140,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "s",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "n"
-    },
+    "affinities": "ss--s---rn",
     "id": 193
   },
   {
@@ -12200,13 +10149,13 @@
     "level": 19,
     "arcanaName": "Sun",
     "arcana": 19,
-    "stats": {
-      "st": 11,
-      "ma": 14,
-      "en": 10,
-      "ag": 18,
-      "lu": 11
-    },
+    "stats": [
+      11,
+      14,
+      10,
+      18,
+      11
+    ],
     "skills": [
       {
         "name": "Frei",
@@ -12244,18 +10193,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "d",
-      "ice": "w",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "s",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--dw---s--",
     "id": 194
   },
   {
@@ -12264,13 +10202,13 @@
     "level": 39,
     "arcanaName": "Sun",
     "arcana": 19,
-    "stats": {
-      "st": 27,
-      "ma": 25,
-      "en": 27,
-      "ag": 25,
-      "lu": 20
-    },
+    "stats": [
+      27,
+      25,
+      27,
+      25,
+      20
+    ],
     "skills": [
       {
         "name": "Mafreila",
@@ -12303,18 +10241,7 @@
         "type": "nuke"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "d",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "n",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s-d---wn--",
     "id": 195
   },
   {
@@ -12323,13 +10250,13 @@
     "level": 42,
     "arcanaName": "Sun",
     "arcana": 19,
-    "stats": {
-      "st": 26,
-      "ma": 29,
-      "en": 28,
-      "ag": 27,
-      "lu": 23
-    },
+    "stats": [
+      26,
+      29,
+      28,
+      27,
+      23
+    ],
     "skills": [
       {
         "name": "Brain Jack",
@@ -12367,18 +10294,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "s",
-      "curse": "-"
-    },
+    "affinities": "----n-w-s-",
     "id": 196
   },
   {
@@ -12387,13 +10303,13 @@
     "level": 49,
     "arcanaName": "Sun",
     "arcana": 19,
-    "stats": {
-      "st": 30,
-      "ma": 32,
-      "en": 32,
-      "ag": 35,
-      "lu": 25
-    },
+    "stats": [
+      30,
+      32,
+      32,
+      35,
+      25
+    ],
     "skills": [
       {
         "name": "Diarama",
@@ -12431,18 +10347,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "w",
-      "ice": "-",
-      "electricity": "n",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "-"
-    },
+    "affinities": "--w-n---r-",
     "id": 197
   },
   {
@@ -12451,13 +10356,13 @@
     "level": 53,
     "arcanaName": "Sun",
     "arcana": 19,
-    "stats": {
-      "st": 39,
-      "ma": 31,
-      "en": 37,
-      "ag": 33,
-      "lu": 26
-    },
+    "stats": [
+      39,
+      31,
+      37,
+      33,
+      26
+    ],
     "skills": [
       {
         "name": "Giant Slice",
@@ -12495,18 +10400,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "s",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "d",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "s----dw---",
     "id": 198
   },
   {
@@ -12515,13 +10409,13 @@
     "level": 57,
     "arcanaName": "Sun",
     "arcana": 19,
-    "stats": {
-      "st": 35,
-      "ma": 41,
-      "en": 30,
-      "ag": 40,
-      "lu": 32
-    },
+    "stats": [
+      35,
+      41,
+      30,
+      40,
+      32
+    ],
     "skills": [
       {
         "name": "Agidyne",
@@ -12559,18 +10453,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "w"
-    },
+    "affinities": "-----s--nw",
     "id": 199
   },
   {
@@ -12579,13 +10462,13 @@
     "level": 63,
     "arcanaName": "Sun",
     "arcana": 19,
-    "stats": {
-      "st": 38,
-      "ma": 42,
-      "en": 41,
-      "ag": 41,
-      "lu": 34
-    },
+    "stats": [
+      38,
+      42,
+      41,
+      41,
+      34
+    ],
     "skills": [
       {
         "name": "Garudyne",
@@ -12623,18 +10506,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "s",
-      "psychic": "w",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--n--sw---",
     "id": 200
   },
   {
@@ -12645,14 +10517,16 @@
     "arcanaName": "Sun",
     "arcana": 19,
     "ultimate": true,
-    "preReqs": ["SL_SUN"],
-    "stats": {
-      "st": 52,
-      "ma": 48,
-      "en": 51,
-      "ag": 49,
-      "lu": 35
-    },
+    "preReqs": [
+      "SL_SUN"
+    ],
+    "stats": [
+      52,
+      48,
+      51,
+      49,
+      35
+    ],
     "skills": [
       {
         "name": "Atomic Flare",
@@ -12690,18 +10564,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "n",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "r",
-      "bless": "-",
-      "curse": "-"
-    },
+    "affinities": "--n---wr--",
     "id": 201
   },
   {
@@ -12710,13 +10573,13 @@
     "level": 37,
     "arcanaName": "Judgement",
     "arcana": 20,
-    "stats": {
-      "st": 23,
-      "ma": 26,
-      "en": 24,
-      "ag": 22,
-      "lu": 23
-    },
+    "stats": [
+      23,
+      26,
+      24,
+      22,
+      23
+    ],
     "skills": [
       {
         "name": "Hamaon",
@@ -12754,18 +10617,7 @@
         "type": "curse"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "--------nn",
     "id": 202
   },
   {
@@ -12775,13 +10627,13 @@
     "level": 59,
     "arcanaName": "Judgement",
     "arcana": 20,
-    "stats": {
-      "st": 33,
-      "ma": 42,
-      "en": 40,
-      "ag": 38,
-      "lu": 31
-    },
+    "stats": [
+      33,
+      42,
+      40,
+      38,
+      31
+    ],
     "skills": [
       {
         "name": "Abysmal Surge",
@@ -12819,18 +10671,7 @@
         "type": "support"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "d",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "n"
-    },
+    "affinities": "---dr---rn",
     "id": 203
   },
   {
@@ -12839,13 +10680,13 @@
     "level": 64,
     "arcanaName": "Judgement",
     "arcana": 20,
-    "stats": {
-      "st": 44,
-      "ma": 38,
-      "en": 48,
-      "ag": 36,
-      "lu": 33
-    },
+    "stats": [
+      44,
+      38,
+      48,
+      36,
+      33
+    ],
     "skills": [
       {
         "name": "Deathbound",
@@ -12878,18 +10719,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "s"
-    },
+    "affinities": "---n---w-s",
     "id": 204
   },
   {
@@ -12898,13 +10728,13 @@
     "level": 74,
     "arcanaName": "Judgement",
     "arcana": 20,
-    "stats": {
-      "st": 51,
-      "ma": 38,
-      "en": 58,
-      "ag": 43,
-      "lu": 39
-    },
+    "stats": [
+      51,
+      38,
+      58,
+      43,
+      39
+    ],
     "skills": [
       {
         "name": "Deathbound",
@@ -12937,18 +10767,7 @@
         "type": "phys"
       }
     ],
-    "affinities": {
-      "physical": "d",
-      "gun": "d",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "w",
-      "nuke": "w",
-      "bless": "-",
-      "curse": "d"
-    },
+    "affinities": "dd----ww-d",
     "id": 205
   },
   {
@@ -12958,14 +10777,16 @@
     "arcanaName": "Judgement",
     "arcana": 20,
     "dlc": true,
-    "preReqs": ["DLC_MESSIAH"],
-    "stats": {
-      "st": 50,
-      "ma": 50,
-      "en": 50,
-      "ag": 50,
-      "lu": 50
-    },
+    "preReqs": [
+      "DLC_MESSIAH"
+    ],
+    "stats": [
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
     "skills": [
       {
         "name": "Oratorio",
@@ -13009,18 +10830,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "s",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "s",
-      "nuke": "s",
-      "bless": "r",
-      "curse": "w"
-    },
+    "affinities": "--ssssssrw",
     "id": 206
   },
   {
@@ -13030,13 +10840,13 @@
     "level": 82,
     "arcanaName": "Judgement",
     "arcana": 20,
-    "stats": {
-      "st": 55,
-      "ma": 54,
-      "en": 53,
-      "ag": 53,
-      "lu": 38
-    },
+    "stats": [
+      55,
+      54,
+      53,
+      53,
+      38
+    ],
     "skills": [
       {
         "name": "Enduring Soul",
@@ -13074,18 +10884,7 @@
         "type": "psy"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "-",
-      "ice": "n",
-      "electricity": "r",
-      "wind": "-",
-      "psychic": "d",
-      "nuke": "w",
-      "bless": "n",
-      "curse": "n"
-    },
+    "affinities": "---nr-dwnn",
     "id": 207
   },
   {
@@ -13095,13 +10894,13 @@
     "level": 87,
     "arcanaName": "Judgement",
     "arcana": 20,
-    "stats": {
-      "st": 57,
-      "ma": 54,
-      "en": 55,
-      "ag": 56,
-      "lu": 46
-    },
+    "stats": [
+      57,
+      54,
+      55,
+      56,
+      46
+    ],
     "skills": [
       {
         "name": "Debilitate",
@@ -13139,18 +10938,7 @@
         "type": "nuke"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "-",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "r",
-      "curse": "n"
-    },
+    "affinities": "-s------rn",
     "id": 208
   },
   {
@@ -13160,14 +10948,16 @@
     "arcanaName": "Judgement",
     "arcana": 20,
     "dlc": true,
-    "preReqs": ["DLC_MESSIAH"],
-    "stats": {
-      "st": 56,
-      "ma": 56,
-      "en": 55,
-      "ag": 55,
-      "lu": 55
-    },
+    "preReqs": [
+      "DLC_MESSIAH"
+    ],
+    "stats": [
+      56,
+      56,
+      55,
+      55,
+      55
+    ],
     "skills": [
       {
         "name": "Oratorio",
@@ -13211,18 +11001,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "-",
-      "fire": "s",
-      "ice": "s",
-      "electricity": "s",
-      "wind": "s",
-      "psychic": "s",
-      "nuke": "s",
-      "bless": "r",
-      "curse": "w"
-    },
+    "affinities": "--ssssssrw",
     "id": 209
   },
   {
@@ -13232,14 +11011,16 @@
     "arcanaName": "Judgement",
     "arcana": 20,
     "ultimate": true,
-    "preReqs": ["SL_JUDGEMENT"],
-    "stats": {
-      "st": 62,
-      "ma": 59,
-      "en": 55,
-      "ag": 52,
-      "lu": 55
-    },
+    "preReqs": [
+      "SL_JUDGEMENT"
+    ],
+    "stats": [
+      62,
+      59,
+      55,
+      52,
+      55
+    ],
     "skills": [
       {
         "name": "Diamond Dust",
@@ -13282,18 +11063,7 @@
         "type": "passive"
       }
     ],
-    "affinities": {
-      "physical": "-",
-      "gun": "s",
-      "fire": "-",
-      "ice": "r",
-      "electricity": "-",
-      "wind": "-",
-      "psychic": "-",
-      "nuke": "-",
-      "bless": "-",
-      "curse": "r"
-    },
+    "affinities": "-s-r-----r",
     "id": 210
   }
 ]

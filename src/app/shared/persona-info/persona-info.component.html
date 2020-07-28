@@ -32,18 +32,21 @@
       </mat-panel-title>
       <mat-panel-description>
         <small> 
-          <span *ngFor="let stat of stats()" style="padding-right: 8px"> {{stat | uppercase}}: {{persona.stats[stat]}} </span>
+          <span *ngFor="let stat of stats; let i = index"
+                style="padding-right: 8px">
+            {{stat | uppercase}}: {{persona.stats[i]}}
+          </span>
         </small>
       </mat-panel-description>
     </mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>
       <table>
-        <tr *ngFor="let stat of stats()">
+        <tr *ngFor="let stat of stats; let i = index">
           <td style="width: 24px; padding-right: 8px"><small class="mat-body-1">{{stat | uppercase}}</small></td>
-          <td style="width: 100%"><mat-progress-bar mode="determinate" value="{{persona.stats[stat] / .99}}">
+          <td style="width: 100%"><mat-progress-bar mode="determinate" value="{{persona.stats[i] / .99}}">
             </mat-progress-bar>
           </td>
-          <td style="width: 24px; padding-left: 8px; text-align: right;"><small class="mat-body-1">{{persona.stats[stat]}}</small></td>
+          <td style="width: 24px; padding-left: 8px; text-align: right;"><small class="mat-body-1">{{persona.stats[i]}}</small></td>
         </tr>
       </table>
     </ng-template>
@@ -56,17 +59,15 @@
       </mat-panel-title>
       <mat-panel-description>
         <small>
-          <span *ngFor="let element of affinities()">
-            {{persona.affinities[element]}}
-          </span>
+          {{persona.affinities.split('').join(' ')}}
         </small>
       </mat-panel-description>
     </mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>
       <table style="width: 100%">
-        <tr *ngFor="let element of affinities()">
+        <tr *ngFor="let element of affinities; let i = index">
           <td style="width: 50%">{{element | titlecase}}</td>
-          <td style="width: 50%">{{ { s: 'Strong', w: 'Weak', 'd': 'Absorb', r: 'Repel', n: 'Block', '-': '--' }[persona.affinities[element]]}}</td>
+          <td style="width: 50%">{{affValues[persona.affinities[i]]}}</td>
         </tr>
       </table>
     </ng-template>

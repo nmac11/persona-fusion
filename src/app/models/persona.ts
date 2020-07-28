@@ -1,5 +1,4 @@
 import { Skill } from './skill';
-import { Stats } from './stats';
 
 export class Persona {
   id: number;
@@ -8,9 +7,9 @@ export class Persona {
   arcana: number;
   arcanaName: string;
   skills: Skill[];
-  stats: Stats;
+  stats: number[];
   inherits: string;
-  affinities: { [key: string]: string };
+  affinities: string;
   ultimate?: boolean;
   special?: boolean;
   keyItem?: boolean;

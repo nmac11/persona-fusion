@@ -22,24 +22,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 2,
-            "ma": 2,
-            "en": 2,
-            "ag": 2,
-            "lu": 2
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "affinities": "-----w--w",
         "arcanaName": "Fool"
     },
     {
@@ -80,24 +70,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 9,
-            "ma": 9,
-            "en": 7,
-            "ag": 8,
-            "lu": 10
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "w"
-        },
+        "stats": [
+            9,
+            9,
+            7,
+            8,
+            10
+        ],
+        "affinities": "-------sw",
         "arcanaName": "Fool"
     },
     {
@@ -138,24 +118,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 17,
-            "ma": 15,
-            "en": 18,
-            "ag": 8,
-            "lu": 15
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            17,
+            15,
+            18,
+            8,
+            15
+        ],
+        "affinities": "----s--wn",
         "arcanaName": "Fool"
     },
     {
@@ -197,24 +167,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 23,
-            "ma": 25,
-            "en": 22,
-            "ag": 22,
-            "lu": 25
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            23,
+            25,
+            22,
+            22,
+            25
+        ],
+        "affinities": "---sn--ws",
         "arcanaName": "Fool"
     },
     {
@@ -250,24 +210,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 32,
-            "ma": 26,
-            "en": 30,
-            "ag": 27,
-            "lu": 24
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "n"
-        },
+        "stats": [
+            32,
+            26,
+            30,
+            27,
+            24
+        ],
+        "affinities": "---s-w--n",
         "arcanaName": "Fool"
     },
     {
@@ -308,24 +258,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 28,
-            "ma": 39,
-            "en": 29,
-            "ag": 29,
-            "lu": 32
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            28,
+            39,
+            29,
+            29,
+            32
+        ],
+        "affinities": "---nw----",
         "arcanaName": "Fool"
     },
     {
@@ -371,24 +311,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 41,
-            "ma": 47,
-            "en": 30,
-            "ag": 42,
-            "lu": 21
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "d",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            41,
+            47,
+            30,
+            42,
+            21
+        ],
+        "affinities": "---ws-d-s",
         "arcanaName": "Fool"
     },
     {
@@ -396,7 +326,9 @@
         "level": 76,
         "arcana": 0,
         "ultimate": true,
-        "preReqs": ["SL_FOOL"],
+        "preReqs": [
+            "SL_FOOL"
+        ],
         "special": true,
         "id": 8,
         "skills": [
@@ -433,24 +365,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 57,
-            "ma": 51,
-            "en": 53,
-            "ag": 49,
-            "lu": 53
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "n",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "s",
-            "light": "w",
-            "darkness": "-"
-        },
+        "stats": [
+            57,
+            51,
+            53,
+            49,
+            53
+        ],
+        "affinities": "--n--ssw-",
         "arcanaName": "Fool"
     },
     {
@@ -459,7 +381,9 @@
         "arcana": 0,
         "special": false,
         "specialCondition": "Max all social links",
-        "preReqs": ["UL_ORPHEUSTELOS"],
+        "preReqs": [
+            "UL_ORPHEUSTELOS"
+        ],
         "id": 9,
         "skills": [
             {
@@ -469,24 +393,14 @@
             }
         ],
         "inherits": "all",
-        "stats": {
-            "st": 62,
-            "ma": 62,
-            "en": 62,
-            "ag": 62,
-            "lu": 62
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "s",
-            "fire": "s",
-            "ice": "s",
-            "electricity": "s",
-            "wind": "s",
-            "light": "s",
-            "darkness": "s"
-        },
+        "stats": [
+            62,
+            62,
+            62,
+            62,
+            62
+        ],
+        "affinities": "sssssssss",
         "arcanaName": "Fool"
     },
     {
@@ -522,24 +436,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 4,
-            "ma": 6,
-            "en": 5,
-            "ag": 3,
-            "lu": 4
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            4,
+            6,
+            5,
+            3,
+            4
+        ],
+        "affinities": "---s-----",
         "arcanaName": "Magician"
     },
     {
@@ -580,24 +484,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 5,
-            "ma": 8,
-            "en": 8,
-            "ag": 4,
-            "lu": 6
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            5,
+            8,
+            8,
+            4,
+            6
+        ],
+        "affinities": "---wn----",
         "arcanaName": "Magician"
     },
     {
@@ -638,24 +532,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 7,
-            "ma": 14,
-            "en": 9,
-            "ag": 8,
-            "lu": 11
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            7,
+            14,
+            9,
+            8,
+            11
+        ],
+        "affinities": "---nw----",
         "arcanaName": "Magician"
     },
     {
@@ -663,7 +547,9 @@
         "level": 20,
         "arcana": 1,
         "keyItem": true,
-        "preReqs": ["IT_SMALLCHEONGSAM"],
+        "preReqs": [
+            "IT_SMALLCHEONGSAM"
+        ],
         "id": 13,
         "skills": [
             {
@@ -698,24 +584,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 10,
-            "ma": 19,
-            "en": 11,
-            "ag": 14,
-            "lu": 13
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            10,
+            19,
+            11,
+            14,
+            13
+        ],
+        "affinities": "---nw----",
         "arcanaName": "Magician"
     },
     {
@@ -756,24 +632,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 17,
-            "ma": 25,
-            "en": 18,
-            "ag": 16,
-            "lu": 15
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            17,
+            25,
+            18,
+            16,
+            15
+        ],
+        "affinities": "---nw----",
         "arcanaName": "Magician"
     },
     {
@@ -819,24 +685,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 20,
-            "ma": 29,
-            "en": 21,
-            "ag": 22,
-            "lu": 17
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "n",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            20,
+            29,
+            21,
+            22,
+            17
+        ],
+        "affinities": "----w-n-s",
         "arcanaName": "Magician"
     },
     {
@@ -872,24 +728,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 25,
-            "ma": 35,
-            "en": 24,
-            "ag": 22,
-            "lu": 21
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "r",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "w",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            25,
+            35,
+            24,
+            22,
+            21
+        ],
+        "affinities": "-r-sww--s",
         "arcanaName": "Magician"
     },
     {
@@ -897,7 +743,9 @@
         "level": 52,
         "arcana": 1,
         "ultimate": true,
-        "preReqs": ["SL_MAGICIAN"],
+        "preReqs": [
+            "SL_MAGICIAN"
+        ],
         "id": 17,
         "skills": [
             {
@@ -932,24 +780,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 40,
-            "ma": 49,
-            "en": 35,
-            "ag": 26,
-            "lu": 32
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "d",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            40,
+            49,
+            35,
+            26,
+            32
+        ],
+        "affinities": "---dw----",
         "arcanaName": "Magician"
     },
     {
@@ -975,24 +813,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 3,
-            "ma": 4,
-            "en": 3,
-            "ag": 2,
-            "lu": 4
-        },
-        "affinities": {
-            "slash": "w",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            3,
+            4,
+            3,
+            2,
+            4
+        ],
+        "affinities": "w---s----",
         "arcanaName": "Priestess"
     },
     {
@@ -1033,24 +861,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 7,
-            "ma": 10,
-            "en": 8,
-            "ag": 9,
-            "lu": 6
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            7,
+            10,
+            8,
+            9,
+            6
+        ],
+        "affinities": "---wn--s-",
         "arcanaName": "Priestess"
     },
     {
@@ -1091,24 +909,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 13,
-            "ma": 18,
-            "en": 12,
-            "ag": 11,
-            "lu": 16
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            13,
+            18,
+            12,
+            11,
+            16
+        ],
+        "affinities": "----n-w--",
         "arcanaName": "Priestess"
     },
     {
@@ -1149,24 +957,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 13,
-            "ma": 23,
-            "en": 14,
-            "ag": 20,
-            "lu": 18
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "n",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            13,
+            23,
+            14,
+            20,
+            18
+        ],
+        "affinities": "----nw---",
         "arcanaName": "Priestess"
     },
     {
@@ -1207,24 +1005,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 18,
-            "ma": 28,
-            "en": 21,
-            "ag": 22,
-            "lu": 23
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            18,
+            28,
+            21,
+            22,
+            23
+        ],
+        "affinities": "---wn----",
         "arcanaName": "Priestess"
     },
     {
@@ -1265,24 +1053,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 24,
-            "ma": 38,
-            "en": 25,
-            "ag": 30,
-            "lu": 31
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            24,
+            38,
+            25,
+            30,
+            31
+        ],
+        "affinities": "---wn----",
         "arcanaName": "Priestess"
     },
     {
@@ -1328,24 +1106,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 29,
-            "ma": 45,
-            "en": 28,
-            "ag": 30,
-            "lu": 34
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "r",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            29,
+            45,
+            28,
+            30,
+            34
+        ],
+        "affinities": "---rw----",
         "arcanaName": "Priestess"
     },
     {
@@ -1353,7 +1121,9 @@
         "level": 64,
         "arcana": 2,
         "ultimate": true,
-        "preReqs": ["SL_PRIESTESS"],
+        "preReqs": [
+            "SL_PRIESTESS"
+        ],
         "id": 25,
         "skills": [
             {
@@ -1388,24 +1158,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 51,
-            "ma": 53,
-            "en": 29,
-            "ag": 49,
-            "lu": 40
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "s",
-            "fire": "w",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "s",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            51,
+            53,
+            29,
+            49,
+            40
+        ],
+        "affinities": "--sws-ss-",
         "arcanaName": "Priestess"
     },
     {
@@ -1446,24 +1206,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 19,
-            "ma": 29,
-            "en": 20,
-            "ag": 24,
-            "lu": 22
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            19,
+            29,
+            20,
+            24,
+            22
+        ],
+        "affinities": "-----s---",
         "arcanaName": "Empress"
     },
     {
@@ -1504,24 +1254,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 33,
-            "ma": 32,
-            "en": 26,
-            "ag": 33,
-            "lu": 33
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            33,
+            32,
+            26,
+            33,
+            33
+        ],
+        "affinities": "---s-----",
         "arcanaName": "Empress"
     },
     {
@@ -1562,24 +1302,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 31,
-            "ma": 45,
-            "en": 32,
-            "ag": 33,
-            "lu": 37
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            31,
+            45,
+            32,
+            33,
+            37
+        ],
+        "affinities": "---wn--s-",
         "arcanaName": "Empress"
     },
     {
@@ -1620,24 +1350,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 38,
-            "ma": 44,
-            "en": 34,
-            "ag": 39,
-            "lu": 38
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "r",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            38,
+            44,
+            34,
+            39,
+            38
+        ],
+        "affinities": "----r---s",
         "arcanaName": "Empress"
     },
     {
@@ -1678,24 +1398,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 43,
-            "ma": 49,
-            "en": 35,
-            "ag": 45,
-            "lu": 42
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "r",
-            "electricity": "-",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            43,
+            49,
+            35,
+            45,
+            42
+        ],
+        "affinities": "----r--rw",
         "arcanaName": "Empress"
     },
     {
@@ -1736,24 +1446,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 48,
-            "ma": 55,
-            "en": 50,
-            "ag": 43,
-            "lu": 51
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "r",
-            "wind": "-",
-            "light": "-",
-            "darkness": "r"
-        },
+        "stats": [
+            48,
+            55,
+            50,
+            43,
+            51
+        ],
+        "affinities": "---w-r--r",
         "arcanaName": "Empress"
     },
     {
@@ -1794,24 +1494,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 48,
-            "ma": 57,
-            "en": 47,
-            "ag": 45,
-            "lu": 50
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "d",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            48,
+            57,
+            47,
+            45,
+            50
+        ],
+        "affinities": "---wd----",
         "arcanaName": "Empress"
     },
     {
@@ -1819,7 +1509,9 @@
         "level": 84,
         "arcana": 3,
         "ultimate": true,
-        "preReqs": ["SL_EMPRESS"],
+        "preReqs": [
+            "SL_EMPRESS"
+        ],
         "id": 33,
         "skills": [
             {
@@ -1854,24 +1546,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 53,
-            "ma": 64,
-            "en": 61,
-            "ag": 52,
-            "lu": 60
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "s",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            53,
+            64,
+            61,
+            52,
+            60
+        ],
+        "affinities": "sss-----w",
         "arcanaName": "Empress"
     },
     {
@@ -1912,24 +1594,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 5,
-            "ma": 5,
-            "en": 8,
-            "ag": 6,
-            "lu": 4
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            5,
+            5,
+            8,
+            6,
+            4
+        ],
+        "affinities": "---ws----",
         "arcanaName": "Emperor"
     },
     {
@@ -1970,24 +1642,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 12,
-            "ma": 15,
-            "en": 9,
-            "ag": 8,
-            "lu": 8
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "n",
-            "wind": "-",
-            "light": "s",
-            "darkness": "s"
-        },
+        "stats": [
+            12,
+            15,
+            9,
+            8,
+            8
+        ],
+        "affinities": "----wn-ss",
         "arcanaName": "Emperor"
     },
     {
@@ -2033,24 +1695,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 19,
-            "ma": 18,
-            "en": 13,
-            "ag": 15,
-            "lu": 14
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "n",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            19,
+            18,
+            13,
+            15,
+            14
+        ],
+        "affinities": "s---wn---",
         "arcanaName": "Emperor"
     },
     {
@@ -2058,7 +1710,9 @@
         "level": 30,
         "arcana": 4,
         "keyItem": true,
-        "preReqs": ["IT_SUGARKEY"],
+        "preReqs": [
+            "IT_SUGARKEY"
+        ],
         "id": 37,
         "skills": [
             {
@@ -2093,24 +1747,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 20,
-            "ma": 23,
-            "en": 22,
-            "ag": 15,
-            "lu": 24
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            20,
+            23,
+            22,
+            15,
+            24
+        ],
+        "affinities": "---wn----",
         "arcanaName": "Emperor"
     },
     {
@@ -2156,24 +1800,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 24,
-            "ma": 26,
-            "en": 23,
-            "ag": 21,
-            "lu": 21
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "s",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "n",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            24,
+            26,
+            23,
+            21,
+            21
+        ],
+        "affinities": "--sw-n---",
         "arcanaName": "Emperor"
     },
     {
@@ -2214,24 +1848,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 31,
-            "ma": 37,
-            "en": 30,
-            "ag": 23,
-            "lu": 24
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            31,
+            37,
+            30,
+            23,
+            24
+        ],
+        "affinities": "---w-s--s",
         "arcanaName": "Emperor"
     },
     {
@@ -2277,24 +1901,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 40,
-            "ma": 36,
-            "en": 30,
-            "ag": 28,
-            "lu": 29
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "n",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            40,
+            36,
+            30,
+            28,
+            29
+        ],
+        "affinities": "---w-n-nw",
         "arcanaName": "Emperor"
     },
     {
@@ -2302,7 +1916,9 @@
         "level": 57,
         "arcana": 4,
         "ultimate": true,
-        "preReqs": ["SL_EMPEROR"],
+        "preReqs": [
+            "SL_EMPEROR"
+        ],
         "id": 41,
         "skills": [
             {
@@ -2337,24 +1953,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 39,
-            "ma": 52,
-            "en": 33,
-            "ag": 36,
-            "lu": 39
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "d",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            39,
+            52,
+            33,
+            36,
+            39
+        ],
+        "affinities": "-----dw--",
         "arcanaName": "Emperor"
     },
     {
@@ -2390,24 +1996,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 4,
-            "ma": 7,
-            "en": 6,
-            "ag": 4,
-            "lu": 7
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            4,
+            7,
+            6,
+            4,
+            7
+        ],
+        "affinities": "-----s--w",
         "arcanaName": "Hierophant"
     },
     {
@@ -2448,24 +2044,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 11,
-            "ma": 10,
-            "en": 9,
-            "ag": 7,
-            "lu": 9
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            11,
+            10,
+            9,
+            7,
+            9
+        ],
+        "affinities": "---s-w---",
         "arcanaName": "Hierophant"
     },
     {
@@ -2506,24 +2092,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 18,
-            "ma": 18,
-            "en": 17,
-            "ag": 17,
-            "lu": 15
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            18,
+            18,
+            17,
+            17,
+            15
+        ],
+        "affinities": "---wn--s-",
         "arcanaName": "Hierophant"
     },
     {
@@ -2564,24 +2140,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 25,
-            "ma": 25,
-            "en": 20,
-            "ag": 18,
-            "lu": 18
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            25,
+            25,
+            20,
+            18,
+            18
+        ],
+        "affinities": "---n--w--",
         "arcanaName": "Hierophant"
     },
     {
@@ -2589,7 +2155,9 @@
         "level": 41,
         "arcana": 5,
         "keyItem": true,
-        "preReqs": ["IT_BOOKOFANCIENTS"],
+        "preReqs": [
+            "IT_BOOKOFANCIENTS"
+        ],
         "id": 46,
         "skills": [
             {
@@ -2624,24 +2192,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 23,
-            "ma": 32,
-            "en": 26,
-            "ag": 23,
-            "lu": 26
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "n",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            23,
+            32,
+            26,
+            23,
+            26
+        ],
+        "affinities": "-----nw--",
         "arcanaName": "Hierophant"
     },
     {
@@ -2687,24 +2245,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 28,
-            "ma": 35,
-            "en": 35,
-            "ag": 23,
-            "lu": 27
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "w",
-            "light": "s",
-            "darkness": "s"
-        },
+        "stats": [
+            28,
+            35,
+            35,
+            23,
+            27
+        ],
+        "affinities": "-----swss",
         "arcanaName": "Hierophant"
     },
     {
@@ -2746,24 +2294,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 32,
-            "ma": 44,
-            "en": 36,
-            "ag": 29,
-            "lu": 38
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            32,
+            44,
+            36,
+            29,
+            38
+        ],
+        "affinities": "-s-----nw",
         "arcanaName": "Hierophant"
     },
     {
@@ -2771,7 +2309,9 @@
         "level": 66,
         "arcana": 5,
         "ultimate": true,
-        "preReqs": ["SL_HIEROPHANT"],
+        "preReqs": [
+            "SL_HIEROPHANT"
+        ],
         "special": true,
         "id": 49,
         "skills": [
@@ -2813,24 +2353,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 49,
-            "ma": 51,
-            "en": 58,
-            "ag": 30,
-            "lu": 41
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            49,
+            51,
+            58,
+            30,
+            41
+        ],
+        "affinities": "-------n-",
         "arcanaName": "Hierophant"
     },
     {
@@ -2861,24 +2391,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 2,
-            "ma": 3,
-            "en": 2,
-            "ag": 3,
-            "lu": 3
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            2,
+            3,
+            2,
+            3,
+            3
+        ],
+        "affinities": "-----s---",
         "arcanaName": "Lovers"
     },
     {
@@ -2919,24 +2439,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 3,
-            "ma": 7,
-            "en": 5,
-            "ag": 5,
-            "lu": 5
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            3,
+            7,
+            5,
+            5,
+            5
+        ],
+        "affinities": "----w-s--",
         "arcanaName": "Lovers"
     },
     {
@@ -2982,24 +2492,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 9,
-            "ma": 10,
-            "en": 5,
-            "ag": 10,
-            "lu": 8
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            9,
+            10,
+            5,
+            10,
+            8
+        ],
+        "affinities": "s--s-s-n-",
         "arcanaName": "Lovers"
     },
     {
@@ -3040,24 +2540,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 12,
-            "ma": 18,
-            "en": 9,
-            "ag": 13,
-            "lu": 20
-        },
-        "affinities": {
-            "slash": "w",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "s",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            12,
+            18,
+            9,
+            13,
+            20
+        ],
+        "affinities": "w---sss--",
         "arcanaName": "Lovers"
     },
     {
@@ -3103,24 +2593,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 16,
-            "ma": 21,
-            "en": 16,
-            "ag": 12,
-            "lu": 23
-        },
-        "affinities": {
-            "slash": "w",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "s",
-            "electricity": "n",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            16,
+            21,
+            16,
+            12,
+            23
+        ],
+        "affinities": "w--ssn---",
         "arcanaName": "Lovers"
     },
     {
@@ -3166,24 +2646,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 20,
-            "ma": 32,
-            "en": 20,
-            "ag": 22,
-            "lu": 30
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "w",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "s",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            20,
+            32,
+            20,
+            22,
+            30
+        ],
+        "affinities": "-w-sss---",
         "arcanaName": "Lovers"
     },
     {
@@ -3224,24 +2694,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 19,
-            "ma": 39,
-            "en": 23,
-            "ag": 31,
-            "lu": 39
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "w",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            19,
+            39,
+            23,
+            31,
+            39
+        ],
+        "affinities": "----sws--",
         "arcanaName": "Lovers"
     },
     {
@@ -3282,24 +2742,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 44,
-            "ma": 42,
-            "en": 31,
-            "ag": 31,
-            "lu": 42
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            44,
+            42,
+            31,
+            31,
+            42
+        ],
+        "affinities": "----s--rw",
         "arcanaName": "Lovers"
     },
     {
@@ -3307,7 +2757,9 @@
         "level": 68,
         "arcana": 6,
         "ultimate": true,
-        "preReqs": ["SL_LOVERS"],
+        "preReqs": [
+            "SL_LOVERS"
+        ],
         "id": 58,
         "skills": [
             {
@@ -3342,24 +2794,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 49,
-            "ma": 55,
-            "en": 40,
-            "ag": 42,
-            "lu": 50
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "n"
-        },
+        "stats": [
+            49,
+            55,
+            40,
+            42,
+            50
+        ],
+        "affinities": "---s-s--n",
         "arcanaName": "Lovers"
     },
     {
@@ -3400,24 +2842,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 6,
-            "ma": 4,
-            "en": 6,
-            "ag": 4,
-            "lu": 5
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            6,
+            4,
+            6,
+            4,
+            5
+        ],
+        "affinities": "-s----w--",
         "arcanaName": "Chariot"
     },
     {
@@ -3458,24 +2890,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 8,
-            "ma": 4,
-            "en": 9,
-            "ag": 8,
-            "lu": 5
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            8,
+            4,
+            9,
+            8,
+            5
+        ],
+        "affinities": "-s-sw----",
         "arcanaName": "Chariot"
     },
     {
@@ -3516,24 +2938,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 14,
-            "ma": 6,
-            "en": 13,
-            "ag": 7,
-            "lu": 9
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            14,
+            6,
+            13,
+            7,
+            9
+        ],
+        "affinities": "-s-s--w--",
         "arcanaName": "Chariot"
     },
     {
@@ -3569,24 +2981,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 17,
-            "ma": 10,
-            "en": 15,
-            "ag": 9,
-            "lu": 13
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            17,
+            10,
+            15,
+            9,
+            13
+        ],
+        "affinities": "s--s--w--",
         "arcanaName": "Chariot"
     },
     {
@@ -3632,24 +3034,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 26,
-            "ma": 14,
-            "en": 26,
-            "ag": 11,
-            "lu": 20
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            26,
+            14,
+            26,
+            11,
+            20
+        ],
+        "affinities": "-s----w--",
         "arcanaName": "Chariot"
     },
     {
@@ -3657,7 +3049,9 @@
         "level": 37,
         "arcana": 7,
         "keyItem": true,
-        "preReqs": ["IT_MACHINECORE"],
+        "preReqs": [
+            "IT_MACHINECORE"
+        ],
         "id": 64,
         "skills": [
             {
@@ -3692,24 +3086,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 29,
-            "ma": 19,
-            "en": 24,
-            "ag": 29,
-            "lu": 26
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            29,
+            19,
+            24,
+            29,
+            26
+        ],
+        "affinities": "-s--w-s--",
         "arcanaName": "Chariot"
     },
     {
@@ -3750,24 +3134,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 35,
-            "ma": 24,
-            "en": 31,
-            "ag": 21,
-            "lu": 25
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            35,
+            24,
+            31,
+            21,
+            25
+        ],
+        "affinities": "-s-w-s---",
         "arcanaName": "Chariot"
     },
     {
@@ -3775,7 +3149,9 @@
         "level": 53,
         "arcana": 7,
         "ultimate": true,
-        "preReqs": ["SL_CHARIOT"],
+        "preReqs": [
+            "SL_CHARIOT"
+        ],
         "id": 66,
         "skills": [
             {
@@ -3810,24 +3186,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 42,
-            "ma": 45,
-            "en": 34,
-            "ag": 30,
-            "lu": 34
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "n",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "n",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            42,
+            45,
+            34,
+            30,
+            34
+        ],
+        "affinities": "-n---nw--",
         "arcanaName": "Chariot"
     },
     {
@@ -3863,24 +3229,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 4,
-            "ma": 5,
-            "en": 3,
-            "ag": 4,
-            "lu": 3
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "w"
-        },
+        "stats": [
+            4,
+            5,
+            3,
+            4,
+            3
+        ],
+        "affinities": "-------sw",
         "arcanaName": "Justice"
     },
     {
@@ -3926,24 +3282,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 8,
-            "ma": 8,
-            "en": 8,
-            "ag": 7,
-            "lu": 6
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "s",
-            "darkness": "w"
-        },
+        "stats": [
+            8,
+            8,
+            8,
+            7,
+            6
+        ],
+        "affinities": "s-----wsw",
         "arcanaName": "Justice"
     },
     {
@@ -3984,24 +3330,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 12,
-            "ma": 13,
-            "en": 7,
-            "ag": 11,
-            "lu": 12
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            12,
+            13,
+            7,
+            11,
+            12
+        ],
+        "affinities": "---s---nw",
         "arcanaName": "Justice"
     },
     {
@@ -4042,24 +3378,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 20,
-            "ma": 19,
-            "en": 15,
-            "ag": 16,
-            "lu": 12
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            20,
+            19,
+            15,
+            16,
+            12
+        ],
+        "affinities": "------snw",
         "arcanaName": "Justice"
     },
     {
@@ -4100,24 +3426,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 22,
-            "ma": 23,
-            "en": 15,
-            "ag": 20,
-            "lu": 23
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            22,
+            23,
+            15,
+            20,
+            23
+        ],
+        "affinities": "-------nw",
         "arcanaName": "Justice"
     },
     {
@@ -4158,24 +3474,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 28,
-            "ma": 33,
-            "en": 24,
-            "ag": 25,
-            "lu": 23
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            28,
+            33,
+            24,
+            25,
+            23
+        ],
+        "affinities": "-----s-nw",
         "arcanaName": "Justice"
     },
     {
@@ -4216,24 +3522,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 35,
-            "ma": 32,
-            "en": 26,
-            "ag": 34,
-            "lu": 33
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            35,
+            32,
+            26,
+            34,
+            33
+        ],
+        "affinities": "---s---nw",
         "arcanaName": "Justice"
     },
     {
@@ -4241,7 +3537,9 @@
         "level": 59,
         "arcana": 8,
         "ultimate": true,
-        "preReqs": ["SL_JUSTICE"],
+        "preReqs": [
+            "SL_JUSTICE"
+        ],
         "id": 74,
         "skills": [
             {
@@ -4281,24 +3579,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 50,
-            "ma": 46,
-            "en": 43,
-            "ag": 36,
-            "lu": 31
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            50,
+            46,
+            43,
+            36,
+            31
+        ],
+        "affinities": "-s-----rw",
         "arcanaName": "Justice"
     },
     {
@@ -4339,24 +3627,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 3,
-            "ma": 8,
-            "en": 9,
-            "ag": 10,
-            "lu": 4
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            3,
+            8,
+            9,
+            10,
+            4
+        ],
+        "affinities": "--------s",
         "arcanaName": "Hermit"
     },
     {
@@ -4397,24 +3675,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 14,
-            "ma": 10,
-            "en": 12,
-            "ag": 14,
-            "lu": 8
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            14,
+            10,
+            12,
+            14,
+            8
+        ],
+        "affinities": "-----s-ws",
         "arcanaName": "Hermit"
     },
     {
@@ -4455,24 +3723,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 15,
-            "ma": 20,
-            "en": 12,
-            "ag": 18,
-            "lu": 17
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "w",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "s",
-            "light": "-",
-            "darkness": "n"
-        },
+        "stats": [
+            15,
+            20,
+            12,
+            18,
+            17
+        ],
+        "affinities": "-w-ns-s-n",
         "arcanaName": "Hermit"
     },
     {
@@ -4513,24 +3771,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 15,
-            "ma": 25,
-            "en": 19,
-            "ag": 27,
-            "lu": 25
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "w",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "s",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            15,
+            25,
+            19,
+            27,
+            25
+        ],
+        "affinities": "--w--ss-s",
         "arcanaName": "Hermit"
     },
     {
@@ -4571,24 +3819,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 27,
-            "ma": 23,
-            "en": 26,
-            "ag": 28,
-            "lu": 17
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            27,
+            23,
+            26,
+            28,
+            17
+        ],
+        "affinities": "------s--",
         "arcanaName": "Hermit"
     },
     {
@@ -4629,24 +3867,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 27,
-            "ma": 29,
-            "en": 30,
-            "ag": 35,
-            "lu": 18
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "n",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            27,
+            29,
+            30,
+            35,
+            18
+        ],
+        "affinities": "-----wn-s",
         "arcanaName": "Hermit"
     },
     {
@@ -4654,7 +3882,9 @@
         "level": 50,
         "arcana": 9,
         "keyItem": true,
-        "preReqs": ["IT_MARIONETTE"],
+        "preReqs": [
+            "IT_MARIONETTE"
+        ],
         "id": 81,
         "skills": [
             {
@@ -4689,24 +3919,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 31,
-            "ma": 42,
-            "en": 32,
-            "ag": 34,
-            "lu": 30
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            31,
+            42,
+            32,
+            34,
+            30
+        ],
+        "affinities": "-------wn",
         "arcanaName": "Hermit"
     },
     {
@@ -4747,24 +3967,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 38,
-            "ma": 37,
-            "en": 35,
-            "ag": 45,
-            "lu": 20
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "d",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            38,
+            37,
+            35,
+            45,
+            20
+        ],
+        "affinities": "---d--w--",
         "arcanaName": "Hermit"
     },
     {
@@ -4772,7 +3982,9 @@
         "level": 60,
         "arcana": 9,
         "ultimate": true,
-        "preReqs": ["SL_HERMIT"],
+        "preReqs": [
+            "SL_HERMIT"
+        ],
         "special": true,
         "id": 83,
         "skills": [
@@ -4813,24 +4025,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 42,
-            "ma": 50,
-            "en": 51,
-            "ag": 32,
-            "lu": 34
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "w",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "s",
-            "wind": "-",
-            "light": "n",
-            "darkness": "s"
-        },
+        "stats": [
+            42,
+            50,
+            51,
+            32,
+            34
+        ],
+        "affinities": "-w-nws-ns",
         "arcanaName": "Hermit"
     },
     {
@@ -4871,24 +4073,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 9,
-            "ma": 14,
-            "en": 10,
-            "ag": 15,
-            "lu": 10
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            9,
+            14,
+            10,
+            15,
+            10
+        ],
+        "affinities": "---w--s--",
         "arcanaName": "Fortune"
     },
     {
@@ -4896,7 +4088,9 @@
         "level": 23,
         "arcana": 10,
         "keyItem": true,
-        "preReqs": ["IT_BLUESCALE"],
+        "preReqs": [
+            "IT_BLUESCALE"
+        ],
         "id": 85,
         "skills": [
             {
@@ -4931,24 +4125,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 10,
-            "ma": 20,
-            "en": 10,
-            "ag": 16,
-            "lu": 20
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            10,
+            20,
+            10,
+            16,
+            20
+        ],
+        "affinities": "---w-ss--",
         "arcanaName": "Fortune"
     },
     {
@@ -4989,24 +4173,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 16,
-            "ma": 23,
-            "en": 20,
-            "ag": 11,
-            "lu": 24
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "n",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            16,
+            23,
+            20,
+            11,
+            24
+        ],
+        "affinities": "-----sn-w",
         "arcanaName": "Fortune"
     },
     {
@@ -5047,24 +4221,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 20,
-            "ma": 29,
-            "en": 22,
-            "ag": 21,
-            "lu": 29
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "n",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            20,
+            29,
+            22,
+            21,
+            29
+        ],
+        "affinities": "---w--n--",
         "arcanaName": "Fortune"
     },
     {
@@ -5105,24 +4269,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 26,
-            "ma": 36,
-            "en": 19,
-            "ag": 31,
-            "lu": 30
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "n",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            26,
+            36,
+            19,
+            31,
+            30
+        ],
+        "affinities": "-----wn--",
         "arcanaName": "Fortune"
     },
     {
@@ -5163,24 +4317,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 26,
-            "ma": 45,
-            "en": 27,
-            "ag": 31,
-            "lu": 40
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "n",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            26,
+            45,
+            27,
+            31,
+            40
+        ],
+        "affinities": "-----wn--",
         "arcanaName": "Fortune"
     },
     {
@@ -5188,7 +4332,9 @@
         "level": 62,
         "arcana": 10,
         "ultimate": true,
-        "preReqs": ["SL_FORTUNE"],
+        "preReqs": [
+            "SL_FORTUNE"
+        ],
         "special": true,
         "id": 90,
         "skills": [
@@ -5224,24 +4370,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 40,
-            "ma": 54,
-            "en": 32,
-            "ag": 46,
-            "lu": 44
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "d",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            40,
+            54,
+            32,
+            46,
+            44
+        ],
+        "affinities": "-----wd--",
         "arcanaName": "Fortune"
     },
     {
@@ -5277,24 +4413,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 10,
-            "ma": 7,
-            "en": 8,
-            "ag": 8,
-            "lu": 7
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            10,
+            7,
+            8,
+            8,
+            7
+        ],
+        "affinities": "s--w-----",
         "arcanaName": "Strength"
     },
     {
@@ -5335,24 +4461,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 16,
-            "ma": 8,
-            "en": 13,
-            "ag": 10,
-            "lu": 8
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "-"
-        },
+        "stats": [
+            16,
+            8,
+            13,
+            10,
+            8
+        ],
+        "affinities": "s------w-",
         "arcanaName": "Strength"
     },
     {
@@ -5393,24 +4509,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 23,
-            "ma": 10,
-            "en": 18,
-            "ag": 11,
-            "lu": 14
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "s"
-        },
+        "stats": [
+            23,
+            10,
+            18,
+            11,
+            14
+        ],
+        "affinities": "s--w----s",
         "arcanaName": "Strength"
     },
     {
@@ -5456,24 +4562,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 24,
-            "ma": 19,
-            "en": 19,
-            "ag": 14,
-            "lu": 18
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            24,
+            19,
+            19,
+            14,
+            18
+        ],
+        "affinities": "s-----s-w",
         "arcanaName": "Strength"
     },
     {
@@ -5519,24 +4615,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 26,
-            "ma": 23,
-            "en": 20,
-            "ag": 22,
-            "lu": 27
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "w",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            26,
+            23,
+            20,
+            22,
+            27
+        ],
+        "affinities": "-----sws-",
         "arcanaName": "Strength"
     },
     {
@@ -5577,24 +4663,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 36,
-            "ma": 27,
-            "en": 28,
-            "ag": 28,
-            "lu": 26
-        },
-        "affinities": {
-            "slash": "n",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            36,
+            27,
+            28,
+            28,
+            26
+        ],
+        "affinities": "n-----ws-",
         "arcanaName": "Strength"
     },
     {
@@ -5635,24 +4711,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 42,
-            "ma": 30,
-            "en": 33,
-            "ag": 36,
-            "lu": 31
-        },
-        "affinities": {
-            "slash": "n",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            42,
+            30,
+            33,
+            36,
+            31
+        ],
+        "affinities": "n-----w--",
         "arcanaName": "Strength"
     },
     {
@@ -5660,7 +4726,9 @@
         "level": 59,
         "arcana": 11,
         "ultimate": true,
-        "preReqs": ["SL_STRENGTH"],
+        "preReqs": [
+            "SL_STRENGTH"
+        ],
         "id": 98,
         "skills": [
             {
@@ -5701,24 +4769,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 50,
-            "ma": 43,
-            "en": 40,
-            "ag": 41,
-            "lu": 32
-        },
-        "affinities": {
-            "slash": "n",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            50,
+            43,
+            40,
+            41,
+            32
+        ],
+        "affinities": "ns-----nw",
         "arcanaName": "Strength"
     },
     {
@@ -5759,24 +4817,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 6,
-            "ma": 11,
-            "en": 10,
-            "ag": 6,
-            "lu": 4
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            6,
+            11,
+            10,
+            6,
+            4
+        ],
+        "affinities": "-----s--w",
         "arcanaName": "Hanged Man"
     },
     {
@@ -5817,24 +4865,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 16,
-            "ma": 16,
-            "en": 19,
-            "ag": 10,
-            "lu": 9
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "w",
-            "darkness": "w"
-        },
+        "stats": [
+            16,
+            16,
+            19,
+            10,
+            9
+        ],
+        "affinities": "-s---s-ww",
         "arcanaName": "Hanged Man"
     },
     {
@@ -5875,24 +4913,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 22,
-            "ma": 14,
-            "en": 20,
-            "ag": 21,
-            "lu": 14
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            22,
+            14,
+            20,
+            21,
+            14
+        ],
+        "affinities": "---nw----",
         "arcanaName": "Hanged Man"
     },
     {
@@ -5933,24 +4961,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 27,
-            "ma": 27,
-            "en": 30,
-            "ag": 19,
-            "lu": 18
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "w",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            27,
+            27,
+            30,
+            19,
+            18
+        ],
+        "affinities": "----s-wn-",
         "arcanaName": "Hanged Man"
     },
     {
@@ -5996,24 +5014,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 32,
-            "ma": 29,
-            "en": 40,
-            "ag": 24,
-            "lu": 26
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            32,
+            29,
+            40,
+            24,
+            26
+        ],
+        "affinities": "-s---sw--",
         "arcanaName": "Hanged Man"
     },
     {
@@ -6054,24 +5062,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 37,
-            "ma": 32,
-            "en": 45,
-            "ag": 20,
-            "lu": 35
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            37,
+            32,
+            45,
+            20,
+            35
+        ],
+        "affinities": "-s-----wn",
         "arcanaName": "Hanged Man"
     },
     {
@@ -6079,7 +5077,9 @@
         "level": 60,
         "arcana": 12,
         "keyItem": true,
-        "preReqs": ["IT_REDMUFFLER"],
+        "preReqs": [
+            "IT_REDMUFFLER"
+        ],
         "id": 105,
         "skills": [
             {
@@ -6114,24 +5114,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 49,
-            "ma": 35,
-            "en": 49,
-            "ag": 40,
-            "lu": 14
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "r",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            49,
+            35,
+            49,
+            40,
+            14
+        ],
+        "affinities": "---r-w---",
         "arcanaName": "Hanged Man"
     },
     {
@@ -6139,7 +5129,9 @@
         "level": 67,
         "arcana": 12,
         "ultimate": true,
-        "preReqs": ["SL_HANGEDMAN"],
+        "preReqs": [
+            "SL_HANGEDMAN"
+        ],
         "special": true,
         "id": 106,
         "skills": [
@@ -6175,24 +5167,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 46,
-            "ma": 54,
-            "en": 56,
-            "ag": 44,
-            "lu": 32
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "s",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "-"
-        },
+        "stats": [
+            46,
+            54,
+            56,
+            44,
+            32
+        ],
+        "affinities": "sss----w-",
         "arcanaName": "Hanged Man"
     },
     {
@@ -6233,24 +5215,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 13,
-            "ma": 15,
-            "en": 15,
-            "ag": 11,
-            "lu": 11
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "w",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "n",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            13,
+            15,
+            15,
+            11,
+            11
+        ],
+        "affinities": "-sw---nwn",
         "arcanaName": "Death"
     },
     {
@@ -6258,7 +5230,9 @@
         "level": 24,
         "arcana": 13,
         "keyItem": true,
-        "preReqs": ["IT_TORNBLACKCLOTH"],
+        "preReqs": [
+            "IT_TORNBLACKCLOTH"
+        ],
         "id": 108,
         "skills": [
             {
@@ -6293,24 +5267,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 20,
-            "ma": 19,
-            "en": 15,
-            "ag": 19,
-            "lu": 12
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            20,
+            19,
+            15,
+            19,
+            12
+        ],
+        "affinities": "------sws",
         "arcanaName": "Death"
     },
     {
@@ -6356,24 +5320,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 21,
-            "ma": 26,
-            "en": 24,
-            "ag": 19,
-            "lu": 18
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            21,
+            26,
+            24,
+            19,
+            18
+        ],
+        "affinities": "-----s-ws",
         "arcanaName": "Death"
     },
     {
@@ -6414,24 +5368,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 27,
-            "ma": 31,
-            "en": 26,
-            "ag": 20,
-            "lu": 23
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            27,
+            31,
+            26,
+            20,
+            23
+        ],
+        "affinities": "-------wn",
         "arcanaName": "Death"
     },
     {
@@ -6477,24 +5421,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 31,
-            "ma": 37,
-            "en": 34,
-            "ag": 22,
-            "lu": 29
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "w",
-            "darkness": "r"
-        },
+        "stats": [
+            31,
+            37,
+            34,
+            22,
+            29
+        ],
+        "affinities": "------swr",
         "arcanaName": "Death"
     },
     {
@@ -6537,24 +5471,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 31,
-            "ma": 50,
-            "en": 27,
-            "ag": 42,
-            "lu": 39
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "r"
-        },
+        "stats": [
+            31,
+            50,
+            27,
+            42,
+            39
+        ],
+        "affinities": "-------wr",
         "arcanaName": "Death"
     },
     {
@@ -6562,7 +5486,9 @@
         "level": 64,
         "arcana": 13,
         "ultimate": true,
-        "preReqs": ["SL_DEATH"],
+        "preReqs": [
+            "SL_DEATH"
+        ],
         "special": true,
         "id": 113,
         "skills": [
@@ -6598,24 +5524,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 48,
-            "ma": 51,
-            "en": 44,
-            "ag": 39,
-            "lu": 40
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "r"
-        },
+        "stats": [
+            48,
+            51,
+            44,
+            39,
+            40
+        ],
+        "affinities": "ss-----wr",
         "arcanaName": "Death"
     },
     {
@@ -6656,24 +5572,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 9,
-            "ma": 8,
-            "en": 10,
-            "ag": 9,
-            "lu": 10
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "-",
-            "light": "s",
-            "darkness": "s"
-        },
+        "stats": [
+            9,
+            8,
+            10,
+            9,
+            10
+        ],
+        "affinities": "-----w-ss",
         "arcanaName": "Temperance"
     },
     {
@@ -6714,24 +5620,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 17,
-            "ma": 20,
-            "en": 17,
-            "ag": 11,
-            "lu": 13
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "n",
-            "electricity": "w",
-            "wind": "-",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            17,
+            20,
+            17,
+            11,
+            13
+        ],
+        "affinities": "----nw-n-",
         "arcanaName": "Temperance"
     },
     {
@@ -6772,24 +5668,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 19,
-            "ma": 22,
-            "en": 26,
-            "ag": 12,
-            "lu": 22
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            19,
+            22,
+            26,
+            12,
+            22
+        ],
+        "affinities": "-s--sw---",
         "arcanaName": "Temperance"
     },
     {
@@ -6830,24 +5716,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 26,
-            "ma": 24,
-            "en": 27,
-            "ag": 22,
-            "lu": 25
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "n",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            26,
+            24,
+            27,
+            22,
+            25
+        ],
+        "affinities": "-----wns-",
         "arcanaName": "Temperance"
     },
     {
@@ -6888,24 +5764,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 33,
-            "ma": 37,
-            "en": 27,
-            "ag": 26,
-            "lu": 27
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            33,
+            37,
+            27,
+            26,
+            27
+        ],
+        "affinities": "---nw--s-",
         "arcanaName": "Temperance"
     },
     {
@@ -6946,24 +5812,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 32,
-            "ma": 39,
-            "en": 32,
-            "ag": 40,
-            "lu": 29
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            32,
+            39,
+            32,
+            40,
+            29
+        ],
+        "affinities": "---nw----",
         "arcanaName": "Temperance"
     },
     {
@@ -7004,24 +5860,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 49,
-            "ma": 36,
-            "en": 34,
-            "ag": 48,
-            "lu": 32
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "d",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            49,
+            36,
+            34,
+            48,
+            32
+        ],
+        "affinities": "s--w-d--w",
         "arcanaName": "Temperance"
     },
     {
@@ -7029,7 +5875,9 @@
         "level": 64,
         "arcana": 14,
         "ultimate": true,
-        "preReqs": ["SL_TEMPERANCE"],
+        "preReqs": [
+            "SL_TEMPERANCE"
+        ],
         "id": 121,
         "skills": [
             {
@@ -7069,24 +5917,14 @@
             }
         ],
         "inherits": "ice",
-        "stats": {
-            "st": 43,
-            "ma": 47,
-            "en": 49,
-            "ag": 34,
-            "lu": 41
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "n",
-            "electricity": "w",
-            "wind": "n",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            43,
+            47,
+            49,
+            34,
+            41
+        ],
+        "affinities": "----nwn-w",
         "arcanaName": "Temperance"
     },
     {
@@ -7127,24 +5965,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 4,
-            "ma": 10,
-            "en": 6,
-            "ag": 6,
-            "lu": 7
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            4,
+            10,
+            6,
+            6,
+            7
+        ],
+        "affinities": "-----s-ws",
         "arcanaName": "Devil"
     },
     {
@@ -7190,24 +6018,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 6,
-            "ma": 9,
-            "en": 12,
-            "ag": 17,
-            "lu": 23
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "n"
-        },
+        "stats": [
+            6,
+            9,
+            12,
+            17,
+            23
+        ],
+        "affinities": "---wn---n",
         "arcanaName": "Devil"
     },
     {
@@ -7248,24 +6066,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 21,
-            "ma": 16,
-            "en": 21,
-            "ag": 10,
-            "lu": 17
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            21,
+            16,
+            21,
+            10,
+            17
+        ],
+        "affinities": "---s--wwn",
         "arcanaName": "Devil"
     },
     {
@@ -7311,24 +6119,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 21,
-            "ma": 30,
-            "en": 20,
-            "ag": 21,
-            "lu": 25
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            21,
+            30,
+            20,
+            21,
+            25
+        ],
+        "affinities": "---nw--wn",
         "arcanaName": "Devil"
     },
     {
@@ -7369,24 +6167,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 24,
-            "ma": 36,
-            "en": 27,
-            "ag": 32,
-            "lu": 27
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            24,
+            36,
+            27,
+            32,
+            27
+        ],
+        "affinities": "---s---wn",
         "arcanaName": "Devil"
     },
     {
@@ -7427,24 +6215,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 34,
-            "ma": 41,
-            "en": 31,
-            "ag": 36,
-            "lu": 34
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "n",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            34,
+            41,
+            31,
+            36,
+            34
+        ],
+        "affinities": "------nws",
         "arcanaName": "Devil"
     },
     {
@@ -7452,7 +6230,9 @@
         "level": 61,
         "arcana": 15,
         "keyItem": true,
-        "preReqs": ["IT_LILYPETAL"],
+        "preReqs": [
+            "IT_LILYPETAL"
+        ],
         "special": true,
         "id": 128,
         "skills": [
@@ -7493,24 +6273,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 39,
-            "ma": 52,
-            "en": 38,
-            "ag": 40,
-            "lu": 36
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "d",
-            "wind": "w",
-            "light": "w",
-            "darkness": "r"
-        },
+        "stats": [
+            39,
+            52,
+            38,
+            40,
+            36
+        ],
+        "affinities": "-----dwwr",
         "arcanaName": "Devil"
     },
     {
@@ -7557,24 +6327,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 46,
-            "ma": 52,
-            "en": 49,
-            "ag": 33,
-            "lu": 44
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "n"
-        },
+        "stats": [
+            46,
+            52,
+            49,
+            33,
+            44
+        ],
+        "affinities": "---nw--wn",
         "arcanaName": "Devil"
     },
     {
@@ -7582,7 +6342,9 @@
         "level": 81,
         "arcana": 15,
         "ultimate": true,
-        "preReqs": ["SL_DEVIL"],
+        "preReqs": [
+            "SL_DEVIL"
+        ],
         "special": true,
         "id": 130,
         "skills": [
@@ -7618,24 +6380,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 53,
-            "ma": 62,
-            "en": 56,
-            "ag": 55,
-            "lu": 54
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "n",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "n",
-            "wind": "n",
-            "light": "w",
-            "darkness": "r"
-        },
+        "stats": [
+            53,
+            62,
+            56,
+            55,
+            54
+        ],
+        "affinities": "-n-w-nnwr",
         "arcanaName": "Devil"
     },
     {
@@ -7676,24 +6428,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 28,
-            "ma": 19,
-            "en": 23,
-            "ag": 22,
-            "lu": 18
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "s",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "-"
-        },
+        "stats": [
+            28,
+            19,
+            23,
+            22,
+            18
+        ],
+        "affinities": "--snw--w-",
         "arcanaName": "Tower"
     },
     {
@@ -7734,24 +6476,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 33,
-            "ma": 28,
-            "en": 30,
-            "ag": 23,
-            "lu": 25
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "s",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            33,
+            28,
+            30,
+            23,
+            25
+        ],
+        "affinities": "--s--s--w",
         "arcanaName": "Tower"
     },
     {
@@ -7792,24 +6524,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 47,
-            "ma": 44,
-            "en": 41,
-            "ag": 34,
-            "lu": 39
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "n",
-            "fire": "n",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            47,
+            44,
+            41,
+            34,
+            39
+        ],
+        "affinities": "--nnw--s-",
         "arcanaName": "Tower"
     },
     {
@@ -7851,24 +6573,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 51,
-            "ma": 38,
-            "en": 43,
-            "ag": 51,
-            "lu": 45
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "n",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            51,
+            38,
+            43,
+            51,
+            45
+        ],
+        "affinities": "--nw--s--",
         "arcanaName": "Tower"
     },
     {
@@ -7876,7 +6588,9 @@
         "level": 73,
         "arcana": 16,
         "keyItem": true,
-        "preReqs": ["IT_MASAKADOS"],
+        "preReqs": [
+            "IT_MASAKADOS"
+        ],
         "special": true,
         "id": 135,
         "skills": [
@@ -7912,24 +6626,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 56,
-            "ma": 46,
-            "en": 52,
-            "ag": 49,
-            "lu": 45
-        },
-        "affinities": {
-            "slash": "n",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "r"
-        },
+        "stats": [
+            56,
+            46,
+            52,
+            49,
+            45
+        ],
+        "affinities": "n-------r",
         "arcanaName": "Tower"
     },
     {
@@ -7972,24 +6676,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 60,
-            "ma": 50,
-            "en": 52,
-            "ag": 48,
-            "lu": 51
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "d",
-            "fire": "r",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            60,
+            50,
+            52,
+            48,
+            51
+        ],
+        "affinities": "--drw----",
         "arcanaName": "Tower"
     },
     {
@@ -8031,24 +6725,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 60,
-            "ma": 55,
-            "en": 48,
-            "ag": 59,
-            "lu": 56
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "n",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "d",
-            "wind": "-",
-            "light": "n",
-            "darkness": "s"
-        },
+        "stats": [
+            60,
+            55,
+            48,
+            59,
+            56
+        ],
+        "affinities": "--n-wd-ns",
         "arcanaName": "Tower"
     },
     {
@@ -8056,7 +6740,9 @@
         "level": 86,
         "arcana": 16,
         "ultimate": true,
-        "preReqs": ["SL_TOWER"],
+        "preReqs": [
+            "SL_TOWER"
+        ],
         "id": 138,
         "skills": [
             {
@@ -8087,24 +6773,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 65,
-            "ma": 56,
-            "en": 62,
-            "ag": 54,
-            "lu": 59
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "s",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "-",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            65,
+            56,
+            62,
+            54,
+            59
+        ],
+        "affinities": "s-s--w---",
         "arcanaName": "Tower"
     },
     {
@@ -8145,24 +6821,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 18,
-            "ma": 11,
-            "en": 11,
-            "ag": 19,
-            "lu": 7
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "n",
-            "darkness": "n"
-        },
+        "stats": [
+            18,
+            11,
+            11,
+            19,
+            7
+        ],
+        "affinities": "s-----wnn",
         "arcanaName": "Star"
     },
     {
@@ -8208,24 +6874,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 26,
-            "ma": 19,
-            "en": 18,
-            "ag": 21,
-            "lu": 14
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            26,
+            19,
+            18,
+            21,
+            14
+        ],
+        "affinities": "---w----w",
         "arcanaName": "Star"
     },
     {
@@ -8266,24 +6922,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 29,
-            "ma": 26,
-            "en": 29,
-            "ag": 17,
-            "lu": 32
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "n",
-            "light": "s",
-            "darkness": "-"
-        },
+        "stats": [
+            29,
+            26,
+            29,
+            17,
+            32
+        ],
+        "affinities": "---w--ns-",
         "arcanaName": "Star"
     },
     {
@@ -8329,24 +6975,14 @@
             }
         ],
         "inherits": "ailment",
-        "stats": {
-            "st": 35,
-            "ma": 39,
-            "en": 33,
-            "ag": 26,
-            "lu": 33
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "s",
-            "electricity": "w",
-            "wind": "-",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            35,
+            39,
+            33,
+            26,
+            33
+        ],
+        "affinities": "---ssw-ws",
         "arcanaName": "Star"
     },
     {
@@ -8392,24 +7028,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 49,
-            "ma": 35,
-            "en": 39,
-            "ag": 32,
-            "lu": 40
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "d",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            49,
+            35,
+            39,
+            32,
+            40
+        ],
+        "affinities": "------d-w",
         "arcanaName": "Star"
     },
     {
@@ -8450,24 +7076,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 47,
-            "ma": 42,
-            "en": 35,
-            "ag": 53,
-            "lu": 41
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "s",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            47,
+            42,
+            35,
+            53,
+            41
+        ],
+        "affinities": "ss---wsrw",
         "arcanaName": "Star"
     },
     {
@@ -8475,7 +7091,9 @@
         "level": 70,
         "arcana": 17,
         "keyItem": true,
-        "preReqs": ["IT_RAINBOWFEATHER"],
+        "preReqs": [
+            "IT_RAINBOWFEATHER"
+        ],
         "id": 145,
         "skills": [
             {
@@ -8510,24 +7128,14 @@
             }
         ],
         "inherits": "pierce",
-        "stats": {
-            "st": 52,
-            "ma": 44,
-            "en": 42,
-            "ag": 53,
-            "lu": 43
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "s",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "n",
-            "wind": "-",
-            "light": "-",
-            "darkness": "w"
-        },
+        "stats": [
+            52,
+            44,
+            42,
+            53,
+            43
+        ],
+        "affinities": "--sw-n--w",
         "arcanaName": "Star"
     },
     {
@@ -8573,24 +7181,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 52,
-            "ma": 58,
-            "en": 45,
-            "ag": 52,
-            "lu": 53
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "d",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            52,
+            58,
+            45,
+            52,
+            53
+        ],
+        "affinities": "---dw--n-",
         "arcanaName": "Star"
     },
     {
@@ -8598,7 +7196,9 @@
         "level": 88,
         "arcana": 17,
         "ultimate": true,
-        "preReqs": ["SL_STAR"],
+        "preReqs": [
+            "SL_STAR"
+        ],
         "id": 147,
         "skills": [
             {
@@ -8633,24 +7233,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 64,
-            "ma": 63,
-            "en": 61,
-            "ag": 57,
-            "lu": 58
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "s",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            64,
+            63,
+            61,
+            57,
+            58
+        ],
+        "affinities": "sss-w--n-",
         "arcanaName": "Star"
     },
     {
@@ -8696,24 +7286,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 13,
-            "ma": 9,
-            "en": 12,
-            "ag": 13,
-            "lu": 9
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            13,
+            9,
+            12,
+            13,
+            9
+        ],
+        "affinities": "------sws",
         "arcanaName": "Moon"
     },
     {
@@ -8754,24 +7334,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 21,
-            "ma": 17,
-            "en": 21,
-            "ag": 13,
-            "lu": 19
-        },
-        "affinities": {
-            "slash": "w",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "n",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            21,
+            17,
+            21,
+            13,
+            19
+        ],
+        "affinities": "w---n-n--",
         "arcanaName": "Moon"
     },
     {
@@ -8813,24 +7383,14 @@
             }
         ],
         "inherits": "slash",
-        "stats": {
-            "st": 32,
-            "ma": 30,
-            "en": 24,
-            "ag": 28,
-            "lu": 29
-        },
-        "affinities": {
-            "slash": "r",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "w",
-            "darkness": "-"
-        },
+        "stats": [
+            32,
+            30,
+            24,
+            28,
+            29
+        ],
+        "affinities": "r-----ww-",
         "arcanaName": "Moon"
     },
     {
@@ -8871,24 +7431,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 30,
-            "ma": 41,
-            "en": 26,
-            "ag": 30,
-            "lu": 36
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "w",
-            "light": "-",
-            "darkness": "-"
-        },
+        "stats": [
+            30,
+            41,
+            26,
+            30,
+            36
+        ],
+        "affinities": "ss---sw--",
         "arcanaName": "Moon"
     },
     {
@@ -8934,24 +7484,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 46,
-            "ma": 47,
-            "en": 32,
-            "ag": 36,
-            "lu": 34
-        },
-        "affinities": {
-            "slash": "n",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "n"
-        },
+        "stats": [
+            46,
+            47,
+            32,
+            36,
+            34
+        ],
+        "affinities": "n-----w-n",
         "arcanaName": "Moon"
     },
     {
@@ -8992,24 +7532,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 48,
-            "ma": 53,
-            "en": 46,
-            "ag": 34,
-            "lu": 40
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "r",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "w",
-            "darkness": "s"
-        },
+        "stats": [
+            48,
+            53,
+            46,
+            34,
+            40
+        ],
+        "affinities": "---r---ws",
         "arcanaName": "Moon"
     },
     {
@@ -9050,24 +7580,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 50,
-            "ma": 55,
-            "en": 47,
-            "ag": 44,
-            "lu": 41
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "-",
-            "electricity": "s",
-            "wind": "s",
-            "light": "w",
-            "darkness": "r"
-        },
+        "stats": [
+            50,
+            55,
+            47,
+            44,
+            41
+        ],
+        "affinities": "---w-sswr",
         "arcanaName": "Moon"
     },
     {
@@ -9075,7 +7595,9 @@
         "level": 74,
         "arcana": 18,
         "ultimate": true,
-        "preReqs": ["SL_MOON"],
+        "preReqs": [
+            "SL_MOON"
+        ],
         "special": true,
         "id": 155,
         "skills": [
@@ -9111,24 +7633,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 54,
-            "ma": 54,
-            "en": 50,
-            "ag": 47,
-            "lu": 51
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "n",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "r",
-            "darkness": "-"
-        },
+        "stats": [
+            54,
+            54,
+            50,
+            47,
+            51
+        ],
+        "affinities": "-n-----r-",
         "arcanaName": "Moon"
     },
     {
@@ -9174,24 +7686,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 22,
-            "ma": 23,
-            "en": 18,
-            "ag": 24,
-            "lu": 19
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            22,
+            23,
+            18,
+            24,
+            19
+        ],
+        "affinities": "------snw",
         "arcanaName": "Sun"
     },
     {
@@ -9237,24 +7739,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 28,
-            "ma": 29,
-            "en": 30,
-            "ag": 32,
-            "lu": 30
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "s",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            28,
+            29,
+            30,
+            32,
+            30
+        ],
+        "affinities": "------snw",
         "arcanaName": "Sun"
     },
     {
@@ -9295,24 +7787,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 35,
-            "ma": 40,
-            "en": 31,
-            "ag": 44,
-            "lu": 39
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "-",
-            "electricity": "w",
-            "wind": "d",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            35,
+            40,
+            31,
+            44,
+            39
+        ],
+        "affinities": "---s-wdnw",
         "arcanaName": "Sun"
     },
     {
@@ -9353,24 +7835,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 49,
-            "ma": 50,
-            "en": 33,
-            "ag": 44,
-            "lu": 39
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "n",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            49,
+            50,
+            33,
+            44,
+            39
+        ],
+        "affinities": "----n--nw",
         "arcanaName": "Sun"
     },
     {
@@ -9406,24 +7878,14 @@
             }
         ],
         "inherits": "wind",
-        "stats": {
-            "st": 44,
-            "ma": 52,
-            "en": 43,
-            "ag": 54,
-            "lu": 45
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "w",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "n",
-            "wind": "n",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            44,
+            52,
+            43,
+            54,
+            45
+        ],
+        "affinities": "--w--nnn-",
         "arcanaName": "Sun"
     },
     {
@@ -9464,24 +7926,14 @@
             }
         ],
         "inherits": "strike",
-        "stats": {
-            "st": 53,
-            "ma": 58,
-            "en": 47,
-            "ag": 56,
-            "lu": 51
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "n",
-            "electricity": "n",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            53,
+            58,
+            47,
+            56,
+            51
+        ],
+        "affinities": "----nn-rw",
         "arcanaName": "Sun"
     },
     {
@@ -9489,7 +7941,9 @@
         "level": 85,
         "arcana": 19,
         "ultimate": true,
-        "preReqs": ["SL_SUN"],
+        "preReqs": [
+            "SL_SUN"
+        ],
         "special": true,
         "id": 162,
         "skills": [
@@ -9525,24 +7979,14 @@
             }
         ],
         "inherits": "fire",
-        "stats": {
-            "st": 62,
-            "ma": 60,
-            "en": 58,
-            "ag": 56,
-            "lu": 57
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "d",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            62,
+            60,
+            58,
+            56,
+            57
+        ],
+        "affinities": "---d---rw",
         "arcanaName": "Sun"
     },
     {
@@ -9583,24 +8027,14 @@
             }
         ],
         "inherits": "light-dark",
-        "stats": {
-            "st": 41,
-            "ma": 50,
-            "en": 38,
-            "ag": 37,
-            "lu": 36
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "s",
-            "darkness": "s"
-        },
+        "stats": [
+            41,
+            50,
+            38,
+            37,
+            36
+        ],
+        "affinities": "-------ss",
         "arcanaName": "Judgement"
     },
     {
@@ -9641,24 +8075,14 @@
             }
         ],
         "inherits": "light-dark",
-        "stats": {
-            "st": 43,
-            "ma": 47,
-            "en": 43,
-            "ag": 46,
-            "lu": 43
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "w",
-            "ice": "s",
-            "electricity": "s",
-            "wind": "-",
-            "light": "n",
-            "darkness": "s"
-        },
+        "stats": [
+            43,
+            47,
+            43,
+            46,
+            43
+        ],
+        "affinities": "---wss-ns",
         "arcanaName": "Judgement"
     },
     {
@@ -9695,24 +8119,14 @@
             }
         ],
         "inherits": "elec",
-        "stats": {
-            "st": 51,
-            "ma": 47,
-            "en": 46,
-            "ag": 50,
-            "lu": 51
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "s",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            51,
+            47,
+            46,
+            50,
+            51
+        ],
+        "affinities": "----ss-rw",
         "arcanaName": "Judgement"
     },
     {
@@ -9754,24 +8168,14 @@
             }
         ],
         "inherits": "light-dark",
-        "stats": {
-            "st": 51,
-            "ma": 60,
-            "en": 52,
-            "ag": 47,
-            "lu": 58
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "r",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "w",
-            "light": "-",
-            "darkness": "r"
-        },
+        "stats": [
+            51,
+            60,
+            52,
+            47,
+            58
+        ],
+        "affinities": "---r--w-r",
         "arcanaName": "Judgement"
     },
     {
@@ -9813,24 +8217,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 65,
-            "ma": 68,
-            "en": 64,
-            "ag": 52,
-            "lu": 52
-        },
-        "affinities": {
-            "slash": "s",
-            "strike": "s",
-            "pierce": "s",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "n",
-            "wind": "-",
-            "light": "-",
-            "darkness": "r"
-        },
+        "stats": [
+            65,
+            68,
+            64,
+            52,
+            52
+        ],
+        "affinities": "sss-wn--r",
         "arcanaName": "Judgement"
     },
     {
@@ -9838,7 +8232,9 @@
         "level": 90,
         "arcana": 20,
         "ultimate": true,
-        "preReqs": ["SL_JUDGEMENT"],
+        "preReqs": [
+            "SL_JUDGEMENT"
+        ],
         "special": true,
         "id": 168,
         "skills": [
@@ -9885,24 +8281,14 @@
             }
         ],
         "inherits": "light-dark",
-        "stats": {
-            "st": 63,
-            "ma": 62,
-            "en": 60,
-            "ag": 62,
-            "lu": 63
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "s",
-            "ice": "s",
-            "electricity": "s",
-            "wind": "s",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            63,
+            62,
+            60,
+            62,
+            63
+        ],
+        "affinities": "---ssssrw",
         "arcanaName": "Judgement"
     },
     {
@@ -9943,24 +8329,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 44,
-            "ma": 51,
-            "en": 41,
-            "ag": 41,
-            "lu": 38
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "d",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "n",
-            "darkness": "w"
-        },
+        "stats": [
+            44,
+            51,
+            41,
+            41,
+            38
+        ],
+        "affinities": "---dw--nw",
         "arcanaName": "Aeon"
     },
     {
@@ -9996,24 +8372,14 @@
             }
         ],
         "inherits": "dark",
-        "stats": {
-            "st": 55,
-            "ma": 45,
-            "en": 55,
-            "ag": 32,
-            "lu": 48
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "w",
-            "light": "w",
-            "darkness": "r"
-        },
+        "stats": [
+            55,
+            45,
+            55,
+            32,
+            48
+        ],
+        "affinities": "----s-wwr",
         "arcanaName": "Aeon"
     },
     {
@@ -10055,24 +8421,14 @@
             }
         ],
         "inherits": "recovery",
-        "stats": {
-            "st": 52,
-            "ma": 56,
-            "en": 60,
-            "ag": 39,
-            "lu": 48
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "s",
-            "electricity": "-",
-            "wind": "w",
-            "light": "n",
-            "darkness": "-"
-        },
+        "stats": [
+            52,
+            56,
+            60,
+            39,
+            48
+        ],
+        "affinities": "----s-wn-",
         "arcanaName": "Aeon"
     },
     {
@@ -10108,24 +8464,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 57,
-            "ma": 54,
-            "en": 50,
-            "ag": 54,
-            "lu": 56
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "-",
-            "pierce": "n",
-            "fire": "-",
-            "ice": "w",
-            "electricity": "-",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            57,
+            54,
+            50,
+            54,
+            56
+        ],
+        "affinities": "--n-w--rw",
         "arcanaName": "Aeon"
     },
     {
@@ -10133,7 +8479,9 @@
         "level": 87,
         "arcana": 21,
         "ultimate": true,
-        "preReqs": ["SL_AEON"],
+        "preReqs": [
+            "SL_AEON"
+        ],
         "special": true,
         "id": 173,
         "skills": [
@@ -10174,24 +8522,14 @@
             }
         ],
         "inherits": "light",
-        "stats": {
-            "st": 61,
-            "ma": 65,
-            "en": 57,
-            "ag": 61,
-            "lu": 56
-        },
-        "affinities": {
-            "slash": "-",
-            "strike": "s",
-            "pierce": "-",
-            "fire": "-",
-            "ice": "-",
-            "electricity": "-",
-            "wind": "-",
-            "light": "r",
-            "darkness": "w"
-        },
+        "stats": [
+            61,
+            65,
+            57,
+            61,
+            56
+        ],
+        "affinities": "-s-----rw",
         "arcanaName": "Aeon"
     }
 ]
