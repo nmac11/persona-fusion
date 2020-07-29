@@ -30,10 +30,6 @@ export class FusionPreviewBottomSheetComponent implements OnInit {
     event.preventDefault();
   }
 
-  skills(persona): string {
-    return persona.skills.map((s) => s.name).join(', ');
-  }
-
   queryParams(): any {
     const [p1, p2] = this.fusion.map((p) => {
       let param = p.persona.name.toLowerCase();
