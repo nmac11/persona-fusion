@@ -1,21 +1,21 @@
-.persona-preview-container {
+.fusion-persona-preview-container {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
   padding: 8px;
 }
 
-.persona-preview {
+.fusion-persona-preview {
   width: 50%;
   padding: 8px 0;
 }
 
-.persona-heading {
+.fusion-persona-heading {
   line-height: 1rem;
   margin: 0;
 }
 
-.persona-link {
+.fusion-persona-link {
   color: #3f51b5;
   text-decoration: none;
 }

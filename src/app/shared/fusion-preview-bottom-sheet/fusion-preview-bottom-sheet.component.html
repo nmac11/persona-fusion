@@ -1,9 +1,9 @@
-<div class="persona-preview-container">
-  <div *ngFor="let item of fusion" class="persona-preview">
-    <h3 class="persona-heading mat-h3">
+<div class="fusion-persona-preview-container">
+  <div *ngFor="let item of fusion" class="fusion-persona-preview">
+    <h3 class="fusion-persona-heading mat-h3">
       <a routerLink="/{{game}}/persona/{{item.persona.name | lowercase}}"
          (click)="openLink($event)"
-         class="persona-link">{{item.persona.name}}</a>
+         class="fusion-persona-link">{{item.persona.name}}</a>
     </h3>
     <small class="mat-caption"
       >{{ item.persona.arcanaName }} / Lv. {{ item.level || item.persona.level }}</small
