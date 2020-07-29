@@ -10,6 +10,8 @@ import { p3ansTriangleFusionProvider } from '../../../tokens/p3ans/triangle-fusi
 import { p4gTriangleFusionProvider } from '../../../tokens/p4g/triangle-fusion-service-token';
 import { p4TriangleFusionProvider } from '../../../tokens/p4/triangle-fusion-service-token';
 import { ActiveGameService } from '../../../services/active-game.service';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { PersonaPreviewBottomSheetComponent } from '../../../shared/persona-preview-bottom-sheet/persona-preview-bottom-sheet.component';
 
 @Component({
   selector: 'game-triangle-fusions',
@@ -36,6 +38,7 @@ export class TriangleFusionsComponent implements OnInit {
   constructor(
     private injector: Injector,
     private activeGameService: ActiveGameService,
+    private bottomSheet: MatBottomSheet,
   ) {
     const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -56,6 +59,12 @@ export class TriangleFusionsComponent implements OnInit {
         .fusionPersonae()
         .sort((a, b) => a.level - b.level);
     }, 0);
+  }
+
+  openBottomSheet(persona: Persona) {
+    this.bottomSheet.open(PersonaPreviewBottomSheetComponent, {
+      data: persona,
+    });
   }
 
   addFilter(persona: Persona): void {
