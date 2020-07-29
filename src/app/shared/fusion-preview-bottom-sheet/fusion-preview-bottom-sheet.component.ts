@@ -3,15 +3,15 @@ import {
   MAT_BOTTOM_SHEET_DATA,
   MatBottomSheetRef,
 } from '@angular/material/bottom-sheet';
-import { Persona } from '../../../models/persona';
-import { ActiveGameService } from '../../../services/active-game.service';
+import { Persona } from '../../models/persona';
+import { ActiveGameService } from '../../services/active-game.service';
 
 @Component({
-  selector: 'game-normal-fusions-bottom-sheet',
-  templateUrl: './normal-fusions-bottom-sheet.component.html',
-  styleUrls: ['./normal-fusions-bottom-sheet.component.css'],
+  selector: 'shared-fusion-preview-bottom-sheet',
+  templateUrl: './fusion-preview-bottom-sheet.component.html',
+  styleUrls: ['./fusion-preview-bottom-sheet.component.css'],
 })
-export class NormalFusionsBottomSheetComponent implements OnInit {
+export class FusionPreviewBottomSheetComponent implements OnInit {
   game: string;
 
   constructor(

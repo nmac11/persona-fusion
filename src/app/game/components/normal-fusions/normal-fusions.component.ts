@@ -11,7 +11,7 @@ import { p4gNormalFusionProvider } from '../../../tokens/p4g/normal-fusion-servi
 import { p4NormalFusionProvider } from '../../../tokens/p4/normal-fusion-service-token';
 import { p5NormalFusionProvider } from '../../../tokens/p5/normal-fusion-service-token';
 import { p5rNormalFusionProvider } from '../../../tokens/p5r/normal-fusion-service-token';
-import { NormalFusionsBottomSheetComponent } from '../normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
+import { FusionPreviewBottomSheetComponent } from '../../../shared/fusion-preview-bottom-sheet/fusion-preview-bottom-sheet.component';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { ActiveGameService } from '../../../services/active-game.service';
 
@@ -56,7 +56,7 @@ export class NormalFusionsComponent implements OnInit {
   }
 
   openBottomSheet(fusion: Persona[]): void {
-    this.bottomSheet.open(NormalFusionsBottomSheetComponent, {
+    this.bottomSheet.open(FusionPreviewBottomSheetComponent, {
       data: fusion,
     });
   }

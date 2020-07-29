@@ -9,7 +9,6 @@ import { NormalFusionsComponent } from './components/normal-fusions/normal-fusio
 import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
 import { ProvidersModule } from '../providers/providers.module';
 import { SimulatorModule } from '../simulator/simulator.module';
-import { NormalFusionsBottomSheetComponent } from './components/normal-fusions-bottom-sheet/normal-fusions-bottom-sheet.component';
 import { SharedModule } from '../shared/shared.module';
 import { MyListModule } from '../my-list/my-list.module';
 import { SettingsModule } from '../settings/settings.module';
@@ -22,7 +21,6 @@ import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.compon
     PersonaComponent,
     NormalFusionsComponent,
     TriangleFusionsComponent,
-    NormalFusionsBottomSheetComponent,
     GemFusionsComponent,
   ],
   imports: [
@@ -35,6 +33,5 @@ import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.compon
     MyListModule,
     SettingsModule,
   ],
-  entryComponents: [NormalFusionsBottomSheetComponent],
 })
 export class GameModule {}

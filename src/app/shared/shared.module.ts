@@ -13,6 +13,8 @@ import { DialogLearnedSkillsListComponent } from './skills-dialog/dialog-learned
 import { ListDialogComponent } from './list-dialog/list-dialog.component';
 import { DialogPersonaListComponent } from './dialog-persona-list/dialog-persona-list.component';
 import { DialogSavedListComponent } from './dialog-saved-list/dialog-saved-list.component';
+import { FusionPreviewBottomSheetComponent } from './fusion-preview-bottom-sheet/fusion-preview-bottom-sheet.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,20 @@ import { DialogSavedListComponent } from './dialog-saved-list/dialog-saved-list.
     ListDialogComponent,
     DialogPersonaListComponent,
     DialogSavedListComponent,
+    FusionPreviewBottomSheetComponent,
   ],
-  imports: [CommonModule, MaterialModule, FormsModule, DragDropModule],
-  entryComponents: [SkillsDialogComponent, ListDialogComponent],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    FormsModule,
+    DragDropModule,
+    RouterModule,
+  ],
+  entryComponents: [
+    SkillsDialogComponent,
+    ListDialogComponent,
+    FusionPreviewBottomSheetComponent,
+  ],
   exports: [
     PersonaInfoComponent,
     FusionItemComponent,
