@@ -1,0 +1,15 @@
+<mat-list dense>
+  <mat-list-item *ngFor="let p of specialFusion">
+     <span mat-line> 
+       <a [routerLink]="" (click)="openBottomSheet(p)" class="mat-body-2 bottom-sheet-anchor">{{p.name}}</a>
+     </span>
+     <span mat-line>{{p.arcanaName}} / {{p.level}}</span>
+  </mat-list-item>          
+</mat-list>
+<a mat-flat-button
+   color="primary"
+   routerLink="../../simulator"
+   [queryParams]="queryParams()"
+   style="width: 100%; margin-top: 16px">
+  FUSE
+</a>

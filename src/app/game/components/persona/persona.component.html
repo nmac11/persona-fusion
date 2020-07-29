@@ -13,26 +13,19 @@
           This fusion is blocked. Please check your settings.
         </p>
         <a routerLink="../../settings" mat-button color="accent">GO TO SETTINGS</a>
+        <a routerLink="../.." mat-button color="accent">GO TO LIST</a>
       </ng-container>
       <ng-container *ngSwitchCase="'gem'">
         <h2 class="mat-h2">Gem persona</h2>
         <p class="mat-body-1">
           There are no fusion combinations for this type of Persona.
         </p>
-        <a routerLink="../.." mat-button color="accent">GO BACK</a>
+        <a routerLink="../.." mat-button color="accent">GO TO LIST</a>
       </ng-container>
       <ng-container *ngSwitchDefault>
         <mat-tab-group>
           <mat-tab label="SPECIAL FUSION" *ngIf="specialFusion.length">
-            <mat-nav-list>
-              <a mat-line mat-list-item *ngFor="let p of specialFusion"
-                 routerLink="..//{{ p.name | lowercase }}">
-                 <span mat-line>{{p.name}}</span>
-                 <span mat-line>{{ p.arcanaName }} / Level {{ p.level }}</span>
-              </a>          
-            </mat-nav-list>
-            <a mat-flat-button color="primary" routerLink="../../simulator" [queryParams]="queryParams()"
-               style="width: 100%; margin-top: 16px">FUSE</a>
+            <game-special-fusion [specialFusion]="specialFusion"></game-special-fusion>
           </mat-tab>
           <mat-tab *ngIf="!persona.special" label="NORMAL">
             <game-normal-fusions [persona]="persona"></game-normal-fusions>

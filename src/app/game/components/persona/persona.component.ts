@@ -69,14 +69,6 @@ export class PersonaComponent implements OnInit, OnDestroy {
     else return 'allowed';
   }
 
-  queryParams(): Object {
-    const params = {};
-    this.specialFusion.forEach(
-      (p, i) => (params['p' + (i + 1)] = p.name.toLowerCase()),
-    );
-    return params;
-  }
-
   showTriangleFusions: () => boolean = () => {
     return (
       !this.persona.special &&

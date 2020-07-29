@@ -1,0 +1,18 @@
+<div class="persona-preview-container">
+  <h3 class="persona-heading mat-h3">
+    <a routerLink="/{{game}}/persona/{{persona.name | lowercase}}"
+       (click)="openLink($event)"
+       class="persona-link">{{persona.name}}</a>
+  </h3>
+  <small class="mat-caption"
+    >{{ persona.arcanaName }} / Lv. {{ persona.level }}</small
+  >
+  <ul>
+    <li *ngFor="let skill of persona.skills" class="mat-body-1">
+      <span
+        >{{ skill.name
+        }}<span *ngIf="skill.level > 0"> ({{ skill.level }})</span></span
+      >
+    </li>
+  </ul>
+</div>

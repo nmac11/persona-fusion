@@ -13,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
 import { MyListModule } from '../my-list/my-list.module';
 import { SettingsModule } from '../settings/settings.module';
 import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.component';
+import { SpecialFusionComponent } from './components/special-fusion/special-fusion.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.compon
     NormalFusionsComponent,
     TriangleFusionsComponent,
     GemFusionsComponent,
+    SpecialFusionComponent,
   ],
   imports: [
     CommonModule,

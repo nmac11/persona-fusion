@@ -1,0 +1,18 @@
+.persona-preview-container {
+  padding: 16px 8px;
+}
+
+.persona-heading {
+  line-height: 1rem;
+  margin: 0;
+}
+
+.persona-link {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

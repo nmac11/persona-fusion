@@ -15,6 +15,7 @@ import { DialogPersonaListComponent } from './dialog-persona-list/dialog-persona
 import { DialogSavedListComponent } from './dialog-saved-list/dialog-saved-list.component';
 import { FusionPreviewBottomSheetComponent } from './fusion-preview-bottom-sheet/fusion-preview-bottom-sheet.component';
 import { RouterModule } from '@angular/router';
+import { PersonaPreviewBottomSheetComponent } from './persona-preview-bottom-sheet/persona-preview-bottom-sheet.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { RouterModule } from '@angular/router';
     DialogPersonaListComponent,
     DialogSavedListComponent,
     FusionPreviewBottomSheetComponent,
+    PersonaPreviewBottomSheetComponent,
   ],
   imports: [
     CommonModule,
@@ -41,6 +43,7 @@ import { RouterModule } from '@angular/router';
     SkillsDialogComponent,
     ListDialogComponent,
     FusionPreviewBottomSheetComponent,
+    PersonaPreviewBottomSheetComponent,
   ],
   exports: [
     PersonaInfoComponent,
