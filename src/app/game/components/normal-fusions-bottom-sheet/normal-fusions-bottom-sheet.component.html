@@ -1,17 +1,29 @@
-<mat-nav-list>
-  <a routerLink="/{{game}}/simulator" [queryParams]="queryParams()"
-     mat-list-item
-     (click)="openLink($event)">
-    <mat-icon mat-list-icon>merge_type</mat-icon>
-    <span mat-line>Simulate</span>
-    <span mat-line>Fuse {{fusionPersonaNames()}}</span>
-  </a>
+<div class="persona-preview-container">
+  <div *ngFor="let persona of fusion" class="persona-preview">
+    <h3 class="persona-heading mat-h3">
+      <a routerLink="/{{game}}/persona/{{persona.name | lowercase}}"
+         (click)="openLink($event)"
+         class="persona-link">{{persona.name}}</a>
+    </h3>
+    <small class="mat-caption"
+      >{{ persona.arcanaName }} / Lv. {{ persona.level }}</small
+    >
+    <ul>
+      <li *ngFor="let skill of persona.skills" class="mat-body-1">
+        <span
+          >{{ skill.name
+          }}<span *ngIf="skill.level > 0"> ({{ skill.level }})</span></span
+        >
+      </li>
+    </ul>
+  </div>
+</div>
 
-  <a *ngFor="let persona of fusion" routerLink="/{{game}}/persona/{{persona.name | lowercase}}"
-     mat-list-item
-     (click)="openLink($event)">
-    <mat-icon mat-list-icon>link</mat-icon>
-    <span mat-line>View {{persona.name}}</span>
-    <span mat-line>{{persona.arcanaName}} / Level {{persona.level}}</span>
-  </a>
-</mat-nav-list>
+<a mat-flat-button
+   routerLink="/{{game}}/simulator"
+   [queryParams]="queryParams()"
+   (click)="openLink($event)" 
+   color="primary"
+   style="width: 100%">
+ FUSE
+</a>

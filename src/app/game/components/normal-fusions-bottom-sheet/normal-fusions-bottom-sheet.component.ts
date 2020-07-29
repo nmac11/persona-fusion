@@ -29,6 +29,10 @@ export class NormalFusionsBottomSheetComponent implements OnInit {
     event.preventDefault();
   }
 
+  skills(persona): string {
+    return persona.skills.map(s => s.name).join(', ');
+  }
+
   queryParams(): Object {
     const [p1, p2] = this.fusion.map((p) => p.name.toLowerCase());
     return { p1, p2 };
