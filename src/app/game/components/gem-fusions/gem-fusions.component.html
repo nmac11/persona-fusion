@@ -3,7 +3,7 @@
     <mat-expansion-panel *ngFor="let fusion of fusions">
       <mat-expansion-panel-header>
         <mat-panel-title>
-          {{fusion.gem.name}}
+          {{fusion.gem.name}} ({{fusion.personae.length}} {{ fusion.personae.length === 1 ? 'fusion' : 'fusions'}})
         </mat-panel-title>
         <mat-panel-description>
           <small class="mat-caption">
@@ -14,17 +14,11 @@
       <mat-list dense>
         <mat-list-item *ngFor="let persona of fusion.personae">
           <div mat-line>
-            <a routerLink="../{{persona.persona.name | lowercase}}" class="mat-body-2" style="color: #3f51b5; text-decoration: none;">
-              {{persona.persona.name}}
-            </a>
+            <span class="mat-body-2">{{persona.persona.name}}</span>
           </div>  
           <small mat-line class="mat-caption">Base lv. {{persona.persona.level}}</small>
           <small mat-line class="mat-caption">Lv. {{persona.levelRange.join('-')}}</small>
-          <a routerLink="../../simulator"
-             [queryParams]="queryParams(fusion.gem, persona.persona, persona.levelRange[0])"
-             mat-button color="primary">
-            FUSE
-          </a>
+          <a mat-button color="primary" (click)="openBottomSheet([fusion.gem, persona.persona], persona.levelRange[0])">VIEW</a>
         </mat-list-item>
       </mat-list>
     </mat-expansion-panel>

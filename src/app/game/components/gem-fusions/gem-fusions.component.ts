@@ -5,6 +5,8 @@ import { ActiveGameService } from '../../../services/active-game.service';
 import { CompendiumService } from '../../../services/compendium.service';
 import { GemFusionService } from '../../../services/gem-fusion.service';
 import { Persona } from '../../../models/persona';
+import { FusionPreviewBottomSheetComponent } from '../../../shared/fusion-preview-bottom-sheet/fusion-preview-bottom-sheet.component';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 @Component({
   selector: 'game-gem-fusions',
@@ -18,10 +20,10 @@ export class GemFusionsComponent implements OnInit {
   private compendiumService: CompendiumService;
   private fusionService: GemFusionService;
 
-
   constructor(
     private injector: Injector,
     private activeGameService: ActiveGameService,
+    private bottomSheet: MatBottomSheet,
   ) {
     const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = this.injector.get<CompendiumService>(
@@ -30,9 +32,11 @@ export class GemFusionsComponent implements OnInit {
     this.fusionService = this.injector.get<GemFusionService>(tokens.gemFusion);
   }
 
-  queryParams(gem: Persona, persona: Persona, minLevel: number): Object {
-    const p2 = persona.name + ',' + minLevel;
-    return { p1: gem.name, p2 };
+  openBottomSheet([gem, persona]: Persona[], level): void {
+    const fusionData = [{ persona: gem }, { persona, level }]
+    this.bottomSheet.open(FusionPreviewBottomSheetComponent, {
+      data: fusionData,
+    });
   }
 
   ngOnInit(): void {

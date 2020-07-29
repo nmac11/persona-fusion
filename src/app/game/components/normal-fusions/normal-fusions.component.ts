@@ -56,8 +56,11 @@ export class NormalFusionsComponent implements OnInit {
   }
 
   openBottomSheet(fusion: Persona[]): void {
+    const fusionData = fusion.map((persona) => {
+      return { persona };
+    });
     this.bottomSheet.open(FusionPreviewBottomSheetComponent, {
-      data: fusion,
+      data: fusionData,
     });
   }
 

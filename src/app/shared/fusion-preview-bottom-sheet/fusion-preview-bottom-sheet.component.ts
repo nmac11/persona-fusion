@@ -17,7 +17,8 @@ export class FusionPreviewBottomSheetComponent implements OnInit {
   constructor(
     private bottomSheetRef: MatBottomSheetRef,
     public activeGameService: ActiveGameService,
-    @Inject(MAT_BOTTOM_SHEET_DATA) public fusion: Persona[],
+    @Inject(MAT_BOTTOM_SHEET_DATA)
+    public fusion: { persona: Persona; level?: number }[],
   ) {
     this.game = activeGameService.game;
   }
@@ -30,15 +31,15 @@ export class FusionPreviewBottomSheetComponent implements OnInit {
   }
 
   skills(persona): string {
-    return persona.skills.map(s => s.name).join(', ');
+    return persona.skills.map((s) => s.name).join(', ');
   }
 
-  queryParams(): Object {
-    const [p1, p2] = this.fusion.map((p) => p.name.toLowerCase());
+  queryParams(): any {
+    const [p1, p2] = this.fusion.map((p) => {
+      let param = p.persona.name.toLowerCase();
+      if (p.level) param = param + ',' + p.level;
+      return param;
+    });
     return { p1, p2 };
-  }
-
-  fusionPersonaNames(): string {
-    return this.fusion.map((p) => p.name).join(' and ');
   }
 }
