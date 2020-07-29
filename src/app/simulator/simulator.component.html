@@ -14,10 +14,10 @@
     <mat-expansion-panel *ngIf="fusionYield" expanded>
       <mat-expansion-panel-header>
         <mat-panel-title>
-          Fusion skills
+          Fusion skills ({{fusionYield.persona.inherits | titlecase}})
         </mat-panel-title>
         <mat-panel-description>
-          <small>Innate: {{fusionYield.skills.length}} / Inherits: {{fusionYield.skillsInheritedCount}} / Learns: {{skillsToLearn().length}}</small>
+          <small>Innate: {{fusionYield.skills.length}} / Learns: {{skillsToLearn().length}} / Inherits: {{fusionYield.skillsInheritedCount}}</small>
         </mat-panel-description>
       </mat-expansion-panel-header>
       <mat-chip-list>
