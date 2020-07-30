@@ -12,6 +12,7 @@ import { SkillsDialogComponent } from '../skills-dialog/skills-dialog.component'
 import { MatDialog } from '@angular/material/dialog';
 import { SkillService } from '../../services/skill.service';
 import { ActiveGameService } from '../../services/active-game.service';
+import { Skill } from '../../models/skill';
 
 @Component({
   selector: 'shared-fusion-item',
@@ -45,6 +46,14 @@ export class FusionItemComponent implements OnInit {
       panelClass: 'simulator-skill-list-overlay-pane',
     });
     dialogRef.afterClosed().subscribe(() => this.onChange());
+  }
+
+  skillsToLearn(): Skill[] {
+    return this.fusionItem.persona.skills.filter(
+      (s) =>
+        s.level > this.fusionItem.currentLevel &&
+        !this.fusionItem.skills.some((fs) => fs.name === s.name),
+    );
   }
 
   changeLevel(inputLevel: string): void {

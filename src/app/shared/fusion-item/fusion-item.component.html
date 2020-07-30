@@ -1,15 +1,22 @@
-<mat-form-field appearance="fill" style="width: 60px;">
-  <mat-label>Level</mat-label>
-  <input type="number" autocomplete="off" matInput
-  [ngModel]="fusionItem.currentLevel"
-  changeDebouncer
-  (debouncedChange)="changeLevel($event)"
-  (keydown.enter)="$event.target.blur();false"
-  [value]="fusionItem.currentLevel"
-  [min]="fusionItem.persona.level"
-  max="99"
-  required>
-</mat-form-field>
+<div style="display: flex; align-items: center;">
+  <mat-form-field appearance="fill" style="width: 60px; display: inline-block;">
+    <mat-label>Level</mat-label>
+    <input type="number" autocomplete="off" matInput
+    [ngModel]="fusionItem.currentLevel"
+    changeDebouncer
+    (debouncedChange)="changeLevel($event)"
+    (keydown.enter)="$event.target.blur();false"
+    [value]="fusionItem.currentLevel"
+    [min]="fusionItem.persona.level"
+    max="99"
+    required>
+  </mat-form-field>
+  <mat-chip-list class="skills-to-learn" style="box-sizing: border-box;">
+    <mat-chip *ngFor="let skill of skillsToLearn()" (click)="changeLevel(skill.level)">
+      {{skill.name}} <small class="level-learned">Lv. {{skill.level}}</small>
+    </mat-chip>
+  </mat-chip-list>
+</div>
 <mat-chip-list>
   <mat-chip *ngFor="let skill of fusionItem.skills; let si = index" [color]="(si < 8) ? 'primary' : 'basic'" selected>
     {{skill.name}}
