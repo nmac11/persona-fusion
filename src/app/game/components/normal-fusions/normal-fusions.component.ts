@@ -3,7 +3,10 @@ import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { NormalFusionService } from '../../../services/normal-fusion.service';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
+import {
+  partialMatchRegExp,
+  exactMatchRegExp,
+} from '../../../helpers/reg-exp-helpers';
 import { p3pNormalFusionProvider } from '../../../tokens/p3p/normal-fusion-service-token';
 import { p3fesNormalFusionProvider } from '../../../tokens/p3fes/normal-fusion-service-token';
 import { p3ansNormalFusionProvider } from '../../../tokens/p3ans/normal-fusion-service-token';
@@ -86,8 +89,12 @@ export class NormalFusionsComponent implements OnInit {
       ? this.fusionService.list
       : this.fusionService.list.filter((pair) =>
           pair.some((persona) =>
-            this.nameFilters.some((filterName) =>
-              partialMatchRegExp(filterName).test(persona.name),
+            this.nameFilters.some(
+              (filterName) =>
+                exactMatchRegExp(filterName).test(persona.name) ||
+                persona.skills.some((s) =>
+                  exactMatchRegExp(filterName).test(s.name),
+                ),
             ),
           ),
         );

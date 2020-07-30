@@ -1,6 +1,9 @@
 import { Component, OnInit, Injector, Input } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import { partialMatchRegExp } from '../../../helpers/reg-exp-helpers';
+import {
+  exactMatchRegExp,
+  partialMatchRegExp,
+} from '../../../helpers/reg-exp-helpers';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { TriangleFusionService } from '../../../services/triangle-fusion.service';
@@ -102,7 +105,11 @@ export class TriangleFusionsComponent implements OnInit {
       .reduce(this.availablePersonaeReducer, new Array<Persona>())
       .filter((p) => {
         return this.nameFilters.length
-          ? this.nameFilters.some((nf) => partialMatchRegExp(nf).test(p.name))
+          ? this.nameFilters.some(
+              (nf) =>
+                exactMatchRegExp(nf).test(p.name) ||
+                p.skills.some((s) => exactMatchRegExp(nf).test(s.name)),
+            )
           : true;
       })
       .sort((a, b) => a.level - b.level);

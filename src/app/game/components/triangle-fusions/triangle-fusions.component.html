@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     padding: 16px 4px;
-    margin: 0 4px 4px 0;
     flex: 0;
   "
 >
@@ -40,7 +39,7 @@
             {{tag}}
             <mat-icon matChipRemove>cancel</mat-icon>
           </mat-chip>
-          <input placeholder="Add filter here" 
+          <input placeholder="Filter Persona or skill" 
                  [matChipInputFor]="tagList"
                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
                  matChipInputAddOnBlur="true"
