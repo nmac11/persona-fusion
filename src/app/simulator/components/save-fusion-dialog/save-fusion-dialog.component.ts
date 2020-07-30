@@ -113,7 +113,7 @@ export class SaveFusionDialogComponent implements OnInit {
       this.fusionItem,
       formValue.skills,
     );
-    fusionNode.saveName = formValue.saveName.trim();
+    fusionNode.saveName = formValue.saveName.replace(/\s+/g, ' ').trim();
     return fusionNode;
   }
 

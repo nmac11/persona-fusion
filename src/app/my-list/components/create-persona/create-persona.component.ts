@@ -55,7 +55,7 @@ export class CreatePersonaComponent implements OnInit {
     const { saveName, fusionNode } = formValue;
     const saveId = await this.personaStoreService.save({
       ...fusionNode,
-      saveName: saveName.trim(),
+      saveName: saveName.replace(/\s+/g, ' ').trim(),
     });
     const success = typeof saveId === 'number';
     this.openSnackBar(success);

@@ -4,7 +4,7 @@ import { PersonaStoreService } from '../services/persona-store.service';
 export class SaveNameValidators {
   static availability(storeService: PersonaStoreService) {
     return async (control: AbstractControl) => {
-      const name = control.value.trim();
+      const name = control.value.replace(/\s+/g, ' ').trim();
       const existing = await storeService.loadByName(name);
       return existing ? { unavailable: true } : null;
     };
