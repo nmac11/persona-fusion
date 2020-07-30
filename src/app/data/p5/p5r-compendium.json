@@ -935,7 +935,8 @@
     "id": 17,
     "preReqs": [
       "UL_SATANAEL"
-    ]
+    ],
+    "specialCondition": "Unlock true ending"
   },
   {
     "name": "Jack-o'-Lantern",
