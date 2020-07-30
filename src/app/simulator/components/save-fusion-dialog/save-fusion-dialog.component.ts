@@ -53,8 +53,8 @@ export class SaveFusionDialogComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onCancel(): void {
-    this.dialogRef.close();
+  onClose(saveName: string = null): void {
+    this.dialogRef.close(saveName);
   }
 
   updateSelections(e: Event): void {
@@ -104,7 +104,7 @@ export class SaveFusionDialogComponent implements OnInit {
     const saveId = await this.personaStoreService.save(fusionNode);
     const success = typeof saveId === 'number';
     this.showSaveStatus(fusionNode.saveName, success);
-    if (success) this.onCancel();
+    if (success) this.onClose(fusionNode.saveName);
   }
 
   private createFusionNode(): FusionNode {

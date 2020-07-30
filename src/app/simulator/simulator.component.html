@@ -55,9 +55,15 @@
       </div>
     </mat-expansion-panel>
 
-    <div class="mat-elevation-z2" style="border-radius: 4px; padding: 8px; background: #fff" fxLayout="row" fxLayoutAlign="end">
-      <button mat-button color="accent" [disabled]="!fusionYield" (click)="saveFusion()">SAVE</button>
-      <button mat-button color="accent">LOAD</button>
+    <div class="mat-elevation-z2" style="border-radius: 4px; padding: 8px 24px; background: #fff" fxLayout="row" fxLayoutAlign="space-between center">
+      <div class="mat-body-1" style="margin: 0" *ngIf="saveName">
+        Saved as <span class="mat-body-2">{{saveName}}</span>
+      </div>
+      <button mat-button
+              color="accent"
+              [disabled]="!fusionYield || saveName"
+              style="margin-left: auto"
+              (click)="saveFusion()">SAVE RESULT</button>
     </div>
 
     <div fxLayout="column" fxLayoutGap="16px">

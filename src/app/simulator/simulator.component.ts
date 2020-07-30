@@ -32,6 +32,7 @@ export class SimulatorComponent implements OnInit {
   fusionNodeHelper: FusionNodeHelper;
 
   settingsService: SettingsService;
+  saveName: string;
 
   constructor(
     private injector: Injector,
@@ -91,6 +92,7 @@ export class SimulatorComponent implements OnInit {
   clearItems(): void {
     this.fusionItems = [];
     this.fusionYield = null;
+    this.saveName = null;
     this.updateQueryParams();
   }
 
@@ -101,6 +103,7 @@ export class SimulatorComponent implements OnInit {
   }
 
   fuse(update = true): void {
+    this.saveName = null;
     this.fusionYield = this.simulatorService.fuse(this.fusionItems);
     if (update) this.updateQueryParams();
   }
@@ -167,5 +170,6 @@ export class SimulatorComponent implements OnInit {
       },
       panelClass: 'simulator-save-overlay-pane',
     });
+    dialogRef.afterClosed().subscribe((saveName) => (this.saveName = saveName));
   }
 }
