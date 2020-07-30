@@ -129,7 +129,11 @@ export class SimulatorComponent implements OnInit {
         queryParams['p' + (i + 1)] = [
           f.persona.name.toLowerCase(),
           f.currentLevel,
-          f.skills.slice(0, 8).map((skill) => skill.name.toLowerCase()),
+          f.skills.slice(0, 8).map((skill) => {
+            let skillName = skill.name.toLowerCase();
+            if (skill.level !== undefined) skillName = '_' + skillName;
+            return skillName;
+          }),
         ].join(',');
       });
 

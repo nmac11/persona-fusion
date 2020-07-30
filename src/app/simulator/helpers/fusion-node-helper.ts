@@ -94,13 +94,16 @@ export class FusionNodeHelper {
   private createFusionNodeFromParam(param: string): FusionNode {
     const [name, level, ...skillNames] = param.split(',');
     const persona: Persona = this.compendiumService.find(name);
-    const skills: Skill[] = this.findSkills(skillNames);
+    const skills: Skill[] = this.findSkills(persona, skillNames);
     if (persona) return this.createFusionNode(persona, +level, skills);
   }
 
-  private findSkills(skillNames: string[]): Skill[] {
+  private findSkills(persona: Persona, skillNames: string[]): Skill[] {
     return skillNames.reduce((skills, skillName) => {
-      const skill = this.skillService.find(skillName);
+      let skill;
+      if (skillName[0] === '_')
+        persona.skills.find((s) => s.name === skillName.substr(1));
+      else skill = this.skillService.find(skillName);
       if (skill && !skills.some((learned) => learned.name === skill.name))
         skills.push(skill);
       return skills;
