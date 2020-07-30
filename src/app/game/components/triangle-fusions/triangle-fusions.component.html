@@ -51,11 +51,10 @@
       <h3 matSubheader>Available ({{availablePersonae.length}})</h3>
       <mat-list-item *ngFor="let persona of availablePersonae">
         <span matLine>
-          <a class="mat-body-2" style="color: #3f51b5; text-decoration: none;"
-             [routerLink]=""
+          <button class="mat-body-2 bottom-sheet-button"
              (click)="openBottomSheet(persona)">
              {{persona.name}}
-          </a>
+          </button>
         </span>
         <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
         <button mat-icon-button (click)="addFilter(persona)">

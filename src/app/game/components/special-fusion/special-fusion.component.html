@@ -1,7 +1,9 @@
 <mat-list dense>
   <mat-list-item *ngFor="let p of specialFusion">
      <span mat-line> 
-       <a [routerLink]="" (click)="openBottomSheet(p)" class="mat-body-2 bottom-sheet-anchor">{{p.name}}</a>
+       <button (click)="openBottomSheet(p)" class="mat-body-2 bottom-sheet-button">
+         {{p.name}}
+       </button>
      </span>
      <span mat-line>{{p.arcanaName}} / {{p.level}}</span>
   </mat-list-item>          
