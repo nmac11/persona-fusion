@@ -15,7 +15,7 @@ const REFERENCE: Reference[] = [
     title: 'Persona 3 Game Mechanics/Persona Database',
   },
   {
-    author: 'aqui384',
+    author: 'aqiu384',
     url: 'https://aqiu384.github.io/megaten-fusion-tool',
     title: 'Megaten Fusion Tool',
   },
