@@ -21,7 +21,7 @@ import { Skill } from '../../models/skill';
 })
 export class FusionItemComponent implements OnInit {
   @Input('fusionItem') fusionItem: FusionNode;
-  @Output() change: EventEmitter<any> = new EventEmitter();
+  @Output() update: EventEmitter<any> = new EventEmitter();
 
   skillService: SkillService;
 
@@ -37,7 +37,7 @@ export class FusionItemComponent implements OnInit {
   ngOnInit(): void {}
 
   onChange(): void {
-    this.change.emit(null);
+    this.update.emit(null);
   }
 
   editSkills(): void {

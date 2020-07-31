@@ -79,7 +79,7 @@
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
             <shared-fusion-item 
-              (change)="fuse()"
+              (update)="fuse()"
               [fusionItem]="fusionItem"></shared-fusion-item>
             <div style="margin-top: 16px; width: 100%; display: flex; flex-direction: row; justify-content: flex-end;">
               <button mat-icon-button color="accent" (click)="removeItem(i)"><mat-icon>delete</mat-icon></button>
