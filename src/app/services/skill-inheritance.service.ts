@@ -4,8 +4,10 @@ import { Persona } from '../models/persona';
 import { Skill } from '../models/skill';
 import { InheritableSkill } from '../models/inheritable-skill';
 import { FusionResult } from '../models/fusion-result';
-import { probability } from '../helpers/probability-helper';
+// import { probability } from '../helpers/probability-helper';
 import { AppSettingsService } from '../services/app-settings.service';
+
+import { Probabilities } from '../lib/probabilities';
 
 @Injectable()
 export class SkillInheritanceService {
@@ -40,57 +42,25 @@ export class SkillInheritanceService {
       persona.inherits,
       fusionSkills,
       this.countSkillsInherited(persona, fusionItems),
-    ).sort((a, b) => b.probRatio - a.probRatio);
+    );
   }
 
   private addProbabilities(
     inheritType: string,
     skills: Skill[],
-    berths: number,
+    inheritedCount: number,
   ): InheritableSkill[] {
     const skillsWithPR = this.addProbRatios(inheritType, skills);
-    if (this.appSettingsService.getValues()['PROBABILITY'])
-      this.calculateProbabilities(skillsWithPR, berths);
+    skillsWithPR.sort((a, b) => b.probRatio - a.probRatio);
+    this.calculateProbabilities(skillsWithPR, inheritedCount);
     return skillsWithPR;
   }
 
-  private calculateProbabilities(
-    skillsWithPR: InheritableSkill[],
-    berths: number,
-  ): void {
-    skillsWithPR.sort((a, b) => b.probRatio - a.probRatio);
+  async calculateProbabilities(skillsWithPR, inheritedCount): Promise<void> {
+    if (!this.appSettingsService.getValues()['PROBABILITY']) return;
     const ratios = skillsWithPR.map((skill) => skill.probRatio);
-    const nonZeroRatios = ratios.filter((r) => r !== 0);
-    if (nonZeroRatios.every((r) => r === nonZeroRatios[0]))
-      this.addProbabilitiesEqualRatios(skillsWithPR, nonZeroRatios, berths);
-    else this.addProbabilitiesVariableRatios(skillsWithPR, nonZeroRatios, berths);
-  }
-
-  private addProbabilitiesEqualRatios(
-    skillsWithPR: InheritableSkill[],
-    ratios: number[],
-    berths: number,
-  ): void {
-    const netProbRatio = ratios.reduce((sum, ratio) => sum + ratio, 0);
-    skillsWithPR.forEach((skill) => {
-      const prob = (skill.probRatio * berths) / netProbRatio || 0;
-      skill.probability = prob > 1 ? 1 : prob;
-    });
-  }
-
-  private addProbabilitiesVariableRatios(
-    skillsWithPR: InheritableSkill[],
-    ratios: number[],
-    berths: number,
-  ): void {
-    const cache = { 0: 0 };
-    skillsWithPR.forEach((skill, i) => {
-      const cached = cache[skill.probRatio];
-      skill.probability = isNaN(cached)
-        ? probability(ratios, berths, i)
-        : cached;
-      cache[skill.probRatio] = skill.probability;
-    });
+    const probabilities = await(new Probabilities(ratios, inheritedCount).calculate());
+    skillsWithPR.forEach(s => s.probability = probabilities[s.probRatio]);
   }
 
   private addProbRatios(

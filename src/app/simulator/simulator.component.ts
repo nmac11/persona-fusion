@@ -17,6 +17,7 @@ import { ActiveGameService } from '../services/active-game.service';
 import { SettingsService } from '../services/settings.service';
 import { AppSettingsService } from '../services/app-settings.service';
 import { TitleService } from '../services/title.service';
+import { InheritableSkill } from '../models/inheritable-skill';
 
 @Component({
   selector: 'simulator-root',
@@ -108,8 +109,11 @@ export class SimulatorComponent implements OnInit {
     if (update) this.updateQueryParams();
   }
 
-  showProbabilities(): boolean {
-    return this.appSettingsService.getValues()['PROBABILITY'];
+  showProbabilities(skill: InheritableSkill): boolean {
+    return (
+      skill.probability !== undefined &&
+      this.appSettingsService.getValues()['PROBABILITY']
+    );
   }
 
   randomInheritance(): boolean {

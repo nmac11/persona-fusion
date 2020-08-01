@@ -27,7 +27,7 @@
         <mat-chip [color]="skill.probRatio > 0 ? 'accent' : 'basic'" *ngFor="let skill of fusionYield.inheritableSkills" selected>
           {{skill.name}}
           <small style="margin-left: 8px" *ngIf="randomInheritance()">
-            <ng-container *ngIf="showProbabilities(); else skillWithPrR">
+            <ng-container *ngIf="showProbabilities(skill); else skillWithPrR">
               {{skill.probability * 100 | number: '1.2-2'}}%
             </ng-container>
           </small>

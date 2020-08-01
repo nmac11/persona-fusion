@@ -1,6 +1,6 @@
 import { modifiedPermutations } from './permutations-helper';
 
-export function probability(
+export function calculateProbability(
   ratios: number[],
   berths: number,
   index: number,
