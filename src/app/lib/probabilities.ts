@@ -24,9 +24,27 @@ export class Probabilities {
   }
 
   private async calculateVariableRatios(): Promise<{ [key: number]: number }> {
-    return new ProbabilityWorkerWrapper().calculate({
-      ratios: this.nonZeroRatios,
-      picks: this.picks,
-    });
+    const uniqueRatios = Array.from(new Set(this.nonZeroRatios)).reduce((res, v) => {
+      res.push({ value: v, index: this.nonZeroRatios.indexOf(v) });
+      return res;
+    }, []);
+
+    const probabilitiesPromise = await Promise.all(
+      uniqueRatios.map((u) =>
+        new ProbabilityWorkerWrapper().calculate({
+          ratios: this.nonZeroRatios,
+          picks: this.picks,
+          index: u.index,
+        }),
+      ),
+    );
+
+    return probabilitiesPromise.reduce(
+      (res, probability, index) => {
+        res[uniqueRatios[index].value] = probability;
+        return res;
+      },
+      { 0: 0 },
+    );
   }
 }
