@@ -5,6 +5,7 @@ import { FusionNode } from '../../models/fusion-node';
 import { FusionResult } from '../../models/fusion-result';
 import { CompendiumService } from '../../services/compendium.service';
 import { SkillService } from '../../services/skill.service';
+import { exactMatchRegExp } from '../../helpers/reg-exp-helpers';
 
 export class FusionNodeHelper {
   constructor(
@@ -102,7 +103,9 @@ export class FusionNodeHelper {
     return skillNames.reduce((skills, skillName) => {
       let skill;
       if (skillName[0] === '_')
-        persona.skills.find((s) => s.name === skillName.substr(1));
+        skill = persona.skills.find(
+          (s) =>  exactMatchRegExp(skillName.substr(1)).test(s.name),
+        );
       else skill = this.skillService.find(skillName);
       if (skill && !skills.some((learned) => learned.name === skill.name))
         skills.push(skill);
