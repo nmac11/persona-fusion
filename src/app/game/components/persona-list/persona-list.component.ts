@@ -39,15 +39,15 @@ export class PersonaListComponent implements OnInit, AfterViewInit {
     this.compendiumService = this.injector.get<CompendiumService>(
       tokens.compendium,
     );
-    this.personae.data = this.compendiumService.getAll();
     this.titleService.setTitle(this.activeGameService.fullGameName);
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 
   ngAfterViewInit(): void {
     this.personae.sort = this.sort;
     this.personae.paginator = this.paginator;
+    setTimeout(() => (this.personae.data = this.compendiumService.getAll()), 0);
   }
 
   applyFilter(key: string = '') {

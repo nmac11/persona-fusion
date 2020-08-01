@@ -21,7 +21,7 @@
            [routerLink]="nav.url"
            routerLinkActive="active-nav-link"
            [routerLinkActiveOptions]="nav.url === '' ? { exact: true } : {}"
-           (click)="snav.close()">{{nav.title}}</a>
+           (click)="delayedClose()">{{nav.title}}</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content style="height:100%">

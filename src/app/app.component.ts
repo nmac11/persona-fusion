@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  @ViewChild('snav') sideNav;
+
   navLinks = [
     {
       url: '',
@@ -48,4 +50,8 @@ export class AppComponent {
       title: 'Reference',
     },
   ];
+
+  delayedClose(): void {
+    setTimeout(() => this.sideNav.close(), 300)
+  }
 }
