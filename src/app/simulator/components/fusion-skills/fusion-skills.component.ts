@@ -45,7 +45,7 @@ export class FusionSkillsComponent implements OnInit, OnChanges {
   }
 
   private async calculateProbabilities(): Promise<void> {
-    if (!this.showProbabilities) return;
+    if (!this.showProbabilities || !this.randomInheritance()) return;
     const ratios = this.fusionYield.inheritableSkills.map(
       (skill) => skill.probRatio,
     );
