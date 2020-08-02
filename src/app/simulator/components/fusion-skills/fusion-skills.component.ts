@@ -35,6 +35,15 @@ export class FusionSkillsComponent implements OnInit, OnChanges {
     );
   }
 
+  approximateProbabilities(): boolean {
+    const ratios = this.fusionYield.inheritableSkills
+      .map((s) => s.probRatio)
+      .filter((r) => r > 0);
+    const variableRatios = Array.from(new Set(ratios)).length !== 1;
+    const moreThanFivePicks = this.fusionYield.skillsInheritedCount > 5;
+    return variableRatios && moreThanFivePicks;
+  }
+
   private async calculateProbabilities(): Promise<void> {
     if (!this.showProbabilities) return;
     const ratios = this.fusionYield.inheritableSkills.map(
