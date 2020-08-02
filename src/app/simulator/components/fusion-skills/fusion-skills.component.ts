@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, OnChanges } from '@angular/core';
 import { FusionResult } from '../../../models/fusion-result';
 import { ActiveGameService } from '../../../services/active-game.service';
 import { InheritableSkill } from '../../../models/inheritable-skill';
@@ -6,27 +6,45 @@ import { AppSettingsService } from '../../../services/app-settings.service';
 import { Skill } from '../../../models/skill';
 import { countSkillPicks } from '../../../helpers/count-skill-picks-helper';
 import { Probabilities } from '../../../lib/probabilities';
+import { BehaviorSubject, Observable, Subscription, from } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'simulator-fusion-skills',
   templateUrl: './fusion-skills.component.html',
   styleUrls: ['./fusion-skills.component.css'],
 })
-export class FusionSkillsComponent implements OnInit, OnChanges {
+export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
   @Input('fusionYield') fusionYield: FusionResult;
   showProbabilities: boolean;
+  fusionSubject$: BehaviorSubject<FusionResult>;
+  fusionSub: Subscription;
 
   constructor(
     private activeGameService: ActiveGameService,
     private appSettingsService: AppSettingsService,
   ) {
     this.showProbabilities = this.appSettingsService.getValues()['PROBABILITY'];
+    this.fusionSubject$ = new BehaviorSubject(this.fusionYield);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.showProbabilities && this.randomInheritance())
+    this.fusionSub = this.fusionSubject$
+      .pipe(switchMap(() => this.calculateProbabilities()))
+      .subscribe((p) => {
+        this.fusionYield.inheritableSkills.forEach(
+          (s) => (s.probability = p[s.probRatio]),
+        );
+      });
+  }
 
   ngOnChanges(): void {
-    this.calculateProbabilities();
+    this.fusionSubject$.next(this.fusionYield);
+  }
+
+  ngOnDestroy(): void {
+    this.fusionSub?.unsubscribe();
   }
 
   randomInheritance(): boolean {
@@ -44,20 +62,19 @@ export class FusionSkillsComponent implements OnInit, OnChanges {
     return variableRatios && moreThanFivePicks;
   }
 
-  private async calculateProbabilities(): Promise<void> {
+  private calculateProbabilities(): Observable<{ [key: number]: number }> {
     if (!this.showProbabilities || !this.randomInheritance()) return;
     const ratios = this.fusionYield.inheritableSkills.map(
       (skill) => skill.probRatio,
     );
-    const probabilities = await new Probabilities(
-      ratios,
-      countSkillPicks(
-        this.fusionYield.persona,
-        this.fusionYield.fusionComponents,
-      ),
-    ).calculate();
-    this.fusionYield.inheritableSkills.forEach(
-      (s) => (s.probability = probabilities[s.probRatio]),
+    return from(
+      new Probabilities(
+        ratios,
+        countSkillPicks(
+          this.fusionYield.persona,
+          this.fusionYield.fusionComponents,
+        ),
+      ).calculate(),
     );
   }
 
