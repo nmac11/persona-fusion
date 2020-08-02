@@ -40,8 +40,6 @@ export class GemFusionsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.fusions = this.persona?.special
-      ? []
-      : this.fusionService.findFusions(this.persona);
+    this.fusions = this.fusionService.findFusions(this.persona);
   }
 }

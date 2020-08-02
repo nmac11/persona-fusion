@@ -54,9 +54,7 @@ export class TriangleFusionsComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.fusions = this.persona?.special
-        ? []
-        : this.fusionService.findFusions(this.persona);
+      this.fusions = this.fusionService.findFusions(this.persona);
 
       this.availablePersonae = this.fusionService
         .fusionPersonae()

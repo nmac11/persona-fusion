@@ -52,9 +52,7 @@ export class NormalFusionsComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.fusions = this.persona?.special
-        ? []
-        : this.fusionService.findFusions(this.persona);
+      this.fusions = this.fusionService.findFusions(this.persona);
     }, 0);
   }
 
