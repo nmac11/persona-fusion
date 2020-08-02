@@ -1,13 +1,10 @@
 import { Component, OnInit, Injector } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Persona } from '../models/persona';
-import { Skill } from '../models/skill';
 import { CompendiumService } from '../services/compendium.service';
 import { SimulatorService } from '../services/simulator.service';
 import { SkillService } from '../services/skill.service';
 import { ListDialogComponent } from '../shared/list-dialog/list-dialog.component';
-import { SkillsDialogComponent } from '../shared/skills-dialog/skills-dialog.component';
 import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
 import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
@@ -15,7 +12,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { FusionNodeHelper } from './helpers/fusion-node-helper';
 import { ActiveGameService } from '../services/active-game.service';
 import { SettingsService } from '../services/settings.service';
-import { AppSettingsService } from '../services/app-settings.service';
 import { TitleService } from '../services/title.service';
 import { InheritableSkill } from '../models/inheritable-skill';
 
@@ -42,7 +38,6 @@ export class SimulatorComponent implements OnInit {
     private matDialog: MatDialog,
     private location: Location,
     private activeGameService: ActiveGameService,
-    private appSettingsService: AppSettingsService,
     private titleService: TitleService,
   ) {
     const tokens = this.activeGameService.getTokenSet();
@@ -97,29 +92,10 @@ export class SimulatorComponent implements OnInit {
     this.updateQueryParams();
   }
 
-  skillsToLearn(): Skill[] {
-    return this.fusionYield.persona.skills
-      .filter((s) => s.level)
-      .sort((a, b) => a.level - b.level);
-  }
-
   fuse(update = true): void {
     this.saveName = null;
     this.fusionYield = this.simulatorService.fuse(this.fusionItems);
     if (update) this.updateQueryParams();
-  }
-
-  showProbabilities(skill: InheritableSkill): boolean {
-    return (
-      skill.probability !== undefined &&
-      this.appSettingsService.getValues()['PROBABILITY']
-    );
-  }
-
-  randomInheritance(): boolean {
-    return ['p3p', 'p3fes', 'p3ans', 'p4'].includes(
-      this.activeGameService.game,
-    );
   }
 
   private loadFusionNodesFromRouteParams(): void {

@@ -18,11 +18,13 @@ import { p5SkillInheritanceProvider } from '../tokens/p5/skill-inheritance-servi
 import { SharedModule } from '../shared/shared.module';
 import { SaveFusionDialogComponent } from './components/save-fusion-dialog/save-fusion-dialog.component';
 import { PersonaStoreModule } from '../persona-store/persona-store.module';
+import { FusionSkillsComponent } from './components/fusion-skills/fusion-skills.component';
 
 @NgModule({
   declarations: [
     SimulatorComponent,
     SaveFusionDialogComponent,
+    FusionSkillsComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,13 @@
+.skill-legend {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.skill-legend-circle {
+  display: inline-block;
+  margin-right: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+}
