@@ -8,6 +8,7 @@ import { FusionResult } from '../models/fusion-result';
 import { AppSettingsService } from '../services/app-settings.service';
 
 import { Probabilities } from '../lib/probabilities';
+import { countSkillPicks } from '../helpers/count-skill-picks-helper';
 
 @Injectable()
 export class SkillInheritanceService {
@@ -15,23 +16,6 @@ export class SkillInheritanceService {
     @Inject(Object) private inheritanceChart: any,
     private appSettingsService: AppSettingsService,
   ) {}
-
-  countSkillsInherited(persona: Persona, fusionItems: FusionNode[]): number {
-    const maxInheritedSkills =
-      8 - persona.skills.filter((s) => s.level === 0).length;
-    const totalFusionSkills = fusionItems.reduce((total, item) => {
-      total += item.skills.slice(0, 8).length;
-      return total;
-    }, 0);
-    // Not possible to inherit exactly 7 skills
-    const chart = [0, 6, 9, 12, 24, 32, 42, 42, 99];
-    const totalInheritedSkills = chart.indexOf(
-      chart.find((n) => totalFusionSkills < n),
-    );
-    return totalInheritedSkills <= maxInheritedSkills
-      ? totalInheritedSkills
-      : maxInheritedSkills;
-  }
 
   findInheritableSkills(
     persona: Persona,
@@ -41,7 +25,7 @@ export class SkillInheritanceService {
     return this.addProbabilities(
       persona.inherits,
       fusionSkills,
-      this.countSkillsInherited(persona, fusionItems),
+      countSkillPicks(persona, fusionItems),
     );
   }
 

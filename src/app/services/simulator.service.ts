@@ -14,6 +14,7 @@ import { NormalFusion } from '../lib/normal-fusion';
 import { TriangleFusion } from '../lib/triangle-fusion';
 import { InheritableSkill } from '../models/inheritable-skill';
 import { GemFusion } from '../lib/gem-fusion';
+import { countSkillPicks } from '../helpers/count-skill-picks-helper';
 
 export abstract class SimulatorService {
   constructor(
@@ -97,7 +98,7 @@ export abstract class SimulatorService {
       (s) => s.probRatio > 0,
     ).length;
     return Math.min(
-      this.skillInheritanceService.countSkillsInherited(persona, fusionItems),
+      countSkillPicks(persona, fusionItems),
       filteredInheritableSkillsCount,
     );
   }
