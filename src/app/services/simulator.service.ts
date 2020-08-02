@@ -15,6 +15,7 @@ import { TriangleFusion } from '../lib/triangle-fusion';
 import { InheritableSkill } from '../models/inheritable-skill';
 import { GemFusion } from '../lib/gem-fusion';
 import { countSkillPicks } from '../helpers/count-skill-picks-helper';
+import { FusionBuilder } from '../lib/fusion-builder';
 
 export abstract class SimulatorService {
   constructor(
@@ -34,7 +35,11 @@ export abstract class SimulatorService {
       this.fuseOther(fusionItems);
 
     if (persona) {
-      return this.createFusionResult(persona, fusionItems);
+      return new FusionBuilder(
+        persona,
+        fusionItems,
+        this.skillInheritanceService,
+      ).build();
     }
   }
 
@@ -58,50 +63,6 @@ export abstract class SimulatorService {
   }
 
   protected abstract fuseOther(fusionItems: FusionNode[]): Persona;
-
-  private createFusionResult(
-    persona: Persona,
-    fusionItems: FusionNode[],
-  ): FusionResult {
-    const inheritableSkills = this.findInheritableSkills(persona, fusionItems);
-    const skillsInheritedCount = this.countSkillsInherited(
-      persona,
-      fusionItems,
-      inheritableSkills,
-    );
-    return {
-      persona,
-      fusionComponents: fusionItems,
-      currentLevel: persona.level,
-      skills: persona.skills.filter((skill) => skill.level === 0),
-      skillsInheritedCount,
-      inheritableSkills,
-    };
-  }
-
-  private findInheritableSkills(
-    persona: Persona,
-    fusionItems: FusionNode[],
-  ): InheritableSkill[] {
-    return this.skillInheritanceService.findInheritableSkills(
-      persona,
-      fusionItems,
-    );
-  }
-
-  private countSkillsInherited(
-    persona: Persona,
-    fusionItems: FusionNode[],
-    inheritableSkills: InheritableSkill[],
-  ): number {
-    const filteredInheritableSkillsCount = inheritableSkills.filter(
-      (s) => s.probRatio > 0,
-    ).length;
-    return Math.min(
-      countSkillPicks(persona, fusionItems),
-      filteredInheritableSkillsCount,
-    );
-  }
 
   protected checkGemFusion([f1, f2]: FusionNode[]): boolean {
     return (
