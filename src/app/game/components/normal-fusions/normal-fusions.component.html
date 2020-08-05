@@ -7,7 +7,8 @@
           {{tag}}
           <mat-icon matChipRemove>cancel</mat-icon>
         </mat-chip>
-        <input placeholder="Filter Persona or skill" 
+        <input placeholder="Filter Persona or skill"
+                autocomplete="off" 
                [matChipInputFor]="tagList"
                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
                matChipInputAddOnBlur="true"

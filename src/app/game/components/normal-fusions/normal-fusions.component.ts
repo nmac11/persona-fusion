@@ -48,12 +48,13 @@ export class NormalFusionsComponent implements OnInit {
     const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = injector.get<CompendiumService>(tokens.compendium);
     this.fusionService = injector.get<NormalFusionService>(tokens.normalFusion);
+    this.fusionService.filteredFusions$.subscribe(
+      (fusions) => (this.fusions = fusions),
+    );
   }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.fusions = this.fusionService.findFusions(this.persona);
-    }, 0);
+    this.fusionService.findFusions(this.persona);
   }
 
   openBottomSheet(fusion: Persona[]): void {
@@ -82,19 +83,7 @@ export class NormalFusionsComponent implements OnInit {
     this.filter();
   }
 
-  private filter() {
-    this.fusions = !this.nameFilters.length
-      ? this.fusionService.list
-      : this.fusionService.list.filter((pair) =>
-          pair.some((persona) =>
-            this.nameFilters.some(
-              (filterName) =>
-                exactMatchRegExp(filterName).test(persona.name) ||
-                persona.skills.some((s) =>
-                  exactMatchRegExp(filterName).test(s.name),
-                ),
-            ),
-          ),
-        );
+  private filter(): void {
+    this.fusionService.filter(this.nameFilters);
   }
 }

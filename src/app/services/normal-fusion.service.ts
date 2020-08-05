@@ -3,23 +3,37 @@ import { FusionChartService } from '../services/fusion-chart.service';
 import { CompendiumService } from '../services/compendium.service';
 import { NormalFusion } from '../lib/normal-fusion';
 import { Persona } from '../models/persona';
+import { Observable, Subject } from 'rxjs';
+import { NormalFusionsFilterWorkerWrapper } from '../lib/normal-fusions-filter-worker-wrapper';
+import { switchMap } from 'rxjs/operators';
 
 @Injectable()
 export class NormalFusionService {
   private persona: Persona;
   list: Persona[][] = [];
   fusionPersonaIds: Set<number> = new Set();
+  filterWorkerWrapper: NormalFusionsFilterWorkerWrapper;
+  filters$ = new Subject<string[]>();
+  filteredFusions$ = new Observable<Persona[][]>();
 
   constructor(
     @Inject(FusionChartService) private arcanaFusionService: FusionChartService,
     @Inject(CompendiumService) private compendiumService: CompendiumService,
-  ) {}
+  ) {
+    this.filteredFusions$ = this.filters$.pipe(
+      switchMap((filters) => this.filterWorkerWrapper.filter(filters)),
+    );
+  }
 
-  findFusions(persona: Persona): Persona[][] {
+  findFusions(persona: Persona): void {
     this.persona = persona;
     this.list = [];
     if (persona) this.generateFusionList();
-    return this.list;
+    this.filterWorkerWrapper = new NormalFusionsFilterWorkerWrapper(
+      this.list,
+      this.fusionPersonae(),
+    );
+    this.filters$.next([]);
   }
 
   fusionPersonae(): Persona[] {
@@ -28,14 +42,18 @@ export class NormalFusionService {
     );
   }
 
+  filter(nameFilters: string[]): void {
+    this.filters$.next(nameFilters);
+  }
+
   private generateFusionList(): void {
     const arcanaFusions = this.arcanaFusionService.getPossibleNormalFusions(
       this.persona.arcana,
     );
-    this.filterFusions(arcanaFusions);
+    this.testFusions(arcanaFusions);
   }
 
-  private filterFusions(arcanaFusions: Persona[][][]): void {
+  private testFusions(arcanaFusions: Persona[][][]): void {
     arcanaFusions.forEach(([arc1, arc2]) => {
       arc1.forEach((p1: Persona) =>
         arc2.forEach((p2: Persona) => {
