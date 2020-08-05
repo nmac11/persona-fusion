@@ -1,4 +1,4 @@
-import { Component, OnInit, Injector, Input } from '@angular/core';
+import { Component, OnDestroy, OnInit, Injector, Input } from '@angular/core';
 import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { NormalFusionService } from '../../../services/normal-fusion.service';
@@ -17,6 +17,7 @@ import { p5rNormalFusionProvider } from '../../../tokens/p5r/normal-fusion-servi
 import { FusionPreviewBottomSheetComponent } from '../../../shared/fusion-preview-bottom-sheet/fusion-preview-bottom-sheet.component';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { ActiveGameService } from '../../../services/active-game.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'game-normal-fusions',
@@ -32,13 +33,14 @@ import { ActiveGameService } from '../../../services/active-game.service';
     p5rNormalFusionProvider,
   ],
 })
-export class NormalFusionsComponent implements OnInit {
+export class NormalFusionsComponent implements OnInit, OnDestroy {
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
   private compendiumService: CompendiumService;
   private fusionService: NormalFusionService;
   @Input('persona') persona: Persona;
   fusions: Persona[][];
   nameFilters: string[] = [];
+  fusionFilterSub: Subscription;
 
   constructor(
     private injector: Injector,
@@ -48,13 +50,17 @@ export class NormalFusionsComponent implements OnInit {
     const tokens = this.activeGameService.getTokenSet();
     this.compendiumService = injector.get<CompendiumService>(tokens.compendium);
     this.fusionService = injector.get<NormalFusionService>(tokens.normalFusion);
-    this.fusionService.filteredFusions$.subscribe(
+    this.fusionFilterSub = this.fusionService.filteredFusions$.subscribe(
       (fusions) => (this.fusions = fusions),
     );
   }
 
   ngOnInit(): void {
     this.fusionService.findFusions(this.persona);
+  }
+
+  ngOnDestroy(): void {
+    this.fusionFilterSub.unsubscribe();
   }
 
   openBottomSheet(fusion: Persona[]): void {
