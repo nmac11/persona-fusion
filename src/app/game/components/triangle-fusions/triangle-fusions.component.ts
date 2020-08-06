@@ -1,4 +1,4 @@
-import { Component, OnInit, Injector, Input } from '@angular/core';
+import { Component, OnDestroy, OnInit, Injector, Input } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import {
   exactMatchRegExp,
@@ -15,6 +15,7 @@ import { p4TriangleFusionProvider } from '../../../tokens/p4/triangle-fusion-ser
 import { ActiveGameService } from '../../../services/active-game.service';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { PersonaPreviewBottomSheetComponent } from '../../../shared/persona-preview-bottom-sheet/persona-preview-bottom-sheet.component';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'game-triangle-fusions',
@@ -28,15 +29,16 @@ import { PersonaPreviewBottomSheetComponent } from '../../../shared/persona-prev
     p4TriangleFusionProvider,
   ],
 })
-export class TriangleFusionsComponent implements OnInit {
+export class TriangleFusionsComponent implements OnInit, OnDestroy {
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
-  fusions: Persona[][];
   availablePersonae: Persona[] = [];
   fusionService: TriangleFusionService;
   selectedPersonae: Persona[] = [];
   compendiumService: CompendiumService;
   @Input('persona') persona: Persona;
   nameFilters: string[] = [];
+  availablePersonaeSub: Subscription;
+  loading: boolean = true;
 
   constructor(
     private injector: Injector,
@@ -50,28 +52,26 @@ export class TriangleFusionsComponent implements OnInit {
     this.fusionService = this.injector.get<TriangleFusionService>(
       tokens.triangleFusion,
     );
+    this.availablePersonaeSub = this.fusionService.availablePersonae$.subscribe(
+      (available) => {
+        this.availablePersonae = available;
+        this.loading = false;
+      },
+    );
   }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.fusions = this.fusionService.findFusions(this.persona);
+    this.fusionService.findFusions(this.persona);
+  }
 
-      this.availablePersonae = this.fusionService
-        .fusionPersonae()
-        .sort((a, b) => a.level - b.level);
-    }, 0);
+  ngOnDestroy(): void {
+    this.availablePersonaeSub.unsubscribe();
   }
 
   openBottomSheet(persona: Persona) {
     this.bottomSheet.open(PersonaPreviewBottomSheetComponent, {
       data: persona,
     });
-  }
-
-  addFilter(persona: Persona): void {
-    if (!this.selectedPersonae.some((p) => p.id === persona.id))
-      this.selectedPersonae.push(persona);
-    this.filter();
   }
 
   removeFilter(persona: Persona): void {
@@ -97,44 +97,20 @@ export class TriangleFusionsComponent implements OnInit {
     this.filter();
   }
 
+  select(persona: Persona): void {
+    if (!this.selectedPersonae.some((p) => p.id === persona.id))
+      this.selectedPersonae.push(persona);
+    this.fusionService.select(this.selectedPersonae);
+    this.loading = true;
+  }
+
   filter(): void {
-    this.availablePersonae = this.fusions
-      .filter(this.includesEveryFilterPersona)
-      .reduce(this.availablePersonaeReducer, new Array<Persona>())
-      .filter((p) => {
-        return this.nameFilters.length
-          ? this.nameFilters.some(
-              (nf) =>
-                exactMatchRegExp(nf).test(p.name) ||
-                p.skills.some((s) => exactMatchRegExp(nf).test(s.name)),
-            )
-          : true;
-      })
-      .sort((a, b) => a.level - b.level);
+    this.fusionService.filter(this.nameFilters);
+    this.loading = true;
   }
 
   simulatorQueryParams(): Object {
     const [p1, p2, p3] = this.selectedPersonae.map((p) => p.name.toLowerCase());
     return { p1, p2, p3 };
   }
-
-  private includesEveryFilterPersona: (fusion: Persona[]) => boolean = (
-    fusion,
-  ) =>
-    this.selectedPersonae.every((filter) =>
-      fusion.some((p) => p.id === filter.id),
-    );
-
-  private availablePersonaeReducer: (
-    results: Persona[],
-    fusion: Persona[],
-  ) => Persona[] = (results, fusion) => {
-    const toAdd: Persona[] = fusion.filter(
-      (fp) =>
-        !results.some((p) => fp.id === p.id) &&
-        !this.selectedPersonae.some((p) => fp.id === p.id),
-    );
-    results.push(...toAdd);
-    return results;
-  };
 }

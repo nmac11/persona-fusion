@@ -3,23 +3,41 @@ import { P3P4FusionChartService } from '../services/fusion-chart.service';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
 import { TriangleFusion } from '../lib/triangle-fusion';
+import { Observable, Subject, combineLatest } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { TriangleFusionsFilterWorkerWrapper } from '../lib/triangle-fusions-filter-worker-wrapper';
 
 @Injectable()
 export class TriangleFusionService {
   private persona: Persona;
   list: Persona[][] = [];
   fusionPersonaIds: Set<number> = new Set();
+  filterWorkerWrapper: TriangleFusionsFilterWorkerWrapper;
+  selected$: Subject<Persona[]> = new Subject<Persona[]>();
+  filters$: Subject<string[]> = new Subject<string[]>();
+  availablePersonae$: Observable<Persona[]>;
 
   constructor(
-    @Inject(P3P4FusionChartService) private arcanaFusionService: P3P4FusionChartService,
+    @Inject(P3P4FusionChartService)
+    private arcanaFusionService: P3P4FusionChartService,
     @Inject(CompendiumService) private compendiumService: CompendiumService,
-  ) {}
+  ) {
+    this.availablePersonae$ = combineLatest(this.selected$, this.filters$).pipe(
+      switchMap(([selected, filters]) =>
+        this.filterWorkerWrapper.filter(selected, filters),
+      ),
+    );
+  }
 
-  findFusions(persona: Persona): Persona[][] {
+  findFusions(persona: Persona): void {
     this.persona = persona;
     this.list = [];
     if (persona) this.generateFusionList();
-    return this.list;
+    this.filterWorkerWrapper = new TriangleFusionsFilterWorkerWrapper(
+      this.list,
+    );
+    this.filters$.next([]);
+    this.selected$.next([]);
   }
 
   fusionPersonae(): Persona[] {
@@ -28,14 +46,22 @@ export class TriangleFusionService {
     );
   }
 
+  filter(nameFilters: string[]): void {
+    this.filters$.next(nameFilters);
+  }
+
+  select(selected: Persona[]): void {
+    this.selected$.next(selected);
+  }
+
   private generateFusionList(): void {
     const arcanaFusions = this.arcanaFusionService.getPossibleTriangleFusions(
       this.persona.arcana,
     );
-    this.filterFusions(arcanaFusions);
+    this.testFusions(arcanaFusions);
   }
 
-  private filterFusions(arcanaFusions: Persona[][][]): void {
+  private testFusions(arcanaFusions: Persona[][][]): void {
     arcanaFusions.forEach(([arc1, arc2, arc3]: Persona[][]) => {
       arc1.forEach((p1) =>
         arc2.forEach((p2) =>
