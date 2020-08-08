@@ -13,7 +13,7 @@ export class AppSettingsService {
     if (!this.settings) {
       this.settings = {
         name: 'app_settings',
-        values: { PROBABILITY: true, EXPANDDETAILS: true, HIDEBLOCKED: false },
+        values: { PROBABILITY: true, EXPANDDETAILS: true, HIDEBLOCKED: true },
       };
       this.saveAndReloadDefaults();
     }
