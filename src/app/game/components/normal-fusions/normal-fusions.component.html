@@ -1,5 +1,5 @@
 <div *ngIf="fusions?.length || nameFilters?.length; else emptyList">
-  <div style="margin: 24px 4px;">
+  <div style="margin: 16px 4px;">
     <mat-form-field appearance="fill" style="display: flex; flex-direction: column;">
       <mat-label>Filter</mat-label>
       <mat-chip-list #tagList aria-label="Filter">
@@ -7,13 +7,14 @@
           {{tag}}
           <mat-icon matChipRemove>cancel</mat-icon>
         </mat-chip>
-        <input placeholder="Filter Persona or skill"
+        <input placeholder="Add filter here"
                 autocomplete="off" 
                [matChipInputFor]="tagList"
                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
                matChipInputAddOnBlur="true"
                (matChipInputTokenEnd)="addFilter($event)">
       </mat-chip-list>
+      <mat-hint>Enter full name of skill or Persona</mat-hint>
     </mat-form-field>
   </div>
 
