@@ -21,3 +21,7 @@
   min-height: 300px;
   overflow-x: hidden;
 }
+
+.alternate {
+  background: rgba(127, 127, 127, 0.3);
+}

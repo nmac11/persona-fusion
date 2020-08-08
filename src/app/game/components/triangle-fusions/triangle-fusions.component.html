@@ -49,7 +49,7 @@
     <h3 matSubheader >Available ({{availablePersonae.length}})</h3>
     <mat-list dense>
       <cdk-virtual-scroll-viewport class="tri-fusion-virtual-scroll" itemSize="60">
-        <mat-list-item *cdkVirtualFor="let persona of availablePersonae">
+        <mat-list-item *cdkVirtualFor="let persona of availablePersonae; let odd = odd;" [class.alternate]="odd">
           <span matLine>
             <button class="mat-body-2 bottom-sheet-button"
                (click)="openBottomSheet(persona)">
