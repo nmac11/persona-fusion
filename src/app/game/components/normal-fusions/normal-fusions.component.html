@@ -24,27 +24,19 @@
   </div>
 </ng-template>
 
-<div class="normal-fusions-container">
-  <button
-    mat-button
-    *ngFor="let fusion of fusions"
-    (click)="openBottomSheet(fusion)"
-    class="mat-elevation-z2 fusion-button"
-  >
-    <span
-      *ngFor="let persona of fusion"
-      class="fusion-button-inner-wrapper"
-    >
-      <h3
-        class="mat-h3 persona-name-header"
-      >
-        {{ persona.name }}
-      </h3>
-      <p
-        class="mat-caption persona-detail"
-      >
-        {{ persona.arcanaName }} / {{ persona.level }}
-      </p>
-    </span>
-  </button>
-</div>
+<mat-nav-list>
+  <cdk-virtual-scroll-viewport class="normal-fusion-virtual-scroll" itemSize="48">
+    <mat-list-item *cdkVirtualFor="let fusion of fusions" (click)="openBottomSheet(fusion)">
+       <div fxLayout="row" fxLayoutAlign="space-between" style="width: 100%">
+        <div>
+          <h3 class="mat-h3 persona-name-header" [ngStyle.gt-xs]="{ fontSize: '14px' }">{{ fusion[0].name }}</h3>
+          <p  class="mat-caption persona-detail" [ngStyle.gt-xs]="{ fontSize: '12px' }">{{ fusion[0].arcanaName }} / {{ fusion[0].level }}</p>
+        </div>
+        <div>
+          <h3 class="mat-h3 persona-name-header" [ngStyle.gt-xs]="{ fontSize: '14px' }" style="text-align: right">{{ fusion[1].name }}</h3>
+          <p  class="mat-caption persona-detail" [ngStyle.gt-xs]="{ fontSize: '12px' }" style="text-align: right">{{ fusion[1].level }} / {{ fusion[1].arcanaName }}</p>
+        </div>
+      </div>
+    </mat-list-item>
+  </cdk-virtual-scroll-viewport>
+</mat-nav-list>
