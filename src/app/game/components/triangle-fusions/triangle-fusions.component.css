@@ -7,3 +7,17 @@
   padding: 0;
   cursor: pointer;
 }
+
+.mat-subheader {
+  color: rgba(0,0,0,.54);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.tri-fusion-virtual-scroll {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60vh;
+  min-height: 300px;
+  overflow-x: hidden;
+}

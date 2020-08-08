@@ -31,36 +31,37 @@
        style="width: 100%">FUSE</a>
   </div>
   <div *ngIf="availablePersonae.length || nameFilters.length">
-    <mat-list dense *ngIf="!loading"> 
-      <mat-form-field appearance="fill" style="display: flex; flex-direction: column;">
-        <mat-label>Filter</mat-label>
-        <mat-chip-list #tagList aria-label="Filter">
-          <mat-chip *ngFor="let tag of nameFilters; let i = index" (removed)="removeNameFilter(i)">
-            {{tag}}
-            <mat-icon matChipRemove>cancel</mat-icon>
-          </mat-chip>
-          <input placeholder="Filter Persona or skill"
-                 autocomplete="off" 
-                 [matChipInputFor]="tagList"
-                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                 matChipInputAddOnBlur="true"
-                 (matChipInputTokenEnd)="addNameFilter($event)">
-        </mat-chip-list>
-      </mat-form-field>
-
-      <h3 matSubheader>Available ({{availablePersonae.length}})</h3>
-      <mat-list-item *ngFor="let persona of availablePersonae">
-        <span matLine>
-          <button class="mat-body-2 bottom-sheet-button"
-             (click)="openBottomSheet(persona)">
-             {{persona.name}}
+    <mat-form-field appearance="fill" style="display: flex; flex-direction: column;">
+      <mat-label>Filter</mat-label>
+      <mat-chip-list #tagList aria-label="Filter">
+        <mat-chip *ngFor="let tag of nameFilters; let i = index" (removed)="removeNameFilter(i)">
+          {{tag}}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+        <input placeholder="Filter Persona or skill"
+               autocomplete="off" 
+               [matChipInputFor]="tagList"
+               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+               matChipInputAddOnBlur="true"
+               (matChipInputTokenEnd)="addNameFilter($event)">
+      </mat-chip-list>
+    </mat-form-field>
+    <h3 matSubheader >Available ({{availablePersonae.length}})</h3>
+    <mat-list dense>
+      <cdk-virtual-scroll-viewport class="tri-fusion-virtual-scroll" itemSize="60">
+        <mat-list-item *cdkVirtualFor="let persona of availablePersonae">
+          <span matLine>
+            <button class="mat-body-2 bottom-sheet-button"
+               (click)="openBottomSheet(persona)">
+               {{persona.name}}
+            </button>
+          </span>
+          <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
+          <button mat-icon-button (click)="select(persona)">
+            <mat-icon color="primary">add</mat-icon>
           </button>
-        </span>
-        <span mat-line>{{persona.arcanaName}} / {{persona.level}}</span>
-        <button mat-icon-button (click)="select(persona)">
-          <mat-icon color="primary">add</mat-icon>
-        </button>
-      </mat-list-item>
+        </mat-list-item>
+      </cdk-virtual-scroll-viewport>
     </mat-list>
   </div>
 </div>
