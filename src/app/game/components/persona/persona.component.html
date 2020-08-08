@@ -5,41 +5,51 @@
      gdRows.gt-sm
      gdGap="16px">
   <shared-persona-info [persona]="persona"></shared-persona-info>
-  <mat-card class="mat-elevation-z2">
-    <ng-container [ngSwitch]="status()">
-      <ng-container *ngSwitchCase="'blocked'">
-        <h2 class="mat-h2">Not allowed</h2>
-        <p class="mat-body-1">
-          This fusion is blocked. Please check your settings.
-        </p>
-        <a routerLink="../../settings" mat-button color="accent">GO TO SETTINGS</a>
-        <a routerLink="../.." mat-button color="accent">GO TO LIST</a>
+  <div>
+    <mat-card class="mat-elevation-z2">
+      <ng-container [ngSwitch]="status()">
+        <ng-container *ngSwitchCase="'blocked'">
+          <h2 class="mat-h2">Not allowed</h2>
+          <p class="mat-body-1">
+            This fusion is blocked. Please check your settings.
+          </p>
+          <a routerLink="../../settings" mat-button color="accent">GO TO SETTINGS</a>
+          <a routerLink="../.." mat-button color="accent">GO TO LIST</a>
+        </ng-container>
+        <ng-container *ngSwitchCase="'gem'">
+          <h2 class="mat-h2">Gem persona</h2>
+          <p class="mat-body-1">
+            There are no fusion combinations for this type of Persona.
+          </p>
+          <a routerLink="../.." mat-button color="accent">GO TO LIST</a>
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+          <mat-tab-group>
+            <mat-tab label="SPECIAL FUSION" *ngIf="specialFusion.length">
+              <ng-template matTabContent>
+                <game-special-fusion [specialFusion]="specialFusion"></game-special-fusion>
+              </ng-template>
+            </mat-tab>
+            <mat-tab *ngIf="!persona.special" label="NORMAL">
+              <ng-template matTabContent>
+                <game-normal-fusions [persona]="persona"></game-normal-fusions>
+              </ng-template>
+            </mat-tab>
+            <mat-tab *ngIf="showTriangleFusions()" label="TRIANGLE">
+              <ng-template matTabContent>
+                <game-triangle-fusions [persona]="persona"></game-triangle-fusions>
+              </ng-template>
+            </mat-tab>
+            <mat-tab *ngIf="showGemFusions()" label="GEM">
+              <ng-template matTabContent>
+                <game-gem-fusions [persona]="persona"></game-gem-fusions>
+              </ng-template>
+            </mat-tab>
+          </mat-tab-group>
+        </ng-container>
       </ng-container>
-      <ng-container *ngSwitchCase="'gem'">
-        <h2 class="mat-h2">Gem persona</h2>
-        <p class="mat-body-1">
-          There are no fusion combinations for this type of Persona.
-        </p>
-        <a routerLink="../.." mat-button color="accent">GO TO LIST</a>
-      </ng-container>
-      <ng-container *ngSwitchDefault>
-        <mat-tab-group>
-          <mat-tab label="SPECIAL FUSION" *ngIf="specialFusion.length">
-            <game-special-fusion [specialFusion]="specialFusion"></game-special-fusion>
-          </mat-tab>
-          <mat-tab *ngIf="!persona.special" label="NORMAL">
-            <game-normal-fusions [persona]="persona"></game-normal-fusions>
-          </mat-tab>
-          <mat-tab *ngIf="showTriangleFusions()" label="TRIANGLE">
-            <game-triangle-fusions [persona]="persona"></game-triangle-fusions>
-          </mat-tab>
-          <mat-tab *ngIf="showGemFusions()" label="GEM">
-            <game-gem-fusions [persona]="persona"></game-gem-fusions>
-          </mat-tab>
-        </mat-tab-group>
-      </ng-container>
-    </ng-container>
-  </mat-card>
+    </mat-card>
+  </div>
 </div>
 
 <ng-template #noPersona>
