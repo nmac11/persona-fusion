@@ -1,131 +1,163 @@
 [
     {
         "name": "Absorb Elec",
-        "type": "passive"
+        "type": "passive",
+        "rank": 8
     },
     {
         "name": "Absorb Fire",
-        "type": "passive"
+        "type": "passive",
+        "rank": 8
     },
     {
         "name": "Absorb Ice",
-        "type": "passive"
+        "type": "passive",
+        "rank": 8
     },
     {
         "name": "Absorb Physical",
-        "type": "passive"
+        "type": "passive",
+        "rank": 8
     },
     {
         "name": "Absorb Wind",
-        "type": "passive"
+        "type": "passive",
+        "rank": 8
     },
     {
         "name": "Aeon Rain",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "Agi",
-        "type": "fire"
+        "type": "fire",
+        "rank": 1
     },
     {
         "name": "Agidyne",
-        "type": "fire"
+        "type": "fire",
+        "rank": 5
     },
     {
         "name": "Agilao",
-        "type": "fire"
+        "type": "fire",
+        "rank": 3
     },
     {
         "name": "Agneyastra",
-        "type": "phys"
+        "type": "phys",
+        "rank": 7
     },
     {
         "name": "Ailment Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Akasha Arts",
-        "type": "phys"
+        "type": "phys",
+        "rank": 7
     },
     {
         "name": "Alertness",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Ali Dance",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Amrita",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 4
     },
     {
         "name": "Angelic Grace",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Anima Freeze",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 3
     },
     {
         "name": "Apt Pupil",
-        "type": "passive"
+        "type": "passive",
+        "rank": 3
     },
     {
         "name": "Arm Chopper",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Arms Master",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Arrow Rain",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "Assault Dive",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Atom Smasher",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Auto-Maraku",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Auto-Masuku",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Auto-Mataru",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Auto-Rakukaja",
-        "type": "passive"
+        "type": "passive",
+        "rank": 3
     },
     {
         "name": "Auto-Sukukaja",
-        "type": "passive"
+        "type": "passive",
+        "rank": 3
     },
     {
         "name": "Auto-Tarukaja",
-        "type": "passive"
+        "type": "passive",
+        "rank": 3
     },
     {
         "name": "Balzac",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 1
     },
     {
         "name": "Bash",
-        "type": "phys"
+        "type": "phys",
+        "rank": 1
     },
     {
         "name": "Black Spot",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Black Viper",
@@ -134,71 +166,88 @@
     },
     {
         "name": "Blade of Fury",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "Blight",
-        "type": "phys"
+        "type": "phys",
+        "rank": 7
     },
     {
         "name": "Blue Wall",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Brain Shake",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Brave Blade",
-        "type": "phys"
+        "type": "phys",
+        "rank": 7
     },
     {
         "name": "Bufu",
-        "type": "ice"
+        "type": "ice",
+        "rank": 1
     },
     {
         "name": "Bufudyne",
-        "type": "ice"
+        "type": "ice",
+        "rank": 5
     },
     {
         "name": "Bufula",
-        "type": "ice"
+        "type": "ice",
+        "rank": 3
     },
     {
         "name": "Cell Breaker",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Cleave",
-        "type": "phys"
+        "type": "phys",
+        "rank": 1
     },
     {
         "name": "Confuse Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Cool Breeze",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Counter",
-        "type": "passive"
+        "type": "passive",
+        "rank": 3
     },
     {
         "name": "Counterstrike",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Crazy Chain",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Cruel Attack",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Deathbound",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "Debilitate",
@@ -207,23 +256,28 @@
     },
     {
         "name": "Dekaja",
-        "type": "support"
+        "type": "support",
+        "rank": 3
     },
     {
         "name": "Dekunda",
-        "type": "support"
+        "type": "support",
+        "rank": 3
     },
     {
         "name": "Dia",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 1
     },
     {
         "name": "Diarahan",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 5
     },
     {
         "name": "Diarama",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 3
     },
     {
         "name": "Die for Me!",
@@ -232,147 +286,183 @@
     },
     {
         "name": "Divine Grace",
-        "type": "passive"
+        "type": "passive",
+        "rank": 8
     },
     {
         "name": "Dizzy Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Dodge Elec",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Dodge Fire",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Dodge Ice",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Dodge Physical",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Dodge Wind",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Double Fangs",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Elec Amp",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Elec Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 1
     },
     {
         "name": "Elec Break",
-        "type": "support"
+        "type": "support",
+        "rank": 3
     },
     {
         "name": "Endure",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Endure Dark",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Endure Light",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Enduring Soul",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Energy Shower",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 2
     },
     {
         "name": "Enervate Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Enervation",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 1
     },
     {
         "name": "Evade Elec",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Evade Fire",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Evade Ice",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Evade Physical",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Evade Wind",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Evil Smile",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 3
     },
     {
         "name": "Evil Touch",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 1
     },
     {
         "name": "Exhaust Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Fast Heal",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Fatal End",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Fear Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Fire Amp",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Fire Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 1
     },
     {
         "name": "Fire Break",
-        "type": "support"
+        "type": "support",
+        "rank": 3
     },
     {
         "name": "Firm Stance",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Foolish Whisper",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 3
     },
     {
         "name": "Foul Breath",
-        "type": "almighty"
+        "type": "almighty",
+        "rank": 2
     },
     {
         "name": "Gale Slash",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Galgalim Eyes",
@@ -380,31 +470,38 @@
     },
     {
         "name": "Garu",
-        "type": "wind"
+        "type": "wind",
+        "rank": 1
     },
     {
         "name": "Garudyne",
-        "type": "wind"
+        "type": "wind",
+        "rank": 5
     },
     {
         "name": "Garula",
-        "type": "wind"
+        "type": "wind",
+        "rank": 3
     },
     {
         "name": "Ghastly Wail",
-        "type": "dark"
+        "type": "dark",
+        "rank": 6
     },
     {
         "name": "Gigantic Fist",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "God's Hand",
-        "type": "phys"
+        "type": "phys",
+        "rank": 8
     },
     {
         "name": "God's Judgment",
-        "type": "light"
+        "type": "light",
+        "rank": 8
     },
     {
         "name": "Golden Right",
@@ -412,31 +509,38 @@
     },
     {
         "name": "Green Wall",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Growth 1",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Growth 2",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Growth 3",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Hama",
-        "type": "light"
+        "type": "light",
+        "rank": 2
     },
     {
         "name": "Hama Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Hamaon",
-        "type": "light"
+        "type": "light",
+        "rank": 5
     },
     {
         "name": "Hassou Tobi",
@@ -450,7 +554,8 @@
     },
     {
         "name": "Heat Wave",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "Heaven's Blade",
@@ -459,47 +564,58 @@
     },
     {
         "name": "Hell's Judgment",
-        "type": "dark"
+        "type": "dark",
+        "rank": 8
     },
     {
         "name": "Herculean Strike",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "High Counter",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Hysterical Slap",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Ice Amp",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Ice Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 1
     },
     {
         "name": "Ice Break",
-        "type": "support"
+        "type": "support",
+        "rank": 3
     },
     {
         "name": "Insta-Heal",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Invigorate 1",
-        "type": "passive"
+        "type": "passive",
+        "rank": 3
     },
     {
         "name": "Invigorate 2",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Invigorate 3",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Judgement",
@@ -507,7 +623,8 @@
     },
     {
         "name": "Kill Rush",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Last Resort",
@@ -515,7 +632,8 @@
     },
     {
         "name": "Life Drain",
-        "type": "almighty"
+        "type": "almighty",
+        "rank": 2
     },
     {
         "name": "Life Leech",
@@ -523,143 +641,178 @@
     },
     {
         "name": "Mabufu",
-        "type": "ice"
+        "type": "ice",
+        "rank": 2
     },
     {
         "name": "Mabufudyne",
-        "type": "ice"
+        "type": "ice",
+        "rank": 6
     },
     {
         "name": "Mabufula",
-        "type": "ice"
+        "type": "ice",
+        "rank": 4
     },
     {
         "name": "Magaru",
-        "type": "wind"
+        "type": "wind",
+        "rank": 2
     },
     {
         "name": "Magarudyne",
-        "type": "wind"
+        "type": "wind",
+        "rank": 6
     },
     {
         "name": "Magarula",
-        "type": "wind"
+        "type": "wind",
+        "rank": 4
     },
     {
         "name": "Mahama",
-        "type": "light"
+        "type": "light",
+        "rank": 3
     },
     {
         "name": "Mahamaon",
-        "type": "light"
+        "type": "light",
+        "rank": 6
     },
     {
         "name": "Makajam",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 1
     },
     {
         "name": "Makara Break",
-        "type": "support"
+        "type": "support",
+        "rank": 7
     },
     {
         "name": "Makarakarn",
-        "type": "support"
+        "type": "support",
+        "rank": 7
     },
     {
         "name": "Mamudo",
-        "type": "dark"
+        "type": "dark",
+        "rank": 3
     },
     {
         "name": "Mamudoon",
-        "type": "dark"
+        "type": "dark",
+        "rank": 6
     },
     {
         "name": "Maragi",
-        "type": "fire"
+        "type": "fire",
+        "rank": 2
     },
     {
         "name": "Maragidyne",
-        "type": "fire"
+        "type": "fire",
+        "rank": 6
     },
     {
         "name": "Maragion",
-        "type": "fire"
+        "type": "fire",
+        "rank": 4
     },
     {
         "name": "Marakukaja",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Marakunda",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Masukukaja",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Masukunda",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Matarukaja",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Matarunda",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Mazio",
-        "type": "elec"
+        "type": "elec",
+        "rank": 2
     },
     {
         "name": "Maziodyne",
-        "type": "elec"
+        "type": "elec",
+        "rank": 6
     },
     {
         "name": "Mazionga",
-        "type": "elec"
+        "type": "elec",
+        "rank": 4
     },
     {
         "name": "Me Patra",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 3
     },
     {
         "name": "Media",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 3
     },
     {
         "name": "Mediarahan",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 7
     },
     {
         "name": "Mediarama",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 5
     },
     {
         "name": "Megido",
-        "type": "almighty"
+        "type": "almighty",
+        "rank": 3
     },
     {
         "name": "Megidola",
-        "type": "almighty"
+        "type": "almighty",
+        "rank": 6
     },
     {
         "name": "Megidolaon",
-        "type": "almighty"
+        "type": "almighty",
+        "rank": 8
     },
     {
         "name": "Mighty Swing",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "Mind Charge",
-        "type": "support"
+        "type": "support",
+        "rank": 6
     },
     {
         "name": "Mind Slice",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Morning Star",
@@ -668,39 +821,48 @@
     },
     {
         "name": "Mudo",
-        "type": "dark"
+        "type": "dark",
+        "rank": 2
     },
     {
         "name": "Mudo Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Mudoon",
-        "type": "dark"
+        "type": "dark",
+        "rank": 5
     },
     {
         "name": "Mustard Bomb",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "Mutudi",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 2
     },
     {
         "name": "Muzzle Shot",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Myriad Arrows",
-        "type": "phys"
+        "type": "phys",
+        "rank": 7
     },
     {
         "name": "Navas Nebula",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "Nervundi",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 2
     },
     {
         "name": "Niflheim",
@@ -709,67 +871,83 @@
     },
     {
         "name": "Null Confuse",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Dark",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Null Dizzy",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Elec",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Null Enervate",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Exhaust",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Fear",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Fire",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Null Ice",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Null Light",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Null Mute",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Physical",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Null Poison",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Rage",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Null Wind",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Old One",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 3
     },
     {
         "name": "Panta Rhei",
@@ -778,39 +956,48 @@
     },
     {
         "name": "Patra",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 1
     },
     {
         "name": "Poisma",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 1
     },
     {
         "name": "Poison Arrow",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "Poison Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Poison Mist",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 3
     },
     {
         "name": "Poison Skewer",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Posumudi",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 2
     },
     {
         "name": "Power Charge",
-        "type": "support"
+        "type": "support",
+        "rank": 6
     },
     {
         "name": "Power Slash",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Pralaya",
@@ -819,15 +1006,18 @@
     },
     {
         "name": "Primal Force",
-        "type": "phys"
+        "type": "phys",
+        "rank": 8
     },
     {
         "name": "Pulinpa",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 1
     },
     {
         "name": "Rage Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Ragnarok",
@@ -836,31 +1026,38 @@
     },
     {
         "name": "Rainy Death",
-        "type": "phys"
+        "type": "phys",
+        "rank": 7
     },
     {
         "name": "Rakukaja",
-        "type": "support"
+        "type": "support",
+        "rank": 1
     },
     {
         "name": "Rakunda",
-        "type": "support"
+        "type": "support",
+        "rank": 1
     },
     {
         "name": "Rampage",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Re Patra",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 2
     },
     {
         "name": "Rebellion",
-        "type": "support"
+        "type": "support",
+        "rank": 2
     },
     {
         "name": "Recarm",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 2
     },
     {
         "name": "Recarmdra",
@@ -868,119 +1065,148 @@
     },
     {
         "name": "Red Wall",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Regenerate 1",
-        "type": "passive"
+        "type": "passive",
+        "rank": 3
     },
     {
         "name": "Regenerate 2",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Regenerate 3",
-        "type": "passive"
+        "type": "passive",
+        "rank": 6
     },
     {
         "name": "Repel Dark",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Repel Elec",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Repel Fire",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Repel Ice",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Repel Light",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Repel Physical",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Repel Wind",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Resist Confuse",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Dark",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Resist Dizzy",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Elec",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Resist Enervate",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Exhaust",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Fear",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Fire",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Resist Ice",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Resist Light",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Resist Mute",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Physical",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Resist Poison",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Rage",
-        "type": "passive"
+        "type": "passive",
+        "rank": 2
     },
     {
         "name": "Resist Wind",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Revolution",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Salvation",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 8
     },
     {
         "name": "Samarecarm",
-        "type": "recovery"
+        "type": "recovery",
+        "rank": 5
     },
     {
         "name": "Samsara",
@@ -989,43 +1215,53 @@
     },
     {
         "name": "Seal Bomb",
-        "type": "phys"
+        "type": "phys",
+        "rank": 4
     },
     {
         "name": "Sharp Student",
-        "type": "passive"
+        "type": "passive",
+        "rank": 1
     },
     {
         "name": "Silence Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Single Shot",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Skewer",
-        "type": "phys"
+        "type": "phys",
+        "rank": 1
     },
     {
         "name": "Skull Cracker",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Sonic Punch",
-        "type": "phys"
+        "type": "phys",
+        "rank": 2
     },
     {
         "name": "Soul Break",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 1
     },
     {
         "name": "Spell Master",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Spirit Drain",
-        "type": "almighty"
+        "type": "almighty",
+        "rank": 2
     },
     {
         "name": "Spirit Leech",
@@ -1033,55 +1269,68 @@
     },
     {
         "name": "Stagnant Air",
-        "type": "almighty"
+        "type": "almighty",
+        "rank": 4
     },
     {
         "name": "Sukukaja",
-        "type": "support"
+        "type": "support",
+        "rank": 1
     },
     {
         "name": "Sukunda",
-        "type": "support"
+        "type": "support",
+        "rank": 1
     },
     {
         "name": "Survive Dark",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Survive Light",
-        "type": "passive"
+        "type": "passive",
+        "rank": 4
     },
     {
         "name": "Swift Strike",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Tarukaja",
-        "type": "support"
+        "type": "support",
+        "rank": 1
     },
     {
         "name": "Tarunda",
-        "type": "support"
+        "type": "support",
+        "rank": 1
     },
     {
         "name": "Tempest Slash",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "Tentarafoo",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 3
     },
     {
         "name": "Tetra Break",
-        "type": "support"
+        "type": "support",
+        "rank": 7
     },
     {
         "name": "Tetraja",
-        "type": "support"
+        "type": "support",
+        "rank": 5
     },
     {
         "name": "Tetrakarn",
-        "type": "support"
+        "type": "support",
+        "rank": 7
     },
     {
         "name": "Thunder Reign",
@@ -1090,19 +1339,23 @@
     },
     {
         "name": "Torrent Shot",
-        "type": "phys"
+        "type": "phys",
+        "rank": 5
     },
     {
         "name": "Traesto",
-        "type": "support"
+        "type": "support",
+        "rank": 1
     },
     {
         "name": "Trafuri",
-        "type": "support"
+        "type": "support",
+        "rank": 3
     },
     {
         "name": "Twin Shot",
-        "type": "phys"
+        "type": "phys",
+        "rank": 3
     },
     {
         "name": "Unshaken Will",
@@ -1111,54 +1364,67 @@
     },
     {
         "name": "Valiant Dance",
-        "type": "ailment"
+        "type": "ailment",
+        "rank": 3
     },
     {
         "name": "Vicious Strike",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "Victory Cry",
-        "type": "passive"
+        "type": "passive",
+        "rank": 7
     },
     {
         "name": "Vile Assault",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "Virus Wave",
-        "type": "phys"
+        "type": "phys",
+        "rank": 6
     },
     {
         "name": "Vorpal Blade",
-        "type": "phys"
+        "type": "phys",
+        "rank": 8
     },
     {
         "name": "White Wall",
-        "type": "support"
+        "type": "support",
+        "rank": 4
     },
     {
         "name": "Wind Amp",
-        "type": "passive"
+        "type": "passive",
+        "rank": 5
     },
     {
         "name": "Wind Boost",
-        "type": "passive"
+        "type": "passive",
+        "rank": 1
     },
     {
         "name": "Wind Break",
-        "type": "support"
+        "type": "support",
+        "rank": 3
     },
     {
         "name": "Zio",
-        "type": "elec"
+        "type": "elec",
+        "rank": 1
     },
     {
         "name": "Ziodyne",
-        "type": "elec"
+        "type": "elec",
+        "rank": 5
     },
     {
         "name": "Zionga",
-        "type": "elec"
+        "type": "elec",
+        "rank": 3
     }
 ]
