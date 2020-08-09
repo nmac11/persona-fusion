@@ -9,7 +9,8 @@ export class SkillInheritanceService {
 
   findSkillProbRatio(skill: Skill, inheritType: string): number {
     if (skill.exclusive) return 0;
-    const probRatio = this.inheritanceChart[inheritType][skill.type];
-    return probRatio === undefined ? 1.0 : probRatio;
+    let probRatio = this.inheritanceChart[inheritType][skill.type];
+    if (isNaN(probRatio)) probRatio = 1;
+    return probRatio / (skill.rank || 1);
   }
 }
