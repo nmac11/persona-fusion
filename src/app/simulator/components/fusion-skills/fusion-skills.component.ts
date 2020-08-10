@@ -4,7 +4,6 @@ import { ActiveGameService } from '../../../services/active-game.service';
 import { InheritableSkill } from '../../../models/inheritable-skill';
 import { AppSettingsService } from '../../../services/app-settings.service';
 import { Skill } from '../../../models/skill';
-import { countSkillPicks } from '../../../helpers/count-skill-picks-helper';
 import { Probabilities } from '../../../lib/probabilities';
 import { BehaviorSubject, Observable, Subscription, from } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
@@ -70,10 +69,7 @@ export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
     return from(
       new Probabilities(
         ratios,
-        countSkillPicks(
-          this.fusionYield.persona,
-          this.fusionYield.fusionComponents,
-        ),
+        this.fusionYield.skillsInheritedCount,
       ).calculate(),
     );
   }
