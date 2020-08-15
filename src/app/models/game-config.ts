@@ -10,6 +10,7 @@ export interface GameConfig {
   compendium: Persona[];
   skills: Skill[];
   arcana: string[];
+  affinities: string[];
   defaultSettings: { [key: string]: boolean };
   settingsTemplate: {
     [key: string]: {

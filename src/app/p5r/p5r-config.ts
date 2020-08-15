@@ -1,3 +1,4 @@
+import affinities from '../data/p5/p5-affinities.json';
 import compendium from '../data/p5/p5r-compendium.json';
 import skills from '../data/p5/p5r-skills.json';
 import arcana from '../data/p5/p5r-arcana.json';
@@ -23,4 +24,5 @@ export const P5R_CONFIG: GameConfig = {
   normalFusionChart,
   gemFusionChart,
   inheritanceChart,
+  affinities,
 };

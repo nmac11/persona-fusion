@@ -1,3 +1,4 @@
+import affinities from '../data/p4/p4-affinities.json';
 import compendium from '../data/p4/p4-compendium.json';
 import skills from '../data/p4/p4-skills.json';
 import arcana from '../data/p4/p4-arcana.json';
@@ -23,4 +24,5 @@ export const P4_CONFIG: GameConfig = {
   normalFusionChart,
   triangleFusionChart,
   inheritanceChart,
+  affinities,
 };

@@ -4,33 +4,6 @@ import { AppSettingsService } from '../../services/app-settings.service';
 import { GameConfig } from '../../models/game-config';
 import { GAME_CONFIG } from '../../injection-tokens/game-config.token';
 
-const AFFINITIES = {
-  p3: [
-    'slash',
-    'strike',
-    'pierce',
-    'fire',
-    'ice',
-    'electricity',
-    'wind',
-    'light',
-    'darkness',
-  ],
-  p4: ['physical', 'fire', 'ice', 'electricity', 'wind', 'light', 'darkness'],
-  p5: [
-    'physical',
-    'gun',
-    'fire',
-    'ice',
-    'electricity',
-    'wind',
-    'psychic',
-    'nuke',
-    'bless',
-    'curse',
-  ],
-};
-
 @Component({
   selector: 'shared-persona-info',
   templateUrl: './persona-info.component.html',
@@ -57,8 +30,7 @@ export class PersonaInfoComponent implements OnInit {
   ngOnInit(): void {}
 
   get affinities(): string[] {
-    const baseGame = this.config.title.substr(0, 2);
-    return AFFINITIES[baseGame];
+    return this.config.affinities;
   }
 
   skills(): string {

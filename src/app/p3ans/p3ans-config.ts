@@ -1,3 +1,4 @@
+import affinities from '../data/p3/p3-affinities.json';
 import compendium from '../data/p3/p3ans-compendium.json';
 import skills from '../data/p3/p3fes-skills.json';
 import arcana from '../data/p3/p3-arcana.json';
@@ -21,4 +22,5 @@ export const P3ANS_CONFIG: GameConfig = {
   normalFusionChart,
   triangleFusionChart,
   inheritanceChart,
+  affinities,
 };
