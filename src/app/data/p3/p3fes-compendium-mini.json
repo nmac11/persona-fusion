@@ -1,0 +1,3885 @@
+{
+    "Orpheus": {
+        "id": 1,
+        "stats": [
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "skills": {
+            "Bash": 0,
+            "Agi": 2,
+            "Tarunda": 6
+        },
+        "aff": "-----w--w",
+        "inh": "fire",
+        "arc": "Fool",
+        "lvl": 1
+    },
+    "Slime": {
+        "id": 2,
+        "stats": [
+            9,
+            9,
+            7,
+            8,
+            10
+        ],
+        "skills": {
+            "Evil Touch": 0,
+            "Single Shot": 0,
+            "Maragi": 13,
+            "Raging Tiger": 14,
+            "Eerie Sound": 16,
+            "Survive Light": 18
+        },
+        "aff": "-------sw",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 12
+    },
+    "Legion": {
+        "id": 3,
+        "stats": [
+            17,
+            15,
+            18,
+            8,
+            15
+        ],
+        "skills": {
+            "Assault Dive": 0,
+            "Pulinpa": 0,
+            "Rebellion": 0,
+            "Sexy Dance": 24,
+            "Panic Boost": 25,
+            "Bewilder": 27
+        },
+        "aff": "----s--wn",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 22
+    },
+    "Black Frost": {
+        "special": true,
+        "id": 4,
+        "stats": [
+            23,
+            25,
+            22,
+            22,
+            25
+        ],
+        "skills": {
+            "Agilao": 0,
+            "Bufula": 0,
+            "Mudo": 0,
+            "Marakunda": 35,
+            "Trafuri": 37,
+            "Matarukaja": 40
+        },
+        "aff": "---sn--ws",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 34
+    },
+    "Ose": {
+        "id": 5,
+        "stats": [
+            32,
+            26,
+            30,
+            27,
+            24
+        ],
+        "skills": {
+            "Gale Slash": 0,
+            "Poison Mist": 0,
+            "Maragion": 45,
+            "Herculean Strike": 47,
+            "Cool Breeze": 49
+        },
+        "aff": "---s-w--n",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 44
+    },
+    "Decarabia": {
+        "id": 6,
+        "stats": [
+            28,
+            39,
+            29,
+            29,
+            32
+        ],
+        "skills": {
+            "Matarunda": 0,
+            "Megido": 0,
+            "Stagnant Air": 0,
+            "Evade Ice": 52,
+            "Marakukaja": 54,
+            "Resist Ice": 56
+        },
+        "aff": "---nw----",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 50
+    },
+    "Loki": {
+        "id": 7,
+        "stats": [
+            41,
+            47,
+            30,
+            42,
+            21
+        ],
+        "skills": {
+            "Apt Pupil": 0,
+            "Bufudyne": 0,
+            "Garudyne": 0,
+            "Megidola": 60,
+            "Stagnant Air": 61,
+            "Null Fire": 63,
+            "Repel Fire": 65
+        },
+        "aff": "---ws-d-s",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 58
+    },
+    "Susano-o": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_FOOL"
+        ],
+        "special": true,
+        "id": 8,
+        "stats": [
+            57,
+            51,
+            53,
+            49,
+            53
+        ],
+        "skills": {
+            "Brave Blade": 0,
+            "Fast Retreat": 0,
+            "Tetrakarn": 0,
+            "Vorpal Blade": 79,
+            "Regenerate 3": 81,
+            "Repel Strike": 83
+        },
+        "aff": "--n--ssw-",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 76
+    },
+    "Orpheus Telos": {
+        "special": false,
+        "specialCondition": "Max all social links",
+        "preReqs": [
+            "UL_ORPHEUSTELOS"
+        ],
+        "id": 9,
+        "stats": [
+            62,
+            62,
+            62,
+            62,
+            62
+        ],
+        "skills": {
+            "Victory Cry": 97
+        },
+        "aff": "sssssssss",
+        "inh": "all",
+        "arc": "Fool",
+        "lvl": 90
+    },
+    "Nekomata": {
+        "id": 10,
+        "stats": [
+            4,
+            6,
+            5,
+            3,
+            4
+        ],
+        "skills": {
+            "Agi": 0,
+            "Cleave": 0,
+            "Provoke": 6,
+            "Re Patra": 7,
+            "Maragi": 10
+        },
+        "aff": "---s-----",
+        "inh": "fire",
+        "arc": "Magician",
+        "lvl": 5
+    },
+    "Jack Frost": {
+        "id": 11,
+        "stats": [
+            5,
+            8,
+            8,
+            4,
+            6
+        ],
+        "skills": {
+            "Bufu": 0,
+            "Pulinpa": 0,
+            "Re Patra": 0,
+            "Sonic Punch": 10,
+            "Ice Boost": 11,
+            "Mabufu": 13
+        },
+        "aff": "---wn----",
+        "inh": "ice",
+        "arc": "Magician",
+        "lvl": 8
+    },
+    "Pyro Jack": {
+        "id": 12,
+        "stats": [
+            7,
+            14,
+            9,
+            8,
+            11
+        ],
+        "skills": {
+            "Agi": 0,
+            "Maragi": 0,
+            "Sukunda": 0,
+            "Provoke": 15,
+            "Rage Boost": 17,
+            "Agilao": 19
+        },
+        "aff": "---nw----",
+        "inh": "fire",
+        "arc": "Magician",
+        "lvl": 14
+    },
+    "Hua Po": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_SMALLCHEONGSAM"
+        ],
+        "id": 13,
+        "stats": [
+            10,
+            19,
+            11,
+            14,
+            13
+        ],
+        "skills": {
+            "Maragi": 0,
+            "Re Patra": 0,
+            "Agilao": 22,
+            "Rakunda": 23,
+            "Fire Boost": 24,
+            "Null Freeze": 26
+        },
+        "aff": "---nw----",
+        "inh": "fire",
+        "arc": "Magician",
+        "lvl": 20
+    },
+    "Sati": {
+        "id": 14,
+        "stats": [
+            17,
+            25,
+            18,
+            16,
+            15
+        ],
+        "skills": {
+            "Agilao": 0,
+            "Maragi": 0,
+            "Media": 0,
+            "Enradi": 29,
+            "Trafuri": 31,
+            "Diarama": 33
+        },
+        "aff": "---nw----",
+        "inh": "fire",
+        "arc": "Magician",
+        "lvl": 28
+    },
+    "Orobas": {
+        "id": 15,
+        "stats": [
+            20,
+            29,
+            21,
+            22,
+            17
+        ],
+        "skills": {
+            "Garula": 0,
+            "Rakukaja": 0,
+            "Sharp Student": 0,
+            "Wind Break": 36,
+            "Torrent Shot": 37,
+            "Trafuri": 38,
+            "Wind Boost": 39
+        },
+        "aff": "----w-n-s",
+        "inh": "wind",
+        "arc": "Magician",
+        "lvl": 34
+    },
+    "Rangda": {
+        "id": 16,
+        "stats": [
+            25,
+            35,
+            24,
+            22,
+            21
+        ],
+        "skills": {
+            "Agilao": 0,
+            "Zan-ei": 0,
+            "Matarunda": 42,
+            "Dodge Ice": 44,
+            "Agidyne": 46
+        },
+        "aff": "-r-sww--s",
+        "inh": "fire",
+        "arc": "Magician",
+        "lvl": 40
+    },
+    "Surt": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_MAGICIAN"
+        ],
+        "id": 17,
+        "stats": [
+            40,
+            49,
+            35,
+            26,
+            32
+        ],
+        "skills": {
+            "Agidyne": 0,
+            "Deathbound": 0,
+            "Fire Boost": 0,
+            "Maragidyne": 54,
+            "Ragnarok": 58,
+            "Fire Amp": 59
+        },
+        "aff": "---dw----",
+        "inh": "fire",
+        "arc": "Magician",
+        "lvl": 52
+    },
+    "Apsaras": {
+        "id": 18,
+        "stats": [
+            3,
+            4,
+            3,
+            2,
+            4
+        ],
+        "skills": {
+            "Bufu": 0,
+            "Posumudi": 4,
+            "Sukunda": 5
+        },
+        "aff": "w---s----",
+        "inh": "ice",
+        "arc": "Priestess",
+        "lvl": 3
+    },
+    "Unicorn": {
+        "id": 19,
+        "stats": [
+            7,
+            10,
+            8,
+            9,
+            6
+        ],
+        "skills": {
+            "Dia": 0,
+            "Hama": 0,
+            "Poisma": 0,
+            "Dodge Pierce": 12,
+            "Enradi": 13,
+            "Auto-Rakukaja": 15
+        },
+        "aff": "---wn--s-",
+        "inh": "recovery",
+        "arc": "Priestess",
+        "lvl": 11
+    },
+    "High Pixie": {
+        "id": 20,
+        "stats": [
+            13,
+            18,
+            12,
+            11,
+            16
+        ],
+        "skills": {
+            "Holy Arrow": 0,
+            "Mabufu": 0,
+            "Bufula": 23,
+            "Media": 24,
+            "Rakukaja": 25,
+            "Trafuri": 26
+        },
+        "aff": "----n-w--",
+        "inh": "ice",
+        "arc": "Priestess",
+        "lvl": 21
+    },
+    "Sarasvati": {
+        "id": 21,
+        "stats": [
+            13,
+            23,
+            14,
+            20,
+            18
+        ],
+        "skills": {
+            "Bufula": 0,
+            "Mabufu": 0,
+            "Posumudi": 0,
+            "Me Patra": 28,
+            "Ice Boost": 29,
+            "Dekaja": 31
+        },
+        "aff": "----nw---",
+        "inh": "ice",
+        "arc": "Priestess",
+        "lvl": 27
+    },
+    "Ganga": {
+        "id": 22,
+        "stats": [
+            18,
+            28,
+            21,
+            22,
+            23
+        ],
+        "skills": {
+            "Bufula": 0,
+            "Charmdi": 0,
+            "Media": 0,
+            "Tentarafoo": 37,
+            "Diarama": 39,
+            "Panic Boost": 40
+        },
+        "aff": "---wn----",
+        "inh": "ice",
+        "arc": "Priestess",
+        "lvl": 35
+    },
+    "Parvati": {
+        "id": 23,
+        "stats": [
+            24,
+            38,
+            25,
+            30,
+            31
+        ],
+        "skills": {
+            "Bufula": 0,
+            "Diarama": 0,
+            "Marakukaja": 0,
+            "Mabufula": 49,
+            "Dodge Fire": 51,
+            "Bufudyne": 52
+        },
+        "aff": "---wn----",
+        "inh": "ice",
+        "arc": "Priestess",
+        "lvl": 47
+    },
+    "Kikuri-Hime": {
+        "id": 24,
+        "stats": [
+            29,
+            45,
+            28,
+            30,
+            34
+        ],
+        "skills": {
+            "Invigorate 1": 0,
+            "Maragion": 0,
+            "Mediarama": 0,
+            "Cool Breeze": 55,
+            "Diarahan": 56,
+            "Resist Ice": 58,
+            "Fire Amp": 59
+        },
+        "aff": "---rw----",
+        "inh": "recovery",
+        "arc": "Priestess",
+        "lvl": 53
+    },
+    "Scathach": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_PRIESTESS"
+        ],
+        "id": 25,
+        "stats": [
+            51,
+            53,
+            29,
+            49,
+            40
+        ],
+        "skills": {
+            "Mabufudyne": 0,
+            "Myriad Arrows": 0,
+            "Amrita": 66,
+            "Magarudyne": 67,
+            "Power Charge": 69,
+            "Invigorate 3": 72
+        },
+        "aff": "--sws-ss-",
+        "inh": "pierce",
+        "arc": "Priestess",
+        "lvl": 64
+    },
+    "Leanan Sidhe": {
+        "id": 26,
+        "stats": [
+            19,
+            29,
+            20,
+            24,
+            22
+        ],
+        "skills": {
+            "Diarama": 0,
+            "Me Patra": 0,
+            "Media": 0,
+            "Sexy Dance": 34,
+            "Charm Boost": 35,
+            "Mediarama": 38
+        },
+        "aff": "-----s---",
+        "inh": "recovery",
+        "arc": "Empress",
+        "lvl": 33
+    },
+    "Yaksini": {
+        "id": 27,
+        "stats": [
+            33,
+            32,
+            26,
+            33,
+            33
+        ],
+        "skills": {
+            "Fatal End": 0,
+            "Sexy Dance": 0,
+            "Blade of Fury": 52,
+            "Maragion": 53,
+            "Charm Boost": 54,
+            "Deathbound": 56
+        },
+        "aff": "---s-----",
+        "inh": "slash",
+        "arc": "Empress",
+        "lvl": 50
+    },
+    "Laksmi": {
+        "id": 28,
+        "stats": [
+            31,
+            45,
+            32,
+            33,
+            37
+        ],
+        "skills": {
+            "Bufudyne": 0,
+            "Mabufula": 0,
+            "Ice Break": 59,
+            "Null Dark": 61,
+            "Resist Fire": 62,
+            "Amrita": 63
+        },
+        "aff": "---wn--s-",
+        "inh": "ice",
+        "arc": "Empress",
+        "lvl": 57
+    },
+    "Hariti": {
+        "id": 29,
+        "stats": [
+            38,
+            44,
+            34,
+            39,
+            38
+        ],
+        "skills": {
+            "Bufudyne": 0,
+            "Diarahan": 0,
+            "Mediarahan": 0,
+            "Samarecarm": 64,
+            "Poison Arrow": 65,
+            "Auto-Masuku": 67
+        },
+        "aff": "----r---s",
+        "inh": "recovery",
+        "arc": "Empress",
+        "lvl": 62
+    },
+    "Gabriel": {
+        "id": 30,
+        "stats": [
+            43,
+            49,
+            35,
+            45,
+            42
+        ],
+        "skills": {
+            "Bufudyne": 0,
+            "Hama Boost": 0,
+            "Mahamaon": 0,
+            "Mabufudyne": 71,
+            "Repel Dark": 73,
+            "Myriad Arrows": 75
+        },
+        "aff": "----r--rw",
+        "inh": "ice",
+        "arc": "Empress",
+        "lvl": 69
+    },
+    "Mother Harlot": {
+        "id": 31,
+        "stats": [
+            48,
+            55,
+            50,
+            43,
+            51
+        ],
+        "skills": {
+            "Mamudoon": 0,
+            "Ziodyne": 0,
+            "Mudo Boost": 76,
+            "Sexy Dance": 77,
+            "Ailment Boost": 78,
+            "Null Fire": 80
+        },
+        "aff": "---w-r--r",
+        "inh": "dark",
+        "arc": "Empress",
+        "lvl": 74
+    },
+    "Skadi": {
+        "id": 32,
+        "stats": [
+            48,
+            57,
+            47,
+            45,
+            50
+        ],
+        "skills": {
+            "Ice Amp": 0,
+            "Mabufudyne": 0,
+            "Tetrakarn": 0,
+            "Akasha Arts": 83,
+            "Absorb Fire": 84,
+            "Niflheim": 86
+        },
+        "aff": "---wd----",
+        "inh": "ice",
+        "arc": "Empress",
+        "lvl": 80
+    },
+    "Alilat": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_EMPRESS"
+        ],
+        "id": 33,
+        "stats": [
+            53,
+            64,
+            61,
+            52,
+            60
+        ],
+        "skills": {
+            "Mabufudyne": 0,
+            "Makarakarn": 0,
+            "Regenerate 3": 0,
+            "Repel Slash": 88,
+            "Repel Strike": 89,
+            "Repel Pierce": 90
+        },
+        "aff": "sss-----w",
+        "inh": "recovery",
+        "arc": "Empress",
+        "lvl": 84
+    },
+    "Forneus": {
+        "id": 34,
+        "stats": [
+            5,
+            5,
+            8,
+            6,
+            4
+        ],
+        "skills": {
+            "Bash": 0,
+            "Bufu": 0,
+            "Tarukaja": 0,
+            "Auto-Sukukaja": 9,
+            "Poisma": 10,
+            "Posumudi": 11
+        },
+        "aff": "---ws----",
+        "inh": "ice",
+        "arc": "Emperor",
+        "lvl": 7
+    },
+    "Oberon": {
+        "id": 35,
+        "stats": [
+            12,
+            15,
+            9,
+            8,
+            8
+        ],
+        "skills": {
+            "Media": 0,
+            "Zio": 0,
+            "Survive Dark": 16,
+            "Mazio": 17,
+            "Zan-ei": 18,
+            "Zionga": 20
+        },
+        "aff": "----wn-ss",
+        "inh": "elec",
+        "arc": "Emperor",
+        "lvl": 15
+    },
+    "Take-Mikazuchi": {
+        "id": 36,
+        "stats": [
+            19,
+            18,
+            13,
+            15,
+            14
+        ],
+        "skills": {
+            "Auto-Tarukaja": 0,
+            "Mazio": 0,
+            "Pulinpa": 0,
+            "Zionga": 26,
+            "Getsu-ei": 27,
+            "Elec Break": 29,
+            "Elec Boost": 30
+        },
+        "aff": "s---wn---",
+        "inh": "elec",
+        "arc": "Emperor",
+        "lvl": 24
+    },
+    "King Frost": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_SUGARKEY"
+        ],
+        "id": 37,
+        "stats": [
+            20,
+            23,
+            22,
+            15,
+            24
+        ],
+        "skills": {
+            "Bufula": 0,
+            "Dodge Fire": 0,
+            "Mabufu": 0,
+            "Ice Break": 32,
+            "Growth 1": 33,
+            "Mabufula": 36
+        },
+        "aff": "---wn----",
+        "inh": "ice",
+        "arc": "Emperor",
+        "lvl": 30
+    },
+    "Raja Naga": {
+        "id": 38,
+        "stats": [
+            24,
+            26,
+            23,
+            21,
+            21
+        ],
+        "skills": {
+            "Tentarafoo": 0,
+            "Twin Shot": 0,
+            "Matarukaja": 37,
+            "Torrent Shot": 39,
+            "Null Panic": 40,
+            "Mazionga": 41,
+            "Panic Boost": 42
+        },
+        "aff": "--sw-n---",
+        "inh": "pierce",
+        "arc": "Emperor",
+        "lvl": 36
+    },
+    "Kingu": {
+        "id": 39,
+        "stats": [
+            31,
+            37,
+            30,
+            23,
+            24
+        ],
+        "skills": {
+            "Evade Fire": 0,
+            "Mediarama": 0,
+            "Virus Breath": 48,
+            "Null Poison": 49,
+            "Heat Wave": 50,
+            "Endure": 52
+        },
+        "aff": "---w-s--s",
+        "inh": "recovery",
+        "arc": "Emperor",
+        "lvl": 46
+    },
+    "Barong": {
+        "id": 40,
+        "stats": [
+            40,
+            36,
+            30,
+            28,
+            29
+        ],
+        "skills": {
+            "Counterstrike": 0,
+            "Heat Wave": 0,
+            "Null Poison": 0,
+            "Virus Breath": 54,
+            "Invigorate 2": 55,
+            "Auto-Maraku": 56,
+            "Endure Dark": 57
+        },
+        "aff": "---w-n-nw",
+        "inh": "slash",
+        "arc": "Emperor",
+        "lvl": 52
+    },
+    "Odin": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_EMPEROR"
+        ],
+        "id": 41,
+        "stats": [
+            39,
+            52,
+            33,
+            36,
+            39
+        ],
+        "skills": {
+            "Maziodyne": 0,
+            "Vile Assault": 0,
+            "Ziodyne": 0,
+            "Elec Amp": 60,
+            "Thunder Reign": 63,
+            "Spell Master": 65
+        },
+        "aff": "-----dw--",
+        "inh": "elec",
+        "arc": "Emperor",
+        "lvl": 57
+    },
+    "Omoikane": {
+        "id": 42,
+        "stats": [
+            4,
+            7,
+            6,
+            4,
+            7
+        ],
+        "skills": {
+            "Dia": 0,
+            "Zio": 0,
+            "Enradi": 8,
+            "Auto-Rakukaja": 12,
+            "Me Patra": 13
+        },
+        "aff": "-----s--w",
+        "inh": "elec",
+        "arc": "Hierophant",
+        "lvl": 7
+    },
+    "Berith": {
+        "id": 43,
+        "stats": [
+            11,
+            10,
+            9,
+            7,
+            9
+        ],
+        "skills": {
+            "Agi": 0,
+            "Double Fangs": 0,
+            "Tarukaja": 0,
+            "Auto-Tarukaja": 15,
+            "Maragi": 16,
+            "Rebellion": 17
+        },
+        "aff": "---s-w---",
+        "inh": "fire",
+        "arc": "Hierophant",
+        "lvl": 13
+    },
+    "Shiisaa": {
+        "id": 44,
+        "stats": [
+            18,
+            18,
+            17,
+            17,
+            15
+        ],
+        "skills": {
+            "Gale Slash": 0,
+            "Mabufu": 0,
+            "Mazio": 28,
+            "Dodge Fire": 29,
+            "Ice Boost": 30,
+            "Fatal End": 32
+        },
+        "aff": "---wn--s-",
+        "inh": "ice",
+        "arc": "Hierophant",
+        "lvl": 26
+    },
+    "Flauros": {
+        "id": 45,
+        "stats": [
+            25,
+            25,
+            20,
+            18,
+            18
+        ],
+        "skills": {
+            "Agilao": 0,
+            "Gale Slash": 0,
+            "Auto-Sukukaja": 34,
+            "Sharp Student": 35,
+            "Mighty Swing": 37,
+            "Evade Wind": 38
+        },
+        "aff": "---n--w--",
+        "inh": "fire",
+        "arc": "Hierophant",
+        "lvl": 33
+    },
+    "Thoth": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_BOOKOFANCIENTS"
+        ],
+        "id": 46,
+        "stats": [
+            23,
+            32,
+            26,
+            23,
+            26
+        ],
+        "skills": {
+            "Mahama": 0,
+            "Zionga": 0,
+            "Growth 2": 43,
+            "Mazionga": 44,
+            "Megido": 45,
+            "Mediarama": 46
+        },
+        "aff": "-----nw--",
+        "inh": "elec",
+        "arc": "Hierophant",
+        "lvl": 41
+    },
+    "Hokuto Seikun": {
+        "id": 47,
+        "stats": [
+            28,
+            35,
+            35,
+            23,
+            27
+        ],
+        "skills": {
+            "Dodge Slash": 0,
+            "Zionga": 0,
+            "Poison Arrow": 49,
+            "Elec Boost": 50,
+            "Null Shock": 51,
+            "Elec Break": 52,
+            "Apt Pupil": 53
+        },
+        "aff": "-----swss",
+        "inh": "elec",
+        "arc": "Hierophant",
+        "lvl": 47
+    },
+    "Daisoujou": {
+        "special": true,
+        "id": 48,
+        "stats": [
+            32,
+            44,
+            36,
+            29,
+            38
+        ],
+        "skills": {
+            "Diarahan": 0,
+            "Growth 3": 0,
+            "Hamaon": 0,
+            "Samsara": 56,
+            "Null Dark": 58,
+            "Hama Boost": 59
+        },
+        "aff": "-s-----nw",
+        "inh": "light",
+        "arc": "Hierophant",
+        "lvl": 53
+    },
+    "Kohryu": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_HIEROPHANT"
+        ],
+        "special": true,
+        "id": 49,
+        "stats": [
+            49,
+            51,
+            58,
+            30,
+            41
+        ],
+        "skills": {
+            "Mediarahan": 0,
+            "Samarecarm": 0,
+            "Weary Thrust": 0,
+            "Invigorate 3": 68,
+            "Makarakarn": 70,
+            "Null Strike": 71,
+            "Null Pierce": 73
+        },
+        "aff": "-------n-",
+        "inh": "recovery",
+        "arc": "Hierophant",
+        "lvl": 66
+    },
+    "Pixie": {
+        "id": 50,
+        "stats": [
+            2,
+            3,
+            2,
+            3,
+            3
+        ],
+        "skills": {
+            "Dia": 0,
+            "Rakunda": 3,
+            "Pulinpa": 4,
+            "Trafuri": 8
+        },
+        "aff": "-----s---",
+        "inh": "recovery",
+        "arc": "Lovers",
+        "lvl": 2
+    },
+    "Alp": {
+        "id": 51,
+        "stats": [
+            3,
+            7,
+            5,
+            5,
+            5
+        ],
+        "skills": {
+            "Dia": 0,
+            "Garu": 0,
+            "Sukunda": 0,
+            "Marin Karin": 7,
+            "Charmdi": 8,
+            "Mudo": 11
+        },
+        "aff": "----w-s--",
+        "inh": "recovery",
+        "arc": "Lovers",
+        "lvl": 6
+    },
+    "Narcissus": {
+        "id": 52,
+        "stats": [
+            12,
+            18,
+            9,
+            13,
+            20
+        ],
+        "skills": {
+            "Charm Boost": 0,
+            "Magaru": 0,
+            "Marin Karin": 0,
+            "Sexy Dance": 21,
+            "Charmdi": 22,
+            "Dekunda": 24
+        },
+        "aff": "w---sss--",
+        "inh": "ailment",
+        "arc": "Lovers",
+        "lvl": 20
+    },
+    "Queen Mab": {
+        "id": 53,
+        "stats": [
+            16,
+            21,
+            16,
+            12,
+            23
+        ],
+        "skills": {
+            "Posumudi": 0,
+            "Rakukaja": 0,
+            "Rakunda": 0,
+            "Recarm": 28,
+            "Dodge Wind": 29,
+            "Dodge Strike": 30,
+            "Dodge Pierce": 32
+        },
+        "aff": "w--ssn---",
+        "inh": "recovery",
+        "arc": "Lovers",
+        "lvl": 27
+    },
+    "Saki Mitama": {
+        "id": 54,
+        "stats": [
+            20,
+            32,
+            20,
+            22,
+            30
+        ],
+        "skills": {
+            "Diarama": 0,
+            "Zionga": 0,
+            "Growth 2": 40,
+            "Mediarama": 42,
+            "Dekunda": 43,
+            "Null Charm": 44,
+            "Divine Grace": 45
+        },
+        "aff": "-w-sss---",
+        "inh": "recovery",
+        "arc": "Lovers",
+        "lvl": 39
+    },
+    "Titania": {
+        "id": 55,
+        "stats": [
+            19,
+            39,
+            23,
+            31,
+            39
+        ],
+        "skills": {
+            "Mediarama": 0,
+            "Mind Charge": 0,
+            "Magarula": 49,
+            "Mabufula": 51,
+            "Divine Grace": 52,
+            "Ice Amp": 54
+        },
+        "aff": "----sws--",
+        "inh": "recovery",
+        "arc": "Lovers",
+        "lvl": 48
+    },
+    "Raphael": {
+        "id": 56,
+        "stats": [
+            44,
+            42,
+            31,
+            31,
+            42
+        ],
+        "skills": {
+            "Auto-Maraku": 0,
+            "Deathbound": 0,
+            "Null Charm": 0,
+            "Mediarahan": 63,
+            "Matarukaja": 64,
+            "Tempest Slash": 67
+        },
+        "aff": "----s--rw",
+        "inh": "slash",
+        "arc": "Lovers",
+        "lvl": 61
+    },
+    "Cybele": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_LOVERS"
+        ],
+        "id": 57,
+        "stats": [
+            49,
+            55,
+            40,
+            42,
+            50
+        ],
+        "skills": {
+            "Auto-Maraku": 0,
+            "Myriad Arrows": 0,
+            "Samarecarm": 0,
+            "Megidola": 70,
+            "Bow Master": 73,
+            "Spell Master": 75
+        },
+        "aff": "---s-s--n",
+        "inh": "recovery",
+        "arc": "Lovers",
+        "lvl": 68
+    },
+    "Ara Mitama": {
+        "id": 58,
+        "stats": [
+            6,
+            4,
+            6,
+            4,
+            5
+        ],
+        "skills": {
+            "Agi": 0,
+            "Bash": 0,
+            "Rakukaja": 0,
+            "Rakunda": 7,
+            "Sukukaja": 8,
+            "Sharp Student": 12
+        },
+        "aff": "-s----w--",
+        "inh": "strike",
+        "arc": "Chariot",
+        "lvl": 6
+    },
+    "Chimera": {
+        "id": 59,
+        "stats": [
+            8,
+            4,
+            9,
+            8,
+            5
+        ],
+        "skills": {
+            "Agi": 0,
+            "Bewilder": 0,
+            "Cleave": 0,
+            "Sonic Punch": 11,
+            "Rakunda": 12,
+            "Auto-Tarukaja": 14
+        },
+        "aff": "-s-sw----",
+        "inh": "slash",
+        "arc": "Chariot",
+        "lvl": 9
+    },
+    "Zouchouten": {
+        "id": 60,
+        "stats": [
+            14,
+            6,
+            13,
+            7,
+            9
+        ],
+        "skills": {
+            "Bash": 0,
+            "Tarukaja": 0,
+            "Zio": 0,
+            "Assault Dive": 16,
+            "Sharp Student": 18,
+            "Auto-Sukukaja": 19
+        },
+        "aff": "-s-s--w--",
+        "inh": "strike",
+        "arc": "Chariot",
+        "lvl": 14
+    },
+    "Ares": {
+        "id": 61,
+        "stats": [
+            17,
+            10,
+            15,
+            9,
+            13
+        ],
+        "skills": {
+            "Rakunda": 0,
+            "Zan-ei": 0,
+            "Counter": 21,
+            "Rebellion": 22,
+            "Getsu-ei": 24
+        },
+        "aff": "s--s--w--",
+        "inh": "slash",
+        "arc": "Chariot",
+        "lvl": 19
+    },
+    "Oumitsunu": {
+        "id": 62,
+        "stats": [
+            26,
+            14,
+            26,
+            11,
+            20
+        ],
+        "skills": {
+            "Dodge Pierce": 0,
+            "Kill Rush": 0,
+            "Rebellion": 0,
+            "Auto-Tarukaja": 31,
+            "Counter": 34,
+            "Null Rage": 35,
+            "Resist Pierce": 36
+        },
+        "aff": "-s----w--",
+        "inh": "strike",
+        "arc": "Chariot",
+        "lvl": 30
+    },
+    "Nata Taishi": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_MACHINECORE"
+        ],
+        "id": 63,
+        "stats": [
+            29,
+            19,
+            24,
+            29,
+            26
+        ],
+        "skills": {
+            "Masukukaja": 0,
+            "Swift Strike": 0,
+            "Regenerate 1": 38,
+            "Counterstrike": 40,
+            "Herculean Strike": 41,
+            "Endure Dark": 43
+        },
+        "aff": "-s--w-s--",
+        "inh": "strike",
+        "arc": "Chariot",
+        "lvl": 37
+    },
+    "Koumokuten": {
+        "id": 64,
+        "stats": [
+            35,
+            24,
+            31,
+            21,
+            25
+        ],
+        "skills": {
+            "Cruel Attack": 0,
+            "Dekaja": 0,
+            "Swift Strike": 0,
+            "Counterstrike": 46,
+            "Gigantic Fist": 47,
+            "Regenerate 1": 48
+        },
+        "aff": "-s-w-s---",
+        "inh": "strike",
+        "arc": "Chariot",
+        "lvl": 43
+    },
+    "Thor": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_CHARIOT"
+        ],
+        "id": 65,
+        "stats": [
+            42,
+            45,
+            34,
+            30,
+            34
+        ],
+        "skills": {
+            "High Counter": 0,
+            "Vicious Strike": 0,
+            "Ziodyne": 0,
+            "Auto-Mataru": 55,
+            "Elec Amp": 59,
+            "Heavy Master": 60
+        },
+        "aff": "-n---nw--",
+        "inh": "elec",
+        "arc": "Chariot",
+        "lvl": 53
+    },
+    "Angel": {
+        "id": 66,
+        "stats": [
+            4,
+            5,
+            3,
+            4,
+            3
+        ],
+        "skills": {
+            "Garu": 0,
+            "Patra": 0,
+            "Sukukaja": 5,
+            "Hama": 7,
+            "Charmdi": 8
+        },
+        "aff": "-------sw",
+        "inh": "wind",
+        "arc": "Justice",
+        "lvl": 4
+    },
+    "Archangel": {
+        "id": 67,
+        "stats": [
+            8,
+            8,
+            8,
+            7,
+            6
+        ],
+        "skills": {
+            "Cleave": 0,
+            "Hama": 0,
+            "Sukukaja": 0,
+            "Patra": 11,
+            "Holy Arrow": 12,
+            "Mazio": 13,
+            "Sharp Student": 14
+        },
+        "aff": "s-----wsw",
+        "inh": "light",
+        "arc": "Justice",
+        "lvl": 10
+    },
+    "Principality": {
+        "id": 68,
+        "stats": [
+            12,
+            13,
+            7,
+            11,
+            12
+        ],
+        "skills": {
+            "Dodge Elec": 0,
+            "Hama": 0,
+            "Holy Arrow": 0,
+            "Media": 18,
+            "Recarm": 20,
+            "Mahama": 21
+        },
+        "aff": "---s---nw",
+        "inh": "light",
+        "arc": "Justice",
+        "lvl": 16
+    },
+    "Power": {
+        "id": 69,
+        "stats": [
+            20,
+            19,
+            15,
+            16,
+            12
+        ],
+        "skills": {
+            "Hama": 0,
+            "Magaru": 0,
+            "Mahama": 0,
+            "Zan-ei": 27,
+            "Me Patra": 28,
+            "Revolution": 30
+        },
+        "aff": "------snw",
+        "inh": "light",
+        "arc": "Justice",
+        "lvl": 25
+    },
+    "Virtue": {
+        "id": 70,
+        "stats": [
+            22,
+            23,
+            15,
+            20,
+            23
+        ],
+        "skills": {
+            "Infuriate": 0,
+            "Mahama": 0,
+            "Survive Dark": 34,
+            "Hamaon": 36,
+            "Rage Boost": 37,
+            "Endure Dark": 39
+        },
+        "aff": "-------nw",
+        "inh": "light",
+        "arc": "Justice",
+        "lvl": 32
+    },
+    "Dominion": {
+        "id": 71,
+        "stats": [
+            28,
+            33,
+            24,
+            25,
+            23
+        ],
+        "skills": {
+            "Hamaon": 0,
+            "Infuriate": 0,
+            "Endure Dark": 45,
+            "Hama Boost": 46,
+            "Mazionga": 47,
+            "Resist Dark": 49
+        },
+        "aff": "-----s-nw",
+        "inh": "light",
+        "arc": "Justice",
+        "lvl": 42
+    },
+    "Throne": {
+        "id": 72,
+        "stats": [
+            35,
+            32,
+            26,
+            34,
+            33
+        ],
+        "skills": {
+            "Hama Boost": 0,
+            "Hamaon": 0,
+            "Mahamaon": 0,
+            "Recarmdra": 53,
+            "Mediarahan": 55,
+            "Resist Dark": 57
+        },
+        "aff": "---s---nw",
+        "inh": "light",
+        "arc": "Justice",
+        "lvl": 51
+    },
+    "Melchizedek": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_JUSTICE"
+        ],
+        "id": 73,
+        "stats": [
+            50,
+            46,
+            43,
+            36,
+            31
+        ],
+        "skills": {
+            "Auto-Mataru": 0,
+            "Mediarahan": 0,
+            "Vicious Strike": 0,
+            "Fist Master": 60,
+            "Akasha Arts": 64,
+            "Repel Dark": 65,
+            "God's Hand": 69
+        },
+        "aff": "-s-----rw",
+        "inh": "strike",
+        "arc": "Justice",
+        "lvl": 59
+    },
+    "Yomotsu Shikome": {
+        "id": 74,
+        "stats": [
+            3,
+            8,
+            9,
+            10,
+            4
+        ],
+        "skills": {
+            "Bufu": 0,
+            "Evil Touch": 0,
+            "Tarunda": 0,
+            "Auto-Tarukaja": 11,
+            "Mudo": 13,
+            "Magaru": 14
+        },
+        "aff": "--------s",
+        "inh": "dark",
+        "arc": "Hermit",
+        "lvl": 9
+    },
+    "Naga": {
+        "id": 75,
+        "stats": [
+            14,
+            10,
+            12,
+            14,
+            8
+        ],
+        "skills": {
+            "Bewilder": 0,
+            "Double Fangs": 0,
+            "Rakukaja": 0,
+            "Mazio": 19,
+            "Dodge Pierce": 21,
+            "Eerie Sound": 22
+        },
+        "aff": "-----s-ws",
+        "inh": "pierce",
+        "arc": "Hermit",
+        "lvl": 17
+    },
+    "Lamia": {
+        "id": 76,
+        "stats": [
+            15,
+            20,
+            12,
+            18,
+            17
+        ],
+        "skills": {
+            "Agilao": 0,
+            "Bewilder": 0,
+            "Raging Tiger": 0,
+            "Mamudo": 26,
+            "Poison Mist": 28,
+            "Stagnant Air": 29
+        },
+        "aff": "-w-ns-s-n",
+        "inh": "dark",
+        "arc": "Hermit",
+        "lvl": 25
+    },
+    "Mothman": {
+        "id": 77,
+        "stats": [
+            15,
+            25,
+            19,
+            27,
+            25
+        ],
+        "skills": {
+            "Eerie Sound": 0,
+            "Foul Breath": 0,
+            "Wind Break": 35,
+            "Fire Break": 36,
+            "Megido": 37,
+            "Ziodyne": 38
+        },
+        "aff": "--w--ss-s",
+        "inh": "ailment",
+        "arc": "Hermit",
+        "lvl": 32
+    },
+    "Taraka": {
+        "id": 78,
+        "stats": [
+            27,
+            23,
+            26,
+            28,
+            17
+        ],
+        "skills": {
+            "Eerie Sound": 0,
+            "Getsu-ei": 0,
+            "Tarukaja": 0,
+            "Mighty Swing": 41,
+            "Distress Boost": 42,
+            "Fatal End": 43
+        },
+        "aff": "------s--",
+        "inh": "slash",
+        "arc": "Hermit",
+        "lvl": 38
+    },
+    "Kurama Tengu": {
+        "id": 79,
+        "stats": [
+            27,
+            29,
+            30,
+            35,
+            18
+        ],
+        "skills": {
+            "Growth 1": 0,
+            "Masukunda": 0,
+            "Tentarafoo": 0,
+            "Growth 2": 46,
+            "Cruel Attack": 48,
+            "Resist Elec": 50
+        },
+        "aff": "-----wn-s",
+        "inh": "ailment",
+        "arc": "Hermit",
+        "lvl": 44
+    },
+    "Nebiros": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_MARIONETTE"
+        ],
+        "id": 80,
+        "stats": [
+            31,
+            42,
+            32,
+            34,
+            30
+        ],
+        "skills": {
+            "Evil Smile": 0,
+            "Megido": 0,
+            "Ghastly Wail": 52,
+            "Mudoon": 53,
+            "Fear Boost": 54,
+            "Stagnant Air": 55
+        },
+        "aff": "-------wn",
+        "inh": "ailment",
+        "arc": "Hermit",
+        "lvl": 50
+    },
+    "Kumbhanda": {
+        "id": 81,
+        "stats": [
+            38,
+            37,
+            35,
+            45,
+            20
+        ],
+        "skills": {
+            "Agidyne": 0,
+            "Auto-Masuku": 0,
+            "Null Charm": 58,
+            "Fire Amp": 59,
+            "Regenerate 2": 60,
+            "Alertness": 62
+        },
+        "aff": "---d--w--",
+        "inh": "fire",
+        "arc": "Hermit",
+        "lvl": 56
+    },
+    "Arahabaki": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_HERMIT"
+        ],
+        "special": true,
+        "id": 82,
+        "stats": [
+            42,
+            50,
+            51,
+            32,
+            34
+        ],
+        "skills": {
+            "Auto-Maraku": 0,
+            "Vicious Strike": 0,
+            "Virus Breath": 0,
+            "Alertness": 62,
+            "Tetrakarn": 64,
+            "Repel Ice": 66,
+            "Null Strike": 67
+        },
+        "aff": "-w-nws-ns",
+        "inh": "ailment",
+        "arc": "Hermit",
+        "lvl": 60
+    },
+    "Fortuna": {
+        "id": 83,
+        "stats": [
+            9,
+            14,
+            10,
+            15,
+            10
+        ],
+        "skills": {
+            "Bufu": 0,
+            "Dodge Wind": 0,
+            "Garu": 0,
+            "Magaru": 18,
+            "Rakukaja": 19,
+            "Wind Boost": 22
+        },
+        "aff": "---w--s--",
+        "inh": "wind",
+        "arc": "Fortune",
+        "lvl": 17
+    },
+    "Empusa": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_BLUESCALE"
+        ],
+        "id": 84,
+        "stats": [
+            10,
+            20,
+            10,
+            16,
+            20
+        ],
+        "skills": {
+            "Magaru": 0,
+            "Tarunda": 0,
+            "Growth 1": 25,
+            "Garula": 26,
+            "Mazio": 27,
+            "Provoke": 28
+        },
+        "aff": "---w-ss--",
+        "inh": "wind",
+        "arc": "Fortune",
+        "lvl": 23
+    },
+    "Kusi Mitama": {
+        "id": 85,
+        "stats": [
+            16,
+            23,
+            20,
+            11,
+            24
+        ],
+        "skills": {
+            "Garula": 0,
+            "Magaru": 0,
+            "Re Patra": 0,
+            "Auto-Rakukaja": 30,
+            "Recarm": 31,
+            "Wind Boost": 34
+        },
+        "aff": "-----sn-w",
+        "inh": "wind",
+        "arc": "Fortune",
+        "lvl": 29
+    },
+    "Clotho": {
+        "id": 86,
+        "stats": [
+            20,
+            29,
+            22,
+            21,
+            29
+        ],
+        "skills": {
+            "Charmdi": 0,
+            "Garula": 0,
+            "Wind Boost": 40,
+            "Null Distress": 41,
+            "Me Patra": 42,
+            "Magarula": 44
+        },
+        "aff": "---w--n--",
+        "inh": "wind",
+        "arc": "Fortune",
+        "lvl": 38
+    },
+    "Lachesis": {
+        "id": 87,
+        "stats": [
+            26,
+            36,
+            19,
+            31,
+            30
+        ],
+        "skills": {
+            "Garula": 0,
+            "Masukukaja": 0,
+            "Recarm": 0,
+            "Dodge Elec": 47,
+            "Magarula": 50,
+            "Evade Elec": 51
+        },
+        "aff": "-----wn--",
+        "inh": "wind",
+        "arc": "Fortune",
+        "lvl": 45
+    },
+    "Atropos": {
+        "id": 88,
+        "stats": [
+            26,
+            45,
+            27,
+            31,
+            40
+        ],
+        "skills": {
+            "Magarula": 0,
+            "Wind Boost": 0,
+            "Mind Charge": 57,
+            "Garudyne": 58,
+            "Resist Elec": 59,
+            "Wind Amp": 60
+        },
+        "aff": "-----wn--",
+        "inh": "wind",
+        "arc": "Fortune",
+        "lvl": 54
+    },
+    "Norn": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_FORTUNE"
+        ],
+        "special": true,
+        "id": 89,
+        "stats": [
+            40,
+            54,
+            32,
+            46,
+            44
+        ],
+        "skills": {
+            "Magarudyne": 0,
+            "Panta Rhei": 0,
+            "Wind Amp": 0,
+            "Regenerate 3": 66,
+            "Invigorate 3": 67,
+            "Absorb Elec": 69
+        },
+        "aff": "-----wd--",
+        "inh": "wind",
+        "arc": "Fortune",
+        "lvl": 62
+    },
+    "Valkyrie": {
+        "id": 90,
+        "stats": [
+            10,
+            7,
+            8,
+            8,
+            7
+        ],
+        "skills": {
+            "Cleave": 0,
+            "Dodge Slash": 0,
+            "Mabufu": 13,
+            "Auto-Sukukaja": 14,
+            "Power Slash": 15
+        },
+        "aff": "s--w-----",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 11
+    },
+    "Rakshasa": {
+        "id": 91,
+        "stats": [
+            16,
+            8,
+            13,
+            10,
+            8
+        ],
+        "skills": {
+            "Dodge Slash": 0,
+            "Power Slash": 0,
+            "Getsu-ei": 18,
+            "Zionga": 20,
+            "Counter": 21,
+            "Gale Slash": 22
+        },
+        "aff": "s------w-",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 16
+    },
+    "Titan": {
+        "id": 92,
+        "stats": [
+            23,
+            10,
+            18,
+            11,
+            14
+        ],
+        "skills": {
+            "Mudo": 0,
+            "Rebellion": 0,
+            "Zan-ei": 0,
+            "Kill Rush": 25,
+            "Dodge Slash": 26,
+            "Swift Strike": 29
+        },
+        "aff": "s--w----s",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 23
+    },
+    "Jikokuten": {
+        "id": 93,
+        "stats": [
+            24,
+            19,
+            19,
+            14,
+            18
+        ],
+        "skills": {
+            "Auto-Sukukaja": 0,
+            "Sukunda": 0,
+            "Zan-ei": 0,
+            "Revolution": 31,
+            "Survive Dark": 32,
+            "Evade Slash": 34,
+            "Endure Dark": 36
+        },
+        "aff": "s-----s-w",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 29
+    },
+    "Hanuman": {
+        "id": 94,
+        "stats": [
+            26,
+            23,
+            20,
+            22,
+            27
+        ],
+        "skills": {
+            "Counter": 0,
+            "Getsu-ei": 0,
+            "Recarm": 0,
+            "Fatal End": 38,
+            "Evade Slash": 41,
+            "Blade of Fury": 43,
+            "Resist Slash": 44
+        },
+        "aff": "-----sws-",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 37
+    },
+    "Narasimha": {
+        "id": 95,
+        "stats": [
+            36,
+            27,
+            28,
+            28,
+            26
+        ],
+        "skills": {
+            "Evade Wind": 0,
+            "Fatal End": 0,
+            "Herculean Strike": 47,
+            "Power Charge": 48,
+            "Counterstrike": 49,
+            "Blade of Fury": 51
+        },
+        "aff": "n-----ws-",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 46
+    },
+    "Kali": {
+        "id": 96,
+        "stats": [
+            42,
+            30,
+            33,
+            36,
+            31
+        ],
+        "skills": {
+            "Apt Pupil": 0,
+            "Blade of Fury": 0,
+            "Marakunda": 0,
+            "Deathbound": 57,
+            "Revolution": 59,
+            "High Counter": 60
+        },
+        "aff": "n-----w--",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 55
+    },
+    "Siegfried": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_STRENGTH"
+        ],
+        "id": 97,
+        "stats": [
+            50,
+            43,
+            40,
+            41,
+            32
+        ],
+        "skills": {
+            "Auto-Masuku": 0,
+            "Power Charge": 0,
+            "Tempest Slash": 0,
+            "High Counter": 62,
+            "Vorpal Blade": 63,
+            "Arms Master": 65,
+            "2hSwd Master": 66
+        },
+        "aff": "ns-----nw",
+        "inh": "slash",
+        "arc": "Strength",
+        "lvl": 59
+    },
+    "Inugami": {
+        "id": 98,
+        "stats": [
+            6,
+            11,
+            10,
+            6,
+            4
+        ],
+        "skills": {
+            "Poisma": 0,
+            "Single Shot": 0,
+            "Zio": 0,
+            "Poison Boost": 11,
+            "Media": 13,
+            "Foul Breath": 14
+        },
+        "aff": "-----s--w",
+        "inh": "ailment",
+        "arc": "Hanged Man",
+        "lvl": 10
+    },
+    "Take-Minakata": {
+        "id": 99,
+        "stats": [
+            16,
+            16,
+            19,
+            10,
+            9
+        ],
+        "skills": {
+            "Mazio": 0,
+            "Zio": 0,
+            "Survive Light": 22,
+            "Auto-Rakukaja": 23,
+            "Dodge Strike": 24,
+            "Dekaja": 26
+        },
+        "aff": "-s---s-ww",
+        "inh": "elec",
+        "arc": "Hanged Man",
+        "lvl": 21
+    },
+    "Orthrus": {
+        "id": 100,
+        "stats": [
+            22,
+            14,
+            20,
+            21,
+            14
+        ],
+        "skills": {
+            "Agilao": 0,
+            "Counter": 0,
+            "Getsu-ei": 0,
+            "Dodge Ice": 30,
+            "Fire Boost": 31,
+            "Mighty Swing": 33
+        },
+        "aff": "---nw----",
+        "inh": "fire",
+        "arc": "Hanged Man",
+        "lvl": 28
+    },
+    "Vasuki": {
+        "id": 101,
+        "stats": [
+            27,
+            27,
+            30,
+            19,
+            18
+        ],
+        "skills": {
+            "Mahama": 0,
+            "Twin Shot": 0,
+            "Recarmdra": 40,
+            "Dodge Wind": 41,
+            "Counterstrike": 42,
+            "Resist Light": 43
+        },
+        "aff": "----s-wn-",
+        "inh": "light",
+        "arc": "Hanged Man",
+        "lvl": 38
+    },
+    "Ubelluris": {
+        "id": 102,
+        "stats": [
+            32,
+            29,
+            40,
+            24,
+            26
+        ],
+        "skills": {
+            "Herculean Strike": 0,
+            "Null Distress": 0,
+            "Recarmdra": 0,
+            "Gigantic Fist": 50,
+            "Evade Strike": 52,
+            "Raging Tiger": 53,
+            "Diarahan": 54
+        },
+        "aff": "-s---sw--",
+        "inh": "strike",
+        "arc": "Hanged Man",
+        "lvl": 48
+    },
+    "Hecatoncheires": {
+        "id": 103,
+        "stats": [
+            37,
+            32,
+            45,
+            20,
+            35
+        ],
+        "skills": {
+            "Evade Strike": 0,
+            "Gigantic Fist": 0,
+            "Vicious Strike": 56,
+            "Endure Light": 57,
+            "Mamudoon": 58,
+            "Recarmdra": 59
+        },
+        "aff": "-s-----wn",
+        "inh": "strike",
+        "arc": "Hanged Man",
+        "lvl": 54
+    },
+    "Hell Biker": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_REDMUFFLER"
+        ],
+        "id": 104,
+        "stats": [
+            49,
+            35,
+            49,
+            40,
+            14
+        ],
+        "skills": {
+            "Agidyne": 0,
+            "Maragidyne": 0,
+            "Fire Amp": 62,
+            "Vicious Strike": 63,
+            "Endure": 64,
+            "Absorb Fire": 66
+        },
+        "aff": "---r-w---",
+        "inh": "fire",
+        "arc": "Hanged Man",
+        "lvl": 60
+    },
+    "Attis": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_HANGEDMAN"
+        ],
+        "special": true,
+        "id": 105,
+        "stats": [
+            46,
+            54,
+            56,
+            44,
+            32
+        ],
+        "skills": {
+            "Ghastly Wail": 0,
+            "Megidola": 0,
+            "Recarmdra": 0,
+            "Samarecarm": 70,
+            "Repel Light": 71,
+            "Enduring Soul": 75
+        },
+        "aff": "sss----w-",
+        "inh": "recovery",
+        "arc": "Hanged Man",
+        "lvl": 67
+    },
+    "Ghoul": {
+        "id": 106,
+        "stats": [
+            13,
+            15,
+            15,
+            11,
+            11
+        ],
+        "skills": {
+            "Assault Dive": 0,
+            "Mudo": 0,
+            "Mamudo": 20,
+            "Dekaja": 21,
+            "Provoke": 22,
+            "Gale Slash": 23
+        },
+        "aff": "-sw---nwn",
+        "inh": "dark",
+        "arc": "Death",
+        "lvl": 18
+    },
+    "Pale Rider": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_TORNBLACKCLOTH"
+        ],
+        "id": 107,
+        "stats": [
+            20,
+            19,
+            15,
+            19,
+            12
+        ],
+        "skills": {
+            "Mamudo": 0,
+            "Mudo": 0,
+            "Zan-ei": 0,
+            "Garula": 25,
+            "Counter": 27,
+            "Survive Light": 29
+        },
+        "aff": "------sws",
+        "inh": "dark",
+        "arc": "Death",
+        "lvl": 24
+    },
+    "Loa": {
+        "id": 108,
+        "stats": [
+            21,
+            26,
+            24,
+            19,
+            18
+        ],
+        "skills": {
+            "Life Drain": 0,
+            "Mamudo": 0,
+            "Tarunda": 0,
+            "Survive Light": 33,
+            "Zionga": 34,
+            "Fear Boost": 35,
+            "Mudo Boost": 36
+        },
+        "aff": "-----s-ws",
+        "inh": "dark",
+        "arc": "Death",
+        "lvl": 31
+    },
+    "Samael": {
+        "id": 109,
+        "stats": [
+            27,
+            31,
+            26,
+            20,
+            23
+        ],
+        "skills": {
+            "Mamudo": 0,
+            "Masukunda": 0,
+            "Megido": 40,
+            "Dekunda": 41,
+            "Mudoon": 42,
+            "Ghastly Wail": 43
+        },
+        "aff": "-------wn",
+        "inh": "dark",
+        "arc": "Death",
+        "lvl": 37
+    },
+    "Mot": {
+        "id": 110,
+        "stats": [
+            31,
+            37,
+            34,
+            22,
+            29
+        ],
+        "skills": {
+            "Evil Smile": 0,
+            "Mudoon": 0,
+            "Null Fear": 0,
+            "Mamudoon": 46,
+            "Ghastly Wail": 48,
+            "Mudo Boost": 49,
+            "Resist Light": 51
+        },
+        "aff": "------swr",
+        "inh": "dark",
+        "arc": "Death",
+        "lvl": 45
+    },
+    "Alice": {
+        "special": true,
+        "id": 111,
+        "stats": [
+            31,
+            50,
+            27,
+            42,
+            39
+        ],
+        "skills": {
+            "Evil Touch": 0,
+            "Spirit Drain": 0,
+            "Die for Me!": 59,
+            "Marakunda": 60,
+            "Repel Dark": 61,
+            "Mudo Boost": 62
+        },
+        "aff": "-------wr",
+        "inh": "dark",
+        "arc": "Death",
+        "lvl": 56
+    },
+    "Thanatos": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_DEATH"
+        ],
+        "special": true,
+        "id": 112,
+        "stats": [
+            48,
+            51,
+            44,
+            39,
+            40
+        ],
+        "skills": {
+            "Ghastly Wail": 0,
+            "Megidola": 0,
+            "Tempest Slash": 0,
+            "Mahamaon": 66,
+            "1hSwd Master": 68,
+            "Brave Blade": 71
+        },
+        "aff": "ss-----wr",
+        "inh": "dark",
+        "arc": "Death",
+        "lvl": 64
+    },
+    "Nigi Mitama": {
+        "id": 113,
+        "stats": [
+            9,
+            8,
+            10,
+            9,
+            10
+        ],
+        "skills": {
+            "Garu": 0,
+            "Patra": 0,
+            "Posumudi": 0,
+            "Media": 14,
+            "Magaru": 16,
+            "Recarm": 18
+        },
+        "aff": "-----w-ss",
+        "inh": "wind",
+        "arc": "Temperance",
+        "lvl": 12
+    },
+    "Mithra": {
+        "id": 114,
+        "stats": [
+            17,
+            20,
+            17,
+            11,
+            13
+        ],
+        "skills": {
+            "Double Fangs": 0,
+            "Hama": 0,
+            "Mabufu": 0,
+            "Eerie Sound": 24,
+            "Dodge Elec": 25,
+            "Counter": 28
+        },
+        "aff": "----nw-n-",
+        "inh": "light",
+        "arc": "Temperance",
+        "lvl": 22
+    },
+    "Genbu": {
+        "id": 115,
+        "stats": [
+            19,
+            22,
+            26,
+            12,
+            22
+        ],
+        "skills": {
+            "Auto-Rakukaja": 0,
+            "Bufula": 0,
+            "Swift Strike": 30,
+            "Me Patra": 31,
+            "Dekunda": 32,
+            "Resist Strike": 34
+        },
+        "aff": "-s--sw---",
+        "inh": "ice",
+        "arc": "Temperance",
+        "lvl": 29
+    },
+    "Seiryu": {
+        "id": 116,
+        "stats": [
+            26,
+            24,
+            27,
+            22,
+            25
+        ],
+        "skills": {
+            "Garula": 0,
+            "Matarunda": 0,
+            "Poison Mist": 0,
+            "Magarula": 37,
+            "Diarama": 39,
+            "Virus Breath": 40
+        },
+        "aff": "-----wns-",
+        "inh": "wind",
+        "arc": "Temperance",
+        "lvl": 36
+    },
+    "Okuninushi": {
+        "id": 117,
+        "stats": [
+            33,
+            37,
+            27,
+            26,
+            27
+        ],
+        "skills": {
+            "Maragion": 0,
+            "Mighty Swing": 0,
+            "Agidyne": 46,
+            "Fire Boost": 47,
+            "Fire Break": 48,
+            "Apt Pupil": 49
+        },
+        "aff": "---nw--s-",
+        "inh": "fire",
+        "arc": "Temperance",
+        "lvl": 44
+    },
+    "Suzaku": {
+        "id": 118,
+        "stats": [
+            32,
+            39,
+            32,
+            40,
+            29
+        ],
+        "skills": {
+            "Maragion": 0,
+            "Masukukaja": 0,
+            "Agidyne": 53,
+            "Mediarama": 54,
+            "Growth 3": 55,
+            "Resist Ice": 57
+        },
+        "aff": "---nw----",
+        "inh": "fire",
+        "arc": "Temperance",
+        "lvl": 51
+    },
+    "Byakko": {
+        "id": 119,
+        "stats": [
+            49,
+            36,
+            34,
+            48,
+            32
+        ],
+        "skills": {
+            "Deathbound": 0,
+            "Elec Boost": 0,
+            "Mazionga": 0,
+            "Ziodyne": 59,
+            "Endure": 61,
+            "Maziodyne": 63
+        },
+        "aff": "s--w-d--w",
+        "inh": "elec",
+        "arc": "Temperance",
+        "lvl": 57
+    },
+    "Yurlungur": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_TEMPERANCE"
+        ],
+        "id": 120,
+        "stats": [
+            43,
+            47,
+            49,
+            34,
+            41
+        ],
+        "skills": {
+            "Garudyne": 0,
+            "Mabufudyne": 0,
+            "Ice Amp": 66,
+            "Growth 3": 67,
+            "Mediarahan": 68,
+            "Samarecarm": 70,
+            "Repel Light": 71
+        },
+        "aff": "----nwn-w",
+        "inh": "ice",
+        "arc": "Temperance",
+        "lvl": 64
+    },
+    "Lilim": {
+        "id": 121,
+        "stats": [
+            4,
+            10,
+            6,
+            6,
+            7
+        ],
+        "skills": {
+            "Agi": 0,
+            "Marin Karin": 0,
+            "Zio": 0,
+            "Rakukaja": 9,
+            "Mudo": 11,
+            "Mazio": 12
+        },
+        "aff": "-----s-ws",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 8
+    },
+    "Vetala": {
+        "id": 122,
+        "stats": [
+            21,
+            16,
+            21,
+            10,
+            17
+        ],
+        "skills": {
+            "Kill Rush": 0,
+            "Rebellion": 0,
+            "Tentarafoo": 0,
+            "Dekaja": 26,
+            "Foul Breath": 27,
+            "Evil Smile": 28
+        },
+        "aff": "---s--wwn",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 24
+    },
+    "Incubus": {
+        "id": 123,
+        "stats": [
+            21,
+            30,
+            20,
+            21,
+            25
+        ],
+        "skills": {
+            "Agilao": 0,
+            "Evil Smile": 0,
+            "Life Drain": 0,
+            "Maragion": 35,
+            "Stagnant Air": 36,
+            "Spirit Drain": 37,
+            "Fire Break": 38
+        },
+        "aff": "---nw--wn",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 34
+    },
+    "Succubus": {
+        "id": 124,
+        "stats": [
+            24,
+            36,
+            27,
+            32,
+            27
+        ],
+        "skills": {
+            "Agidyne": 0,
+            "Mudoon": 0,
+            "Sexy Dance": 0,
+            "Fire Break": 45,
+            "Ailment Boost": 46,
+            "Null Light": 48
+        },
+        "aff": "---s---wn",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 43
+    },
+    "Pazuzu": {
+        "id": 125,
+        "stats": [
+            34,
+            41,
+            31,
+            36,
+            34
+        ],
+        "skills": {
+            "Garudyne": 0,
+            "Poison Mist": 0,
+            "Spirit Drain": 54,
+            "Poison Arrow": 55,
+            "Virus Breath": 57,
+            "Arrow Rain": 58
+        },
+        "aff": "------nws",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 52
+    },
+    "Lilith": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_LILYPETAL"
+        ],
+        "special": true,
+        "id": 126,
+        "stats": [
+            39,
+            52,
+            38,
+            40,
+            36
+        ],
+        "skills": {
+            "Makarakarn": 0,
+            "Maziodyne": 0,
+            "Sexy Dance": 0,
+            "Megidola": 63,
+            "Fast Retreat": 64,
+            "Elec Break": 65,
+            "Absorb Wind": 67
+        },
+        "aff": "-----dwwr",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 61
+    },
+    "Abaddon": {
+        "id": 127,
+        "stats": [
+            46,
+            52,
+            49,
+            33,
+            44
+        ],
+        "skills": {
+            "Evil Smile": 0,
+            "High Counter": 0,
+            "Weary Thrust": 0,
+            "Null Strike": 71,
+            "Null Slash": 72,
+            "Null Pierce": 73,
+            "Absorb Strike": 74
+        },
+        "aff": "---nw--wn",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 68
+    },
+    "Beelzebub": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_DEVIL"
+        ],
+        "special": true,
+        "id": 128,
+        "stats": [
+            53,
+            62,
+            56,
+            55,
+            54
+        ],
+        "skills": {
+            "Magarudyne": 0,
+            "Makarakarn": 0,
+            "Primal Force": 83,
+            "Maziodyne": 84,
+            "High Counter": 85,
+            "Victory Cry": 87
+        },
+        "aff": "-n-w-nnwr",
+        "inh": "ailment",
+        "arc": "Devil",
+        "lvl": 81
+    },
+    "Eligor": {
+        "id": 129,
+        "stats": [
+            28,
+            19,
+            23,
+            22,
+            18
+        ],
+        "skills": {
+            "Revolution": 0,
+            "Twin Shot": 0,
+            "Maragion": 32,
+            "Dodge Ice": 33,
+            "Cruel Attack": 34,
+            "Cool Breeze": 37
+        },
+        "aff": "--snw--w-",
+        "inh": "pierce",
+        "arc": "Tower",
+        "lvl": 31
+    },
+    "Cu Chulainn": {
+        "id": 130,
+        "stats": [
+            33,
+            28,
+            30,
+            23,
+            25
+        ],
+        "skills": {
+            "Matarukaja": 0,
+            "Torrent Shot": 0,
+            "Mazionga": 41,
+            "Power Charge": 43,
+            "Survive Dark": 44,
+            "Vile Assault": 45
+        },
+        "aff": "--s--s--w",
+        "inh": "pierce",
+        "arc": "Tower",
+        "lvl": 40
+    },
+    "Bishamonten": {
+        "id": 131,
+        "stats": [
+            47,
+            44,
+            41,
+            34,
+            39
+        ],
+        "skills": {
+            "Diarahan": 0,
+            "Maragidyne": 0,
+            "Fire Amp": 62,
+            "Arrow Rain": 63,
+            "Myriad Arrows": 65,
+            "Arms Master": 67
+        },
+        "aff": "--nnw--s-",
+        "inh": "fire",
+        "arc": "Tower",
+        "lvl": 60
+    },
+    "Seiten Taisei": {
+        "id": 132,
+        "stats": [
+            51,
+            38,
+            43,
+            51,
+            45
+        ],
+        "skills": {
+            "Apt Pupil": 0,
+            "Arrow Rain": 0,
+            "Fast Retreat": 0,
+            "Weary Thrust": 70,
+            "Spear Master": 71,
+            "Regenerate 3": 73
+        },
+        "aff": "--nw--s--",
+        "inh": "pierce",
+        "arc": "Tower",
+        "lvl": 67
+    },
+    "Masakado": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_MASAKADOS"
+        ],
+        "special": true,
+        "id": 133,
+        "stats": [
+            56,
+            46,
+            52,
+            49,
+            45
+        ],
+        "skills": {
+            "Marakunda": 0,
+            "Power Charge": 0,
+            "Tempest Slash": 0,
+            "Magarudyne": 75,
+            "Myriad Arrows": 76,
+            "Arms Master": 79
+        },
+        "aff": "n-------r",
+        "inh": "slash",
+        "arc": "Tower",
+        "lvl": 73
+    },
+    "Mara": {
+        "special": true,
+        "id": 134,
+        "stats": [
+            60,
+            50,
+            52,
+            48,
+            51
+        ],
+        "skills": {
+            "Maralagidyne": 0,
+            "Myriad Arrows": 0,
+            "Primal Force": 79,
+            "Power Charge": 80,
+            "Tetrakarn": 82,
+            "Absorb Ice": 84
+        },
+        "aff": "--drw----",
+        "inh": "pierce",
+        "arc": "Tower",
+        "lvl": 77
+    },
+    "Shiva": {
+        "special": true,
+        "id": 135,
+        "stats": [
+            60,
+            55,
+            48,
+            59,
+            56
+        ],
+        "skills": {
+            "Enduring Soul": 0,
+            "Maziodyne": 0,
+            "Sexy Dance": 0,
+            "Pralaya": 85,
+            "Invigorate 3": 86,
+            "Victory Cry": 88
+        },
+        "aff": "--n-wd-ns",
+        "inh": "elec",
+        "arc": "Tower",
+        "lvl": 82
+    },
+    "Chi You": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_TOWER"
+        ],
+        "id": 136,
+        "stats": [
+            65,
+            56,
+            62,
+            54,
+            59
+        ],
+        "skills": {
+            "Invigorate 3": 0,
+            "Vorpal Blade": 0,
+            "Primal Force": 89,
+            "Absorb Strike": 91,
+            "Arms Master": 92
+        },
+        "aff": "s-s--w---",
+        "inh": "pierce",
+        "arc": "Tower",
+        "lvl": 86
+    },
+    "Nandi": {
+        "id": 137,
+        "stats": [
+            29,
+            26,
+            29,
+            17,
+            32
+        ],
+        "skills": {
+            "Magarula": 0,
+            "Marakukaja": 0,
+            "Marin Karin": 0,
+            "Cool Breeze": 41,
+            "Garudyne": 43,
+            "Dodge Fire": 44
+        },
+        "aff": "---w--ns-",
+        "inh": "wind",
+        "arc": "Star",
+        "lvl": 39
+    },
+    "Kaiwan": {
+        "id": 138,
+        "stats": [
+            35,
+            39,
+            33,
+            26,
+            33
+        ],
+        "skills": {
+            "Evade Pierce": 0,
+            "Spirit Drain": 0,
+            "Virus Breath": 0,
+            "Invigorate 2": 51,
+            "Vile Assault": 53,
+            "Null Light": 54,
+            "Ailment Boost": 55
+        },
+        "aff": "---ssw-ws",
+        "inh": "ailment",
+        "arc": "Star",
+        "lvl": 49
+    },
+    "Ganesha": {
+        "id": 139,
+        "stats": [
+            49,
+            35,
+            39,
+            32,
+            40
+        ],
+        "skills": {
+            "Alertness": 0,
+            "Deathbound": 0,
+            "Power Charge": 0,
+            "Magarudyne": 61,
+            "High Counter": 62,
+            "Wind Amp": 63,
+            "Endure": 64
+        },
+        "aff": "------d-w",
+        "inh": "slash",
+        "arc": "Star",
+        "lvl": 58
+    },
+    "Garuda": {
+        "id": 140,
+        "stats": [
+            47,
+            42,
+            35,
+            53,
+            41
+        ],
+        "skills": {
+            "Arrow Rain": 0,
+            "Magarudyne": 0,
+            "Mediarama": 0,
+            "Amrita": 68,
+            "High Counter": 69,
+            "Repel Wind": 70
+        },
+        "aff": "ss---wsrw",
+        "inh": "wind",
+        "arc": "Star",
+        "lvl": 65
+    },
+    "Kartikeya": {
+        "keyItem": true,
+        "preReqs": [
+            "IT_RAINBOWFEATHER"
+        ],
+        "id": 141,
+        "stats": [
+            52,
+            44,
+            42,
+            53,
+            43
+        ],
+        "skills": {
+            "Masukukaja": 0,
+            "Myriad Arrows": 0,
+            "Maziodyne": 72,
+            "High Counter": 73,
+            "Absorb Elec": 75,
+            "Primal Force": 77
+        },
+        "aff": "--sw-n--w",
+        "inh": "pierce",
+        "arc": "Star",
+        "lvl": 70
+    },
+    "Saturnus": {
+        "id": 142,
+        "stats": [
+            52,
+            58,
+            45,
+            52,
+            53
+        ],
+        "skills": {
+            "Evade Ice": 0,
+            "Fire Amp": 0,
+            "Maragidyne": 0,
+            "Growth 3": 80,
+            "Primal Force": 82,
+            "Repel Ice": 83,
+            "Absorb Ice": 84
+        },
+        "aff": "---dw--n-",
+        "inh": "fire",
+        "arc": "Star",
+        "lvl": 78
+    },
+    "Helel": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_STAR"
+        ],
+        "id": 143,
+        "stats": [
+            64,
+            63,
+            61,
+            57,
+            58
+        ],
+        "skills": {
+            "Maragidyne": 0,
+            "Mind Charge": 0,
+            "Primal Force": 0,
+            "Morning Star": 91,
+            "Absorb Slash": 92,
+            "Salvation": 94
+        },
+        "aff": "sss-w--n-",
+        "inh": "strike",
+        "arc": "Star",
+        "lvl": 88
+    },
+    "Gurr": {
+        "id": 144,
+        "stats": [
+            13,
+            9,
+            12,
+            13,
+            9
+        ],
+        "skills": {
+            "Auto-Tarukaja": 0,
+            "Power Slash": 0,
+            "Growth 1": 17,
+            "Raging Tiger": 18,
+            "Dodge Strike": 19,
+            "Poison Mist": 20,
+            "Poison Boost": 21
+        },
+        "aff": "------sws",
+        "inh": "slash",
+        "arc": "Moon",
+        "lvl": 15
+    },
+    "Yamatano-Orochi": {
+        "id": 145,
+        "stats": [
+            21,
+            17,
+            21,
+            13,
+            19
+        ],
+        "skills": {
+            "Auto-Rakukaja": 0,
+            "Kill Rush": 0,
+            "Mabufu": 0,
+            "Dekaja": 28,
+            "Swift Strike": 30,
+            "Ice Boost": 31
+        },
+        "aff": "w---n-n--",
+        "inh": "strike",
+        "arc": "Moon",
+        "lvl": 26
+    },
+    "Girimehkala": {
+        "special": true,
+        "id": 146,
+        "stats": [
+            32,
+            30,
+            24,
+            28,
+            29
+        ],
+        "skills": {
+            "Marakunda": 0,
+            "Mighty Swing": 0,
+            "Virus Breath": 43,
+            "Mamudoon": 45,
+            "Survive Light": 46,
+            "Endure Light": 48
+        },
+        "aff": "r-----ww-",
+        "inh": "slash",
+        "arc": "Moon",
+        "lvl": 42
+    },
+    "Dionysus": {
+        "id": 147,
+        "stats": [
+            30,
+            41,
+            26,
+            30,
+            36
+        ],
+        "skills": {
+            "Mazionga": 0,
+            "Mind Charge": 0,
+            "Ziodyne": 50,
+            "Heat Wave": 51,
+            "Resist Wind": 52,
+            "Regenerate 2": 53
+        },
+        "aff": "ss---sw--",
+        "inh": "elec",
+        "arc": "Moon",
+        "lvl": 48
+    },
+    "Chernobog": {
+        "id": 148,
+        "stats": [
+            46,
+            47,
+            32,
+            36,
+            34
+        ],
+        "skills": {
+            "Blade of Fury": 0,
+            "Mamudoon": 0,
+            "Null Slash": 0,
+            "Deathbound": 60,
+            "Null Wind": 62,
+            "Megidola": 63,
+            "Invigorate 2": 64
+        },
+        "aff": "n-----w-n",
+        "inh": "dark",
+        "arc": "Moon",
+        "lvl": 58
+    },
+    "Seth": {
+        "id": 149,
+        "stats": [
+            48,
+            53,
+            46,
+            34,
+            40
+        ],
+        "skills": {
+            "Agidyne": 0,
+            "Maragidyne": 0,
+            "Fire Amp": 68,
+            "Fire Break": 69,
+            "Null Ice": 71,
+            "Repel Light": 72
+        },
+        "aff": "---r---ws",
+        "inh": "fire",
+        "arc": "Moon",
+        "lvl": 66
+    },
+    "Baal Zebul": {
+        "id": 150,
+        "stats": [
+            50,
+            55,
+            47,
+            44,
+            41
+        ],
+        "skills": {
+            "Mamudoon": 0,
+            "Megidola": 0,
+            "Poison Mist": 0,
+            "Bufudyne": 72,
+            "Mudo Boost": 73,
+            "Maragidyne": 75
+        },
+        "aff": "---w-sswr",
+        "inh": "dark",
+        "arc": "Moon",
+        "lvl": 71
+    },
+    "Sandalphon": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_MOON"
+        ],
+        "special": true,
+        "id": 151,
+        "stats": [
+            54,
+            54,
+            50,
+            47,
+            51
+        ],
+        "skills": {
+            "Hama Boost": 0,
+            "Mahamaon": 0,
+            "Makarakarn": 0,
+            "Akasha Arts": 76,
+            "Regenerate 3": 78,
+            "Salvation": 83
+        },
+        "aff": "-n-----r-",
+        "inh": "light",
+        "arc": "Moon",
+        "lvl": 74
+    },
+    "Yatagarasu": {
+        "id": 152,
+        "stats": [
+            22,
+            23,
+            18,
+            24,
+            19
+        ],
+        "skills": {
+            "Diarama": 0,
+            "Sukukaja": 0,
+            "Zan-ei": 0,
+            "Masukunda": 31,
+            "Infuriate": 32,
+            "Invigorate 1": 34,
+            "Growth 2": 37
+        },
+        "aff": "------snw",
+        "inh": "recovery",
+        "arc": "Sun",
+        "lvl": 30
+    },
+    "Quetzalcoatl": {
+        "id": 153,
+        "stats": [
+            28,
+            29,
+            30,
+            32,
+            30
+        ],
+        "skills": {
+            "Growth 2": 0,
+            "Magarula": 0,
+            "Marakukaja": 0,
+            "Garudyne": 44,
+            "Heat Wave": 46,
+            "Mahamaon": 47,
+            "Wind Boost": 48
+        },
+        "aff": "------snw",
+        "inh": "wind",
+        "arc": "Sun",
+        "lvl": 43
+    },
+    "Jatayu": {
+        "id": 154,
+        "stats": [
+            35,
+            40,
+            31,
+            44,
+            39
+        ],
+        "skills": {
+            "Garudyne": 0,
+            "Growth 3": 0,
+            "Null Panic": 0,
+            "Amrita": 57,
+            "Null Elec": 59,
+            "Magarudyne": 60
+        },
+        "aff": "---s-wdnw",
+        "inh": "wind",
+        "arc": "Sun",
+        "lvl": 55
+    },
+    "Horus": {
+        "id": 155,
+        "stats": [
+            49,
+            50,
+            33,
+            44,
+            39
+        ],
+        "skills": {
+            "Growth 3": 0,
+            "Mahamaon": 0,
+            "Mediarahan": 0,
+            "Auto-Masuku": 65,
+            "Bufudyne": 67,
+            "Repel Dark": 68
+        },
+        "aff": "----n--nw",
+        "inh": "light",
+        "arc": "Sun",
+        "lvl": 63
+    },
+    "Suparna": {
+        "id": 156,
+        "stats": [
+            44,
+            52,
+            43,
+            54,
+            45
+        ],
+        "skills": {
+            "Diarahan": 0,
+            "Magarudyne": 0,
+            "Wind Amp": 72,
+            "Mabufudyne": 74,
+            "Tetrakarn": 76
+        },
+        "aff": "--w--nnn-",
+        "inh": "wind",
+        "arc": "Sun",
+        "lvl": 70
+    },
+    "Vishnu": {
+        "id": 157,
+        "stats": [
+            53,
+            58,
+            47,
+            56,
+            51
+        ],
+        "skills": {
+            "Akasha Arts": 0,
+            "Bufudyne": 0,
+            "Ziodyne": 0,
+            "Mind Charge": 80,
+            "God's Hand": 82,
+            "Salvation": 86
+        },
+        "aff": "----nn-rw",
+        "inh": "strike",
+        "arc": "Sun",
+        "lvl": 78
+    },
+    "Asura": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_SUN"
+        ],
+        "special": true,
+        "id": 158,
+        "stats": [
+            62,
+            60,
+            58,
+            56,
+            57
+        ],
+        "skills": {
+            "Agidyne": 0,
+            "Akasha Arts": 0,
+            "Unshaken Will": 0,
+            "Tetrakarn": 87,
+            "Megidolaon": 88,
+            "Spell Master": 91
+        },
+        "aff": "---d---rw",
+        "inh": "fire",
+        "arc": "Sun",
+        "lvl": 85
+    },
+    "Anubis": {
+        "id": 159,
+        "stats": [
+            41,
+            50,
+            38,
+            37,
+            36
+        ],
+        "skills": {
+            "Mahamaon": 0,
+            "Mamudoon": 0,
+            "Makarakarn": 61,
+            "Null Ice": 62,
+            "Null Elec": 64,
+            "Regenerate 3": 66
+        },
+        "aff": "-------ss",
+        "inh": "light-dark",
+        "arc": "Judgement",
+        "lvl": 59
+    },
+    "Trumpeter": {
+        "id": 160,
+        "stats": [
+            43,
+            47,
+            43,
+            46,
+            43
+        ],
+        "skills": {
+            "Garudyne": 0,
+            "Hamaon": 0,
+            "Mudoon": 0,
+            "Mabufudyne": 67,
+            "Ice Break": 68,
+            "Tetrakarn": 70
+        },
+        "aff": "---wss-ns",
+        "inh": "light-dark",
+        "arc": "Judgement",
+        "lvl": 65
+    },
+    "Michael": {
+        "id": 161,
+        "stats": [
+            51,
+            47,
+            46,
+            50,
+            51
+        ],
+        "skills": {
+            "Maziodyne": 0,
+            "Mediarahan": 0,
+            "Mabufudyne": 74,
+            "Repel Dark": 75,
+            "Heaven's Blade": 77
+        },
+        "aff": "----ss-rw",
+        "inh": "elec",
+        "arc": "Judgement",
+        "lvl": 72
+    },
+    "Satan": {
+        "id": 162,
+        "stats": [
+            51,
+            60,
+            52,
+            47,
+            58
+        ],
+        "skills": {
+            "Maragidyne": 0,
+            "Megidola": 0,
+            "Regenerate 3": 81,
+            "Invigorate 3": 82,
+            "Repel Light": 83,
+            "Black Viper": 86
+        },
+        "aff": "---r--w-r",
+        "inh": "light-dark",
+        "arc": "Judgement",
+        "lvl": 79
+    },
+    "Lucifer": {
+        "special": true,
+        "id": 163,
+        "stats": [
+            65,
+            68,
+            64,
+            52,
+            52
+        ],
+        "skills": {
+            "Brave Blade": 0,
+            "Makarakarn": 0,
+            "Maziodyne": 0,
+            "Megidolaon": 91,
+            "Spell Master": 93,
+            "Victory Cry": 95
+        },
+        "aff": "sss-wn--r",
+        "inh": "dark",
+        "arc": "Judgement",
+        "lvl": 89
+    },
+    "Messiah": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_JUDGEMENT"
+        ],
+        "special": true,
+        "id": 164,
+        "stats": [
+            63,
+            62,
+            60,
+            62,
+            63
+        ],
+        "skills": {
+            "God's Hand": 0,
+            "Megidolaon": 0,
+            "Regenerate 3": 0,
+            "Salvation": 93,
+            "Invigorate 3": 94,
+            "Absorb Pierce": 95,
+            "Enduring Soul": 97
+        },
+        "aff": "---ssssrw",
+        "inh": "light-dark",
+        "arc": "Judgement",
+        "lvl": 90
+    },
+    "Uriel": {
+        "id": 165,
+        "stats": [
+            44,
+            51,
+            41,
+            41,
+            38
+        ],
+        "skills": {
+            "Deathbound": 0,
+            "Mahamaon": 0,
+            "Maragidyne": 0,
+            "Fire Amp": 65,
+            "Tempest Slash": 66,
+            "High Counter": 67
+        },
+        "aff": "---dw--nw",
+        "inh": "light",
+        "arc": "Aeon",
+        "lvl": 63
+    },
+    "Nidhoggr": {
+        "id": 166,
+        "stats": [
+            55,
+            45,
+            55,
+            32,
+            48
+        ],
+        "skills": {
+            "Mamudoon": 0,
+            "Virus Breath": 0,
+            "Revolution": 71,
+            "Matarunda": 72,
+            "Absorb Pierce": 74
+        },
+        "aff": "----s-wwr",
+        "inh": "dark",
+        "arc": "Aeon",
+        "lvl": 69
+    },
+    "Ananta": {
+        "id": 167,
+        "stats": [
+            52,
+            56,
+            60,
+            39,
+            48
+        ],
+        "skills": {
+            "Dekunda": 0,
+            "Mediarahan": 0,
+            "Weary Thrust": 76,
+            "High Counter": 78,
+            "Samarecarm": 79,
+            "Absorb Wind": 81
+        },
+        "aff": "----s-wn-",
+        "inh": "recovery",
+        "arc": "Aeon",
+        "lvl": 75
+    },
+    "Atavaka": {
+        "id": 168,
+        "stats": [
+            57,
+            54,
+            50,
+            54,
+            56
+        ],
+        "skills": {
+            "Mahamaon": 0,
+            "Megidola": 0,
+            "Akasha Arts": 82,
+            "Mediarahan": 83,
+            "Brave Blade": 85
+        },
+        "aff": "--n-w--rw",
+        "inh": "light",
+        "arc": "Aeon",
+        "lvl": 80
+    },
+    "Metatron": {
+        "ultimate": true,
+        "preReqs": [
+            "SL_AEON"
+        ],
+        "special": true,
+        "id": 169,
+        "stats": [
+            61,
+            65,
+            57,
+            61,
+            56
+        ],
+        "skills": {
+            "Auto-Mataru": 0,
+            "God's Hand": 0,
+            "Mahamaon": 0,
+            "Megidolaon": 90,
+            "Repel Ice": 91,
+            "Repel Elec": 92,
+            "Repel Fire": 93
+        },
+        "aff": "-s-----rw",
+        "inh": "light",
+        "arc": "Aeon",
+        "lvl": 87
+    }
+}

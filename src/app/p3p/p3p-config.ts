@@ -1,5 +1,5 @@
 import affinities from '../data/p3/p3-affinities.json';
-import compendium from '../data/p3/p3p-compendium.json';
+import compendiumMini from '../data/p3/p3p-compendium-mini.json';
 import skills from '../data/p3/p3p-skills.json';
 import arcana from '../data/p3/p3-arcana.json';
 import settingsTemplate from '../data/p3/p3p-settings-template.json';
@@ -9,6 +9,9 @@ import normalFusionChart from '../data/p3/p3-normal-fusion-chart.json';
 import triangleFusionChart from '../data/p3/p3-triangle-fusion-chart.json';
 import inheritanceChart from '../data/p3/p3-inheritance.json';
 import { GameConfig } from '../models/game-config';
+import { compendiumMigrator } from '../helpers/compendium-migrator';
+
+const compendium = compendiumMigrator(compendiumMini, skills, arcana);
 
 export const P3P_CONFIG: GameConfig = {
   title: 'p3p',
