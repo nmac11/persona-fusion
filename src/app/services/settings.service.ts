@@ -2,17 +2,21 @@ import { Inject, Injectable } from '@angular/core';
 import { SettingsPreloaderService } from './settings-preloader.service';
 import { GameSettings } from '../models/game-settings';
 import { Persona } from '../models/persona';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
+import { GameConfig } from '../models/game-config';
 
 @Injectable()
 export class SettingsService {
   private settings: GameSettings;
+  private storeName: string;
+  private defaults: { [key: string]: boolean };
 
   constructor(
-    @Inject(String) private storeName: string,
-    @Inject(Object) private defaults: { [key: string]: boolean },
-    @Inject(Object) public template: any,
+    @Inject(GAME_CONFIG) private config: GameConfig,
     private settingsPreloaderService: SettingsPreloaderService,
   ) {
+    this.storeName = config.title + '_settings';
+    this.defaults = config.defaultSettings;
     this.init();
   }
 

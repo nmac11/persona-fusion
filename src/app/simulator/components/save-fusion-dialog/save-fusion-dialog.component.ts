@@ -2,7 +2,6 @@ import {
   Component,
   OnInit,
   Inject,
-  Injector,
   ViewChild,
   AfterViewInit,
   ElementRef,
@@ -20,7 +19,6 @@ import { CompendiumService } from '../../../services/compendium.service';
 import { SkillService } from '../../../services/skill.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FusionNodeHelper } from '../../helpers/fusion-node-helper';
-import { ActiveGameService } from '../../../services/active-game.service';
 import { InheritableSkill } from '../../../models/inheritable-skill';
 
 @Component({
@@ -37,17 +35,21 @@ export class SaveFusionDialogComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<SaveFusionDialogComponent>,
+    private compendiumService: CompendiumService,
+    private skillService: SkillService,
     @Inject(MAT_DIALOG_DATA)
     public data: {
       fusionItem: FusionResult;
     },
     private fb: FormBuilder,
     private snackBar: MatSnackBar,
-    private activeGameService: ActiveGameService,
-    private injector: Injector,
   ) {
+
+    this.fusionNodeHelper = new FusionNodeHelper(
+      this.compendiumService,
+      this.skillService,
+    );
     this.fusionItem = data.fusionItem;
-    this.fetchServices();
     this.initializeSaveForm();
   }
 
@@ -63,21 +65,6 @@ export class SaveFusionDialogComponent implements OnInit {
 
   inheritableSkills(): InheritableSkill[] {
     return this.fusionItem.inheritableSkills.filter((s) => s.probRatio > 0);
-  }
-
-  private fetchServices(): void {
-    const tokens = this.activeGameService.getTokenSet();
-    this.personaStoreService = this.injector.get<PersonaStoreService>(
-      tokens.personaStore,
-    );
-    const compendiumService = this.injector.get<CompendiumService>(
-      tokens.compendium,
-    );
-    const skillService = this.injector.get<SkillService>(tokens.skill);
-    this.fusionNodeHelper = new FusionNodeHelper(
-      compendiumService,
-      skillService,
-    );
   }
 
   private initializeSaveForm(): void {

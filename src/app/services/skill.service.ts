@@ -1,14 +1,20 @@
 import { Injectable, Inject } from '@angular/core';
 import { Skill } from '../models/skill';
 import { partialMatchRegExp, exactMatchRegExp } from '../helpers/reg-exp-helpers';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
+import { GameConfig } from '../models/game-config';
 
 @Injectable()
 export class SkillService {
-  constructor(@Inject(Array) private skills: Array<Skill>) {}
+  skills: Skill[];
 
-  getAll(type = null): Skill[] {
-    return type
-      ? this.skills.filter((skill) => partialMatchRegExp(type).test(skill.name))
+  constructor(@Inject(GAME_CONFIG) private config: GameConfig) {
+    this.skills = config.skills;
+  }
+
+  getAll(filter = null): Skill[] {
+    return filter
+      ? this.skills.filter((skill) => partialMatchRegExp(filter).test(skill.name))
       : this.skills;
   }
 

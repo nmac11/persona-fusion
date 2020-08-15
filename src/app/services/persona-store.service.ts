@@ -1,13 +1,19 @@
 import { Injectable, Inject } from '@angular/core';
 import { NgxIndexedDBService } from 'ngx-indexed-db';
 import { FusionNode } from '../models/fusion-node';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
+import { GameConfig } from '../models/game-config';
 
 @Injectable()
 export class PersonaStoreService {
+  storeName: string;
+
   constructor(
-    @Inject(String) private storeName: string,
+    @Inject(GAME_CONFIG) private config: GameConfig,
     private dbService: NgxIndexedDBService,
-  ) {}
+  ) {
+    this.storeName = this.config.title + '_personae';
+  }
 
   load(id: number): Promise<FusionNode> {
     return this.dbService.getByKey(this.storeName, id);

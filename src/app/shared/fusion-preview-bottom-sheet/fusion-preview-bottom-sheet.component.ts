@@ -4,7 +4,8 @@ import {
   MatBottomSheetRef,
 } from '@angular/material/bottom-sheet';
 import { Persona } from '../../models/persona';
-import { ActiveGameService } from '../../services/active-game.service';
+import { GameConfig } from '../../models/game-config';
+import { GAME_CONFIG } from '../../injection-tokens/game-config.token';
 
 @Component({
   selector: 'shared-fusion-preview-bottom-sheet',
@@ -16,11 +17,11 @@ export class FusionPreviewBottomSheetComponent implements OnInit {
 
   constructor(
     private bottomSheetRef: MatBottomSheetRef,
-    public activeGameService: ActiveGameService,
+    @Inject(GAME_CONFIG) private config: GameConfig,
     @Inject(MAT_BOTTOM_SHEET_DATA)
     public fusion: { persona: Persona; level?: number }[],
   ) {
-    this.game = activeGameService.game;
+    this.game = this.config.title;
   }
 
   ngOnInit(): void {}

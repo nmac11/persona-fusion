@@ -1,11 +1,17 @@
 import { Injectable, Inject } from '@angular/core';
 import { Skill } from '../models/skill';
+import { GameConfig } from '../models/game-config';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
 
 @Injectable()
 export class SkillInheritanceService {
+  inheritanceChart: any;
+  
   constructor(
-    @Inject(Object) private inheritanceChart: any,
-  ) {}
+    @Inject(GAME_CONFIG) private config: GameConfig,
+  ) {
+    this.inheritanceChart = this.config.inheritanceChart;
+  }
 
   findSkillProbRatio(skill: Skill, inheritType: string): number {
     if (skill.exclusive) return 0;

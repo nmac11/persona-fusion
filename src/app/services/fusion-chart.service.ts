@@ -2,13 +2,20 @@ import { Injectable, Inject } from '@angular/core';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
 import { SpecialFusion } from '../models/special-fusion';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
+import { GameConfig } from '../models/game-config';
 
 export abstract class FusionChartService {
+  protected specialFusionChart: SpecialFusion[];
+  protected normalFusionChart: number[][][];
+
   constructor(
-    @Inject(CompendiumService) protected compendiumService: CompendiumService,
-    @Inject(Object) protected specialFusions: SpecialFusion[],
-    @Inject(Object) protected normalFusionChart: number[][][],
-  ) {}
+    @Inject(GAME_CONFIG) protected config: GameConfig,
+    protected compendiumService: CompendiumService,
+  ) {
+    this.specialFusionChart = config.specialFusionChart;
+    this.normalFusionChart = config.normalFusionChart;
+  }
 
   getPossibleNormalFusions(arcana: number): Persona[][][] {
     const formulas = this.normalFusionChart[arcana];
@@ -16,7 +23,7 @@ export abstract class FusionChartService {
   }
 
   getSpecialFusions(persona: Persona): Persona[] {
-    const specialFusion = this.specialFusions.find(
+    const specialFusion = this.specialFusionChart.find(
       (sf) => sf.persona === persona.name,
     );
     return specialFusion
@@ -28,7 +35,7 @@ export abstract class FusionChartService {
 
   trySpecialFusion(personae: Persona[]): Persona {
     const personaNames = personae.map((p) => p.name);
-    const fusionResult = this.specialFusions.find(
+    const fusionResult = this.specialFusionChart.find(
       (sf) =>
         sf.requirements.length === personae.length &&
         personaNames.every((name) => sf.requirements.includes(name)),
@@ -67,13 +74,14 @@ export abstract class FusionChartService {
 
 @Injectable()
 export class P3P4FusionChartService extends FusionChartService {
+  private triangleFusionChart: number[][][];
+
   constructor(
-    @Inject(CompendiumService) protected compendiumService: CompendiumService,
-    @Inject(Object) protected specialFusions: SpecialFusion[],
-    @Inject(Object) protected normalFusionChart: number[][][],
-    @Inject(Object) private triangleFusionChart: number[][][],
+    @Inject(GAME_CONFIG) protected config: GameConfig,
+    protected compendiumService: CompendiumService,
   ) {
-    super(compendiumService, specialFusions, normalFusionChart);
+    super(config, compendiumService);
+    this.triangleFusionChart = this.config.triangleFusionChart;
   }
 
   getPossibleTriangleFusions(arcana: number): Persona[][][] {
@@ -126,13 +134,14 @@ export class P3P4FusionChartService extends FusionChartService {
 
 @Injectable()
 export class P5FusionChartService extends FusionChartService {
+  private gemFusionChart: { [key: string]: number[] };
+
   constructor(
-    @Inject(CompendiumService) protected compendiumService: CompendiumService,
-    @Inject(Object) protected specialFusions: SpecialFusion[],
-    @Inject(Object) protected normalFusionChart: number[][][],
-    @Inject(Object) private gemFusionChart: { [key: string]: number[] },
+    @Inject(GAME_CONFIG) protected config: GameConfig,
+    protected compendiumService: CompendiumService,
   ) {
-    super(compendiumService, specialFusions, normalFusionChart);
+    super(config, compendiumService);
+    this.gemFusionChart = this.config.gemFusionChart;
   }
 
   getGemFormulas(arcana: number): any {

@@ -8,7 +8,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditPersonaComponent } from './components/edit-persona/edit-persona.component';
 import { ConfirmDeleteDialogComponent } from './components/confirm-delete-dialog/confirm-delete-dialog.component';
 import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
-import { PersonaStoreModule } from '../persona-store/persona-store.module';
 import { FusionTreeComponent } from './components/fusion-tree/fusion-tree.component';
 import { ViewTreeItemDialogComponent } from './components/view-tree-item-dialog/view-tree-item-dialog.component';
 
@@ -33,7 +32,6 @@ import { ViewTreeItemDialogComponent } from './components/view-tree-item-dialog/
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    PersonaStoreModule,
   ],
 })
 export class MyListModule {}

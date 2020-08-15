@@ -7,11 +7,7 @@ import { MaterialModule } from '../material/material.module';
 import { PersonaComponent } from './components/persona/persona.component';
 import { NormalFusionsComponent } from './components/normal-fusions/normal-fusions.component';
 import { TriangleFusionsComponent } from './components/triangle-fusions/triangle-fusions.component';
-import { ProvidersModule } from '../providers/providers.module';
-import { SimulatorModule } from '../simulator/simulator.module';
 import { SharedModule } from '../shared/shared.module';
-import { MyListModule } from '../my-list/my-list.module';
-import { SettingsModule } from '../settings/settings.module';
 import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.component';
 import { SpecialFusionComponent } from './components/special-fusion/special-fusion.component';
 
@@ -25,15 +21,6 @@ import { SpecialFusionComponent } from './components/special-fusion/special-fusi
     GemFusionsComponent,
     SpecialFusionComponent,
   ],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    RouterModule,
-    ProvidersModule,
-    SimulatorModule,
-    SharedModule,
-    MyListModule,
-    SettingsModule,
-  ],
+  imports: [CommonModule, MaterialModule, RouterModule, SharedModule],
 })
 export class GameModule {}

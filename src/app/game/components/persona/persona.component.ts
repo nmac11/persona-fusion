@@ -1,12 +1,13 @@
-import { OnInit, Component, Injector, OnDestroy } from '@angular/core';
+import { Inject, OnInit, Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
 import { FusionChartService } from '../../../services/fusion-chart.service';
 import { Persona } from '../../../models/persona';
 import { Observer, Observable, Subscription } from 'rxjs';
-import { ActiveGameService } from '../../../services/active-game.service';
 import { SettingsService } from '../../../services/settings.service';
 import { TitleService } from '../../../services/title.service';
+import { GAME_CONFIG } from '../../../injection-tokens/game-config.token';
+import { GameConfig } from '../../../models/game-config';
 
 @Component({
   selector: 'game-persona',
@@ -16,27 +17,18 @@ import { TitleService } from '../../../services/title.service';
 export class PersonaComponent implements OnInit, OnDestroy {
   persona: Persona;
   specialFusion: Persona[] = [];
-  compendiumService: CompendiumService;
-  fusionChartService: FusionChartService;
-  settingsService: SettingsService;
   routeParamsSub: Subscription;
 
   constructor(
+    @Inject(GAME_CONFIG) private config: GameConfig,
+    private compendiumService: CompendiumService,
+    private fusionChartService: FusionChartService,
+    private settingsService: SettingsService,
     private route: ActivatedRoute,
     private router: Router,
-    private injector: Injector,
-    private activeGameService: ActiveGameService,
     private titleService: TitleService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const tokens = this.activeGameService.getTokenSet();
-    this.compendiumService = this.injector.get<CompendiumService>(
-      tokens.compendium,
-    );
-    this.fusionChartService = this.injector.get<FusionChartService>(
-      tokens.fusionChart,
-    );
-    this.settingsService = this.injector.get<SettingsService>(tokens.settings);
   }
 
   ngOnInit(): void {
@@ -48,12 +40,12 @@ export class PersonaComponent implements OnInit, OnDestroy {
         );
         this.titleService.setTitle(
           this.persona.name,
-          this.activeGameService.fullGameName,
+          this.config.fullTitle,
         );
       } else {
         this.titleService.setTitle(
           'Persona not found',
-          this.activeGameService.fullGameName,
+          this.config.fullTitle,
         );
       }
     });
@@ -72,16 +64,14 @@ export class PersonaComponent implements OnInit, OnDestroy {
   showTriangleFusions: () => boolean = () => {
     return (
       !this.persona.special &&
-      ['p3fes', 'p3ans', 'p3p', 'p4', 'p4g'].includes(
-        this.activeGameService.game,
-      )
+      this.config.fusionSystem === 'old'
     );
   };
 
   showGemFusions: () => boolean = () => {
     return (
       !this.persona.special &&
-      ['p5', 'p5r'].includes(this.activeGameService.game)
+      this.config.fusionSystem === 'new'
     );
   };
 }

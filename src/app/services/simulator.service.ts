@@ -19,12 +19,10 @@ import { FusionBuilder } from '../lib/fusion-builder';
 
 export abstract class SimulatorService {
   constructor(
-    @Inject(FusionChartService)
     protected fusionChartService: FusionChartService,
-    @Inject(CompendiumService) protected compendiumService: CompendiumService,
-    @Inject(SkillInheritanceService)
+    protected compendiumService: CompendiumService,
     protected skillInheritanceService: SkillInheritanceService,
-    @Inject(SettingsService) protected settingsService: SettingsService,
+    protected settingsService: SettingsService,
   ) {}
 
   fuse(fusionItems: FusionNode[]): FusionResult {
@@ -74,12 +72,10 @@ export abstract class SimulatorService {
 @Injectable()
 export class P3P4SimulatorService extends SimulatorService {
   constructor(
-    @Inject(P3P4FusionChartService)
     protected fusionChartService: P3P4FusionChartService,
-    @Inject(CompendiumService) protected compendiumService: CompendiumService,
-    @Inject(SkillInheritanceService)
+    protected compendiumService: CompendiumService,
     protected skillInheritanceService: SkillInheritanceService,
-    @Inject(SettingsService) protected settingsService: SettingsService,
+    protected settingsService: SettingsService,
   ) {
     super(
       fusionChartService,
@@ -114,12 +110,10 @@ export class P3P4SimulatorService extends SimulatorService {
 @Injectable()
 export class P5SimulatorService extends SimulatorService {
   constructor(
-    @Inject(P5FusionChartService)
     protected fusionChartService: P5FusionChartService,
-    @Inject(CompendiumService) protected compendiumService: CompendiumService,
-    @Inject(SkillInheritanceService)
+    protected compendiumService: CompendiumService,
     protected skillInheritanceService: SkillInheritanceService,
-    @Inject(SettingsService) protected settingsService: SettingsService,
+    protected settingsService: SettingsService,
   ) {
     super(
       fusionChartService,

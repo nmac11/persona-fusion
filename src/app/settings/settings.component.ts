@@ -1,9 +1,10 @@
-import { Component, OnInit, Injector } from '@angular/core';
-import { ActiveGameService } from '../services/active-game.service';
+import { Component, Inject, OnInit } from '@angular/core';
 import { SettingsService } from '../services/settings.service';
 import { FormArray, FormControl, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { TitleService } from '../services/title.service';
+import { GameConfig } from '../models/game-config';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
 
 @Component({
   selector: 'settings-root',
@@ -12,21 +13,18 @@ import { TitleService } from '../services/title.service';
 })
 export class SettingsComponent implements OnInit {
   settings: { [key: string]: boolean };
-  settingsService: SettingsService;
   settingsForm: FormGroup;
   settingsTemplate: any;
 
   constructor(
-    private injector: Injector,
-    private activeGameService: ActiveGameService,
+    @Inject(GAME_CONFIG) private config: GameConfig,
+    private settingsService: SettingsService,
     private snackBar: MatSnackBar,
     private titleService: TitleService,
   ) {
-    const tokens = this.activeGameService.getTokenSet();
-    this.settingsService = this.injector.get<SettingsService>(tokens.settings);
-    this.settingsTemplate = this.settingsService.template;
+    this.settingsTemplate = this.config.settingsTemplate;
     this.loadSettings();
-    this.titleService.setTitle('Settings', this.activeGameService.fullGameName);
+    this.titleService.setTitle('Settings', this.config.fullTitle);
   }
 
   ngOnInit(): void {}

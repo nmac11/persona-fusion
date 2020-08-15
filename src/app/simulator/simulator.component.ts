@@ -1,4 +1,4 @@
-import { Component, OnInit, Injector } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CompendiumService } from '../services/compendium.service';
@@ -10,10 +10,11 @@ import { FusionNode } from '../models/fusion-node';
 import { FusionResult } from '../models/fusion-result';
 import { MatDialog } from '@angular/material/dialog';
 import { FusionNodeHelper } from './helpers/fusion-node-helper';
-import { ActiveGameService } from '../services/active-game.service';
 import { SettingsService } from '../services/settings.service';
 import { TitleService } from '../services/title.service';
 import { InheritableSkill } from '../models/inheritable-skill';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
+import { GameConfig } from '../models/game-config';
 
 @Component({
   selector: 'simulator-root',
@@ -23,35 +24,23 @@ import { InheritableSkill } from '../models/inheritable-skill';
 export class SimulatorComponent implements OnInit {
   fusionItems: FusionNode[] = [];
   fusionYield: FusionResult;
-  compendiumService: CompendiumService;
-  simulatorService: SimulatorService;
-  skillService: SkillService;
   fusionNodeHelper: FusionNodeHelper;
 
   settingsService: SettingsService;
   saveName: string;
 
   constructor(
-    private injector: Injector,
+    @Inject(GAME_CONFIG) private config: GameConfig,
+    private compendiumService: CompendiumService,
+    private simulatorService: SimulatorService,
+    private skillService: SkillService,
     private router: Router,
     private route: ActivatedRoute,
     private matDialog: MatDialog,
     private location: Location,
-    private activeGameService: ActiveGameService,
     private titleService: TitleService,
   ) {
-    const tokens = this.activeGameService.getTokenSet();
-    this.compendiumService = this.injector.get<CompendiumService>(
-      tokens.compendium,
-    );
-    this.simulatorService = this.injector.get<SimulatorService>(
-      tokens.simulator,
-    );
-    this.skillService = this.injector.get<SkillService>(tokens.skill);
-    this.titleService.setTitle(
-      'Simulator',
-      this.activeGameService.fullGameName,
-    );
+    this.titleService.setTitle('Simulator', this.config.fullTitle);
   }
 
   ngOnInit(): void {
@@ -119,10 +108,7 @@ export class SimulatorComponent implements OnInit {
           }),
         ].join(',');
       });
-
-    const path = this.route.snapshot.pathFromRoot
-      .map((o) => o.url[0])
-      .join('/');
+    const path = this.config.title + '/simulator';
 
     if (Object.keys(queryParams).length) {
       var esc = encodeURIComponent;

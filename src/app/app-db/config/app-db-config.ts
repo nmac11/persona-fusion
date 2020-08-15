@@ -1,7 +1,15 @@
 import { DBConfig, ObjectStoreMeta } from 'ngx-indexed-db';
-import { serviceToken } from '../../helpers/service-token-helper';
 
-const GAME_TITLES: string[] = Object.keys(serviceToken);
+const GAME_TITLES: string[] = [
+  'p3p',
+  'p3fes',
+  'p3ans',
+  'p4',
+  'p4g',
+  'p5',
+  'p5r',
+];
+
 function metaGenerator(storeName: string): ObjectStoreMeta[] {
   return GAME_TITLES.map((game) => {
     return {

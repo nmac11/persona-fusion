@@ -1,11 +1,10 @@
-import { Component, OnInit, Injector } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { FusionNode } from '../../../models/fusion-node';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SaveNameValidators } from '../../../validators/save-name-validators';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { PersonaStoreService } from '../../../services/persona-store.service';
-import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'my-list-create',
@@ -13,21 +12,15 @@ import { ActiveGameService } from '../../../services/active-game.service';
   styleUrls: ['./create-persona.component.css'],
 })
 export class CreatePersonaComponent implements OnInit {
-  personaStoreService: PersonaStoreService;
   selectedItem: FusionNode;
   createForm: FormGroup;
 
   constructor(
     public dialogRef: MatDialogRef<CreatePersonaComponent>,
     private fb: FormBuilder,
-    private injector: Injector,
-    private activeGameService: ActiveGameService,
     private snackBar: MatSnackBar,
+    private personaStoreService: PersonaStoreService,
   ) {
-    const tokens = this.activeGameService.getTokenSet();
-    this.personaStoreService = this.injector.get<PersonaStoreService>(
-      tokens.personaStore,
-    );
     this.createForm = this.fb.group({
       saveName: [
         '',

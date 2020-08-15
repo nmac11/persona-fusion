@@ -17,8 +17,8 @@ export class NormalFusionService {
   filteredFusions$ = new Observable<Persona[][]>();
 
   constructor(
-    @Inject(FusionChartService) private arcanaFusionService: FusionChartService,
-    @Inject(CompendiumService) private compendiumService: CompendiumService,
+    private fusionChartService: FusionChartService,
+    private compendiumService: CompendiumService,
   ) {
     this.filteredFusions$ = this.filters$.pipe(
       switchMap((filters) => this.filterWorkerWrapper.filter(filters)),
@@ -47,7 +47,7 @@ export class NormalFusionService {
   }
 
   private generateFusionList(): void {
-    const arcanaFusions = this.arcanaFusionService.getPossibleNormalFusions(
+    const arcanaFusions = this.fusionChartService.getPossibleNormalFusions(
       this.persona.arcana,
     );
     this.testFusions(arcanaFusions);

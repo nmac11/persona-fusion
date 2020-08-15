@@ -5,7 +5,6 @@ import { FusionNode } from '../../../models/fusion-node';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDeleteDialogComponent } from '../confirm-delete-dialog/confirm-delete-dialog.component';
-import { ActiveGameService } from '../../../services/active-game.service';
 
 @Component({
   selector: 'my-list-edit-persona',
@@ -13,22 +12,16 @@ import { ActiveGameService } from '../../../services/active-game.service';
   styleUrls: ['./edit-persona.component.css'],
 })
 export class EditPersonaComponent implements OnInit {
-  personaStoreService: PersonaStoreService;
   fusionNode: FusionNode;
 
   constructor(
+    private personaStoreService: PersonaStoreService,
     private route: ActivatedRoute,
-    private injector: Injector,
     private router: Router,
     private snackBar: MatSnackBar,
     private dialog: MatDialog,
-    private activeGameService: ActiveGameService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const tokens = this.activeGameService.getTokenSet();
-    this.personaStoreService = this.injector.get<PersonaStoreService>(
-      tokens.personaStore,
-    );
   }
 
   ngOnInit(): void {

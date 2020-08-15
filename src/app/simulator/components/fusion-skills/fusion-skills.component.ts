@@ -1,12 +1,12 @@
-import { Component, Input, OnDestroy, OnInit, OnChanges } from '@angular/core';
+import { Component, Inject, Input, OnDestroy, OnInit, OnChanges } from '@angular/core';
 import { FusionResult } from '../../../models/fusion-result';
-import { ActiveGameService } from '../../../services/active-game.service';
-import { InheritableSkill } from '../../../models/inheritable-skill';
 import { AppSettingsService } from '../../../services/app-settings.service';
 import { Skill } from '../../../models/skill';
 import { Probabilities } from '../../../lib/probabilities';
 import { BehaviorSubject, Observable, Subscription, from } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
+import { GameConfig } from '../../../models/game-config';
+import { GAME_CONFIG } from '../../../injection-tokens/game-config.token';
 
 @Component({
   selector: 'simulator-fusion-skills',
@@ -20,7 +20,7 @@ export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
   fusionSub: Subscription;
 
   constructor(
-    private activeGameService: ActiveGameService,
+    @Inject(GAME_CONFIG) private config: GameConfig,
     private appSettingsService: AppSettingsService,
   ) {
     this.showProbabilities = this.appSettingsService.getValues()['PROBABILITY'];
@@ -47,9 +47,7 @@ export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   randomInheritance(): boolean {
-    return ['p3p', 'p3fes', 'p3ans', 'p4'].includes(
-      this.activeGameService.game,
-    );
+    return this.config.randomInheritance;
   }
 
   approximateProbabilities(): boolean {

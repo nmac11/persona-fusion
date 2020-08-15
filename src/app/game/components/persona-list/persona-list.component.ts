@@ -1,9 +1,7 @@
 import {
-  Component,
-  OnInit,
+  Component, Inject, OnInit,
   AfterViewInit,
   ViewChild,
-  Injector,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { CompendiumService } from '../../../services/compendium.service';
@@ -11,8 +9,9 @@ import { Persona } from '../../../models/persona';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { ActiveGameService } from '../../../services/active-game.service';
 import { TitleService } from '../../../services/title.service';
+import { GameConfig } from '../../../models/game-config';
+import { GAME_CONFIG } from '../../../injection-tokens/game-config.token';
 
 @Component({
   selector: 'game-persona-list',
@@ -22,24 +21,19 @@ import { TitleService } from '../../../services/title.service';
 export class PersonaListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  compendiumService: CompendiumService;
 
   personae: MatTableDataSource<Persona>;
   displayedColumns: string[] = ['name', 'level', 'arcanaName', 'inherits'];
 
   constructor(
-    private injector: Injector,
+    @Inject(GAME_CONFIG) private config: GameConfig,
+    private compendiumService: CompendiumService,
     private router: Router,
-    private activeGameService: ActiveGameService,
     private titleService: TitleService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     this.personae = new MatTableDataSource<Persona>();
-    const tokens = this.activeGameService.getTokenSet();
-    this.compendiumService = this.injector.get<CompendiumService>(
-      tokens.compendium,
-    );
-    this.titleService.setTitle(this.activeGameService.fullGameName);
+    this.titleService.setTitle(this.config.fullTitle);
   }
 
   ngOnInit() {}

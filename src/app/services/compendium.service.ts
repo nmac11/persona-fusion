@@ -3,16 +3,20 @@ import { Persona } from '../models/persona';
 import { exactMatchRegExp } from '../helpers/reg-exp-helpers';
 import { SettingsService } from './settings.service';
 import { AppSettingsService } from './app-settings.service';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
+import { GameConfig } from '../models/game-config';
 
 @Injectable()
 export class CompendiumService {
   private arcanaGroups: Persona[][];
+  private compendium: Persona[];
 
   constructor(
-    @Inject(Array) private compendium: Array<Persona>,
-    @Inject(SettingsService) private settingsService: SettingsService,
+    @Inject(GAME_CONFIG) private config: GameConfig,
+    private settingsService: SettingsService,
     private appSettingsService: AppSettingsService,
   ) {
+    this.compendium = this.config.compendium;
     this.buildArcanaGroups();
   }
 

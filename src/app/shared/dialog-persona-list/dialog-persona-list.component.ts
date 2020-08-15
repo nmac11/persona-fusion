@@ -1,9 +1,7 @@
 import {
-  Component,
-  OnInit,
+  Component, OnInit,
   Output,
   EventEmitter,
-  Injector,
 } from '@angular/core';
 import { Persona } from '../../models/persona';
 import { FusionNode } from '../../models/fusion-node';
@@ -11,7 +9,6 @@ import { CompendiumService } from '../../services/compendium.service';
 import { SkillService } from '../../services/skill.service';
 import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
 import { FusionNodeHelper } from '../../simulator/helpers/fusion-node-helper';
-import { ActiveGameService } from '../../services/active-game.service';
 import { Skill } from '../../models/skill';
 
 interface FilteredPersona {
@@ -25,7 +22,6 @@ interface FilteredPersona {
   styleUrls: ['./dialog-persona-list.component.css'],
 })
 export class DialogPersonaListComponent implements OnInit {
-  compendiumService: CompendiumService;
   fusionNodeHelper: FusionNodeHelper;
 
   @Output()
@@ -35,8 +31,8 @@ export class DialogPersonaListComponent implements OnInit {
   list: FilteredPersona[];
 
   constructor(
-    private injector: Injector,
-    private activeGameService: ActiveGameService,
+    private compendiumService: CompendiumService,
+    private skillService: SkillService,
   ) {
     this.fetchServices();
   }
@@ -95,14 +91,10 @@ export class DialogPersonaListComponent implements OnInit {
   }
 
   private fetchServices(): void {
-    const tokens = this.activeGameService.getTokenSet();
-    this.compendiumService = this.injector.get<CompendiumService>(
-      tokens.compendium,
-    );
-    const skillService = this.injector.get<SkillService>(tokens.skill);
+    
     this.fusionNodeHelper = new FusionNodeHelper(
       this.compendiumService,
-      skillService,
+      this.skillService,
     );
   }
 }

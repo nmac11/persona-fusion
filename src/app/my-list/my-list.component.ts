@@ -1,5 +1,6 @@
 import {
   Component,
+  Inject,
   OnInit,
   AfterViewInit,
   ViewChild,
@@ -14,8 +15,9 @@ import { partialMatchRegExp } from '../helpers/reg-exp-helpers';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
 import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
-import { ActiveGameService } from '../services/active-game.service';
 import { TitleService } from '../services/title.service';
+import { GameConfig } from '../models/game-config';
+import { GAME_CONFIG } from '../injection-tokens/game-config.token';
 
 @Component({
   selector: 'my-list-root',
@@ -26,8 +28,6 @@ export class MyListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  personaStoreService: PersonaStoreService;
-
   savedPersonae: MatTableDataSource<FusionNode>;
   displayedColumns: string[] = [
     'saveName',
@@ -37,23 +37,16 @@ export class MyListComponent implements OnInit, AfterViewInit {
   ];
 
   constructor(
-    private injector: Injector,
-    private activeGameService: ActiveGameService,
+    @Inject(GAME_CONFIG) private config: GameConfig,
+    private personaStoreService: PersonaStoreService,
     private router: Router,
     private dialog: MatDialog,
     private route: ActivatedRoute,
     private titleService: TitleService,
   ) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    const tokens = this.activeGameService.getTokenSet();
-    this.personaStoreService = this.injector.get<PersonaStoreService>(
-      tokens.personaStore,
-    );
     this.savedPersonae = new MatTableDataSource<FusionNode>();
-    this.titleService.setTitle(
-      'My List',
-      this.activeGameService.fullGameName,
-    );
+    this.titleService.setTitle('My List', this.config.fullTitle);
   }
 
   ngOnInit(): void {}

@@ -1,16 +1,15 @@
 import {
   Component,
+  Inject,
   OnInit,
   ViewChild,
   Output,
   EventEmitter,
-  Injector,
 } from '@angular/core';
 import { Persona } from '../../models/persona';
 import { FusionNode } from '../../models/fusion-node';
 import { partialMatchRegExp } from '../../helpers/reg-exp-helpers';
 import { PersonaStoreService } from '../../services/persona-store.service';
-import { ActiveGameService } from '../../services/active-game.service';
 import { Skill } from '../../models/skill';
 
 interface FilteredFusionNode {
@@ -24,22 +23,13 @@ interface FilteredFusionNode {
   styleUrls: ['./dialog-saved-list.component.css'],
 })
 export class DialogSavedListComponent implements OnInit {
-  personaStoreService: PersonaStoreService;
   @Output()
   changeSelected: EventEmitter<FusionNode | null> = new EventEmitter();
   @Output() dblClickSelection: EventEmitter<FusionNode> = new EventEmitter();
 
   list: FilteredFusionNode[];
 
-  constructor(
-    private activeGameService: ActiveGameService,
-    private injector: Injector,
-  ) {
-    const tokens = this.activeGameService.getTokenSet();
-    this.personaStoreService = this.injector.get<PersonaStoreService>(
-      tokens.personaStore,
-    );
-  }
+  constructor(private personaStoreService: PersonaStoreService) {}
 
   ngOnInit(): void {
     this.loadList();

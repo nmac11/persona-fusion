@@ -1,18 +1,7 @@
-import { Component, OnDestroy, OnInit, Injector, Input } from '@angular/core';
+import { Component, OnDestroy, OnInit, Input } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import {
-  exactMatchRegExp,
-  partialMatchRegExp,
-} from '../../../helpers/reg-exp-helpers';
-import { CompendiumService } from '../../../services/compendium.service';
 import { Persona } from '../../../models/persona';
 import { TriangleFusionService } from '../../../services/triangle-fusion.service';
-import { p3pTriangleFusionProvider } from '../../../tokens/p3p/triangle-fusion-service-token';
-import { p3fesTriangleFusionProvider } from '../../../tokens/p3fes/triangle-fusion-service-token';
-import { p3ansTriangleFusionProvider } from '../../../tokens/p3ans/triangle-fusion-service-token';
-import { p4gTriangleFusionProvider } from '../../../tokens/p4g/triangle-fusion-service-token';
-import { p4TriangleFusionProvider } from '../../../tokens/p4/triangle-fusion-service-token';
-import { ActiveGameService } from '../../../services/active-game.service';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { PersonaPreviewBottomSheetComponent } from '../../../shared/persona-preview-bottom-sheet/persona-preview-bottom-sheet.component';
 import { Subscription } from 'rxjs';
@@ -21,37 +10,21 @@ import { Subscription } from 'rxjs';
   selector: 'game-triangle-fusions',
   templateUrl: './triangle-fusions.component.html',
   styleUrls: ['./triangle-fusions.component.css'],
-  providers: [
-    p3pTriangleFusionProvider,
-    p3fesTriangleFusionProvider,
-    p3ansTriangleFusionProvider,
-    p4gTriangleFusionProvider,
-    p4TriangleFusionProvider,
-  ],
+  providers: [TriangleFusionService],
 })
 export class TriangleFusionsComponent implements OnInit, OnDestroy {
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
   availablePersonae: Persona[] = [];
-  fusionService: TriangleFusionService;
   selectedPersonae: Persona[] = [];
-  compendiumService: CompendiumService;
   @Input('persona') persona: Persona;
   nameFilters: string[] = [];
   availablePersonaeSub: Subscription;
   loading: boolean = true;
 
   constructor(
-    private injector: Injector,
-    private activeGameService: ActiveGameService,
+    private fusionService: TriangleFusionService,
     private bottomSheet: MatBottomSheet,
   ) {
-    const tokens = this.activeGameService.getTokenSet();
-    this.compendiumService = this.injector.get<CompendiumService>(
-      tokens.compendium,
-    );
-    this.fusionService = this.injector.get<TriangleFusionService>(
-      tokens.triangleFusion,
-    );
     this.availablePersonaeSub = this.fusionService.availablePersonae$.subscribe(
       (available) => {
         this.availablePersonae = available;

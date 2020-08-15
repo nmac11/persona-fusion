@@ -1,17 +1,8 @@
-import {
-  Component,
-  OnInit,
-  Input,
-  Injector,
-  Output,
-  EventEmitter,
-} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FusionNode } from '../../models/fusion-node';
 import { Persona } from '../../models/persona';
 import { SkillsDialogComponent } from '../skills-dialog/skills-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
-import { SkillService } from '../../services/skill.service';
-import { ActiveGameService } from '../../services/active-game.service';
 import { Skill } from '../../models/skill';
 
 @Component({
@@ -23,16 +14,7 @@ export class FusionItemComponent implements OnInit {
   @Input('fusionItem') fusionItem: FusionNode;
   @Output() update: EventEmitter<any> = new EventEmitter();
 
-  skillService: SkillService;
-
-  constructor(
-    private matDialog: MatDialog,
-    private injector: Injector,
-    private activeGameService: ActiveGameService,
-  ) {
-    const tokens = this.activeGameService.getTokenSet();
-    this.skillService = this.injector.get<SkillService>(tokens.skill);
-  }
+  constructor(private matDialog: MatDialog) {}
 
   ngOnInit(): void {}
 

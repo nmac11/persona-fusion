@@ -1,7 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Inject, OnInit, Input } from '@angular/core';
 import { Persona } from '../../models/persona';
 import { AppSettingsService } from '../../services/app-settings.service';
-import { ActiveGameService } from '../../services/active-game.service';
+import { GameConfig } from '../../models/game-config';
+import { GAME_CONFIG } from '../../injection-tokens/game-config.token';
 
 const AFFINITIES = {
   p3: [
@@ -37,6 +38,7 @@ const AFFINITIES = {
 })
 export class PersonaInfoComponent implements OnInit {
   @Input('persona') persona: Persona;
+  
   stats = ['st', 'ma', 'en', 'ag', 'lu'];
   affValues = {
     s: 'Strong',
@@ -48,14 +50,14 @@ export class PersonaInfoComponent implements OnInit {
   };
 
   constructor(
+    @Inject(GAME_CONFIG) private config: GameConfig,
     private appSettingsService: AppSettingsService,
-    private activeGameService: ActiveGameService,
   ) {}
 
   ngOnInit(): void {}
 
   get affinities(): string[] {
-    const baseGame = this.activeGameService.game.substr(0, 2);
+    const baseGame = this.config.title.substr(0, 2);
     return AFFINITIES[baseGame];
   }
 
