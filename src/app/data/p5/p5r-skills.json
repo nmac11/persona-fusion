@@ -1527,6 +1527,10 @@
         "type": "gun"
     },
     {
+        "name": "Tyrant's Mind",
+        "type": "passive"
+    },
+    {
         "name": "Unshaken Will",
         "type": "passive",
         "exclusive": true
