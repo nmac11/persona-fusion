@@ -7,7 +7,7 @@ import { PersonaPreviewBottomSheetComponent } from '../../../shared/persona-prev
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'game-triangle-fusions',
+  selector: 'personae-triangle-fusions',
   templateUrl: './triangle-fusions.component.html',
   styleUrls: ['./triangle-fusions.component.css'],
   providers: [TriangleFusionService],

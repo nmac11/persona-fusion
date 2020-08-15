@@ -10,7 +10,7 @@ import { GAME_CONFIG } from '../../../injection-tokens/game-config.token';
 import { GameConfig } from '../../../models/game-config';
 
 @Component({
-  selector: 'game-persona',
+  selector: 'personae-persona',
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css'],
 })

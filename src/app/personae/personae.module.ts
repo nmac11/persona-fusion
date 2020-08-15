@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { GameComponent } from './game.component';
 import { PersonaListComponent } from './components/persona-list/persona-list.component';
 import { MaterialModule } from '../material/material.module';
 import { PersonaComponent } from './components/persona/persona.component';
@@ -10,10 +9,11 @@ import { TriangleFusionsComponent } from './components/triangle-fusions/triangle
 import { SharedModule } from '../shared/shared.module';
 import { GemFusionsComponent } from './components/gem-fusions/gem-fusions.component';
 import { SpecialFusionComponent } from './components/special-fusion/special-fusion.component';
+import { PersonaeComponent } from './personae.component';
 
 @NgModule({
   declarations: [
-    GameComponent,
+    PersonaeComponent,
     PersonaListComponent,
     PersonaComponent,
     NormalFusionsComponent,
@@ -23,4 +23,4 @@ import { SpecialFusionComponent } from './components/special-fusion/special-fusi
   ],
   imports: [CommonModule, MaterialModule, RouterModule, SharedModule],
 })
-export class GameModule {}
+export class PersonaeModule {}

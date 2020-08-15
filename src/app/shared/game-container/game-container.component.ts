@@ -1,15 +1,15 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { GAME_CONFIG } from '../injection-tokens/game-config.token';
-import { GameConfig } from '../models/game-config';
+import { GAME_CONFIG } from '../../injection-tokens/game-config.token';
+import { GameConfig } from '../../models/game-config';
 
 @Component({
-  selector: 'game-root',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.css'],
+  selector: 'shared-game-container',
+  templateUrl: './game-container.component.html',
+  styleUrls: ['./game-container.component.css'],
 })
-export class GameComponent implements OnInit {
+export class GameContainerComponent implements OnInit {
   title: string;
   page: string;
   routeDataSub: Subscription;

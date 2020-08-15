@@ -27,22 +27,22 @@
           <mat-tab-group>
             <mat-tab label="SPECIAL FUSION" *ngIf="specialFusion.length">
               <ng-template matTabContent>
-                <game-special-fusion [specialFusion]="specialFusion"></game-special-fusion>
+                <personae-special-fusion [specialFusion]="specialFusion"></personae-special-fusion>
               </ng-template>
             </mat-tab>
             <mat-tab *ngIf="!persona.special" label="NORMAL">
               <ng-template matTabContent>
-                <game-normal-fusions [persona]="persona"></game-normal-fusions>
+                <personae-normal-fusions [persona]="persona"></personae-normal-fusions>
               </ng-template>
             </mat-tab>
             <mat-tab *ngIf="showTriangleFusions()" label="TRIANGLE">
               <ng-template matTabContent>
-                <game-triangle-fusions [persona]="persona"></game-triangle-fusions>
+                <personae-triangle-fusions [persona]="persona"></personae-triangle-fusions>
               </ng-template>
             </mat-tab>
             <mat-tab *ngIf="showGemFusions()" label="GEM">
               <ng-template matTabContent>
-                <game-gem-fusions [persona]="persona"></game-gem-fusions>
+                <personae-gem-fusions [persona]="persona"></personae-gem-fusions>
               </ng-template>
             </mat-tab>
           </mat-tab-group>

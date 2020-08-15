@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RoutingModule } from '../routing/routing.module';
 import { CompendiumService } from '../services/compendium.service';
 import { GAME_CONFIG } from '../injection-tokens/game-config.token';
-import { GameModule } from '../game/game.module';
 import { MyListModule } from '../my-list/my-list.module';
 import { PersonaStoreService } from '../services/persona-store.service';
 import { SkillService } from '../services/skill.service';
@@ -15,16 +14,17 @@ import { SettingsModule } from '../settings/settings.module';
 import { P5SimulatorModule } from '../simulator/p5-simulator.module';
 import { SkillInheritanceService } from '../services/skill-inheritance.service';
 import { P5R_CONFIG } from './p5r-config'
+import { PersonaeModule } from '../personae/personae.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     RoutingModule,
-    GameModule,
     SettingsModule,
     MyListModule,
     P5SimulatorModule,
+    PersonaeModule,
   ],
   providers: [
     CompendiumService,

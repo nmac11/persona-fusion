@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { GameComponent } from './game/game.component';
-import { PersonaListComponent } from './game/components/persona-list/persona-list.component';
 import { SettingsResolver } from './resolvers/settings.resolver';
 import { AppSettingsComponent } from './components/app-settings/app-settings.component';
 import { ReferenceComponent } from './components/reference/reference.component';

@@ -1,33 +1,39 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { GameComponent } from '../game/game.component';
-import { PersonaListComponent } from '../game/components/persona-list/persona-list.component';
+import { GameContainerComponent } from '../shared/game-container/game-container.component';
+import { PersonaListComponent } from '../personae/components/persona-list/persona-list.component';
 import { MyListComponent } from '../my-list/my-list.component';
-import { PersonaComponent } from '../game/components/persona/persona.component';
+import { PersonaComponent } from '../personae/components/persona/persona.component';
 import { EditPersonaComponent } from '../my-list/components/edit-persona/edit-persona.component';
 import { SimulatorComponent } from '../simulator/simulator.component';
 import { SettingsComponent } from '../settings/settings.component';
-
-// import { EditPersonaComponent } from '../my-list/components/edit-persona/edit-persona.component';
-// import { SimulatorComponent } from '../simulator/simulator.component';
-// import { PersonaComponent } from '../game/components/persona/persona.component';
-// import { SettingsComponent } from '../settings/settings.component';
+import { PersonaeComponent } from '../personae/personae.component';
 
 const ROUTES = [
   {
     path: '',
-    component: GameComponent,
+    component: GameContainerComponent,
     children: [
       {
         path: '',
-        component: PersonaListComponent,
-        data: { page: 'Personae' },
+        pathMatch: 'full',
+        redirectTo: 'personae',
       },
       {
-        path: 'persona/:persona_name',
-        component: PersonaComponent,
-        data: { page: 'Persona' },
+        path: 'personae',
+        component: PersonaeComponent,
+        data: { page: 'Personae' },
+        children: [
+          {
+            path: '',
+            component: PersonaListComponent,
+          },
+          {
+            path: ':persona_name',
+            component: PersonaComponent,
+          },
+        ]
       },
       {
         path: 'my-list',
@@ -51,26 +57,6 @@ const ROUTES = [
       },
     ],
   },
-  // {
-  //   path: 'my-list',
-  //   component: MyListComponent,
-  //   data: { page: 'My List' },
-  // },
-  // {
-  //   path: 'edit/:save_id',
-  //   component: EditPersonaComponent,
-  //   data: { page: 'Edit' },
-  // },
-  // {
-  //   path: 'simulator',
-  //   component: SimulatorComponent,
-  //   data: { page: 'Simulator' },
-  // },
-  // {
-  //   path: 'settings',
-  //   component: SettingsComponent,
-  //   data: { page: 'Settings' },
-  // },
 ];
 
 @NgModule({

@@ -4,7 +4,7 @@ import { Persona } from '../../../models/persona';
 import { PersonaPreviewBottomSheetComponent } from '../../../shared/persona-preview-bottom-sheet/persona-preview-bottom-sheet.component';
 
 @Component({
-  selector: 'game-special-fusion',
+  selector: 'personae-special-fusion',
   templateUrl: './special-fusion.component.html',
   styleUrls: ['./special-fusion.component.css'],
 })

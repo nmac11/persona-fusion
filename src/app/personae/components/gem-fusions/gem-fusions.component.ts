@@ -5,7 +5,7 @@ import { FusionPreviewBottomSheetComponent } from '../../../shared/fusion-previe
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 @Component({
-  selector: 'game-gem-fusions',
+  selector: 'personae-gem-fusions',
   templateUrl: './gem-fusions.component.html',
   styleUrls: ['./gem-fusions.component.css'],
   providers: [GemFusionService],

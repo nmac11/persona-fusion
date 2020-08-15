@@ -14,7 +14,7 @@ import { GameConfig } from '../../../models/game-config';
 import { GAME_CONFIG } from '../../../injection-tokens/game-config.token';
 
 @Component({
-  selector: 'game-persona-list',
+  selector: 'personae-persona-list',
   templateUrl: './persona-list.component.html',
   styleUrls: ['./persona-list.component.css'],
 })

@@ -7,7 +7,7 @@ import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'game-normal-fusions',
+  selector: 'personae-normal-fusions',
   templateUrl: './normal-fusions.component.html',
   styleUrls: ['./normal-fusions.component.css'],
   providers: [NormalFusionService],

@@ -9,31 +9,31 @@ import { TitleService } from '../../services/title.service';
 export class HomeComponent implements OnInit {
   links = [{
     title: 'Persona 3 Portable',
-    url: '/p3p',
+    url: '/p3p/personae',
     platform: 'PSP',
   },{
     title: 'Persona 3 FES: The Journey',
-    url: '/p3fes',
+    url: '/p3fes/personae',
     platform: 'PS2',
   },{
     title: 'Persona 3 FES: The Answer',
-    url: '/p3ans',
+    url: '/p3ans/personae',
     platform: 'PS2',
   },{
     title: 'Persona 4',
-    url: '/p4',
+    url: '/p4/personae',
     platform: 'PS2',
   },{
     title: 'Persona 4 Golden',
-    url: '/p4g',
+    url: '/p4g/personae',
     platform: 'PS Vita / Windows',
   },{
     title: 'Persona 5',
-    url: '/p5',
+    url: '/p5/personae',
     platform: 'PS3 / PS4',
   },{
     title: 'Persona 5 Royal',
-    url: '/p5r',
+    url: '/p5r/personae',
     platform: 'PS4',
   }];
 
