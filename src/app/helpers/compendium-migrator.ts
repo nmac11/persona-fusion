@@ -16,8 +16,7 @@ export function compendiumMigrator(
   skillData: Skill[],
   arcanaData: string[],
 ): Persona[] {
-  const start = Date.now();
-  const res = Object.entries(compressedData).map(([name, data]) => {
+  return Object.entries(compressedData).map(([name, data]) => {
     const { skills, aff, inh, arc, lvl, ...miscData } = data;
     const persona: any = {};
     persona.name = name;
@@ -32,6 +31,4 @@ export function compendiumMigrator(
     });
     return Object.assign(persona, miscData);
   });
-  console.log('completed in ' + (Date.now() - start) + 'ms')
-  return res;
 }
