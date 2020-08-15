@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { GameContainerComponent } from '../shared/game-container/game-container.component';
 import { PersonaListComponent } from '../personae/components/persona-list/persona-list.component';
 import { MyListComponent } from '../my-list/my-list.component';
+import { ListComponent } from '../my-list/components/list/list.component';
 import { PersonaComponent } from '../personae/components/persona/persona.component';
 import { EditPersonaComponent } from '../my-list/components/edit-persona/edit-persona.component';
 import { SimulatorComponent } from '../simulator/simulator.component';
@@ -39,11 +40,16 @@ const ROUTES = [
         path: 'my-list',
         component: MyListComponent,
         data: { page: 'My List' },
-      },
-      {
-        path: 'edit/:save_id',
-        component: EditPersonaComponent,
-        data: { page: 'Edit' },
+        children: [
+          {
+            path: '',
+            component: ListComponent,
+          },
+          {
+            path: ':save_id',
+            component: EditPersonaComponent,
+          },
+        ],
       },
       {
         path: 'simulator',

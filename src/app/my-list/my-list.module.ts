@@ -10,15 +10,17 @@ import { ConfirmDeleteDialogComponent } from './components/confirm-delete-dialog
 import { CreatePersonaComponent } from './components/create-persona/create-persona.component';
 import { FusionTreeComponent } from './components/fusion-tree/fusion-tree.component';
 import { ViewTreeItemDialogComponent } from './components/view-tree-item-dialog/view-tree-item-dialog.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
-    MyListComponent,
+    ListComponent,
     EditPersonaComponent,
     ConfirmDeleteDialogComponent,
     CreatePersonaComponent,
     FusionTreeComponent,
     ViewTreeItemDialogComponent,
+    MyListComponent,
   ],
   entryComponents: [
     ConfirmDeleteDialogComponent,
