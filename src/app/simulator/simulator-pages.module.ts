@@ -25,6 +25,5 @@ import { FusionSkillsComponent } from './components/fusion-skills/fusion-skills.
     SaveFusionDialogComponent,
     FusionSkillsComponent,
   ],
-  entryComponents: [SaveFusionDialogComponent],
 })
 export class SimulatorPagesModule {}

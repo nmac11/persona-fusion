@@ -29,13 +29,13 @@ import { InheritableSkill } from '../../../models/inheritable-skill';
 export class SaveFusionDialogComponent implements OnInit {
   saveForm: FormGroup;
   fusionItem: FusionResult;
-  personaStoreService: PersonaStoreService;
   fusionNodeHelper: FusionNodeHelper;
   @ViewChild('skills') skillsSelection: MatSelectionList;
 
   constructor(
     public dialogRef: MatDialogRef<SaveFusionDialogComponent>,
     private compendiumService: CompendiumService,
+    private personaStoreService: PersonaStoreService,
     private skillService: SkillService,
     @Inject(MAT_DIALOG_DATA)
     public data: {
@@ -44,7 +44,6 @@ export class SaveFusionDialogComponent implements OnInit {
     private fb: FormBuilder,
     private snackBar: MatSnackBar,
   ) {
-
     this.fusionNodeHelper = new FusionNodeHelper(
       this.compendiumService,
       this.skillService,
