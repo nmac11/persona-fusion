@@ -2584,6 +2584,7 @@
                 "name": "Weary Thrust",
                 "level": 0,
                 "type": "strike",
+                "exclusive": true,
                 "rank": 6
             },
             {
@@ -5206,6 +5207,7 @@
                 "name": "Vorpal Blade",
                 "level": 63,
                 "type": "slash",
+                "exclusive": true,
                 "rank": 8
             },
             {
@@ -7133,6 +7135,7 @@
                 "name": "Weary Thrust",
                 "level": 70,
                 "type": "strike",
+                "exclusive": true,
                 "rank": 6
             },
             {
@@ -8732,6 +8735,7 @@
                 "name": "Heaven's Blade",
                 "level": 77,
                 "type": "slash",
+                "exclusive": true,
                 "rank": 7
             }
         ],
