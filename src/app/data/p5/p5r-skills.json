@@ -1528,7 +1528,8 @@
     },
     {
         "name": "Tyrant's Mind",
-        "type": "passive"
+        "type": "passive",
+        "exclusive": true
     },
     {
         "name": "Unshaken Will",
