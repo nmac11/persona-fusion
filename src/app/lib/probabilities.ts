@@ -19,7 +19,7 @@ export class Probabilities {
   calculate(): Promise<{ [key: number]: number }> {
     if (this.nonZeroRatios.every((r) => r === this.nonZeroRatios[0]))
       return this.calculateEqualRatios();
-    else if (this.picks > 5)
+    else if (this.picks > 5 || this.nonZeroRatios.length > 32)
       return this.approximate();
     else return this.calculateVariableRatios();
   }

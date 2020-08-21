@@ -55,7 +55,7 @@ export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
       .map((s) => s.probRatio)
       .filter((r) => r > 0);
     const variableRatios = Array.from(new Set(ratios)).length !== 1;
-    const moreThanFivePicks = this.fusionYield.skillsInheritedCount > 5;
+    const moreThanFivePicks = this.fusionYield.skillsInheritedCount > 5 || ratios.length > 32;
     return variableRatios && moreThanFivePicks;
   }
 
