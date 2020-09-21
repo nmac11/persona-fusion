@@ -1,4 +1,11 @@
-import { Component, Inject, Input, OnDestroy, OnInit, OnChanges } from '@angular/core';
+import {
+  Component,
+  Inject,
+  Input,
+  OnDestroy,
+  OnInit,
+  OnChanges,
+} from '@angular/core';
 import { FusionResult } from '../../../models/fusion-result';
 import { AppSettingsService } from '../../../services/app-settings.service';
 import { Skill } from '../../../models/skill';
@@ -29,13 +36,13 @@ export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnInit(): void {
     if (this.showProbabilities && this.randomInheritance())
-    this.fusionSub = this.fusionSubject$
-      .pipe(switchMap(() => this.calculateProbabilities()))
-      .subscribe((p) => {
-        this.fusionYield.inheritableSkills.forEach(
-          (s) => (s.probability = p[s.probRatio]),
-        );
-      });
+      this.fusionSub = this.fusionSubject$
+        .pipe(switchMap(() => this.calculateProbabilities()))
+        .subscribe((p) => {
+          this.fusionYield.inheritableSkills.forEach(
+            (s) => (s.probability = p[s.probRatio]),
+          );
+        });
   }
 
   ngOnChanges(): void {
@@ -44,6 +51,11 @@ export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnDestroy(): void {
     this.fusionSub?.unsubscribe();
+  }
+
+  inheritableSkillCount(): number {
+    return this.fusionYield.inheritableSkills.filter((s) => s.probRatio > 0)
+      .length;
   }
 
   randomInheritance(): boolean {
@@ -55,8 +67,10 @@ export class FusionSkillsComponent implements OnInit, OnChanges, OnDestroy {
       .map((s) => s.probRatio)
       .filter((r) => r > 0);
     const variableRatios = Array.from(new Set(ratios)).length !== 1;
-    const moreThanFivePicks = this.fusionYield.skillsInheritedCount > 5 || ratios.length > 32;
-    return variableRatios && moreThanFivePicks;
+    const moreThanSixPicks =
+      this.fusionYield.skillsInheritedCount > 6 ||
+      (this.fusionYield.skillsInheritedCount === 6 && ratios.length >= 30);
+    return variableRatios && moreThanSixPicks;
   }
 
   private calculateProbabilities(): Observable<{ [key: number]: number }> {
