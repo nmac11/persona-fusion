@@ -1,12 +1,12 @@
 import { Injectable, Inject } from '@angular/core';
 import { CompendiumService } from '../services/compendium.service';
 import { Persona } from '../models/persona';
-import { SpecialFusion } from '../models/special-fusion';
+import { SpecialFusions } from '../models/special-fusions';
 import { GAME_CONFIG } from '../injection-tokens/game-config.token';
 import { GameConfig } from '../models/game-config';
 
 export abstract class FusionChartService {
-  protected specialFusionChart: SpecialFusion[];
+  protected specialFusionChart: SpecialFusions;
   protected normalFusionChart: number[][][];
 
   constructor(
@@ -23,26 +23,25 @@ export abstract class FusionChartService {
   }
 
   getSpecialFusions(persona: Persona): Persona[] {
-    const specialFusion = this.specialFusionChart.find(
-      (sf) => sf.persona === persona.name,
-    );
+    const specialFusion = this.specialFusionChart[persona.name];
     return specialFusion
-      ? specialFusion.requirements.map((name) =>
-          this.compendiumService.find(name),
-        )
+      ? specialFusion.map((name) => this.compendiumService.find(name))
       : [];
   }
 
   trySpecialFusion(personae: Persona[]): Persona {
     const personaNames = personae.map((p) => p.name);
-    const fusionResult = this.specialFusionChart.find(
-      (sf) =>
-        sf.requirements.length === personae.length &&
-        personaNames.every((name) => sf.requirements.includes(name)),
+    return Object.entries(this.specialFusionChart).reduce(
+      (res: Persona, [resultName, req]: [string, string[]]) => {
+        if (
+          req.length === personae.length &&
+          personaNames.every((name) => req.includes(name))
+        )
+          return this.compendiumService.find(resultName);
+        return res;
+      },
+      null,
     );
-    return fusionResult
-      ? this.compendiumService.find(fusionResult.persona)
-      : null;
   }
 
   findNormalFusionChartResult(fusionArcana: number[]): number {

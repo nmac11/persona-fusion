@@ -1,116 +1,117 @@
-[
-    {
-        "persona": "Black Frost",
-        "requirements": [
-            "Jack Frost",
-            "Pyro Jack",
-            "King Frost",
-            "Pixie",
-            "Ghoul"
-        ]
-    },
-    {
-        "persona": "Kohryu",
-        "requirements": ["Genbu", "Seiryu", "Suzaku", "Byakko"]
-    },
-    {
-        "persona": "Futsunushi",
-        "requirements": ["Ares", "Triglav", "Kin-ki", "Atavaka", "Neko Shogun"]
-    },
-    {
-        "persona": "Ongyo-ki",
-        "requirements": ["Oni", "Fuu-ki", "Kin-ki", "Sui-ki"]
-    },
-    { "persona": "Norn", "requirements": ["Atropos", "Lachesis", "Clotho"] },
-    {
-        "persona": "Yatsufusa",
-        "requirements": ["Makami", "Orthrus", "Mothman", "Thoth", "Narasimha"]
-    },
-    { "persona": "Alice", "requirements": ["Nebiros", "Belial"] },
-    {
-        "persona": "Mahakala",
-        "requirements": [
-            "Matador",
-            "White Rider",
-            "Mother Harlot",
-            "Daisoujou",
-            "Hell Biker",
-            "Trumpeter"
-        ]
-    },
-    {
-        "persona": "Beelzebub",
-        "requirements": [
-            "Pazuzu",
-            "Belphegor",
-            "Belial",
-            "Mot",
-            "Seth",
-            "Baal Zebul"
-        ]
-    },
-    {
-        "persona": "Yoshitsune",
-        "requirements": [
-            "Masakado",
-            "Shiki-Ouji",
-            "Oukuninushi",
-            "Hachiman",
-            "Hitokoto-Nushi"
-        ]
-    },
-    { "persona": "Shiva", "requirements": ["Rangda", "Barong"] },
-    {
-        "persona": "Neko Shogun",
-        "requirements": [
-            "Saki Mitama",
-            "Ara Mitama",
-            "Kusi Mitama",
-            "Nigi Mitama"
-        ]
-    },
-    {
-        "persona": "Tam Lin",
-        "requirements": ["Phoenix", "Gdon", "Yatagarasu", "Narasimha"]
-    },
-    {
-        "persona": "Trumpeter",
-        "requirements": [
-            "Matador",
-            "White Rider",
-            "Daisoujou",
-            "Taotie",
-            "Pabilsag",
-            "Taowu"
-        ]
-    },
-    { "persona": "Ardha", "requirements": ["Parvati", "Shiva"] },
-    {
-        "persona": "Lucifer",
-        "requirements": [
-            "Ananta",
-            "Anubis",
-            "Trumpeter",
-            "Michael",
-            "Satan",
-            "Metatron"
-        ]
-    },
-    {
-        "persona": "Izanagi-no-Okami",
-        "requirements": [
-            "Izanagi",
-            "Sandman",
-            "Nata Taishi",
-            "Girimehkala",
-            "Norn",
-            "Oukuninushi",
-            "Orthrus",
-            "Kartikeya",
-            "Mithra",
-            "Tzitzimitl",
-            "Cu Chulainn",
-            "Legion"
-        ]
-    }
-]
+{
+  "Black Frost": [
+    "Jack Frost",
+    "Pyro Jack",
+    "King Frost",
+    "Pixie",
+    "Ghoul"
+  ],
+  "Kohryu": [
+    "Genbu",
+    "Seiryu",
+    "Suzaku",
+    "Byakko"
+  ],
+  "Futsunushi": [
+    "Ares",
+    "Triglav",
+    "Kin-ki",
+    "Atavaka",
+    "Neko Shogun"
+  ],
+  "Ongyo-ki": [
+    "Oni",
+    "Fuu-ki",
+    "Kin-ki",
+    "Sui-ki"
+  ],
+  "Norn": [
+    "Atropos",
+    "Lachesis",
+    "Clotho"
+  ],
+  "Yatsufusa": [
+    "Makami",
+    "Orthrus",
+    "Mothman",
+    "Thoth",
+    "Narasimha"
+  ],
+  "Alice": [
+    "Nebiros",
+    "Belial"
+  ],
+  "Mahakala": [
+    "Matador",
+    "White Rider",
+    "Mother Harlot",
+    "Daisoujou",
+    "Hell Biker",
+    "Trumpeter"
+  ],
+  "Beelzebub": [
+    "Pazuzu",
+    "Belphegor",
+    "Belial",
+    "Mot",
+    "Seth",
+    "Baal Zebul"
+  ],
+  "Yoshitsune": [
+    "Masakado",
+    "Shiki-Ouji",
+    "Oukuninushi",
+    "Hachiman",
+    "Hitokoto-Nushi"
+  ],
+  "Shiva": [
+    "Rangda",
+    "Barong"
+  ],
+  "Neko Shogun": [
+    "Saki Mitama",
+    "Ara Mitama",
+    "Kusi Mitama",
+    "Nigi Mitama"
+  ],
+  "Tam Lin": [
+    "Phoenix",
+    "Gdon",
+    "Yatagarasu",
+    "Narasimha"
+  ],
+  "Trumpeter": [
+    "Matador",
+    "White Rider",
+    "Daisoujou",
+    "Taotie",
+    "Pabilsag",
+    "Taowu"
+  ],
+  "Ardha": [
+    "Parvati",
+    "Shiva"
+  ],
+  "Lucifer": [
+    "Ananta",
+    "Anubis",
+    "Trumpeter",
+    "Michael",
+    "Satan",
+    "Metatron"
+  ],
+  "Izanagi-no-Okami": [
+    "Izanagi",
+    "Sandman",
+    "Nata Taishi",
+    "Girimehkala",
+    "Norn",
+    "Oukuninushi",
+    "Orthrus",
+    "Kartikeya",
+    "Mithra",
+    "Tzitzimitl",
+    "Cu Chulainn",
+    "Legion"
+  ]
+}

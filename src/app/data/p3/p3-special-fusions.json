@@ -1,117 +1,50 @@
-[
-  {
-    "persona": "Alice",
-    "requirements": ["Pixie", "Lilim", "Narcissus", "Nata Taishi"]
-  },
-  {
-    "persona": "Arahabaki",
-    "requirements": ["Omoikane", "Take-Minakata", "Okuninushi", "Kikuri-Hime"]
-  },
-  {
-    "persona": "Asura",
-    "requirements": [
-      "Yatagarasu",
-      "Quetzalcoatl",
-      "Jatayu",
-      "Horus",
-      "Suparna",
-      "Vishnu"
-    ]
-  },
-  {
-    "persona": "Attis",
-    "requirements": [
-      "Inugami",
-      "Take-Minakata",
-      "Orthrus",
-      "Vasuki",
-      "Ubelluris"
-    ]
-  },
-  {
-    "persona": "Beelzebub",
-    "requirements": [
-      "Incubus",
-      "Succubus",
-      "Pazuzu",
-      "Lilith",
-      "Abaddon",
-      "Baal Zebul"
-    ]
-  },
-  {
-    "persona": "Black Frost",
-    "requirements": ["Jack Frost", "Pyro Jack", "King Frost", "Queen Mab"]
-  },
-  {
-    "persona": "Daisoujou",
-    "requirements": [
-      "Mithra",
-      "Ara Mitama",
-      "Nigi Mitama",
-      "Kusi Mitama",
-      "Saki Mitama"
-    ]
-  },
-  {
-    "persona": "Girimehkala",
-    "requirements": ["Gurr", "Vetala", "Taraka", "Rangda"]
-  },
-  {
-    "persona": "Kohryu",
-    "requirements": ["Genbu", "Seiryu", "Suzaku", "Byakko"]
-  },
-  {
-    "persona": "Lilith",
-    "requirements": ["Lilim", "Vetala", "Incubus", "Succubus"]
-  },
-  {
-    "persona": "Lucifer",
-    "requirements": ["Samael", "Abaddon", "Beelzebub", "Satan", "Helel"]
-  },
-  {
-    "persona": "Mara",
-    "requirements": ["Incubus", "Pazuzu", "Mot", "Kumbhanda", "Attis"]
-  },
-  {
-    "persona": "Masakado",
-    "requirements": ["Zouchouten", "Jikokuten", "Koumokuten", "Bishamonten"]
-  },
-  { "persona": "Messiah", "requirements": ["Orpheus", "Thanatos"] },
-  {
-    "persona": "Metatron",
-    "requirements": ["Uriel", "Raphael", "Gabriel", "Michael"]
-  },
-  { "persona": "Norn", "requirements": ["Clotho", "Lachesis", "Atropos"] },
-  {
-    "persona": "Orpheus Telos",
-    "requirements": [
-      "Thanatos",
-      "Chi You",
-      "Helel",
-      "Asura",
-      "Messiah",
-      "Metatron"
-    ]
-  },
-  {
-    "persona": "Sandalphon",
-    "requirements": ["Gurr", "Suzaku", "Yatagarasu", "Horus", "Garuda"]
-  },
-  { "persona": "Shiva", "requirements": ["Barong", "Rangda"] },
-  {
-    "persona": "Susano-o",
-    "requirements": [
-      "Orpheus",
-      "Legion",
-      "Black Frost",
-      "Ose",
-      "Decarabia",
-      "Loki"
-    ]
-  },
-  {
-    "persona": "Thanatos",
-    "requirements": ["Ghoul", "Pale Rider", "Loa", "Samael", "Mot", "Alice"]
-  }
-]
+{
+  "Alice": ["Pixie", "Lilim", "Narcissus", "Nata Taishi"],
+  "Arahabaki": ["Omoikane", "Take-Minakata", "Okuninushi", "Kikuri-Hime"],
+  "Asura": [
+    "Yatagarasu",
+    "Quetzalcoatl",
+    "Jatayu",
+    "Horus",
+    "Suparna",
+    "Vishnu"
+  ],
+  "Attis": ["Inugami", "Take-Minakata", "Orthrus", "Vasuki", "Ubelluris"],
+  "Beelzebub": [
+    "Incubus",
+    "Succubus",
+    "Pazuzu",
+    "Lilith",
+    "Abaddon",
+    "Baal Zebul"
+  ],
+  "Black Frost": ["Jack Frost", "Pyro Jack", "King Frost", "Queen Mab"],
+  "Daisoujou": [
+    "Mithra",
+    "Ara Mitama",
+    "Nigi Mitama",
+    "Kusi Mitama",
+    "Saki Mitama"
+  ],
+  "Girimehkala": ["Gurr", "Vetala", "Taraka", "Rangda"],
+  "Kohryu": ["Genbu", "Seiryu", "Suzaku", "Byakko"],
+  "Lilith": ["Lilim", "Vetala", "Incubus", "Succubus"],
+  "Lucifer": ["Samael", "Abaddon", "Beelzebub", "Satan", "Helel"],
+  "Mara": ["Incubus", "Pazuzu", "Mot", "Kumbhanda", "Attis"],
+  "Masakado": ["Zouchouten", "Jikokuten", "Koumokuten", "Bishamonten"],
+  "Messiah": ["Orpheus", "Thanatos"],
+  "Metatron": ["Uriel", "Raphael", "Gabriel", "Michael"],
+  "Norn": ["Clotho", "Lachesis", "Atropos"],
+  "Orpheus Telos": [
+    "Thanatos",
+    "Chi You",
+    "Helel",
+    "Asura",
+    "Messiah",
+    "Metatron"
+  ],
+  "Sandalphon": ["Gurr", "Suzaku", "Yatagarasu", "Horus", "Garuda"],
+  "Shiva": ["Barong", "Rangda"],
+  "Susano-o": ["Orpheus", "Legion", "Black Frost", "Ose", "Decarabia", "Loki"],
+  "Thanatos": ["Ghoul", "Pale Rider", "Loa", "Samael", "Mot", "Alice"]
+}

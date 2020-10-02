@@ -1,6 +1,6 @@
 import { Persona } from './persona';
 import { Skill } from './skill';
-import { SpecialFusion } from './special-fusion';
+import { SpecialFusions } from './special-fusions';
 
 export interface GameConfig {
   title: string;
@@ -17,7 +17,7 @@ export interface GameConfig {
       [key: string]: { label: string; description?: string; unlocks: string[] };
     };
   };
-  specialFusionChart: SpecialFusion[];
+  specialFusionChart: SpecialFusions;
   normalFusionChart: number[][][];
   triangleFusionChart?: number[][][];
   gemFusionChart?: { [key: string]: number[] };
